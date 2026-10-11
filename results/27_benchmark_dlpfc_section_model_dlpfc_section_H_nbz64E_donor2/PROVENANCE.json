@@ -1,0 +1,82 @@
+{
+  "stage": "27_benchmark_dlpfc_section_model_dlpfc_section_H_nbz64E_donor2",
+  "finished_utc": "2026-10-11T10:54:23Z",
+  "elapsed_s": 4975.1,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "4a13e04bb9a70074397edc2fbf6a827844dcce2ca010280675b644a85cb6b341",
+  "git_commit": "a3ce26acba33f4ebb92b6d713337d2fb33e564f1",
+  "git_dirty": true,
+  "inputs": {},
+  "outputs": {
+    "results/27_benchmark/section_scores_dlpfc_section_model_dlpfc_section_H_nbz64E_donor2.tsv": {
+      "md5": "c4be433364d0d7ab2f8503b61dc272f6",
+      "bytes": 13219
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "amendment": "A21",
+    "arch": {
+      "contexts": [
+        "none",
+        "xattn",
+        "mamba",
+        "xmamba"
+      ],
+      "d": 256,
+      "z_dim": 64,
+      "heads": 4,
+      "n_layers": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "spot_mask_rate": 0.4,
+      "w_visible": 0.5,
+      "centre_batch": 2048,
+      "max_epochs": 150,
+      "patience": 15,
+      "mnnproj_rank": 5,
+      "dev_patients": [
+        "P01",
+        "P03",
+        "P05",
+        "P10",
+        "P12",
+        "P14",
+        "P16",
+        "P18"
+      ],
+      "confirm_patients": [
+        "P02",
+        "P04",
+        "P07",
+        "P11",
+        "P13",
+        "P15",
+        "P17"
+      ],
+      "niche_targets": {},
+      "linear_heads": true,
+      "prop_skip": true,
+      "dgi": 1.0,
+      "section_input": "hvg3000",
+      "dgi_local": "nbz",
+      "section_ensemble": true
+    }
+  }
+}

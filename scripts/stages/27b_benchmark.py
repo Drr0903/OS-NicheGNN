@@ -134,6 +134,15 @@ def hvg_matrix(a, n_top: int = 3000) -> np.ndarray:
     return X.astype(np.float32)
 
 
+@torch.no_grad()
+def readouts(model, z: np.ndarray, g, device: str) -> dict[str, np.ndarray]:
+    """Decoded profile of every spot and its mean over the spot and its ring-1 neighbours."""
+    from lib.spatial import neighbor_mean, ring_neighbors
+    model.eval(); xr = model.dec(torch.tensor(z, device=device)).cpu().numpy().astype(np.float32)
+    nb = [np.append(v, i) for i, v in enumerate(ring_neighbors(g.xy, g.pitch, rings=(1,)))]
+    return {" recon": xr, " recon ring1": np.asarray(neighbor_mean(xr, nb), dtype=np.float32)}
+
+
 def part_section_model(cfg, cohort, A, G, F, P, seeds, patients):
     """A23 single-section mode of OS-NicheGNN: the encoder is trained on one section at a time (profiles fitted on that
     section, full-section batches, a fixed number of epochs, no early stopping), as GraphST and STAGATE are, and that
@@ -150,11 +159,19 @@ def part_section_model(cfg, cohort, A, G, F, P, seeds, patients):
             Gm = {s: dataclasses.replace(G[s], x=np.hstack([X, M]).astype(np.float32))}
         else:
             Gm = B.profiles({s: G[s]}, {s: F[s]}, [s], cfg["remedies"]["pca_dim"], cfg["seed"])
+        Z = []
         for seed in seeds:
             model, info = train_arch(cfg["atlas"]["context"], [Gm[s]], [], c, seed, cfg["device"])
-            e = embed_arch(model, [Gm[s]], cfg["device"])[s]["z"]
+            e = embed_arch(model, [Gm[s]], cfg["device"])[s]["z"]; Z.append((e - e.mean(0)) / (e.std(0) + 1e-6))
             for how in ("leiden", "kmeans"):
                 rows += per_section_rows(cohort, name, seed, s, e, G, P, how)
+            if cfg["arch"].get("section_readouts"):  # the decoded (denoised) profile x̂ = Dec(z), alone and averaged over ring 1
+                for meth, xr in readouts(model, e, G[s], cfg["device"]).items():
+                    for how in ("leiden", "kmeans"):
+                        rows += per_section_rows(cohort, name + meth, seed, s, xr, G, P, how)
+        if cfg["arch"].get("section_ensemble"):  # seed ensemble: the standardized latents of all seeds, concatenated
+            for how in ("leiden", "kmeans"):
+                rows += per_section_rows(cohort, name + " ensemble", seeds[0], s, np.hstack(Z).astype(np.float32), G, P, how)
         log(f"  {name} {s}: refined GMM ARI {np.mean([r['ari'] for r in rows if r['section'] == s and r['clustering'] == 'gmm_pc30_refined']):.3f}")
     return rows
 
