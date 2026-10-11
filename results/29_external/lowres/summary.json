@@ -1,0 +1,12 @@
+{
+  "macro_f1_lung_mean": 0.4153782975646662,
+  "unmatched_fraction": 0.9993233167504166,
+  "n_niches_present": 1,
+  "composition_r_mean": 0.10444220194306941,
+  "t_order_spearman": null,
+  "n_niches_t": 0,
+  "band_odds_ratio": NaN,
+  "interface_coef": NaN,
+  "interface_p": NaN,
+  "interface_n_sections": 1
+}
