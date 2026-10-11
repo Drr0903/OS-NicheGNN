@@ -43,21 +43,21 @@ def lines(ax, pat, metric, ylabel, panel, ylim):
     save_source(w.reset_index(), NAME, panel)
 
 
-def forest(ax, pr):
-    rows = []
-    for j, (ref, col) in enumerate([("banksy", PALETTE[1]), ("pca+img", PALETTE[7])]):
+def forest(ax, pr, nd):
+    rows = []; sets = [("banksy", PALETTE[1], pr, "vs BANKSY-20"), ("banksy", PALETTE[2], nd, "vs BANKSY-20, 11 untouched patients"), ("pca+img", PALETTE[7], pr, "vs PCA-50 + H&E")]
+    for j, (ref, col, tab, leg) in enumerate(sets):
         for i, (m, lab) in enumerate(METRIC):
-            r = pr[(pr["comparison"] == f"{OURS} − {ref}") & (pr["metric"] == m)].iloc[0]; y = i + (j - 0.5) * 0.32
+            r = tab[(tab["comparison"] == f"{OURS} − {ref}") & (tab["metric"] == m)].iloc[0]; y = i + (j - 1) * 0.27
             sig = r["ci95_lo"] > 0 or r["ci95_hi"] < 0
             ax.plot([r["ci95_lo"], r["ci95_hi"]], [y, y], color=col, lw=1.1)
             ax.scatter([r["mean_diff"]], [y], color=col if sig else "white", edgecolor=col, s=16, zorder=3, lw=0.9)
-            ax.text(0.33, y, f"{int(r['n_better'])}/{int(r['n_patients'])}", fontsize=5, va="center", color=col)
-            rows.append({"reference": ref, "metric": m, **r[["n_patients", "mean_diff", "ci95_lo", "ci95_hi", "n_better", "n_worse"]].to_dict()})
-        ax.scatter([], [], color=col, s=16, label=f"vs {LABEL[ref]}")
+            ax.text(0.33, y, f"{int(r['n_better'])}/{int(r['n_patients'])}", fontsize=4.6, va="center", color=col)
+            rows.append({"reference": leg, "metric": m, **r[["n_patients", "mean_diff", "ci95_lo", "ci95_hi", "n_better", "n_worse"]].to_dict()})
+        ax.scatter([], [], color=col, s=16, label=leg)
     ax.axvline(0, color="black", lw=0.6, ls="--"); ax.set_yticks(range(len(METRIC))); ax.set_yticklabels([l for _, l in METRIC], fontsize=6)
     ax.invert_yaxis(); ax.set_xlim(-0.1, 0.37); ax.text(0.33, -0.75, "patients\nbetter", fontsize=5, ha="left", va="bottom")
     bold_axes(ax, x="OS-NicheGNN − reference (difference in patient means, 95 % CI)")
-    ax.legend(fontsize=6, loc="upper left", bbox_to_anchor=(0.6, 0.99), frameon=True, fancybox=False, edgecolor="#CCCCCC"); panel_label(ax, "c")
+    ax.legend(fontsize=5.6, loc="lower center", bbox_to_anchor=(0.45, 1.01), ncol=3, frameon=False, handletextpad=0.3, columnspacing=1.2); panel_label(ax, "c")
     save_source(pd.DataFrame(rows), NAME, "c")
 
 
@@ -96,7 +96,8 @@ def main() -> None:
     for s_, c_ in SITE_COL.items():
         b.plot([], [], color=c_, lw=1, label=s_.replace("_", " "))
     b.legend(fontsize=5.5, loc="upper left", bbox_to_anchor=(1.02, 1.0), title="held-out site", title_fontsize=5.5, frameon=False)
-    forest(c, pr); rewired(d, pat); reuse(e, ru, site)
+    nd = pd.read_csv(ROOT / "results/23d_banksy_k36/banksy_k36_paired.tsv", sep="\t"); nd = nd[nd["patients"] == "nondev"]
+    forest(c, pr, nd); rewired(d, pat); reuse(e, ru, site)
     save_fig(fig, f"{NAME}_validation")
 
 

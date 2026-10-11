@@ -1,6 +1,6 @@
 """v2 Figure 3 — clustering against pathologist annotation, and what the encoder uses .
-a  ARI with the annotated classes (K = number of classes) in the settings (dataset, clustering, per section / all patients /
-   transfer to a held-out patient) in which a mode of OS-NicheGNN is the most accurate; every setting is in Table S3
+a  ARI with the annotated classes (K = number of classes) in every setting (dataset, clustering, per section / all patients /
+   transfer to a held-out patient); the best method of each row in bold
 b  where attention goes: last-layer attention on ring-1/2/3 neighbours against each ring's share of the neighbours
 c  niche re-assignment when the attention context, the neighbourhood skip, the morphology or the expression is removed, or
    the neighbours are rewired; a also shows the single-section mode (per-section rows)
@@ -46,9 +46,7 @@ def heat(ax, pat):
         for part, cl, name in SETTINGS:
             g = pat[(pat["cohort"] == c) & (pat["part"] == part) & (pat["clustering"] == cl)].groupby("method")["ari"].mean()
             rows.append([g.get(m, np.nan) for m in METHODS]); lab.append(f"{cn}: {name}")
-    M = np.array(rows, float); ours = [j for j, m in enumerate(METHODS) if m.startswith("OS-NicheGNN")]
-    keep = [i for i in range(len(M)) if int(np.nanargmax(M[i])) in ours]  # settings in which a mode of OS-NicheGNN is the most accurate
-    M = M[keep]; lab = [lab[i] for i in keep]; im = ax.imshow(M, cmap="Blues", vmin=0, vmax=0.5, aspect="auto")
+    M = np.array(rows, float); im = ax.imshow(M, cmap="Blues", vmin=0, vmax=0.5, aspect="auto")  # every setting; the best method of each row in bold
     for i in range(M.shape[0]):
         best = np.nanmax(M[i])
         for j in range(M.shape[1]):
@@ -94,7 +92,7 @@ def ablation(ax, ab):
 
 def main() -> None:
     set_style(); I = ROOT / "results/28_interpretation"
-    fig = plt.figure(figsize=(7.2, 6.6)); gs = GridSpec(2, 2, figure=fig, height_ratios=[0.8, 1], width_ratios=[0.75, 1.25], hspace=0.42, wspace=0.95)
+    fig = plt.figure(figsize=(7.2, 9.2)); gs = GridSpec(2, 2, figure=fig, height_ratios=[1.75, 1], width_ratios=[0.75, 1.25], hspace=0.42, wspace=0.95)
     heat(fig.add_subplot(gs[0, :]), scores())
     attention(fig.add_subplot(gs[1, 0]), pd.read_csv(I / "attention.tsv", sep="\t"))
     ablation(fig.add_subplot(gs[1, 1]), pd.read_csv(I / "ablation_reassignment.tsv", sep="\t"))
