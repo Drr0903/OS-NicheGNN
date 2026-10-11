@@ -1,0 +1,81 @@
+{
+  "stage": "02_external_export",
+  "finished_utc": "2026-09-15T05:51:32Z",
+  "elapsed_s": 28.9,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "05f309b0eb61b558fda90be999caba6bb93ac018dfecaec17850cf2634cbfd7a",
+  "git_commit": "e567e9e33d10ce1fcea583c9046293e228f87372",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/external_export": {
+      "dir": true,
+      "n_files": 63
+    }
+  },
+  "outputs": {
+    "data/processed/external/OS1.h5ad": {
+      "md5": "a3c643bb63540afd770945d5b0827ad4",
+      "bytes": 260038926
+    },
+    "data/processed/external/OS2.h5ad": {
+      "md5": "db50c5d120291d850066fa65949dbc8e",
+      "bytes": 188689416
+    },
+    "data/processed/external/OS3.h5ad": {
+      "md5": "b60a9ed7e05ff326625a3f65f89bfb27",
+      "bytes": 279278414
+    },
+    "data/processed/external/OS4.h5ad": {
+      "md5": "d36fec85df31cb027289f682b3b1517a",
+      "bytes": 96175116
+    },
+    "data/processed/external/OS5.h5ad": {
+      "md5": "ca6e60218fa24907b6272e3457f302a7",
+      "bytes": 142539928
+    },
+    "data/processed/external/OS6.h5ad": {
+      "md5": "0d5005df3ff7569a3649404e2ab27fe2",
+      "bytes": 303026602
+    },
+    "data/processed/external/OS7.h5ad": {
+      "md5": "2dabc708bde7c49d0ef9762779aaeb2e",
+      "bytes": 596410008
+    },
+    "data/processed/external/OS8.h5ad": {
+      "md5": "ff7267cd7f864a75a27ad9093cabbc58",
+      "bytes": 307597532
+    },
+    "data/processed/external/OS9.h5ad": {
+      "md5": "f94fc52e195afb2ec90f76e9de0a5ab5",
+      "bytes": 223219062
+    },
+    "results/02_external_export/external_section_qc.tsv": {
+      "md5": "fff63ab207374f40d3c9532c98b677fb",
+      "bytes": 1449
+    },
+    "results/01_manifest/sample_manifest.tsv": {
+      "md5": "7bed5eb9c8ee73afe9a20e2676df0d57",
+      "bytes": 9301
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "base",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "n_external_sections": 9
+  }
+}

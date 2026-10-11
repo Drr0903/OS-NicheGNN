@@ -1,0 +1,54 @@
+{
+  "stage": "14_model_lopo_pD",
+  "finished_utc": "2026-09-19T10:58:13Z",
+  "elapsed_s": 4572.2,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "42968ce273a48303ecae0167fa54312951d9d7675592c4b1e0aab3d2ebead832",
+  "git_commit": "6f27e4e60e84a6f9c1fce3a514d9b0aa18a178bf",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/qc": {
+      "dir": true,
+      "n_files": 35
+    }
+  },
+  "outputs": {
+    "results/14_model/lopo_metrics_pD.tsv": {
+      "md5": "cf7f4409076d322942e20f1f744c4e4b",
+      "bytes": 9504
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "base",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "plan": "v2",
+    "patients": [
+      "P16",
+      "P17",
+      "P18",
+      "P19"
+    ],
+    "seeds": [
+      20260914,
+      20260915,
+      20260916,
+      20260917,
+      20260918
+    ]
+  }
+}

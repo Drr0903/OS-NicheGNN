@@ -1,0 +1,149 @@
+{
+  "stage": "27_benchmark_os",
+  "finished_utc": "2026-10-09T12:08:36Z",
+  "elapsed_s": 10.9,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "e66b3796863e302f85241676e608ff19ee268bdaa7bdfc1869a72c3a34d35573",
+  "git_commit": "be032c0437fecb95c0a739dc4178aa1fa445d7f5",
+  "git_dirty": true,
+  "inputs": {
+    "data/refs/PMC13470005/suppl/41467_2026_74603_MOESM3_ESM.xlsx": {
+      "md5": "4520e139fd592afba7cd01edf54900e7",
+      "bytes": 81843
+    },
+    "data/raw/GSE293065/extracted/../GSE293065_ica.cell.embeddings.all.csv.gz": {
+      "md5": "159c0123b2b7a03b52ebc7315aafc95a",
+      "bytes": 69916002
+    }
+  },
+  "outputs": {
+    "data/benchmark/os/PT1.h5ad": {
+      "md5": "2c2d7d130dd7bc0bf86571097d13e500",
+      "bytes": 19353461
+    },
+    "data/benchmark/os/PT2.h5ad": {
+      "md5": "2805f092260ca5ade25f0b0de69fe8a3",
+      "bytes": 57803777
+    },
+    "data/benchmark/os/PT3.h5ad": {
+      "md5": "fbb9d03d6d6c5b4f8658f25234aac8ff",
+      "bytes": 68232891
+    },
+    "data/benchmark/os/PT4.h5ad": {
+      "md5": "ee256f8fb840661f22b30272b1c9d6ea",
+      "bytes": 70828969
+    },
+    "data/benchmark/os/PT5.h5ad": {
+      "md5": "eb77323c2f9a3daffd365f51d1de539c",
+      "bytes": 211358735
+    },
+    "data/benchmark/os/PT6.h5ad": {
+      "md5": "846e1d3c73833dc9bd2eb48f51ac9cfb",
+      "bytes": 75151221
+    },
+    "data/benchmark/os/PT7.h5ad": {
+      "md5": "e4db1ee0dbb7dfb0f4d59bf0c5a17a3c",
+      "bytes": 48333929
+    },
+    "data/benchmark/os/PT8.h5ad": {
+      "md5": "14674fcbc67b441e23858cea841431eb",
+      "bytes": 227560097
+    },
+    "data/benchmark/os/PT9.h5ad": {
+      "md5": "51fa5eecb70e38c7ebcc901ec734b844",
+      "bytes": 89559109
+    },
+    "data/benchmark/os/MR1.h5ad": {
+      "md5": "90abe93226ea448b4d1a44fb3f352161",
+      "bytes": 482493013
+    },
+    "data/benchmark/os/MR2.h5ad": {
+      "md5": "6efcc2037d8b47bcab88a4fc8bd1fc0a",
+      "bytes": 186275461
+    },
+    "data/benchmark/os/MR3.h5ad": {
+      "md5": "2bbd0eff372574bb1bbb0e01262a32d6",
+      "bytes": 163931317
+    },
+    "data/benchmark/os/MR4.h5ad": {
+      "md5": "0373b07f5173fe87cb4994dbd1bd5e2c",
+      "bytes": 213820061
+    },
+    "data/benchmark/os/LR5.h5ad": {
+      "md5": "971ec040ce48b331d723a2883ee4ba1a",
+      "bytes": 50507121
+    },
+    "data/benchmark/os/MR10A.h5ad": {
+      "md5": "f7cdfb3041d37a0b48b0418e797ea703",
+      "bytes": 395017017
+    },
+    "data/benchmark/os/MR10B.h5ad": {
+      "md5": "f301d5eede8b3848a869ab83b03187fa",
+      "bytes": 126304757
+    },
+    "data/benchmark/os/MR11A.h5ad": {
+      "md5": "e639730fa91437f29a1a98219a96736e",
+      "bytes": 92052166
+    },
+    "data/benchmark/os/MR11B.h5ad": {
+      "md5": "2e48af70bf9d0faa72b3c5de1feca62b",
+      "bytes": 447960894
+    },
+    "data/benchmark/os/MR12.h5ad": {
+      "md5": "eaf49c6c75f8ec88190e7fe9456faaa5",
+      "bytes": 83117729
+    },
+    "data/benchmark/os/MR13.h5ad": {
+      "md5": "b6950fb780f07a34eb59d4ced91faac2",
+      "bytes": 258801069
+    },
+    "data/benchmark/os/MR14.h5ad": {
+      "md5": "ee506cee8c5a8f58ffb07cec6bba613e",
+      "bytes": 27963531
+    },
+    "data/benchmark/os/MR15.h5ad": {
+      "md5": "da801bba1a9f14236c421a46bda64375",
+      "bytes": 202674653
+    },
+    "data/benchmark/os/MR16.h5ad": {
+      "md5": "0c155e4b007d7ee02e6066befbb1406c",
+      "bytes": 243601589
+    },
+    "data/benchmark/os/LR17.h5ad": {
+      "md5": "24e3f3cb9f7ade056f7efa470ae40b5c",
+      "bytes": 127694733
+    },
+    "data/benchmark/os/MR18.h5ad": {
+      "md5": "7ddf1baf08b6d04ecd78fd58982d4d57",
+      "bytes": 88390789
+    },
+    "data/benchmark/os/LR19.h5ad": {
+      "md5": "526dc0ab240049c48975b47f3cc27a13",
+      "bytes": 80838922
+    },
+    "results/27_benchmark/os_reference_counts.tsv": {
+      "md5": "9bd2e5a4e43dd09e31fe6a3c712639e6",
+      "bytes": 1089
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "amendment": "A21"
+  }
+}

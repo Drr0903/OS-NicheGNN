@@ -1,0 +1,8 @@
+{
+  "n_sections_total": 26,
+  "n_discovery_lung_sections": 12,
+  "n_discovery_lung_patients": 10,
+  "n_paired_primary": 4,
+  "n_genes": 17943,
+  "spots_geo_vs_paper_max_abs_diff": 1429
+}

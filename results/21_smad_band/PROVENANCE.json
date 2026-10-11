@@ -1,0 +1,51 @@
+{
+  "stage": "21_smad_band",
+  "finished_utc": "2026-10-10T20:29:48Z",
+  "elapsed_s": 1.5,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
+  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "git_dirty": true,
+  "inputs": {
+    "results/18_signalling/tf_by_patient_niche.tsv": {
+      "md5": "f866768d9dd81391fc8fef4e5158be8e",
+      "bytes": 2610361
+    }
+  },
+  "outputs": {
+    "results/21_smad_band/smad_band_vs_rest.tsv": {
+      "md5": "482cd581566977d5feb4b319a494610b",
+      "bytes": 820
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "band_niche": 3,
+    "regulons": [
+      "SMAD1",
+      "SMAD2",
+      "SMAD3",
+      "SMAD4",
+      "SMAD5",
+      "SMAD6",
+      "SMAD7"
+    ],
+    "min_niches_for_ranking": 4
+  }
+}

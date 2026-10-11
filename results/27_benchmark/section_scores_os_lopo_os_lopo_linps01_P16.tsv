@@ -1,0 +1,7 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+os	lopo	leiden	OS-NicheGNN_linps01	20260914	MR16	P16	5	0.0	0.0	3334
+os	lopo	kmeans	OS-NicheGNN_linps01	20260914	MR16	P16	5	0.0025144573127245983	0.0027675988232641886	3334
+os	lopo	leiden	OS-NicheGNN_linps01	20260915	MR16	P16	5	0.0	0.0	3334
+os	lopo	kmeans	OS-NicheGNN_linps01	20260915	MR16	P16	5	0.0033171537526913934	0.0031117828534155258	3334
+os	lopo	leiden	OS-NicheGNN_linps01	20260916	MR16	P16	5	0.0	0.0	3334
+os	lopo	kmeans	OS-NicheGNN_linps01	20260916	MR16	P16	5	0.009781578010763963	0.006444605384285628	3334

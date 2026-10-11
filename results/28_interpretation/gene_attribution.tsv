@@ -1,0 +1,241 @@
+niche	name	rank	gene	attribution
+0	lymphoid-enriched lung parenchyma	1	C20orf85	5.516681220587783
+0	lymphoid-enriched lung parenchyma	2	RSPH1	5.093544366791493
+0	lymphoid-enriched lung parenchyma	3	TMEM190	4.997254919818067
+0	lymphoid-enriched lung parenchyma	4	TSPAN1	4.532080762968288
+0	lymphoid-enriched lung parenchyma	5	FAM216B	4.3301046927144204
+0	lymphoid-enriched lung parenchyma	6	CCDC78	4.243677004115788
+0	lymphoid-enriched lung parenchyma	7	C9orf24	4.151083968755767
+0	lymphoid-enriched lung parenchyma	8	CFAP157	4.146905914066345
+0	lymphoid-enriched lung parenchyma	9	DNAAF1	4.083216779813991
+0	lymphoid-enriched lung parenchyma	10	TEKT1	4.0063684418445495
+0	lymphoid-enriched lung parenchyma	11	MAPK15	3.9517672080693282
+0	lymphoid-enriched lung parenchyma	12	AC007906.2	3.7705095846821943
+0	lymphoid-enriched lung parenchyma	13	CCDC114	3.6656461400309888
+0	lymphoid-enriched lung parenchyma	14	CDHR3	3.620694318155604
+0	lymphoid-enriched lung parenchyma	15	PTPRT	3.5169918330635612
+0	lymphoid-enriched lung parenchyma	16	SCGB3A1	3.388656405952033
+0	lymphoid-enriched lung parenchyma	17	MS4A8	3.310010354349932
+0	lymphoid-enriched lung parenchyma	18	CCDC17	3.2392718397726226
+0	lymphoid-enriched lung parenchyma	19	MUC4	3.07701209210974
+0	lymphoid-enriched lung parenchyma	20	C5orf49	3.0371188666876847
+0	lymphoid-enriched lung parenchyma	21	FRMPD2	2.984086900245486
+0	lymphoid-enriched lung parenchyma	22	ZBBX	2.960026267945297
+0	lymphoid-enriched lung parenchyma	23	DRC1	2.9502325283260795
+0	lymphoid-enriched lung parenchyma	24	ROPN1L	2.839021337313915
+0	lymphoid-enriched lung parenchyma	25	BPIFB1	2.6583461892886424
+0	lymphoid-enriched lung parenchyma	26	TUBA4B	2.6218374958188515
+0	lymphoid-enriched lung parenchyma	27	EFCAB10	2.590486947007067
+0	lymphoid-enriched lung parenchyma	28	RP1	2.5812143941563885
+0	lymphoid-enriched lung parenchyma	29	DNAI1	2.5669990899994617
+0	lymphoid-enriched lung parenchyma	30	CFAP45	2.547158128633274
+1	epithelial-enriched tumour	1	B2M	0.25344095169613
+1	epithelial-enriched tumour	2	TMSB4X	0.2226246651447773
+1	epithelial-enriched tumour	3	FTL	0.21035800951165898
+1	epithelial-enriched tumour	4	A2M	0.19576630971660483
+1	epithelial-enriched tumour	5	CTSD	0.19028142041122467
+1	epithelial-enriched tumour	6	KDELR2	0.1873438557737449
+1	epithelial-enriched tumour	7	S100A10	0.17430065997867766
+1	epithelial-enriched tumour	8	MIF	0.1677903497982469
+1	epithelial-enriched tumour	9	CSTB	0.1658972239985636
+1	epithelial-enriched tumour	10	TIMP1	0.16390331260696525
+1	epithelial-enriched tumour	11	SELENOP	0.16069153285344517
+1	epithelial-enriched tumour	12	CST3	0.16012888337195963
+1	epithelial-enriched tumour	13	COL5A2	0.14388636192407994
+1	epithelial-enriched tumour	14	HLA-DRA	0.14350373399461053
+1	epithelial-enriched tumour	15	JUNB	0.14164089718072082
+1	epithelial-enriched tumour	16	FN1	0.1328205241151641
+1	epithelial-enriched tumour	17	CPE	0.12876318540831058
+1	epithelial-enriched tumour	18	HLA-E	0.12807539982711716
+1	epithelial-enriched tumour	19	FKBP1A	0.12635267939795788
+1	epithelial-enriched tumour	20	NUPR1	0.12167988915335648
+1	epithelial-enriched tumour	21	HIST1H4C	0.12066128981396071
+1	epithelial-enriched tumour	22	POSTN	0.11844136649955278
+1	epithelial-enriched tumour	23	ENO1	0.1147973827015606
+1	epithelial-enriched tumour	24	HTRA1	0.1097693575899854
+1	epithelial-enriched tumour	25	PHLDA1	0.10408631117043304
+1	epithelial-enriched tumour	26	CCN1	0.10357217225536074
+1	epithelial-enriched tumour	27	HLA-DPA1	0.10321492115198681
+1	epithelial-enriched tumour	28	NPC2	0.10117330282547675
+1	epithelial-enriched tumour	29	MMP2	0.10061296715642352
+1	epithelial-enriched tumour	30	TGFBI	0.10007744062086867
+2	myeloid-enriched lung parenchyma	1	HMOX1	0.8063515952000251
+2	myeloid-enriched lung parenchyma	2	NR4A1	0.3937834520808986
+2	myeloid-enriched lung parenchyma	3	CCL18	0.36425367264549185
+2	myeloid-enriched lung parenchyma	4	ATF3	0.3007058554609667
+2	myeloid-enriched lung parenchyma	5	PLAUR	0.29265243799659374
+2	myeloid-enriched lung parenchyma	6	RCAN1	0.2651975783243456
+2	myeloid-enriched lung parenchyma	7	FOSB	0.261284353979599
+2	myeloid-enriched lung parenchyma	8	SGK1	0.25125964171949583
+2	myeloid-enriched lung parenchyma	9	CCN1	0.25064413619672815
+2	myeloid-enriched lung parenchyma	10	CEBPD	0.23414269121643272
+2	myeloid-enriched lung parenchyma	11	SLC11A1	0.2180130791393535
+2	myeloid-enriched lung parenchyma	12	JUNB	0.21068692059828084
+2	myeloid-enriched lung parenchyma	13	EGR3	0.2048325962134523
+2	myeloid-enriched lung parenchyma	14	EGR1	0.20221187939108695
+2	myeloid-enriched lung parenchyma	15	GAS1	0.19877510729232922
+2	myeloid-enriched lung parenchyma	16	LAPTM5	0.19148174570908613
+2	myeloid-enriched lung parenchyma	17	CTSD	0.19125413819489834
+2	myeloid-enriched lung parenchyma	18	NAMPT	0.1900296403661201
+2	myeloid-enriched lung parenchyma	19	PPBP	0.17977373743568362
+2	myeloid-enriched lung parenchyma	20	SAT1	0.17817261443011848
+2	myeloid-enriched lung parenchyma	21	IFI30	0.17481521399595398
+2	myeloid-enriched lung parenchyma	22	SRGN	0.17328163564280333
+2	myeloid-enriched lung parenchyma	23	CXCL8	0.1719862645090303
+2	myeloid-enriched lung parenchyma	24	FOS	0.16793032225414
+2	myeloid-enriched lung parenchyma	25	OLR1	0.167088619847917
+2	myeloid-enriched lung parenchyma	26	LMO3	0.16612950249247413
+2	myeloid-enriched lung parenchyma	27	SOCS3	0.16013026804972116
+2	myeloid-enriched lung parenchyma	28	ITGAX	0.1588806297258952
+2	myeloid-enriched lung parenchyma	29	SFRP4	0.15393296647041774
+2	myeloid-enriched lung parenchyma	30	S100A9	0.1533329666111839
+3	peritumoural stroma (boundary)	1	DMP1	0.12522377766524787
+3	peritumoural stroma (boundary)	2	CHAD	0.11214911454903874
+3	peritumoural stroma (boundary)	3	COL11A2	0.09815001569589787
+3	peritumoural stroma (boundary)	4	COL2A1	0.0981072211677885
+3	peritumoural stroma (boundary)	5	COL9A1	0.07371826101537882
+3	peritumoural stroma (boundary)	6	CLEC3A	0.06796644081570974
+3	peritumoural stroma (boundary)	7	FGFBP2	0.05836974372774635
+3	peritumoural stroma (boundary)	8	S100A1	0.05722280424978823
+3	peritumoural stroma (boundary)	9	MEPE	0.05631344673713614
+3	peritumoural stroma (boundary)	10	MATN4	0.05598557868542288
+3	peritumoural stroma (boundary)	11	SCRG1	0.055736671962670126
+3	peritumoural stroma (boundary)	12	DUSP1	0.05411042359450099
+3	peritumoural stroma (boundary)	13	COL9A2	0.05250241218602791
+3	peritumoural stroma (boundary)	14	FOSB	0.04885876918493913
+3	peritumoural stroma (boundary)	15	SLC39A8	0.04773424147028525
+3	peritumoural stroma (boundary)	16	MIA	0.045965526105186096
+3	peritumoural stroma (boundary)	17	HLA-E	0.045661752458021336
+3	peritumoural stroma (boundary)	18	KLF6	0.04498198188818605
+3	peritumoural stroma (boundary)	19	PLXND1	0.044928113781181014
+3	peritumoural stroma (boundary)	20	NR4A1	0.04463441127253694
+3	peritumoural stroma (boundary)	21	SOST	0.043753715249068376
+3	peritumoural stroma (boundary)	22	ACTA2	0.04317889400589207
+3	peritumoural stroma (boundary)	23	ENG	0.04293260965136279
+3	peritumoural stroma (boundary)	24	B2M	0.041892623572419886
+3	peritumoural stroma (boundary)	25	PTH1R	0.04138328770169892
+3	peritumoural stroma (boundary)	26	RAI14	0.04108968798529702
+3	peritumoural stroma (boundary)	27	HLA-DRA	0.039914598434572304
+3	peritumoural stroma (boundary)	28	IGFBP7	0.03923816919811866
+3	peritumoural stroma (boundary)	29	LBH	0.0379695266727756
+3	peritumoural stroma (boundary)	30	WARS	0.03785956763905887
+4	vascular-enriched lung parenchyma	1	FOSB	0.4250004530892747
+4	vascular-enriched lung parenchyma	2	INMT	0.3913420313559412
+4	vascular-enriched lung parenchyma	3	GPX3	0.3775252421383733
+4	vascular-enriched lung parenchyma	4	EPAS1	0.36078676103909885
+4	vascular-enriched lung parenchyma	5	GPRC5A	0.35794241091725776
+4	vascular-enriched lung parenchyma	6	CXCL2	0.31692178316246794
+4	vascular-enriched lung parenchyma	7	RTKN2	0.3062502071416878
+4	vascular-enriched lung parenchyma	8	CLDN5	0.3054909747022226
+4	vascular-enriched lung parenchyma	9	VIPR1	0.2959037225096623
+4	vascular-enriched lung parenchyma	10	NR4A1	0.29514894854737744
+4	vascular-enriched lung parenchyma	11	CAV1	0.29277802552918175
+4	vascular-enriched lung parenchyma	12	PTPRB	0.29208144175185424
+4	vascular-enriched lung parenchyma	13	TGM2	0.2853812146512975
+4	vascular-enriched lung parenchyma	14	SLC34A2	0.28537683732377495
+4	vascular-enriched lung parenchyma	15	BTG2	0.28145869983865024
+4	vascular-enriched lung parenchyma	16	DEPP1	0.2772954485407015
+4	vascular-enriched lung parenchyma	17	RGCC	0.2734920404196725
+4	vascular-enriched lung parenchyma	18	VWF	0.27343804875521327
+4	vascular-enriched lung parenchyma	19	SFTA2	0.2725619958001501
+4	vascular-enriched lung parenchyma	20	FOS	0.2681955071742701
+4	vascular-enriched lung parenchyma	21	TSPAN13	0.2675536601471011
+4	vascular-enriched lung parenchyma	22	IGKC	0.2573544236697704
+4	vascular-enriched lung parenchyma	23	TCIM	0.25429276688943847
+4	vascular-enriched lung parenchyma	24	SOCS3	0.25358279719309607
+4	vascular-enriched lung parenchyma	25	TIMP3	0.25144675398215655
+4	vascular-enriched lung parenchyma	26	TNS1	0.24819762276132726
+4	vascular-enriched lung parenchyma	27	SFTA3	0.24778112181095907
+4	vascular-enriched lung parenchyma	28	EGR1	0.24226581284708526
+4	vascular-enriched lung parenchyma	29	ICAM1	0.24179673366250334
+4	vascular-enriched lung parenchyma	30	HLA-E	0.24085020405384386
+5	myeloid-enriched tumour	1	CXCL13	0.2965512074400788
+5	myeloid-enriched tumour	2	CCL5	0.2355821555473502
+5	myeloid-enriched tumour	3	MS4A6A	0.2088958677149396
+5	myeloid-enriched tumour	4	HLA-DPB1	0.20414624522699298
+5	myeloid-enriched tumour	5	C1QA	0.19642980769080653
+5	myeloid-enriched tumour	6	CXCL9	0.1914641519401934
+5	myeloid-enriched tumour	7	GBP5	0.18805286546983901
+5	myeloid-enriched tumour	8	LAPTM5	0.1869380504190765
+5	myeloid-enriched tumour	9	HLA-DMB	0.1827240645227026
+5	myeloid-enriched tumour	10	HLA-DRA	0.18141562571217046
+5	myeloid-enriched tumour	11	C1QB	0.1810158230168358
+5	myeloid-enriched tumour	12	HLA-DPA1	0.1802806554500333
+5	myeloid-enriched tumour	13	RASSF4	0.17587686864279997
+5	myeloid-enriched tumour	14	PTPRC	0.17427260470603528
+5	myeloid-enriched tumour	15	CD14	0.17328479646194112
+5	myeloid-enriched tumour	16	UBD	0.16861433217175567
+5	myeloid-enriched tumour	17	FPR3	0.1617303584701823
+5	myeloid-enriched tumour	18	TMEM176B	0.15935122689280243
+5	myeloid-enriched tumour	19	HLA-DQA1	0.15807700088185928
+5	myeloid-enriched tumour	20	CTSS	0.1573695588870653
+5	myeloid-enriched tumour	21	CYBB	0.1559591452125215
+5	myeloid-enriched tumour	22	CD163	0.1553157387690316
+5	myeloid-enriched tumour	23	EPSTI1	0.15394118221291486
+5	myeloid-enriched tumour	24	IFI30	0.15359593779710892
+5	myeloid-enriched tumour	25	CD53	0.146685246413457
+5	myeloid-enriched tumour	26	PLTP	0.14507611756698513
+5	myeloid-enriched tumour	27	SLCO2B1	0.14458318749959065
+5	myeloid-enriched tumour	28	CSF1R	0.14353339080118244
+5	myeloid-enriched tumour	29	STAB1	0.14319389222923673
+5	myeloid-enriched tumour	30	APOC1	0.14043212473110298
+6	osteoclast-enriched tumour	1	OLFML2B	0.09856685396224733
+6	osteoclast-enriched tumour	2	COL5A2	0.06155657570513468
+6	osteoclast-enriched tumour	3	AQP1	0.05020420623677117
+6	osteoclast-enriched tumour	4	MMP11	0.04907786329823827
+6	osteoclast-enriched tumour	5	FRAS1	0.04627244226516239
+6	osteoclast-enriched tumour	6	HTRA1	0.0449854780609409
+6	osteoclast-enriched tumour	7	KDELR2	0.0449135884122243
+6	osteoclast-enriched tumour	8	CLEC3B	0.04447534273541163
+6	osteoclast-enriched tumour	9	MMP13	0.04098314760459794
+6	osteoclast-enriched tumour	10	HIST1H2BH	0.04064463675022125
+6	osteoclast-enriched tumour	11	CRIM1	0.039751424587198665
+6	osteoclast-enriched tumour	12	TIMP1	0.037951263615063256
+6	osteoclast-enriched tumour	13	CAVIN2	0.036576823015061634
+6	osteoclast-enriched tumour	14	EYA1	0.03575384053919051
+6	osteoclast-enriched tumour	15	HIST1H4C	0.03555595897492908
+6	osteoclast-enriched tumour	16	THY1	0.03501860034844232
+6	osteoclast-enriched tumour	17	SELENOP	0.032893523413037494
+6	osteoclast-enriched tumour	18	PPP1R14A	0.032789032970155986
+6	osteoclast-enriched tumour	19	COL12A1	0.032448401500781376
+6	osteoclast-enriched tumour	20	TCF21	0.03138551902203333
+6	osteoclast-enriched tumour	21	TNXB	0.030366803596890164
+6	osteoclast-enriched tumour	22	TMSB4X	0.030318152135799803
+6	osteoclast-enriched tumour	23	CTSK	0.030136882563432058
+6	osteoclast-enriched tumour	24	CCN2	0.030110316673914592
+6	osteoclast-enriched tumour	25	FRMD6	0.030042455432906984
+6	osteoclast-enriched tumour	26	HIST2H2AB	0.029922002383640834
+6	osteoclast-enriched tumour	27	GOLM1	0.029745508746968376
+6	osteoclast-enriched tumour	28	SPARC	0.02941673348022122
+6	osteoclast-enriched tumour	29	HIST1H2AG	0.02887067492992159
+6	osteoclast-enriched tumour	30	KPNA2	0.02875585646531175
+7	fibroblast-enriched tumour	1	PANX3	0.13921895139551715
+7	fibroblast-enriched tumour	2	HILPDA	0.13332898468697493
+7	fibroblast-enriched tumour	3	ENO1	0.12122935933774968
+7	fibroblast-enriched tumour	4	TGFBI	0.11793189082793744
+7	fibroblast-enriched tumour	5	SOX9	0.11591088932286676
+7	fibroblast-enriched tumour	6	COL11A2	0.10887083057094643
+7	fibroblast-enriched tumour	7	PTH1R	0.10703591891064078
+7	fibroblast-enriched tumour	8	CPE	0.10375434564299062
+7	fibroblast-enriched tumour	9	VEGFA	0.10320419687260188
+7	fibroblast-enriched tumour	10	S100A1	0.1015846816665199
+7	fibroblast-enriched tumour	11	EGLN3	0.0946585585045317
+7	fibroblast-enriched tumour	12	ID1	0.09409911499266779
+7	fibroblast-enriched tumour	13	PTGES	0.08548833973563186
+7	fibroblast-enriched tumour	14	HAPLN1	0.08545328328539609
+7	fibroblast-enriched tumour	15	ANGPTL2	0.08316870989290646
+7	fibroblast-enriched tumour	16	MT1G	0.0821825339479928
+7	fibroblast-enriched tumour	17	IGHA1	0.08173616297993354
+7	fibroblast-enriched tumour	18	INSC	0.08171345274671889
+7	fibroblast-enriched tumour	19	PLOD2	0.08165677620509029
+7	fibroblast-enriched tumour	20	ACAN	0.08102519564505384
+7	fibroblast-enriched tumour	21	LOXL2	0.07881162972859607
+7	fibroblast-enriched tumour	22	IGKC	0.07832406142722312
+7	fibroblast-enriched tumour	23	LRRC15	0.0767047149011903
+7	fibroblast-enriched tumour	24	COL2A1	0.07592880580216205
+7	fibroblast-enriched tumour	25	SLC2A1	0.07588922204114461
+7	fibroblast-enriched tumour	26	ERO1A	0.07575302756094317
+7	fibroblast-enriched tumour	27	IFITM5	0.07532001131997906
+7	fibroblast-enriched tumour	28	MIF	0.07531964192455917
+7	fibroblast-enriched tumour	29	FGFR3	0.07309768292462843
+7	fibroblast-enriched tumour	30	CRISPLD1	0.07062968864661576

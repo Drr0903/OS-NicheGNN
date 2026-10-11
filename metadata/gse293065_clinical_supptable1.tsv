@@ -1,0 +1,27 @@
+sample	patient_id	age_band	sex	drugs_before_relapse	timepoint	timepoint_detail	time_from_diagnosis	metastasis	localization	sample_type	survival	pdx_established
+PT1	1	[15-19]	F	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+PT2	2	[10-14]	M	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+PT3	3	[15-19]	M	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+PT4	4	[15-19]	M	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+PT5	5	[10-14]	M	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+PT6	6	[10-14]	M	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+PT7	7	[10-14]	F	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+PT8	8	[10-14]	F	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+PT9	9	[20-24]	M	NA	primary	primary	NA	PT	bone	biopsy	deceased	
+MR1	1	[15-19]	F	MAP	relapse	relapse 1	M24	metastasis	lung	resection	deceased	
+MR2	2	[10-14]	M	MAP	relapse	relapse 1	M14	metastasis	lung	resection	deceased	
+MR3	3	[20-24]	M	MEIAP	relapse	relapse 1	M55	metastasis	lung	resection	deceased	Y
+MR4	4	[15-19]	M	MAP	relapse	relapse 1	M24	metastasis	lung	resection	deceased	
+LR5	5	[15-19]	M	AP-EI	relapse	relapse 2	M16	local/met relapse	ST intra-muscular	biopsy	deceased	Y
+MR10A	10	[20-24]	F	MEI	relapse	relapse 1	M18	metastasis	lung	resection	alive	
+MR10B	10	[20-24]	F	MEI-AP	relapse	relapse 2	M44	metastasis	lung	resection	alive	
+MR11A	11	[15-19]	F	MEI	relapse	relapse 1	M19	metastasis	lung	resection	alive	
+MR11B	11	[15-19]	F	MEI	relapse	relapse 1	M19	metastasis	lung	resection	alive	
+MR12	12	[10-14]	F	MEIAP	relapse	relapse 2	M14	metastasis	lung	resection	deceased	
+MR13	13	[15-19]	M	MEIAP-EI	relapse	relapse 2	M30	metastasis	lung	resection	deceased	Y
+MR14	14	[15-19]	F	API	relapse	relapse 1	M5	metastasis	Lymph node	biopsy	deceased	
+MR15	15	[15-19]	F	MEIAP	relapse	relapse 1	M18	metastasis	lung	resection	deceased	
+MR16	16	[20-24]	M	MEI-APT-Cy/mTORi	relapse	relapse 4	M11	metastasis	heart	resection	deceased	Y
+LR17	17	[15-19]	M	MEIAP-lenvatinib	relapse	relapse 2	M10	local/met relapse	ST	biopsy	alive	
+MR18	18	[20-24]	M	MEI	relapse	relapse 1	M54	metastasis	lung	resection	deceased	
+LR19	19	[15-19]	M	MEI-AP	relapse	relapse 1	M39	local relapse	ST periprosthetic	biopsy	deceased	

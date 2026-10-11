@@ -1,0 +1,13 @@
+outcome	covariates	n_segments	n_sections	n_clusters	coef	covariate_set
+E_seg	none	15	1	1		none
+E_seg	w_tumor_frac,w_fibro_frac,w_myeloid_frac	15	1	1		3type
+E_seg	w_Alveolar_macrophage,w_B_plasma,w_Endothelial,w_Fibroblast,w_Lung_epithelium,w_Mast,w_Myeloid,w_Osteoclast,w_Osteosarcoma,w_Pericyte_SMC,w_T_NK	15	1	1		full
+E_seg_noniche	none	15	1	1		none
+E_seg_noniche	w_tumor_frac,w_fibro_frac,w_myeloid_frac	15	1	1		3type
+E_seg_noniche	w_Alveolar_macrophage,w_B_plasma,w_Endothelial,w_Fibroblast,w_Lung_epithelium,w_Mast,w_Myeloid,w_Osteoclast,w_Osteosarcoma,w_Pericyte_SMC,w_T_NK	15	1	1		full
+E_seg_noniche_min5	none	15	1	1		none
+E_seg_noniche_min5	w_tumor_frac,w_fibro_frac,w_myeloid_frac	15	1	1		3type
+E_seg_noniche_min5	w_Alveolar_macrophage,w_B_plasma,w_Endothelial,w_Fibroblast,w_Lung_epithelium,w_Mast,w_Myeloid,w_Osteoclast,w_Osteosarcoma,w_Pericyte_SMC,w_T_NK	15	1	1		full
+E_seg_distal	none	15	1	1		none
+E_seg_distal	w_tumor_frac,w_fibro_frac,w_myeloid_frac	15	1	1		3type
+E_seg_distal	w_Alveolar_macrophage,w_B_plasma,w_Endothelial,w_Fibroblast,w_Lung_epithelium,w_Mast,w_Myeloid,w_Osteoclast,w_Osteosarcoma,w_Pericyte_SMC,w_T_NK	15	1	1		full

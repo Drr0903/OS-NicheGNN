@@ -1,0 +1,343 @@
+{
+  "stage": "04_histology",
+  "finished_utc": "2026-09-15T05:54:22Z",
+  "elapsed_s": 107.8,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "05f309b0eb61b558fda90be999caba6bb93ac018dfecaec17850cf2634cbfd7a",
+  "git_commit": "e567e9e33d10ce1fcea583c9046293e228f87372",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/qc/LR17.h5ad": {
+      "md5": "aa2c02145028a7fda7d26836fd55026b",
+      "bytes": 127681435
+    },
+    "data/processed/qc/LR19.h5ad": {
+      "md5": "e4f1e2a8228821530b783e4df1673ce6",
+      "bytes": 80830562
+    },
+    "data/processed/qc/LR5.h5ad": {
+      "md5": "d91042ca837f629bcabd5080d48039e5",
+      "bytes": 50498761
+    },
+    "data/processed/qc/MR1.h5ad": {
+      "md5": "cd474ae39c8cd4367b55567128f94f97",
+      "bytes": 482475378
+    },
+    "data/processed/qc/MR10A.h5ad": {
+      "md5": "c7dc7098eebe03f4d49c8c6e05b99f31",
+      "bytes": 395002065
+    },
+    "data/processed/qc/MR10B.h5ad": {
+      "md5": "061d059ca211411bd7c3846cc0b5604b",
+      "bytes": 126291278
+    },
+    "data/processed/qc/MR11A.h5ad": {
+      "md5": "196e8b20bf6db8de06cfc15a7ef22867",
+      "bytes": 92032906
+    },
+    "data/processed/qc/MR11B.h5ad": {
+      "md5": "e69271f7e05297e02f84ac30b2aa9bda",
+      "bytes": 447942300
+    },
+    "data/processed/qc/MR12.h5ad": {
+      "md5": "03e3d3517ae646b3f1f845c76d579c51",
+      "bytes": 83109369
+    },
+    "data/processed/qc/MR13.h5ad": {
+      "md5": "f0599e19019b81619b97695fef1396c6",
+      "bytes": 258781812
+    },
+    "data/processed/qc/MR14.h5ad": {
+      "md5": "87acf01b5c72122d412aecbb6bf8baaf",
+      "bytes": 27950142
+    },
+    "data/processed/qc/MR15.h5ad": {
+      "md5": "94179c1f6358022bf537e53dc00f4550",
+      "bytes": 202661516
+    },
+    "data/processed/qc/MR16.h5ad": {
+      "md5": "5c552c7d5f0909c1f7ceae25524bf343",
+      "bytes": 243585233
+    },
+    "data/processed/qc/MR18.h5ad": {
+      "md5": "a0742bf8ebf97cd5e0d1d46698f64ad3",
+      "bytes": 88363434
+    },
+    "data/processed/qc/MR2.h5ad": {
+      "md5": "0af6ee9c302657bf7ee683988e81be10",
+      "bytes": 186259333
+    },
+    "data/processed/qc/MR3.h5ad": {
+      "md5": "a8b2c6dd41f6c001de86f5b2dc48599b",
+      "bytes": 163915657
+    },
+    "data/processed/qc/MR4.h5ad": {
+      "md5": "0c3135cba8dcee6e444054cf28f298e1",
+      "bytes": 213803067
+    },
+    "data/processed/qc/OS1.h5ad": {
+      "md5": "d67ec81433039174016c25a106e0110b",
+      "bytes": 776486022
+    },
+    "data/processed/qc/OS2.h5ad": {
+      "md5": "5f416cddd3645d2989a17b5124b0a838",
+      "bytes": 562925426
+    },
+    "data/processed/qc/OS3.h5ad": {
+      "md5": "be3afc97b33706b3e742739269e68462",
+      "bytes": 832731158
+    },
+    "data/processed/qc/OS4.h5ad": {
+      "md5": "503cf65a1fa671c23f2018e5ff1bcc48",
+      "bytes": 284155478
+    },
+    "data/processed/qc/OS5.h5ad": {
+      "md5": "88917c55fd0f17513b6f611c9207ff2f",
+      "bytes": 424000521
+    },
+    "data/processed/qc/OS6.h5ad": {
+      "md5": "a9eb4229d4f0e2774c73beb38e5f74e7",
+      "bytes": 903664378
+    },
+    "data/processed/qc/OS7.h5ad": {
+      "md5": "6ee8c7eae47b763a759ae10904b93fe6",
+      "bytes": 1781242620
+    },
+    "data/processed/qc/OS8.h5ad": {
+      "md5": "cd56f64f21fb7b225d82f3e090af6b37",
+      "bytes": 919163716
+    },
+    "data/processed/qc/OS9.h5ad": {
+      "md5": "6057ac9c8c0d34439224df1047106652",
+      "bytes": 665225808
+    },
+    "data/processed/qc/PT1.h5ad": {
+      "md5": "2a2b645272fb3d3717186cd26486f6f4",
+      "bytes": 19345069
+    },
+    "data/processed/qc/PT2.h5ad": {
+      "md5": "78aa5393d1c4dd84ce38614c534894d5",
+      "bytes": 57795385
+    },
+    "data/processed/qc/PT3.h5ad": {
+      "md5": "262c14adcd88700b7681f444611f4373",
+      "bytes": 68219542
+    },
+    "data/processed/qc/PT4.h5ad": {
+      "md5": "274e009d1db50cb122ce6033b02585d5",
+      "bytes": 70820577
+    },
+    "data/processed/qc/PT5.h5ad": {
+      "md5": "554d058ba3003ce1b9c90920d4348b3d",
+      "bytes": 211342159
+    },
+    "data/processed/qc/PT6.h5ad": {
+      "md5": "a6e4767be41678fbe8f623270081dfc6",
+      "bytes": 75140781
+    },
+    "data/processed/qc/PT7.h5ad": {
+      "md5": "1340679146f2f49d312a3dc613352ed4",
+      "bytes": 48325537
+    },
+    "data/processed/qc/PT8.h5ad": {
+      "md5": "4059a827f3aca3a63c969df60a9546c0",
+      "bytes": 227547311
+    },
+    "data/processed/qc/PT9.h5ad": {
+      "md5": "c6c03f68836dccd48382df8c68da9970",
+      "bytes": 89546597
+    }
+  },
+  "outputs": {
+    "data/processed/histology/LR17_labels.tsv": {
+      "md5": "730ce1339ff7aada2c543f30fe764424",
+      "bytes": 297571
+    },
+    "data/processed/histology/LR19_labels.tsv": {
+      "md5": "659f1e30ec11d81d6c03fd8200374d3d",
+      "bytes": 139167
+    },
+    "data/processed/histology/LR5_labels.tsv": {
+      "md5": "1ccaf91507c1e7672fe267375705cc1b",
+      "bytes": 151645
+    },
+    "data/processed/histology/MR1_labels.tsv": {
+      "md5": "4249efcbb21be89b3cf11229c4965130",
+      "bytes": 923314
+    },
+    "data/processed/histology/MR10A_labels.tsv": {
+      "md5": "d32da9ea46832ebb95df301680f14306",
+      "bytes": 704796
+    },
+    "data/processed/histology/MR10B_labels.tsv": {
+      "md5": "ee3d10aed9addf64ca1ba300f3c7f7a1",
+      "bytes": 577186
+    },
+    "data/processed/histology/MR11A_labels.tsv": {
+      "md5": "5c90d2b6eafcad78523b62769f1d5351",
+      "bytes": 1077097
+    },
+    "data/processed/histology/MR11B_labels.tsv": {
+      "md5": "a82ba805f6518bf0d0cd1b0287bd77f7",
+      "bytes": 1017838
+    },
+    "data/processed/histology/MR12_labels.tsv": {
+      "md5": "aaf6682963a5ec0549f5029de796d00c",
+      "bytes": 165755
+    },
+    "data/processed/histology/MR13_labels.tsv": {
+      "md5": "ea6e12fedb481287bd7168fe5462b89b",
+      "bytes": 693581
+    },
+    "data/processed/histology/MR14_labels.tsv": {
+      "md5": "116573da7b42d15331cb26ad6b1147fa",
+      "bytes": 268170
+    },
+    "data/processed/histology/MR15_labels.tsv": {
+      "md5": "6552a296fa417cc5ee06dd2e629157f6",
+      "bytes": 555793
+    },
+    "data/processed/histology/MR16_labels.tsv": {
+      "md5": "0879c03bf5857b6a0fcc2ea58124f6e5",
+      "bytes": 790896
+    },
+    "data/processed/histology/MR18_labels.tsv": {
+      "md5": "c6158da9b585cbbd3769665c94b0b44f",
+      "bytes": 732831
+    },
+    "data/processed/histology/MR2_labels.tsv": {
+      "md5": "baff3b0f26360d0d7e073fc61b645ded",
+      "bytes": 816221
+    },
+    "data/processed/histology/MR3_labels.tsv": {
+      "md5": "8760d13b046c2abb312f88b0a85ee833",
+      "bytes": 754438
+    },
+    "data/processed/histology/MR4_labels.tsv": {
+      "md5": "49283adcb951e2bd929f26b0085afe6c",
+      "bytes": 866690
+    },
+    "data/processed/histology/PT1_labels.tsv": {
+      "md5": "3cc7b82ced442d6b520e79ee18578159",
+      "bytes": 196233
+    },
+    "data/processed/histology/PT2_labels.tsv": {
+      "md5": "345667e7c0d5e9c85718a383223a72b6",
+      "bytes": 171973
+    },
+    "data/processed/histology/PT3_labels.tsv": {
+      "md5": "67d062fe085315840150963cfdcd1934",
+      "bytes": 283322
+    },
+    "data/processed/histology/PT4_labels.tsv": {
+      "md5": "4ec936a2ec5146d7622b6cd03ccaa11a",
+      "bytes": 202513
+    },
+    "data/processed/histology/PT5_labels.tsv": {
+      "md5": "23ad94de48bdcf28052d74cec86f27f4",
+      "bytes": 438841
+    },
+    "data/processed/histology/PT6_labels.tsv": {
+      "md5": "e51504910f58baea9c14f2f2dce19538",
+      "bytes": 113437
+    },
+    "data/processed/histology/PT7_labels.tsv": {
+      "md5": "96048cabf222b2d819450453e10bcd2d",
+      "bytes": 182410
+    },
+    "data/processed/histology/PT8_labels.tsv": {
+      "md5": "109a8385c5531a89dd15541c85286748",
+      "bytes": 516954
+    },
+    "data/processed/histology/PT9_labels.tsv": {
+      "md5": "20150e8cb477c9fb06e7214397e9be12",
+      "bytes": 212428
+    },
+    "data/processed/histology/OS1_labels.tsv": {
+      "md5": "ce1bb719f898b5352107eb070ca2cc58",
+      "bytes": 1541654
+    },
+    "data/processed/histology/OS2_labels.tsv": {
+      "md5": "5ecdcaa3ff6adb9213419721909f1c64",
+      "bytes": 1117213
+    },
+    "data/processed/histology/OS3_labels.tsv": {
+      "md5": "e9ecc8020562402cf421a84052325c52",
+      "bytes": 2517798
+    },
+    "data/processed/histology/OS4_labels.tsv": {
+      "md5": "90206ff06b2b2eba40200d3ee79c599b",
+      "bytes": 1899300
+    },
+    "data/processed/histology/OS5_labels.tsv": {
+      "md5": "269bc90174b4522893a30e579a5807c4",
+      "bytes": 1607923
+    },
+    "data/processed/histology/OS6_labels.tsv": {
+      "md5": "20be32544acf092ddcc1ed90072fdc36",
+      "bytes": 2845130
+    },
+    "data/processed/histology/OS7_labels.tsv": {
+      "md5": "88f4127e4478900d16951e817aff6e6c",
+      "bytes": 2515759
+    },
+    "data/processed/histology/OS8_labels.tsv": {
+      "md5": "25c81c263f0e4879ed144b66ae7de18f",
+      "bytes": 1263713
+    },
+    "data/processed/histology/OS9_labels.tsv": {
+      "md5": "907f1e56c41a129d639489269b14bb45",
+      "bytes": 2101480
+    },
+    "results/04_histology/section_label_summary.tsv": {
+      "md5": "b5d5a919754ce9dba06fe00635dd545c",
+      "bytes": 1458
+    },
+    "results/01_manifest/sample_manifest.tsv": {
+      "md5": "26ce0ae8d8dfa333b8204c98d1978fa2",
+      "bytes": 9214
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "base",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "eligible_sections": [
+      "LR17",
+      "MR10A",
+      "MR10B",
+      "MR11A",
+      "MR11B",
+      "MR12",
+      "MR13",
+      "MR15",
+      "MR16",
+      "MR18",
+      "MR2",
+      "MR3",
+      "MR4",
+      "PT3",
+      "OS1",
+      "OS2",
+      "OS3",
+      "OS4",
+      "OS5",
+      "OS6",
+      "OS7"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+perturbation	niche	fraction_changed	name
+H&E morphology removed	0	0.11047619047619048	lymphoid-enriched lung parenchyma
+H&E morphology removed	1	0.13195971755990277	epithelial-enriched tumour
+H&E morphology removed	2	0.9386281588447654	myeloid-enriched lung parenchyma
+H&E morphology removed	3	0.8411764705882353	peritumoural stroma (boundary)
+H&E morphology removed	4	0.13952408589669182	vascular-enriched lung parenchyma
+H&E morphology removed	5	0.2033548387096774	myeloid-enriched tumour
+H&E morphology removed	6	0.35856879606879605	osteoclast-enriched tumour
+H&E morphology removed	7	0.2041173893999124	fibroblast-enriched tumour
+attention context removed	0	0.4095238095238095	lymphoid-enriched lung parenchyma
+attention context removed	1	0.017478874869776593	epithelial-enriched tumour
+attention context removed	2	0.03369434416365824	myeloid-enriched lung parenchyma
+attention context removed	3	0.016666666666666666	peritumoural stroma (boundary)
+attention context removed	4	0.029947765525246663	vascular-enriched lung parenchyma
+attention context removed	5	0.02890322580645161	myeloid-enriched tumour
+attention context removed	6	0.013283169533169534	osteoclast-enriched tumour
+attention context removed	7	0.0078113593225288365	fibroblast-enriched tumour
+expression removed	0	0.9676190476190476	lymphoid-enriched lung parenchyma
+expression removed	1	0.6604931126287765	epithelial-enriched tumour
+expression removed	2	0.0842358604091456	myeloid-enriched lung parenchyma
+expression removed	3	0.1803921568627451	peritumoural stroma (boundary)
+expression removed	4	0.7107370864770749	vascular-enriched lung parenchyma
+expression removed	5	0.5058064516129033	myeloid-enriched tumour
+expression removed	6	0.15325552825552827	osteoclast-enriched tumour
+expression removed	7	0.22952255803766974	fibroblast-enriched tumour
+neighbourhood skip removed	0	0.5904761904761905	lymphoid-enriched lung parenchyma
+neighbourhood skip removed	1	0.9542771154068758	epithelial-enriched tumour
+neighbourhood skip removed	2	0.9927797833935018	myeloid-enriched lung parenchyma
+neighbourhood skip removed	3	0.9529411764705882	peritumoural stroma (boundary)
+neighbourhood skip removed	4	0.9871154962275102	vascular-enriched lung parenchyma
+neighbourhood skip removed	5	0.9303225806451613	myeloid-enriched tumour
+neighbourhood skip removed	6	0.7793304668304668	osteoclast-enriched tumour
+neighbourhood skip removed	7	0.4548839246605344	fibroblast-enriched tumour
+neighbours rewired	0	0.7390476190476191	lymphoid-enriched lung parenchyma
+neighbours rewired	1	0.1348535710151638	epithelial-enriched tumour
+neighbours rewired	2	0.38267148014440433	myeloid-enriched lung parenchyma
+neighbours rewired	3	0.3637254901960784	peritumoural stroma (boundary)
+neighbours rewired	4	0.25200232153221125	vascular-enriched lung parenchyma
+neighbours rewired	5	0.38864516129032256	myeloid-enriched tumour
+neighbours rewired	6	0.16761363636363635	osteoclast-enriched tumour
+neighbours rewired	7	0.10892101036647686	fibroblast-enriched tumour

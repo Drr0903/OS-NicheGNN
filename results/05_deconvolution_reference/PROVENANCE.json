@@ -1,0 +1,63 @@
+{
+  "stage": "05_deconvolution_reference",
+  "finished_utc": "2026-09-14T14:54:41Z",
+  "elapsed_s": 101.7,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "95f6fe547327af6b1e208a52893f1b6e64f8ab64652d359c4ab61ce2f363ff67",
+  "git_commit": "286abdaf9c5f7332223d42f5c0ecd04e6492f36c",
+  "git_dirty": true,
+  "inputs": {
+    "data/raw/GSE162454/extracted": {
+      "dir": true,
+      "n_files": 18
+    },
+    "data/raw/HLCA/hlca_core.h5ad": {
+      "md5": "3d9352bec0733c42ef0ad53b125faba8",
+      "bytes": 5873612847
+    }
+  },
+  "outputs": {
+    "data/processed/reference/reference.h5ad": {
+      "md5": "fcf4ab951bc08e63bfa65723903e2feb",
+      "bytes": 307949881
+    },
+    "results/05_deconvolution/reference_composition.tsv": {
+      "md5": "390713c796a51f55c233d606a2156db3",
+      "bytes": 335
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "n_cells": 19587,
+    "n_genes": 19605,
+    "types": {
+      "Alveolar_macrophage": 2000,
+      "B_plasma": 710,
+      "Endothelial": 2000,
+      "Fibroblast": 2000,
+      "Lung_epithelium": 2000,
+      "Mast": 877,
+      "Myeloid": 2000,
+      "Osteoclast": 2000,
+      "Osteosarcoma": 2000,
+      "Pericyte_SMC": 2000,
+      "T_NK": 2000
+    }
+  }
+}

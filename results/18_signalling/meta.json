@@ -1,0 +1,7 @@
+{
+  "plan": "v2",
+  "amendment": "A15",
+  "n_pathways": 14,
+  "n_regulons": 446,
+  "t_cell_genes_removed": 44
+}

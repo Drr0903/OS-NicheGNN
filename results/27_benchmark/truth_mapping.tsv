@@ -1,0 +1,59 @@
+cohort	raw_label	truth	n_spots
+breast	DCIS	DCIS	285
+breast	Invasive cancer + stroma + lymphocytes	invasive cancer	8067
+breast	Invasive cancer + stroma	invasive cancer	2072
+breast	Invasive cancer + lymphocytes	invasive cancer	676
+breast	Invasive cancer	invasive cancer	411
+breast	Cancer trapped in lymphocyte aggregation	invasive cancer	9
+breast	Invasive cancer + adipose tissue + lymphocytes	invasive cancer	3
+breast	Lymphocytes	lymphocytes / TLS	350
+breast	TLS	lymphocytes / TLS	10
+breast	Necrosis	necrosis	562
+breast	Normal glands + lymphocytes	normal glands / ducts	267
+breast	Normal + stroma + lymphocytes	normal glands / ducts	239
+breast	Normal duct	normal glands / ducts	3
+breast	Stroma	stroma / adipose	2029
+breast	Stroma + adipose tissue	stroma / adipose	104
+breast	Adipose tissue	stroma / adipose	84
+breast	Artefact	unscored	198
+breast	Uncertain	unscored	73
+breast	nan	unscored	10
+crc	epithelium&submucosa	normal mucosa	1803
+crc	non neo epithelium	normal mucosa	882
+crc	epithelium&lam propria	normal mucosa	231
+crc	lamina propria	normal mucosa	205
+crc	glandular tissue	normal mucosa	61
+crc	epitehlium&submucosa	normal mucosa	57
+crc	squamous epithelium	normal mucosa	26
+crc	stroma_fibroblastic_IC high	stroma	2984
+crc	stroma_fibroblastic_IC med	stroma	1380
+crc	stroma_fibroblastic_IC_high	stroma	224
+crc	stroma_desmoplastic_IC low	stroma	149
+crc	stroma_desmoplastic_IC med to high	stroma	127
+crc	stroma_fibroblastic_IC_med	stroma	109
+crc	stroma_fibroblastic_IC low	stroma	102
+crc	stroma desmoplastic_IC low	stroma	61
+crc	stroma desmoplastic_IC med to high	stroma	34
+crc	tumor	tumour	4019
+crc	tumor&stroma_IC med to high	tumour & stroma	2782
+crc	tumor&stroma	tumour & stroma	649
+crc	tumor&stroma IC med to high	tumour & stroma	204
+crc	tumor&stroma_IC low	tumour & stroma	71
+crc	exclude	unscored	1229
+crc	nan	unscored	8
+crc	connective tissue_2_fibroblastic_IC low	wall / connective tissue	799
+crc	connective tissue_3_fibroblastic_IC med	wall / connective tissue	755
+crc	submucosa	wall / connective tissue	457
+crc	connective tissue_1_edema	wall / connective tissue	452
+crc	connective tissue_4_muscularis_IC low	wall / connective tissue	193
+crc	connective tissue_6_hemosiderin?	wall / connective tissue	109
+crc	muscularis_IC med to high	wall / connective tissue	85
+crc	IC aggregate_submucosa	wall / connective tissue	82
+crc	IC aggreagate_connective tissue	wall / connective tissue	66
+crc	IC aggregate connective tissue	wall / connective tissue	43
+crc	IC aggregregate_submucosa	wall / connective tissue	28
+crc	IC aggregate_stroma or muscularis	wall / connective tissue	22
+crc	IC aggregate submucosa	wall / connective tissue	15
+crc	IC aggregate_muscularis or stroma	wall / connective tissue	10
+crc	IC aggragate_stroma or muscularis	wall / connective tissue	7
+crc	IC aggreates_stroma or muscularis	wall / connective tissue	1

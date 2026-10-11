@@ -1,0 +1,59 @@
+dataset	raw_label	coarse	n_spots
+breast	Invasive cancer + stroma + lymphocytes	tumour	8067
+breast	Invasive cancer + stroma	tumour	2072
+breast	Stroma	stroma_immune	2029
+breast	Invasive cancer + lymphocytes	tumour	676
+breast	Necrosis	other	562
+breast	Invasive cancer	tumour	411
+breast	Lymphocytes	stroma_immune	350
+breast	DCIS	tumour	285
+breast	Normal glands + lymphocytes	normal	267
+breast	Normal + stroma + lymphocytes	normal	239
+breast	Artefact	other	198
+breast	Stroma + adipose tissue	stroma_immune	104
+breast	Adipose tissue	stroma_immune	84
+breast	Uncertain	other	73
+breast		other	10
+breast	TLS	stroma_immune	10
+breast	Cancer trapped in lymphocyte aggregation	tumour	9
+breast	Invasive cancer + adipose tissue + lymphocytes	tumour	3
+breast	Normal duct	normal	3
+crc	tumor	tumour	4019
+crc	stroma_fibroblastic_IC high	stroma_immune	2984
+crc	tumor&stroma_IC med to high	tumour	2782
+crc	epithelium&submucosa	normal	1803
+crc	stroma_fibroblastic_IC med	stroma_immune	1380
+crc	exclude	other	1229
+crc	non neo epithelium	normal	882
+crc	connective tissue_2_fibroblastic_IC low	stroma_immune	799
+crc	connective tissue_3_fibroblastic_IC med	stroma_immune	755
+crc	tumor&stroma	tumour	649
+crc	submucosa	normal	457
+crc	connective tissue_1_edema	stroma_immune	452
+crc	epithelium&lam propria	normal	231
+crc	stroma_fibroblastic_IC_high	stroma_immune	224
+crc	lamina propria	normal	205
+crc	tumor&stroma IC med to high	tumour	204
+crc	connective tissue_4_muscularis_IC low	stroma_immune	193
+crc	stroma_desmoplastic_IC low	stroma_immune	149
+crc	stroma_desmoplastic_IC med to high	stroma_immune	127
+crc	connective tissue_6_hemosiderin?	stroma_immune	109
+crc	stroma_fibroblastic_IC_med	stroma_immune	109
+crc	stroma_fibroblastic_IC low	stroma_immune	102
+crc	muscularis_IC med to high	normal	85
+crc	IC aggregate_submucosa	stroma_immune	82
+crc	tumor&stroma_IC low	tumour	71
+crc	IC aggreagate_connective tissue	stroma_immune	66
+crc	stroma desmoplastic_IC low	stroma_immune	61
+crc	glandular tissue	normal	61
+crc	epitehlium&submucosa	normal	57
+crc	IC aggregate connective tissue	stroma_immune	43
+crc	stroma desmoplastic_IC med to high	stroma_immune	34
+crc	IC aggregregate_submucosa	stroma_immune	28
+crc	squamous epithelium	normal	26
+crc	IC aggregate_stroma or muscularis	stroma_immune	22
+crc	IC aggregate submucosa	stroma_immune	15
+crc	IC aggregate_muscularis or stroma	stroma_immune	10
+crc	nan	other	8
+crc	IC aggragate_stroma or muscularis	stroma_immune	7
+crc	IC aggreates_stroma or muscularis	stroma_immune	1

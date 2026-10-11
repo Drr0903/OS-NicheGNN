@@ -1,0 +1,159 @@
+{
+  "_origin": "layout specification for the Figure 1 framework panel, derived from the manuscript text and rendered by scripts/figures/v2_Fig1_schematic.py",
+  "stages": [
+    {
+      "id": "s1",
+      "title": "Public Visium cohort",
+      "x": 0.01,
+      "w": 0.13,
+      "y": 0.02,
+      "h": 0.89,
+      "fill": "cohort",
+      "glyph": "tissue_sections",
+      "glyph_frac": 0.52,
+      "items_y": 0.145,
+      "items": [
+        "26 sections, 19 patients",
+        "five anatomical sites"
+      ],
+      "badge": 1
+    },
+    {
+      "id": "s2",
+      "title": "Spot neighbourhoods",
+      "x": 0.162,
+      "w": 0.13,
+      "y": 0.02,
+      "h": 0.89,
+      "fill": "spatial",
+      "glyph": "dual_ring",
+      "glyph_frac": 0.48,
+      "items_y": 0.07,
+      "items": [],
+      "badge": 2
+    },
+    {
+      "id": "s3",
+      "title": "Multimodal attention encoder",
+      "x": 0.314,
+      "w": 0.15,
+      "y": 0.02,
+      "h": 0.89,
+      "fill": "encoder",
+      "glyph": "encoder",
+      "glyph_frac": 0.5,
+      "items_y": 0.2,
+      "items": [
+        "40 % of spots masked"
+      ],
+      "badge": 3
+    },
+    {
+      "id": "s4",
+      "title": "Spot and surroundings",
+      "x": 0.486,
+      "w": 0.17,
+      "y": 0.02,
+      "h": 0.89,
+      "fill": "training",
+      "glyph": "niche_targets",
+      "glyph_frac": 0.47,
+      "items_y": 0.2,
+      "items": [
+        "reconstruct masked spots",
+        "and their neighbourhood"
+      ],
+      "badge": 4
+    },
+    {
+      "id": "s5",
+      "title": "Consensus niches",
+      "x": 0.678,
+      "w": 0.13,
+      "y": 0.02,
+      "h": 0.89,
+      "fill": "proto",
+      "glyph": "prototypes",
+      "glyph_frac": 0.52,
+      "items_y": 0.2,
+      "items": [
+        "30 PCs + Harmony",
+        "Leiden, K = 8"
+      ],
+      "badge": 5
+    },
+    {
+      "id": "aim1",
+      "title": "Aim 1 · niche atlas",
+      "x": 0.836,
+      "w": 0.155,
+      "y": 0.495,
+      "h": 0.415,
+      "fill": "atlas",
+      "glyph": "atlas_map",
+      "glyph_frac": 0.44,
+      "items_y": 0.105,
+      "items": [
+        "shared vs site-specific",
+        "reuse on new patients"
+      ],
+      "badge": 6,
+      "items_dy": 0.055
+    },
+    {
+      "id": "aim2",
+      "title": "Aim 2 · remodelling",
+      "x": 0.836,
+      "w": 0.155,
+      "y": 0.02,
+      "h": 0.415,
+      "fill": "remod",
+      "glyph": "paired_arrows",
+      "glyph_frac": 0.4,
+      "items_y": 0.105,
+      "items": [
+        "four matched pairs",
+        "site and time contrasts"
+      ],
+      "badge": null,
+      "items_dy": 0.055
+    }
+  ],
+  "arrows": [
+    {
+      "from": "s1",
+      "to": "s2",
+      "label": ""
+    },
+    {
+      "from": "s2",
+      "to": "s3",
+      "label": ""
+    },
+    {
+      "from": "s3",
+      "to": "s4",
+      "label": ""
+    },
+    {
+      "from": "s4",
+      "to": "s5",
+      "label": ""
+    },
+    {
+      "from": "s5",
+      "to": "aim1",
+      "label": ""
+    },
+    {
+      "from": "s5",
+      "to": "aim2",
+      "label": ""
+    }
+  ],
+  "notes": [
+    "one graph per section; coordinates, patient identity and region labels are never node features",
+    "patient is the statistical unit; validation is leave-one-patient-out over the 19 patients and two pathologist-annotated cohorts"
+  ],
+  "_badges": "stages carry the numbers 1-6; the two aim boxes share badge 6"
+}

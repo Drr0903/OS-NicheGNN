@@ -1,0 +1,193 @@
+{
+  "stage": "04b_panel_exports",
+  "finished_utc": "2026-09-26T07:34:08Z",
+  "elapsed_s": 9.5,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "4abd887a16e42c1af8e99699c217bb2815c4a970990e0e42fa1798a1c25cbc50",
+  "git_commit": "be44bca6884d2da24aa69c695159d123e5ca1a69",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/qc/MR11B.h5ad": {
+      "md5": "e69271f7e05297e02f84ac30b2aa9bda",
+      "bytes": 447942300
+    },
+    "data/processed/qc_images/MR11B_hires.png": {
+      "md5": "fbb19de0477ae727e1d98e19b7e42f19",
+      "bytes": 14162763
+    },
+    "data/processed/qc/PT2.h5ad": {
+      "md5": "78aa5393d1c4dd84ce38614c534894d5",
+      "bytes": 57795385
+    },
+    "data/processed/qc_images/PT2_hires.png": {
+      "md5": "1b303bf203469d328f20f9f1340bc9cd",
+      "bytes": 2971605
+    },
+    "data/processed/qc/LR17.h5ad": {
+      "md5": "aa2c02145028a7fda7d26836fd55026b",
+      "bytes": 127681435
+    },
+    "data/processed/qc_images/LR17_hires.png": {
+      "md5": "5b3adc22a0655dfb5b76074755a2eef7",
+      "bytes": 3144957
+    },
+    "data/processed/histology/PT1_labels.tsv": {
+      "md5": "3cc7b82ced442d6b520e79ee18578159",
+      "bytes": 196233
+    },
+    "data/processed/histology/PT2_labels.tsv": {
+      "md5": "345667e7c0d5e9c85718a383223a72b6",
+      "bytes": 171973
+    },
+    "data/processed/histology/PT3_labels.tsv": {
+      "md5": "67d062fe085315840150963cfdcd1934",
+      "bytes": 283322
+    },
+    "data/processed/histology/PT4_labels.tsv": {
+      "md5": "4ec936a2ec5146d7622b6cd03ccaa11a",
+      "bytes": 202513
+    },
+    "data/processed/histology/PT5_labels.tsv": {
+      "md5": "23ad94de48bdcf28052d74cec86f27f4",
+      "bytes": 438841
+    },
+    "data/processed/histology/PT6_labels.tsv": {
+      "md5": "e51504910f58baea9c14f2f2dce19538",
+      "bytes": 113437
+    },
+    "data/processed/histology/PT7_labels.tsv": {
+      "md5": "96048cabf222b2d819450453e10bcd2d",
+      "bytes": 182410
+    },
+    "data/processed/histology/PT8_labels.tsv": {
+      "md5": "109a8385c5531a89dd15541c85286748",
+      "bytes": 516954
+    },
+    "data/processed/histology/PT9_labels.tsv": {
+      "md5": "20150e8cb477c9fb06e7214397e9be12",
+      "bytes": 212428
+    },
+    "data/processed/histology/MR1_labels.tsv": {
+      "md5": "4249efcbb21be89b3cf11229c4965130",
+      "bytes": 923314
+    },
+    "data/processed/histology/MR2_labels.tsv": {
+      "md5": "baff3b0f26360d0d7e073fc61b645ded",
+      "bytes": 816221
+    },
+    "data/processed/histology/MR3_labels.tsv": {
+      "md5": "8760d13b046c2abb312f88b0a85ee833",
+      "bytes": 754438
+    },
+    "data/processed/histology/MR4_labels.tsv": {
+      "md5": "49283adcb951e2bd929f26b0085afe6c",
+      "bytes": 866690
+    },
+    "data/processed/histology/LR5_labels.tsv": {
+      "md5": "1ccaf91507c1e7672fe267375705cc1b",
+      "bytes": 151645
+    },
+    "data/processed/histology/MR10A_labels.tsv": {
+      "md5": "d32da9ea46832ebb95df301680f14306",
+      "bytes": 704796
+    },
+    "data/processed/histology/MR10B_labels.tsv": {
+      "md5": "ee3d10aed9addf64ca1ba300f3c7f7a1",
+      "bytes": 577186
+    },
+    "data/processed/histology/MR11A_labels.tsv": {
+      "md5": "5c90d2b6eafcad78523b62769f1d5351",
+      "bytes": 1077097
+    },
+    "data/processed/histology/MR11B_labels.tsv": {
+      "md5": "a82ba805f6518bf0d0cd1b0287bd77f7",
+      "bytes": 1017838
+    },
+    "data/processed/histology/MR12_labels.tsv": {
+      "md5": "aaf6682963a5ec0549f5029de796d00c",
+      "bytes": 165755
+    },
+    "data/processed/histology/MR13_labels.tsv": {
+      "md5": "ea6e12fedb481287bd7168fe5462b89b",
+      "bytes": 693581
+    },
+    "data/processed/histology/MR14_labels.tsv": {
+      "md5": "116573da7b42d15331cb26ad6b1147fa",
+      "bytes": 268170
+    },
+    "data/processed/histology/MR15_labels.tsv": {
+      "md5": "6552a296fa417cc5ee06dd2e629157f6",
+      "bytes": 555793
+    },
+    "data/processed/histology/MR16_labels.tsv": {
+      "md5": "0879c03bf5857b6a0fcc2ea58124f6e5",
+      "bytes": 790896
+    },
+    "data/processed/histology/LR17_labels.tsv": {
+      "md5": "730ce1339ff7aada2c543f30fe764424",
+      "bytes": 297571
+    },
+    "data/processed/histology/MR18_labels.tsv": {
+      "md5": "c6158da9b585cbbd3769665c94b0b44f",
+      "bytes": 732831
+    },
+    "data/processed/histology/LR19_labels.tsv": {
+      "md5": "659f1e30ec11d81d6c03fd8200374d3d",
+      "bytes": 139167
+    }
+  },
+  "outputs": {
+    "results/04b_panel_exports/label_features.tsv": {
+      "md5": "ac9ab16701931e9a96057c270a3bffd5",
+      "bytes": 3481250
+    },
+    "results/04b_panel_exports/MR11B_spots.tsv": {
+      "md5": "7b5ad78df0d886935d22062b94094d55",
+      "bytes": 277465
+    },
+    "results/04b_panel_exports/PT2_spots.tsv": {
+      "md5": "04bbe47b55fc77e4879772b5523f4cf9",
+      "bytes": 49682
+    },
+    "results/04b_panel_exports/LR17_spots.tsv": {
+      "md5": "ecf57ddb488226e0e86e26a53bb00b76",
+      "bytes": 86649
+    },
+    "results/04b_panel_exports/MR11B_hires_crop.png": {
+      "md5": "d8ff23a6fd5a1171bfa6a31569f03ec5",
+      "bytes": 6212603
+    },
+    "results/04b_panel_exports/PT2_hires_crop.png": {
+      "md5": "b4acc6e9acf30ddba4e72fabadee1b6b",
+      "bytes": 3073696
+    },
+    "results/04b_panel_exports/LR17_hires_crop.png": {
+      "md5": "b5b6acd233dd7fe197cad15c0324224e",
+      "bytes": 3247719
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "base",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "panel_sections": [
+      "MR11B",
+      "PT2",
+      "LR17"
+    ]
+  }
+}

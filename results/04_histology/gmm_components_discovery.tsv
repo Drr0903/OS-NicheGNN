@@ -1,0 +1,5 @@
+score_tumor	score_lung	score_stroma	name	weight
+0.811	-0.64	0.163	tumor_cellular	0.242
+-0.875	1.497	0.574	lung_parenchyma	0.235
+-0.216	0.006	-0.227	paucicellular	0.276
+0.28	-0.804	-0.451	paucicellular	0.247

@@ -1,0 +1,158 @@
+{
+  "stage": "01_manifest",
+  "finished_utc": "2026-09-15T05:50:39Z",
+  "elapsed_s": 13.2,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "05f309b0eb61b558fda90be999caba6bb93ac018dfecaec17850cf2634cbfd7a",
+  "git_commit": "e567e9e33d10ce1fcea583c9046293e228f87372",
+  "git_dirty": true,
+  "inputs": {
+    "data/raw/GSE293065/extracted": {
+      "dir": true,
+      "n_files": 182
+    },
+    "metadata/gse293065_clinical_supptable1.tsv": {
+      "md5": "4e82ddb9d484e586d2dbde25de5930aa",
+      "bytes": 2177
+    }
+  },
+  "outputs": {
+    "data/processed/gse293065/LR17.h5ad": {
+      "md5": "d7681ae066b9cda27fc72a6581e91de3",
+      "bytes": 44334993
+    },
+    "data/processed/gse293065/LR19.h5ad": {
+      "md5": "7ac6c0b87ddcf185567568ef8af03c11",
+      "bytes": 28636008
+    },
+    "data/processed/gse293065/LR5.h5ad": {
+      "md5": "3cb8067eb31fe56ec4d4d8c58563c7a4",
+      "bytes": 18479250
+    },
+    "data/processed/gse293065/MR1.h5ad": {
+      "md5": "de9d30aca8141801c7ae26d8b140cb35",
+      "bytes": 163091028
+    },
+    "data/processed/gse293065/MR10A.h5ad": {
+      "md5": "32ffe7bf15378cb5afa9ec19c05982d5",
+      "bytes": 133671064
+    },
+    "data/processed/gse293065/MR10B.h5ad": {
+      "md5": "280c6ba91d1003aae7a935d0503a1dcf",
+      "bytes": 43917174
+    },
+    "data/processed/gse293065/MR11A.h5ad": {
+      "md5": "334fe28cdc634ceae365fe52affa74c9",
+      "bytes": 32712172
+    },
+    "data/processed/gse293065/MR11B.h5ad": {
+      "md5": "acf647883980a4a31df3f08b189e97f9",
+      "bytes": 151349004
+    },
+    "data/processed/gse293065/MR12.h5ad": {
+      "md5": "46f99d262182539327afe69f75fd499e",
+      "bytes": 29421046
+    },
+    "data/processed/gse293065/MR13.h5ad": {
+      "md5": "80962f9571616a2b23012b8fd243873d",
+      "bytes": 88148240
+    },
+    "data/processed/gse293065/MR14.h5ad": {
+      "md5": "098a3312b1e1e691c8e1f7adaa3c7c15",
+      "bytes": 11052092
+    },
+    "data/processed/gse293065/MR15.h5ad": {
+      "md5": "0b7caa96b8c50b31242bbbbcff6593f0",
+      "bytes": 69407966
+    },
+    "data/processed/gse293065/MR16.h5ad": {
+      "md5": "80b1e7b336826f3b819b7a2043f8d53c",
+      "bytes": 83134026
+    },
+    "data/processed/gse293065/MR18.h5ad": {
+      "md5": "dbfe44f28e59e6baf1d164f5add89ebd",
+      "bytes": 31337978
+    },
+    "data/processed/gse293065/MR2.h5ad": {
+      "md5": "00d1f26a49d697e4fd808e3340f65d76",
+      "bytes": 64112288
+    },
+    "data/processed/gse293065/MR3.h5ad": {
+      "md5": "c0112550a5df73752b19b2faa7bf1337",
+      "bytes": 56532222
+    },
+    "data/processed/gse293065/MR4.h5ad": {
+      "md5": "807d04a289eef52ede18bb5bd926cf71",
+      "bytes": 73204412
+    },
+    "data/processed/gse293065/PT1.h5ad": {
+      "md5": "db3ed349d90a833d569389a84b43a98b",
+      "bytes": 8100822
+    },
+    "data/processed/gse293065/PT2.h5ad": {
+      "md5": "621e4be928d812f08abd85d03f90295b",
+      "bytes": 20939402
+    },
+    "data/processed/gse293065/PT3.h5ad": {
+      "md5": "372fa826387c347f90501d726217e89b",
+      "bytes": 24427216
+    },
+    "data/processed/gse293065/PT4.h5ad": {
+      "md5": "8d03a7d20d3ad2f69fa46ac76bb3683a",
+      "bytes": 25258306
+    },
+    "data/processed/gse293065/PT5.h5ad": {
+      "md5": "6b75d5cd757eed21aaf36d30e33f3136",
+      "bytes": 72231867
+    },
+    "data/processed/gse293065/PT6.h5ad": {
+      "md5": "e2cdd992dd7bebb79bb0880a5dbf7e32",
+      "bytes": 26667294
+    },
+    "data/processed/gse293065/PT7.h5ad": {
+      "md5": "fc5f6f7367a331387b48d4444daeb7a6",
+      "bytes": 17762722
+    },
+    "data/processed/gse293065/PT8.h5ad": {
+      "md5": "26cb87482cadb6ec0aca9a1b674b6af4",
+      "bytes": 77628388
+    },
+    "data/processed/gse293065/PT9.h5ad": {
+      "md5": "3c8b88d94165a0dcc28779132c9463e6",
+      "bytes": 31606522
+    },
+    "results/01_manifest/sample_manifest.tsv": {
+      "md5": "8e930e328eab11ddcbf2fee4053fe973",
+      "bytes": 7084
+    },
+    "results/01_manifest/gse293065_section_qc.tsv": {
+      "md5": "0cd99767420da935bdaabcf386fc0a72",
+      "bytes": 3031
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "base",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "n_sections_total": 26,
+    "n_discovery_lung_sections": 12,
+    "n_discovery_lung_patients": 10,
+    "n_paired_primary": 4,
+    "n_genes": 17943,
+    "spots_geo_vs_paper_max_abs_diff": 1429
+  }
+}

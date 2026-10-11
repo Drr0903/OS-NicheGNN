@@ -1,0 +1,9 @@
+niche	name	n_spots	n_sections_present_2pct	composition_r	t_score_external	t_score_discovery	odds_ratio_near_boundary
+0	lymphoid-enriched lung parenchyma	0	0			0.0933523051440715	
+1	epithelial-enriched tumour	0	0			0.0344689250050578	
+2	myeloid-enriched lung parenchyma	0	0			0.0717081744223833	
+3	peritumoural stroma (boundary)	54	9	0.10444220194306941		0.0428091698111249	
+4	vascular-enriched lung parenchyma	0	0			0.1138066848119099	
+5	myeloid-enriched tumour	0	0			0.1128510187845677	
+6	osteoclast-enriched tumour	0	0			0.0526328825063126	
+7	fibroblast-enriched tumour	0	0			0.0550305438227951	

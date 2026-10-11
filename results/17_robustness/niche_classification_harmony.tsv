@@ -1,0 +1,9 @@
+niche	n_metastatic_sections_present	n_metastatic_sites_present	n_primary_sections_present	present_frac_bone	present_frac_heart	present_frac_lung	present_frac_lymph_node	present_frac_soft_tissue	class
+0	0	0	0	0.0	0.0	0.0	0.0	0.0	sporadic
+1	10	3	8	0.8888888888888888	0.0	0.5	1.0	1.0	shared metastatic
+2	14	3	8	0.8888888888888888	1.0	0.8333333333333334	0.0	1.0	shared metastatic
+3	1	1	2	0.2222222222222222	0.0	0.0	0.0	0.3333333333333333	sporadic
+4	14	4	9	1.0	1.0	0.75	1.0	1.0	shared metastatic
+5	10	2	0	0.0	0.0	0.75	0.0	0.3333333333333333	shared metastatic
+6	1	1	0	0.0	0.0	0.08333333333333333	0.0	0.0	sporadic
+7	11	4	8	0.8888888888888888	1.0	0.6666666666666666	1.0	0.3333333333333333	shared metastatic

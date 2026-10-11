@@ -1,0 +1,4 @@
+dimension	n_variables	n_consistent_all_pairs	n_consistent_and_unpaired_same_direction	expected_consistent_by_chance
+composition	16	3	2	2.0
+spatial	20	1	1	2.5
+internal state	55	0	0	6.875

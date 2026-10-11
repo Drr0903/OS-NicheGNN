@@ -1,0 +1,82 @@
+{
+  "stage": "27_benchmark_breast_section_model_breast_section_HI_nbz64_1142243F",
+  "finished_utc": "2026-10-10T23:15:21Z",
+  "elapsed_s": 913.2,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
+  "git_commit": "852d166d3fd56a0324315aa547608bb258e0586b",
+  "git_dirty": true,
+  "inputs": {},
+  "outputs": {
+    "results/27_benchmark/section_scores_breast_section_model_breast_section_HI_nbz64_1142243F.tsv": {
+      "md5": "e0a68eb450802daf213b7a7d78c8fc35",
+      "bytes": 2629
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "amendment": "A21",
+    "arch": {
+      "contexts": [
+        "none",
+        "xattn",
+        "mamba",
+        "xmamba"
+      ],
+      "d": 256,
+      "z_dim": 64,
+      "heads": 4,
+      "n_layers": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "spot_mask_rate": 0.4,
+      "w_visible": 0.5,
+      "centre_batch": 2048,
+      "max_epochs": 150,
+      "patience": 15,
+      "mnnproj_rank": 5,
+      "dev_patients": [
+        "P01",
+        "P03",
+        "P05",
+        "P10",
+        "P12",
+        "P14",
+        "P16",
+        "P18"
+      ],
+      "confirm_patients": [
+        "P02",
+        "P04",
+        "P07",
+        "P11",
+        "P13",
+        "P15",
+        "P17"
+      ],
+      "niche_targets": {},
+      "linear_heads": true,
+      "prop_skip": true,
+      "section_input": "hvg3000_img",
+      "img_scale": 1.0,
+      "dgi": 1.0,
+      "dgi_local": "nbz"
+    }
+  }
+}

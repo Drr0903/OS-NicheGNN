@@ -1,0 +1,21 @@
+dataset	section	patient	n_spots	annotation_column	n_spots_qc	n_hvg
+breast	1142243F	1142243F	4784	Classification	4736	2000
+breast	1160920F	1160920F	4895	Classification	4846	2000
+breast	CID4290	CID4290	2432	Classification	2407	2000
+breast	CID4465	CID4465	1211	Classification	1198	2000
+breast	CID44971	CID44971	1162	Classification	1150	2000
+breast	CID4535	CID4535	1127	Classification	1115	2000
+crc	SN048_A121573_Rep1	A121573	2203	Pathologist Annotations	2180	2000
+crc	SN048_A121573_Rep2	A121573	2385	Pathologist Annotation	2361	2000
+crc	SN048_A416371_Rep1	A416371	2317	Pathologist annotation	2293	2000
+crc	SN048_A416371_Rep2	A416371	1803	Pathologist Annotation	1785	2000
+crc	SN123_A551763_Rep1	A551763	691	Pathologist Annotation	684	2000
+crc	SN123_A595688_Rep1	A595688	1192	Pathologist Annotation	1180	2000
+crc	SN123_A798015_Rep1	A798015	1685	Pathologist annotation	1668	2000
+crc	SN123_A938797_Rep1_X	A938797	2128	Pathologist_KH	2106	2000
+crc	SN124_A551763_Rep2	A551763	1219	Pathologist Annotation	1207	2000
+crc	SN124_A595688_Rep2	A595688	387	Pathologist Annotation	383	2000
+crc	SN124_A798015_Rep2	A798015	1656	Pathologist annotation	1639	2000
+crc	SN124_A938797_Rep2	A938797	1691	Pathologist_KH	1674	2000
+crc	SN84_A120838_Rep1	A120838	328	Pathologist Annotations	324	2000
+crc	SN84_A120838_Rep2	A120838	1048	Pathologist Annotation	1037	2000

@@ -1,0 +1,9 @@
+niche	learned_norm	skip_norm	skip_share	name
+0	11.980949	20.951195	0.6540348	lymphoid-enriched lung parenchyma
+1	2.5540159	17.083431	0.86917573	epithelial-enriched tumour
+2	3.3858283	18.804302	0.84727514	myeloid-enriched lung parenchyma
+3	2.7905974	18.95114	0.8709739	peritumoural stroma (boundary)
+4	3.1595507	18.195166	0.8500561	vascular-enriched lung parenchyma
+5	2.668697	17.407932	0.8651966	myeloid-enriched tumour
+6	2.6492813	14.90026	0.8486819	osteoclast-enriched tumour
+7	2.3237038	17.027214	0.8788329	fibroblast-enriched tumour

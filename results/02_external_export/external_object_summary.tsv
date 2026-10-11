@@ -1,0 +1,2 @@
+section	n_spots	n_genes	counts_integer	counts_max	median_nCount_Spatial	median_contamination_rate	n_seurat_clusters	image_rows	image_cols	scale_hires	scale_lowres	fiducial_fullres	meta_columns	seurat_version
+OS7	11772	13118	FALSE	7063.35628618558	18359.1494325403	0.292674259685912	21	600	513	0.09217864	0.027653594	152.484205844489	orig.ident|nCount_Spatial|nFeature_Spatial|contamination_rate|nCount_SCT|nFeature_SCT|seurat_clusters	4.1.2

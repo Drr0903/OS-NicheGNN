@@ -1,0 +1,59 @@
+{
+  "stage": "28_interpretation",
+  "finished_utc": "2026-10-10T21:14:16Z",
+  "elapsed_s": 35.2,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
+  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/frozen_v4/model_seed20260914.pt": {
+      "md5": "c2c36e6da19de323abe6783b914d03b9",
+      "bytes": 8604458
+    },
+    "results/15_niches/spot_niches.tsv": {
+      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
+      "bytes": 16167409
+    }
+  },
+  "outputs": {
+    "results/28_interpretation/attention.tsv": {
+      "md5": "1b158d0f0912c721f29dd10ba8d5334b",
+      "bytes": 3329
+    },
+    "results/28_interpretation/latent_parts.tsv": {
+      "md5": "3ddf86a700128284072b28f68de97e4e",
+      "bytes": 537
+    },
+    "results/28_interpretation/ablation_reassignment.tsv": {
+      "md5": "27c10610234a10efb05b94bf701c3245",
+      "bytes": 3002
+    },
+    "results/28_interpretation/gene_attribution.tsv": {
+      "md5": "326449bfe963a29eb423f6034c2b6df9",
+      "bytes": 14460
+    },
+    "results/28_interpretation/author_programmes.tsv": {
+      "md5": "4cd007edde00ede8498610fdf4b943ee",
+      "bytes": 30305
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {}
+}

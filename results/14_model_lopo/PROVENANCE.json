@@ -1,0 +1,86 @@
+{
+  "stage": "14_model_lopo",
+  "finished_utc": "2026-09-21T07:14:23Z",
+  "elapsed_s": null,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "4abd887a16e42c1af8e99699c217bb2815c4a970990e0e42fa1798a1c25cbc50",
+  "git_commit": "544fe822a64a66fa815e25fc3765d8aa9f82b916",
+  "git_dirty": true,
+  "inputs": {
+    "results/14_model/lopo_metrics_main4.tsv": {
+      "md5": "a36d3fb71a192b0913aab0b5d62ab15e",
+      "bytes": 44922
+    },
+    "results/14_model/lopo_metrics_hA.tsv": {
+      "md5": "d99e96311d5567c3ac25ffa1d1d3b8be",
+      "bytes": 8069
+    },
+    "results/14_model/lopo_metrics_hB.tsv": {
+      "md5": "d95ce667faf8aa55cecfcf9472f19486",
+      "bytes": 6530
+    },
+    "results/14_model/lopo_metrics_hC.tsv": {
+      "md5": "e02d9d15821f962903b256dd22f562a0",
+      "bytes": 6775
+    },
+    "results/14_model/lopo_metrics_aoA.tsv": {
+      "md5": "8a1eb5f680ecaae659c9b3d0060a07a7",
+      "bytes": 6372
+    },
+    "results/14_model/lopo_metrics_aoB.tsv": {
+      "md5": "93d6c0a6bfe7cd148894823f9052e470",
+      "bytes": 4947
+    },
+    "results/14_model/lopo_metrics_aoC.tsv": {
+      "md5": "4ee7caa59092ebf41ff58965bd43002a",
+      "bytes": 6233
+    },
+    "results/14_model/lopo_metrics_aoD.tsv": {
+      "md5": "6ffe891200c886ebe2ccdd39f69ebaae",
+      "bytes": 4621
+    },
+    "results/14_model/lopo_metrics_a11A.tsv": {
+      "md5": "e52cfd15fa70bc43eae2f0a54d82bba6",
+      "bytes": 14238
+    },
+    "results/14_model/lopo_metrics_a11B.tsv": {
+      "md5": "d094607869e38fc2e8e6467f842b2884",
+      "bytes": 10695
+    },
+    "results/14_model/lopo_metrics_a11C.tsv": {
+      "md5": "591a998d395e24427767ca31d0c403c9",
+      "bytes": 13849
+    },
+    "results/14_model/lopo_metrics_a11D.tsv": {
+      "md5": "f14944eac52911d9cb980b7bc600bfb6",
+      "bytes": 10266
+    }
+  },
+  "outputs": {
+    "results/14_model/lopo_summary.tsv": {
+      "md5": "0329285568e9b2ac399d7f3946f30081",
+      "bytes": 2016
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "base",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "plan": "v2",
+    "merged": "_main4,_hA,_hB,_hC,_aoA,_aoB,_aoC,_aoD,_a11A,_a11B,_a11C,_a11D"
+  }
+}

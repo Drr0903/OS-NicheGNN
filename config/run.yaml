@@ -1,0 +1,234 @@
+# project018 — OS-NicheGNN: dual-scale spatial GNN for osteosarcoma lung-metastasis interface niches
+# Every tunable parameter lives here. Scripts read it through scripts/lib/repro.load_config().
+# Values marked "set in advance" were fixed before the external cohort was touched
+
+project: project018
+seed: 20260914
+n_seeds: 5                      # seeds used for every stochastic model: seed + [0..n_seeds-1]
+device: cuda
+
+paths:
+  raw_gse293065: data/raw/GSE293065/extracted
+  raw_zenodo: data/raw/zenodo_14594702
+  raw_gse162454: data/raw/GSE162454/extracted
+  raw_gse152048: data/raw/GSE152048
+  raw_hlca: data/raw/HLCA/hlca_core.h5ad
+  processed: data/processed
+  clinical_table: metadata/gse293065_clinical_supptable1.tsv
+  spaceranger_table: metadata/gse293065_spaceranger_supptable2.tsv
+
+cohorts:
+  discovery:
+    source: GSE293065
+    platform: Visium V1 FFPE (probe set v1, GRCh38)
+    lung_sections: [MR1, MR2, MR3, MR4, MR10A, MR10B, MR11A, MR11B, MR12, MR13, MR15, MR18]
+    # sections of one patient are never split across folds
+    patient_groups:
+      MR1: P01
+      MR2: P02
+      MR3: P03
+      MR4: P04
+      MR10A: P10
+      MR10B: P10
+      MR11A: P11
+      MR11B: P11
+      MR12: P12
+      MR13: P13
+      MR15: P15
+      MR18: P18
+    paired_primary: {PT1: MR1, PT2: MR2, PT3: MR3, PT4: MR4}
+    excluded_non_lung: [LR5, LR17, LR19, MR14, MR16, PT5, PT6, PT7, PT8, PT9]
+  external:
+    source: Zenodo 14594702
+    platform: Visium CytAssist FFPE (probe set v2)
+    lung_sections: [OS1, OS2, OS3, OS4, OS5, OS6, OS7]
+    lymph_node_sections: [OS8, OS9]      # loaded, reported descriptively, never in the lung analysis
+
+qc:
+  min_counts_quantile: 0.01      # adaptive, per section: drop spots below this quantile of total counts
+  min_genes_abs: 100             # absolute floor
+  max_mito_pct: 30               # FFPE probe sets contain few MT genes; used only as a sanity flag
+  min_spots_per_section: 300
+
+genes:
+  n_hvg: 2000                    # fitted on training patients only (inside each fold / final fit)
+  normalize_target_sum: 10000
+  # Locked region-label panel (stage 04). Scored on log-normalised expression to define the tumour / lung /
+  # stroma reference labels; every gene below is removed from model inputs in the confirmatory configuration.
+  region_label_panel:
+    tumor:  [RUNX2, SP7, ALPL, IBSP, SATB2, SPP1, BGLAP, DLX5, CDH11, COL1A1, COL1A2, MKI67, TOP2A, CDK1]
+    lung:   [SFTPC, SFTPB, SFTPA1, SFTPA2, SFTPD, AGER, NAPSA, SCGB1A1, SCGB3A2, HOPX, NKX2-1, LAMP3, PGC, CLDN18, EMP2]
+    stroma: [DCN, LUM, CFD, C7, MGP, FBLN1, APOD, PDGFRA, COL14A1, SFRP2]
+  # Locked T-cell readout set. Removed from ALL model inputs and reconstruction targets in the
+  # confirmatory (gene-holdout) configuration; the full-gene configuration is a sensitivity analysis.
+  t_cell_holdout:
+    [CD3D, CD3E, CD3G, CD2, CD5, CD6, CD7, CD8A, CD8B, TRAC, TRBC1, TRBC2, CD247, LCK, ZAP70,
+     ITK, IL7R, CD28, SH2D1A, LAT, TRAT1, THEMIS, BCL11B, TCF7, LEF1, GZMK, CD4, CTLA4, PDCD1,
+     TIGIT, LAG3, ICOS, CD27, CD69, CXCR3, CCR7, SELL, GZMA, GZMB, PRF1, NKG7, GNLY, KLRB1, KLRD1]
+
+histology:
+  # Region reference labels: locked marker panel (genes.region_label_panel) → GMM in score space (stage 04);
+  # H&E patch features are computed as an orthogonal check only (see notes/DEVIATIONS.md 2026-09-15).
+  classes: [tumor_cellular, lung_parenchyma, paucicellular]
+  gmm_components: 4
+  boundary_tolerance_rings: 1    # boundary F1 tolerance in hex rings (set in advance)
+
+graph:
+  near_rings: 1                  # near graph: 1st-order hex neighbours (6)
+  outer_rings: [2, 3]            # outer graph: rings 2–3, excluding ring 1
+  drop_edges_over_gap: true      # edges only between in-tissue spots that are array-adjacent
+
+model:
+  name: OS-NicheGNN
+  expr_hidden: 128
+  branch_dim: 64
+  fuse_dim: 64
+  n_layers: 1
+  heads: 2
+  dropout: 0.15
+  use_outer: true
+  use_diff: true
+  use_aux_context: true
+
+train:
+  mask_frac: 0.30
+  lambda_ctx: 0.10
+  lr: 0.001
+  weight_decay: 0.0001
+  max_epochs: 200
+  patience: 20
+  batch_sections_per_step: 2     # full-section graphs per step, sampled patient-balanced
+  eval_every: 1
+
+cv:
+  scheme: leave-one-patient-out  # all sections of a patient held out together
+  inner_val_patients: 1          # one training patient held aside for early stopping
+
+baselines:
+  pca_dim: 50
+  mlp_ae: {hidden: 128, latent: 64}
+  neigh_mean_ae: {hidden: 128, latent: 64}
+  banksy: {lambda: 0.8, k_geom: 15, n_pcs: 20}
+  banksy_50pc: {lambda: 0.8, k_geom: 15, n_pcs: 50}   # dimension-matched sensitivity (review round 1)
+  stagate: {hidden: [512, 30], epochs: 500, lr: 0.001, rad_cutoff_rings: 1}
+  probe: linear_logreg           # identical linear head for every representation
+
+niches:
+  method: leiden               # Leiden on a kNN graph of the embedding, resolution searched for exactly k_fixed communities
+  k_fixed: 6                   # fixed a priori (A5): tumour ×2, lung parenchyma, boundary/capsule, immune/paucicellular, vascular/other
+  knn: 15                      # (unused when the graph is patient-balanced)
+  integration: pc30_harmony    # A20 addendum 5: atlas space = 30 PCs of the latent, Harmony by patient (all spots, label-free)
+  graph: plain                 # plain 15-NN graph for the atlas (balanced graph = sensitivity analysis)
+  k_within: 3                  # each spot linked to its 3 nearest spots of every patient (BBKNN-style balanced graph)
+  k_candidates: [4, 5, 6, 7, 8]  # descriptive only (presence per K); K is not chosen from data any more
+  stability_bootstrap: 20
+  unmatched_quantile: 0.975      # distance to nearest prototype beyond this training quantile → "unmatched"
+
+interface:
+  band_rings: 2                  # inner/outer band width for the T readout (set in advance)
+  segment_length_spots: 8        # boundary segment length for the within-section comparison
+  min_segment_spots: 4
+  eps: 0.01                      # pseudocount in E_s
+  min_t_signal: 0.02             # both bands below → section unevaluable for E_s
+  match_vars: [tumor_frac, fibro_frac, myeloid_frac]
+  n_permutations: 2000           # restricted segment-level permutations within section
+
+deconvolution:
+  tool: RCTD
+  mode: full
+  reference_min_cells_per_type: 50
+  reference_max_cells_per_type: 2000
+  coarse_types: [Osteosarcoma, Fibroblast, Endothelial, Pericyte_SMC, Myeloid, Osteoclast,
+                 T_NK, B_plasma, Mast, Lung_epithelium, Alveolar_macrophage]
+
+figures:
+  dpi: 300
+  font: Arial
+  panel_label_size: 10
+
+upgrade:                          #  (post hoc): patient-adversarial / view-contrastive variants of OS-NicheGNN
+  lambda_adv_grid: [0.0, 0.1, 0.3, 1.0]   # 0.0 × 0.0 reproduces the original model inside the same run
+  lambda_con_grid: [0.0, 0.5]
+  adv_hidden: 64
+  tau: 0.2
+  con_subsample: 1024             # spots per view for the NT-Xent term
+  selection_ari_weight: 0.5       # J = inner-val macro-F1 − w · ARI(patient)
+  cluster_k: 6                    # Leiden with fixed K (A5) for the selection ARI
+
+invariant:                        #  (post hoc): patient-invariant variant — neighbour + cross-patient anchor positives
+  lambda_anchor_grid: [0.1, 0.5]
+  lambda_con_grid: [0.0, 0.5]
+  lambda_nbr: 0.5
+  anchor_pcs: 50
+  anchor_k: 10
+  selection_weight: 0.5           # J2 = inner-val macro-F1 + w · (ARI_region − ARI_patient)
+
+v2:                               # study cohort: all metastatic sites, no external cohort
+  sections: [PT1, PT2, PT3, PT4, PT5, PT6, PT7, PT8, PT9, MR1, MR2, MR3, MR4, LR5, MR10A, MR10B, MR11A, MR11B, MR12, MR13, MR14, MR15, MR16, LR17, MR18, LR19]
+  patient_of: {PT1: P01, PT2: P02, PT3: P03, PT4: P04, PT5: P05, PT6: P06, PT7: P07, PT8: P08, PT9: P09, MR1: P01, MR2: P02, MR3: P03, MR4: P04, LR5: P05, MR10A: P10, MR10B: P10, MR11A: P11, MR11B: P11, MR12: P12, MR13: P13, MR14: P14, MR15: P15, MR16: P16, LR17: P17, MR18: P18, LR19: P19}
+  site_of: {PT1: bone, PT2: bone, PT3: bone, PT4: bone, PT5: bone, PT6: bone, PT7: bone, PT8: bone, PT9: bone, MR1: lung, MR2: lung, MR3: lung, MR4: lung, LR5: soft_tissue, MR10A: lung, MR10B: lung, MR11A: lung, MR11B: lung, MR12: lung, MR13: lung, MR14: lymph_node, MR15: lung, MR16: heart, LR17: soft_tissue, MR18: lung, LR19: soft_tissue}
+  paired: {PT1: MR1, PT2: MR2, PT3: MR3, PT4: MR4}
+  paired_sensitivity: {PT5: LR5}   # fifth matched pair (soft-tissue relapse) reported as a sensitivity row, not in the main paired summary
+  longitudinal: [MR10A, MR10B]
+  k_fixed: 8
+  frozen_epochs: 70             # training length of the frozen encoder, pinned so the artefact is reproducible from this file;
+                               # the original run derived it from the two-term invariant folds, the median of the selected
+                               # variant's own folds is 89, and the partition is sensitive to the difference (see DEVIATIONS A16)
+
+  k_sensitivity: [6, 10]
+  model: {lambda_nbr: 0.5, lambda_anchor: 0.5, lambda_con: 0.0}
+  min_spots_per_patient_niche: 30
+  tumour_scope_label: tumor_cellular   # region label defining the tumour-dominant programme-change scope (stage 16); RCTD osteosarcoma weight is too weak on metastases (6.8 % of spots >= 0.5)
+  adjacency_permutations: 500
+
+remedies:                         #  (stage 22): encoder diagnosis and pre-specified remedies
+  pca_dim: 50                     # PCA input for gnn_pca / mae_pca / dgi_pca (fitted on the training patients of each fold)
+  mae_mask_rate: 0.5              # GraphMAE whole-spot mask rate
+  mae_alpha: 2.0                  # scaled-cosine-error exponent
+  dgi_weight: 1.0                 # weight of the deep-graph-infomax term next to the masked reconstruction
+  context_ridge_alpha: 1.0        # ridge probe for the neighbourhood-composition R²
+  context_max_train_spots: 30000  # training spots sampled for the ridge probe
+  seeds: 3
+  rewire_seed_offset: 1000
+
+arch:                             #  (stage 23): neighbour-selecting spot encoders on PCA-50 input
+  contexts: [none, xattn, mamba, xmamba]
+  d: 128
+  z_dim: 64
+  heads: 4
+  n_layers: 2
+  dropout: 0.1
+  lr: 0.001
+  spot_mask_rate: 0.4
+  w_visible: 0.5
+  centre_batch: 2048              # centre spots per section per step (neighbour tokens drawn from the whole section)
+  max_epochs: 150
+  patience: 15
+  mnnproj_rank: 5                 # anchor-difference directions projected out (inductive patient removal)
+  dev_patients: [P01, P03, P05, P10, P12, P14, P16, P18]
+  confirm_patients: [P02, P04, P07, P11, P13, P15, P17]
+
+image:                            #  second set (stage 04c): H&E morphology modality
+  model: owkin/phikon
+  revision: 057cc0295895c2df3dd7681a89680da6015cbefe
+  patch_spots: 3                  # patch side in spot diameters (≈ 165 µm), resized to 224 px
+
+atlas:                            #  (stage 24): the atlas encoder selected on its own latent (dev score + reference ARI)
+  amendment: A20
+  encoder: mm_xattn_anchor_d256z256_ntrod_lin_ps_la0_z   # A20 encoder (A23 variants exceeding the A9 limit are ineligible); hidden/latent 256, niche targets (ring-1, ring-2–3, dispersion) with linear
+                                  # heads, linear skip of [profile, ring means] into z, no anchor term (A20 addenda 2–3)
+  arch_overrides: {d: 256, z_dim: 256, niche_targets: {ring1: 0.5, outer: 0.5, disp: 0.25}, linear_heads: true, prop_skip: true}
+  lambda_anchor: 0.0
+  context: xattn
+  multimodal: true                # spot profile = [expression PCA-50, H&E morphology PCA-50]
+  representation: z
+  frozen_epochs: 147              # median epochs_run of the 57 leave-one-patient-out runs of the selected encoder (stage 23)
+  frozen_dir: frozen_v4           # data/processed/<frozen_dir>: genes, scaler, PCA models, encoder weights, meta.json
+  emb_dir: v4                     # data/processed/embeddings/<emb_dir>/<seed>/<section>.npy
+  retrain_frozen_dir: frozen_v4_retrain
+  retrain_emb_dir: v4_retrain
+  retrain_results: data/processed/retrain_v4   # stage-15 tables of the re-trained encoder (stage 19)
+
+single_section:                   # single-section mode selected on DLPFC donor 1 (refined GMM ARI, mean over 4 sections)
+  model_tag: _H_nbz64             # 3,000 HVGs, local graph infomax, latent width 64 (donor-1 mean 0.528; 256: 0.496; rings 1-2: 0.478; ring 1: 0.445)
+  image_tag: _HI_nbz64            # same with the Phikon morphology block appended

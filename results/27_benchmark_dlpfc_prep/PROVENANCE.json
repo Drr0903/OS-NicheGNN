@@ -1,0 +1,41 @@
+{
+  "stage": "27_benchmark_dlpfc_prep",
+  "finished_utc": "2026-10-10T13:05:44Z",
+  "elapsed_s": 116.0,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "051c7ecdd9eaebb9c0bb2799819583e84b3c5afb67c6b853a0b3a45185fb6101",
+  "git_commit": "39198bc3eb9e16093d4c7fb2aa9ce70ab110175a",
+  "git_dirty": true,
+  "inputs": {
+    "data/dlpfc/CHECKSUMS.md5": {
+      "md5": "38759d922b51c07118443cf61eef1dae",
+      "bytes": 3254
+    }
+  },
+  "outputs": {
+    "results/27_benchmark/dlpfc_manifest.tsv": {
+      "md5": "435b0ec8acaf543ddb5fd801be0236fc",
+      "bytes": 756
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "amendment": "A22"
+  }
+}

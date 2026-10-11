@@ -1,0 +1,21 @@
+{
+  "choice": "invariant_anchoronly",
+  "rule": "A9/A10 + A13 (inductive representations only)",
+  "eligible_rule_met": true,
+  "n_epochs": 70,
+  "eligible": [
+    "invariant_anchoronly",
+    "invariant_w0.1",
+    "invariant_w0.25"
+  ],
+  "reported_not_selected": [
+    "banksy",
+    "banksy_harmony",
+    "gnn_harmonised",
+    "invariant_anchoronly_harmonised",
+    "pca",
+    "pca_harmony",
+    "raw"
+  ],
+  "ineligible_encoder_control": "mlp_invariant_anchoronly (patient index 0.110 > 0.10)"
+}

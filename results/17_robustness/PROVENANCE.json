@@ -1,0 +1,47 @@
+{
+  "stage": "17_robustness",
+  "finished_utc": "2026-10-10T20:32:34Z",
+  "elapsed_s": 242.9,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
+  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "git_dirty": true,
+  "inputs": {
+    "results/15_niches/spot_niches.tsv": {
+      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
+      "bytes": 16167409
+    }
+  },
+  "outputs": {
+    "results/17_robustness/atlas_agreement.json": {
+      "md5": "90b24a26fd63dadda76437fb98a38553",
+      "bytes": 846
+    },
+    "results/17_robustness/niche_correspondence.tsv": {
+      "md5": "f0324f03c3ae2e84c6ed889556cbfb35",
+      "bytes": 1044
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "plan": "v2",
+    "amendment": "A12",
+    "K": 8
+  }
+}

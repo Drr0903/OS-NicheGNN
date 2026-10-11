@@ -1,0 +1,205 @@
+{
+  "stage": "27_benchmark_prep",
+  "finished_utc": "2026-10-09T12:03:36Z",
+  "elapsed_s": 227.0,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "e66b3796863e302f85241676e608ff19ee268bdaa7bdfc1869a72c3a34d35573",
+  "git_commit": "be032c0437fecb95c0a739dc4178aa1fa445d7f5",
+  "git_dirty": true,
+  "inputs": {
+    "data/generality/CHECKSUMS.md5": {
+      "md5": "3d2a05cfe7384324a3fd4090e7ec2894",
+      "bytes": 1107
+    }
+  },
+  "outputs": {
+    "data/benchmark/crc/SN048_A121573_Rep1.h5ad": {
+      "md5": "e074d02e372cad73a9509e3b0eb5a54c",
+      "bytes": 226003032
+    },
+    "data/benchmark/crc/SN048_A121573_Rep1_img.npy": {
+      "md5": "fee4abbf2dce5a108728612fd1bcb202",
+      "bytes": 6697088
+    },
+    "data/benchmark/crc/SN048_A121573_Rep2.h5ad": {
+      "md5": "0c66b3738e16ff835bde06843add4c91",
+      "bytes": 223203391
+    },
+    "data/benchmark/crc/SN048_A121573_Rep2_img.npy": {
+      "md5": "bd596625a3c76bdac5d233d390b62f55",
+      "bytes": 7253120
+    },
+    "data/benchmark/crc/SN048_A416371_Rep1.h5ad": {
+      "md5": "0ca90a128ee34a5a31f80d163cbe59d4",
+      "bytes": 230550031
+    },
+    "data/benchmark/crc/SN048_A416371_Rep1_img.npy": {
+      "md5": "0c7df4f8a1ce9d9c81b7fc61329c6713",
+      "bytes": 7044224
+    },
+    "data/benchmark/crc/SN048_A416371_Rep2.h5ad": {
+      "md5": "64a132bd1c135245ec42e52b83683ed8",
+      "bytes": 198458622
+    },
+    "data/benchmark/crc/SN048_A416371_Rep2_img.npy": {
+      "md5": "11013b756e5391d4e5af04d60a08340b",
+      "bytes": 5483648
+    },
+    "data/benchmark/crc/SN123_A551763_Rep1.h5ad": {
+      "md5": "3de5892fc4dd48e75fda4e51dbdf714a",
+      "bytes": 77507744
+    },
+    "data/benchmark/crc/SN123_A551763_Rep1_img.npy": {
+      "md5": "f531884c374244207b4dbb7279242ca8",
+      "bytes": 2101376
+    },
+    "data/benchmark/crc/SN123_A595688_Rep1.h5ad": {
+      "md5": "7a3cfb69cd228005e4f2440fea5b4f27",
+      "bytes": 130697602
+    },
+    "data/benchmark/crc/SN123_A595688_Rep1_img.npy": {
+      "md5": "014436353e73471b897abc22cbbfa233",
+      "bytes": 3625088
+    },
+    "data/benchmark/crc/SN123_A798015_Rep1.h5ad": {
+      "md5": "4545f2343e7379adbaffb93ba4afd600",
+      "bytes": 109392954
+    },
+    "data/benchmark/crc/SN123_A798015_Rep1_img.npy": {
+      "md5": "a05fcc9481d123990884460d3533038f",
+      "bytes": 5124224
+    },
+    "data/benchmark/crc/SN123_A938797_Rep1_X.h5ad": {
+      "md5": "1714ce7822d1e58d6c12cadae471907a",
+      "bytes": 164403714
+    },
+    "data/benchmark/crc/SN123_A938797_Rep1_X_img.npy": {
+      "md5": "01695976d540ae06f68141a38f9bc334",
+      "bytes": 6469760
+    },
+    "data/benchmark/crc/SN124_A551763_Rep2.h5ad": {
+      "md5": "f49e727aa8519438b6b9723260b5002b",
+      "bytes": 41189634
+    },
+    "data/benchmark/crc/SN124_A551763_Rep2_img.npy": {
+      "md5": "5a76931977fb0558ee3f276485936bf8",
+      "bytes": 3708032
+    },
+    "data/benchmark/crc/SN124_A595688_Rep2.h5ad": {
+      "md5": "b142e03b98fa697d72e48acf0a1486d4",
+      "bytes": 39465218
+    },
+    "data/benchmark/crc/SN124_A595688_Rep2_img.npy": {
+      "md5": "1c7d1b3a8c978725ed14d77623f1e7f1",
+      "bytes": 1176704
+    },
+    "data/benchmark/crc/SN124_A798015_Rep2.h5ad": {
+      "md5": "1abb9aa08de9d82b620b0fc1875303fd",
+      "bytes": 120835666
+    },
+    "data/benchmark/crc/SN124_A798015_Rep2_img.npy": {
+      "md5": "975f585b718f887c8ebac3b222e66463",
+      "bytes": 5035136
+    },
+    "data/benchmark/crc/SN124_A938797_Rep2.h5ad": {
+      "md5": "885bb2589567ca6c7955ef527f1e6262",
+      "bytes": 212122708
+    },
+    "data/benchmark/crc/SN124_A938797_Rep2_img.npy": {
+      "md5": "d6a6219de6f1fdac43ece46a0442bcba",
+      "bytes": 5142656
+    },
+    "data/benchmark/crc/SN84_A120838_Rep1.h5ad": {
+      "md5": "98c61050fda9841a505ae3e0781dd225",
+      "bytes": 32712638
+    },
+    "data/benchmark/crc/SN84_A120838_Rep1_img.npy": {
+      "md5": "863342643af24099ff0a21b1a9802362",
+      "bytes": 995456
+    },
+    "data/benchmark/crc/SN84_A120838_Rep2.h5ad": {
+      "md5": "de79ec96849d0c2a3a0f5d5adbfc6301",
+      "bytes": 86120866
+    },
+    "data/benchmark/crc/SN84_A120838_Rep2_img.npy": {
+      "md5": "cbd1d18fcc4a8227a84b525d4951fbde",
+      "bytes": 3185792
+    },
+    "data/benchmark/breast/1142243F.h5ad": {
+      "md5": "bd3197c30346cf685859f18a23789b61",
+      "bytes": 462577648
+    },
+    "data/benchmark/breast/1142243F_img.npy": {
+      "md5": "f3cb14d2cd753e4c2102e97691219f0e",
+      "bytes": 14549120
+    },
+    "data/benchmark/breast/1160920F.h5ad": {
+      "md5": "b78324a6aa9ecda9df13c6ea5b1a44e4",
+      "bytes": 619368614
+    },
+    "data/benchmark/breast/1160920F_img.npy": {
+      "md5": "a14a86be11a3ef4ef4216c05a50fe470",
+      "bytes": 14887040
+    },
+    "data/benchmark/breast/CID4290.h5ad": {
+      "md5": "35c5e9d58a0ddf6b33109608f888b876",
+      "bytes": 273726275
+    },
+    "data/benchmark/breast/CID4290_img.npy": {
+      "md5": "7a0b9887b5f3122b941335c0a38859a4",
+      "bytes": 7394432
+    },
+    "data/benchmark/breast/CID4465.h5ad": {
+      "md5": "e30c548b2ccdf2cb2dc5fa74881bfb4f",
+      "bytes": 183022236
+    },
+    "data/benchmark/breast/CID4465_img.npy": {
+      "md5": "1764f822580fac7d77591571a20486c5",
+      "bytes": 3680384
+    },
+    "data/benchmark/breast/CID44971.h5ad": {
+      "md5": "d2e6ea2aeed4138b3fa2d33bc9812991",
+      "bytes": 155098764
+    },
+    "data/benchmark/breast/CID44971_img.npy": {
+      "md5": "47eb2dc4aeb7fa05aa3e2ba861fc458a",
+      "bytes": 3532928
+    },
+    "data/benchmark/breast/CID4535.h5ad": {
+      "md5": "0d99ece74de3f34df091879b726e7fd3",
+      "bytes": 177852648
+    },
+    "data/benchmark/breast/CID4535_img.npy": {
+      "md5": "1fd5514c4b2363da6a971403bb41f4cf",
+      "bytes": 3425408
+    },
+    "results/27_benchmark/prep_manifest.tsv": {
+      "md5": "634f75530bb42929df7e432ea6162fdb",
+      "bytes": 1649
+    },
+    "results/27_benchmark/truth_mapping.tsv": {
+      "md5": "6c928f762d84334ccb6ff3975428589c",
+      "bytes": 2826
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "amendment": "A21"
+  }
+}

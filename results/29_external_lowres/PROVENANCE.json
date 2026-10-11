@@ -1,0 +1,58 @@
+{
+  "stage": "29_external_lowres",
+  "finished_utc": "2026-10-10T13:40:40Z",
+  "elapsed_s": 615.3,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "051c7ecdd9eaebb9c0bb2799819583e84b3c5afb67c6b853a0b3a45185fb6101",
+  "git_commit": "ad4a4648ae653d98aed199a390903fb712af62f4",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/frozen_v4/model_seed20260914.pt": {
+      "md5": "c2c36e6da19de323abe6783b914d03b9",
+      "bytes": 8604458
+    }
+  },
+  "outputs": {
+    "results/29_external/lowres/niche_comparison.tsv": {
+      "md5": "ac699389a54db7462439cbce53e4694f",
+      "bytes": 598
+    },
+    "results/29_external/lowres/region_metrics.tsv": {
+      "md5": "70927775db6245ca8dbb1ff12d0e76d7",
+      "bytes": 803
+    },
+    "results/29_external/lowres/summary.json": {
+      "md5": "251499e30e8551e7a27b56384860cdcc",
+      "bytes": 309
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "macro_f1_lung_mean": 0.4153782975646662,
+    "unmatched_fraction": 0.9993233167504166,
+    "n_niches_present": 1,
+    "composition_r_mean": 0.10444220194306941,
+    "t_order_spearman": null,
+    "n_niches_t": 0,
+    "band_odds_ratio": NaN,
+    "interface_coef": NaN,
+    "interface_p": NaN,
+    "interface_n_sections": 1
+  }
+}

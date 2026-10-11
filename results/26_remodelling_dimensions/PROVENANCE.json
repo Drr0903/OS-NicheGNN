@@ -1,0 +1,47 @@
+{
+  "stage": "26_remodelling_dimensions",
+  "finished_utc": "2026-10-10T20:29:48Z",
+  "elapsed_s": 1.6,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
+  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "git_dirty": true,
+  "inputs": {
+    "results/15_niches/spot_niches.tsv": {
+      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
+      "bytes": 16167409
+    }
+  },
+  "outputs": {
+    "results/26_remodelling_dimensions/paired_dimensions.tsv": {
+      "md5": "b9734c757fa420309a2b08d07adc2be7",
+      "bytes": 13673
+    },
+    "results/26_remodelling_dimensions/unpaired_dimensions.tsv": {
+      "md5": "1e19e3e16bae7e1c7e7d08bf4eb87aad",
+      "bytes": 8224
+    },
+    "results/26_remodelling_dimensions/dimension_summary.tsv": {
+      "md5": "1a6d5d2175f0230e151a28d3424ca3b1",
+      "bytes": 186
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {}
+}

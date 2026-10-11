@@ -1,0 +1,51 @@
+{
+  "stage": "14_model_variant_select",
+  "finished_utc": "2026-09-26T07:32:16Z",
+  "elapsed_s": 0.0,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "4abd887a16e42c1af8e99699c217bb2815c4a970990e0e42fa1798a1c25cbc50",
+  "git_commit": "be44bca6884d2da24aa69c695159d123e5ca1a69",
+  "git_dirty": true,
+  "inputs": {
+    "results/14_model/lopo_metrics.tsv": {
+      "md5": "b145c98a51c010e03c106230ea3dd8d1",
+      "bytes": 135042
+    }
+  },
+  "outputs": {
+    "results/14_model/variant_selection.tsv": {
+      "md5": "28f9c14ef96908306aff02f47b2eca47",
+      "bytes": 2827
+    },
+    "results/14_model/variant_seed_metrics.tsv": {
+      "md5": "196de3130bf4895bc26a39652a941ffd",
+      "bytes": 6623
+    },
+    "results/14_model/variant_choice.json": {
+      "md5": "bae2495aa3a429e69736c1809df584aa",
+      "bytes": 497
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "base",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "amendment": "A9",
+    "choice": "invariant_anchoronly",
+    "reused_metrics": true
+  }
+}

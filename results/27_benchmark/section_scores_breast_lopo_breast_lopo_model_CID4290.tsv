@@ -1,0 +1,25 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+breast	lopo	leiden	OS-NicheGNN	20260914	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden_pc30	OS-NicheGNN	20260914	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans	OS-NicheGNN	20260914	CID4290	CID4290	6	-0.0015660875879764278	0.0004035681429107897	2394
+breast	lopo	kmeans_pc30	OS-NicheGNN	20260914	CID4290	CID4290	6	-0.0015660875879764278	0.0004035681429107897	2394
+breast	lopo	leiden	OS-NicheGNN	20260915	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden_pc30	OS-NicheGNN	20260915	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans	OS-NicheGNN	20260915	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans_pc30	OS-NicheGNN	20260915	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden	OS-NicheGNN	20260916	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden_pc30	OS-NicheGNN	20260916	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans	OS-NicheGNN	20260916	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans_pc30	OS-NicheGNN	20260916	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden	OS-NicheGNN +smooth	20260914	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden_pc30	OS-NicheGNN +smooth	20260914	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans	OS-NicheGNN +smooth	20260914	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260914	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden	OS-NicheGNN +smooth	20260915	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden_pc30	OS-NicheGNN +smooth	20260915	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans	OS-NicheGNN +smooth	20260915	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260915	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden	OS-NicheGNN +smooth	20260916	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	leiden_pc30	OS-NicheGNN +smooth	20260916	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans	OS-NicheGNN +smooth	20260916	CID4290	CID4290	6	0.0	0.0	2394
+breast	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260916	CID4290	CID4290	6	0.0	0.0	2394

@@ -1,0 +1,133 @@
+{
+  "stage": "14_model_final",
+  "finished_utc": "2026-09-19T12:11:57Z",
+  "elapsed_s": 766.7,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "0e12a510c4c60885a63f89a3448bf6c3a3521a4dc116898a45b2c8a6fb34a25b",
+  "git_commit": "6f27e4e60e84a6f9c1fce3a514d9b0aa18a178bf",
+  "git_dirty": true,
+  "inputs": {
+    "results/14_model/lopo_metrics.tsv": {
+      "md5": "300134365151aa9708c07029453a6f7e",
+      "bytes": 65618
+    }
+  },
+  "outputs": {
+    "data/processed/frozen_v2/meta.json": {
+      "md5": "6eee15de55716c475960accf4fda6c6e",
+      "bytes": 2988
+    },
+    "results/14_model/identity_diagnostics.tsv": {
+      "md5": "d6a5889140d73fe8f2e2060e13f34742",
+      "bytes": 1270
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "base",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "plan": "v2",
+    "variant": "invariant_anchoronly",
+    "kind": "nichegnn",
+    "K": 8,
+    "frozen_seed": 20260914,
+    "n_epochs": 70,
+    "n_genes": 2000,
+    "sections": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4",
+      "PT5",
+      "PT6",
+      "PT7",
+      "PT8",
+      "PT9",
+      "MR1",
+      "MR2",
+      "MR3",
+      "MR4",
+      "LR5",
+      "MR10A",
+      "MR10B",
+      "MR11A",
+      "MR11B",
+      "MR12",
+      "MR13",
+      "MR14",
+      "MR15",
+      "MR16",
+      "LR17",
+      "MR18",
+      "LR19"
+    ],
+    "patients": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19"
+    ],
+    "sites": {
+      "PT1": "bone",
+      "PT2": "bone",
+      "PT3": "bone",
+      "PT4": "bone",
+      "PT5": "bone",
+      "PT6": "bone",
+      "PT7": "bone",
+      "PT8": "bone",
+      "PT9": "bone",
+      "MR1": "lung",
+      "MR2": "lung",
+      "MR3": "lung",
+      "MR4": "lung",
+      "LR5": "soft_tissue",
+      "MR10A": "lung",
+      "MR10B": "lung",
+      "MR11A": "lung",
+      "MR11B": "lung",
+      "MR12": "lung",
+      "MR13": "lung",
+      "MR14": "lymph_node",
+      "MR15": "lung",
+      "MR16": "heart",
+      "LR17": "soft_tissue",
+      "MR18": "lung",
+      "LR19": "soft_tissue"
+    },
+    "model": {
+      "lambda_nbr": 0.5,
+      "lambda_anchor": 0.5,
+      "lambda_con": 0.0
+    }
+  }
+}

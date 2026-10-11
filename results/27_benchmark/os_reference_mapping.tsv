@@ -1,0 +1,145 @@
+IC	type	broad	class
+IC_1	Stroma	Pneumocytes	lung epithelium
+IC_2	Stroma	Ciliated	lung epithelium
+IC_3	Stroma	Ciliated	lung epithelium
+IC_4	Stroma	Pneumocytes	lung epithelium
+IC_5	Cancer	Chondroblastic	tumour
+IC_6	Cancer	Osteoblastic	tumour
+IC_7	Cancer	Osteoblastic	tumour
+IC_8	Stroma	Airway goblet	lung epithelium
+IC_9	Stroma	Pneumocytes	lung epithelium
+IC_10	Myeloid	OSC	myeloid
+IC_11	Stroma	Ciliated	lung epithelium
+IC_12	Stroma	Pneumocytes	lung epithelium
+IC_13	Myeloid	Macrophage	myeloid
+IC_14	Stroma	Fibroblast	stroma / vascular
+IC_15	Lymphoid	T cells	lymphoid
+IC_16	Lymphoid	Plasma cell	lymphoid
+IC_17	Cancer	ECM	tumour
+IC_18	Lymphoid	Plasma cell	lymphoid
+IC_19	Stroma	Endothelial	stroma / vascular
+IC_20	Stroma	Serous cells	lung epithelium
+IC_21	Stroma	Fibroblast	stroma / vascular
+IC_22	Lymphoid	Plasma cell	lymphoid
+IC_23	Cancer	Hypoxia	tumour
+IC_24	Stroma	Pneumocytes	lung epithelium
+IC_25	Cancer	Osteoblastic	tumour
+IC_26	Cancer	Chondroblastic	tumour
+IC_27	Lymphoid	Plasma cell	lymphoid
+IC_28	Cancer	Common	tumour
+IC_29	Cancer	Hypoxia	tumour
+IC_30	Cancer	Undifferentiated	tumour
+IC_31	Myeloid	Macrophage	myeloid
+IC_32	Stroma	Pneumocytes	lung epithelium
+IC_33	Stroma	Smooth muscle	stroma / vascular
+IC_34	Myeloid	Macrophage	myeloid
+IC_35	Cancer	Chondroblastic	tumour
+IC_36	Stroma	Pneumocytes	lung epithelium
+IC_37	Myeloid	Monocyte	myeloid
+IC_38	Myeloid	preOSC	myeloid
+IC_39	Stroma	Pneumocytes	lung epithelium
+IC_40	Cancer	Osteo-Chondroblastic	tumour
+IC_41	Stroma	RBC	stroma / vascular
+IC_42	Cancer	Hypoxia	tumour
+IC_43	Lymphoid	Plasma cell	lymphoid
+IC_44	Lymphoid	Plasma cell	lymphoid
+IC_45	Cancer	Cycling	tumour
+IC_46	Cancer	Hypoxia	tumour
+IC_47	Lymphoid	Plasma cell	lymphoid
+IC_48	Cancer	Common	tumour
+IC_49	Cancer	Chondroblastic	tumour
+IC_50	Stroma	Fibroblast	stroma / vascular
+IC_51	Stroma	Smooth muscle	stroma / vascular
+IC_52	Stroma	Pneumocytes	lung epithelium
+IC_53	Cancer	Hypoxia	tumour
+IC_54	Lymphoid	Plasma cell	lymphoid
+IC_55	Stroma	Ciliated	lung epithelium
+IC_56	Cancer	Chondroblastic	tumour
+IC_57	Myeloid	Monocyte	myeloid
+IC_58	Cancer	Hypoxia	tumour
+IC_59	Stroma	Pneumocytes	lung epithelium
+IC_60	Cancer	Common	tumour
+IC_61	Cancer	Hypoxia	tumour
+IC_62	Stroma	Pneumocytes	lung epithelium
+IC_63	Lymphoid	Plasma cell	lymphoid
+IC_64	Stroma	Endothelial	stroma / vascular
+IC_65	Cancer	Osteoblastic	tumour
+IC_66	Myeloid	Macrophage	myeloid
+IC_67	Stroma	Endothelial	stroma / vascular
+IC_68	Myeloid	Monocyte	myeloid
+IC_69	Cancer	Hypoxia	tumour
+IC_70	Stroma	Endothelial	stroma / vascular
+IC_71	Cancer	Fibroblastic	tumour
+IC_72	Cancer	Chondroblastic	tumour
+IC_73	Cancer	Hypoxia	tumour
+IC_74	Myeloid	Macrophage	myeloid
+IC_75	Cancer	CLU high nodules	tumour
+IC_76	Stroma	TNFa signalling	stroma / vascular
+IC_77	Cancer	Osteoblastic	tumour
+IC_78	Cancer	Osteoblastic	tumour
+IC_79	Cancer	Undifferentiated	tumour
+IC_80	Cancer	Invasion	tumour
+IC_81	Cancer	Common	tumour
+IC_82	Stroma	Endothelial	stroma / vascular
+IC_83	Stroma	Parenchyme	lung epithelium
+IC_84	Stroma	Pericytic	stroma / vascular
+IC_85	Cancer	Fibroblastic	tumour
+IC_86	Cancer	OXPHOS	tumour
+IC_87	Stroma	Endothelial	stroma / vascular
+IC_88	Cancer	Osteoblastic	tumour
+IC_89	Lymphoid	Plasma cell	lymphoid
+IC_90	Cancer	Cycling	tumour
+IC_91	Cancer	ECM	tumour
+IC_92	Cancer	ECM	tumour
+IC_93	Cancer	Vascular embolism	tumour
+IC_94	Cancer	Osteoblastic	tumour
+IC_95	Myeloid	Dendritic cell	myeloid
+IC_96	Cancer	Undifferentiated	tumour
+IC_97	Cancer	Common	tumour
+IC_98	Cancer	Osteoblastic	tumour
+IC_99	Cancer	Osteo-Chondroblastic	tumour
+IC_100	Stroma	Endothelial	stroma / vascular
+IC_101	Cancer	Undifferentiated	tumour
+IC_102	Stroma	Endothelial	stroma / vascular
+IC_103	Cancer	Myofibroblastic	tumour
+IC_104	Cancer	Osteoblastic	tumour
+IC_105	Cancer	ECM	tumour
+IC_106	Cancer	Common	tumour
+IC_107	Stroma	Fibroblast	stroma / vascular
+IC_108	Stroma	Epithelial	lung epithelium
+IC_109	Cancer	Cycling	tumour
+IC_110	Myeloid	Macrophage	myeloid
+IC_111	Stroma	Endothelial	stroma / vascular
+IC_112	Stroma	Pneumocytes	lung epithelium
+IC_113	Cancer	Osteo-fibroblastic	tumour
+IC_114	Myeloid	Macrophage	myeloid
+IC_116	Cancer	Chondroblastic	tumour
+IC_117	Cancer	ECM	tumour
+IC_118	Lymphoid	Plasma cell	lymphoid
+IC_119	Stroma	Smooth muscle	stroma / vascular
+IC_120	Stroma	Smooth muscle	stroma / vascular
+IC_121	Stroma	Endothelial	stroma / vascular
+IC_122	Stroma	Myofibroblast	stroma / vascular
+IC_123	Cancer	Hypoxia	tumour
+IC_124	Stroma	Nerve	stroma / vascular
+IC_125	Myeloid	Macrophage	myeloid
+IC_126	Myeloid	Macrophage	myeloid
+IC_127	Cancer	Common	tumour
+IC_128	Stroma	Pneumocytes	lung epithelium
+IC_129	Cancer	Undifferentiated	tumour
+IC_130	Cancer	Osteoblastic	tumour
+IC_131	Stroma	Fibroblast	stroma / vascular
+IC_132	Stroma	Pneumocytes	lung epithelium
+IC_133	Cancer	Fibroblastic	tumour
+IC_134	Cancer	Hypoxia	tumour
+IC_135	Myeloid	Neutrophil	myeloid
+IC_136	Cancer	TNFa signalling	tumour
+IC_137	Stroma	Endothelial	stroma / vascular
+IC_138	Cancer	Hypoxia	tumour
+IC_140	Myeloid	Mast cell	myeloid
+IC_141	Stroma	Pericyte	stroma / vascular
+IC_142	Stroma	Clara cell	lung epithelium
+IC_143	Myeloid	OSC	myeloid
+IC_146	Cancer	IFN response	tumour
+IC_148	Stroma	Pneumocytes	lung epithelium
+IC_149	Cancer	Chondroblastic	tumour

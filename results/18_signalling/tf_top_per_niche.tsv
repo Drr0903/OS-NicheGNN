@@ -1,0 +1,41 @@
+niche	source	activity	name
+0	SP1	7.1316007234195125	lymphoid-enriched lung parenchyma
+0	TP53	6.4753880763476985	lymphoid-enriched lung parenchyma
+0	SMAD3	6.462622703908522	lymphoid-enriched lung parenchyma
+0	SRF	6.310202755441326	lymphoid-enriched lung parenchyma
+0	JUN	6.1691824037134495	lymphoid-enriched lung parenchyma
+1	SMAD3	7.019380702532155	epithelial-enriched tumour
+1	SP1	5.962836028694662	epithelial-enriched tumour
+1	RUNX2	5.218570958904975	epithelial-enriched tumour
+1	JUN	5.215447958981212	epithelial-enriched tumour
+1	SRF	5.166023938725176	epithelial-enriched tumour
+2	SP1	8.688067221197443	myeloid-enriched lung parenchyma
+2	SMAD3	8.264294671688537	myeloid-enriched lung parenchyma
+2	JUN	8.196350162744192	myeloid-enriched lung parenchyma
+2	MYC	7.334568937404226	myeloid-enriched lung parenchyma
+2	NFKB	7.301099156079763	myeloid-enriched lung parenchyma
+3	SMAD3	7.250136150870192	peritumoural stroma (boundary)
+3	SP1	6.819382885552779	peritumoural stroma (boundary)
+3	RUNX2	6.287626593296532	peritumoural stroma (boundary)
+3	MYC	6.063872653541452	peritumoural stroma (boundary)
+3	JUN	5.717712536784006	peritumoural stroma (boundary)
+4	SP1	9.237711510560478	vascular-enriched lung parenchyma
+4	JUN	7.841889968126545	vascular-enriched lung parenchyma
+4	NFKB	7.797273105615466	vascular-enriched lung parenchyma
+4	SMAD3	7.665079756086677	vascular-enriched lung parenchyma
+4	TP53	7.615382685588421	vascular-enriched lung parenchyma
+5	SP1	9.040725901188004	myeloid-enriched tumour
+5	MYC	8.422081434628687	myeloid-enriched tumour
+5	SMAD3	8.371621465992698	myeloid-enriched tumour
+5	JUN	8.129935988386006	myeloid-enriched tumour
+5	NFKB	7.7884565854020416	myeloid-enriched tumour
+6	MYC	8.196441640131257	osteoclast-enriched tumour
+6	SMAD3	8.099790602072785	osteoclast-enriched tumour
+6	SP1	7.6127813083373095	osteoclast-enriched tumour
+6	JUN	6.815906745491446	osteoclast-enriched tumour
+6	TP53	6.745128789258018	osteoclast-enriched tumour
+7	SMAD3	8.27290121594129	fibroblast-enriched tumour
+7	MYC	8.259650267595894	fibroblast-enriched tumour
+7	SP1	7.947424328440134	fibroblast-enriched tumour
+7	RUNX2	7.1338469369641615	fibroblast-enriched tumour
+7	TP53	6.830998006151579	fibroblast-enriched tumour
