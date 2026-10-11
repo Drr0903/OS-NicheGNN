@@ -1,25 +1,25 @@
 {
   "stage": "27_benchmark",
-  "finished_utc": "2026-10-10T23:51:11Z",
-  "elapsed_s": 215.8,
+  "finished_utc": "2026-10-11T15:03:57Z",
+  "elapsed_s": 222.4,
   "seed": 20260914,
   "config_path": "config/run.yaml",
   "config_sha256": "4a13e04bb9a70074397edc2fbf6a827844dcce2ca010280675b644a85cb6b341",
-  "git_commit": "852d166d3fd56a0324315aa547608bb258e0586b",
+  "git_commit": "e72f90e22ed29ff27b558d2138cb3c4c4d03b642",
   "git_dirty": true,
   "inputs": {},
   "outputs": {
     "results/27_benchmark/section_scores.tsv": {
-      "md5": "620815dba468426cd088ff4e7573e467",
-      "bytes": 4731984
+      "md5": "566dd41a10a3cc5335c8451d2ab482aa",
+      "bytes": 4993128
     },
     "results/27_benchmark/summary.tsv": {
-      "md5": "e518bff2e1e52c9f286a0ada280aa6e9",
-      "bytes": 204379
+      "md5": "6756afa4728aff2d040e2104d194adca",
+      "bytes": 216018
     },
     "results/27_benchmark/paired.tsv": {
-      "md5": "5a6994aabf23e6b235369b6252a94205",
-      "bytes": 560963
+      "md5": "0a3d50af26cc31c6212ccd6399052fcd",
+      "bytes": 595064
     }
   },
   "environment": {

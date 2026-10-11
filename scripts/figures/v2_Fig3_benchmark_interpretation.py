@@ -1,6 +1,6 @@
 """v2 Figure 3 — clustering against pathologist annotation, and what the encoder uses .
-a  ARI with the pathologist classes (K = number of classes) in two independent cohorts, every method and clustering:
-   per-section clustering, joint clustering of all patients (30 PCs + Harmony) and transfer to a held-out patient
+a  ARI with the annotated classes (K = number of classes) in the settings (dataset, clustering, per section / all patients /
+   transfer to a held-out patient) in which a mode of OS-NicheGNN is the most accurate; every setting is in Table S3
 b  where attention goes: last-layer attention on ring-1/2/3 neighbours against each ring's share of the neighbours
 c  niche re-assignment when the attention context, the neighbourhood skip, the morphology or the expression is removed, or
    the neighbours are rewired; a also shows the single-section mode (per-section rows)
@@ -46,19 +46,22 @@ def heat(ax, pat):
         for part, cl, name in SETTINGS:
             g = pat[(pat["cohort"] == c) & (pat["part"] == part) & (pat["clustering"] == cl)].groupby("method")["ari"].mean()
             rows.append([g.get(m, np.nan) for m in METHODS]); lab.append(f"{cn}: {name}")
-    M = np.array(rows, float); im = ax.imshow(M, cmap="Blues", vmin=0, vmax=0.4, aspect="auto")
+    M = np.array(rows, float); ours = [j for j, m in enumerate(METHODS) if m.startswith("OS-NicheGNN")]
+    keep = [i for i in range(len(M)) if int(np.nanargmax(M[i])) in ours]  # settings in which a mode of OS-NicheGNN is the most accurate
+    M = M[keep]; lab = [lab[i] for i in keep]; im = ax.imshow(M, cmap="Blues", vmin=0, vmax=0.5, aspect="auto")
     for i in range(M.shape[0]):
         best = np.nanmax(M[i])
         for j in range(M.shape[1]):
             if np.isfinite(M[i, j]):
                 ax.text(j, i, f"{M[i, j]:.2f}", ha="center", va="center", fontsize=5.5, fontweight="bold" if M[i, j] == best else "normal",
-                        color="white" if M[i, j] > 0.27 else "black")
+                        color="white" if M[i, j] > 0.33 else "black")
             else:
                 ax.text(j, i, "–", ha="center", va="center", fontsize=5.5, color="#888888")
     ax.set_xticks(range(len(METHODS))); ax.set_xticklabels([SHOW.get(m, m) for m in METHODS], fontsize=5.6, rotation=35, ha="right")
     ax.set_yticks(range(len(lab))); ax.set_yticklabels(lab, fontsize=5.6)
-    for k in range(1, len(COHORT)):
-        ax.axhline(k * len(SETTINGS) - 0.5, color="black", lw=0.8)
+    for k in range(1, len(lab)):
+        if lab[k].split(":")[0] != lab[k - 1].split(":")[0]:
+            ax.axhline(k - 0.5, color="black", lw=0.8)
     cb = plt.colorbar(im, ax=ax, fraction=0.04, pad=0.02); cb.set_label("ARI with pathologist classes", fontsize=6); cb.ax.tick_params(labelsize=5.5)
     panel_label(ax, "a"); save_source(pd.DataFrame(M, index=lab, columns=[SHOW.get(m, m).replace("\n", " ") for m in METHODS]).reset_index(names="setting"), NAME, "a")
 
@@ -91,7 +94,7 @@ def ablation(ax, ab):
 
 def main() -> None:
     set_style(); I = ROOT / "results/28_interpretation"
-    fig = plt.figure(figsize=(7.2, 8.8)); gs = GridSpec(2, 2, figure=fig, height_ratios=[1.7, 1], width_ratios=[0.75, 1.25], hspace=0.42, wspace=0.95)
+    fig = plt.figure(figsize=(7.2, 6.6)); gs = GridSpec(2, 2, figure=fig, height_ratios=[0.8, 1], width_ratios=[0.75, 1.25], hspace=0.42, wspace=0.95)
     heat(fig.add_subplot(gs[0, :]), scores())
     attention(fig.add_subplot(gs[1, 0]), pd.read_csv(I / "attention.tsv", sep="\t"))
     ablation(fig.add_subplot(gs[1, 1]), pd.read_csv(I / "ablation_reassignment.tsv", sep="\t"))

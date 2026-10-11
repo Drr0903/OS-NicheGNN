@@ -27,6 +27,7 @@ from lib.arch_metrics import niche_metrics, targets  # noqa: E402
 from lib.context_probe import load_weights, propagate  # noqa: E402
 from lib.interface import t_score  # noqa: E402
 from lib.evalprobe import evaluate_heldout  # noqa: E402
+from lib.os_prior import with_os_blocks  # noqa: E402
 from lib.repro import ROOT, load_config, log, set_global_seed, stage_dir, write_provenance, write_table  # noqa: E402
 from lib.v2 import compute_anchors, identity_index, load_cohort, make_graphs  # noqa: E402
 
@@ -71,6 +72,8 @@ def run_fold(cfg, adatas, labels, patient_of, site_of, P, anchor_ctx: str | None
                 b = cfg["baselines"]["banksy"]; be = BanksyEmbedder(b["lambda"], b["k_geom"], b["n_pcs"], seeds[0]).fit(all_tr)
                 rec("banksy+img", seeds[0], {s: np.hstack([be.transform(G[s]), Gi[s].x]) for s in train + test})
             contexts = [c for c in contexts if c != "refs"] or cfg["arch"]["contexts"]
+        if ac.get("cnv_dim", 0) > 0 or ac.get("programme_weight", 0) > 0:  # copy-number input block, lineage target block
+            Gm = with_os_blocks(Gm, adatas, labels, train, ac, cfg["seed"])
         Gp, pre = Gm, "mm_"
     sl = [Gp[s] for s in train + test]
     if anchor_ctx:
@@ -135,6 +138,10 @@ def main():
     ap.add_argument("--linear-heads", action="store_true"); ap.add_argument("--prop-skip", action="store_true"); ap.add_argument("--grad-skip", action="store_true")
     ap.add_argument("--moe", action="store_true"); ap.add_argument("--clip", type=float, default=0.0); ap.add_argument("--dgi", type=float, default=0.0)
     ap.add_argument("--img-scale", type=float, default=1.0)
+    ap.add_argument("--cnv-dim", type=int, default=0, help="A24: copy-number block of this many components (suffix _cnv<d>)")
+    ap.add_argument("--programme", type=float, default=0.0, help="A24: weight of the osteosarcoma lineage targets (suffix _osl<w>)")
+    ap.add_argument("--cnv-target", action="store_true", help="A24: the copy-number block is a target only, never an input (suffix _cnvt<d>)")
+    ap.add_argument("--site-adv", type=float, default=0.0, help="A24: weight of the site adversary (suffix _sadv<w>)")
     ap.add_argument("--lambda-anchor", type=float, default=None, help="override v2.model.lambda_anchor (suffix _la<value>)")
     ap.add_argument("--no-proj", action="store_true", help="skip the +mnnproj rows")
     ap.add_argument("--dims", default="", help="hidden width,latent width (e.g. 256,128); methods are suffixed _d<h>z<l>")
@@ -142,7 +149,10 @@ def main():
     cfg["arch"]["no_proj"] = a.no_proj
     if a.dims:
         d, z = map(int, a.dims.split(",")); cfg["arch"].update(d=d, z_dim=z, name_suffix=f"_d{d}z{z}")
-    sfx_extra = ("_lin" if a.linear_heads else "") + ("_ps" if a.prop_skip else "") + ("_gr" if a.grad_skip else "") + ("_moe" if a.moe else "") + ("_clip" if a.clip else "") + ("_dgi" if a.dgi else "") + (f"_img{a.img_scale:g}" if a.img_scale != 1.0 else "")
+    sfx_extra = ("_lin" if a.linear_heads else "") + ("_ps" if a.prop_skip else "") + ("_gr" if a.grad_skip else "") + ("_moe" if a.moe else "") + ("_clip" if a.clip else "") + ("_dgi" if a.dgi else "") + (f"_img{a.img_scale:g}" if a.img_scale != 1.0 else "") \
+        + (f"_cnv{'t' if a.cnv_target else ''}{a.cnv_dim}" if a.cnv_dim else "") + (f"_osl{a.programme:g}" if a.programme else "") + (f"_sadv{a.site_adv:g}" if a.site_adv else "")
+    cfg["arch"].update(cnv_dim=a.cnv_dim, cnv_target=a.cnv_target, programme_weight=a.programme, site_adv=a.site_adv,
+                       site_code={s: sorted(set(cfg["v2"]["site_of"].values())).index(v) for s, v in cfg["v2"]["site_of"].items()})
     cfg["arch"].update(img_scale=a.img_scale, linear_heads=a.linear_heads, prop_skip=a.prop_skip, grad_skip=a.grad_skip, moe=a.moe, clip=a.clip, dgi=a.dgi)
     if a.lambda_anchor is not None:
         cfg["v2"]["model"]["lambda_anchor"] = a.lambda_anchor; sfx_extra += f"_la{a.lambda_anchor:g}"

@@ -23,7 +23,9 @@ def free_mem() -> dict[int, int]:
 
 def main() -> None:
     ap = argparse.ArgumentParser(); ap.add_argument("jobs"); ap.add_argument("--parallel", type=int, default=8); ap.add_argument("--need", type=int, default=7000)
-    ap.add_argument("--retries", type=int, default=4); ap.add_argument("--threads", type=int, default=6); a = ap.parse_args()
+    ap.add_argument("--retries", type=int, default=4); ap.add_argument("--threads", type=int, default=6)
+    ap.add_argument("--gpus", default="", help="comma list of GPUs the queue may use (default: all)"); a = ap.parse_args()
+    allowed = {int(x) for x in a.gpus.split(",") if x}
     q = [(l.split(None, 1)[0], l.split(None, 1)[1], 0) for l in Path(a.jobs).read_text().splitlines() if l.strip()]
     logd = ROOT / "logs/queue"; logd.mkdir(parents=True, exist_ok=True); running, reserved = [], {}
     env0 = {**os.environ, "OMP_NUM_THREADS": str(a.threads), "MKL_NUM_THREADS": str(a.threads), "OPENBLAS_NUM_THREADS": str(a.threads), "NUMBA_NUM_THREADS": str(a.threads)}
@@ -38,7 +40,7 @@ def main() -> None:
             else:
                 print(f"{'done' if p.returncode == 0 else 'FAILED'} {name} (exit {p.returncode})", flush=True)
         while q and len(running) < a.parallel:
-            fm = {g: m - reserved.get(g, 0) for g, m in free_mem().items()}; g = max(fm, key=fm.get)
+            fm = {g: m - reserved.get(g, 0) for g, m in free_mem().items() if not allowed or g in allowed}; g = max(fm, key=fm.get)
             if fm[g] < a.need:
                 break
             name, cmd, tries = q.pop(0); reserved[g] = reserved.get(g, 0) + a.need

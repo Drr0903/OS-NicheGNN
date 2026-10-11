@@ -1,0 +1,83 @@
+{
+  "stage": "27_benchmark_os_seurat_section_model_os_seurat_section_H_nbz64R_OS5",
+  "finished_utc": "2026-10-11T14:05:19Z",
+  "elapsed_s": 1891.2,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "4a13e04bb9a70074397edc2fbf6a827844dcce2ca010280675b644a85cb6b341",
+  "git_commit": "e72f90e22ed29ff27b558d2138cb3c4c4d03b642",
+  "git_dirty": true,
+  "inputs": {},
+  "outputs": {
+    "results/27_benchmark/section_scores_os_seurat_section_model_os_seurat_section_H_nbz64R_OS5.tsv": {
+      "md5": "51687769b506099d4b3d3601c65c55da",
+      "bytes": 7666
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "amendment": "A21",
+    "arch": {
+      "contexts": [
+        "none",
+        "xattn",
+        "mamba",
+        "xmamba"
+      ],
+      "d": 256,
+      "z_dim": 64,
+      "heads": 4,
+      "n_layers": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "spot_mask_rate": 0.4,
+      "w_visible": 0.5,
+      "centre_batch": 2048,
+      "max_epochs": 150,
+      "patience": 15,
+      "mnnproj_rank": 5,
+      "dev_patients": [
+        "P01",
+        "P03",
+        "P05",
+        "P10",
+        "P12",
+        "P14",
+        "P16",
+        "P18"
+      ],
+      "confirm_patients": [
+        "P02",
+        "P04",
+        "P07",
+        "P11",
+        "P13",
+        "P15",
+        "P17"
+      ],
+      "niche_targets": {},
+      "linear_heads": true,
+      "prop_skip": true,
+      "section_input": "hvg3000",
+      "img_scale": 1.0,
+      "dgi": 1.0,
+      "dgi_local": "nbz",
+      "section_readouts": true
+    }
+  }
+}

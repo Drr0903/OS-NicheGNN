@@ -76,11 +76,38 @@ def spatial_nce(z, z_nb, tau: float = 0.5):
     return F.cross_entropy(logits, y)
 
 
+class _Reverse(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, x):
+        return x.view_as(x)
+
+    @staticmethod
+    def backward(ctx, g):
+        return -g
+
+
+class SiteAdversary(nn.Module):
+    """Predicts the anatomical site of a spot from its latent through a gradient-reversal layer, so that training removes
+    site identity from the latent while the niche terms keep the tissue structure."""
+
+    def __init__(self, z_dim: int, d: int, n_sites: int):
+        super().__init__()
+        self.head = mlp(z_dim, d, n_sites)
+
+    def loss(self, z, site: int):
+        logits = self.head(_Reverse.apply(z)); return F.cross_entropy(logits, torch.full((len(z),), site, device=z.device, dtype=torch.long))
+
+
 def attach(model, ac: dict, in_dim: int, e_dim: int = 50):
     d, z = ac["d"], ac["z_dim"]
     model.moe = MoEFusion(in_dim, e_dim, d, z) if ac.get("moe") else None
     model.clip = CLIPAlign(in_dim, e_dim, d, z) if ac.get("clip", 0) > 0 else None
     model.dgi = GraphInfomax(z, d) if ac.get("dgi", 0) > 0 else None
-    if ac.get("img_scale", 1.0) != 1.0:  # input weight of the morphology block; CLIP still sees the complete profile
-        sc = torch.ones(1, in_dim); sc[:, e_dim:] = ac["img_scale"]; model.register_buffer("in_scale", sc)
+    n_tgt = (3 if ac.get("programme_weight", 0) > 0 else 0) + (ac.get("cnv_dim", 0) if ac.get("cnv_target") else 0)  # target-only columns at the end
+    if ac.get("img_scale", 1.0) != 1.0 or n_tgt:  # input weight of the morphology block; CLIP still sees the complete profile
+        sc = torch.ones(1, in_dim); sc[:, e_dim:2 * e_dim] = ac.get("img_scale", 1.0)
+        if n_tgt:
+            sc[:, in_dim - n_tgt:] = 0.0
+        model.register_buffer("in_scale", sc)
+    model.site_adv = SiteAdversary(z, d, len(set(ac["site_code"].values()))) if ac.get("site_adv", 0) > 0 else None
     return model

@@ -60,6 +60,8 @@ def _loss(model: NicheEncoder, s: Sec, ac: dict, gen: torch.Generator, rows: tor
             l = l + ac["dgi"] * model.dgi.loss_local(z, z_neg, summ[rows])
         else:
             l = l + ac["dgi"] * model.dgi.loss(z, z_neg, c if ac.get("dgi_local") else None)
+    if getattr(model, "site_adv", None) is not None:  # the latent must not tell the anatomical site
+        l = l + ac["site_adv"] * model.site_adv.loss(z, ac["site_code"][s.sg.section])
     if ac.get("nbr_nce", 0) > 0:  # spatial contrast with a random ring-1 neighbour of each centre spot
         v = s.nb.valid[rows] & (s.nb.pos[rows][..., 2] > 0); k = torch.multinomial(v.float() + 1e-6, 1, generator=gen).squeeze(1)
         j = s.nb.idx[rows].gather(1, k[:, None]).squeeze(1); ok = v.any(1) & (j >= 0)

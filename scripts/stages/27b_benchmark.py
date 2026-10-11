@@ -224,6 +224,9 @@ def part_lopo(cfg, cohort, G, F, P, seeds, patients):
 
 def merge(cfg, t0):
     sd = stage_dir(STAGE); df = pd.concat([pd.read_csv(f, sep="\t") for f in sorted(sd.glob("section_scores_*.tsv"))], ignore_index=True)
+    ss = cfg.get("single_section", {}); R = f"OS-NicheGNN (single section){ss.get('model_tag', '')}R"  # the same mode, run with the decoded readouts
+    df = df[~df["method"].str.startswith(R) | ((df["cohort"] == "os_seurat") & (df["method"] == R))]  # readout selection rows (DLPFC donor 1) and decoded readouts stay in their files
+    df["method"] = df["method"].replace({R: R[:-1]})
     pat = df.groupby(["cohort", "part", "clustering", "method", "patient"])[["ari", "nmi"]].mean().reset_index()  # seeds and sections averaged per patient
     summ = pat.groupby(["cohort", "part", "clustering", "method"])[["ari", "nmi"]].agg(["mean", "std", "count"]); summ.columns = ["_".join(c) for c in summ.columns]
     ap = df[df["part"] == "joint"].groupby(["cohort", "clustering", "method"])["ari_vs_patient"].mean()
