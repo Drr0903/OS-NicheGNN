@@ -1,0 +1,119 @@
+{
+  "stage": "23d_banksy_k36",
+  "finished_utc": "2026-10-11T09:23:48Z",
+  "elapsed_s": 4.7,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "4a13e04bb9a70074397edc2fbf6a827844dcce2ca010280675b644a85cb6b341",
+  "git_commit": "a6e98fd0d49bb2cca8b28e028ae950a228a56425",
+  "git_dirty": true,
+  "inputs": {
+    "results/23d_banksy_k36/banksy_k36_metrics_P01.tsv": {
+      "md5": "ff3ad174b72b0941e48c894b58a0d2a5",
+      "bytes": 810
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P02.tsv": {
+      "md5": "9a233a18f98bda86bd360d9247832cf9",
+      "bytes": 780
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P03.tsv": {
+      "md5": "e53d38ddeead70c4d41b49ed7f2f8ab1",
+      "bytes": 805
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P04.tsv": {
+      "md5": "a5d196c541e29c99750e30cb9d009750",
+      "bytes": 805
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P05.tsv": {
+      "md5": "ad0be2d7c1432363bd0f7816efd63973",
+      "bytes": 818
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P06.tsv": {
+      "md5": "3e84c1b4935d6dbd29d1695f732a97eb",
+      "bytes": 577
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P07.tsv": {
+      "md5": "82d69dda30bdfe7b5685b0178237318c",
+      "bytes": 779
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P08.tsv": {
+      "md5": "4e49e4179a09e7092476bd01a06cf46a",
+      "bytes": 605
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P09.tsv": {
+      "md5": "67f2dc113babac811a6b426bbf945ba9",
+      "bytes": 595
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P10.tsv": {
+      "md5": "a50d84f87a699b88e973c27744485134",
+      "bytes": 790
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P11.tsv": {
+      "md5": "1373fce59f718a356f8b5977159a6a52",
+      "bytes": 794
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P12.tsv": {
+      "md5": "aa8e2b81ac42825329528cf0f72afad8",
+      "bytes": 793
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P13.tsv": {
+      "md5": "603071f4e68e531ffba77a7b739c4264",
+      "bytes": 795
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P14.tsv": {
+      "md5": "83b7a62d1bd0df74af2fafface182448",
+      "bytes": 807
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P15.tsv": {
+      "md5": "5001645907946cbc52bc9df821d1a105",
+      "bytes": 785
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P16.tsv": {
+      "md5": "3a5feb6d5c27e2b8821feade9c137a3f",
+      "bytes": 781
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P17.tsv": {
+      "md5": "73877fe0c0f399c8f66a7eadb4f5773c",
+      "bytes": 705
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P18.tsv": {
+      "md5": "ec1f221eeb2f04ce2e95be1732dd8d09",
+      "bytes": 705
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics_P19.tsv": {
+      "md5": "459611507877904191f26d9c16ef40ce",
+      "bytes": 614
+    }
+  },
+  "outputs": {
+    "results/23d_banksy_k36/banksy_k36_patient_level.tsv": {
+      "md5": "e6b4159469d6b60de9e982e50b1f8e75",
+      "bytes": 13909
+    },
+    "results/23d_banksy_k36/banksy_k36_paired.tsv": {
+      "md5": "1d617d7a16ea5bde56fdcfb06ae5f622",
+      "bytes": 12774
+    },
+    "results/23d_banksy_k36/banksy_k36_metrics.tsv": {
+      "md5": "4892c3fb06dfc78767975a8d792f2dbb",
+      "bytes": 10015
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {}
+}
