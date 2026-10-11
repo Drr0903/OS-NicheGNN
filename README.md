@@ -49,6 +49,20 @@ All parameters are in `config/run.yaml`. Each stage writes tables to `results/<s
 Model code: `scripts/lib/arch.py` (encoder), `scripts/lib/arch_ext.py` (graph infomax, cross-modal alignment, mixture
 of experts), `scripts/lib/arch_train.py` (objectives and training).
 
+## Trained network
+
+`model/frozen_v4/` holds the atlas encoder trained on all 19 patients (five seeds), its 2,000-gene list, scaler and the
+expression and morphology PCA models. To embed new sections without retraining, copy it to `data/processed/frozen_v4/`
+and run
+
+```bash
+python scripts/embed_new_sections.py --h5ad new_section.h5ad --img new_section_phikon.npy --out embeddings/
+```
+
+The AnnData needs `layers["lognorm"]`, `obsm["spatial"]` and the spot pitch (stage 03 output); the Phikon features come from
+`scripts/stages/04c_image_features.py`. The 256-dimensional latents are then reduced, integrated and assigned to the atlas
+niches as described in the Methods.
+
 ## Licence
 
 MIT
