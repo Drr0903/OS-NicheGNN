@@ -5,9 +5,7 @@ c  paired patient-level differences of OS-NicheGNN against BANKSY-20 and PCA-50 
 d  the same encoder on the true and on a rewired neighbour graph (patient means ± s.e.m.)
 e  niche reuse: agreement of a held-out patient's niches (prototypes from the other 18 patients) with the full-cohort atlas,
    against the same agreement on the training patients (re-clustering alone)
-f  neighbourhood T-cell read-out against the patient separation of each representation's niches (patient means ± s.e.m.)
-Reads results/23_arch_search/{arch_patient_level, arch_paired, arch_metrics}.tsv, results/25_niche_reuse/reuse_patient.tsv,
-results/23e_patient_mixing/mixing_patient_level.tsv
+Reads results/23_arch_search/{arch_patient_level, arch_paired, arch_metrics}.tsv, results/25_niche_reuse/reuse_patient.tsv
 """
 from __future__ import annotations
 
@@ -58,7 +56,7 @@ def forest(ax, pr):
         ax.scatter([], [], color=col, s=16, label=f"vs {LABEL[ref]}")
     ax.axvline(0, color="black", lw=0.6, ls="--"); ax.set_yticks(range(len(METRIC))); ax.set_yticklabels([l for _, l in METRIC], fontsize=6)
     ax.invert_yaxis(); ax.set_xlim(-0.1, 0.37); ax.text(0.33, -0.75, "patients\nbetter", fontsize=5, ha="left", va="bottom")
-    bold_axes(ax, x="OS-NicheGNN − reference (patient-level mean difference, bootstrap 95 % CI; filled = CI excludes 0)")
+    bold_axes(ax, x="OS-NicheGNN − reference (difference in patient means, 95 % CI)")
     ax.legend(fontsize=6, loc="upper left", bbox_to_anchor=(0.6, 0.99), frameon=True, fancybox=False, edgecolor="#CCCCCC"); panel_label(ax, "c")
     save_source(pd.DataFrame(rows), NAME, "c")
 
@@ -87,40 +85,18 @@ def reuse(ax, ru, site):
     save_source(w.reset_index(), NAME, "e")
 
 
-MIX = {"pca": "PCA-50", "pca+img": "PCA-50\n+ H&E", "propagated_pca": "propagated\nPCA-50", "propagated_pca+img": "propagated\nPCA-50 + H&E",
-       "banksy": "BANKSY-20", "banksy+img": "BANKSY-20\n+ H&E", OURS: "OS-NicheGNN"}
-TXT = {OURS: (0.100, 0.615, "left"), "propagated_pca+img": (0.150, 0.805, "center"), "propagated_pca": (0.232, 0.815, "center"),
-       "banksy": (0.250, 0.640, "center"), "banksy+img": (0.252, 0.455, "center"), "pca": (0.212, 0.375, "center"), "pca+img": (0.122, 0.400, "center")}
-
-
-def mixing(ax, mx):
-    g = mx.groupby("method")[["train_ari_vs_patient", "tcell_nbhd_rho"]]; mu = g.mean(); se = g.std(ddof=1) / np.sqrt(g.count())
-    for m in MIX:
-        col = PALETTE[0] if m == OURS else PALETTE[7]
-        ax.errorbar(mu.loc[m, "train_ari_vs_patient"], mu.loc[m, "tcell_nbhd_rho"], xerr=se.loc[m, "train_ari_vs_patient"], yerr=se.loc[m, "tcell_nbhd_rho"],
-                    fmt="o", ms=4 if m == OURS else 3, color=col, ecolor=col, elinewidth=0.6, capsize=1.2, zorder=3)
-        tx, ty, ha = TXT[m]
-        ax.annotate(MIX[m], (mu.loc[m, "train_ari_vs_patient"], mu.loc[m, "tcell_nbhd_rho"]), xytext=(tx, ty), textcoords="data", fontsize=5, ha=ha, va="center",
-                    color=col, fontweight="bold" if m == OURS else "normal", arrowprops={"arrowstyle": "-", "lw": 0.4, "color": col, "shrinkA": 1, "shrinkB": 3})
-    ax.set_xlim(0.07, 0.28); ax.set_ylim(0.33, 0.87)
-    bold_axes(ax, x="patient separation of niches\n(ARI with patient; lower is better)", y="T-cell programme,\nneighbourhood (ρ)"); panel_label(ax, "f")
-    save_source(mu.join(se, rsuffix="_sem").reset_index(), NAME, "f")
-
-
 def main() -> None:
     set_style(); A = ROOT / "results/23_arch_search"
     pat = pd.read_csv(A / "arch_patient_level.tsv", sep="\t"); pr = pd.read_csv(A / "arch_paired.tsv", sep="\t"); m = pd.read_csv(A / "arch_metrics.tsv", sep="\t")
     site = m.groupby("heldout_patient")["heldout_site"].first(); pat["heldout_site"] = pat["heldout_patient"].map(site)
     ru = pd.read_csv(ROOT / "results/25_niche_reuse/reuse_patient.tsv", sep="\t")
-    mx = pd.read_csv(ROOT / "results/23e_patient_mixing/mixing_patient_level.tsv", sep="\t")
-    fig = plt.figure(figsize=(7.2, 8.4)); gs = GridSpec(3, 6, figure=fig, height_ratios=[1, 0.95, 0.9], hspace=0.62, wspace=1.6)
-    a = fig.add_subplot(gs[0, :3]); b = fig.add_subplot(gs[0, 3:]); c = fig.add_subplot(gs[1, :]); d = fig.add_subplot(gs[2, :2]); e = fig.add_subplot(gs[2, 2:4])
-    f = fig.add_subplot(gs[2, 4:])
+    fig = plt.figure(figsize=(7.2, 8.4)); gs = GridSpec(3, 2, figure=fig, height_ratios=[1, 0.95, 0.9], hspace=0.62, wspace=0.55)
+    a = fig.add_subplot(gs[0, 0]); b = fig.add_subplot(gs[0, 1]); c = fig.add_subplot(gs[1, :]); d = fig.add_subplot(gs[2, 0]); e = fig.add_subplot(gs[2, 1])
     lines(a, pat, "macro_f1", "held-out region macro-F1", "a", (0, 1.1)); lines(b, pat, "tcell_nbhd_rho", "held-out T-cell programme,\nneighbourhood (ρ)", "b", (-0.15, 1.05))
     for s_, c_ in SITE_COL.items():
         b.plot([], [], color=c_, lw=1, label=s_.replace("_", " "))
     b.legend(fontsize=5.5, loc="upper left", bbox_to_anchor=(1.02, 1.0), title="held-out site", title_fontsize=5.5, frameon=False)
-    forest(c, pr); rewired(d, pat); reuse(e, ru, site); mixing(f, mx)
+    forest(c, pr); rewired(d, pat); reuse(e, ru, site)
     save_fig(fig, f"{NAME}_validation")
 
 

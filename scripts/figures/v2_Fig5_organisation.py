@@ -30,9 +30,9 @@ def main() -> None:
     fig = plt.figure(figsize=(7.2, 7.4)); gs = fig.add_gridspec(3, 3, hspace=0.42, wspace=0.85, width_ratios=[1.3, 1, 1], height_ratios=[1.0, 1.45, 0.34], left=0.135, right=0.975, top=0.965, bottom=0.065)
     ax = fig.add_subplot(gs[0, 0]); M = np.full((K, K), np.nan)
     for _, r in adj.iterrows():
-        M[int(r["niche_a"]), int(r["niche_b"])] = r["z_mean"]; M[int(r["niche_b"]), int(r["niche_a"])] = r["z_mean"]
+        M[int(r["niche_a"]), int(r["niche_b"])] = r["log2_ratio_mean"]; M[int(r["niche_b"]), int(r["niche_a"])] = r["log2_ratio_mean"]
     v = np.nanmax(np.abs(M)); im = ax.imshow(M, cmap="RdBu_r", vmin=-v, vmax=v, aspect="auto"); ax.set_xticks(range(K)); ax.set_yticks(range(K)); ax.set_xticklabels([str(k) for k in range(K)], fontsize=6); ax.set_yticklabels([names[k] for k in range(K)], fontsize=5.5)  # aspect="auto" fills the cell, so the panel label stays level with b and c
-    cb = plt.colorbar(im, ax=ax, fraction=0.045, pad=0.02); cb.ax.tick_params(labelsize=5.5); cb.set_label("contact z", fontsize=6); panel_label(ax, "a"); save_source(adj, NAME, "a")
+    cb = plt.colorbar(im, ax=ax, fraction=0.045, pad=0.02); cb.ax.tick_params(labelsize=5.5); cb.set_label("log$_2$ observed/expected contacts", fontsize=6); panel_label(ax, "a"); save_source(adj, NAME, "a")
     ax = fig.add_subplot(gs[0, 1]); ts = ts.sort_values("niche"); ax.bar(ts["niche"], ts["mean"], yerr=ts["std"], color=[cols[int(k)] for k in ts["niche"]], capsize=2, edgecolor="black", linewidth=0.3)
     ax.set_xticks(ts["niche"]); ax.set_xticklabels([str(int(k)) for k in ts["niche"]], fontsize=6); bold_axes(ax, x="niche", y="T-cell score (patient mean)"); panel_label(ax, "b"); save_source(ts, NAME, "b")
     ax = fig.add_subplot(gs[0, 2]); ax.bar(enr["niche"], enr["odds_ratio_near_boundary"], color=[cols[int(k)] for k in enr["niche"]], edgecolor=["red" if b else "black" for b in enr["is_interface_niche"]], linewidth=[1.2 if b else 0.3 for b in enr["is_interface_niche"]])

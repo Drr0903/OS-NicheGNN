@@ -62,7 +62,7 @@ def heat(ax, pat):
     for k in range(1, len(lab)):
         if lab[k].split(":")[0] != lab[k - 1].split(":")[0]:
             ax.axhline(k - 0.5, color="black", lw=0.8)
-    cb = plt.colorbar(im, ax=ax, fraction=0.04, pad=0.02); cb.set_label("ARI with pathologist classes", fontsize=6); cb.ax.tick_params(labelsize=5.5)
+    cb = plt.colorbar(im, ax=ax, fraction=0.04, pad=0.02); cb.set_label("ARI with annotated classes", fontsize=6); cb.ax.tick_params(labelsize=5.5)
     panel_label(ax, "a"); save_source(pd.DataFrame(M, index=lab, columns=[SHOW.get(m, m).replace("\n", " ") for m in METHODS]).reset_index(names="setting"), NAME, "a")
 
 
@@ -86,7 +86,7 @@ def ablation(ax, ab):
     for i in range(w.shape[0]):
         for j in range(w.shape[1]):
             ax.text(j, i, f"{w.iloc[i, j]:.2f}", ha="center", va="center", fontsize=5.5, color="white" if w.iloc[i, j] > 0.6 else "black")
-    ax.set_xticks(range(5)); ax.set_xticklabels(["no attention\ncontext", "no neigh-\nbourhood skip", "neighbours\nrewired", "no H&E\nmorphology", "no\nexpression"], fontsize=5.6, rotation=35, ha="right")
+    ax.set_xticks(range(5)); ax.set_xticklabels(["no attention\ncontext", "no neighbourhood\nskip", "neighbours\nrewired", "no H&E\nmorphology", "no\nexpression"], fontsize=5.6, rotation=35, ha="right")
     ax.set_yticks(range(len(w))); ax.set_yticklabels(w.index, fontsize=6)
     cb = plt.colorbar(im, ax=ax, fraction=0.05, pad=0.03); cb.set_label("fraction of spots changing niche", fontsize=6); cb.ax.tick_params(labelsize=5.5)
     panel_label(ax, "c"); save_source(w.reset_index(), NAME, "c")
