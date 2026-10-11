@@ -37,7 +37,7 @@ def main() -> None:
     t0 = time.time(); cfg = load_config(); set_global_seed(cfg["seed"])
     sd = stage_dir(STAGE)
     pat = pd.read_csv(sd / "lopo_patient_level_gene_holdout.tsv", sep="\t")
-    if (sd / "lopo_patient_level_gene_holdout_banksy50.tsv").exists():  # dimension-matched BANKSY sensitivity run (review round 1)
+    if (sd / "lopo_patient_level_gene_holdout_banksy50.tsv").exists():  # dimension-matched BANKSY sensitivity run
         pat = pd.concat([pat, pd.read_csv(sd / "lopo_patient_level_gene_holdout_banksy50.tsv", sep="\t")], ignore_index=True)
     if (sd / "lopo_patient_level_gene_holdout_upgrade.tsv").exists():  #  upgraded model (selected configuration per fold)
         pat = pd.concat([pat, pd.read_csv(sd / "lopo_patient_level_gene_holdout_upgrade.tsv", sep="\t")], ignore_index=True)

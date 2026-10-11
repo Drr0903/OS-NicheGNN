@@ -109,7 +109,7 @@ baselines:
   mlp_ae: {hidden: 128, latent: 64}
   neigh_mean_ae: {hidden: 128, latent: 64}
   banksy: {lambda: 0.8, k_geom: 15, n_pcs: 20}
-  banksy_50pc: {lambda: 0.8, k_geom: 15, n_pcs: 50}   # dimension-matched sensitivity (review round 1)
+  banksy_50pc: {lambda: 0.8, k_geom: 15, n_pcs: 50}   # dimension-matched sensitivity
   stagate: {hidden: [512, 30], epochs: 500, lr: 0.001, rad_cutoff_rings: 1}
   probe: linear_logreg           # identical linear head for every representation
 

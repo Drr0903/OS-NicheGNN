@@ -1,4 +1,4 @@
-"""v2 Supplementary Figure S6 — remodelling beyond the paired analysis: metastatic sites, time, treatment, contacts and signalling.
+"""v2 Supplementary Figure S7 — remodelling beyond the paired analysis: metastatic sites, time, treatment, contacts and signalling.
 a  niche repertoire per site (mean fraction per section; primaries for reference)
 b  unpaired primary vs metastasis: patient-level niche fractions with Cliff's delta
 c  longitudinal MR10A → MR10B (relapse 1 → 2): niche fractions and interface coverage
@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from lib.plotting import PALETTE, bold_axes, panel_label, save_fig, save_source, set_style  # noqa: E402
 from lib.repro import ROOT  # noqa: E402
 
-NAME = "FigS6"; SITES = ["bone", "lung", "lymph_node", "heart", "soft_tissue"]
+NAME = "FigS7"; SITES = ["bone", "lung", "lymph_node", "heart", "soft_tissue"]
 
 
 def stacked(ax, df, cols, K, xlabels, ylabel):

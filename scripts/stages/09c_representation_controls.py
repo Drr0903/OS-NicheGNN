@@ -1,4 +1,4 @@
-"""Stage 09c — the identical niche → interface → model pipeline on other representations (review round 1, C5/C9).
+"""Stage 09c — the identical niche → interface → model pipeline on other representations.
 
 For each representation R in {PCA-50, BANKSY-20, OS-NicheGNN seeds 2–5} the frozen-model steps of stage 08 are
 replayed on the discovery lung sections: embeddings → Leiden with the fixed K (A5) on a patient-balanced sample →
@@ -82,7 +82,7 @@ def main() -> None:
     for seed in [cfg["seed"] + i for i in range(0, cfg["n_seeds"])]:
         model = make_model("nichegnn", len(genes), cfg).to(cfg["device"]); model.load_state_dict(torch.load(proc / "frozen" / f"model_seed{seed}.pt", map_location=cfg["device"]))
         emb = embed_sections(model, [G[s] for s in secs], "nichegnn", cfg, cfg["device"])
-        if seed == cfg["seed"]:  # frozen seed: K sensitivity (review round 1, C9) — the selected K was at the edge of the 4–8 grid
+        if seed == cfg["seed"]:  # frozen seed: K sensitivity — the selected K was at the edge of the 4–8 grid
             for k_alt in K_SENSITIVITY:
                 reps[f"OS-NicheGNN seed 1, K = {k_alt}"] = (emb, k_alt)
         else:

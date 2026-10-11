@@ -1,8 +1,7 @@
-"""v2 Supplementary Figure S3 — what each component of OS-NicheGNN contributes (–A20).
-Rows build the latent up one step at a time from the spot profile [expression PCA-50, H&E PCA-50]: attention encoder with a
-64-d latent; cross-patient anchors and a 256-d latent; niche targets; linear target heads and the linear neighbourhood skip;
-without the anchor term (= OS-NicheGNN); + graph infomax; + morphology input weight 0; + CLIP alignment and + mixture of
-experts (not adopted; the last three separate patients beyond the 0.10 limit, dashed line in f).
+"""v2 Supplementary Figure S3 — what each component of OS-NicheGNN contributes.
+Rows: the spot profile [expression PCA-50, H&E PCA-50]; OS-NicheGNN; and OS-NicheGNN with one component removed at a time
+(attention context, neighbourhood targets with their linear heads, linear neighbourhood skip, morphology input), everything
+else unchanged.
 a–f  held-out region macro-F1, boundary F1, T-cell programme of the neighbourhood, cell composition of the neighbourhood,
      spatial coherence of held-out niches (CHAOS, lower is better), and the training-embedding ARI against patient
      (means ± s.e.m. over the eight development patients; ARI: mean ± s.d.)
@@ -23,13 +22,12 @@ from lib.repro import ROOT, load_config  # noqa: E402
 
 NAME = "FigS3"
 F = "mm_xattn_anchor_d256z256_ntrod_lin_ps"
-ROWS = [("pca+img", "spot profile\n(PCA-50 + H&E)"), ("mm_xattn_z", "attention encoder,\n64-d latent"), ("mm_xattn_anchor_d256z256_z", "+ anchors,\n256-d latent"),
-        ("mm_xattn_anchor_d256z256_ntro_z", "+ niche targets"), (F + "_z", "+ linear heads,\nneighbourhood skip"), (F + "_la0_z", "no anchor term\n= OS-NicheGNN"),
-        (F + "_dgi_la0_z", "+ graph infomax\n(not adopted)"), (F + "_dgi_img0_la0_z", "+ morphology weight 0\n(separates patients)"),
-        (F + "_clip_dgi_img0_la0_z", "+ CLIP alignment\n(separates patients)"), (F + "_moe_clip_dgi_img0_la0_z", "+ mixture of experts\n(separates patients)")]
+ROWS = [("pca+img", "spot profile\n(PCA-50 + H&E)"), (F + "_la0_z", "OS-NicheGNN"), ("mm_none_anchor_d256z256_ntrod_lin_ps_la0_z", "− attention context"),
+        ("mm_xattn_anchor_d256z256_ps_la0_z", "− neighbourhood targets"), ("mm_xattn_anchor_d256z256_ntrod_lin_la0_z", "− neighbourhood skip"),
+        ("mm_xattn_anchor_d256z256_ntrod_lin_ps_img0_la0_z", "− morphology input")]
 PANELS = [("macro_f1", "region macro-F1"), ("boundary_f1", "boundary F1"), ("tcell_nbhd_rho", "T-cell programme,\nneighbourhood (ρ)"),
           ("comp_nbhd_rho", "cell composition,\nneighbourhood (ρ)"), ("chaos", "CHAOS (lower = more\ncoherent niches)"), ("train_ari_vs_patient", "ARI vs patient,\ntraining embeddings")]
-COL = [PALETTE[7], PALETTE[5], PALETTE[4], PALETTE[2], PALETTE[9], PALETTE[6], PALETTE[3], PALETTE[0], PALETTE[8], PALETTE[1]]
+COL = [PALETTE[7], PALETTE[0], PALETTE[3], PALETTE[2], PALETTE[4], PALETTE[5]]
 
 
 def main() -> None:

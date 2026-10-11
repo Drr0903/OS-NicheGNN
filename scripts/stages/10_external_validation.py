@@ -120,7 +120,7 @@ def main() -> None:
                              "matched_diff_E": m2["matched_diff_E"].round(3).tolist(), "n_matched_diff_positive": int((m2["matched_diff_E"] > 0).sum()), "n_with_matched": int(m2["matched_diff_E"].notna().sum()),
                              "spearman_coverage_vs_E_specimen": float(stats.spearmanr(ev["coverage"], ev["E_s"]).correlation) if len(ev) >= 4 else None}
         pm = pooled_models(seg, cluster="section", n_perm=cfg["interface"]["n_permutations"], seed=cfg["seed"]); write_table(pm, sd_ / "pooled_models.tsv")
-        rich = sec.loc[sec["n_t_genes_present"] >= 10, "section"].tolist()  # sensitivity: specimens with ≥ 10 locked T genes present (review round 2)
+        rich = sec.loc[sec["n_t_genes_present"] >= 10, "section"].tolist()  # sensitivity: specimens with ≥ 10 held-out T genes present
         if len(rich) >= 3:
             pm10 = pooled_models(seg[seg["section"].isin(rich)], cluster="section", n_perm=cfg["interface"]["n_permutations"], seed=cfg["seed"]); pm10["specimens"] = ",".join(rich)
             write_table(pm10, sd_ / "pooled_models_min10genes.tsv")

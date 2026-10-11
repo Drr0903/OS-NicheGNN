@@ -141,6 +141,8 @@ def main():
     ap.add_argument("--cnv-dim", type=int, default=0, help="A24: copy-number block of this many components (suffix _cnv<d>)")
     ap.add_argument("--programme", type=float, default=0.0, help="A24: weight of the osteosarcoma lineage targets (suffix _osl<w>)")
     ap.add_argument("--cnv-target", action="store_true", help="A24: the copy-number block is a target only, never an input (suffix _cnvt<d>)")
+    ap.add_argument("--moe-experts", type=int, default=0, help="niche-adaptive experts in the non-linear branch (suffix _nmoe<E>)")
+    ap.add_argument("--fuse-hidden", type=int, default=0, help="hidden width of a single, wider non-linear branch (suffix _fh<H>)")
     ap.add_argument("--site-adv", type=float, default=0.0, help="A24: weight of the site adversary (suffix _sadv<w>)")
     ap.add_argument("--lambda-anchor", type=float, default=None, help="override v2.model.lambda_anchor (suffix _la<value>)")
     ap.add_argument("--no-proj", action="store_true", help="skip the +mnnproj rows")
@@ -150,8 +152,9 @@ def main():
     if a.dims:
         d, z = map(int, a.dims.split(",")); cfg["arch"].update(d=d, z_dim=z, name_suffix=f"_d{d}z{z}")
     sfx_extra = ("_lin" if a.linear_heads else "") + ("_ps" if a.prop_skip else "") + ("_gr" if a.grad_skip else "") + ("_moe" if a.moe else "") + ("_clip" if a.clip else "") + ("_dgi" if a.dgi else "") + (f"_img{a.img_scale:g}" if a.img_scale != 1.0 else "") \
-        + (f"_cnv{'t' if a.cnv_target else ''}{a.cnv_dim}" if a.cnv_dim else "") + (f"_osl{a.programme:g}" if a.programme else "") + (f"_sadv{a.site_adv:g}" if a.site_adv else "")
-    cfg["arch"].update(cnv_dim=a.cnv_dim, cnv_target=a.cnv_target, programme_weight=a.programme, site_adv=a.site_adv,
+        + (f"_cnv{'t' if a.cnv_target else ''}{a.cnv_dim}" if a.cnv_dim else "") + (f"_osl{a.programme:g}" if a.programme else "") + (f"_sadv{a.site_adv:g}" if a.site_adv else "") \
+        + (f"_nmoe{a.moe_experts}" if a.moe_experts else "") + (f"_fh{a.fuse_hidden}" if a.fuse_hidden else "")
+    cfg["arch"].update(moe_experts=a.moe_experts, fuse_hidden=a.fuse_hidden, cnv_dim=a.cnv_dim, cnv_target=a.cnv_target, programme_weight=a.programme, site_adv=a.site_adv,
                        site_code={s: sorted(set(cfg["v2"]["site_of"].values())).index(v) for s, v in cfg["v2"]["site_of"].items()})
     cfg["arch"].update(img_scale=a.img_scale, linear_heads=a.linear_heads, prop_skip=a.prop_skip, grad_skip=a.grad_skip, moe=a.moe, clip=a.clip, dgi=a.dgi)
     if a.lambda_anchor is not None:

@@ -50,6 +50,8 @@ def _loss(model: NicheEncoder, s: Sec, ac: dict, gen: torch.Generator, rows: tor
         l = l + w * ((model.ndec[t](z) - s.tgt[t][rows]) ** 2).mean()
     if getattr(model, "moe", None) is not None:  # keep every expert in use
         l = l + ac.get("moe_balance", 0.01) * MoEFusion.balance(model.last_gates)
+    if getattr(model.fuse, "last_gates", None) is not None:  # niche-adaptive experts: keep every expert in use
+        l = l + ac.get("moe_balance", 0.01) * MoEFusion.balance(model.fuse.last_gates)
     if getattr(model, "clip", None) is not None:  # align the latent with the morphology of the same spots
         l = l + ac["clip"] * model.clip.loss(z, s.x[rows])
     if getattr(model, "dgi", None) is not None:  # true graph against permuted profiles (deep graph infomax)

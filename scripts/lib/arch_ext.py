@@ -38,6 +38,20 @@ class MoEFusion(nn.Module):
         m = g.mean(0); return g.shape[1] * (m ** 2).sum() - 1.0
 
 
+class ExpertFuse(nn.Module):
+    """Niche-adaptive experts for the non-linear branch g of the latent: a router reads the spot encoding and its attended
+    context [h; c] and mixes E expert perceptrons, so spots in different local tissue contexts can be mapped by different
+    functions; the linear neighbourhood skip is added outside, unchanged."""
+
+    def __init__(self, i: int, d: int, z: int, n_experts: int):
+        super().__init__()
+        self.experts = nn.ModuleList([mlp(i, d, z) for _ in range(n_experts)]); self.router = nn.Linear(i, n_experts); self.last_gates = None
+
+    def forward(self, u):
+        g = torch.softmax(self.router(u), dim=1); self.last_gates = g
+        return sum(g[:, k:k + 1] * e(u) for k, e in enumerate(self.experts))
+
+
 class CLIPAlign(nn.Module):
     """The latent of a spot (u, through a projection head) and the morphology of the same spot (w) are pulled together
     and away from the other spots of the batch, so morphology guides the latent without being copied into it."""
@@ -109,5 +123,10 @@ def attach(model, ac: dict, in_dim: int, e_dim: int = 50):
         if n_tgt:
             sc[:, in_dim - n_tgt:] = 0.0
         model.register_buffer("in_scale", sc)
+    f_in = d * (1 if model.context == "none" else 2)
+    if ac.get("moe_experts", 0) > 0:  # niche-adaptive experts in place of the single perceptron g
+        model.fuse = ExpertFuse(f_in, d, z, ac["moe_experts"])
+    elif ac.get("fuse_hidden", 0) > 0:  # parameter-matched single expert: g with a wider hidden layer
+        model.fuse = mlp(f_in, ac["fuse_hidden"], z)
     model.site_adv = SiteAdversary(z, d, len(set(ac["site_code"].values()))) if ac.get("site_adv", 0) > 0 else None
     return model
