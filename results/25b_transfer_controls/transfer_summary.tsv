@@ -1,0 +1,108 @@
+type	representation	mode	comparator	metric	n_patients	mean	median	min	mean_diff	ci95_lo	ci95_hi	n_better	n_worse	wilcoxon_p
+mean	BANKSY-20	inductive		agreement_heldout	19	0.4339730224142195	0.2671614100185528	0.0083759888320148						
+mean	BANKSY-20	inductive		agreement_training	19	0.7040643376749237	0.7176620821034562	0.4966480974412237						
+mean	BANKSY-20	inductive		agreement_ratio	19	0.6064105405415787	0.39376033686196144	0.010758215984449974						
+mean	BANKSY-20	inductive		ari_heldout	19	0.24885718255182004	0.1980220293554585	-0.001987071386382						
+mean	BANKSY-20	inductive		ari_training	19	0.48271885226070255	0.4598826738544608	0.2356017969479163						
+mean	BANKSY-20	inductive		unmatched_heldout	19	0.07630907711501067	0.011608623548922	0.0						
+mean	BANKSY-20	inductive		unmatched_training	19	0.025010123709114273	0.0250109422872506	0.0250014423909071						
+mean	BANKSY-20	inductive		ari_region_heldout	19	0.20128278413855347	0.165347237276702	-0.0142054455603309						
+mean	BANKSY-20	inductive		ari_region_training	19	0.04187233643431293	0.0570374953101397	-0.1131609711788361						
+mean	BANKSY-20	transductive		agreement_heldout	19	0.5728059918905424	0.6265356265356266	0.0571856287425149						
+mean	BANKSY-20	transductive		agreement_training	19	0.7206841820510594	0.750418235048097	0.5421638822593476						
+mean	BANKSY-20	transductive		agreement_ratio	19	0.7781316785231022	0.861925646972376	0.07486265206895179						
+mean	BANKSY-20	transductive		ari_heldout	19	0.4411707839860542	0.3448282163020385	0.0467433632561592						
+mean	BANKSY-20	transductive		ari_training	19	0.5621144196059523	0.5909270518926225	0.3214497899505016						
+mean	BANKSY-20	transductive		unmatched_heldout	19	0.011774361196320169	0.0048780487804878	0.0						
+mean	BANKSY-20	transductive		unmatched_training	19	0.025010123709114273	0.0250109422872506	0.0250014423909071						
+mean	BANKSY-20	transductive		ari_region_heldout	19	0.24301438161245228	0.2030850965942076	-0.0023078678900082						
+mean	BANKSY-20	transductive		ari_region_training	19	0.07998314212751588	0.0698981919890659	0.0233178639825132						
+mean	OS-NicheGNN	inductive		agreement_heldout	19	0.7003914297316468	0.7474402730375427	0.2971698113207547						
+mean	OS-NicheGNN	inductive		agreement_training	19	0.7625745124981919	0.771316356265045	0.6476454551809306						
+mean	OS-NicheGNN	inductive		agreement_ratio	19	0.9256637431232932	0.965510890975085	0.3595875839082249						
+mean	OS-NicheGNN	inductive		ari_heldout	19	0.4234693060478799	0.4615914560148619	-0.0625646592351422						
+mean	OS-NicheGNN	inductive		ari_training	19	0.6322768120750423	0.6463211567038434	0.5294932027033696						
+mean	OS-NicheGNN	inductive		unmatched_heldout	19	0.362931959331992	0.4058872305140962	0.0103806228373702						
+mean	OS-NicheGNN	inductive		unmatched_training	19	0.025010123709114273	0.0250109422872506	0.0250014423909071						
+mean	OS-NicheGNN	inductive		ari_region_heldout	18	0.18300476565412405	0.17565327788795831	-0.0958103442487603						
+mean	OS-NicheGNN	inductive		ari_region_training	19	0.206408807572531	0.2076900752072326	0.1363320402721585						
+mean	OS-NicheGNN	transductive		agreement_heldout	19	0.7214671122831795	0.7828178694158076	0.3036951501154734						
+mean	OS-NicheGNN	transductive		agreement_training	19	0.773678511875446	0.7835799365288711	0.6907938291170983						
+mean	OS-NicheGNN	transductive		agreement_ratio	19	0.9299214536605603	0.985679412310799	0.4396321120928734						
+mean	OS-NicheGNN	transductive		ari_heldout	19	0.555488555290495	0.5845693949953796	0.125105556418153						
+mean	OS-NicheGNN	transductive		ari_training	19	0.6381955360374334	0.6482704651499402	0.5605381710468398						
+mean	OS-NicheGNN	transductive		unmatched_heldout	19	0.012820046460878151	0.0029021558872305	0.0						
+mean	OS-NicheGNN	transductive		unmatched_training	19	0.025010123709114273	0.0250109422872506	0.0250014423909071						
+mean	OS-NicheGNN	transductive		ari_region_heldout	19	0.19543303436964957	0.1486641123314584	0.0033575769481746						
+mean	OS-NicheGNN	transductive		ari_region_training	19	0.1913418909914791	0.1948438252454413	0.1280659061821162						
+mean	profile + ring means	inductive		agreement_heldout	19	0.41723820508264103	0.40625	0.0108991825613079						
+mean	profile + ring means	inductive		agreement_training	19	0.5873711376553373	0.5926738319806976	0.4802686449234011						
+mean	profile + ring means	inductive		agreement_ratio	19	0.7020844980177959	0.673912278125113	0.01963774821307828						
+mean	profile + ring means	inductive		ari_heldout	19	0.22969787839578595	0.2373762366205469	-0.0471075534840044						
+mean	profile + ring means	inductive		ari_training	19	0.3470958885942363	0.3588319380468495	0.2256514266597937						
+mean	profile + ring means	inductive		unmatched_heldout	19	0.2601993034986202	0.142641129032258	0.0003430531732418						
+mean	profile + ring means	inductive		unmatched_training	19	0.025010123709114273	0.0250109422872506	0.0250014423909071						
+mean	profile + ring means	inductive		ari_region_heldout	19	0.16224548435953226	0.0716569801203492	-0.1042281585223876						
+mean	profile + ring means	inductive		ari_region_training	19	0.11703397080151715	0.1085085041113112	0.0427369748103462						
+mean	profile + ring means	transductive		agreement_heldout	19	0.42673968495367093	0.3394919168591224	0.1236584227718152						
+mean	profile + ring means	transductive		agreement_training	19	0.5565680126133044	0.5731641243644244	0.4444420660573239						
+mean	profile + ring means	transductive		agreement_ratio	19	0.7855760072021581	0.6760191158730376	0.21483883679584853						
+mean	profile + ring means	transductive		ari_heldout	19	0.31491524155323386	0.3379466943552386	0.0644179907238744						
+mean	profile + ring means	transductive		ari_training	19	0.3245219643252936	0.3465376493746963	0.1724357007809828						
+mean	profile + ring means	transductive		unmatched_heldout	19	0.027068882839994604	0.0043859649122807	0.0						
+mean	profile + ring means	transductive		unmatched_training	19	0.025010123709114273	0.0250109422872506	0.0250014423909071						
+mean	profile + ring means	transductive		ari_region_heldout	19	0.2393811240834978	0.1746756570019877	0.0030150582253468						
+mean	profile + ring means	transductive		ari_region_training	19	0.09831972600562948	0.1014160045496868	0.0263198010268598						
+mean	spot profile	inductive		agreement_heldout	19	0.4707445275554251	0.5320945945945946	0.1315068493150684						
+mean	spot profile	inductive		agreement_training	19	0.6138074128466959	0.5994788012428586	0.5263484190948543						
+mean	spot profile	inductive		agreement_ratio	19	0.7621836346290763	0.8183628590424774	0.22187669991350686						
+mean	spot profile	inductive		ari_heldout	19	0.28188569847301875	0.2714355784775744	0.0396407035059201						
+mean	spot profile	inductive		ari_training	19	0.4193174934174608	0.3986592185795056	0.3361265031357316						
+mean	spot profile	inductive		unmatched_heldout	19	0.24314052538359796	0.1863270777479893	0.0213953488372093						
+mean	spot profile	inductive		unmatched_training	19	0.025010123709114273	0.0250109422872506	0.0250014423909071						
+mean	spot profile	inductive		ari_region_heldout	19	0.13886015618283185	0.1054450632564541	-0.0016134615030562						
+mean	spot profile	inductive		ari_region_training	19	0.13245717368830467	0.1250080120137063	0.0871293154086972						
+mean	spot profile	transductive		agreement_heldout	19	0.5579821395838337	0.5646290247316845	0.2627627627627628						
+mean	spot profile	transductive		agreement_training	19	0.6246780863151499	0.6223424983762719	0.520580310880829						
+mean	spot profile	transductive		agreement_ratio	19	0.8904015839175553	0.913205405669116	0.4388669626706134						
+mean	spot profile	transductive		ari_heldout	19	0.3695896583040433	0.3488312359265081	0.1750125263084296						
+mean	spot profile	transductive		ari_training	19	0.42187634384097666	0.4143527713768158	0.3440442410069657						
+mean	spot profile	transductive		unmatched_heldout	19	0.020533975743226438	0.006145741878841	0.0						
+mean	spot profile	transductive		unmatched_training	19	0.025010123709114273	0.0250109422872506	0.0250014423909071						
+mean	spot profile	transductive		ari_region_heldout	19	0.17614301130565474	0.1911535335794539	0.001084659106836						
+mean	spot profile	transductive		ari_region_training	19	0.13877239303196878	0.129636422840021	0.1077249470170776						
+paired_difference	OS-NicheGNN	transductive	spot profile (transductive)	agreement_heldout	19				0.16348497269934578	0.09400072964637045	0.23552545310258813	16.0	3.0	0.000644683837890625
+paired_difference	OS-NicheGNN	transductive	spot profile (transductive)	agreement_ratio	19				0.03951986974300486	-0.03622116919193201	0.12352009252203451	11.0	8.0	0.5152778625488281
+paired_difference	OS-NicheGNN	transductive	spot profile (transductive)	ari_heldout	19				0.1858988969864516	0.11458293295474285	0.2605904324428212	17.0	2.0	0.000125885009765625
+paired_difference	OS-NicheGNN	transductive	spot profile (transductive)	unmatched_heldout	19				-0.007713929282348285	-0.013824587818886043	-0.002647883514314233	3.0	15.0	0.009562906117832044
+paired_difference	OS-NicheGNN	transductive	spot profile (transductive)	ari_region_heldout	19				0.01929002306399484	-0.025932988986311505	0.06291264701618064	14.0	5.0	0.18186569213867188
+paired_difference	OS-NicheGNN	transductive	profile + ring means (transductive)	agreement_heldout	19				0.29472742732950846	0.17424940618697451	0.41486344311238504	16.0	3.0	0.000335693359375
+paired_difference	OS-NicheGNN	transductive	profile + ring means (transductive)	agreement_ratio	19				0.1443454464584022	-0.06907715074968272	0.34857373855641843	12.0	7.0	0.156402587890625
+paired_difference	OS-NicheGNN	transductive	profile + ring means (transductive)	ari_heldout	19				0.24057331373726107	0.1475188396943046	0.3323286105994828	17.0	2.0	0.000164031982421875
+paired_difference	OS-NicheGNN	transductive	profile + ring means (transductive)	unmatched_heldout	19				-0.014248836379116453	-0.03252032829860734	-0.0005038675815579872	6.0	11.0	0.17729327255318428
+paired_difference	OS-NicheGNN	transductive	profile + ring means (transductive)	ari_region_heldout	19				-0.04394808971384825	-0.10738931574232426	0.01581965400783666	8.0	11.0	0.25792694091796875
+paired_difference	OS-NicheGNN	transductive	BANKSY-20 (transductive)	agreement_heldout	19				0.14866112039263688	0.017247866543002793	0.2832116375996039	10.0	9.0	0.06628799438476562
+paired_difference	OS-NicheGNN	transductive	BANKSY-20 (transductive)	agreement_ratio	19				0.15178977513745814	-0.0003020564979496457	0.3084097809954588	11.0	8.0	0.12318801879882812
+paired_difference	OS-NicheGNN	transductive	BANKSY-20 (transductive)	ari_heldout	19				0.11431777130444087	-0.014007236983807956	0.2387862218390919	12.0	7.0	0.07987594604492188
+paired_difference	OS-NicheGNN	transductive	BANKSY-20 (transductive)	unmatched_heldout	19				0.0010456852645579838	-0.005788652326013195	0.008417151949078987	10.0	7.0	0.981116590883351
+paired_difference	OS-NicheGNN	transductive	BANKSY-20 (transductive)	ari_region_heldout	19				-0.04758134724280263	-0.16450400675349997	0.051524243519683946	10.0	9.0	0.8905677795410156
+paired_difference	OS-NicheGNN	inductive	spot profile (inductive)	agreement_heldout	19				0.22964690217622166	0.13553246810645195	0.3215574043092922	16.0	3.0	0.00026702880859375
+paired_difference	OS-NicheGNN	inductive	spot profile (inductive)	agreement_ratio	19				0.16348010849421687	0.03621484222950526	0.287978833236108	13.0	6.0	0.036067962646484375
+paired_difference	OS-NicheGNN	inductive	spot profile (inductive)	ari_heldout	19				0.1415836075748612	0.03334882595561655	0.25279960948244845	14.0	5.0	0.036067962646484375
+paired_difference	OS-NicheGNN	inductive	spot profile (inductive)	unmatched_heldout	19				0.11979143394839413	0.02913340109234362	0.21595806563007222	12.0	7.0	0.040130615234375
+paired_difference	OS-NicheGNN	inductive	spot profile (inductive)	ari_region_heldout	18				0.036549046015658435	-0.03349362601224038	0.11539966367940359	11.0	7.0	0.522613525390625
+paired_difference	OS-NicheGNN	inductive	profile + ring means (inductive)	agreement_heldout	19				0.2831532246490058	0.13150141947258107	0.427474282266235	16.0	3.0	0.002399444580078125
+paired_difference	OS-NicheGNN	inductive	profile + ring means (inductive)	agreement_ratio	19				0.22357924510549743	-0.01223284737378174	0.44903800469820515	13.0	6.0	0.12318801879882812
+paired_difference	OS-NicheGNN	inductive	profile + ring means (inductive)	ari_heldout	19				0.19377142765209393	0.07038749676061756	0.32365558658505583	15.0	4.0	0.014068603515625
+paired_difference	OS-NicheGNN	inductive	profile + ring means (inductive)	unmatched_heldout	19				0.10273265583337189	-0.0010096218971474818	0.2131616534024007	15.0	4.0	0.049365997314453125
+paired_difference	OS-NicheGNN	inductive	profile + ring means (inductive)	ari_region_heldout	18				0.01212242267445838	-0.11294944557493418	0.12911175479812828	9.0	9.0	0.83172607421875
+paired_difference	OS-NicheGNN	inductive	BANKSY-20 (inductive)	agreement_heldout	19				0.2664184073174272	0.13010818396507756	0.40536639352469056	14.0	5.0	0.0016937255859375
+paired_difference	OS-NicheGNN	inductive	BANKSY-20 (inductive)	agreement_ratio	19				0.31925320258171463	0.1311905882323422	0.5117709823376381	14.0	5.0	0.0061798095703125
+paired_difference	OS-NicheGNN	inductive	BANKSY-20 (inductive)	ari_heldout	19				0.1746121234960599	0.012616141399261566	0.3300733649921159	13.0	6.0	0.03234100341796875
+paired_difference	OS-NicheGNN	inductive	BANKSY-20 (inductive)	unmatched_heldout	19				0.28662288221698146	0.18428073917107612	0.3944535151287302	19.0	0.0	3.814697265625e-06
+paired_difference	OS-NicheGNN	inductive	BANKSY-20 (inductive)	ari_region_heldout	18				-0.028722612628806456	-0.14071267356625045	0.08554832386359269	11.0	7.0	0.9661178588867188
+paired_difference	OS-NicheGNN	inductive	OS-NicheGNN (transductive)	agreement_heldout	19				-0.021075682551532592	-0.10375733966909316	0.061771344247249727	10.0	9.0	0.76800537109375
+paired_difference	OS-NicheGNN	inductive	OS-NicheGNN (transductive)	agreement_ratio	19				-0.00425771053726699	-0.10725133174512833	0.098833480200818	10.0	9.0	0.9529838562011719
+paired_difference	OS-NicheGNN	inductive	OS-NicheGNN (transductive)	ari_heldout	19				-0.132019249242615	-0.23023670941735214	-0.026112564523134155	5.0	14.0	0.020412445068359375
+paired_difference	OS-NicheGNN	inductive	OS-NicheGNN (transductive)	unmatched_heldout	19				0.35011191287111393	0.23075394700306062	0.4699372613453903	19.0	0.0	3.814697265625e-06
+paired_difference	OS-NicheGNN	inductive	OS-NicheGNN (transductive)	ari_region_heldout	18				-0.023099127461163063	-0.08396720326791654	0.03841602189856433	8.0	10.0	0.550872802734375

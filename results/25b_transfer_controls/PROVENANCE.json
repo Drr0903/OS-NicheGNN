@@ -1,0 +1,75 @@
+{
+  "stage": "25b_transfer_controls",
+  "finished_utc": "2026-10-11T18:58:49Z",
+  "elapsed_s": 2.1,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
+  "git_commit": "20ec9a1a4131b457333d434630462777493cca5d",
+  "git_dirty": true,
+  "inputs": {
+    "results/15_niches/spot_niches.tsv": {
+      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
+      "bytes": 16167409
+    },
+    "results/25b_transfer_controls/baseline_atlas_spots.tsv": {
+      "md5": "c4c851636c107fa9122fb4eccc8d9ac8",
+      "bytes": 7324030
+    }
+  },
+  "outputs": {
+    "results/25b_transfer_controls/transfer_patient.tsv": {
+      "md5": "bc06d4fe586a55839df9936c1c9885af",
+      "bytes": 35640
+    },
+    "results/25b_transfer_controls/transfer_summary.tsv": {
+      "md5": "433168496bba277775f77b3c5f30746b",
+      "bytes": 14674
+    },
+    "results/25b_transfer_controls/baseline_atlas_spots.tsv": {
+      "md5": "c4c851636c107fa9122fb4eccc8d9ac8",
+      "bytes": 7324030
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "folds": [
+      "_P01",
+      "_P02",
+      "_P03",
+      "_P04",
+      "_P05",
+      "_P06",
+      "_P07",
+      "_P08",
+      "_P09",
+      "_P10",
+      "_P11",
+      "_P12",
+      "_P13",
+      "_P14",
+      "_P15",
+      "_P16",
+      "_P17",
+      "_P18",
+      "_P19"
+    ],
+    "baseline_atlas": "single seed, balanced 1,500 spots per patient, fixed-K Leiden, no consensus",
+    "inductive": "scaler/PCA/Harmony fitted on training patients only; held-out projected, not Harmony-corrected"
+  }
+}
