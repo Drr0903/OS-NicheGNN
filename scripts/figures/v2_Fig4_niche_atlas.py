@@ -44,7 +44,8 @@ def main() -> None:
             m = (d["niche"] == k) & (~d["unmatched"].astype(bool)); ax.scatter(d.loc[m, "x"], -d.loc[m, "y"], s=0.5, c=cols[k], linewidths=0, label=names[k] if i == 0 else None)
         ax.set_aspect("equal"); ax.axis("off")
         ax.text(0.5, 1.01, s_, ha="center", va="bottom", fontsize=5.6, color=SITE_COL[d["site"].iloc[0]], fontweight="bold", transform=ax.transAxes)
-    fig.text(0.012, 0.988, "a", fontweight="bold", fontsize=11, va="top")
+        if i == 0:
+            panel_label(ax, "a")  # placed with the other letters (left column, above the first map)
     from matplotlib.lines import Line2D
     axl = fig.add_subplot(sub[5, 1:5]); axl.axis("off")  # the two cells the 26 sections leave free carry the key
     hs = [Line2D([], [], marker="o", ls="", ms=3.2, color=cols[k]) for k in range(K)] + [Line2D([], [], marker="o", ls="", ms=3.2, color="#dedede")]

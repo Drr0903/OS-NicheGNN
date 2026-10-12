@@ -42,6 +42,10 @@ def align_panel_labels(fig, pad_pt: float = 4.0, col_tol: float = 0.07, fontsize
         while parent[k] != k:
             parent[k] = parent[parent[k]]; k = parent[k]
         return k
+    first = [id(min(row, key=lambda o: o["px0"])) for row in rows]  # the leftmost panel of every row forms the left column
+    idx = {id(o): k for k, o in enumerate(rec)}
+    for k in first[1:]:
+        parent[find(idx[k])] = find(idx[first[0]])
     for i in range(len(rec)):
         for j in range(i + 1, len(rec)):
             a, b = rec[i], rec[j]; wide = max(a["px1"] - a["px0"], b["px1"] - b["px0"])

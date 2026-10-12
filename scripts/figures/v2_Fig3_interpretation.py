@@ -33,7 +33,7 @@ NAMES = {int(k): v for k, v in json.load(open(ROOT / "results/15_niches/niche_na
 
 def router_maps(fig, gs) -> None:
     """a: H&E (top) and host-tissue router weight (bottom) for one section per site."""
-    sub = gs.subgridspec(2, 4, hspace=0.08, wspace=0.08); src = []
+    sub = gs.subgridspec(2, 4, hspace=0.06, wspace=0.03); src = []
     for k, (sec, title) in enumerate(SITES):
         img = np.asarray(Image.open(M / f"{sec}_hires_crop.png").convert("RGB")); d = pd.read_csv(M / f"{sec}_spots.tsv", sep="\t").dropna(subset=["host_expert_weight"])
         a1, a2 = fig.add_subplot(sub[0, k]), fig.add_subplot(sub[1, k])
@@ -112,7 +112,7 @@ def attribution(ax, ga, top: int = 3) -> None:
 
 def main() -> None:
     set_style(); I = ROOT / "results/28_interpretation"
-    fig = plt.figure(figsize=(7.2, 8.6)); gs = GridSpec(3, 1, figure=fig, height_ratios=[1.15, 0.95, 0.85], hspace=0.38)
+    fig = plt.figure(figsize=(7.2, 9.2)); gs = GridSpec(3, 1, figure=fig, height_ratios=[1.45, 0.95, 0.85], hspace=0.34)
     router_maps(fig, gs[0])
     mid = gs[1].subgridspec(1, 3, width_ratios=[1.0, 0.55, 0.55], wspace=0.12)
     routing(fig.add_subplot(mid[0])); attention_example([fig.add_subplot(mid[1]), fig.add_subplot(mid[2])])
