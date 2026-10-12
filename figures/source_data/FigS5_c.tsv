@@ -1,2 +1,4 @@
-spearman_z_vs_section_size	spearman_log2_ratio_vs_section_size	mean_spots_primary	mean_spots_metastasis
-0.6843274150429359	0.30431687910657734	1059.4444444444443	2530.9411764705883
+niche	n_all_spots	n_tumour_dominant	n_shared
+-1	1098	858	738
+2	1904	1581	895
+3	1922	0	0

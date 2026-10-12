@@ -72,7 +72,7 @@ def check_containment(fig):
 
 
 def main() -> None:
-    set_style(); W, H = 180.0, 206.0
+    set_style(); W, H = 180.0, 198.0
     fig = plt.figure(figsize=(W / 25.4, H / 25.4)); ax = fig.add_axes([0, 0, 1, 1])
     ys = ov.draw(ax, *overview_inputs(), W, H); panel_c(ax, 6, ys["cd"][0], 90, ys["cd"][1])
     for letter, x, y in [("a", 1.0, ys["a"][1]), ("b", 1.0, ys["b"][1]), ("c", 1.0, ys["cd"][1]), ("d", 91.5, ys["cd"][1])]:

@@ -1,4 +1,4 @@
-"""v2 Supplementary Figure S4 — robustness of the niche atlas and of the paired programme change.
+"""v2 Supplementary Figure S5 — robustness of the niche atlas and of the paired programme change.
 a  K sensitivity: number of niches present in at least half of the patients and ARI with the K = 8 partition for K = 6, 8, 10
 b  stability across training runs: agreement of every independently trained network with the consensus partition (balanced sample) and with the atlas niche map (all spots)
 c  paired programme change, all-spots scope vs tumour-dominant scope: number of consistent genes per niche and the overlap
@@ -18,7 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from lib.plotting import PALETTE, bold_axes, panel_label, save_fig, save_source, set_style  # noqa: E402
 from lib.repro import ROOT  # noqa: E402
 
-NAME = "FigS4"
+NAME = "FigS5"
 
 
 def main() -> None:

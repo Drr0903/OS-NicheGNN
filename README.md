@@ -52,6 +52,7 @@ All parameters are in `config/run.yaml`. Each stage writes tables to `results/<s
 | 32, 33 | component analysis (each part removed, single expert, concatenation) and niches without the image |
 | 34 | expert routing: router weights by tissue, across the interface and from diagnosis to relapse |
 | 35 | representative tumour–lung interfaces (Figure 5a) |
+| 36 | router-weight maps and attention examples (Figure 3a, c) |
 
 Model code: `scripts/lib/arch.py` (encoder: ring-mean and graph attention branches), `scripts/lib/arch_ext.py` (mixture-of-experts
 fusion, concatenation variant, graph infomax), `scripts/lib/arch_train.py` (objectives and training).

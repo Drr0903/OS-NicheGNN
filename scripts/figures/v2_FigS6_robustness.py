@@ -1,4 +1,4 @@
-"""v2 Supplementary Figure S5 — does the niche atlas depend on the representation? 
+"""v2 Supplementary Figure S6 — does the niche atlas depend on the representation? 
 a  correspondence of the delivered atlas (OS-NicheGNN latent, inductive) with an atlas built by the identical protocol on
    Harmony-corrected PCA-50 (transductive): fraction of each delivered niche falling in its best-matching Harmony niche, and the
    Pearson correlation of their RCTD composition
@@ -20,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from lib.plotting import PALETTE, bold_axes, label_points, panel_label, save_fig, save_source, set_style  # noqa: E402
 from lib.repro import ROOT  # noqa: E402
 
-NAME = "FigS5"
+NAME = "FigS6"
 
 
 def main() -> None:

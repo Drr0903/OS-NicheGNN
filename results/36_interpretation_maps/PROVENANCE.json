@@ -1,0 +1,79 @@
+{
+  "stage": "36_interpretation_maps",
+  "finished_utc": "2026-10-12T18:42:47Z",
+  "elapsed_s": 22.2,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "82bb4c8c7d10e474dbfee5666a75ef81d45fd4b0",
+  "git_dirty": true,
+  "inputs": {
+    "results/15_niches/spot_niches.tsv": {
+      "md5": "b76c73e8f8bd9cb9dab5a14493d4244c",
+      "bytes": 16167892
+    }
+  },
+  "outputs": {
+    "results/36_interpretation_maps/PT2_spots.tsv": {
+      "md5": "75e9f9f1aa6f1147ad8090e663bb1939",
+      "bytes": 80890
+    },
+    "results/36_interpretation_maps/PT2_hires_crop.png": {
+      "md5": "b4acc6e9acf30ddba4e72fabadee1b6b",
+      "bytes": 3073696
+    },
+    "results/36_interpretation_maps/MR2_spots.tsv": {
+      "md5": "d921696ba3702653b39fcb79ea59fa0c",
+      "bytes": 377156
+    },
+    "results/36_interpretation_maps/MR2_hires_crop.png": {
+      "md5": "eb7274fdd94f1f53289bbb6197b05e8b",
+      "bytes": 5930127
+    },
+    "results/36_interpretation_maps/MR14_spots.tsv": {
+      "md5": "f3aba92b841abec04964d67986aaff6e",
+      "bytes": 117884
+    },
+    "results/36_interpretation_maps/MR14_hires_crop.png": {
+      "md5": "9e6f6a1d0881250f2d367f6437fc83f1",
+      "bytes": 3223965
+    },
+    "results/36_interpretation_maps/LR17_spots.tsv": {
+      "md5": "6fe6965668c6ff4c09cf131ad106275d",
+      "bytes": 139052
+    },
+    "results/36_interpretation_maps/LR17_hires_crop.png": {
+      "md5": "b5b6acd233dd7fe197cad15c0324224e",
+      "bytes": 3247719
+    },
+    "results/36_interpretation_maps/attention_example.tsv": {
+      "md5": "e003fc1143c048e279823eed40a62a0a",
+      "bytes": 7206
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "sections": [
+      "PT2",
+      "MR2",
+      "MR14",
+      "LR17"
+    ],
+    "example_section": "MR2"
+  }
+}

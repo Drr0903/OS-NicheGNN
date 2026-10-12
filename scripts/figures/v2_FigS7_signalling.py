@@ -1,4 +1,4 @@
-"""v2 Supplementary Figure S6 — signalling identity of the niches and the gradient across the tumour–lung interface .
+"""v2 Supplementary Figure S7 — signalling identity of the niches and the gradient across the tumour–lung interface .
 a  PROGENy pathway activity per niche (patient means, z-scored across niches); all 14 pathways differ between niches
 b  every niche contrast before and after adjustment for the eleven deconvolved cell-type fractions, and the number at FDR < 0.05
 c  signed ring distance to the tumour–lung interface: T-cell score and the pathways with a monotone gradient (patient means)
@@ -17,7 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from lib.plotting import PALETTE, bold_axes, panel_label, save_fig, save_source, set_style  # noqa: E402
 from lib.repro import ROOT  # noqa: E402
 
-NAME = "FigS6"
+NAME = "FigS7"
 GRAD = ["t_score", "TGFb", "Hypoxia", "TNFa", "JAK-STAT"]
 LAB = {"t_score": "T-cell score", "TGFb": "TGF-β", "Hypoxia": "hypoxia", "TNFa": "TNF-α", "JAK-STAT": "JAK–STAT"}
 

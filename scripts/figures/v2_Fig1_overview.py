@@ -55,11 +55,11 @@ def panel_a(ax, y0, y1):
 
 
 def _inputs(ax, p, yt, ya):
-    icon(ax, "he_patch", 15, yt + 1.5, h=10); txt(ax, 15, yt - 6.2, "H&E patch\n(Phikon, 50 PCs)", p, fs=FS - 0.6)
+    icon(ax, "he_patch", 16, yt + 1.5, h=10); txt(ax, 16, yt - 6.2, "H&E patch\n(Phikon, 50 PCs)", p, fs=FS - 0.6)
     D.vector(ax, 25, yt - 3.5, 3.0, 10, [C["expr"], "#5fa3ad", "#a9d0d5"], n=10, vertical=True)
     txt(ax, 26.5, yt + 9.0, "expression\n(50 PCs)", p, fs=FS - 0.6)
-    D.lattice(ax, 19.5, ya + 1.5, 1.4, [C["r0"], C["r1"], C["r2"], C["mask"]], masked=((2, -1), (-1, 2), (1, 1)))
-    txt(ax, 17.5, ya - 12.0, "spot i, rings 1–3;\n40 % masked", p, fs=FS - 0.6)
+    D.lattice(ax, 16, ya + 1.5, 1.3, [C["r0"], C["r1"], C["r2"], C["mask"]], masked=((2, -1), (-1, 2), (1, 1)))
+    txt(ax, 16, ya - 11.5, "spot i, rings 1–3;\n40 % masked", p, fs=FS - 0.6)
 
 
 def _branches(ax, p, yt, ya):
@@ -105,38 +105,26 @@ def _fusion(ax, p, yt, ya, ys):
 
 
 def _cards(ax, p, y0, y1):
-    """the equations of each module, under the module they describe (as in Methods)"""
-    cards = [(9, 63, C["ring"], [r"$\bar{\mathbf{x}}^{(r)}_i=\frac{1}{|\mathcal{N}_r(i)|}\sum_{j\in\mathcal{N}_r(i)}\mathbf{x}_j$",
-                                   r"$\mathbf{h}_i=\mathrm{MLP}([\mathbf{x}_i;\bar{\mathbf{x}}^{(1)}_i;\bar{\mathbf{x}}^{(2,3)}_i])$",
-                                   r"$\mathbf{t}_{ij}=\mathbf{W}_t\mathbf{x}_j+\phi(\delta_{ij})$"]),
-             (65.5, 100.5, C["att"], [r"$\alpha_{ij}=\mathrm{softmax}_j\left(\frac{\mathbf{q}_i^{\top}\mathbf{k}_{ij}}{\sqrt{d/H}}\right)$",
-                                      r"$\mathbf{q}_i^{(0)}=\mathbf{h}_i,\ \ \mathbf{c}_i=\sum_j\alpha_{ij}\mathbf{v}_{ij}$",
-                                      r"2 layers, $H=4$ heads"]),
-             (103, 142.5, C["router"], [r"$\pi_i=\mathrm{softmax}(\mathbf{W}_r[\mathbf{h}_i;\mathbf{c}_i])$",
-                                        r"$\mathbf{z}_i=\sum_{k=1}^{2}\pi_{ik}\,g_k([\mathbf{h}_i;\mathbf{c}_i])$",
-                                        r"$\qquad+\,\mathbf{W}_s[\mathbf{x}_i;\bar{\mathbf{x}}^{(1)}_i;\bar{\mathbf{x}}^{(2,3)}_i]$"])]
-    for x0, x1, col, lines in cards:
-        cb = box(ax, x0, y0, x1, y1, "white", col, lw=0.6, r=1.2, z=3)
-        for k, ln in enumerate(lines):
-            txt(ax, x0 + 1.6, y1 - 4.0 - k * 6.2, ln, cb, fs=FS - 0.5, ha="left", col=INK if "$" in ln else GREY)
+    """the key equation of each module, under the module it describes (full forms in Methods)"""
+    cards = [(9, 62, C["ring"], r"$\mathbf{h}_i=\mathrm{MLP}\,([\mathbf{x}_i;\bar{\mathbf{x}}^{(1)}_i;\bar{\mathbf{x}}^{(2,3)}_i])$"),
+             (64, 103, C["att"], r"$\mathbf{c}_i=\sum_j\alpha_{ij}\mathbf{v}_{ij},\ \ \alpha_{ij}=\mathrm{softmax}_j(\mathbf{q}_i^{\top}\mathbf{k}_{ij})$"),
+             (105, 142.5, C["router"], r"$\mathbf{z}_i=\sum_k\pi_{ik}\,g_k([\mathbf{h}_i;\mathbf{c}_i])+\mathrm{skip}$")]
+    for x0, x1, col, eq in cards:
+        cb = box(ax, x0, y0, x1, y1, "white", col, lw=0.6, r=1.2, z=3); txt(ax, (x0 + x1) / 2, (y0 + y1) / 2, eq, cb, fs=FS - 0.2)
 
 
 def panel_b(ax, y0, y1):
     p = frame(ax, 6, y0, 178, y1, C["fb"], "OS-NicheGNN: two neighbourhood branches fused by a mixture of experts")
     yt, ya = y1 - 20, y1 - 41  # centre lines of the ring-mean and graph attention branches
-    _inputs(ax, p, yt, ya); _branches(ax, p, yt, ya); _fusion(ax, p, yt, ya, y0 + 24.5); _cards(ax, p, y0 + 3, y0 + 21.5)
+    _inputs(ax, p, yt, ya); _branches(ax, p, yt, ya); _fusion(ax, p, yt, ya, y0 + 15.5); _cards(ax, p, y0 + 3, y0 + 11.5)
     ob = box(ax, 145.5, y0 + 3, 176.5, y1 - 8, "white", "#3f4f5c", lw=0.7, r=1.5, z=3)
     txt(ax, 161, y1 - 12.0, "Training objective", ob, fs=FS + 0.4, fw="bold")
-    rows = [(r"$\mathcal{L}=\mathcal{L}_{\mathrm{rec}}+\mathcal{L}_{\mathrm{nb}}+\mathcal{L}_{\mathrm{route}}$", None, INK),
-            (r"$\mathcal{L}_{\mathrm{rec}}=\Vert\hat{\mathbf{x}}_i-\mathbf{x}_i\Vert_2^2$", "masked and visible spots", INK),
-            (r"$\mathcal{L}_{\mathrm{nb}}=\sum_{r}\Vert\mathbf{A}_r\mathbf{z}_i-\bar{\mathbf{x}}^{(r)}_i\Vert_2^2$", "+ spread of the neighbourhood", C["ring"]),
-            (r"$\mathcal{L}_{\mathrm{route}}=\lambda_{\mathrm{bal}}(K\sum_k\bar{\pi}_k^{2}-1)$", None, C["router"]),
-            (r"$\qquad\quad+\,\lambda_{\mathrm{ent}}\,H(\pi_i)$", "both experts used,\neach spot committed", C["router"])]
-    yy = y1 - 21.0
+    txt(ax, 161, y1 - 20.0, r"$\mathcal{L}=\mathcal{L}_{\mathrm{rec}}+\mathcal{L}_{\mathrm{nb}}+\mathcal{L}_{\mathrm{route}}$", ob, fs=FS + 0.2)
+    rows = [(r"$\mathcal{L}_{\mathrm{rec}}$", "reconstruct masked\nand visible spots", INK), (r"$\mathcal{L}_{\mathrm{nb}}$", "ring means and\nspread (linear heads)", C["ring"]),
+            (r"$\mathcal{L}_{\mathrm{route}}$", "both experts used,\neach spot committed", C["router"])]
+    yy = y1 - 30.0
     for a, b, c in rows:
-        txt(ax, 147.3, yy, a, ob, fs=FS - 0.2, col=c, ha="left"); yy -= 6.6
-        if b:
-            txt(ax, 147.3, yy + 2.6, b, ob, fs=FS - 1.0, ha="left", col=GREY, va="top"); yy -= 4.6 + 2.6 * b.count("\n")
+        txt(ax, 147.8, yy, a, ob, fs=FS + 0.2, col=c, ha="left"); txt(ax, 155.6, yy, b, ob, fs=FS - 1.0, ha="left", col=GREY); yy -= 12.0
 
 
 def panel_d(ax, x0, y0, x1, y1, img, d, niche_cols):
@@ -171,6 +159,6 @@ def panel_d(ax, x0, y0, x1, y1, img, d, niche_cols):
 def draw(ax, img, d, niche_cols, W, H):
     """Panels a, b and d on a millimetre canvas of W x H; returns the y-ranges used, for panel c and the letters."""
     ax.set_xlim(0, W); ax.set_ylim(0, H); ax.set_aspect("equal"); ax.axis("off")
-    a, b, cd = (H - 46, H - 2), (H - 130, H - 50), (2, H - 134)
+    a, b, cd = (H - 46, H - 2), (H - 122, H - 50), (2, H - 126)
     panel_a(ax, *a); panel_b(ax, *b); panel_d(ax, 94, cd[0], 178, cd[1], img, d, niche_cols)
     return {"a": a, "b": b, "cd": cd}
