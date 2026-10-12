@@ -43,13 +43,14 @@ def panel_b(ax_img, ax_lab, section: str = "MR11B"):
 
 
 def main() -> None:
-    set_style(); FW, FH = 7.2, 6.75
+    set_style(); FW, FH = 7.2, 7.25
     fig = plt.figure(figsize=(FW, FH))
-    ax_a = fig.add_axes([0, 1 - (arch.H + 0.05) / FH, arch.W / FW, arch.H / FH]); arch.draw(ax_a)
+    ax_a = fig.add_axes([0, 1 - (arch.H + 0.05) / FH, arch.W / FW, arch.H / FH]); arch.draw(ax_a); arch.mark(ax_a)
+    ax_c = fig.add_axes([0, 1 - (arch.H + 0.07 + arch.SH) / FH, arch.W / FW, arch.SH / FH]); arch.contributions(ax_c)
     fig.text(0.006, 1 - 0.02 / FH, "a", fontsize=9, fontweight="bold", va="top")
-    hb = 2.85; yb = 0.36 / FH
+    hb = 2.62; yb = 0.36 / FH
     ax_b1 = fig.add_axes([0.03, yb, 0.455, hb / FH]); ax_b2 = fig.add_axes([0.525, yb, 0.455, hb / FH])
-    panel_b(ax_b1, ax_b2, "MR11B"); fig.text(0.006, yb + (hb + 0.30) / FH, "b", fontsize=9, fontweight="bold", va="top")
+    panel_b(ax_b1, ax_b2, "MR11B"); fig.text(0.006, yb + (hb + 0.27) / FH, "b", fontsize=9, fontweight="bold", va="top")
     fig.legend(*ax_b2.get_legend_handles_labels(), loc="lower center", bbox_to_anchor=(0.5, 0.004), ncol=4,
                fontsize=6, markerscale=2.0, frameon=False, handletextpad=0.4, columnspacing=2.0)
     save_fig(fig, f"{NAME}_cohort_framework")

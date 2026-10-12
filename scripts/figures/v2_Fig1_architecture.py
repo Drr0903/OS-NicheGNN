@@ -14,7 +14,7 @@ W, H = 7.2, 3.25
 C = {"ink": "#2f3d48", "edge": "#8a9aa5", "in": "#eef3f7", "enc": "#eceffa", "lat": "#e3f1f2", "head": "#f8eee4", "loss": "#fbe3df",
      "down": "#eaf3ec", "expr": "#2a7f8a", "img": "#c27b4f", "att": "#5b6bb5", "z": "#1f6f7a", "skip": "#8f7fbf",
      "centre": "#1f6f7a", "r1": "#74b6bf", "r23": "#cfe6e9", "mask": "#9aa4ab"}
-NICHE = ["#4f7fa8", "#e08a4a", "#57a473", "#c0564f", "#8f7fbf", "#a1866f", "#dd94c0", "#8a8a8a"]
+NICHE = ["#4C72B0", "#DD8452", "#55A868", "#C44E52", "#8172B3", "#937860", "#DA8BC3", "#8C8C8C"]  # = lib.plotting.PALETTE, as in Figure 4
 FS, FS_T, FS_S = 6.0, 6.6, 5.6
 
 
@@ -23,8 +23,8 @@ def box(ax, x, y, w, h, fc, ec=None, lw=0.6, r=0.06, z=1):
 
 
 def text(ax, x, y, s, fs=FS, **kw):
-    kw.setdefault("ha", "center"); kw.setdefault("va", "center"); kw.setdefault("color", C["ink"])
-    ax.text(x, y, s, fontsize=fs, zorder=6, **kw)
+    kw.setdefault("ha", "center"); kw.setdefault("va", "center"); kw.setdefault("color", C["ink"]); kw.setdefault("zorder", 6)
+    return ax.text(x, y, s, fontsize=fs, **kw)
 
 
 def arrow(ax, x0, y0, x1, y1, col=None, lw=0.8, rad=0.0, style="-|>"):
@@ -138,3 +138,33 @@ def draw(ax) -> None:
     text(ax, x3 + w3 / 2, 0.80, "applications", fs=FS, fontweight="bold")
     text(ax, x3 + w3 / 2, 0.62, "tumour–lung interface", fs=FS_S); text(ax, x3 + w3 / 2, 0.47, "diagnosis → relapse", fs=FS_S)
     text(ax, x3 + w3 / 2, 0.32, "five tissue sites", fs=FS_S)
+
+
+HL = "#c0564f"  # colour of the contribution badges
+
+
+def badge(ax, x, y, n, r=0.075):
+    ax.add_patch(Circle((x, y), r, fc=HL, ec="white", lw=0.6, zorder=8)); text(ax, x, y - 0.004, str(n), fs=5.6, color="white", fontweight="bold", zorder=9)
+
+
+def mark(ax) -> None:
+    """numbered badges on the components that carry the contributions listed under the panel"""
+    for x, y, n in [(1.50, 1.20, 1), (3.94, 1.96, 2), (5.58, 1.58, 3), (7.10, 1.58, 4), (7.10, 0.92, 5)]:
+        badge(ax, x, y, n)
+
+
+CONTRIB = [("Multimodal input", "expression with foundation-model\nH&E features in every spot"),
+           ("Selective attention", "each spot weights its 36\nneighbours over three rings"),
+           ("Readable latent", "beats BANKSY on unseen patients'\nimmune context (18 of 19)"),
+           ("Transferable atlas", "98 % of a new patient's spots\nmapped onto the fixed atlas"),
+           ("Osteosarcoma biology", "stromal band marks fewer T cells;\nrelapse shifts the tumour state")]
+SH = 0.62  # height of the contribution strip (inches)
+
+
+def contributions(ax) -> None:
+    ax.set_xlim(0, W); ax.set_ylim(0, SH); ax.set_aspect("equal"); ax.axis("off")
+    n = len(CONTRIB); gap = 0.08; w = (W - 0.08 - gap * (n - 1)) / n
+    for k, (t, d) in enumerate(CONTRIB):
+        x = 0.04 + k * (w + gap); box(ax, x, 0.03, w, SH - 0.06, "#fdf3f1", ec=HL, lw=0.7)
+        badge(ax, x + 0.13, SH - 0.17, k + 1); text(ax, x + 0.25, SH - 0.17, t, fs=FS, fontweight="bold", ha="left")
+        text(ax, x + w / 2, 0.20, d, fs=FS_S - 0.2, linespacing=1.25)
