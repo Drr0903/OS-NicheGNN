@@ -1,17 +1,17 @@
 niche	n_metastatic_present	n_metastatic_total	n_metastatic_sites_present	n_primary_present	n_primary_total	class	unit	name
-0	5	15	1	0	9	site-specific (lung)	patient	lymphoid-enriched lung parenchyma
-1	11	15	3	9	9	shared metastatic	patient	epithelial-enriched tumour
-2	4	15	1	1	9	sporadic	patient	myeloid-enriched lung parenchyma
-3	11	15	3	7	9	shared metastatic	patient	peritumoural stroma (boundary)
-4	9	15	2	0	9	shared metastatic	patient	vascular-enriched lung parenchyma
-5	13	15	3	5	9	shared metastatic	patient	myeloid-enriched tumour
-6	13	15	3	4	9	shared metastatic	patient	osteoclast-enriched tumour
-7	12	15	4	9	9	shared metastatic	patient	fibroblast-enriched tumour
-0	6	17	1	0	9	site-specific (lung)	section	lymphoid-enriched lung parenchyma
-1	11	17	3	9	9	shared metastatic	section	epithelial-enriched tumour
-2	4	17	1	1	9	sporadic	section	myeloid-enriched lung parenchyma
-3	11	17	3	7	9	shared metastatic	section	peritumoural stroma (boundary)
-4	10	17	2	0	9	shared metastatic	section	vascular-enriched lung parenchyma
-5	14	17	3	5	9	shared metastatic	section	myeloid-enriched tumour
-6	15	17	3	4	9	shared metastatic	section	osteoclast-enriched tumour
-7	12	17	4	9	9	shared metastatic	section	fibroblast-enriched tumour
+0	5	15	1	0	9	site-specific (lung)	patient	epithelial-enriched lung parenchyma
+1	10	15	2	0	9	shared metastatic	patient	vascular-enriched lung parenchyma
+2	13	15	3	8	9	shared metastatic	patient	peritumoural stroma (boundary)
+3	9	15	3	9	9	shared metastatic	patient	lymphoid-enriched stroma
+4	13	15	3	3	9	shared metastatic	patient	osteoclast-enriched tumour
+5	10	15	4	9	9	shared metastatic	patient	fibroblast-enriched tumour
+6	6	15	2	4	9	site-specific (lung)	patient	myeloid-enriched tumour
+7	10	15	3	5	9	shared metastatic	patient	myeloid-enriched stroma
+0	6	17	1	0	9	site-specific (lung)	section	epithelial-enriched lung parenchyma
+1	11	17	2	0	9	shared metastatic	section	vascular-enriched lung parenchyma
+2	14	17	3	8	9	shared metastatic	section	peritumoural stroma (boundary)
+3	9	17	3	9	9	shared metastatic	section	lymphoid-enriched stroma
+4	15	17	3	3	9	shared metastatic	section	osteoclast-enriched tumour
+5	11	17	4	9	9	shared metastatic	section	fibroblast-enriched tumour
+6	6	17	2	4	9	sporadic	section	myeloid-enriched tumour
+7	11	17	3	5	9	shared metastatic	section	myeloid-enriched stroma

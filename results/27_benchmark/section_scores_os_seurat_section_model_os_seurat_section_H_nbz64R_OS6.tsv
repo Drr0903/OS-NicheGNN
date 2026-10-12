@@ -1,55 +1,55 @@
 cohort	part	method	seed	section	patient	K	clustering	ari	nmi	n_scored
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	leiden	0.378373181343707	0.6243588104126034	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	leiden_pc30	0.37345493110501177	0.6224730934784815	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	kmeans	0.3343889165205485	0.5979772032356369	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	kmeans_pc30	0.32773093845472206	0.5932108073736132	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	gmm_pc30	0.4417839717374623	0.6751183716493918	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	gmm_pc30_refined	0.4369966570494279	0.6677474990226838	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	leiden	0.45581931377922164	0.6738563935672176	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	leiden_pc30	0.4497082541380746	0.6758682736078226	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	kmeans	0.3727180963350848	0.6295833835937299	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	kmeans_pc30	0.3849136906614862	0.6341948754192124	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	gmm_pc30	0.4103697341387872	0.6700555242507729	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	gmm_pc30_refined	0.4028107422903291	0.6587413418337573	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	leiden	0.3379130842666705	0.6130836186520402	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	leiden_pc30	0.35670646608263873	0.6217736452804017	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	kmeans	0.3684524883135207	0.6220795161349741	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	kmeans_pc30	0.372662379885235	0.6211204676193821	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	gmm_pc30	0.39529862384062375	0.650738004136364	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	gmm_pc30_refined	0.392184175401997	0.6467742712087845	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	leiden	0.40772858354974395	0.6365441990877247	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	leiden_pc30	0.3964875565017542	0.6387742408117255	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	kmeans	0.3565392368352254	0.6092266532580839	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	kmeans_pc30	0.35420309617025725	0.613332669038018	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	gmm_pc30	0.4392262350338958	0.6699261334834964	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	gmm_pc30_refined	0.43763547892635896	0.6642606284573939	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	leiden	0.40310611723437095	0.6512748274424586	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	leiden_pc30	0.42467781167058627	0.6624456707543908	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	kmeans	0.36979806584870983	0.6277354445035651	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	kmeans_pc30	0.3628241361118876	0.6219802014316915	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	gmm_pc30	0.45441137880689564	0.6778603583751831	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	gmm_pc30_refined	0.4457034768036144	0.6672648092719408	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	leiden	0.3500837522586613	0.6045655475556551	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	leiden_pc30	0.35003862839416233	0.6121158631929602	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	kmeans	0.38000750235848973	0.6262722383494609	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	kmeans_pc30	0.37028418669826213	0.623995360577719	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	gmm_pc30	0.43620854786515123	0.6620557418099413	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	gmm_pc30_refined	0.4329146086168756	0.657619826702919	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	leiden	0.41229558343990613	0.6390336285905239	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	leiden_pc30	0.4057985095411043	0.6303110579872424	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	kmeans	0.34117801517360635	0.6101176940754858	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	kmeans_pc30	0.3402824871646266	0.6133155039010486	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	gmm_pc30	0.43293890064692003	0.6701029766982544	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	gmm_pc30_refined	0.4285477574035881	0.6626497730503611	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	leiden	0.44048565834576664	0.6695985965478325	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	leiden_pc30	0.42400707344852345	0.6655573519386218	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	kmeans	0.35317871812456786	0.6315859031847245	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	kmeans_pc30	0.36702107146889	0.6283597472026733	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	gmm_pc30	0.4333181747356931	0.6727487048170265	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	gmm_pc30_refined	0.4264074536974272	0.6627946996495208	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	leiden	0.342001953703936	0.6117445967611518	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	leiden_pc30	0.37542107049958456	0.6243717097610878	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	kmeans	0.34576372616057893	0.6185990497960924	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	kmeans_pc30	0.3570001797940985	0.6187435464388485	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	gmm_pc30	0.41054315607467157	0.6597388622357193	13038
-os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	gmm_pc30_refined	0.4071778145793098	0.6543959014914578	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	leiden	0.3966186508871406	0.629363791068731	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	leiden_pc30	0.4088044454037122	0.6367360453799648	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	kmeans	0.3741831891748681	0.6176973036180915	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	kmeans_pc30	0.35518079304203165	0.6115483333458769	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	gmm_pc30	0.4573003519789821	0.6817055298117319	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260914	OS6	OS6	28	gmm_pc30_refined	0.4525994808205004	0.6746955987454044	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	leiden	0.43029550335867833	0.6640017637167858	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	leiden_pc30	0.43173138156824137	0.6613154750169812	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	kmeans	0.36867893774605726	0.6361830640225259	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	kmeans_pc30	0.37106391963456686	0.6356699913300415	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	gmm_pc30	0.44896564514759324	0.6827894188248146	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260914	OS6	OS6	28	gmm_pc30_refined	0.4370714899186067	0.6701030474573945	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	leiden	0.36160707944222775	0.6114138651773972	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	leiden_pc30	0.3634329962836208	0.6243227020197876	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	kmeans	0.35922818323684874	0.6198091480036798	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	kmeans_pc30	0.3660424385096116	0.6253204444312024	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	gmm_pc30	0.42250296867890813	0.6581776324997505	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260914	OS6	OS6	28	gmm_pc30_refined	0.41877621683714805	0.6535361091661878	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	leiden	0.40406061511269864	0.6352782338713087	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	leiden_pc30	0.40611725946089394	0.6302037919920683	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	kmeans	0.3707653007028139	0.6216206648326223	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	kmeans_pc30	0.35851890218103954	0.614501720617387	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	gmm_pc30	0.45294585875012955	0.6775254439854095	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260915	OS6	OS6	28	gmm_pc30_refined	0.44963458273460327	0.6735240510367252	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	leiden	0.44797459315894445	0.6646833015901862	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	leiden_pc30	0.4063108211801168	0.6542081304270645	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	kmeans	0.3661353570370605	0.6335643391810746	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	kmeans_pc30	0.3787389272400655	0.6356906390051926	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	gmm_pc30	0.45566981720937194	0.6770989480581548	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260915	OS6	OS6	28	gmm_pc30_refined	0.45405515866114615	0.6701935134561748	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	leiden	0.34555556582144553	0.6202067438412989	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	leiden_pc30	0.36910194755886794	0.6237273291652689	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	kmeans	0.36864385518699394	0.6255334109822083	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	kmeans_pc30	0.3616380443494212	0.6217930519969578	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	gmm_pc30	0.4175470547436961	0.6544254614982916	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260915	OS6	OS6	28	gmm_pc30_refined	0.414883384917196	0.6492641949113105	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	leiden	0.39988678161102004	0.6306662658641009	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	leiden_pc30	0.40856271038387626	0.6355977415550044	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	kmeans	0.364623401601066	0.6166073621015721	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	kmeans_pc30	0.37463307711913363	0.6168120364126269	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	gmm_pc30	0.4594058547386987	0.6816212120539648	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R	20260916	OS6	OS6	28	gmm_pc30_refined	0.456994885611065	0.6726995657099699	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	leiden	0.38602395861258115	0.6520022738219736	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	leiden_pc30	0.4052120624641577	0.6601405856070106	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	kmeans	0.3976412035148576	0.6431748121793963	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	kmeans_pc30	0.3721672782505967	0.6341320687177647	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	gmm_pc30	0.437851823656041	0.6764213980213222	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon	20260916	OS6	OS6	28	gmm_pc30_refined	0.4319717504342907	0.6656747172008168	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	leiden	0.33254874998812745	0.6102355585917917	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	leiden_pc30	0.34596074241235264	0.6215779686830907	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	kmeans	0.3627334524318892	0.62204457636743	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	kmeans_pc30	0.3769559263272995	0.6289296899415965	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	gmm_pc30	0.4284755063385091	0.6651322531368288	13038
+os_seurat	per_section	OS-NicheGNN (single section)_H_nbz64R recon ring1	20260916	OS6	OS6	28	gmm_pc30_refined	0.42547758298435856	0.6607077841607222	13038

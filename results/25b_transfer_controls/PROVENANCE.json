@@ -1,16 +1,16 @@
 {
   "stage": "25b_transfer_controls",
-  "finished_utc": "2026-10-11T18:58:49Z",
-  "elapsed_s": 2.1,
+  "finished_utc": "2026-10-12T15:02:46Z",
+  "elapsed_s": 2.0,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
-  "git_commit": "20ec9a1a4131b457333d434630462777493cca5d",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
     "results/15_niches/spot_niches.tsv": {
-      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
-      "bytes": 16167409
+      "md5": "b76c73e8f8bd9cb9dab5a14493d4244c",
+      "bytes": 16167892
     },
     "results/25b_transfer_controls/baseline_atlas_spots.tsv": {
       "md5": "c4c851636c107fa9122fb4eccc8d9ac8",
@@ -19,12 +19,12 @@
   },
   "outputs": {
     "results/25b_transfer_controls/transfer_patient.tsv": {
-      "md5": "bc06d4fe586a55839df9936c1c9885af",
-      "bytes": 35640
+      "md5": "ef28fa247d6045273c73b4d178d4bfb1",
+      "bytes": 35440
     },
     "results/25b_transfer_controls/transfer_summary.tsv": {
-      "md5": "433168496bba277775f77b3c5f30746b",
-      "bytes": 14674
+      "md5": "d8ed62366d683c86fc56a8559d9ed7d9",
+      "bytes": 14669
     },
     "results/25b_transfer_controls/baseline_atlas_spots.tsv": {
       "md5": "c4c851636c107fa9122fb4eccc8d9ac8",

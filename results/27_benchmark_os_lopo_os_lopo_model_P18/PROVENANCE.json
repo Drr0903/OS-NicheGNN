@@ -1,17 +1,17 @@
 {
   "stage": "27_benchmark_os_lopo_os_lopo_model_P18",
-  "finished_utc": "2026-10-10T21:34:01Z",
-  "elapsed_s": 1023.4,
+  "finished_utc": "2026-10-12T12:49:08Z",
+  "elapsed_s": 1173.9,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
-  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {},
   "outputs": {
     "results/27_benchmark/section_scores_os_lopo_os_lopo_model_P18.tsv": {
-      "md5": "04cd1e44b2fbd46931e4050516146e25",
-      "bytes": 2471
+      "md5": "cf1d8bbc63d057b93ec7153ebaac47ba",
+      "bytes": 2440
     }
   },
   "environment": {
@@ -39,7 +39,7 @@
         "mamba",
         "xmamba"
       ],
-      "d": 256,
+      "d": 240,
       "z_dim": 256,
       "heads": 4,
       "n_layers": 2,
@@ -76,7 +76,10 @@
         "disp": 0.25
       },
       "linear_heads": true,
-      "prop_skip": true
+      "prop_skip": true,
+      "moe_experts": 2,
+      "moe_sharp": 0.05,
+      "moe_balance": 0.1
     }
   }
 }

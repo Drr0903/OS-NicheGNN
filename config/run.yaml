@@ -213,21 +213,25 @@ image:                            #  second set (stage 04c): H&E morphology moda
   revision: 057cc0295895c2df3dd7681a89680da6015cbefe
   patch_spots: 3                  # patch side in spot diameters (≈ 165 µm), resized to 224 px
 
-atlas:                            #  (stage 24): the atlas encoder selected on its own latent (dev score + reference ARI)
-  amendment: A20
-  encoder: mm_xattn_anchor_d256z256_ntrod_lin_ps_la0_z   # A20 encoder (A23 variants exceeding the A9 limit are ineligible); hidden/latent 256, niche targets (ring-1, ring-2–3, dispersion) with linear
-                                  # heads, linear skip of [profile, ring means] into z, no anchor term (A20 addenda 2–3)
-  arch_overrides: {d: 256, z_dim: 256, niche_targets: {ring1: 0.5, outer: 0.5, disp: 0.25}, linear_heads: true, prop_skip: true}
+atlas:                            #  (stage 23 E10): two-branch encoder selected on the eight development patients
+  amendment: A25
+  encoder: mm_ringxattn_anchor_d240z256_ntrod_lin_ps_nmoe2_sh0.05_bal0.1_la0_z   # ring-mean branch h = MLP([x, ring-1 mean, ring-2–3 mean]);
+                                  # attention branch c over ring-1–3 neighbours queried by h; fusion = two MLP experts on [h; c] mixed per
+                                  # spot by a softmax router (load balance 0.1, per-spot routing entropy 0.05); niche targets with linear
+                                  # heads and the linear neighbourhood skip as in A20; no anchor term
+  arch_overrides: {d: 240, z_dim: 256, niche_targets: {ring1: 0.5, outer: 0.5, disp: 0.25}, linear_heads: true, prop_skip: true,
+                   moe_experts: 2, moe_sharp: 0.05, moe_balance: 0.1}
   lambda_anchor: 0.0
-  context: xattn
+  context: ringxattn
   multimodal: true                # spot profile = [expression PCA-50, H&E morphology PCA-50]
   representation: z
-  frozen_epochs: 147              # median epochs_run of the 57 leave-one-patient-out runs of the selected encoder (stage 23)
-  frozen_dir: frozen_v4           # data/processed/<frozen_dir>: genes, scaler, PCA models, encoder weights, meta.json
-  emb_dir: v4                     # data/processed/embeddings/<emb_dir>/<seed>/<section>.npy
-  retrain_frozen_dir: frozen_v4_retrain
-  retrain_emb_dir: v4_retrain
-  retrain_results: data/processed/retrain_v4   # stage-15 tables of the re-trained encoder (stage 19)
+  frozen_epochs: 138              # median epochs_run of the 24 development leave-one-patient-out runs of the selected encoder (stage 23 E10)
+  frozen_dir: frozen_v5           # data/processed/<frozen_dir>: genes, scaler, PCA models, encoder weights, meta.json
+  emb_dir: v5                     # data/processed/embeddings/<emb_dir>/<seed>/<section>.npy
+  retrain_frozen_dir: frozen_v5_retrain
+  retrain_emb_dir: v5_retrain
+  retrain_results: data/processed/retrain_v5   # stage-15 tables of the re-trained encoder (stage 19)
+  # A20 encoder (superseded): mm_xattn_anchor_d256z256_ntrod_lin_ps_la0_z, context xattn, d 256, 147 epochs, frozen_v4 / v4
 
 single_section:                   # single-section mode selected on DLPFC donor 1 (refined GMM ARI, mean over 4 sections)
   model_tag: _H_nbz64             # 3,000 HVGs, local graph infomax, latent width 64 (donor-1 mean 0.528; 256: 0.496; rings 1-2: 0.478; ring 1: 0.445)

@@ -35,7 +35,7 @@ def main() -> None:
                 continue
             running.remove((p, name, cmd, tries, g)); reserved[g] = reserved.get(g, 0) - a.need
             log = (logd / f"{name}.log").read_text(errors="ignore")
-            if p.returncode != 0 and ("OutOfMemoryError" in log or "CUDA out of memory" in log) and tries < a.retries:
+            if p.returncode != 0 and ("OutOfMemoryError" in log or "CUDA out of memory" in log or "CUDA error: out of memory" in log or "busy or unavailable" in log) and tries < a.retries:
                 q.append((name, cmd, tries + 1)); print(f"retry {name} ({tries + 1})", flush=True)
             else:
                 print(f"{'done' if p.returncode == 0 else 'FAILED'} {name} (exit {p.returncode})", flush=True)

@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -71,6 +72,8 @@ def train_seeds(cfg: dict, seeds: list[int], retrain: bool, variant: str = "", e
     anchors = compute_anchors(cfg, [Gm[s] for s in secs])
     log(f"{len(secs)} sections, profile dim {Gm[secs[0]].x.shape[1]}, {sum(len(v[0]) for v in anchors.values()) // 2} anchor pairs")
     cfg_f = json.loads(json.dumps(cfg)); cfg_f["arch"].update(a.get("arch_overrides") or {})  # width / niche targets of the atlas encoder
+    if variant and os.environ.get("PROJECT018_ARCH_OVERRIDES"):  # a candidate encoder: further overrides of the atlas settings
+        cfg_f["arch"].update(json.loads(os.environ["PROJECT018_ARCH_OVERRIDES"]))
     cfg_f["arch"]["max_epochs"] = epochs or a["frozen_epochs"]; cfg_f["arch"]["patience"] = 10**9
     for seed in seeds:
         model, info = train_arch(context, [Gm[s] for s in secs], [], cfg_f, seed, cfg["device"], anchors, cfg["atlas"].get("lambda_anchor", cfg["v2"]["model"]["lambda_anchor"]))

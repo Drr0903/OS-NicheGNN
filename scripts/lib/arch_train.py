@@ -62,6 +62,8 @@ def _loss(model: NicheEncoder, s: Sec, ac: dict, gen: torch.Generator, rows: tor
         l = l + ac.get("moe_balance", 0.01) * MoEFusion.balance(model.last_gates)
     if getattr(model.fuse, "last_gates", None) is not None:  # niche-adaptive experts: keep every expert in use
         l = l + ac.get("moe_balance", 0.01) * MoEFusion.balance(model.fuse.last_gates)
+        if ac.get("moe_sharp", 0) > 0:  # and let each spot commit to few experts: mean per-spot entropy of the router weights
+            g = model.fuse.last_gates.clamp_min(1e-9); l = l + ac["moe_sharp"] * (-(g * g.log()).sum(1)).mean()
     if getattr(model, "clip", None) is not None:  # align the latent with the morphology of the same spots
         l = l + ac["clip"] * model.clip.loss(z, s.x[rows])
     if getattr(model, "dgi", None) is not None:  # true graph against permuted profiles (deep graph infomax)

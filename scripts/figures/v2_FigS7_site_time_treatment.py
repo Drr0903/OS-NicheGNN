@@ -35,7 +35,7 @@ def main() -> None:
     set_style(); R = ROOT / "results/16_remodelling"; N = ROOT / "results/15_niches"; meta = json.load(open(N / "meta.json")); names = {int(k): v for k, v in meta["names"].items()}; K = meta["K"]; cols = {k: PALETTE[k % len(PALETTE)] for k in range(K)}
     fig = plt.figure(figsize=(7.2, 8.4))  # three bands placed explicitly: only the rows with rotated tick labels get deep gutters
     kw = dict(left=0.115, right=0.985, wspace=0.40)
-    g0 = fig.add_gridspec(1, 2, top=0.965, bottom=0.772, **kw); g1 = fig.add_gridspec(1, 2, top=0.645, bottom=0.400, **kw); g2 = fig.add_gridspec(1, 2, top=0.315, bottom=0.075, **kw)
+    g0 = fig.add_gridspec(1, 2, top=0.965, bottom=0.772, **kw); g1 = fig.add_gridspec(1, 2, top=0.615, bottom=0.385, **kw); g2 = fig.add_gridspec(1, 2, top=0.315, bottom=0.075, **kw)
     axes = {(0, 0): fig.add_subplot(g0[0, 0]), (0, 1): fig.add_subplot(g0[0, 1]), (1, 0): fig.add_subplot(g1[0, 0]),
             (1, 1): fig.add_subplot(g1[0, 1]), (2, 0): fig.add_subplot(g2[0, 0]), (2, 1): fig.add_subplot(g2[0, 1])}
     from matplotlib.patches import Patch

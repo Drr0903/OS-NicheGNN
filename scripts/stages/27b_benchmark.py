@@ -255,8 +255,11 @@ def main():
     ap.add_argument("--model-only", action="store_true", help="only the learned model (candidate configurations)")
     ap.add_argument("--baselines-only", action="store_true")
     ap.add_argument("--arch", default="", help="JSON overrides of cfg.arch, e.g. '{\"linear_heads\": true}'")
-    ap.add_argument("--lambda-anchor", type=float, default=None); ap.add_argument("--model-tag", default=""); a = ap.parse_args()
+    ap.add_argument("--lambda-anchor", type=float, default=None); ap.add_argument("--model-tag", default="")
+    ap.add_argument("--context", default="", help="encoder context instead of the atlas one (ringmlp, ringxattn)"); a = ap.parse_args()
     t0 = time.time(); cfg = atlas_cfg(load_config()); set_global_seed(cfg["seed"]); sd = stage_dir(STAGE)
+    if a.context:
+        cfg["atlas"]["context"] = a.context
     cfg["model_only"] = a.model_only; cfg["baselines_only"] = a.baselines_only; cfg["model_tag"] = a.model_tag; cfg["arch"].update(json.loads(a.arch) if a.arch else {})
     cfg["v2"]["model"]["lambda_anchor"] = a.lambda_anchor if a.lambda_anchor is not None else cfg["atlas"].get("lambda_anchor", cfg["v2"]["model"]["lambda_anchor"])
     if a.merge:

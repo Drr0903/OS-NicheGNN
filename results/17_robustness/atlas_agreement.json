@@ -1,14 +1,14 @@
 {
-  "ari_all_spots": 0.34034447258206413,
-  "ari_matched_spots": 0.32908546474410155,
-  "n_matched_niches_r_ge_0.9": 7,
+  "ari_all_spots": 0.35026120625392715,
+  "ari_matched_spots": 0.3379681033625865,
+  "n_matched_niches_r_ge_0.9": 8,
   "n_distinct_harmony_partners": 5,
-  "mean_composition_r": 0.9577144873093238,
+  "mean_composition_r": 0.9674214545363535,
   "class_agreement_of_matched": 6,
   "spearman_tcell_order": 0.8715757936489197,
-  "boundary_niche_frozen": 3,
+  "boundary_niche_frozen": 2,
   "boundary_niche_harmony_best_match": 7,
-  "boundary_or_frozen": 1.5508517106947517,
+  "boundary_or_frozen": 1.6027286507008962,
   "boundary_or_harmony_best_match": 1.4283710295043268,
   "unmatched_frac_harmony": 0.024999524362169668,
   "seed_agreement_with_consensus": [
@@ -19,9 +19,9 @@
     0.8439683135137108
   ],
   "criterion_met": false,
-  "median_r_all_pairings": 0.7456702696881568,
-  "frac_all_pairings_r_ge_0.9": 0.28125,
+  "median_r_all_pairings": 0.752023108291183,
+  "frac_all_pairings_r_ge_0.9": 0.3125,
   "n_pairings": 64,
   "n_matched_rank1": 6,
-  "max_matched_rank": 3
+  "max_matched_rank": 2
 }

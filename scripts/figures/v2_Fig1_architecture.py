@@ -1,7 +1,7 @@
 """v2 Figure 1a — the OS-NicheGNN network and its objective, drawn as vector shapes (deep-learning architecture style).
 
-Inputs (expression PCA, Phikon morphology PCA, ring 1–3 neighbourhood), masking, neighbour tokens, the spot encoder, two
-cross-attention layers, the latent with its linear neighbourhood skip, the decoder and the three linear neighbourhood heads with
+Inputs (expression PCA, Phikon morphology PCA, ring 1–3 neighbourhood), masking, the ring-mean branch, neighbour tokens and two
+cross-attention layers (graph attention branch), the mixture-of-experts fusion, the latent with its linear neighbourhood skip, the decoder and the three linear neighbourhood heads with
 the two loss terms, and the use of the latent (atlas, mapping of a new patient, applications). Wording follows Methods.
 The axes are in inches (W × H) so that shapes keep their proportions.
 """
@@ -13,7 +13,7 @@ from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch, Polygon,
 W, H = 7.2, 3.25
 C = {"ink": "#2f3d48", "edge": "#8a9aa5", "in": "#eef3f7", "enc": "#eceffa", "lat": "#e3f1f2", "head": "#f8eee4", "loss": "#fbe3df",
      "down": "#eaf3ec", "expr": "#2a7f8a", "img": "#c27b4f", "att": "#5b6bb5", "z": "#1f6f7a", "skip": "#8f7fbf",
-     "centre": "#1f6f7a", "r1": "#74b6bf", "r23": "#cfe6e9", "mask": "#9aa4ab"}
+     "centre": "#1f6f7a", "moe": "#9a4f8c", "r1": "#74b6bf", "r23": "#cfe6e9", "mask": "#9aa4ab"}
 NICHE = ["#4C72B0", "#DD8452", "#55A868", "#C44E52", "#8172B3", "#937860", "#DA8BC3", "#8C8C8C"]  # = lib.plotting.PALETTE, as in Figure 4
 FS, FS_T, FS_S = 6.0, 6.6, 5.6
 
@@ -85,24 +85,26 @@ def draw(ax) -> None:
     x1, w1 = 1.72, 2.30; column_title(ax, x1, w1, "Encoder")
     box(ax, x1, 0.08, w1, H - 0.3, C["enc"])
     box(ax, x1 + 0.08, 2.18, 1.02, 0.56, "white", ec=C["expr"])
-    text(ax, x1 + 0.59, 2.58, "spot encoder", fs=FS, fontweight="bold"); text(ax, x1 + 0.59, 2.42, "residual MLP", fs=FS_S)
-    text(ax, x1 + 0.59, 2.27, r"$\mathbf{x}_i \rightarrow \mathbf{h}_i$", fs=FS)
+    text(ax, x1 + 0.59, 2.60, "ring-mean branch", fs=FS, fontweight="bold"); text(ax, x1 + 0.59, 2.44, "residual MLP", fs=FS_S)
+    text(ax, x1 + 0.59, 2.28, r"$[\mathbf{x}_i;\bar{\mathbf{x}}^{(1)}_i;\bar{\mathbf{x}}^{(2,3)}_i] \rightarrow \mathbf{h}_i$", fs=FS_S - 0.3)
     box(ax, x1 + 1.20, 2.18, 1.02, 0.56, "white", ec=C["att"])
     text(ax, x1 + 1.71, 2.58, "neighbour tokens", fs=FS, fontweight="bold"); text(ax, x1 + 1.71, 2.42, r"$\mathbf{t}_{ij}=\mathbf{W}_t\mathbf{x}_j+\phi(\boldsymbol{\delta}_{ij})$", fs=FS_S)
     text(ax, x1 + 1.71, 2.27, r"$j\in\mathcal{N}(i)$, $\leq 36$ spots", fs=FS_S)
     box(ax, x1 + 0.08, 1.30, w1 - 0.16, 0.68, "white", ec=C["att"], lw=0.9)
-    text(ax, x1 + w1 / 2, 1.84, "cross-attention  × 2 layers, 4 heads", fs=FS, fontweight="bold", color=C["att"])
+    text(ax, x1 + w1 / 2, 1.84, "graph attention branch  × 2 layers, 4 heads", fs=FS, fontweight="bold", color=C["att"])
     text(ax, x1 + w1 / 2, 1.66, r"query $\mathbf{h}_i$, keys and values $\mathbf{t}_{ij}$", fs=FS_S)
     text(ax, x1 + w1 / 2, 1.48, r"$\alpha_{ij}=\mathrm{softmax}_j(\mathbf{q}_i^{\top}\mathbf{k}_{ij}/\sqrt{d/H})$  $\rightarrow$  context $\mathbf{c}_i$", fs=FS_S)
     arrow(ax, x1 + 0.59, 2.18, x1 + 0.59, 1.98, C["expr"]); arrow(ax, x1 + 1.71, 2.18, x1 + 1.71, 1.98, C["att"])
-    box(ax, x1 + 0.08, 0.66, 1.02, 0.46, "white", ec=C["att"])
-    text(ax, x1 + 0.59, 0.96, r"$g([\mathbf{h}_i;\mathbf{c}_i])$", fs=FS); text(ax, x1 + 0.59, 0.78, "two-layer MLP", fs=FS_S)
+    box(ax, x1 + 0.08, 0.62, 1.02, 0.54, "white", ec=C["moe"], lw=0.9)
+    text(ax, x1 + 0.59, 1.04, "mixture of experts", fs=FS, fontweight="bold", color=C["moe"])
+    text(ax, x1 + 0.59, 0.88, r"$\pi_{i1}g_1+\pi_{i2}g_2$ on $[\mathbf{h}_i;\mathbf{c}_i]$", fs=FS_S)
+    text(ax, x1 + 0.59, 0.72, r"router: softmax of $[\mathbf{h}_i;\mathbf{c}_i]$", fs=FS_S - 0.3)
     box(ax, x1 + 1.20, 0.66, 1.02, 0.46, "white", ec=C["skip"])
     text(ax, x1 + 1.71, 0.96, r"$\mathbf{W}_s[\mathbf{x}_i;\bar{\mathbf{x}}^{(1)}_i;\bar{\mathbf{x}}^{(2,3)}_i]$", fs=5.0, color=C["skip"])
     text(ax, x1 + 1.71, 0.78, "linear skip of ring means", fs=FS_S - 0.2)
-    arrow(ax, x1 + 0.59, 1.30, x1 + 0.59, 1.12, C["att"])
+    arrow(ax, x1 + 0.59, 1.30, x1 + 0.59, 1.16, C["att"])
     ax.add_patch(Circle((x1 + w1 / 2, 0.36), 0.075, fc="white", ec=C["z"], lw=0.8, zorder=5)); text(ax, x1 + w1 / 2, 0.36, "+", fs=7, fontweight="bold", color=C["z"])
-    arrow(ax, x1 + 0.59, 0.66, x1 + w1 / 2 - 0.08, 0.38, C["att"]); arrow(ax, x1 + 1.71, 0.66, x1 + w1 / 2 + 0.08, 0.38, C["skip"])
+    arrow(ax, x1 + 0.59, 0.62, x1 + w1 / 2 - 0.08, 0.38, C["moe"]); arrow(ax, x1 + 1.71, 0.66, x1 + w1 / 2 + 0.08, 0.38, C["skip"])
     # input → encoder arrows
     ax.plot([x0 + 1.36, x0 + w0 + 0.08, x0 + w0 + 0.08], [0.365, 0.365, 2.40], color=C["expr"], lw=0.8, zorder=4); arrow(ax, x0 + w0 + 0.08, 2.40, x1 + 0.08, 2.40, C["expr"]); arrow(ax, x0 + 0.40, 2.62, x1 + 1.71, 2.74, C["att"], rad=-0.22)
     # ---- 3 latent and objective ---------------------------------------------------------------------------------
@@ -116,17 +118,18 @@ def draw(ax) -> None:
     text(ax, x2 + w2 / 2, 1.93, r"$\mathcal{L}_{\mathrm{rec}}$: MSE on masked spots", fs=FS_S); text(ax, x2 + w2 / 2, 1.79, r"$+\,0.5\times$ visible spots", fs=FS_S)
     box(ax, x2 + 0.10, 0.80, w2 - 0.18, 0.82, "white", ec=C["skip"])
     text(ax, x2 + w2 / 2 + 0.01, 1.50, r"linear heads $\mathbf{A}_1,\mathbf{A}_2,\mathbf{A}_3$", fs=FS)
-    text(ax, x2 + w2 / 2 + 0.01, 1.34, r"ring-1 mean $\bar{\mathbf{x}}^{(1)}_i$", fs=FS_S); text(ax, x2 + w2 / 2 + 0.01, 1.20, r"ring-2–3 mean $\bar{\mathbf{x}}^{(2,3)}_i$", fs=FS_S)
-    text(ax, x2 + w2 / 2 + 0.01, 1.06, r"spread $\mathbf{v}_i$ (rings 1–3)", fs=FS_S); text(ax, x2 + w2 / 2 + 0.01, 0.90, r"$\mathcal{L}_{\mathrm{nb}}$, weights 0.5, 0.5, 0.25", fs=FS_S)
+    text(ax, x2 + w2 / 2 + 0.01, 1.355, r"ring-1 mean $\bar{\mathbf{x}}^{(1)}_i$", fs=FS_S); text(ax, x2 + w2 / 2 + 0.01, 1.195, r"ring-2–3 mean $\bar{\mathbf{x}}^{(2,3)}_i$", fs=FS_S)
+    text(ax, x2 + w2 / 2 + 0.01, 1.035, r"spread $\mathbf{v}_i$ (rings 1–3)", fs=FS_S); text(ax, x2 + w2 / 2 + 0.01, 0.88, r"$\mathcal{L}_{\mathrm{nb}}$, weights 0.5, 0.5, 0.25", fs=FS_S)
     arrow(ax, x2 + w2 / 2, 2.48, x2 + w2 / 2, 2.26, C["z"]); ax.plot([x2 + 0.12, x2 + 0.05, x2 + 0.05], [2.50, 2.50, 1.24], color=C["z"], lw=0.8, zorder=4); arrow(ax, x2 + 0.05, 1.24, x2 + 0.10, 1.24, C["z"])
     box(ax, x2 + 0.08, 0.20, w2 - 0.16, 0.50, C["loss"], ec="#c0564f", lw=0.9)
-    text(ax, x2 + w2 / 2, 0.52, r"$\mathcal{L}=\mathcal{L}_{\mathrm{rec}}+\mathcal{L}_{\mathrm{nb}}$", fs=7.0, fontweight="bold", color="#9b3a33")
-    text(ax, x2 + w2 / 2, 0.32, "two patients per step, AdamW", fs=FS_S)
+    text(ax, x2 + w2 / 2, 0.58, r"$\mathcal{L}=\mathcal{L}_{\mathrm{rec}}+\mathcal{L}_{\mathrm{nb}}+\mathcal{L}_{\mathrm{route}}$", fs=6.6, fontweight="bold", color="#9b3a33")
+    text(ax, x2 + w2 / 2, 0.43, r"$\mathcal{L}_{\mathrm{route}}$: balance + routing entropy", fs=FS_S - 0.4)
+    text(ax, x2 + w2 / 2, 0.29, "two patients per step, AdamW", fs=FS_S - 0.2)
     # ---- 4 use of the latent ------------------------------------------------------------------------------------
     x3, w3 = 5.80, 1.36; column_title(ax, x3, w3, "Niche atlas and use")
     box(ax, x3, 0.08, w3, H - 0.3, C["down"])
     arrow(ax, x2 + w2, 2.56, x3, 2.56, C["z"], lw=1.0)
-    text(ax, x3 + w3 / 2, 2.62, "PCA-30 + Harmony", fs=FS_S); text(ax, x3 + w3 / 2, 2.47, "Leiden, K = 8, 5-seed consensus", fs=FS_S)
+    text(ax, x3 + w3 / 2, 2.62, "PCA-30, Harmony, Leiden K = 8", fs=FS_S); text(ax, x3 + w3 / 2, 2.47, "consensus of five networks", fs=FS_S)
     for k, c in enumerate(NICHE):
         ax.add_patch(Circle((x3 + 0.20 + (k % 4) * 0.32, 2.20 - (k // 4) * 0.22), 0.075, fc=c, ec="white", lw=0.4, zorder=4))
         text(ax, x3 + 0.20 + (k % 4) * 0.32, 2.20 - (k // 4) * 0.22, str(k), fs=5.2, color="white", fontweight="bold")
@@ -154,10 +157,10 @@ def mark(ax) -> None:
 
 
 CONTRIB = [("Multimodal input", "expression with foundation-model\nH&E features in every spot"),
-           ("Selective attention", "each spot weights its 36\nneighbours over three rings"),
+           ("Two-branch encoder", "ring means and attention to 36\nneighbours, fused by two experts"),
            ("Readable latent", "beats BANKSY on unseen patients'\nimmune context (18 of 19)"),
-           ("Transferable atlas", "98 % of a new patient's spots\nmapped onto the fixed atlas"),
-           ("Osteosarcoma biology", "stromal band marks fewer T cells;\nrelapse shifts the tumour state")]
+           ("Transferable atlas", "97 % of a new patient's spots\nmapped onto the fixed atlas"),
+           ("Osteosarcoma biology", "band marks macrophage signal;\nrelapse shifts tumour state")]
 SH = 0.62  # height of the contribution strip (inches)
 
 

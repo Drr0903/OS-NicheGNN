@@ -1,10 +1,10 @@
 {
-  "0": "lymphoid-enriched lung parenchyma",
-  "1": "epithelial-enriched tumour",
-  "2": "myeloid-enriched lung parenchyma",
-  "3": "peritumoural stroma (boundary)",
-  "4": "vascular-enriched lung parenchyma",
-  "5": "myeloid-enriched tumour",
-  "6": "osteoclast-enriched tumour",
-  "7": "fibroblast-enriched tumour"
+  "0": "epithelial-enriched lung parenchyma",
+  "1": "vascular-enriched lung parenchyma",
+  "2": "peritumoural stroma (boundary)",
+  "3": "lymphoid-enriched stroma",
+  "4": "osteoclast-enriched tumour",
+  "5": "fibroblast-enriched tumour",
+  "6": "myeloid-enriched tumour",
+  "7": "myeloid-enriched stroma"
 }

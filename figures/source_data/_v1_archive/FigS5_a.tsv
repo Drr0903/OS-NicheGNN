@@ -1,0 +1,40 @@
+dataset	representation	clustering	pii
+breast	standardised expression	k-means	0.9463564804912008
+breast	standardised expression	Leiden (plain kNN)	0.9896419714339384
+breast	standardised expression	Leiden (patient-balanced kNN)	0.8608829688925291
+breast	PCA-50	k-means	0.981672795703472
+breast	PCA-50	Leiden (plain kNN)	0.9857719709309596
+breast	PCA-50	Leiden (patient-balanced kNN)	0.8499693490962046
+breast	BANKSY-20	k-means	0.987062189261057
+breast	BANKSY-20	Leiden (plain kNN)	0.9908630950252332
+breast	BANKSY-20	Leiden (patient-balanced kNN)	0.8423583539250541
+breast	OS-NicheGNN	k-means	0.9750240116177741
+breast	OS-NicheGNN	Leiden (plain kNN)	0.9842057657217053
+breast	OS-NicheGNN	Leiden (patient-balanced kNN)	0.9071149493412433
+breast	OS-NicheGNN + contrastive	k-means	0.26959528880276873
+breast	OS-NicheGNN + contrastive	Leiden (plain kNN)	0.2867482665610529
+breast	OS-NicheGNN + contrastive	Leiden (patient-balanced kNN)	0.3026801111097056
+breast	OS-NicheGNN + invariant	k-means	0.5117403480179605
+breast	OS-NicheGNN + invariant	Leiden (plain kNN)	0.6658906821406335
+breast	OS-NicheGNN + invariant	Leiden (patient-balanced kNN)	0.4918815650336158
+crc	standardised expression	k-means	0.6475546146492754
+crc	standardised expression	Leiden (plain kNN)	0.6504490712048052
+crc	standardised expression	Leiden (patient-balanced kNN)	0.5096326708209978
+crc	PCA-50	k-means	0.6498896162453286
+crc	PCA-50	Leiden (plain kNN)	0.7355167983923192
+crc	PCA-50	Leiden (patient-balanced kNN)	0.5318700242016762
+crc	BANKSY-20	k-means	0.6656306965432853
+crc	BANKSY-20	Leiden (plain kNN)	0.7740556555476036
+crc	BANKSY-20	Leiden (patient-balanced kNN)	0.6348545853627621
+crc	OS-NicheGNN	k-means	0.6739341878340295
+crc	OS-NicheGNN	Leiden (plain kNN)	0.7526040391509431
+crc	OS-NicheGNN	Leiden (patient-balanced kNN)	0.6477241466155118
+crc	OS-NicheGNN + contrastive	k-means	0.11856463215251083
+crc	OS-NicheGNN + contrastive	Leiden (plain kNN)	0.1413507456861768
+crc	OS-NicheGNN + contrastive	Leiden (patient-balanced kNN)	0.14056188348350798
+crc	OS-NicheGNN + invariant	k-means	0.2878807256872906
+crc	OS-NicheGNN + invariant	Leiden (plain kNN)	0.3439628175150916
+crc	OS-NicheGNN + invariant	Leiden (patient-balanced kNN)	0.2980594762411038
+osteosarcoma	OS-NicheGNN (frozen)	Leiden (patient-balanced kNN)	0.6282569303284017
+osteosarcoma	PCA	Leiden (patient-balanced kNN)	0.5916067967683413
+osteosarcoma	BANKSY	Leiden (patient-balanced kNN)	0.5078037315724772

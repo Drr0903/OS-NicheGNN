@@ -1,26 +1,26 @@
 {
   "stage": "15_niches",
-  "finished_utc": "2026-10-10T20:28:23Z",
-  "elapsed_s": 679.5,
+  "finished_utc": "2026-10-12T11:56:10Z",
+  "elapsed_s": 562.1,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
-  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
-    "data/processed/frozen_v4/meta.json": {
-      "md5": "060024e6578da13dbf4aaec0940901d9",
-      "bytes": 1786
+    "data/processed/frozen_v5/meta.json": {
+      "md5": "f5c3149788ccd8dacc88231b1d8dc94f",
+      "bytes": 1884
     }
   },
   "outputs": {
     "results/15_niches/spot_niches.tsv": {
-      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
-      "bytes": 16167409
+      "md5": "b76c73e8f8bd9cb9dab5a14493d4244c",
+      "bytes": 16167892
     },
     "results/15_niches/niche_classification.tsv": {
-      "md5": "fc8afbff0eea55252a4e775abd391dbd",
-      "bytes": 976
+      "md5": "120ffa414cce68e614c673a95f1ca371",
+      "bytes": 996
     }
   },
   "environment": {
@@ -42,26 +42,26 @@
   "extra": {
     "plan": "v2",
     "K": 8,
-    "unmatched_threshold": 10.728022575378418,
-    "interface_niche": 3,
+    "unmatched_threshold": 10.991974830627441,
+    "interface_niche": 2,
     "names": {
-      "0": "lymphoid-enriched lung parenchyma",
-      "1": "epithelial-enriched tumour",
-      "2": "myeloid-enriched lung parenchyma",
-      "3": "peritumoural stroma (boundary)",
-      "4": "vascular-enriched lung parenchyma",
-      "5": "myeloid-enriched tumour",
-      "6": "osteoclast-enriched tumour",
-      "7": "fibroblast-enriched tumour"
+      "0": "epithelial-enriched lung parenchyma",
+      "1": "vascular-enriched lung parenchyma",
+      "2": "peritumoural stroma (boundary)",
+      "3": "lymphoid-enriched stroma",
+      "4": "osteoclast-enriched tumour",
+      "5": "fibroblast-enriched tumour",
+      "6": "myeloid-enriched tumour",
+      "7": "myeloid-enriched stroma"
     },
-    "centroid_agreement_ari": 0.7047751809143339,
+    "centroid_agreement_ari": 0.717234789989955,
     "consensus_seed_agreement": [
-      0.6770479062202456,
-      0.7561435957876919,
-      0.6528619789670159,
-      0.7007101494726403,
-      0.7000798336176892
+      0.7323907885388408,
+      0.6492033610860647,
+      0.7320263946857759,
+      0.6403522575893534,
+      0.6981861530921806
     ],
-    "frozen_epochs": 147
+    "frozen_epochs": 138
   }
 }

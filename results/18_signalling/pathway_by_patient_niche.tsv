@@ -1,1359 +1,1443 @@
 patient	niche	source	activity	n_spots	name
-P01	1	Androgen	0.05686319846900996	432	epithelial-enriched tumour
-P01	1	EGFR	0.19091591547740855	432	epithelial-enriched tumour
-P01	1	Estrogen	-0.8102188962801068	432	epithelial-enriched tumour
-P01	1	Hypoxia	0.5599379113884815	432	epithelial-enriched tumour
-P01	1	JAK-STAT	-0.7011718060434261	432	epithelial-enriched tumour
-P01	1	MAPK	-1.2919308697571925	432	epithelial-enriched tumour
-P01	1	NFkB	-0.24748530934480903	432	epithelial-enriched tumour
-P01	1	PI3K	-0.08728701382803855	432	epithelial-enriched tumour
-P01	1	TGFb	2.6748828801519533	432	epithelial-enriched tumour
-P01	1	TNFa	0.19966764566420622	432	epithelial-enriched tumour
-P01	1	Trail	-0.4514994058013227	432	epithelial-enriched tumour
-P01	1	VEGF	0.16248034808186812	432	epithelial-enriched tumour
-P01	1	WNT	-0.274666186555401	432	epithelial-enriched tumour
-P01	1	p53	-0.4186792625144752	432	epithelial-enriched tumour
-P01	3	Androgen	0.49023100105115425	326	peritumoural stroma (boundary)
-P01	3	EGFR	-0.3744231431711146	326	peritumoural stroma (boundary)
-P01	3	Estrogen	-0.9669466369932778	326	peritumoural stroma (boundary)
-P01	3	Hypoxia	2.64374753976094	326	peritumoural stroma (boundary)
-P01	3	JAK-STAT	-0.8752503475528465	326	peritumoural stroma (boundary)
-P01	3	MAPK	-1.6139028669317772	326	peritumoural stroma (boundary)
-P01	3	NFkB	-0.6629791725944352	326	peritumoural stroma (boundary)
-P01	3	PI3K	-0.586291912269266	326	peritumoural stroma (boundary)
-P01	3	TGFb	3.7437117243164257	326	peritumoural stroma (boundary)
-P01	3	TNFa	-0.07360803534265756	326	peritumoural stroma (boundary)
-P01	3	Trail	-1.4943391175111689	326	peritumoural stroma (boundary)
-P01	3	VEGF	0.34076220198300206	326	peritumoural stroma (boundary)
-P01	3	WNT	-0.5464472634016245	326	peritumoural stroma (boundary)
-P01	3	p53	-0.9286589339107334	326	peritumoural stroma (boundary)
-P01	6	Androgen	1.1905094331272887	1130	osteoclast-enriched tumour
-P01	6	EGFR	-0.9230831854377164	1130	osteoclast-enriched tumour
-P01	6	Estrogen	-1.5596839364816801	1130	osteoclast-enriched tumour
-P01	6	Hypoxia	3.5305328216221383	1130	osteoclast-enriched tumour
-P01	6	JAK-STAT	-1.3296358632889727	1130	osteoclast-enriched tumour
-P01	6	MAPK	-1.8224134161693908	1130	osteoclast-enriched tumour
-P01	6	NFkB	-1.70807185755592	1130	osteoclast-enriched tumour
-P01	6	PI3K	-0.5231563621020989	1130	osteoclast-enriched tumour
-P01	6	TGFb	5.684777459269866	1130	osteoclast-enriched tumour
-P01	6	TNFa	-0.7569087444106629	1130	osteoclast-enriched tumour
-P01	6	Trail	-3.381096054003932	1130	osteoclast-enriched tumour
-P01	6	VEGF	0.46627235902543396	1130	osteoclast-enriched tumour
-P01	6	WNT	-0.8220236269051746	1130	osteoclast-enriched tumour
-P01	6	p53	-2.2617131748266206	1130	osteoclast-enriched tumour
-P01	7	Androgen	1.5138413854043327	2682	fibroblast-enriched tumour
-P01	7	EGFR	-0.9798850217376337	2682	fibroblast-enriched tumour
-P01	7	Estrogen	-1.4033818833616263	2682	fibroblast-enriched tumour
-P01	7	Hypoxia	6.733436452484426	2682	fibroblast-enriched tumour
-P01	7	JAK-STAT	-1.5352032910404274	2682	fibroblast-enriched tumour
-P01	7	MAPK	-1.5126319280380944	2682	fibroblast-enriched tumour
-P01	7	NFkB	-1.3895523856083574	2682	fibroblast-enriched tumour
-P01	7	PI3K	-1.1221386676394616	2682	fibroblast-enriched tumour
-P01	7	TGFb	5.691133557280014	2682	fibroblast-enriched tumour
-P01	7	TNFa	-0.4632741660658655	2682	fibroblast-enriched tumour
-P01	7	Trail	-3.553022498267562	2682	fibroblast-enriched tumour
-P01	7	VEGF	0.717162354703013	2682	fibroblast-enriched tumour
-P01	7	WNT	-0.9308575021138217	2682	fibroblast-enriched tumour
-P01	7	p53	-1.8707943341594888	2682	fibroblast-enriched tumour
-P02	0	Androgen	0.8881892373322233	199	lymphoid-enriched lung parenchyma
-P02	0	EGFR	0.38918816512894167	199	lymphoid-enriched lung parenchyma
-P02	0	Estrogen	-1.363883236175782	199	lymphoid-enriched lung parenchyma
-P02	0	Hypoxia	2.2179466138536887	199	lymphoid-enriched lung parenchyma
-P02	0	JAK-STAT	2.072367669406611	199	lymphoid-enriched lung parenchyma
-P02	0	MAPK	-1.063157221602852	199	lymphoid-enriched lung parenchyma
-P02	0	NFkB	1.8523486776848619	199	lymphoid-enriched lung parenchyma
-P02	0	PI3K	-0.8296281558026722	199	lymphoid-enriched lung parenchyma
-P02	0	TGFb	6.411335867302167	199	lymphoid-enriched lung parenchyma
-P02	0	TNFa	2.40091086826432	199	lymphoid-enriched lung parenchyma
-P02	0	Trail	-1.8601380257593643	199	lymphoid-enriched lung parenchyma
-P02	0	VEGF	0.1653110446432756	199	lymphoid-enriched lung parenchyma
-P02	0	WNT	-0.6155858752932493	199	lymphoid-enriched lung parenchyma
-P02	0	p53	-0.13215720524334165	199	lymphoid-enriched lung parenchyma
-P02	1	Androgen	0.8614528589887372	147	epithelial-enriched tumour
-P02	1	EGFR	0.6066278871473679	147	epithelial-enriched tumour
-P02	1	Estrogen	-0.4415710242362167	147	epithelial-enriched tumour
-P02	1	Hypoxia	2.932227397114885	147	epithelial-enriched tumour
-P02	1	JAK-STAT	1.5346904863520954	147	epithelial-enriched tumour
-P02	1	MAPK	-1.0004427751912188	147	epithelial-enriched tumour
-P02	1	NFkB	1.0149956363695838	147	epithelial-enriched tumour
-P02	1	PI3K	0.08610306375103989	147	epithelial-enriched tumour
-P02	1	TGFb	5.861220556720174	147	epithelial-enriched tumour
-P02	1	TNFa	1.4719222346900789	147	epithelial-enriched tumour
-P02	1	Trail	-1.534216983878769	147	epithelial-enriched tumour
-P02	1	VEGF	0.10815654458676426	147	epithelial-enriched tumour
-P02	1	WNT	-0.48131107963468983	147	epithelial-enriched tumour
-P02	1	p53	-0.553446365217463	147	epithelial-enriched tumour
-P02	2	Androgen	1.4805332592033844	225	myeloid-enriched lung parenchyma
-P02	2	EGFR	1.662744225373557	225	myeloid-enriched lung parenchyma
-P02	2	Estrogen	-0.6785515747897571	225	myeloid-enriched lung parenchyma
-P02	2	Hypoxia	2.92793345094619	225	myeloid-enriched lung parenchyma
-P02	2	JAK-STAT	2.434106690132552	225	myeloid-enriched lung parenchyma
-P02	2	MAPK	-0.014877202126831104	225	myeloid-enriched lung parenchyma
-P02	2	NFkB	3.52195229295226	225	myeloid-enriched lung parenchyma
-P02	2	PI3K	-0.45419994922382645	225	myeloid-enriched lung parenchyma
-P02	2	TGFb	6.821397710526407	225	myeloid-enriched lung parenchyma
-P02	2	TNFa	3.9304866488302634	225	myeloid-enriched lung parenchyma
-P02	2	Trail	-1.9477491433320446	225	myeloid-enriched lung parenchyma
-P02	2	VEGF	0.43553511148804797	225	myeloid-enriched lung parenchyma
-P02	2	WNT	-0.3436062230745044	225	myeloid-enriched lung parenchyma
-P02	2	p53	-0.3163554450621786	225	myeloid-enriched lung parenchyma
-P02	3	Androgen	1.2714314618437659	109	peritumoural stroma (boundary)
-P02	3	EGFR	1.3157157542285887	109	peritumoural stroma (boundary)
-P02	3	Estrogen	-0.643430353974234	109	peritumoural stroma (boundary)
-P02	3	Hypoxia	2.963096182306408	109	peritumoural stroma (boundary)
-P02	3	JAK-STAT	1.8686874066740449	109	peritumoural stroma (boundary)
-P02	3	MAPK	-0.3975498128269753	109	peritumoural stroma (boundary)
-P02	3	NFkB	2.253414012774927	109	peritumoural stroma (boundary)
-P02	3	PI3K	-0.12623079663316375	109	peritumoural stroma (boundary)
-P02	3	TGFb	6.8341321879826955	109	peritumoural stroma (boundary)
-P02	3	TNFa	2.6852867066951185	109	peritumoural stroma (boundary)
-P02	3	Trail	-1.732843093417773	109	peritumoural stroma (boundary)
-P02	3	VEGF	0.2351257555463863	109	peritumoural stroma (boundary)
-P02	3	WNT	-0.4207046586198792	109	peritumoural stroma (boundary)
-P02	3	p53	-0.354208648521536	109	peritumoural stroma (boundary)
-P02	4	Androgen	0.9886589475112348	1733	vascular-enriched lung parenchyma
-P02	4	EGFR	1.0968833391369952	1733	vascular-enriched lung parenchyma
-P02	4	Estrogen	-1.66001456138277	1733	vascular-enriched lung parenchyma
-P02	4	Hypoxia	1.9112741649731622	1733	vascular-enriched lung parenchyma
-P02	4	JAK-STAT	2.7157241805721744	1733	vascular-enriched lung parenchyma
-P02	4	MAPK	-0.5067978645588443	1733	vascular-enriched lung parenchyma
-P02	4	NFkB	2.8451481578228184	1733	vascular-enriched lung parenchyma
-P02	4	PI3K	-1.1889064560129854	1733	vascular-enriched lung parenchyma
-P02	4	TGFb	6.599405568795692	1733	vascular-enriched lung parenchyma
-P02	4	TNFa	3.2456927009591037	1733	vascular-enriched lung parenchyma
-P02	4	Trail	-1.5526183403271625	1733	vascular-enriched lung parenchyma
-P02	4	VEGF	0.3716695419945662	1733	vascular-enriched lung parenchyma
-P02	4	WNT	-0.5619388466098265	1733	vascular-enriched lung parenchyma
-P02	4	p53	0.17383939519545763	1733	vascular-enriched lung parenchyma
-P02	5	Androgen	1.3602975794318173	253	myeloid-enriched tumour
-P02	5	EGFR	1.472958968771668	253	myeloid-enriched tumour
-P02	5	Estrogen	-0.7219913294162411	253	myeloid-enriched tumour
-P02	5	Hypoxia	2.731421766971383	253	myeloid-enriched tumour
-P02	5	JAK-STAT	2.495771152229243	253	myeloid-enriched tumour
-P02	5	MAPK	-0.16593980571322683	253	myeloid-enriched tumour
-P02	5	NFkB	2.7349467598369297	253	myeloid-enriched tumour
-P02	5	PI3K	-0.030819258987385724	253	myeloid-enriched tumour
-P02	5	TGFb	8.004690406239359	253	myeloid-enriched tumour
-P02	5	TNFa	3.272584443944355	253	myeloid-enriched tumour
-P02	5	Trail	-2.1691636537146053	253	myeloid-enriched tumour
-P02	5	VEGF	0.3943880150265898	253	myeloid-enriched tumour
-P02	5	WNT	-0.4730775178901311	253	myeloid-enriched tumour
-P02	5	p53	-0.14629721499321488	253	myeloid-enriched tumour
-P02	6	Androgen	1.3226827848511398	633	osteoclast-enriched tumour
-P02	6	EGFR	1.169374652257849	633	osteoclast-enriched tumour
-P02	6	Estrogen	-0.721987944453061	633	osteoclast-enriched tumour
-P02	6	Hypoxia	2.7914343141795674	633	osteoclast-enriched tumour
-P02	6	JAK-STAT	1.9203325497220096	633	osteoclast-enriched tumour
-P02	6	MAPK	-0.3601654339371566	633	osteoclast-enriched tumour
-P02	6	NFkB	2.1318495220783427	633	osteoclast-enriched tumour
-P02	6	PI3K	-0.14949449074723262	633	osteoclast-enriched tumour
-P02	6	TGFb	7.911547509945046	633	osteoclast-enriched tumour
-P02	6	TNFa	2.762074495447108	633	osteoclast-enriched tumour
-P02	6	Trail	-2.1838393569755947	633	osteoclast-enriched tumour
-P02	6	VEGF	0.44527850713021083	633	osteoclast-enriched tumour
-P02	6	WNT	-0.5054517782265613	633	osteoclast-enriched tumour
-P02	6	p53	-0.42587648843903275	633	osteoclast-enriched tumour
-P02	7	Androgen	0.9453619201968112	605	fibroblast-enriched tumour
-P02	7	EGFR	0.1883211050449409	605	fibroblast-enriched tumour
-P02	7	Estrogen	-0.04951536980457613	605	fibroblast-enriched tumour
-P02	7	Hypoxia	5.598384806706014	605	fibroblast-enriched tumour
-P02	7	JAK-STAT	-0.13408743013927957	605	fibroblast-enriched tumour
-P02	7	MAPK	-1.3585795212485479	605	fibroblast-enriched tumour
-P02	7	NFkB	-0.8788876228839279	605	fibroblast-enriched tumour
-P02	7	PI3K	1.0376896629573371	605	fibroblast-enriched tumour
-P02	7	TGFb	6.852373553558173	605	fibroblast-enriched tumour
-P02	7	TNFa	-0.2539422787324314	605	fibroblast-enriched tumour
-P02	7	Trail	-2.5537851947329573	605	fibroblast-enriched tumour
-P02	7	VEGF	-0.20536263072837818	605	fibroblast-enriched tumour
-P02	7	WNT	-0.4844833314339926	605	fibroblast-enriched tumour
-P02	7	p53	-1.9705105482557872	605	fibroblast-enriched tumour
-P03	1	Androgen	0.6354125896428621	606	epithelial-enriched tumour
-P03	1	EGFR	0.5718481414596772	606	epithelial-enriched tumour
-P03	1	Estrogen	-0.1669888163840788	606	epithelial-enriched tumour
-P03	1	Hypoxia	1.7265084001174726	606	epithelial-enriched tumour
-P03	1	JAK-STAT	1.2171196693913289	606	epithelial-enriched tumour
-P03	1	MAPK	-0.2019013132956281	606	epithelial-enriched tumour
-P03	1	NFkB	1.8366547166087253	606	epithelial-enriched tumour
-P03	1	PI3K	0.27859849029796835	606	epithelial-enriched tumour
-P03	1	TGFb	2.7802863078546864	606	epithelial-enriched tumour
-P03	1	TNFa	2.2439267288702966	606	epithelial-enriched tumour
-P03	1	Trail	-0.8217839377731679	606	epithelial-enriched tumour
-P03	1	VEGF	0.3634831466462003	606	epithelial-enriched tumour
-P03	1	WNT	-0.3528731703041511	606	epithelial-enriched tumour
-P03	1	p53	-0.3804506332539304	606	epithelial-enriched tumour
-P03	2	Androgen	1.914052386255675	113	myeloid-enriched lung parenchyma
-P03	2	EGFR	1.4148657023605173	113	myeloid-enriched lung parenchyma
-P03	2	Estrogen	0.043334757355441476	113	myeloid-enriched lung parenchyma
-P03	2	Hypoxia	3.584363093441972	113	myeloid-enriched lung parenchyma
-P03	2	JAK-STAT	1.8414906944151097	113	myeloid-enriched lung parenchyma
-P03	2	MAPK	0.8207336064960186	113	myeloid-enriched lung parenchyma
-P03	2	NFkB	2.0976405450431757	113	myeloid-enriched lung parenchyma
-P03	2	PI3K	0.7770554629937272	113	myeloid-enriched lung parenchyma
-P03	2	TGFb	5.209213570974886	113	myeloid-enriched lung parenchyma
-P03	2	TNFa	2.8004595619524633	113	myeloid-enriched lung parenchyma
-P03	2	Trail	-1.9387153832607567	113	myeloid-enriched lung parenchyma
-P03	2	VEGF	0.7742677857270887	113	myeloid-enriched lung parenchyma
-P03	2	WNT	-0.6229814728252302	113	myeloid-enriched lung parenchyma
-P03	2	p53	-1.1844328757078966	113	myeloid-enriched lung parenchyma
-P03	3	Androgen	0.8234893405908443	88	peritumoural stroma (boundary)
-P03	3	EGFR	0.4232704221596334	88	peritumoural stroma (boundary)
-P03	3	Estrogen	-0.5979053975699279	88	peritumoural stroma (boundary)
-P03	3	Hypoxia	3.73548103107978	88	peritumoural stroma (boundary)
-P03	3	JAK-STAT	2.2411032699187277	88	peritumoural stroma (boundary)
-P03	3	MAPK	-0.771284985237089	88	peritumoural stroma (boundary)
-P03	3	NFkB	1.9244926539901537	88	peritumoural stroma (boundary)
-P03	3	PI3K	0.15470506631933778	88	peritumoural stroma (boundary)
-P03	3	TGFb	4.252451618461825	88	peritumoural stroma (boundary)
-P03	3	TNFa	2.6790631756032615	88	peritumoural stroma (boundary)
-P03	3	Trail	-1.679494376748018	88	peritumoural stroma (boundary)
-P03	3	VEGF	0.6020999081559985	88	peritumoural stroma (boundary)
-P03	3	WNT	-0.756750277861308	88	peritumoural stroma (boundary)
-P03	3	p53	-0.9857412006697832	88	peritumoural stroma (boundary)
-P03	4	Androgen	1.857571505177003	853	vascular-enriched lung parenchyma
-P03	4	EGFR	1.7922246531272241	853	vascular-enriched lung parenchyma
-P03	4	Estrogen	-0.3317022672591559	853	vascular-enriched lung parenchyma
-P03	4	Hypoxia	1.736783988655087	853	vascular-enriched lung parenchyma
-P03	4	JAK-STAT	1.3824480920218043	853	vascular-enriched lung parenchyma
-P03	4	MAPK	0.8934463415499856	853	vascular-enriched lung parenchyma
-P03	4	NFkB	2.4783692196843092	853	vascular-enriched lung parenchyma
-P03	4	PI3K	0.6668707390072025	853	vascular-enriched lung parenchyma
-P03	4	TGFb	5.763951501096471	853	vascular-enriched lung parenchyma
-P03	4	TNFa	2.7716395788469925	853	vascular-enriched lung parenchyma
-P03	4	Trail	-1.5788740607870317	853	vascular-enriched lung parenchyma
-P03	4	VEGF	0.44873313633666195	853	vascular-enriched lung parenchyma
-P03	4	WNT	-0.4222433497546901	853	vascular-enriched lung parenchyma
-P03	4	p53	-0.44089615880752414	853	vascular-enriched lung parenchyma
-P03	5	Androgen	2.0594814558927053	340	myeloid-enriched tumour
-P03	5	EGFR	0.8757721672297821	340	myeloid-enriched tumour
-P03	5	Estrogen	-0.44188066030703554	340	myeloid-enriched tumour
-P03	5	Hypoxia	3.086931499018596	340	myeloid-enriched tumour
-P03	5	JAK-STAT	3.3355861612517828	340	myeloid-enriched tumour
-P03	5	MAPK	-0.0026927719568907893	340	myeloid-enriched tumour
-P03	5	NFkB	1.6952341705806282	340	myeloid-enriched tumour
-P03	5	PI3K	0.6514386325376141	340	myeloid-enriched tumour
-P03	5	TGFb	6.043031798546532	340	myeloid-enriched tumour
-P03	5	TNFa	2.557483603974145	340	myeloid-enriched tumour
-P03	5	Trail	-2.670732067764769	340	myeloid-enriched tumour
-P03	5	VEGF	1.1229563342672195	340	myeloid-enriched tumour
-P03	5	WNT	-0.967658851971169	340	myeloid-enriched tumour
-P03	5	p53	-1.5342335265309728	340	myeloid-enriched tumour
-P03	6	Androgen	2.4447467072619204	1691	osteoclast-enriched tumour
-P03	6	EGFR	0.7897438492587829	1691	osteoclast-enriched tumour
-P03	6	Estrogen	0.02836283674648663	1691	osteoclast-enriched tumour
-P03	6	Hypoxia	1.8646890573236874	1691	osteoclast-enriched tumour
-P03	6	JAK-STAT	1.626475402786521	1691	osteoclast-enriched tumour
-P03	6	MAPK	0.21280339545349292	1691	osteoclast-enriched tumour
-P03	6	NFkB	0.3205572042983243	1691	osteoclast-enriched tumour
-P03	6	PI3K	1.1789366490968596	1691	osteoclast-enriched tumour
-P03	6	TGFb	5.814650473650007	1691	osteoclast-enriched tumour
-P03	6	TNFa	0.9909539527444244	1691	osteoclast-enriched tumour
-P03	6	Trail	-2.174337663561237	1691	osteoclast-enriched tumour
-P03	6	VEGF	0.43444851914571636	1691	osteoclast-enriched tumour
-P03	6	WNT	-0.7001264247299654	1691	osteoclast-enriched tumour
-P03	6	p53	-1.7317476689983904	1691	osteoclast-enriched tumour
-P03	7	Androgen	1.577969538873024	592	fibroblast-enriched tumour
-P03	7	EGFR	0.20065907496223873	592	fibroblast-enriched tumour
-P03	7	Estrogen	-0.7081657590887221	592	fibroblast-enriched tumour
-P03	7	Hypoxia	4.033604114255389	592	fibroblast-enriched tumour
-P03	7	JAK-STAT	2.833198719637384	592	fibroblast-enriched tumour
-P03	7	MAPK	-0.8477304250211056	592	fibroblast-enriched tumour
-P03	7	NFkB	1.3206247003296543	592	fibroblast-enriched tumour
-P03	7	PI3K	0.2669221925781066	592	fibroblast-enriched tumour
-P03	7	TGFb	5.549413965483394	592	fibroblast-enriched tumour
-P03	7	TNFa	2.2604688850654058	592	fibroblast-enriched tumour
-P03	7	Trail	-2.5103320355724064	592	fibroblast-enriched tumour
-P03	7	VEGF	1.0264081205824334	592	fibroblast-enriched tumour
-P03	7	WNT	-0.9784900785476244	592	fibroblast-enriched tumour
-P03	7	p53	-1.48317079669603	592	fibroblast-enriched tumour
-P04	0	Androgen	0.13183481792382415	71	lymphoid-enriched lung parenchyma
-P04	0	EGFR	-0.7000043605968237	71	lymphoid-enriched lung parenchyma
-P04	0	Estrogen	-0.9987997585211433	71	lymphoid-enriched lung parenchyma
-P04	0	Hypoxia	0.5417957523292832	71	lymphoid-enriched lung parenchyma
-P04	0	JAK-STAT	0.6425229807827032	71	lymphoid-enriched lung parenchyma
-P04	0	MAPK	-1.8080273010920673	71	lymphoid-enriched lung parenchyma
-P04	0	NFkB	1.0079719966759488	71	lymphoid-enriched lung parenchyma
-P04	0	PI3K	-1.175761002935803	71	lymphoid-enriched lung parenchyma
-P04	0	TGFb	2.2956960015838592	71	lymphoid-enriched lung parenchyma
-P04	0	TNFa	1.4457479427805005	71	lymphoid-enriched lung parenchyma
-P04	0	Trail	-0.9380505157224739	71	lymphoid-enriched lung parenchyma
-P04	0	VEGF	0.21090284654728284	71	lymphoid-enriched lung parenchyma
-P04	0	WNT	-0.5440242449802237	71	lymphoid-enriched lung parenchyma
-P04	0	p53	-0.08740643252977398	71	lymphoid-enriched lung parenchyma
-P04	1	Androgen	0.420822285596153	357	epithelial-enriched tumour
-P04	1	EGFR	-0.05175352213298783	357	epithelial-enriched tumour
-P04	1	Estrogen	-0.5658701382763419	357	epithelial-enriched tumour
-P04	1	Hypoxia	0.6119921976556965	357	epithelial-enriched tumour
-P04	1	JAK-STAT	0.7661180766505277	357	epithelial-enriched tumour
-P04	1	MAPK	-1.2944710042383676	357	epithelial-enriched tumour
-P04	1	NFkB	0.8199423799097204	357	epithelial-enriched tumour
-P04	1	PI3K	-0.5456111479505864	357	epithelial-enriched tumour
-P04	1	TGFb	2.812184046246473	357	epithelial-enriched tumour
-P04	1	TNFa	1.2647822025532391	357	epithelial-enriched tumour
-P04	1	Trail	-0.7385270343868614	357	epithelial-enriched tumour
-P04	1	VEGF	0.17911516039321906	357	epithelial-enriched tumour
-P04	1	WNT	-0.46486894911980753	357	epithelial-enriched tumour
-P04	1	p53	-0.28516957836547935	357	epithelial-enriched tumour
-P04	2	Androgen	1.1623978241699473	259	myeloid-enriched lung parenchyma
-P04	2	EGFR	-0.38570644069186305	259	myeloid-enriched lung parenchyma
-P04	2	Estrogen	-1.6711167163797749	259	myeloid-enriched lung parenchyma
-P04	2	Hypoxia	1.3929981644843332	259	myeloid-enriched lung parenchyma
-P04	2	JAK-STAT	2.3817231271491837	259	myeloid-enriched lung parenchyma
-P04	2	MAPK	-2.2580888419239464	259	myeloid-enriched lung parenchyma
-P04	2	NFkB	2.4076722514771687	259	myeloid-enriched lung parenchyma
-P04	2	PI3K	-1.7341534128557698	259	myeloid-enriched lung parenchyma
-P04	2	TGFb	4.524330579376376	259	myeloid-enriched lung parenchyma
-P04	2	TNFa	3.0995449878332613	259	myeloid-enriched lung parenchyma
-P04	2	Trail	-1.9359062467920678	259	myeloid-enriched lung parenchyma
-P04	2	VEGF	0.6898377445543118	259	myeloid-enriched lung parenchyma
-P04	2	WNT	-0.8377439834838225	259	myeloid-enriched lung parenchyma
-P04	2	p53	-0.24965550362087768	259	myeloid-enriched lung parenchyma
-P04	3	Androgen	0.8589018238627679	143	peritumoural stroma (boundary)
-P04	3	EGFR	-0.2093603920693854	143	peritumoural stroma (boundary)
-P04	3	Estrogen	-0.6312723627310269	143	peritumoural stroma (boundary)
-P04	3	Hypoxia	1.763695611519152	143	peritumoural stroma (boundary)
-P04	3	JAK-STAT	1.6816864267047513	143	peritumoural stroma (boundary)
-P04	3	MAPK	-1.88070011890129	143	peritumoural stroma (boundary)
-P04	3	NFkB	0.21139498022979294	143	peritumoural stroma (boundary)
-P04	3	PI3K	-0.190319606297431	143	peritumoural stroma (boundary)
-P04	3	TGFb	4.256522837986899	143	peritumoural stroma (boundary)
-P04	3	TNFa	0.8879386923606525	143	peritumoural stroma (boundary)
-P04	3	Trail	-1.4453803885701004	143	peritumoural stroma (boundary)
-P04	3	VEGF	0.46250692365236135	143	peritumoural stroma (boundary)
-P04	3	WNT	-0.7169651413961688	143	peritumoural stroma (boundary)
-P04	3	p53	-0.8173390931551215	143	peritumoural stroma (boundary)
-P04	4	Androgen	0.8232219041942914	545	vascular-enriched lung parenchyma
-P04	4	EGFR	0.013042684001665625	545	vascular-enriched lung parenchyma
-P04	4	Estrogen	-1.2851073905293462	545	vascular-enriched lung parenchyma
-P04	4	Hypoxia	1.1146474363043408	545	vascular-enriched lung parenchyma
-P04	4	JAK-STAT	1.7987999581003513	545	vascular-enriched lung parenchyma
-P04	4	MAPK	-1.4884832066667402	545	vascular-enriched lung parenchyma
-P04	4	NFkB	2.5490436326078787	545	vascular-enriched lung parenchyma
-P04	4	PI3K	-1.5039157596346135	545	vascular-enriched lung parenchyma
-P04	4	TGFb	3.82819632721554	545	vascular-enriched lung parenchyma
-P04	4	TNFa	3.0060492502632696	545	vascular-enriched lung parenchyma
-P04	4	Trail	-1.3541798300625363	545	vascular-enriched lung parenchyma
-P04	4	VEGF	0.47466226631145875	545	vascular-enriched lung parenchyma
-P04	4	WNT	-0.6496017230545736	545	vascular-enriched lung parenchyma
-P04	4	p53	-0.17071201481646966	545	vascular-enriched lung parenchyma
-P04	5	Androgen	1.6592643073067874	344	myeloid-enriched tumour
-P04	5	EGFR	-0.9851564838425261	344	myeloid-enriched tumour
-P04	5	Estrogen	-1.178356280496705	344	myeloid-enriched tumour
-P04	5	Hypoxia	1.5026972854117084	344	myeloid-enriched tumour
-P04	5	JAK-STAT	1.6366027421173646	344	myeloid-enriched tumour
-P04	5	MAPK	-2.6193931742917713	344	myeloid-enriched tumour
-P04	5	NFkB	1.2407936453646429	344	myeloid-enriched tumour
-P04	5	PI3K	-1.328806150797327	344	myeloid-enriched tumour
-P04	5	TGFb	5.506266459616974	344	myeloid-enriched tumour
-P04	5	TNFa	2.1420008226127987	344	myeloid-enriched tumour
-P04	5	Trail	-2.901040961136403	344	myeloid-enriched tumour
-P04	5	VEGF	0.8060902690583206	344	myeloid-enriched tumour
-P04	5	WNT	-0.7848505830334727	344	myeloid-enriched tumour
-P04	5	p53	-1.0373731938824895	344	myeloid-enriched tumour
-P04	6	Androgen	1.2544786686208294	1931	osteoclast-enriched tumour
-P04	6	EGFR	-0.9919485480363596	1931	osteoclast-enriched tumour
-P04	6	Estrogen	-0.8773829225088163	1931	osteoclast-enriched tumour
-P04	6	Hypoxia	0.8659838016563113	1931	osteoclast-enriched tumour
-P04	6	JAK-STAT	0.33092600590507415	1931	osteoclast-enriched tumour
-P04	6	MAPK	-2.420407607892674	1931	osteoclast-enriched tumour
-P04	6	NFkB	0.5610678979476973	1931	osteoclast-enriched tumour
-P04	6	PI3K	-0.9105990206181822	1931	osteoclast-enriched tumour
-P04	6	TGFb	4.370692994084165	1931	osteoclast-enriched tumour
-P04	6	TNFa	1.3888616894665646	1931	osteoclast-enriched tumour
-P04	6	Trail	-2.2213549304207127	1931	osteoclast-enriched tumour
-P04	6	VEGF	0.4193836347108154	1931	osteoclast-enriched tumour
-P04	6	WNT	-0.6458731423880733	1931	osteoclast-enriched tumour
-P04	6	p53	-0.9400565994118077	1931	osteoclast-enriched tumour
-P04	7	Androgen	1.2347389244070694	697	fibroblast-enriched tumour
-P04	7	EGFR	-0.21059907336656025	697	fibroblast-enriched tumour
-P04	7	Estrogen	-0.9928046218836595	697	fibroblast-enriched tumour
-P04	7	Hypoxia	2.6660208972752986	697	fibroblast-enriched tumour
-P04	7	JAK-STAT	3.4224276866833616	697	fibroblast-enriched tumour
-P04	7	MAPK	-2.395735782207529	697	fibroblast-enriched tumour
-P04	7	NFkB	-0.5068555894920682	697	fibroblast-enriched tumour
-P04	7	PI3K	0.8043537590479435	697	fibroblast-enriched tumour
-P04	7	TGFb	5.8217026466945985	697	fibroblast-enriched tumour
-P04	7	TNFa	0.3227829568953673	697	fibroblast-enriched tumour
-P04	7	Trail	-1.9710576603803633	697	fibroblast-enriched tumour
-P04	7	VEGF	0.7476669236185107	697	fibroblast-enriched tumour
-P04	7	WNT	-1.2162617479409155	697	fibroblast-enriched tumour
-P04	7	p53	-1.253261404315036	697	fibroblast-enriched tumour
-P05	1	Androgen	-0.17830396210862776	307	epithelial-enriched tumour
-P05	1	EGFR	0.12623780675420315	307	epithelial-enriched tumour
-P05	1	Estrogen	-0.1938645285594935	307	epithelial-enriched tumour
-P05	1	Hypoxia	2.712000673626494	307	epithelial-enriched tumour
-P05	1	JAK-STAT	0.03748070378069899	307	epithelial-enriched tumour
-P05	1	MAPK	-0.27055187196830177	307	epithelial-enriched tumour
-P05	1	NFkB	-1.045598797758519	307	epithelial-enriched tumour
-P05	1	PI3K	1.0040295176927492	307	epithelial-enriched tumour
-P05	1	TGFb	2.545646191808504	307	epithelial-enriched tumour
-P05	1	TNFa	-0.6950359681782328	307	epithelial-enriched tumour
-P05	1	Trail	-1.792413644954832	307	epithelial-enriched tumour
-P05	1	VEGF	0.16176436545875478	307	epithelial-enriched tumour
-P05	1	WNT	-0.4479506303364186	307	epithelial-enriched tumour
-P05	1	p53	-2.151965875803054	307	epithelial-enriched tumour
-P05	3	Androgen	-0.10943476096751191	211	peritumoural stroma (boundary)
-P05	3	EGFR	-0.20894865551530822	211	peritumoural stroma (boundary)
-P05	3	Estrogen	-0.15263175253474767	211	peritumoural stroma (boundary)
-P05	3	Hypoxia	4.227234176845716	211	peritumoural stroma (boundary)
-P05	3	JAK-STAT	0.08367128819809393	211	peritumoural stroma (boundary)
-P05	3	MAPK	-0.5166227875297787	211	peritumoural stroma (boundary)
-P05	3	NFkB	-0.9324476530323915	211	peritumoural stroma (boundary)
-P05	3	PI3K	0.28147117104318725	211	peritumoural stroma (boundary)
-P05	3	TGFb	3.826514725040581	211	peritumoural stroma (boundary)
-P05	3	TNFa	-0.5571692014500891	211	peritumoural stroma (boundary)
-P05	3	Trail	-1.8330164990545248	211	peritumoural stroma (boundary)
-P05	3	VEGF	-0.14863322987592364	211	peritumoural stroma (boundary)
-P05	3	WNT	-0.3025186798573775	211	peritumoural stroma (boundary)
-P05	3	p53	-1.374390835023459	211	peritumoural stroma (boundary)
-P05	5	Androgen	-0.08840583609359828	172	myeloid-enriched tumour
-P05	5	EGFR	0.8959302235842894	172	myeloid-enriched tumour
-P05	5	Estrogen	-0.23567273789252438	172	myeloid-enriched tumour
-P05	5	Hypoxia	0.33321510924016196	172	myeloid-enriched tumour
-P05	5	JAK-STAT	-0.4062418875609427	172	myeloid-enriched tumour
-P05	5	MAPK	0.49942381300598016	172	myeloid-enriched tumour
-P05	5	NFkB	-1.4473822744446232	172	myeloid-enriched tumour
-P05	5	PI3K	2.4189974840340596	172	myeloid-enriched tumour
-P05	5	TGFb	3.7801266358942764	172	myeloid-enriched tumour
-P05	5	TNFa	-0.7651616939008664	172	myeloid-enriched tumour
-P05	5	Trail	-3.007677953868593	172	myeloid-enriched tumour
-P05	5	VEGF	0.6084750976886654	172	myeloid-enriched tumour
-P05	5	WNT	-0.8575264464839693	172	myeloid-enriched tumour
-P05	5	p53	-3.8448878120076104	172	myeloid-enriched tumour
-P05	6	Androgen	-0.26000469282716876	87	osteoclast-enriched tumour
-P05	6	EGFR	-0.26688716018809544	87	osteoclast-enriched tumour
-P05	6	Estrogen	-0.1892270228813396	87	osteoclast-enriched tumour
-P05	6	Hypoxia	-0.3202139328744194	87	osteoclast-enriched tumour
-P05	6	JAK-STAT	-1.7994097069154726	87	osteoclast-enriched tumour
-P05	6	MAPK	0.009225461070547015	87	osteoclast-enriched tumour
-P05	6	NFkB	-3.2208364923083606	87	osteoclast-enriched tumour
-P05	6	PI3K	2.526183980122745	87	osteoclast-enriched tumour
-P05	6	TGFb	3.564017511537742	87	osteoclast-enriched tumour
-P05	6	TNFa	-2.344624988127131	87	osteoclast-enriched tumour
-P05	6	Trail	-4.019251046173375	87	osteoclast-enriched tumour
-P05	6	VEGF	0.39002726956742034	87	osteoclast-enriched tumour
-P05	6	WNT	-0.8457773158723415	87	osteoclast-enriched tumour
-P05	6	p53	-5.296296977832806	87	osteoclast-enriched tumour
-P05	7	Androgen	0.2928752061917163	1592	fibroblast-enriched tumour
-P05	7	EGFR	-1.9051495328907984	1592	fibroblast-enriched tumour
-P05	7	Estrogen	-0.8149085223249279	1592	fibroblast-enriched tumour
-P05	7	Hypoxia	8.90881818406029	1592	fibroblast-enriched tumour
-P05	7	JAK-STAT	0.39077355742900116	1592	fibroblast-enriched tumour
-P05	7	MAPK	-1.8586207917425361	1592	fibroblast-enriched tumour
-P05	7	NFkB	-1.958538977504239	1592	fibroblast-enriched tumour
-P05	7	PI3K	-0.8512833285182724	1592	fibroblast-enriched tumour
-P05	7	TGFb	6.6606003173576855	1592	fibroblast-enriched tumour
-P05	7	TNFa	-1.128262024656269	1592	fibroblast-enriched tumour
-P05	7	Trail	-3.974587782164057	1592	fibroblast-enriched tumour
-P05	7	VEGF	-0.26284910753008484	1592	fibroblast-enriched tumour
-P05	7	WNT	-0.35089442641012514	1592	fibroblast-enriched tumour
-P05	7	p53	-2.140586944574723	1592	fibroblast-enriched tumour
-P06	5	Androgen	0.5406277928523489	85	myeloid-enriched tumour
-P06	5	EGFR	1.3014495746542787	85	myeloid-enriched tumour
-P06	5	Estrogen	-0.780767768606953	85	myeloid-enriched tumour
-P06	5	Hypoxia	-0.0966663810433664	85	myeloid-enriched tumour
-P06	5	JAK-STAT	8.695102205452663	85	myeloid-enriched tumour
-P06	5	MAPK	0.6114948247969463	85	myeloid-enriched tumour
-P06	5	NFkB	0.7206834389793318	85	myeloid-enriched tumour
-P06	5	PI3K	2.193208637473015	85	myeloid-enriched tumour
-P06	5	TGFb	6.546574421155046	85	myeloid-enriched tumour
-P06	5	TNFa	1.1827345905210829	85	myeloid-enriched tumour
-P06	5	Trail	-4.063274067774714	85	myeloid-enriched tumour
-P06	5	VEGF	0.8263916224360354	85	myeloid-enriched tumour
-P06	5	WNT	-1.1196219067155302	85	myeloid-enriched tumour
-P06	5	p53	-2.5837103766130145	85	myeloid-enriched tumour
-P06	6	Androgen	0.21102420883278886	37	osteoclast-enriched tumour
-P06	6	EGFR	0.6648242942816758	37	osteoclast-enriched tumour
-P06	6	Estrogen	-1.0081224500862365	37	osteoclast-enriched tumour
-P06	6	Hypoxia	-0.669381078652698	37	osteoclast-enriched tumour
-P06	6	JAK-STAT	5.928050461376098	37	osteoclast-enriched tumour
-P06	6	MAPK	-0.4617331653778747	37	osteoclast-enriched tumour
-P06	6	NFkB	-0.9813806945332054	37	osteoclast-enriched tumour
-P06	6	PI3K	2.2034068475813173	37	osteoclast-enriched tumour
-P06	6	TGFb	6.3982207253255705	37	osteoclast-enriched tumour
-P06	6	TNFa	-0.13566161016404885	37	osteoclast-enriched tumour
-P06	6	Trail	-4.30541152693845	37	osteoclast-enriched tumour
-P06	6	VEGF	0.6109123809983964	37	osteoclast-enriched tumour
-P06	6	WNT	-0.9139643508604804	37	osteoclast-enriched tumour
-P06	6	p53	-3.3025892857153485	37	osteoclast-enriched tumour
-P06	7	Androgen	0.41699750585125667	289	fibroblast-enriched tumour
-P06	7	EGFR	0.6047896807966281	289	fibroblast-enriched tumour
-P06	7	Estrogen	-1.0349024254778867	289	fibroblast-enriched tumour
-P06	7	Hypoxia	-0.027284017997018222	289	fibroblast-enriched tumour
-P06	7	JAK-STAT	6.54251563786889	289	fibroblast-enriched tumour
-P06	7	MAPK	-0.15659021074987184	289	fibroblast-enriched tumour
-P06	7	NFkB	-0.46224003981409256	289	fibroblast-enriched tumour
-P06	7	PI3K	1.5926354443446917	289	fibroblast-enriched tumour
-P06	7	TGFb	6.1674255425146285	289	fibroblast-enriched tumour
-P06	7	TNFa	0.13932837418527846	289	fibroblast-enriched tumour
-P06	7	Trail	-4.176023928595325	289	fibroblast-enriched tumour
-P06	7	VEGF	0.556403477800034	289	fibroblast-enriched tumour
-P06	7	WNT	-1.0762772869987591	289	fibroblast-enriched tumour
-P06	7	p53	-2.7942012654208717	289	fibroblast-enriched tumour
-P07	1	Androgen	0.23996493804870608	43	epithelial-enriched tumour
-P07	1	EGFR	1.2348429960229188	43	epithelial-enriched tumour
-P07	1	Estrogen	-0.7974525722882998	43	epithelial-enriched tumour
-P07	1	Hypoxia	0.3285554263246617	43	epithelial-enriched tumour
-P07	1	JAK-STAT	1.2386461989295712	43	epithelial-enriched tumour
-P07	1	MAPK	-0.30644110524439583	43	epithelial-enriched tumour
-P07	1	NFkB	0.1606932877444989	43	epithelial-enriched tumour
-P07	1	PI3K	0.16869607627213912	43	epithelial-enriched tumour
-P07	1	TGFb	3.768576844867687	43	epithelial-enriched tumour
-P07	1	TNFa	0.6307134950827845	43	epithelial-enriched tumour
-P07	1	Trail	-1.1199918254408672	43	epithelial-enriched tumour
-P07	1	VEGF	1.063098289995016	43	epithelial-enriched tumour
-P07	1	WNT	-0.6436822725219067	43	epithelial-enriched tumour
-P07	1	p53	-0.7324406905295396	43	epithelial-enriched tumour
-P07	5	Androgen	0.5809088230972245	176	myeloid-enriched tumour
-P07	5	EGFR	0.32448799618121177	176	myeloid-enriched tumour
-P07	5	Estrogen	-1.3096751913023443	176	myeloid-enriched tumour
-P07	5	Hypoxia	0.7993397521938995	176	myeloid-enriched tumour
-P07	5	JAK-STAT	3.973352434066587	176	myeloid-enriched tumour
-P07	5	MAPK	-1.8798886838176239	176	myeloid-enriched tumour
-P07	5	NFkB	0.8977002941047517	176	myeloid-enriched tumour
-P07	5	PI3K	-0.7884585331678874	176	myeloid-enriched tumour
-P07	5	TGFb	3.251134014936134	176	myeloid-enriched tumour
-P07	5	TNFa	1.5381156752859797	176	myeloid-enriched tumour
-P07	5	Trail	-1.424554546516497	176	myeloid-enriched tumour
-P07	5	VEGF	1.2162863893211115	176	myeloid-enriched tumour
-P07	5	WNT	-0.3411795007468272	176	myeloid-enriched tumour
-P07	5	p53	-0.33617235331500384	176	myeloid-enriched tumour
-P07	7	Androgen	0.7915867595657371	497	fibroblast-enriched tumour
-P07	7	EGFR	0.7840659970807553	497	fibroblast-enriched tumour
-P07	7	Estrogen	-1.0324401391024673	497	fibroblast-enriched tumour
-P07	7	Hypoxia	0.5283898210694582	497	fibroblast-enriched tumour
-P07	7	JAK-STAT	1.292245689650389	497	fibroblast-enriched tumour
-P07	7	MAPK	-0.9192823000958423	497	fibroblast-enriched tumour
-P07	7	NFkB	-0.1919250652522759	497	fibroblast-enriched tumour
-P07	7	PI3K	0.20049907405437586	497	fibroblast-enriched tumour
-P07	7	TGFb	4.385961820871272	497	fibroblast-enriched tumour
-P07	7	TNFa	0.5562994217995033	497	fibroblast-enriched tumour
-P07	7	Trail	-1.6303525284067923	497	fibroblast-enriched tumour
-P07	7	VEGF	1.0852866290990995	497	fibroblast-enriched tumour
-P07	7	WNT	-0.632308841723497	497	fibroblast-enriched tumour
-P07	7	p53	-1.2226028894945882	497	fibroblast-enriched tumour
-P08	1	Androgen	0.8390549508178197	160	epithelial-enriched tumour
-P08	1	EGFR	-0.12823426768174714	160	epithelial-enriched tumour
-P08	1	Estrogen	-1.1776926327865251	160	epithelial-enriched tumour
-P08	1	Hypoxia	1.029170188986695	160	epithelial-enriched tumour
-P08	1	JAK-STAT	1.977012461725284	160	epithelial-enriched tumour
-P08	1	MAPK	-1.5148855308872406	160	epithelial-enriched tumour
-P08	1	NFkB	-0.13188421213033888	160	epithelial-enriched tumour
-P08	1	PI3K	-0.010528402744810273	160	epithelial-enriched tumour
-P08	1	TGFb	5.1896090242037225	160	epithelial-enriched tumour
-P08	1	TNFa	0.21611886029378563	160	epithelial-enriched tumour
-P08	1	Trail	-1.8043902633800353	160	epithelial-enriched tumour
-P08	1	VEGF	0.4851431005344072	160	epithelial-enriched tumour
-P08	1	WNT	-0.7825094431624413	160	epithelial-enriched tumour
-P08	1	p53	-1.6913360645495341	160	epithelial-enriched tumour
-P08	3	Androgen	1.2431016221124276	58	peritumoural stroma (boundary)
-P08	3	EGFR	-0.647774790768492	58	peritumoural stroma (boundary)
-P08	3	Estrogen	-1.3628333300056004	58	peritumoural stroma (boundary)
-P08	3	Hypoxia	1.4541530227401493	58	peritumoural stroma (boundary)
-P08	3	JAK-STAT	1.1780159699222619	58	peritumoural stroma (boundary)
-P08	3	MAPK	-2.0091428069958193	58	peritumoural stroma (boundary)
-P08	3	NFkB	-0.6252229986677067	58	peritumoural stroma (boundary)
-P08	3	PI3K	-0.3078066780897099	58	peritumoural stroma (boundary)
-P08	3	TGFb	5.6428951784797725	58	peritumoural stroma (boundary)
-P08	3	TNFa	-0.26119768775878915	58	peritumoural stroma (boundary)
-P08	3	Trail	-2.065328928695362	58	peritumoural stroma (boundary)
-P08	3	VEGF	0.735079131259814	58	peritumoural stroma (boundary)
-P08	3	WNT	-0.9301114018363624	58	peritumoural stroma (boundary)
-P08	3	p53	-2.121227375106038	58	peritumoural stroma (boundary)
-P08	5	Androgen	1.0373923408773225	114	myeloid-enriched tumour
-P08	5	EGFR	-0.1959232585610012	114	myeloid-enriched tumour
-P08	5	Estrogen	-1.662797646016707	114	myeloid-enriched tumour
-P08	5	Hypoxia	1.203222575691897	114	myeloid-enriched tumour
-P08	5	JAK-STAT	6.565756422289531	114	myeloid-enriched tumour
-P08	5	MAPK	-1.7210860779200483	114	myeloid-enriched tumour
-P08	5	NFkB	0.6735654988223161	114	myeloid-enriched tumour
-P08	5	PI3K	-0.17562433684403272	114	myeloid-enriched tumour
-P08	5	TGFb	6.266402256508435	114	myeloid-enriched tumour
-P08	5	TNFa	0.9864518077012512	114	myeloid-enriched tumour
-P08	5	Trail	-2.3767206734163753	114	myeloid-enriched tumour
-P08	5	VEGF	0.9160818710276722	114	myeloid-enriched tumour
-P08	5	WNT	-0.9131820937316237	114	myeloid-enriched tumour
-P08	5	p53	-2.1825109669140215	114	myeloid-enriched tumour
-P08	6	Androgen	1.4639921850757185	507	osteoclast-enriched tumour
-P08	6	EGFR	-0.8927852573797255	507	osteoclast-enriched tumour
-P08	6	Estrogen	-1.5694747432425808	507	osteoclast-enriched tumour
-P08	6	Hypoxia	1.4113830933441647	507	osteoclast-enriched tumour
-P08	6	JAK-STAT	2.4725909838639883	507	osteoclast-enriched tumour
-P08	6	MAPK	-2.1907613403578976	507	osteoclast-enriched tumour
-P08	6	NFkB	-0.4206315582877154	507	osteoclast-enriched tumour
-P08	6	PI3K	0.13915069048635853	507	osteoclast-enriched tumour
-P08	6	TGFb	6.278474324704447	507	osteoclast-enriched tumour
-P08	6	TNFa	0.10269478233432608	507	osteoclast-enriched tumour
-P08	6	Trail	-2.822855381255128	507	osteoclast-enriched tumour
-P08	6	VEGF	0.7688980858059145	507	osteoclast-enriched tumour
-P08	6	WNT	-1.040664472646472	507	osteoclast-enriched tumour
-P08	6	p53	-2.879129712065282	507	osteoclast-enriched tumour
-P08	7	Androgen	1.262014571266235	1305	fibroblast-enriched tumour
-P08	7	EGFR	-0.7301234974690621	1305	fibroblast-enriched tumour
-P08	7	Estrogen	-1.6358970233776913	1305	fibroblast-enriched tumour
-P08	7	Hypoxia	1.3531011639552408	1305	fibroblast-enriched tumour
-P08	7	JAK-STAT	2.2871886937286563	1305	fibroblast-enriched tumour
-P08	7	MAPK	-2.1316421815283877	1305	fibroblast-enriched tumour
-P08	7	NFkB	-0.36891931335586	1305	fibroblast-enriched tumour
-P08	7	PI3K	-0.23461119773971917	1305	fibroblast-enriched tumour
-P08	7	TGFb	6.156643695620424	1305	fibroblast-enriched tumour
-P08	7	TNFa	0.11248373886735388	1305	fibroblast-enriched tumour
-P08	7	Trail	-2.5639347893034783	1305	fibroblast-enriched tumour
-P08	7	VEGF	0.7634718489360183	1305	fibroblast-enriched tumour
-P08	7	WNT	-1.0233120493216443	1305	fibroblast-enriched tumour
-P08	7	p53	-2.4636329853335126	1305	fibroblast-enriched tumour
-P09	1	Androgen	0.5645685185134256	45	epithelial-enriched tumour
-P09	1	EGFR	0.19917072469202368	45	epithelial-enriched tumour
-P09	1	Estrogen	-1.0052308200542182	45	epithelial-enriched tumour
-P09	1	Hypoxia	0.7252692738029628	45	epithelial-enriched tumour
-P09	1	JAK-STAT	0.0643592989132863	45	epithelial-enriched tumour
-P09	1	MAPK	-0.9039882754514887	45	epithelial-enriched tumour
-P09	1	NFkB	-0.7653450275636274	45	epithelial-enriched tumour
-P09	1	PI3K	0.4156998021001385	45	epithelial-enriched tumour
-P09	1	TGFb	6.159397309640618	45	epithelial-enriched tumour
-P09	1	TNFa	0.10788020385529382	45	epithelial-enriched tumour
-P09	1	Trail	-2.272443418544336	45	epithelial-enriched tumour
-P09	1	VEGF	0.602709706764688	45	epithelial-enriched tumour
-P09	1	WNT	-1.494225372959747	45	epithelial-enriched tumour
-P09	1	p53	-1.105484107942424	45	epithelial-enriched tumour
-P09	5	Androgen	0.6207769607643813	120	myeloid-enriched tumour
-P09	5	EGFR	0.5624446641913676	120	myeloid-enriched tumour
-P09	5	Estrogen	-1.2010386356408334	120	myeloid-enriched tumour
-P09	5	Hypoxia	0.4907594064691802	120	myeloid-enriched tumour
-P09	5	JAK-STAT	1.7671411695779613	120	myeloid-enriched tumour
-P09	5	MAPK	-0.4740330438101452	120	myeloid-enriched tumour
-P09	5	NFkB	-0.378907597739666	120	myeloid-enriched tumour
-P09	5	PI3K	0.20359525682543914	120	myeloid-enriched tumour
-P09	5	TGFb	5.945688465857653	120	myeloid-enriched tumour
-P09	5	TNFa	0.32214991387331804	120	myeloid-enriched tumour
-P09	5	Trail	-2.4944911502832094	120	myeloid-enriched tumour
-P09	5	VEGF	1.0152164392426528	120	myeloid-enriched tumour
-P09	5	WNT	-1.6653193025023407	120	myeloid-enriched tumour
-P09	5	p53	-1.5090971823056052	120	myeloid-enriched tumour
-P09	6	Androgen	0.7568128305715912	127	osteoclast-enriched tumour
-P09	6	EGFR	0.2083985636416142	127	osteoclast-enriched tumour
-P09	6	Estrogen	-1.1970925508993902	127	osteoclast-enriched tumour
-P09	6	Hypoxia	0.508742689064444	127	osteoclast-enriched tumour
-P09	6	JAK-STAT	0.22338900060195946	127	osteoclast-enriched tumour
-P09	6	MAPK	-0.9948012247662319	127	osteoclast-enriched tumour
-P09	6	NFkB	-0.9881098737209486	127	osteoclast-enriched tumour
-P09	6	PI3K	0.5206938546262159	127	osteoclast-enriched tumour
-P09	6	TGFb	5.703788073174573	127	osteoclast-enriched tumour
-P09	6	TNFa	-0.14225246762045596	127	osteoclast-enriched tumour
-P09	6	Trail	-2.5589604629630016	127	osteoclast-enriched tumour
-P09	6	VEGF	0.8604618346928461	127	osteoclast-enriched tumour
-P09	6	WNT	-1.7578168847964808	127	osteoclast-enriched tumour
-P09	6	p53	-1.6133219015610372	127	osteoclast-enriched tumour
-P09	7	Androgen	0.6763512635407924	564	fibroblast-enriched tumour
-P09	7	EGFR	0.5139273449120967	564	fibroblast-enriched tumour
-P09	7	Estrogen	-1.1126690356471975	564	fibroblast-enriched tumour
-P09	7	Hypoxia	0.8325559321369999	564	fibroblast-enriched tumour
-P09	7	JAK-STAT	1.150788644654587	564	fibroblast-enriched tumour
-P09	7	MAPK	-0.5738449153440341	564	fibroblast-enriched tumour
-P09	7	NFkB	-0.5320615717518115	564	fibroblast-enriched tumour
-P09	7	PI3K	0.18606690619668964	564	fibroblast-enriched tumour
-P09	7	TGFb	6.0358045820925055	564	fibroblast-enriched tumour
-P09	7	TNFa	0.1358256295748164	564	fibroblast-enriched tumour
-P09	7	Trail	-2.4350808391869303	564	fibroblast-enriched tumour
-P09	7	VEGF	0.9179281054039944	564	fibroblast-enriched tumour
-P09	7	WNT	-1.499355363007672	564	fibroblast-enriched tumour
-P09	7	p53	-1.5308566844651281	564	fibroblast-enriched tumour
-P10	0	Androgen	1.7732600743389881	73	lymphoid-enriched lung parenchyma
-P10	0	EGFR	-1.230238371303627	73	lymphoid-enriched lung parenchyma
-P10	0	Estrogen	-2.022824104748092	73	lymphoid-enriched lung parenchyma
-P10	0	Hypoxia	2.839032080703233	73	lymphoid-enriched lung parenchyma
-P10	0	JAK-STAT	2.3953584098727743	73	lymphoid-enriched lung parenchyma
-P10	0	MAPK	-2.7294422528324587	73	lymphoid-enriched lung parenchyma
-P10	0	NFkB	1.4130686710840026	73	lymphoid-enriched lung parenchyma
-P10	0	PI3K	-2.198605994790726	73	lymphoid-enriched lung parenchyma
-P10	0	TGFb	7.3284878076265345	73	lymphoid-enriched lung parenchyma
-P10	0	TNFa	1.9295548188972749	73	lymphoid-enriched lung parenchyma
-P10	0	Trail	-3.354735443134538	73	lymphoid-enriched lung parenchyma
-P10	0	VEGF	-0.2612929937770155	73	lymphoid-enriched lung parenchyma
-P10	0	WNT	-0.9638881898920668	73	lymphoid-enriched lung parenchyma
-P10	0	p53	-0.5757904229366902	73	lymphoid-enriched lung parenchyma
-P10	1	Androgen	0.2852409756949433	1845	epithelial-enriched tumour
-P10	1	EGFR	-0.48752279984464414	1845	epithelial-enriched tumour
-P10	1	Estrogen	-0.949166550367973	1845	epithelial-enriched tumour
-P10	1	Hypoxia	1.011050529760059	1845	epithelial-enriched tumour
-P10	1	JAK-STAT	0.5389536049842121	1845	epithelial-enriched tumour
-P10	1	MAPK	-1.181900407961178	1845	epithelial-enriched tumour
-P10	1	NFkB	-0.28053334019937154	1845	epithelial-enriched tumour
-P10	1	PI3K	-0.6289215689135437	1845	epithelial-enriched tumour
-P10	1	TGFb	5.592445845932898	1845	epithelial-enriched tumour
-P10	1	TNFa	-0.1437688205582786	1845	epithelial-enriched tumour
-P10	1	Trail	-1.7782009452710745	1845	epithelial-enriched tumour
-P10	1	VEGF	-0.2196860552145642	1845	epithelial-enriched tumour
-P10	1	WNT	-0.2108614539856508	1845	epithelial-enriched tumour
-P10	1	p53	-1.7067758116784661	1845	epithelial-enriched tumour
-P10	3	Androgen	0.7263998020878916	130	peritumoural stroma (boundary)
-P10	3	EGFR	-0.3186982719526253	130	peritumoural stroma (boundary)
-P10	3	Estrogen	-0.7994630357018555	130	peritumoural stroma (boundary)
-P10	3	Hypoxia	1.5914273179434861	130	peritumoural stroma (boundary)
-P10	3	JAK-STAT	0.7224034788435054	130	peritumoural stroma (boundary)
-P10	3	MAPK	-1.3420741255906419	130	peritumoural stroma (boundary)
-P10	3	NFkB	0.25833364488031246	130	peritumoural stroma (boundary)
-P10	3	PI3K	-0.8272302254157778	130	peritumoural stroma (boundary)
-P10	3	TGFb	5.456570102025035	130	peritumoural stroma (boundary)
-P10	3	TNFa	0.438566929612094	130	peritumoural stroma (boundary)
-P10	3	Trail	-1.8493793197599493	130	peritumoural stroma (boundary)
-P10	3	VEGF	-0.24785537415767595	130	peritumoural stroma (boundary)
-P10	3	WNT	-0.4297552894155569	130	peritumoural stroma (boundary)
-P10	3	p53	-1.2227199592995277	130	peritumoural stroma (boundary)
-P10	4	Androgen	2.75267941020859	755	vascular-enriched lung parenchyma
-P10	4	EGFR	-0.30468493831641613	755	vascular-enriched lung parenchyma
-P10	4	Estrogen	-2.2467544571291236	755	vascular-enriched lung parenchyma
-P10	4	Hypoxia	3.0303606867847708	755	vascular-enriched lung parenchyma
-P10	4	JAK-STAT	4.132587212976346	755	vascular-enriched lung parenchyma
-P10	4	MAPK	-1.915997396853946	755	vascular-enriched lung parenchyma
-P10	4	NFkB	4.122591626212978	755	vascular-enriched lung parenchyma
-P10	4	PI3K	-1.895517597123158	755	vascular-enriched lung parenchyma
-P10	4	TGFb	8.034303890872602	755	vascular-enriched lung parenchyma
-P10	4	TNFa	4.268948210352544	755	vascular-enriched lung parenchyma
-P10	4	Trail	-2.993348292138605	755	vascular-enriched lung parenchyma
-P10	4	VEGF	0.07727213173146792	755	vascular-enriched lung parenchyma
-P10	4	WNT	-0.6893492903049695	755	vascular-enriched lung parenchyma
-P10	4	p53	-0.19550101446175908	755	vascular-enriched lung parenchyma
-P10	5	Androgen	1.655309341495003	714	myeloid-enriched tumour
-P10	5	EGFR	-0.3320511040068737	714	myeloid-enriched tumour
-P10	5	Estrogen	-1.6779870461852324	714	myeloid-enriched tumour
-P10	5	Hypoxia	2.8682072430121357	714	myeloid-enriched tumour
-P10	5	JAK-STAT	8.015577260415023	714	myeloid-enriched tumour
-P10	5	MAPK	-2.2205392796024337	714	myeloid-enriched tumour
-P10	5	NFkB	4.533755179406802	714	myeloid-enriched tumour
-P10	5	PI3K	-1.590644468706925	714	myeloid-enriched tumour
-P10	5	TGFb	8.690346277809551	714	myeloid-enriched tumour
-P10	5	TNFa	4.863196620031552	714	myeloid-enriched tumour
-P10	5	Trail	-3.15850278586427	714	myeloid-enriched tumour
-P10	5	VEGF	0.6252460564814151	714	myeloid-enriched tumour
-P10	5	WNT	-0.25662769002349606	714	myeloid-enriched tumour
-P10	5	p53	-0.8736927538672732	714	myeloid-enriched tumour
-P10	6	Androgen	0.5995411536595696	320	osteoclast-enriched tumour
-P10	6	EGFR	-0.2214329898827522	320	osteoclast-enriched tumour
-P10	6	Estrogen	-1.206590116149705	320	osteoclast-enriched tumour
-P10	6	Hypoxia	1.5908283071536415	320	osteoclast-enriched tumour
-P10	6	JAK-STAT	0.7025889007982593	320	osteoclast-enriched tumour
-P10	6	MAPK	-0.9592352768298424	320	osteoclast-enriched tumour
-P10	6	NFkB	-0.1248885222585658	320	osteoclast-enriched tumour
-P10	6	PI3K	-0.3825006752280269	320	osteoclast-enriched tumour
-P10	6	TGFb	7.386476360820856	320	osteoclast-enriched tumour
-P10	6	TNFa	0.3471360472589994	320	osteoclast-enriched tumour
-P10	6	Trail	-2.361870972212869	320	osteoclast-enriched tumour
-P10	6	VEGF	-0.10998522819089515	320	osteoclast-enriched tumour
-P10	6	WNT	-0.3793203231374593	320	osteoclast-enriched tumour
-P10	6	p53	-2.219209727634502	320	osteoclast-enriched tumour
-P10	7	Androgen	1.2480271375266103	1045	fibroblast-enriched tumour
-P10	7	EGFR	0.031201474996434587	1045	fibroblast-enriched tumour
-P10	7	Estrogen	-1.2439040711644411	1045	fibroblast-enriched tumour
-P10	7	Hypoxia	4.391578186466368	1045	fibroblast-enriched tumour
-P10	7	JAK-STAT	3.531345114204817	1045	fibroblast-enriched tumour
-P10	7	MAPK	-0.7993603375310459	1045	fibroblast-enriched tumour
-P10	7	NFkB	0.48721569742331017	1045	fibroblast-enriched tumour
-P10	7	PI3K	-0.06618129217119316	1045	fibroblast-enriched tumour
-P10	7	TGFb	9.533014823232714	1045	fibroblast-enriched tumour
-P10	7	TNFa	1.1752137612244606	1045	fibroblast-enriched tumour
-P10	7	Trail	-3.364403066003136	1045	fibroblast-enriched tumour
-P10	7	VEGF	0.5871309933133109	1045	fibroblast-enriched tumour
-P10	7	WNT	-0.5821217976806409	1045	fibroblast-enriched tumour
-P10	7	p53	-2.9403432910280927	1045	fibroblast-enriched tumour
-P11	1	Androgen	0.405789319967649	3453	epithelial-enriched tumour
-P11	1	EGFR	1.7161093620117438	3453	epithelial-enriched tumour
-P11	1	Estrogen	-0.4859929224560831	3453	epithelial-enriched tumour
-P11	1	Hypoxia	0.24390778138776095	3453	epithelial-enriched tumour
-P11	1	JAK-STAT	0.4113773399514055	3453	epithelial-enriched tumour
-P11	1	MAPK	0.8900787912625991	3453	epithelial-enriched tumour
-P11	1	NFkB	0.3485690411151977	3453	epithelial-enriched tumour
-P11	1	PI3K	-0.9204298535640631	3453	epithelial-enriched tumour
-P11	1	TGFb	4.274419065513654	3453	epithelial-enriched tumour
-P11	1	TNFa	0.41925457532060817	3453	epithelial-enriched tumour
-P11	1	Trail	-0.719661485926701	3453	epithelial-enriched tumour
-P11	1	VEGF	0.08414225165572423	3453	epithelial-enriched tumour
-P11	1	WNT	-0.7221998024343267	3453	epithelial-enriched tumour
-P11	1	p53	0.32887374334567854	3453	epithelial-enriched tumour
-P11	3	Androgen	0.3154277913390548	212	peritumoural stroma (boundary)
-P11	3	EGFR	1.2696345147139183	212	peritumoural stroma (boundary)
-P11	3	Estrogen	-0.2700278427485162	212	peritumoural stroma (boundary)
-P11	3	Hypoxia	0.2737845194855097	212	peritumoural stroma (boundary)
-P11	3	JAK-STAT	0.27629705570489865	212	peritumoural stroma (boundary)
-P11	3	MAPK	0.5423959556225763	212	peritumoural stroma (boundary)
-P11	3	NFkB	0.2237465468510098	212	peritumoural stroma (boundary)
-P11	3	PI3K	-0.963929828184701	212	peritumoural stroma (boundary)
-P11	3	TGFb	4.151044216518219	212	peritumoural stroma (boundary)
-P11	3	TNFa	0.28874312858350926	212	peritumoural stroma (boundary)
-P11	3	Trail	-0.599694098685765	212	peritumoural stroma (boundary)
-P11	3	VEGF	-0.034798424720709195	212	peritumoural stroma (boundary)
-P11	3	WNT	-0.4903797682336332	212	peritumoural stroma (boundary)
-P11	3	p53	0.22533997935837372	212	peritumoural stroma (boundary)
-P11	4	Androgen	3.8113151486307375	2357	vascular-enriched lung parenchyma
-P11	4	EGFR	-1.0845664504429895	2357	vascular-enriched lung parenchyma
-P11	4	Estrogen	-2.5660885419950668	2357	vascular-enriched lung parenchyma
-P11	4	Hypoxia	2.6420032110320606	2357	vascular-enriched lung parenchyma
-P11	4	JAK-STAT	3.7964519654151743	2357	vascular-enriched lung parenchyma
-P11	4	MAPK	-2.776676042156277	2357	vascular-enriched lung parenchyma
-P11	4	NFkB	2.9192260471195883	2357	vascular-enriched lung parenchyma
-P11	4	PI3K	-1.8521525052146173	2357	vascular-enriched lung parenchyma
-P11	4	TGFb	6.409082641631848	2357	vascular-enriched lung parenchyma
-P11	4	TNFa	3.701779579301121	2357	vascular-enriched lung parenchyma
-P11	4	Trail	-2.4329995981505124	2357	vascular-enriched lung parenchyma
-P11	4	VEGF	0.08709674278623857	2357	vascular-enriched lung parenchyma
-P11	4	WNT	-0.5624168445361736	2357	vascular-enriched lung parenchyma
-P11	4	p53	-0.25872312327792	2357	vascular-enriched lung parenchyma
-P11	5	Androgen	3.1553646284916015	218	myeloid-enriched tumour
-P11	5	EGFR	-1.1772145010294692	218	myeloid-enriched tumour
-P11	5	Estrogen	-2.2259536334393992	218	myeloid-enriched tumour
-P11	5	Hypoxia	2.350639465344519	218	myeloid-enriched tumour
-P11	5	JAK-STAT	4.760264627826163	218	myeloid-enriched tumour
-P11	5	MAPK	-3.755389024395074	218	myeloid-enriched tumour
-P11	5	NFkB	1.5715869875039201	218	myeloid-enriched tumour
-P11	5	PI3K	-1.6759102011829576	218	myeloid-enriched tumour
-P11	5	TGFb	7.374993605656558	218	myeloid-enriched tumour
-P11	5	TNFa	2.55318204014502	218	myeloid-enriched tumour
-P11	5	Trail	-2.756350911940978	218	myeloid-enriched tumour
-P11	5	VEGF	0.32833648892902534	218	myeloid-enriched tumour
-P11	5	WNT	-0.7307834666786717	218	myeloid-enriched tumour
-P11	5	p53	-0.6519593146160564	218	myeloid-enriched tumour
-P11	6	Androgen	2.2989187950732637	1364	osteoclast-enriched tumour
-P11	6	EGFR	-0.21809758921458844	1364	osteoclast-enriched tumour
-P11	6	Estrogen	-1.3531611115771325	1364	osteoclast-enriched tumour
-P11	6	Hypoxia	2.224785932615115	1364	osteoclast-enriched tumour
-P11	6	JAK-STAT	2.340222496463528	1364	osteoclast-enriched tumour
-P11	6	MAPK	-2.373022460709244	1364	osteoclast-enriched tumour
-P11	6	NFkB	0.36976505606912086	1364	osteoclast-enriched tumour
-P11	6	PI3K	-0.46648587276502235	1364	osteoclast-enriched tumour
-P11	6	TGFb	8.151794689814514	1364	osteoclast-enriched tumour
-P11	6	TNFa	1.3044644609280838	1364	osteoclast-enriched tumour
-P11	6	Trail	-2.2979276622203852	1364	osteoclast-enriched tumour
-P11	6	VEGF	0.0808552061947814	1364	osteoclast-enriched tumour
-P11	6	WNT	-0.7698682070962509	1364	osteoclast-enriched tumour
-P11	6	p53	-0.9975697732608155	1364	osteoclast-enriched tumour
-P12	4	Androgen	1.4100012532551371	117	vascular-enriched lung parenchyma
-P12	4	EGFR	0.03056601830929723	117	vascular-enriched lung parenchyma
-P12	4	Estrogen	-2.052112479661115	117	vascular-enriched lung parenchyma
-P12	4	Hypoxia	2.7608257893518706	117	vascular-enriched lung parenchyma
-P12	4	JAK-STAT	2.915414343945962	117	vascular-enriched lung parenchyma
-P12	4	MAPK	-2.153699043054194	117	vascular-enriched lung parenchyma
-P12	4	NFkB	3.030793521828806	117	vascular-enriched lung parenchyma
-P12	4	PI3K	-0.4245567703930868	117	vascular-enriched lung parenchyma
-P12	4	TGFb	5.521924627328335	117	vascular-enriched lung parenchyma
-P12	4	TNFa	3.7476151644581543	117	vascular-enriched lung parenchyma
-P12	4	Trail	-2.483328048923806	117	vascular-enriched lung parenchyma
-P12	4	VEGF	0.8936598833540179	117	vascular-enriched lung parenchyma
-P12	4	WNT	-1.228398848116243	117	vascular-enriched lung parenchyma
-P12	4	p53	-0.7687427806168371	117	vascular-enriched lung parenchyma
-P12	5	Androgen	1.0854234081304919	137	myeloid-enriched tumour
-P12	5	EGFR	0.4200629217012022	137	myeloid-enriched tumour
-P12	5	Estrogen	-1.2989627487289641	137	myeloid-enriched tumour
-P12	5	Hypoxia	3.107482484741062	137	myeloid-enriched tumour
-P12	5	JAK-STAT	1.9932659383882565	137	myeloid-enriched tumour
-P12	5	MAPK	-1.6657350919164313	137	myeloid-enriched tumour
-P12	5	NFkB	1.1003119503864491	137	myeloid-enriched tumour
-P12	5	PI3K	0.9159201272939013	137	myeloid-enriched tumour
-P12	5	TGFb	5.46082273140844	137	myeloid-enriched tumour
-P12	5	TNFa	2.050639257455026	137	myeloid-enriched tumour
-P12	5	Trail	-2.806985093565383	137	myeloid-enriched tumour
-P12	5	VEGF	1.3858546453029121	137	myeloid-enriched tumour
-P12	5	WNT	-1.5818975063099536	137	myeloid-enriched tumour
-P12	5	p53	-1.4297888104719032	137	myeloid-enriched tumour
-P12	6	Androgen	1.0542630899475005	178	osteoclast-enriched tumour
-P12	6	EGFR	-0.04591246268872688	178	osteoclast-enriched tumour
-P12	6	Estrogen	-1.1631283983885803	178	osteoclast-enriched tumour
-P12	6	Hypoxia	2.7251715981663227	178	osteoclast-enriched tumour
-P12	6	JAK-STAT	0.6805994839301561	178	osteoclast-enriched tumour
-P12	6	MAPK	-1.9019939851376486	178	osteoclast-enriched tumour
-P12	6	NFkB	0.17413447901962353	178	osteoclast-enriched tumour
-P12	6	PI3K	0.9596857544990167	178	osteoclast-enriched tumour
-P12	6	TGFb	4.779846177481418	178	osteoclast-enriched tumour
-P12	6	TNFa	1.219480556069935	178	osteoclast-enriched tumour
-P12	6	Trail	-2.682549855658552	178	osteoclast-enriched tumour
-P12	6	VEGF	1.2115183516892236	178	osteoclast-enriched tumour
-P12	6	WNT	-1.6552778962719468	178	osteoclast-enriched tumour
-P12	6	p53	-1.507285309501862	178	osteoclast-enriched tumour
-P12	7	Androgen	1.078736564888774	224	fibroblast-enriched tumour
-P12	7	EGFR	0.1861673442375535	224	fibroblast-enriched tumour
-P12	7	Estrogen	-1.232411748785308	224	fibroblast-enriched tumour
-P12	7	Hypoxia	3.1661875743566923	224	fibroblast-enriched tumour
-P12	7	JAK-STAT	0.8340194280165985	224	fibroblast-enriched tumour
-P12	7	MAPK	-1.759008957866716	224	fibroblast-enriched tumour
-P12	7	NFkB	0.46145536876891585	224	fibroblast-enriched tumour
-P12	7	PI3K	0.9609760852008397	224	fibroblast-enriched tumour
-P12	7	TGFb	5.046791987425297	224	fibroblast-enriched tumour
-P12	7	TNFa	1.5128731933890252	224	fibroblast-enriched tumour
-P12	7	Trail	-2.8110505509699015	224	fibroblast-enriched tumour
-P12	7	VEGF	1.2399025228870968	224	fibroblast-enriched tumour
-P12	7	WNT	-1.6778677126966333	224	fibroblast-enriched tumour
-P12	7	p53	-1.4454295707442617	224	fibroblast-enriched tumour
-P13	2	Androgen	2.7221928621812825	53	myeloid-enriched lung parenchyma
-P13	2	EGFR	-0.42377063175559576	53	myeloid-enriched lung parenchyma
-P13	2	Estrogen	-1.0582509744114237	53	myeloid-enriched lung parenchyma
-P13	2	Hypoxia	5.424502807000869	53	myeloid-enriched lung parenchyma
-P13	2	JAK-STAT	1.4645965872251183	53	myeloid-enriched lung parenchyma
-P13	2	MAPK	-0.8085210483767094	53	myeloid-enriched lung parenchyma
-P13	2	NFkB	0.8712517416376631	53	myeloid-enriched lung parenchyma
-P13	2	PI3K	-0.27335859526500855	53	myeloid-enriched lung parenchyma
-P13	2	TGFb	8.893728503136682	53	myeloid-enriched lung parenchyma
-P13	2	TNFa	2.107172712132598	53	myeloid-enriched lung parenchyma
-P13	2	Trail	-3.364257887052141	53	myeloid-enriched lung parenchyma
-P13	2	VEGF	1.484784158442666	53	myeloid-enriched lung parenchyma
-P13	2	WNT	-1.5057410004690088	53	myeloid-enriched lung parenchyma
-P13	2	p53	-1.8178730440469737	53	myeloid-enriched lung parenchyma
-P13	3	Androgen	2.113124887725951	141	peritumoural stroma (boundary)
-P13	3	EGFR	-1.652885723109382	141	peritumoural stroma (boundary)
-P13	3	Estrogen	-1.4542381252678627	141	peritumoural stroma (boundary)
-P13	3	Hypoxia	2.6284628297710464	141	peritumoural stroma (boundary)
-P13	3	JAK-STAT	1.0837629621231886	141	peritumoural stroma (boundary)
-P13	3	MAPK	-2.6659505455502717	141	peritumoural stroma (boundary)
-P13	3	NFkB	0.22836618373644163	141	peritumoural stroma (boundary)
-P13	3	PI3K	-0.6060694105570805	141	peritumoural stroma (boundary)
-P13	3	TGFb	6.308318573259947	141	peritumoural stroma (boundary)
-P13	3	TNFa	1.360053868261264	141	peritumoural stroma (boundary)
-P13	3	Trail	-2.7361955067123653	141	peritumoural stroma (boundary)
-P13	3	VEGF	0.6373643724521018	141	peritumoural stroma (boundary)
-P13	3	WNT	-1.2007262416697995	141	peritumoural stroma (boundary)
-P13	3	p53	-2.02152730470842	141	peritumoural stroma (boundary)
-P13	5	Androgen	2.508590320752174	340	myeloid-enriched tumour
-P13	5	EGFR	-0.7502311573113646	340	myeloid-enriched tumour
-P13	5	Estrogen	-1.5057321592624207	340	myeloid-enriched tumour
-P13	5	Hypoxia	4.990243128876329	340	myeloid-enriched tumour
-P13	5	JAK-STAT	5.82063569417502	340	myeloid-enriched tumour
-P13	5	MAPK	-1.7838143625528315	340	myeloid-enriched tumour
-P13	5	NFkB	1.1281687516544416	340	myeloid-enriched tumour
-P13	5	PI3K	-0.6893779177031624	340	myeloid-enriched tumour
-P13	5	TGFb	8.165015120367366	340	myeloid-enriched tumour
-P13	5	TNFa	2.136001561708599	340	myeloid-enriched tumour
-P13	5	Trail	-3.4540301708451735	340	myeloid-enriched tumour
-P13	5	VEGF	1.3457992995314716	340	myeloid-enriched tumour
-P13	5	WNT	-1.4791982693444854	340	myeloid-enriched tumour
-P13	5	p53	-1.4891530110196876	340	myeloid-enriched tumour
-P13	6	Androgen	1.4864582006933462	1750	osteoclast-enriched tumour
-P13	6	EGFR	-0.5622966905637571	1750	osteoclast-enriched tumour
-P13	6	Estrogen	-0.8414037686395005	1750	osteoclast-enriched tumour
-P13	6	Hypoxia	1.78448810176082	1750	osteoclast-enriched tumour
-P13	6	JAK-STAT	0.6924377379474306	1750	osteoclast-enriched tumour
-P13	6	MAPK	-1.685697631521469	1750	osteoclast-enriched tumour
-P13	6	NFkB	0.5206299118877536	1750	osteoclast-enriched tumour
-P13	6	PI3K	-0.3727842951064087	1750	osteoclast-enriched tumour
-P13	6	TGFb	4.990571912346623	1750	osteoclast-enriched tumour
-P13	6	TNFa	1.409355367055119	1750	osteoclast-enriched tumour
-P13	6	Trail	-1.644206114933981	1750	osteoclast-enriched tumour
-P13	6	VEGF	0.5340461112625144	1750	osteoclast-enriched tumour
-P13	6	WNT	-0.8696162910783426	1750	osteoclast-enriched tumour
-P13	6	p53	-0.9977831483199616	1750	osteoclast-enriched tumour
-P13	7	Androgen	2.170470062940199	613	fibroblast-enriched tumour
-P13	7	EGFR	-0.7615767334508403	613	fibroblast-enriched tumour
-P13	7	Estrogen	-1.1309575868912471	613	fibroblast-enriched tumour
-P13	7	Hypoxia	5.643559729326527	613	fibroblast-enriched tumour
-P13	7	JAK-STAT	2.9875327536187717	613	fibroblast-enriched tumour
-P13	7	MAPK	-1.7886137734376457	613	fibroblast-enriched tumour
-P13	7	NFkB	0.47400140031185894	613	fibroblast-enriched tumour
-P13	7	PI3K	-0.29184722412324254	613	fibroblast-enriched tumour
-P13	7	TGFb	7.414889763849789	613	fibroblast-enriched tumour
-P13	7	TNFa	1.4990454895726129	613	fibroblast-enriched tumour
-P13	7	Trail	-2.989993500376706	613	fibroblast-enriched tumour
-P13	7	VEGF	1.0309947139186648	613	fibroblast-enriched tumour
-P13	7	WNT	-1.2616937595146906	613	fibroblast-enriched tumour
-P13	7	p53	-1.3194172478094706	613	fibroblast-enriched tumour
-P14	1	Androgen	-0.12409246578617233	439	epithelial-enriched tumour
-P14	1	EGFR	-0.11283008915997787	439	epithelial-enriched tumour
-P14	1	Estrogen	-0.29105945024101454	439	epithelial-enriched tumour
-P14	1	Hypoxia	1.235149409602842	439	epithelial-enriched tumour
-P14	1	JAK-STAT	-0.645828493355502	439	epithelial-enriched tumour
-P14	1	MAPK	-0.4026811727177861	439	epithelial-enriched tumour
-P14	1	NFkB	-0.35966758535474214	439	epithelial-enriched tumour
-P14	1	PI3K	0.33980293581112875	439	epithelial-enriched tumour
-P14	1	TGFb	2.1721828952813143	439	epithelial-enriched tumour
-P14	1	TNFa	-0.2034771560318317	439	epithelial-enriched tumour
-P14	1	Trail	-0.7757184609037859	439	epithelial-enriched tumour
-P14	1	VEGF	0.02575985095877261	439	epithelial-enriched tumour
-P14	1	WNT	-0.22930493822072207	439	epithelial-enriched tumour
-P14	1	p53	-0.4699225717142329	439	epithelial-enriched tumour
-P14	3	Androgen	-0.27329390235910306	145	peritumoural stroma (boundary)
-P14	3	EGFR	-0.43838961160806056	145	peritumoural stroma (boundary)
-P14	3	Estrogen	-0.7863285094414378	145	peritumoural stroma (boundary)
-P14	3	Hypoxia	2.4506143461222094	145	peritumoural stroma (boundary)
-P14	3	JAK-STAT	-1.612611762339675	145	peritumoural stroma (boundary)
-P14	3	MAPK	-0.9394085825041584	145	peritumoural stroma (boundary)
-P14	3	NFkB	-1.1926067096015345	145	peritumoural stroma (boundary)
-P14	3	PI3K	0.5595420878919831	145	peritumoural stroma (boundary)
-P14	3	TGFb	4.012895688721697	145	peritumoural stroma (boundary)
-P14	3	TNFa	-0.7942143915790458	145	peritumoural stroma (boundary)
-P14	3	Trail	-1.965983097090996	145	peritumoural stroma (boundary)
-P14	3	VEGF	0.020887719320937304	145	peritumoural stroma (boundary)
-P14	3	WNT	-0.5875537765414662	145	peritumoural stroma (boundary)
-P14	3	p53	-1.042300351876177	145	peritumoural stroma (boundary)
-P14	7	Androgen	-0.1780146181155696	526	fibroblast-enriched tumour
-P14	7	EGFR	-0.5731322089176221	526	fibroblast-enriched tumour
-P14	7	Estrogen	-0.7882501497063525	526	fibroblast-enriched tumour
-P14	7	Hypoxia	2.7037111267273533	526	fibroblast-enriched tumour
-P14	7	JAK-STAT	-1.687788870874817	526	fibroblast-enriched tumour
-P14	7	MAPK	-1.1362627268114445	526	fibroblast-enriched tumour
-P14	7	NFkB	-1.1564651995399808	526	fibroblast-enriched tumour
-P14	7	PI3K	0.5299645891061209	526	fibroblast-enriched tumour
-P14	7	TGFb	4.276047527853602	526	fibroblast-enriched tumour
-P14	7	TNFa	-0.7416902627121045	526	fibroblast-enriched tumour
-P14	7	Trail	-1.9771522965402255	526	fibroblast-enriched tumour
-P14	7	VEGF	-0.006158733549236489	526	fibroblast-enriched tumour
-P14	7	WNT	-0.5937063066702679	526	fibroblast-enriched tumour
-P14	7	p53	-1.0145644855376683	526	fibroblast-enriched tumour
-P15	0	Androgen	0.8518465971197684	81	lymphoid-enriched lung parenchyma
-P15	0	EGFR	-1.6866602801407797	81	lymphoid-enriched lung parenchyma
-P15	0	Estrogen	-1.9117806465321192	81	lymphoid-enriched lung parenchyma
-P15	0	Hypoxia	1.3126481320729644	81	lymphoid-enriched lung parenchyma
-P15	0	JAK-STAT	2.7584504565538603	81	lymphoid-enriched lung parenchyma
-P15	0	MAPK	-2.919104275155498	81	lymphoid-enriched lung parenchyma
-P15	0	NFkB	0.2715361110623698	81	lymphoid-enriched lung parenchyma
-P15	0	PI3K	-1.7815041013379935	81	lymphoid-enriched lung parenchyma
-P15	0	TGFb	3.099978899750901	81	lymphoid-enriched lung parenchyma
-P15	0	TNFa	0.8288245355934053	81	lymphoid-enriched lung parenchyma
-P15	0	Trail	-1.3983261094094692	81	lymphoid-enriched lung parenchyma
-P15	0	VEGF	-0.1800423493845093	81	lymphoid-enriched lung parenchyma
-P15	0	WNT	-0.7433884404803618	81	lymphoid-enriched lung parenchyma
-P15	0	p53	-0.10302357556779403	81	lymphoid-enriched lung parenchyma
-P15	1	Androgen	0.932509984758574	52	epithelial-enriched tumour
-P15	1	EGFR	-0.43830842324583486	52	epithelial-enriched tumour
-P15	1	Estrogen	-0.6719727059237968	52	epithelial-enriched tumour
-P15	1	Hypoxia	4.354854351750754	52	epithelial-enriched tumour
-P15	1	JAK-STAT	1.7911732105258176	52	epithelial-enriched tumour
-P15	1	MAPK	-1.832551232883651	52	epithelial-enriched tumour
-P15	1	NFkB	-0.04300833262452611	52	epithelial-enriched tumour
-P15	1	PI3K	-0.7000259016826074	52	epithelial-enriched tumour
-P15	1	TGFb	7.179459049325022	52	epithelial-enriched tumour
-P15	1	TNFa	0.8819257313903841	52	epithelial-enriched tumour
-P15	1	Trail	-2.0492986585570643	52	epithelial-enriched tumour
-P15	1	VEGF	0.38676542684330073	52	epithelial-enriched tumour
-P15	1	WNT	-0.5174954562996393	52	epithelial-enriched tumour
-P15	1	p53	-1.094409823289838	52	epithelial-enriched tumour
-P15	3	Androgen	1.5065391026999884	143	peritumoural stroma (boundary)
-P15	3	EGFR	-0.8942508600950632	143	peritumoural stroma (boundary)
-P15	3	Estrogen	-0.8662414063075445	143	peritumoural stroma (boundary)
-P15	3	Hypoxia	7.198850887991675	143	peritumoural stroma (boundary)
-P15	3	JAK-STAT	2.4142803525689818	143	peritumoural stroma (boundary)
-P15	3	MAPK	-2.2570878204450007	143	peritumoural stroma (boundary)
-P15	3	NFkB	0.21885283936301972	143	peritumoural stroma (boundary)
-P15	3	PI3K	-1.6797909384906113	143	peritumoural stroma (boundary)
-P15	3	TGFb	6.677902096641761	143	peritumoural stroma (boundary)
-P15	3	TNFa	1.0309867399205717	143	peritumoural stroma (boundary)
-P15	3	Trail	-2.3970635688102884	143	peritumoural stroma (boundary)
-P15	3	VEGF	0.2639487768957818	143	peritumoural stroma (boundary)
-P15	3	WNT	-0.5567511030017979	143	peritumoural stroma (boundary)
-P15	3	p53	-0.6147366616844845	143	peritumoural stroma (boundary)
-P15	4	Androgen	1.4583923354080848	478	vascular-enriched lung parenchyma
-P15	4	EGFR	-1.2229657348496423	478	vascular-enriched lung parenchyma
-P15	4	Estrogen	-2.1697248984702613	478	vascular-enriched lung parenchyma
-P15	4	Hypoxia	1.9324830352147047	478	vascular-enriched lung parenchyma
-P15	4	JAK-STAT	4.849924166801169	478	vascular-enriched lung parenchyma
-P15	4	MAPK	-2.9481596545959317	478	vascular-enriched lung parenchyma
-P15	4	NFkB	1.1611487513719327	478	vascular-enriched lung parenchyma
-P15	4	PI3K	-1.6152906507976987	478	vascular-enriched lung parenchyma
-P15	4	TGFb	4.619387282280023	478	vascular-enriched lung parenchyma
-P15	4	TNFa	1.8083234904813208	478	vascular-enriched lung parenchyma
-P15	4	Trail	-1.9697403777393887	478	vascular-enriched lung parenchyma
-P15	4	VEGF	0.47379203221873073	478	vascular-enriched lung parenchyma
-P15	4	WNT	-0.5719816154430043	478	vascular-enriched lung parenchyma
-P15	4	p53	-0.35759315878066844	478	vascular-enriched lung parenchyma
-P15	5	Androgen	1.2520022141436273	210	myeloid-enriched tumour
-P15	5	EGFR	-0.4645459033545306	210	myeloid-enriched tumour
-P15	5	Estrogen	-1.1797684906863093	210	myeloid-enriched tumour
-P15	5	Hypoxia	2.5292429961632	210	myeloid-enriched tumour
-P15	5	JAK-STAT	3.960944424754115	210	myeloid-enriched tumour
-P15	5	MAPK	-2.1390032705128865	210	myeloid-enriched tumour
-P15	5	NFkB	1.0440675087350806	210	myeloid-enriched tumour
-P15	5	PI3K	-0.8611794924133489	210	myeloid-enriched tumour
-P15	5	TGFb	6.3198879975696185	210	myeloid-enriched tumour
-P15	5	TNFa	1.955259877479226	210	myeloid-enriched tumour
-P15	5	Trail	-2.28695049117833	210	myeloid-enriched tumour
-P15	5	VEGF	0.6312386317945052	210	myeloid-enriched tumour
-P15	5	WNT	-0.4775970170432895	210	myeloid-enriched tumour
-P15	5	p53	-0.7231462793984756	210	myeloid-enriched tumour
-P15	6	Androgen	1.1675146258054612	359	osteoclast-enriched tumour
-P15	6	EGFR	-0.06497696527502432	359	osteoclast-enriched tumour
-P15	6	Estrogen	-0.910981716241463	359	osteoclast-enriched tumour
-P15	6	Hypoxia	3.0869779154007633	359	osteoclast-enriched tumour
-P15	6	JAK-STAT	2.1686050074814194	359	osteoclast-enriched tumour
-P15	6	MAPK	-1.5208717676446304	359	osteoclast-enriched tumour
-P15	6	NFkB	-0.20638431202550933	359	osteoclast-enriched tumour
-P15	6	PI3K	-0.43231381189203466	359	osteoclast-enriched tumour
-P15	6	TGFb	7.495125804627248	359	osteoclast-enriched tumour
-P15	6	TNFa	0.8121900732805806	359	osteoclast-enriched tumour
-P15	6	Trail	-2.587132435314845	359	osteoclast-enriched tumour
-P15	6	VEGF	0.6846834864588449	359	osteoclast-enriched tumour
-P15	6	WNT	-0.576995285646774	359	osteoclast-enriched tumour
-P15	6	p53	-1.3571466527926763	359	osteoclast-enriched tumour
-P15	7	Androgen	1.55205858822152	882	fibroblast-enriched tumour
-P15	7	EGFR	-0.7210059865231138	882	fibroblast-enriched tumour
-P15	7	Estrogen	-0.5069518731980295	882	fibroblast-enriched tumour
-P15	7	Hypoxia	8.610089105370974	882	fibroblast-enriched tumour
-P15	7	JAK-STAT	1.4203817098912124	882	fibroblast-enriched tumour
-P15	7	MAPK	-1.9215712326954462	882	fibroblast-enriched tumour
-P15	7	NFkB	-0.3501829768600868	882	fibroblast-enriched tumour
-P15	7	PI3K	-1.5342492073985	882	fibroblast-enriched tumour
-P15	7	TGFb	7.274086619319961	882	fibroblast-enriched tumour
-P15	7	TNFa	0.6102935020482518	882	fibroblast-enriched tumour
-P15	7	Trail	-2.676250862216015	882	fibroblast-enriched tumour
-P15	7	VEGF	0.1547811905895158	882	fibroblast-enriched tumour
-P15	7	WNT	-0.6545551876826909	882	fibroblast-enriched tumour
-P15	7	p53	-0.9591428446537665	882	fibroblast-enriched tumour
-P16	5	Androgen	1.2723315715906862	303	myeloid-enriched tumour
-P16	5	EGFR	2.4001558983510973	303	myeloid-enriched tumour
-P16	5	Estrogen	-0.17974156996736304	303	myeloid-enriched tumour
-P16	5	Hypoxia	2.466513753208106	303	myeloid-enriched tumour
-P16	5	JAK-STAT	0.470779214499432	303	myeloid-enriched tumour
-P16	5	MAPK	1.493314048626077	303	myeloid-enriched tumour
-P16	5	NFkB	1.560124963322419	303	myeloid-enriched tumour
-P16	5	PI3K	1.6961619831862997	303	myeloid-enriched tumour
-P16	5	TGFb	9.058979021201386	303	myeloid-enriched tumour
-P16	5	TNFa	2.8550804329951243	303	myeloid-enriched tumour
-P16	5	Trail	-3.6747628993521384	303	myeloid-enriched tumour
-P16	5	VEGF	1.8186717466456057	303	myeloid-enriched tumour
-P16	5	WNT	-1.2978393178523502	303	myeloid-enriched tumour
-P16	5	p53	-2.8975087226558838	303	myeloid-enriched tumour
-P16	6	Androgen	0.80227444849829	2484	osteoclast-enriched tumour
-P16	6	EGFR	1.1714506489935241	2484	osteoclast-enriched tumour
-P16	6	Estrogen	-0.2731022252334331	2484	osteoclast-enriched tumour
-P16	6	Hypoxia	2.6677711532093404	2484	osteoclast-enriched tumour
-P16	6	JAK-STAT	0.25364630462378274	2484	osteoclast-enriched tumour
-P16	6	MAPK	-0.1963803722771843	2484	osteoclast-enriched tumour
-P16	6	NFkB	0.9666000549293844	2484	osteoclast-enriched tumour
-P16	6	PI3K	0.6199601424925859	2484	osteoclast-enriched tumour
-P16	6	TGFb	6.527996178658996	2484	osteoclast-enriched tumour
-P16	6	TNFa	1.835203284367972	2484	osteoclast-enriched tumour
-P16	6	Trail	-2.0368020995669167	2484	osteoclast-enriched tumour
-P16	6	VEGF	0.9062849164998374	2484	osteoclast-enriched tumour
-P16	6	WNT	-0.8201513747534737	2484	osteoclast-enriched tumour
-P16	6	p53	-1.4212238714003496	2484	osteoclast-enriched tumour
-P16	7	Androgen	1.1689419015640692	539	fibroblast-enriched tumour
-P16	7	EGFR	1.7999460699197685	539	fibroblast-enriched tumour
-P16	7	Estrogen	-0.17775114346153084	539	fibroblast-enriched tumour
-P16	7	Hypoxia	2.608961722394047	539	fibroblast-enriched tumour
-P16	7	JAK-STAT	0.16201586754072647	539	fibroblast-enriched tumour
-P16	7	MAPK	0.7017749510165047	539	fibroblast-enriched tumour
-P16	7	NFkB	1.142847076447179	539	fibroblast-enriched tumour
-P16	7	PI3K	1.3844434767246443	539	fibroblast-enriched tumour
-P16	7	TGFb	7.924761710748909	539	fibroblast-enriched tumour
-P16	7	TNFa	2.420998814981072	539	fibroblast-enriched tumour
-P16	7	Trail	-3.174271966285589	539	fibroblast-enriched tumour
-P16	7	VEGF	1.5115828822263375	539	fibroblast-enriched tumour
-P16	7	WNT	-1.22422649540066	539	fibroblast-enriched tumour
-P16	7	p53	-2.567583197617701	539	fibroblast-enriched tumour
-P17	1	Androgen	1.0257304645678504	70	epithelial-enriched tumour
-P17	1	EGFR	0.8477303415394962	70	epithelial-enriched tumour
-P17	1	Estrogen	-0.06754724802729975	70	epithelial-enriched tumour
-P17	1	Hypoxia	5.985657961152413	70	epithelial-enriched tumour
-P17	1	JAK-STAT	-0.8983724017112016	70	epithelial-enriched tumour
-P17	1	MAPK	-0.7094731798482337	70	epithelial-enriched tumour
-P17	1	NFkB	-0.6709085585449532	70	epithelial-enriched tumour
-P17	1	PI3K	1.128332698247381	70	epithelial-enriched tumour
-P17	1	TGFb	7.35699766361395	70	epithelial-enriched tumour
-P17	1	TNFa	0.09514268424519856	70	epithelial-enriched tumour
-P17	1	Trail	-2.1374934478181435	70	epithelial-enriched tumour
-P17	1	VEGF	0.07396644406766754	70	epithelial-enriched tumour
-P17	1	WNT	-0.7045777865926508	70	epithelial-enriched tumour
-P17	1	p53	-1.555287166855796	70	epithelial-enriched tumour
-P17	3	Androgen	1.2330275853329313	80	peritumoural stroma (boundary)
-P17	3	EGFR	0.12807598632455564	80	peritumoural stroma (boundary)
-P17	3	Estrogen	-0.5565817457853448	80	peritumoural stroma (boundary)
-P17	3	Hypoxia	5.313197600522033	80	peritumoural stroma (boundary)
-P17	3	JAK-STAT	-1.558608822671876	80	peritumoural stroma (boundary)
-P17	3	MAPK	-1.4004559845216886	80	peritumoural stroma (boundary)
-P17	3	NFkB	-0.9873244226997265	80	peritumoural stroma (boundary)
-P17	3	PI3K	0.8505901203013948	80	peritumoural stroma (boundary)
-P17	3	TGFb	7.160812003236446	80	peritumoural stroma (boundary)
-P17	3	TNFa	-0.0009597606515657969	80	peritumoural stroma (boundary)
-P17	3	Trail	-2.6269379236212838	80	peritumoural stroma (boundary)
-P17	3	VEGF	-0.11294137605090956	80	peritumoural stroma (boundary)
-P17	3	WNT	-0.8902949268050376	80	peritumoural stroma (boundary)
-P17	3	p53	-1.496157896902315	80	peritumoural stroma (boundary)
-P17	4	Androgen	0.9929938973939407	85	vascular-enriched lung parenchyma
-P17	4	EGFR	-0.5278868880781273	85	vascular-enriched lung parenchyma
-P17	4	Estrogen	-0.34194716070026504	85	vascular-enriched lung parenchyma
-P17	4	Hypoxia	2.2665962825611237	85	vascular-enriched lung parenchyma
-P17	4	JAK-STAT	2.5284663453130647	85	vascular-enriched lung parenchyma
-P17	4	MAPK	-2.6741046288380894	85	vascular-enriched lung parenchyma
-P17	4	NFkB	1.2678899767784058	85	vascular-enriched lung parenchyma
-P17	4	PI3K	-0.6501275695583951	85	vascular-enriched lung parenchyma
-P17	4	TGFb	7.3236619040010735	85	vascular-enriched lung parenchyma
-P17	4	TNFa	1.9307805316345608	85	vascular-enriched lung parenchyma
-P17	4	Trail	-2.421653970657501	85	vascular-enriched lung parenchyma
-P17	4	VEGF	0.5645711033499708	85	vascular-enriched lung parenchyma
-P17	4	WNT	-0.40274439202710466	85	vascular-enriched lung parenchyma
-P17	4	p53	-0.047233196209540376	85	vascular-enriched lung parenchyma
-P17	5	Androgen	1.3882453187022932	148	myeloid-enriched tumour
-P17	5	EGFR	0.11940293201018633	148	myeloid-enriched tumour
-P17	5	Estrogen	-0.5460466905912779	148	myeloid-enriched tumour
-P17	5	Hypoxia	1.6741072128973533	148	myeloid-enriched tumour
-P17	5	JAK-STAT	2.8596639666068517	148	myeloid-enriched tumour
-P17	5	MAPK	-2.1194725904369855	148	myeloid-enriched tumour
-P17	5	NFkB	0.9297188319675919	148	myeloid-enriched tumour
-P17	5	PI3K	-0.027819239438718807	148	myeloid-enriched tumour
-P17	5	TGFb	8.107864512546053	148	myeloid-enriched tumour
-P17	5	TNFa	1.6849364076136835	148	myeloid-enriched tumour
-P17	5	Trail	-2.679899344666589	148	myeloid-enriched tumour
-P17	5	VEGF	0.8638593660806502	148	myeloid-enriched tumour
-P17	5	WNT	-0.5302296370708893	148	myeloid-enriched tumour
-P17	5	p53	-0.24144183101045014	148	myeloid-enriched tumour
-P17	6	Androgen	1.122997278710678	269	osteoclast-enriched tumour
-P17	6	EGFR	1.136588853501283	269	osteoclast-enriched tumour
-P17	6	Estrogen	-0.740811445196801	269	osteoclast-enriched tumour
-P17	6	Hypoxia	1.115288915055755	269	osteoclast-enriched tumour
-P17	6	JAK-STAT	-0.2538869941715673	269	osteoclast-enriched tumour
-P17	6	MAPK	0.3069900007716756	269	osteoclast-enriched tumour
-P17	6	NFkB	-1.1504672775187428	269	osteoclast-enriched tumour
-P17	6	PI3K	2.26357308496278	269	osteoclast-enriched tumour
-P17	6	TGFb	7.615503561925645	269	osteoclast-enriched tumour
-P17	6	TNFa	0.24371656696116187	269	osteoclast-enriched tumour
-P17	6	Trail	-3.4660208801331085	269	osteoclast-enriched tumour
-P17	6	VEGF	0.49440234451617493	269	osteoclast-enriched tumour
-P17	6	WNT	-1.0069084390276704	269	osteoclast-enriched tumour
-P17	6	p53	-2.7761685269181755	269	osteoclast-enriched tumour
-P17	7	Androgen	1.2763607234249068	577	fibroblast-enriched tumour
-P17	7	EGFR	0.5153072901925139	577	fibroblast-enriched tumour
-P17	7	Estrogen	-0.6492675449354635	577	fibroblast-enriched tumour
-P17	7	Hypoxia	5.717627253715031	577	fibroblast-enriched tumour
-P17	7	JAK-STAT	-1.527168141303557	577	fibroblast-enriched tumour
-P17	7	MAPK	-0.6041831922174049	577	fibroblast-enriched tumour
-P17	7	NFkB	-1.2124256739742028	577	fibroblast-enriched tumour
-P17	7	PI3K	1.378377539213331	577	fibroblast-enriched tumour
-P17	7	TGFb	7.36689847248947	577	fibroblast-enriched tumour
-P17	7	TNFa	-0.07843193796038983	577	fibroblast-enriched tumour
-P17	7	Trail	-3.118498982509697	577	fibroblast-enriched tumour
-P17	7	VEGF	0.027214388018575772	577	fibroblast-enriched tumour
-P17	7	WNT	-0.858200862826827	577	fibroblast-enriched tumour
-P17	7	p53	-2.058423835299106	577	fibroblast-enriched tumour
-P18	0	Androgen	1.1219878633405154	84	lymphoid-enriched lung parenchyma
-P18	0	EGFR	-0.25716394233480006	84	lymphoid-enriched lung parenchyma
-P18	0	Estrogen	-1.257480128724733	84	lymphoid-enriched lung parenchyma
-P18	0	Hypoxia	0.6729295259937416	84	lymphoid-enriched lung parenchyma
-P18	0	JAK-STAT	1.5643340541381776	84	lymphoid-enriched lung parenchyma
-P18	0	MAPK	-1.1626557916827776	84	lymphoid-enriched lung parenchyma
-P18	0	NFkB	0.7007169607756211	84	lymphoid-enriched lung parenchyma
-P18	0	PI3K	-1.5663910898788396	84	lymphoid-enriched lung parenchyma
-P18	0	TGFb	2.784407334045316	84	lymphoid-enriched lung parenchyma
-P18	0	TNFa	0.9671189197890891	84	lymphoid-enriched lung parenchyma
-P18	0	Trail	-0.8482575681138785	84	lymphoid-enriched lung parenchyma
-P18	0	VEGF	-0.1175550806474432	84	lymphoid-enriched lung parenchyma
-P18	0	WNT	-0.7361596252482986	84	lymphoid-enriched lung parenchyma
-P18	0	p53	0.3553882874972556	84	lymphoid-enriched lung parenchyma
-P18	1	Androgen	0.7629534823179666	574	epithelial-enriched tumour
-P18	1	EGFR	0.31425614499840293	574	epithelial-enriched tumour
-P18	1	Estrogen	-0.5456683833779992	574	epithelial-enriched tumour
-P18	1	Hypoxia	0.5247041375681976	574	epithelial-enriched tumour
-P18	1	JAK-STAT	1.2728671385449082	574	epithelial-enriched tumour
-P18	1	MAPK	-0.790285197680199	574	epithelial-enriched tumour
-P18	1	NFkB	0.4481850984951238	574	epithelial-enriched tumour
-P18	1	PI3K	-1.0052409929319537	574	epithelial-enriched tumour
-P18	1	TGFb	3.5799524697054315	574	epithelial-enriched tumour
-P18	1	TNFa	0.6353043300084837	574	epithelial-enriched tumour
-P18	1	Trail	-0.6244922269278274	574	epithelial-enriched tumour
-P18	1	VEGF	0.15182188650187545	574	epithelial-enriched tumour
-P18	1	WNT	-0.35995008746879725	574	epithelial-enriched tumour
-P18	1	p53	-0.16075781861821808	574	epithelial-enriched tumour
-P18	2	Androgen	1.5440059105751083	122	myeloid-enriched lung parenchyma
-P18	2	EGFR	0.1363843908699014	122	myeloid-enriched lung parenchyma
-P18	2	Estrogen	-0.8734765922731612	122	myeloid-enriched lung parenchyma
-P18	2	Hypoxia	0.8464484853050632	122	myeloid-enriched lung parenchyma
-P18	2	JAK-STAT	2.140536363621972	122	myeloid-enriched lung parenchyma
-P18	2	MAPK	-1.1892284972042888	122	myeloid-enriched lung parenchyma
-P18	2	NFkB	0.9385962722317851	122	myeloid-enriched lung parenchyma
-P18	2	PI3K	-1.5197487518431476	122	myeloid-enriched lung parenchyma
-P18	2	TGFb	4.238679527810517	122	myeloid-enriched lung parenchyma
-P18	2	TNFa	1.20128947015093	122	myeloid-enriched lung parenchyma
-P18	2	Trail	-0.9732036435738198	122	myeloid-enriched lung parenchyma
-P18	2	VEGF	0.3390867800335256	122	myeloid-enriched lung parenchyma
-P18	2	WNT	-0.6525231178464723	122	myeloid-enriched lung parenchyma
-P18	2	p53	-0.053991459320111124	122	myeloid-enriched lung parenchyma
-P18	3	Androgen	1.310922408983757	188	peritumoural stroma (boundary)
-P18	3	EGFR	0.3030012731526375	188	peritumoural stroma (boundary)
-P18	3	Estrogen	-0.7450968552765435	188	peritumoural stroma (boundary)
-P18	3	Hypoxia	0.7245992161597147	188	peritumoural stroma (boundary)
-P18	3	JAK-STAT	1.7660684387002492	188	peritumoural stroma (boundary)
-P18	3	MAPK	-0.8739847713576321	188	peritumoural stroma (boundary)
-P18	3	NFkB	0.6155452455175315	188	peritumoural stroma (boundary)
-P18	3	PI3K	-1.5450340774016376	188	peritumoural stroma (boundary)
-P18	3	TGFb	4.321889401785693	188	peritumoural stroma (boundary)
-P18	3	TNFa	0.796060295049093	188	peritumoural stroma (boundary)
-P18	3	Trail	-1.0232455502029754	188	peritumoural stroma (boundary)
-P18	3	VEGF	0.30405097773406803	188	peritumoural stroma (boundary)
-P18	3	WNT	-0.530464242688346	188	peritumoural stroma (boundary)
-P18	3	p53	-0.20923414812433683	188	peritumoural stroma (boundary)
-P18	4	Androgen	1.5963721490702356	1692	vascular-enriched lung parenchyma
-P18	4	EGFR	-0.03526224846756803	1692	vascular-enriched lung parenchyma
-P18	4	Estrogen	-1.5355785669107846	1692	vascular-enriched lung parenchyma
-P18	4	Hypoxia	0.9945544982571973	1692	vascular-enriched lung parenchyma
-P18	4	JAK-STAT	2.842944698491021	1692	vascular-enriched lung parenchyma
-P18	4	MAPK	-1.379397705707883	1692	vascular-enriched lung parenchyma
-P18	4	NFkB	1.2570910536062123	1692	vascular-enriched lung parenchyma
-P18	4	PI3K	-1.6211370174699156	1692	vascular-enriched lung parenchyma
-P18	4	TGFb	3.5467325381287407	1692	vascular-enriched lung parenchyma
-P18	4	TNFa	1.4555392036780492	1692	vascular-enriched lung parenchyma
-P18	4	Trail	-0.9966245508930647	1692	vascular-enriched lung parenchyma
-P18	4	VEGF	0.35052587994501894	1692	vascular-enriched lung parenchyma
-P18	4	WNT	-0.6483658295123692	1692	vascular-enriched lung parenchyma
-P18	4	p53	0.019925092052006207	1692	vascular-enriched lung parenchyma
-P18	5	Androgen	1.6819116812279236	161	myeloid-enriched tumour
-P18	5	EGFR	0.43165009834231693	161	myeloid-enriched tumour
-P18	5	Estrogen	-1.130019140820712	161	myeloid-enriched tumour
-P18	5	Hypoxia	1.033096579310715	161	myeloid-enriched tumour
-P18	5	JAK-STAT	3.30112794481666	161	myeloid-enriched tumour
-P18	5	MAPK	-0.9321332279931378	161	myeloid-enriched tumour
-P18	5	NFkB	1.2248445321865606	161	myeloid-enriched tumour
-P18	5	PI3K	-1.5659504468950325	161	myeloid-enriched tumour
-P18	5	TGFb	5.129710800239639	161	myeloid-enriched tumour
-P18	5	TNFa	1.3968564536039814	161	myeloid-enriched tumour
-P18	5	Trail	-1.4887533281548957	161	myeloid-enriched tumour
-P18	5	VEGF	0.2678476296427386	161	myeloid-enriched tumour
-P18	5	WNT	-0.5899537163599788	161	myeloid-enriched tumour
-P18	5	p53	-0.24357390390520064	161	myeloid-enriched tumour
-P18	7	Androgen	1.0643215522971958	110	fibroblast-enriched tumour
-P18	7	EGFR	0.6683304605986593	110	fibroblast-enriched tumour
-P18	7	Estrogen	-0.45699680132899445	110	fibroblast-enriched tumour
-P18	7	Hypoxia	0.6395410874351629	110	fibroblast-enriched tumour
-P18	7	JAK-STAT	2.0511590293821698	110	fibroblast-enriched tumour
-P18	7	MAPK	-0.6251358956080902	110	fibroblast-enriched tumour
-P18	7	NFkB	0.5177447570278013	110	fibroblast-enriched tumour
-P18	7	PI3K	-1.302365147306805	110	fibroblast-enriched tumour
-P18	7	TGFb	4.875873516266079	110	fibroblast-enriched tumour
-P18	7	TNFa	0.8297862115093864	110	fibroblast-enriched tumour
-P18	7	Trail	-0.9921347883947018	110	fibroblast-enriched tumour
-P18	7	VEGF	0.381719929761361	110	fibroblast-enriched tumour
-P18	7	WNT	-0.29019530722685233	110	fibroblast-enriched tumour
-P18	7	p53	-0.16144246972800994	110	fibroblast-enriched tumour
-P19	1	Androgen	0.5107878358836616	55	epithelial-enriched tumour
-P19	1	EGFR	-0.31895941889363133	55	epithelial-enriched tumour
-P19	1	Estrogen	-0.7070212411862636	55	epithelial-enriched tumour
-P19	1	Hypoxia	3.4194589500885915	55	epithelial-enriched tumour
-P19	1	JAK-STAT	-1.8711106217130158	55	epithelial-enriched tumour
-P19	1	MAPK	-2.8347008242792238	55	epithelial-enriched tumour
-P19	1	NFkB	-1.2421466288162997	55	epithelial-enriched tumour
-P19	1	PI3K	1.453300355040855	55	epithelial-enriched tumour
-P19	1	TGFb	6.699564701120413	55	epithelial-enriched tumour
-P19	1	TNFa	-0.7677802640516024	55	epithelial-enriched tumour
-P19	1	Trail	-2.0863815313292875	55	epithelial-enriched tumour
-P19	1	VEGF	0.566073219532688	55	epithelial-enriched tumour
-P19	1	WNT	-1.0830075050964483	55	epithelial-enriched tumour
-P19	1	p53	-2.268226929240996	55	epithelial-enriched tumour
-P19	6	Androgen	0.7226241658939448	117	osteoclast-enriched tumour
-P19	6	EGFR	-0.204130564093209	117	osteoclast-enriched tumour
-P19	6	Estrogen	-0.886923043075232	117	osteoclast-enriched tumour
-P19	6	Hypoxia	2.924929036327751	117	osteoclast-enriched tumour
-P19	6	JAK-STAT	-1.1947351289247945	117	osteoclast-enriched tumour
-P19	6	MAPK	-2.7814231343144082	117	osteoclast-enriched tumour
-P19	6	NFkB	-1.2126509124081568	117	osteoclast-enriched tumour
-P19	6	PI3K	1.804915164469458	117	osteoclast-enriched tumour
-P19	6	TGFb	7.153091933252249	117	osteoclast-enriched tumour
-P19	6	TNFa	-0.5855032326076741	117	osteoclast-enriched tumour
-P19	6	Trail	-2.4321562617557997	117	osteoclast-enriched tumour
-P19	6	VEGF	0.9354797969138953	117	osteoclast-enriched tumour
-P19	6	WNT	-1.2263317955406825	117	osteoclast-enriched tumour
-P19	6	p53	-2.094935172917485	117	osteoclast-enriched tumour
-P19	7	Androgen	0.8684381027477635	359	fibroblast-enriched tumour
-P19	7	EGFR	-0.42916072666068034	359	fibroblast-enriched tumour
-P19	7	Estrogen	-0.8136110793775423	359	fibroblast-enriched tumour
-P19	7	Hypoxia	5.526929923140598	359	fibroblast-enriched tumour
-P19	7	JAK-STAT	-1.5181379784011215	359	fibroblast-enriched tumour
-P19	7	MAPK	-2.7663335802158855	359	fibroblast-enriched tumour
-P19	7	NFkB	-1.01855347003527	359	fibroblast-enriched tumour
-P19	7	PI3K	1.306991699293228	359	fibroblast-enriched tumour
-P19	7	TGFb	6.915561340823669	359	fibroblast-enriched tumour
-P19	7	TNFa	-0.4699567653246715	359	fibroblast-enriched tumour
-P19	7	Trail	-2.26862157330779	359	fibroblast-enriched tumour
-P19	7	VEGF	0.7168857607000697	359	fibroblast-enriched tumour
-P19	7	WNT	-1.1999385476844724	359	fibroblast-enriched tumour
-P19	7	p53	-2.216443436402594	359	fibroblast-enriched tumour
+P01	2	Androgen	0.5172883424400398	329	peritumoural stroma (boundary)
+P01	2	EGFR	-0.3015225469802717	329	peritumoural stroma (boundary)
+P01	2	Estrogen	-0.9701751275949861	329	peritumoural stroma (boundary)
+P01	2	Hypoxia	2.592500426333042	329	peritumoural stroma (boundary)
+P01	2	JAK-STAT	-0.8772835614440561	329	peritumoural stroma (boundary)
+P01	2	MAPK	-1.5883195571998094	329	peritumoural stroma (boundary)
+P01	2	NFkB	-0.6362138861225646	329	peritumoural stroma (boundary)
+P01	2	PI3K	-0.5300023403066138	329	peritumoural stroma (boundary)
+P01	2	TGFb	3.739053025163301	329	peritumoural stroma (boundary)
+P01	2	TNFa	-0.049534255428840455	329	peritumoural stroma (boundary)
+P01	2	Trail	-1.458517702496955	329	peritumoural stroma (boundary)
+P01	2	VEGF	0.3027962364152725	329	peritumoural stroma (boundary)
+P01	2	WNT	-0.5409482457068068	329	peritumoural stroma (boundary)
+P01	2	p53	-0.8970361475315782	329	peritumoural stroma (boundary)
+P01	3	Androgen	0.07243656489911127	558	lymphoid-enriched stroma
+P01	3	EGFR	0.14674578675971187	558	lymphoid-enriched stroma
+P01	3	Estrogen	-0.8376001284217686	558	lymphoid-enriched stroma
+P01	3	Hypoxia	0.5965791348258218	558	lymphoid-enriched stroma
+P01	3	JAK-STAT	-0.7583109954799513	558	lymphoid-enriched stroma
+P01	3	MAPK	-1.409086457125498	558	lymphoid-enriched stroma
+P01	3	NFkB	-0.3048854677407951	558	lymphoid-enriched stroma
+P01	3	PI3K	-0.09030038449635269	558	lymphoid-enriched stroma
+P01	3	TGFb	2.808769834341928	558	lymphoid-enriched stroma
+P01	3	TNFa	0.1718095150663669	558	lymphoid-enriched stroma
+P01	3	Trail	-0.5147251817225398	558	lymphoid-enriched stroma
+P01	3	VEGF	0.1690421088020561	558	lymphoid-enriched stroma
+P01	3	WNT	-0.34875952687892425	558	lymphoid-enriched stroma
+P01	3	p53	-0.4892218871453867	558	lymphoid-enriched stroma
+P01	4	Androgen	1.1591345800005433	1027	osteoclast-enriched tumour
+P01	4	EGFR	-0.919821600395245	1027	osteoclast-enriched tumour
+P01	4	Estrogen	-1.5579279629366176	1027	osteoclast-enriched tumour
+P01	4	Hypoxia	3.358897934691558	1027	osteoclast-enriched tumour
+P01	4	JAK-STAT	-1.290690243453105	1027	osteoclast-enriched tumour
+P01	4	MAPK	-1.8525867555642206	1027	osteoclast-enriched tumour
+P01	4	NFkB	-1.684508488717511	1027	osteoclast-enriched tumour
+P01	4	PI3K	-0.5181457589585697	1027	osteoclast-enriched tumour
+P01	4	TGFb	5.681528265553913	1027	osteoclast-enriched tumour
+P01	4	TNFa	-0.7365265456187255	1027	osteoclast-enriched tumour
+P01	4	Trail	-3.3522946945878203	1027	osteoclast-enriched tumour
+P01	4	VEGF	0.45366666940377587	1027	osteoclast-enriched tumour
+P01	4	WNT	-0.8239873269962594	1027	osteoclast-enriched tumour
+P01	4	p53	-2.254209493873008	1027	osteoclast-enriched tumour
+P01	5	Androgen	1.57277930736861	2600	fibroblast-enriched tumour
+P01	5	EGFR	-1.0335700063972282	2600	fibroblast-enriched tumour
+P01	5	Estrogen	-1.433046150537086	2600	fibroblast-enriched tumour
+P01	5	Hypoxia	6.973346646823817	2600	fibroblast-enriched tumour
+P01	5	JAK-STAT	-1.58134075037804	2600	fibroblast-enriched tumour
+P01	5	MAPK	-1.4980050406956222	2600	fibroblast-enriched tumour
+P01	5	NFkB	-1.4699280519400102	2600	fibroblast-enriched tumour
+P01	5	PI3K	-1.1525947657016065	2600	fibroblast-enriched tumour
+P01	5	TGFb	5.805460025094073	2600	fibroblast-enriched tumour
+P01	5	TNFa	-0.5243200284132107	2600	fibroblast-enriched tumour
+P01	5	Trail	-3.699521068667947	2600	fibroblast-enriched tumour
+P01	5	VEGF	0.7424834713369589	2600	fibroblast-enriched tumour
+P01	5	WNT	-0.9393471078564102	2600	fibroblast-enriched tumour
+P01	5	p53	-1.9534540478262297	2600	fibroblast-enriched tumour
+P01	7	Androgen	1.7950399562519852	57	myeloid-enriched stroma
+P01	7	EGFR	-0.8922918410324115	57	myeloid-enriched stroma
+P01	7	Estrogen	-1.4478654639377866	57	myeloid-enriched stroma
+P01	7	Hypoxia	6.673417068018792	57	myeloid-enriched stroma
+P01	7	JAK-STAT	-0.9383790358189422	57	myeloid-enriched stroma
+P01	7	MAPK	-1.5295480169433375	57	myeloid-enriched stroma
+P01	7	NFkB	-0.7084367861398263	57	myeloid-enriched stroma
+P01	7	PI3K	-1.263369191452466	57	myeloid-enriched stroma
+P01	7	TGFb	6.345546188648651	57	myeloid-enriched stroma
+P01	7	TNFa	0.24894166181228958	57	myeloid-enriched stroma
+P01	7	Trail	-3.6945475248755852	57	myeloid-enriched stroma
+P01	7	VEGF	0.8776244421916469	57	myeloid-enriched stroma
+P01	7	WNT	-1.0792904412262014	57	myeloid-enriched stroma
+P01	7	p53	-1.6247001142920658	57	myeloid-enriched stroma
+P02	0	Androgen	0.9011734928352239	159	epithelial-enriched lung parenchyma
+P02	0	EGFR	0.38894665825943053	159	epithelial-enriched lung parenchyma
+P02	0	Estrogen	-1.4093253651159825	159	epithelial-enriched lung parenchyma
+P02	0	Hypoxia	2.210226685325057	159	epithelial-enriched lung parenchyma
+P02	0	JAK-STAT	2.0490607452218477	159	epithelial-enriched lung parenchyma
+P02	0	MAPK	-1.1048767075341506	159	epithelial-enriched lung parenchyma
+P02	0	NFkB	1.8298671239464992	159	epithelial-enriched lung parenchyma
+P02	0	PI3K	-0.8345564911193646	159	epithelial-enriched lung parenchyma
+P02	0	TGFb	6.468054502906139	159	epithelial-enriched lung parenchyma
+P02	0	TNFa	2.3615822960097996	159	epithelial-enriched lung parenchyma
+P02	0	Trail	-1.8960291136415985	159	epithelial-enriched lung parenchyma
+P02	0	VEGF	0.12419625013988346	159	epithelial-enriched lung parenchyma
+P02	0	WNT	-0.6073681142370537	159	epithelial-enriched lung parenchyma
+P02	0	p53	-0.14111107139801385	159	epithelial-enriched lung parenchyma
+P02	1	Androgen	0.9966077093882705	1724	vascular-enriched lung parenchyma
+P02	1	EGFR	1.1276923722538321	1724	vascular-enriched lung parenchyma
+P02	1	Estrogen	-1.6735924605573476	1724	vascular-enriched lung parenchyma
+P02	1	Hypoxia	1.914454151564652	1724	vascular-enriched lung parenchyma
+P02	1	JAK-STAT	2.7546065478855297	1724	vascular-enriched lung parenchyma
+P02	1	MAPK	-0.4892945821463184	1724	vascular-enriched lung parenchyma
+P02	1	NFkB	2.883294227342958	1724	vascular-enriched lung parenchyma
+P02	1	PI3K	-1.1739005249228736	1724	vascular-enriched lung parenchyma
+P02	1	TGFb	6.651004310207943	1724	vascular-enriched lung parenchyma
+P02	1	TNFa	3.2870315430644435	1724	vascular-enriched lung parenchyma
+P02	1	Trail	-1.5724564417292077	1724	vascular-enriched lung parenchyma
+P02	1	VEGF	0.3747796516877368	1724	vascular-enriched lung parenchyma
+P02	1	WNT	-0.5624877208536788	1724	vascular-enriched lung parenchyma
+P02	1	p53	0.18586030094936415	1724	vascular-enriched lung parenchyma
+P02	2	Androgen	1.330268234587865	288	peritumoural stroma (boundary)
+P02	2	EGFR	1.2212299014735417	288	peritumoural stroma (boundary)
+P02	2	Estrogen	-0.6361023741335613	288	peritumoural stroma (boundary)
+P02	2	Hypoxia	3.056314112836807	288	peritumoural stroma (boundary)
+P02	2	JAK-STAT	2.0884252477857514	288	peritumoural stroma (boundary)
+P02	2	MAPK	-0.5484137900259751	288	peritumoural stroma (boundary)
+P02	2	NFkB	2.578689776864418	288	peritumoural stroma (boundary)
+P02	2	PI3K	-0.30139478540503833	288	peritumoural stroma (boundary)
+P02	2	TGFb	6.898822316774166	288	peritumoural stroma (boundary)
+P02	2	TNFa	3.0230520340888924	288	peritumoural stroma (boundary)
+P02	2	Trail	-1.9055809893000126	288	peritumoural stroma (boundary)
+P02	2	VEGF	0.2967983603825365	288	peritumoural stroma (boundary)
+P02	2	WNT	-0.37487706465881204	288	peritumoural stroma (boundary)
+P02	2	p53	-0.3349917614630651	288	peritumoural stroma (boundary)
+P02	3	Androgen	0.7594712403683869	187	lymphoid-enriched stroma
+P02	3	EGFR	0.7118801622601145	187	lymphoid-enriched stroma
+P02	3	Estrogen	-0.5722426939577625	187	lymphoid-enriched stroma
+P02	3	Hypoxia	2.45745445673242	187	lymphoid-enriched stroma
+P02	3	JAK-STAT	1.6332445098131918	187	lymphoid-enriched stroma
+P02	3	MAPK	-0.7466330562618216	187	lymphoid-enriched stroma
+P02	3	NFkB	1.4676256550134723	187	lymphoid-enriched stroma
+P02	3	PI3K	-0.1703929707047448	187	lymphoid-enriched stroma
+P02	3	TGFb	5.620131086912747	187	lymphoid-enriched stroma
+P02	3	TNFa	1.8812491650310623	187	lymphoid-enriched stroma
+P02	3	Trail	-1.2916618250551057	187	lymphoid-enriched stroma
+P02	3	VEGF	0.17675743916210057	187	lymphoid-enriched stroma
+P02	3	WNT	-0.4361391074443226	187	lymphoid-enriched stroma
+P02	3	p53	-0.3799002100544465	187	lymphoid-enriched stroma
+P02	4	Androgen	1.354914303723823	696	osteoclast-enriched tumour
+P02	4	EGFR	1.163629713195654	696	osteoclast-enriched tumour
+P02	4	Estrogen	-0.7125375724732987	696	osteoclast-enriched tumour
+P02	4	Hypoxia	2.8028520820923233	696	osteoclast-enriched tumour
+P02	4	JAK-STAT	1.9686237436455734	696	osteoclast-enriched tumour
+P02	4	MAPK	-0.3473897204684237	696	osteoclast-enriched tumour
+P02	4	NFkB	2.158278154576427	696	osteoclast-enriched tumour
+P02	4	PI3K	-0.11423773564739291	696	osteoclast-enriched tumour
+P02	4	TGFb	7.8645910979193285	696	osteoclast-enriched tumour
+P02	4	TNFa	2.7858157637466823	696	osteoclast-enriched tumour
+P02	4	Trail	-2.1934865337014067	696	osteoclast-enriched tumour
+P02	4	VEGF	0.4654193138259791	696	osteoclast-enriched tumour
+P02	4	WNT	-0.5055708235727239	696	osteoclast-enriched tumour
+P02	4	p53	-0.4377700302126396	696	osteoclast-enriched tumour
+P02	5	Androgen	0.9398001641684065	582	fibroblast-enriched tumour
+P02	5	EGFR	0.1954615503682741	582	fibroblast-enriched tumour
+P02	5	Estrogen	-0.0459436801309673	582	fibroblast-enriched tumour
+P02	5	Hypoxia	5.634868552761846	582	fibroblast-enriched tumour
+P02	5	JAK-STAT	-0.1918299248140161	582	fibroblast-enriched tumour
+P02	5	MAPK	-1.3355339950560687	582	fibroblast-enriched tumour
+P02	5	NFkB	-0.910300909859204	582	fibroblast-enriched tumour
+P02	5	PI3K	1.045086901215177	582	fibroblast-enriched tumour
+P02	5	TGFb	6.787201360288986	582	fibroblast-enriched tumour
+P02	5	TNFa	-0.28875418955252224	582	fibroblast-enriched tumour
+P02	5	Trail	-2.5421721041716876	582	fibroblast-enriched tumour
+P02	5	VEGF	-0.22877361961307624	582	fibroblast-enriched tumour
+P02	5	WNT	-0.48303619948482585	582	fibroblast-enriched tumour
+P02	5	p53	-2.0127463342290732	582	fibroblast-enriched tumour
+P02	6	Androgen	1.502150452666705	183	myeloid-enriched tumour
+P02	6	EGFR	1.5509679544711599	183	myeloid-enriched tumour
+P02	6	Estrogen	-0.5483228022462523	183	myeloid-enriched tumour
+P02	6	Hypoxia	3.0653581573853996	183	myeloid-enriched tumour
+P02	6	JAK-STAT	2.292677275000344	183	myeloid-enriched tumour
+P02	6	MAPK	-0.06208955447997975	183	myeloid-enriched tumour
+P02	6	NFkB	2.750416062967853	183	myeloid-enriched tumour
+P02	6	PI3K	-0.1419896843874537	183	myeloid-enriched tumour
+P02	6	TGFb	7.5824915345629735	183	myeloid-enriched tumour
+P02	6	TNFa	3.2528233044059727	183	myeloid-enriched tumour
+P02	6	Trail	-2.213377378532844	183	myeloid-enriched tumour
+P02	6	VEGF	0.4334658008561452	183	myeloid-enriched tumour
+P02	6	WNT	-0.458855451470921	183	myeloid-enriched tumour
+P02	6	p53	-0.39729176036048275	183	myeloid-enriched tumour
+P02	7	Androgen	1.1829091619535859	64	myeloid-enriched stroma
+P02	7	EGFR	1.5755367075914875	64	myeloid-enriched stroma
+P02	7	Estrogen	-0.9461256594533889	64	myeloid-enriched stroma
+P02	7	Hypoxia	2.882306451388177	64	myeloid-enriched stroma
+P02	7	JAK-STAT	2.3950294174936855	64	myeloid-enriched stroma
+P02	7	MAPK	-0.13719476759933025	64	myeloid-enriched stroma
+P02	7	NFkB	3.0444863986149677	64	myeloid-enriched stroma
+P02	7	PI3K	-0.1669962256871693	64	myeloid-enriched stroma
+P02	7	TGFb	8.78303830100194	64	myeloid-enriched stroma
+P02	7	TNFa	3.5588028127810882	64	myeloid-enriched stroma
+P02	7	Trail	-2.186601199405151	64	myeloid-enriched stroma
+P02	7	VEGF	0.30864061976167506	64	myeloid-enriched stroma
+P02	7	WNT	-0.5372906319297568	64	myeloid-enriched stroma
+P02	7	p53	0.03518911328273186	64	myeloid-enriched stroma
+P03	1	Androgen	1.8863586819505171	810	vascular-enriched lung parenchyma
+P03	1	EGFR	1.8604096771934602	810	vascular-enriched lung parenchyma
+P03	1	Estrogen	-0.331196181529703	810	vascular-enriched lung parenchyma
+P03	1	Hypoxia	1.7680547123499564	810	vascular-enriched lung parenchyma
+P03	1	JAK-STAT	1.403745615864595	810	vascular-enriched lung parenchyma
+P03	1	MAPK	0.9576141560577799	810	vascular-enriched lung parenchyma
+P03	1	NFkB	2.589508949580097	810	vascular-enriched lung parenchyma
+P03	1	PI3K	0.6796251979234142	810	vascular-enriched lung parenchyma
+P03	1	TGFb	5.820954236468822	810	vascular-enriched lung parenchyma
+P03	1	TNFa	2.8871719379337226	810	vascular-enriched lung parenchyma
+P03	1	Trail	-1.604646315779255	810	vascular-enriched lung parenchyma
+P03	1	VEGF	0.4696443065039102	810	vascular-enriched lung parenchyma
+P03	1	WNT	-0.43728570285520824	810	vascular-enriched lung parenchyma
+P03	1	p53	-0.4548679102130445	810	vascular-enriched lung parenchyma
+P03	2	Androgen	1.1968088293879486	193	peritumoural stroma (boundary)
+P03	2	EGFR	0.7073856954460136	193	peritumoural stroma (boundary)
+P03	2	Estrogen	-0.4352226280714039	193	peritumoural stroma (boundary)
+P03	2	Hypoxia	3.651035039619662	193	peritumoural stroma (boundary)
+P03	2	JAK-STAT	2.2570457100456087	193	peritumoural stroma (boundary)
+P03	2	MAPK	-0.33057840069219685	193	peritumoural stroma (boundary)
+P03	2	NFkB	2.0240700106386815	193	peritumoural stroma (boundary)
+P03	2	PI3K	0.30787319089317433	193	peritumoural stroma (boundary)
+P03	2	TGFb	4.554842410085018	193	peritumoural stroma (boundary)
+P03	2	TNFa	2.7740818423353057	193	peritumoural stroma (boundary)
+P03	2	Trail	-1.7291134780037098	193	peritumoural stroma (boundary)
+P03	2	VEGF	0.7052646407208828	193	peritumoural stroma (boundary)
+P03	2	WNT	-0.7138150143156125	193	peritumoural stroma (boundary)
+P03	2	p53	-0.9101313287901674	193	peritumoural stroma (boundary)
+P03	3	Androgen	0.6844289324718009	661	lymphoid-enriched stroma
+P03	3	EGFR	0.5763745385847961	661	lymphoid-enriched stroma
+P03	3	Estrogen	-0.17933570549933306	661	lymphoid-enriched stroma
+P03	3	Hypoxia	1.7204999105463181	661	lymphoid-enriched stroma
+P03	3	JAK-STAT	1.2158571844648365	661	lymphoid-enriched stroma
+P03	3	MAPK	-0.18545998837744657	661	lymphoid-enriched stroma
+P03	3	NFkB	1.7919395252206514	661	lymphoid-enriched stroma
+P03	3	PI3K	0.2906548024017997	661	lymphoid-enriched stroma
+P03	3	TGFb	2.909485771509687	661	lymphoid-enriched stroma
+P03	3	TNFa	2.188869023756681	661	lymphoid-enriched stroma
+P03	3	Trail	-0.8671636781647181	661	lymphoid-enriched stroma
+P03	3	VEGF	0.356321045789442	661	lymphoid-enriched stroma
+P03	3	WNT	-0.3366606664527291	661	lymphoid-enriched stroma
+P03	3	p53	-0.41870042322772866	661	lymphoid-enriched stroma
+P03	4	Androgen	2.4568300228822086	1785	osteoclast-enriched tumour
+P03	4	EGFR	0.8182594054104788	1785	osteoclast-enriched tumour
+P03	4	Estrogen	0.03918531924645344	1785	osteoclast-enriched tumour
+P03	4	Hypoxia	1.8817116489438004	1785	osteoclast-enriched tumour
+P03	4	JAK-STAT	1.6281805367522357	1785	osteoclast-enriched tumour
+P03	4	MAPK	0.2482800209181804	1785	osteoclast-enriched tumour
+P03	4	NFkB	0.3443964645834307	1785	osteoclast-enriched tumour
+P03	4	PI3K	1.1771135033792477	1785	osteoclast-enriched tumour
+P03	4	TGFb	5.878665944439163	1785	osteoclast-enriched tumour
+P03	4	TNFa	1.0245629189305314	1785	osteoclast-enriched tumour
+P03	4	Trail	-2.2001787985672103	1785	osteoclast-enriched tumour
+P03	4	VEGF	0.4582315243616399	1785	osteoclast-enriched tumour
+P03	4	WNT	-0.7031347158175417	1785	osteoclast-enriched tumour
+P03	4	p53	-1.7360686924729538	1785	osteoclast-enriched tumour
+P03	5	Androgen	1.6328869536195765	515	fibroblast-enriched tumour
+P03	5	EGFR	0.2012230129381548	515	fibroblast-enriched tumour
+P03	5	Estrogen	-0.7098618759668238	515	fibroblast-enriched tumour
+P03	5	Hypoxia	4.137097259387806	515	fibroblast-enriched tumour
+P03	5	JAK-STAT	2.7150964245916582	515	fibroblast-enriched tumour
+P03	5	MAPK	-0.8558548322778824	515	fibroblast-enriched tumour
+P03	5	NFkB	1.271152249245331	515	fibroblast-enriched tumour
+P03	5	PI3K	0.26664955460846657	515	fibroblast-enriched tumour
+P03	5	TGFb	5.575714218949	515	fibroblast-enriched tumour
+P03	5	TNFa	2.1981845005493463	515	fibroblast-enriched tumour
+P03	5	Trail	-2.5470105335259015	515	fibroblast-enriched tumour
+P03	5	VEGF	1.0106116726328187	515	fibroblast-enriched tumour
+P03	5	WNT	-0.9780405237946705	515	fibroblast-enriched tumour
+P03	5	p53	-1.468450379184411	515	fibroblast-enriched tumour
+P03	6	Androgen	1.7389588099912199	117	myeloid-enriched tumour
+P03	6	EGFR	0.8277079187286751	117	myeloid-enriched tumour
+P03	6	Estrogen	-0.6496063089620338	117	myeloid-enriched tumour
+P03	6	Hypoxia	3.4845996545195748	117	myeloid-enriched tumour
+P03	6	JAK-STAT	3.0725425618077127	117	myeloid-enriched tumour
+P03	6	MAPK	-0.003904091562450644	117	myeloid-enriched tumour
+P03	6	NFkB	1.7700926974648428	117	myeloid-enriched tumour
+P03	6	PI3K	0.3830377171740114	117	myeloid-enriched tumour
+P03	6	TGFb	5.421653702185281	117	myeloid-enriched tumour
+P03	6	TNFa	2.7027259691755776	117	myeloid-enriched tumour
+P03	6	Trail	-2.60031162565676	117	myeloid-enriched tumour
+P03	6	VEGF	1.0041751039839606	117	myeloid-enriched tumour
+P03	6	WNT	-1.043000556748346	117	myeloid-enriched tumour
+P03	6	p53	-1.5919542461779692	117	myeloid-enriched tumour
+P03	7	Androgen	1.8952780791918855	201	myeloid-enriched stroma
+P03	7	EGFR	0.6807811100513814	201	myeloid-enriched stroma
+P03	7	Estrogen	-0.5583025896376116	201	myeloid-enriched stroma
+P03	7	Hypoxia	3.3316460819758458	201	myeloid-enriched stroma
+P03	7	JAK-STAT	4.142316187213019	201	myeloid-enriched stroma
+P03	7	MAPK	-0.3592254655266515	201	myeloid-enriched stroma
+P03	7	NFkB	1.9046687550174357	201	myeloid-enriched stroma
+P03	7	PI3K	0.622256682523734	201	myeloid-enriched stroma
+P03	7	TGFb	6.020415773432441	201	myeloid-enriched stroma
+P03	7	TNFa	2.7760187274880512	201	myeloid-enriched stroma
+P03	7	Trail	-2.6273037753437856	201	myeloid-enriched stroma
+P03	7	VEGF	1.2750045504010041	201	myeloid-enriched stroma
+P03	7	WNT	-1.0153739356297236	201	myeloid-enriched stroma
+P03	7	p53	-1.436476094116455	201	myeloid-enriched stroma
+P04	0	Androgen	0.23214807960328815	103	epithelial-enriched lung parenchyma
+P04	0	EGFR	-0.49585562431104896	103	epithelial-enriched lung parenchyma
+P04	0	Estrogen	-0.9773669857658025	103	epithelial-enriched lung parenchyma
+P04	0	Hypoxia	0.5586614382305088	103	epithelial-enriched lung parenchyma
+P04	0	JAK-STAT	0.9674915960848569	103	epithelial-enriched lung parenchyma
+P04	0	MAPK	-1.580763343929723	103	epithelial-enriched lung parenchyma
+P04	0	NFkB	1.0754062791325831	103	epithelial-enriched lung parenchyma
+P04	0	PI3K	-1.078123863605828	103	epithelial-enriched lung parenchyma
+P04	0	TGFb	2.330838583316741	103	epithelial-enriched lung parenchyma
+P04	0	TNFa	1.4762054559914737	103	epithelial-enriched lung parenchyma
+P04	0	Trail	-0.8756924965426477	103	epithelial-enriched lung parenchyma
+P04	0	VEGF	0.19330016930812424	103	epithelial-enriched lung parenchyma
+P04	0	WNT	-0.4969614955301434	103	epithelial-enriched lung parenchyma
+P04	0	p53	-0.0678526845482109	103	epithelial-enriched lung parenchyma
+P04	1	Androgen	0.9195481289597911	554	vascular-enriched lung parenchyma
+P04	1	EGFR	0.016845498812804716	554	vascular-enriched lung parenchyma
+P04	1	Estrogen	-1.441399242281731	554	vascular-enriched lung parenchyma
+P04	1	Hypoxia	1.1879083923224953	554	vascular-enriched lung parenchyma
+P04	1	JAK-STAT	2.1090639324017135	554	vascular-enriched lung parenchyma
+P04	1	MAPK	-1.6113667257700521	554	vascular-enriched lung parenchyma
+P04	1	NFkB	2.7449274659388	554	vascular-enriched lung parenchyma
+P04	1	PI3K	-1.6119786752018657	554	vascular-enriched lung parenchyma
+P04	1	TGFb	4.0145095348957485	554	vascular-enriched lung parenchyma
+P04	1	TNFa	3.21749997004416	554	vascular-enriched lung parenchyma
+P04	1	Trail	-1.4762464272180602	554	vascular-enriched lung parenchyma
+P04	1	VEGF	0.5131661836889554	554	vascular-enriched lung parenchyma
+P04	1	WNT	-0.7090326296806	554	vascular-enriched lung parenchyma
+P04	1	p53	-0.14348554392892823	554	vascular-enriched lung parenchyma
+P04	2	Androgen	0.9605275209641146	262	peritumoural stroma (boundary)
+P04	2	EGFR	-0.26435269738964484	262	peritumoural stroma (boundary)
+P04	2	Estrogen	-0.9395275404363485	262	peritumoural stroma (boundary)
+P04	2	Hypoxia	1.5747428348062587	262	peritumoural stroma (boundary)
+P04	2	JAK-STAT	1.7842658091733028	262	peritumoural stroma (boundary)
+P04	2	MAPK	-1.990462653809794	262	peritumoural stroma (boundary)
+P04	2	NFkB	0.9230252988295566	262	peritumoural stroma (boundary)
+P04	2	PI3K	-0.7351498880345477	262	peritumoural stroma (boundary)
+P04	2	TGFb	4.518795608686927	262	peritumoural stroma (boundary)
+P04	2	TNFa	1.636462011859653	262	peritumoural stroma (boundary)
+P04	2	Trail	-1.679842582708615	262	peritumoural stroma (boundary)
+P04	2	VEGF	0.512717798169752	262	peritumoural stroma (boundary)
+P04	2	WNT	-0.8284356350491484	262	peritumoural stroma (boundary)
+P04	2	p53	-0.6769450710728674	262	peritumoural stroma (boundary)
+P04	3	Androgen	0.4671479707629498	389	lymphoid-enriched stroma
+P04	3	EGFR	-0.07735289777086463	389	lymphoid-enriched stroma
+P04	3	Estrogen	-0.6307157147756909	389	lymphoid-enriched stroma
+P04	3	Hypoxia	0.6622582039551107	389	lymphoid-enriched stroma
+P04	3	JAK-STAT	0.699071697426258	389	lymphoid-enriched stroma
+P04	3	MAPK	-1.28754141946695	389	lymphoid-enriched stroma
+P04	3	NFkB	1.0139837614272822	389	lymphoid-enriched stroma
+P04	3	PI3K	-0.7036085466802776	389	lymphoid-enriched stroma
+P04	3	TGFb	2.8604867489493664	389	lymphoid-enriched stroma
+P04	3	TNFa	1.4715473064586746	389	lymphoid-enriched stroma
+P04	3	Trail	-0.7913033443420266	389	lymphoid-enriched stroma
+P04	3	VEGF	0.21788641061401473	389	lymphoid-enriched stroma
+P04	3	WNT	-0.43124986470191456	389	lymphoid-enriched stroma
+P04	3	p53	-0.28038188163959654	389	lymphoid-enriched stroma
+P04	4	Androgen	1.3104026380516411	2118	osteoclast-enriched tumour
+P04	4	EGFR	-0.9911905297907179	2118	osteoclast-enriched tumour
+P04	4	Estrogen	-0.9063636942076883	2118	osteoclast-enriched tumour
+P04	4	Hypoxia	0.9382795145256004	2118	osteoclast-enriched tumour
+P04	4	JAK-STAT	0.4353948265580359	2118	osteoclast-enriched tumour
+P04	4	MAPK	-2.4427571643513666	2118	osteoclast-enriched tumour
+P04	4	NFkB	0.63113816709974	2118	osteoclast-enriched tumour
+P04	4	PI3K	-0.9597720435667498	2118	osteoclast-enriched tumour
+P04	4	TGFb	4.508137386558743	2118	osteoclast-enriched tumour
+P04	4	TNFa	1.4716296427218067	2118	osteoclast-enriched tumour
+P04	4	Trail	-2.308225586078993	2118	osteoclast-enriched tumour
+P04	4	VEGF	0.46324424936592956	2118	osteoclast-enriched tumour
+P04	4	WNT	-0.6616898598471512	2118	osteoclast-enriched tumour
+P04	4	p53	-0.9624792836525342	2118	osteoclast-enriched tumour
+P04	5	Androgen	1.2210507493517109	690	fibroblast-enriched tumour
+P04	5	EGFR	-0.25049984504814693	690	fibroblast-enriched tumour
+P04	5	Estrogen	-0.992709013391955	690	fibroblast-enriched tumour
+P04	5	Hypoxia	2.6421931705689605	690	fibroblast-enriched tumour
+P04	5	JAK-STAT	3.3273893178679677	690	fibroblast-enriched tumour
+P04	5	MAPK	-2.434242960698661	690	fibroblast-enriched tumour
+P04	5	NFkB	-0.5308928407222091	690	fibroblast-enriched tumour
+P04	5	PI3K	0.7844439096015867	690	fibroblast-enriched tumour
+P04	5	TGFb	5.759002617837116	690	fibroblast-enriched tumour
+P04	5	TNFa	0.30180564844916324	690	fibroblast-enriched tumour
+P04	5	Trail	-1.9637072036573777	690	fibroblast-enriched tumour
+P04	5	VEGF	0.7292148802739494	690	fibroblast-enriched tumour
+P04	5	WNT	-1.1957493083162054	690	fibroblast-enriched tumour
+P04	5	p53	-1.2450547776443657	690	fibroblast-enriched tumour
+P04	6	Androgen	1.624126657997598	102	myeloid-enriched tumour
+P04	6	EGFR	-1.117029826928798	102	myeloid-enriched tumour
+P04	6	Estrogen	-1.2951172569632887	102	myeloid-enriched tumour
+P04	6	Hypoxia	1.556796304364886	102	myeloid-enriched tumour
+P04	6	JAK-STAT	1.9815587949381237	102	myeloid-enriched tumour
+P04	6	MAPK	-2.7323843685116826	102	myeloid-enriched tumour
+P04	6	NFkB	1.31246690041894	102	myeloid-enriched tumour
+P04	6	PI3K	-1.2828431008025252	102	myeloid-enriched tumour
+P04	6	TGFb	5.2429701615864905	102	myeloid-enriched tumour
+P04	6	TNFa	2.1371187427039837	102	myeloid-enriched tumour
+P04	6	Trail	-2.6728410711913893	102	myeloid-enriched tumour
+P04	6	VEGF	0.7357983993527867	102	myeloid-enriched tumour
+P04	6	WNT	-0.7655585712872195	102	myeloid-enriched tumour
+P04	6	p53	-0.9537756144524837	102	myeloid-enriched tumour
+P04	7	Androgen	1.2549900487826573	96	myeloid-enriched stroma
+P04	7	EGFR	-0.4923042929752129	96	myeloid-enriched stroma
+P04	7	Estrogen	-1.030824712335362	96	myeloid-enriched stroma
+P04	7	Hypoxia	1.444206876829498	96	myeloid-enriched stroma
+P04	7	JAK-STAT	2.2968861378080807	96	myeloid-enriched stroma
+P04	7	MAPK	-2.1794257814613727	96	myeloid-enriched stroma
+P04	7	NFkB	1.2734904228029935	96	myeloid-enriched stroma
+P04	7	PI3K	-0.8450163692131895	96	myeloid-enriched stroma
+P04	7	TGFb	5.4708359330472405	96	myeloid-enriched stroma
+P04	7	TNFa	2.063311934132911	96	myeloid-enriched stroma
+P04	7	Trail	-2.464394143424165	96	myeloid-enriched stroma
+P04	7	VEGF	0.8693192997814853	96	myeloid-enriched stroma
+P04	7	WNT	-0.898060425380303	96	myeloid-enriched stroma
+P04	7	p53	-0.8620901319573676	96	myeloid-enriched stroma
+P05	2	Androgen	-0.04875124865398585	290	peritumoural stroma (boundary)
+P05	2	EGFR	-0.3151965796442048	290	peritumoural stroma (boundary)
+P05	2	Estrogen	-0.1940392155991511	290	peritumoural stroma (boundary)
+P05	2	Hypoxia	5.269590931445977	290	peritumoural stroma (boundary)
+P05	2	JAK-STAT	0.25809997320172096	290	peritumoural stroma (boundary)
+P05	2	MAPK	-0.6131710611373091	290	peritumoural stroma (boundary)
+P05	2	NFkB	-0.9246407827543043	290	peritumoural stroma (boundary)
+P05	2	PI3K	0.1880841784574095	290	peritumoural stroma (boundary)
+P05	2	TGFb	4.206414478244813	290	peritumoural stroma (boundary)
+P05	2	TNFa	-0.4744343881070307	290	peritumoural stroma (boundary)
+P05	2	Trail	-2.0477981436644477	290	peritumoural stroma (boundary)
+P05	2	VEGF	-0.08773234473676458	290	peritumoural stroma (boundary)
+P05	2	WNT	-0.3808810525931535	290	peritumoural stroma (boundary)
+P05	2	p53	-1.511361829389521	290	peritumoural stroma (boundary)
+P05	3	Androgen	-0.22938432790649874	290	lymphoid-enriched stroma
+P05	3	EGFR	0.15501406741847665	290	lymphoid-enriched stroma
+P05	3	Estrogen	-0.16752083626583072	290	lymphoid-enriched stroma
+P05	3	Hypoxia	2.4696943822796644	290	lymphoid-enriched stroma
+P05	3	JAK-STAT	0.014516309549600929	290	lymphoid-enriched stroma
+P05	3	MAPK	-0.24883498979741278	290	lymphoid-enriched stroma
+P05	3	NFkB	-1.0571475994726303	290	lymphoid-enriched stroma
+P05	3	PI3K	1.0410278574428018	290	lymphoid-enriched stroma
+P05	3	TGFb	2.4662211060165915	290	lymphoid-enriched stroma
+P05	3	TNFa	-0.704897058337701	290	lymphoid-enriched stroma
+P05	3	Trail	-1.7488292549910556	290	lymphoid-enriched stroma
+P05	3	VEGF	0.17731870983706427	290	lymphoid-enriched stroma
+P05	3	WNT	-0.46056439791817577	290	lymphoid-enriched stroma
+P05	3	p53	-2.118046785636659	290	lymphoid-enriched stroma
+P05	4	Androgen	-0.2698253591704239	86	osteoclast-enriched tumour
+P05	4	EGFR	-0.0538489519004191	86	osteoclast-enriched tumour
+P05	4	Estrogen	-0.14929538584913374	86	osteoclast-enriched tumour
+P05	4	Hypoxia	-0.4378802912541766	86	osteoclast-enriched tumour
+P05	4	JAK-STAT	-1.7122225514032363	86	osteoclast-enriched tumour
+P05	4	MAPK	0.20384756811724994	86	osteoclast-enriched tumour
+P05	4	NFkB	-3.029514849748135	86	osteoclast-enriched tumour
+P05	4	PI3K	2.635055223539279	86	osteoclast-enriched tumour
+P05	4	TGFb	3.386868160564768	86	osteoclast-enriched tumour
+P05	4	TNFa	-2.19228723570592	86	osteoclast-enriched tumour
+P05	4	Trail	-3.857682403775723	86	osteoclast-enriched tumour
+P05	4	VEGF	0.3896840829434303	86	osteoclast-enriched tumour
+P05	4	WNT	-0.9054260121898061	86	osteoclast-enriched tumour
+P05	4	p53	-5.212454395595354	86	osteoclast-enriched tumour
+P05	5	Androgen	0.2926655372255922	1539	fibroblast-enriched tumour
+P05	5	EGFR	-1.945863969235069	1539	fibroblast-enriched tumour
+P05	5	Estrogen	-0.8163669914570343	1539	fibroblast-enriched tumour
+P05	5	Hypoxia	9.016936057029525	1539	fibroblast-enriched tumour
+P05	5	JAK-STAT	0.3718622249040144	1539	fibroblast-enriched tumour
+P05	5	MAPK	-1.8770353463286955	1539	fibroblast-enriched tumour
+P05	5	NFkB	-1.9952478318675129	1539	fibroblast-enriched tumour
+P05	5	PI3K	-0.8667531149336751	1539	fibroblast-enriched tumour
+P05	5	TGFb	6.647594273235675	1539	fibroblast-enriched tumour
+P05	5	TNFa	-1.1690540780279426	1539	fibroblast-enriched tumour
+P05	5	Trail	-3.9962100089617145	1539	fibroblast-enriched tumour
+P05	5	VEGF	-0.27627337880531866	1539	fibroblast-enriched tumour
+P05	5	WNT	-0.33786879034064315	1539	fibroblast-enriched tumour
+P05	5	p53	-2.146964968511315	1539	fibroblast-enriched tumour
+P05	6	Androgen	-0.03717226663411714	98	myeloid-enriched tumour
+P05	6	EGFR	0.38483143035359835	98	myeloid-enriched tumour
+P05	6	Estrogen	-0.2832335578292132	98	myeloid-enriched tumour
+P05	6	Hypoxia	0.999766006670375	98	myeloid-enriched tumour
+P05	6	JAK-STAT	-0.8316755007141632	98	myeloid-enriched tumour
+P05	6	MAPK	0.09286349603659268	98	myeloid-enriched tumour
+P05	6	NFkB	-1.8457943862774215	98	myeloid-enriched tumour
+P05	6	PI3K	2.211548300531749	98	myeloid-enriched tumour
+P05	6	TGFb	3.4450888408783444	98	myeloid-enriched tumour
+P05	6	TNFa	-1.1986834103049306	98	myeloid-enriched tumour
+P05	6	Trail	-3.007452640399375	98	myeloid-enriched tumour
+P05	6	VEGF	0.5578903777353132	98	myeloid-enriched tumour
+P05	6	WNT	-0.7210938616672834	98	myeloid-enriched tumour
+P05	6	p53	-3.9926128303111814	98	myeloid-enriched tumour
+P05	7	Androgen	0.084738017385343	106	myeloid-enriched stroma
+P05	7	EGFR	0.7412724995852531	106	myeloid-enriched stroma
+P05	7	Estrogen	-0.4420570072856436	106	myeloid-enriched stroma
+P05	7	Hypoxia	0.9067093193854108	106	myeloid-enriched stroma
+P05	7	JAK-STAT	0.35533770030520395	106	myeloid-enriched stroma
+P05	7	MAPK	0.23044971190627106	106	myeloid-enriched stroma
+P05	7	NFkB	-1.0212135332020535	106	myeloid-enriched stroma
+P05	7	PI3K	1.801623325530917	106	myeloid-enriched stroma
+P05	7	TGFb	5.1191030148505385	106	myeloid-enriched stroma
+P05	7	TNFa	-0.22219887965458193	106	myeloid-enriched stroma
+P05	7	Trail	-3.2541746504749	106	myeloid-enriched stroma
+P05	7	VEGF	0.5598725951357364	106	myeloid-enriched stroma
+P05	7	WNT	-0.8524228081207333	106	myeloid-enriched stroma
+P05	7	p53	-3.3659964826674704	106	myeloid-enriched stroma
+P06	3	Androgen	0.3665815011880484	50	lymphoid-enriched stroma
+P06	3	EGFR	-0.14590199789521363	50	lymphoid-enriched stroma
+P06	3	Estrogen	-1.3573407867110165	50	lymphoid-enriched stroma
+P06	3	Hypoxia	0.9626417495673272	50	lymphoid-enriched stroma
+P06	3	JAK-STAT	1.668835526899674	50	lymphoid-enriched stroma
+P06	3	MAPK	-0.9225515661188152	50	lymphoid-enriched stroma
+P06	3	NFkB	-1.839877399336124	50	lymphoid-enriched stroma
+P06	3	PI3K	0.9348884021440468	50	lymphoid-enriched stroma
+P06	3	TGFb	6.213028574322892	50	lymphoid-enriched stroma
+P06	3	TNFa	-0.9412020990995363	50	lymphoid-enriched stroma
+P06	3	Trail	-3.9127801410676586	50	lymphoid-enriched stroma
+P06	3	VEGF	0.01964091759518541	50	lymphoid-enriched stroma
+P06	3	WNT	-1.1751124332359593	50	lymphoid-enriched stroma
+P06	3	p53	-3.095531012561022	50	lymphoid-enriched stroma
+P06	5	Androgen	0.3992992486430241	274	fibroblast-enriched tumour
+P06	5	EGFR	0.6111658837062742	274	fibroblast-enriched tumour
+P06	5	Estrogen	-1.0434637820078403	274	fibroblast-enriched tumour
+P06	5	Hypoxia	-0.08373039773095038	274	fibroblast-enriched tumour
+P06	5	JAK-STAT	6.9074289572196585	274	fibroblast-enriched tumour
+P06	5	MAPK	-0.17831484014411533	274	fibroblast-enriched tumour
+P06	5	NFkB	-0.43903082326067705	274	fibroblast-enriched tumour
+P06	5	PI3K	1.6154472225186902	274	fibroblast-enriched tumour
+P06	5	TGFb	6.142991099421584	274	fibroblast-enriched tumour
+P06	5	TNFa	0.15156126705903883	274	fibroblast-enriched tumour
+P06	5	Trail	-4.209547583770156	274	fibroblast-enriched tumour
+P06	5	VEGF	0.5550342321296969	274	fibroblast-enriched tumour
+P06	5	WNT	-1.059610713424864	274	fibroblast-enriched tumour
+P06	5	p53	-2.773804676372097	274	fibroblast-enriched tumour
+P06	7	Androgen	0.625619659693372	51	myeloid-enriched stroma
+P06	7	EGFR	2.3504116172259786	51	myeloid-enriched stroma
+P06	7	Estrogen	-0.48325542402701255	51	myeloid-enriched stroma
+P06	7	Hypoxia	-0.3649237334786158	51	myeloid-enriched stroma
+P06	7	JAK-STAT	11.908517706085613	51	myeloid-enriched stroma
+P06	7	MAPK	1.7319311043775263	51	myeloid-enriched stroma
+P06	7	NFkB	2.1340812516964616	51	myeloid-enriched stroma
+P06	7	PI3K	2.9226299951940167	51	myeloid-enriched stroma
+P06	7	TGFb	6.741548428320616	51	myeloid-enriched stroma
+P06	7	TNFa	2.3621166210068445	51	myeloid-enriched stroma
+P06	7	Trail	-4.135353904526185	51	myeloid-enriched stroma
+P06	7	VEGF	1.2313887716502359	51	myeloid-enriched stroma
+P06	7	WNT	-0.9426416801958913	51	myeloid-enriched stroma
+P06	7	p53	-2.295639797087682	51	myeloid-enriched stroma
+P07	3	Androgen	0.24879596225669473	58	lymphoid-enriched stroma
+P07	3	EGFR	1.0658277373911178	58	lymphoid-enriched stroma
+P07	3	Estrogen	-0.8965681475280503	58	lymphoid-enriched stroma
+P07	3	Hypoxia	0.3079281696119073	58	lymphoid-enriched stroma
+P07	3	JAK-STAT	1.1917955669194498	58	lymphoid-enriched stroma
+P07	3	MAPK	-0.47526567763871685	58	lymphoid-enriched stroma
+P07	3	NFkB	0.09120444223194502	58	lymphoid-enriched stroma
+P07	3	PI3K	0.16505885835632544	58	lymphoid-enriched stroma
+P07	3	TGFb	3.6458264762746806	58	lymphoid-enriched stroma
+P07	3	TNFa	0.6642841707342122	58	lymphoid-enriched stroma
+P07	3	Trail	-1.185257448675213	58	lymphoid-enriched stroma
+P07	3	VEGF	0.990229001678969	58	lymphoid-enriched stroma
+P07	3	WNT	-0.7103705693998988	58	lymphoid-enriched stroma
+P07	3	p53	-0.7729967078546838	58	lymphoid-enriched stroma
+P07	5	Androgen	0.8215936447621653	472	fibroblast-enriched tumour
+P07	5	EGFR	0.7678492376000776	472	fibroblast-enriched tumour
+P07	5	Estrogen	-1.0299904511344489	472	fibroblast-enriched tumour
+P07	5	Hypoxia	0.5127878661573421	472	fibroblast-enriched tumour
+P07	5	JAK-STAT	1.2535921672167736	472	fibroblast-enriched tumour
+P07	5	MAPK	-0.9030190937335697	472	fibroblast-enriched tumour
+P07	5	NFkB	-0.2199174817318169	472	fibroblast-enriched tumour
+P07	5	PI3K	0.2504154760607926	472	fibroblast-enriched tumour
+P07	5	TGFb	4.449440629479654	472	fibroblast-enriched tumour
+P07	5	TNFa	0.5272158300502183	472	fibroblast-enriched tumour
+P07	5	Trail	-1.6482164185681578	472	fibroblast-enriched tumour
+P07	5	VEGF	1.0673857054984583	472	fibroblast-enriched tumour
+P07	5	WNT	-0.6390662810474993	472	fibroblast-enriched tumour
+P07	5	p53	-1.2832029103732658	472	fibroblast-enriched tumour
+P07	7	Androgen	0.5823388756361468	164	myeloid-enriched stroma
+P07	7	EGFR	0.1642568439722038	164	myeloid-enriched stroma
+P07	7	Estrogen	-1.3073800649324205	164	myeloid-enriched stroma
+P07	7	Hypoxia	0.9647554527648065	164	myeloid-enriched stroma
+P07	7	JAK-STAT	4.040046933337775	164	myeloid-enriched stroma
+P07	7	MAPK	-2.1796878368195345	164	myeloid-enriched stroma
+P07	7	NFkB	0.8036797099235609	164	myeloid-enriched stroma
+P07	7	PI3K	-0.9775264928775806	164	myeloid-enriched stroma
+P07	7	TGFb	3.1817763183600922	164	myeloid-enriched stroma
+P07	7	TNFa	1.4516855643824715	164	myeloid-enriched stroma
+P07	7	Trail	-1.3620352895235268	164	myeloid-enriched stroma
+P07	7	VEGF	1.1952926822800238	164	myeloid-enriched stroma
+P07	7	WNT	-0.30749285858403447	164	myeloid-enriched stroma
+P07	7	p53	-0.25739517451816263	164	myeloid-enriched stroma
+P08	2	Androgen	1.2483201934655928	72	peritumoural stroma (boundary)
+P08	2	EGFR	-0.7156035767883329	72	peritumoural stroma (boundary)
+P08	2	Estrogen	-1.3600215381222496	72	peritumoural stroma (boundary)
+P08	2	Hypoxia	1.4230787039311792	72	peritumoural stroma (boundary)
+P08	2	JAK-STAT	1.218450731147393	72	peritumoural stroma (boundary)
+P08	2	MAPK	-2.0454501650206396	72	peritumoural stroma (boundary)
+P08	2	NFkB	-0.5822700449923449	72	peritumoural stroma (boundary)
+P08	2	PI3K	-0.31233252317394444	72	peritumoural stroma (boundary)
+P08	2	TGFb	5.635626695424336	72	peritumoural stroma (boundary)
+P08	2	TNFa	-0.20929451586502518	72	peritumoural stroma (boundary)
+P08	2	Trail	-2.0735070018377693	72	peritumoural stroma (boundary)
+P08	2	VEGF	0.6828818123279047	72	peritumoural stroma (boundary)
+P08	2	WNT	-0.9517074788051413	72	peritumoural stroma (boundary)
+P08	2	p53	-2.1427200620912665	72	peritumoural stroma (boundary)
+P08	3	Androgen	0.8054965179423085	119	lymphoid-enriched stroma
+P08	3	EGFR	-0.050276898476700575	119	lymphoid-enriched stroma
+P08	3	Estrogen	-1.1063734559286247	119	lymphoid-enriched stroma
+P08	3	Hypoxia	0.9709027797615629	119	lymphoid-enriched stroma
+P08	3	JAK-STAT	1.9329534099851011	119	lymphoid-enriched stroma
+P08	3	MAPK	-1.4945194015501164	119	lymphoid-enriched stroma
+P08	3	NFkB	-0.2200299571596446	119	lymphoid-enriched stroma
+P08	3	PI3K	-0.020281523798835622	119	lymphoid-enriched stroma
+P08	3	TGFb	5.086411826742381	119	lymphoid-enriched stroma
+P08	3	TNFa	0.10939491265667935	119	lymphoid-enriched stroma
+P08	3	Trail	-1.6917063744672582	119	lymphoid-enriched stroma
+P08	3	VEGF	0.49968341872282784	119	lymphoid-enriched stroma
+P08	3	WNT	-0.7572530686645715	119	lymphoid-enriched stroma
+P08	3	p53	-1.6426655325484731	119	lymphoid-enriched stroma
+P08	4	Androgen	1.417862406184966	456	osteoclast-enriched tumour
+P08	4	EGFR	-0.8502245146906937	456	osteoclast-enriched tumour
+P08	4	Estrogen	-1.5625084771012991	456	osteoclast-enriched tumour
+P08	4	Hypoxia	1.4121328311807106	456	osteoclast-enriched tumour
+P08	4	JAK-STAT	2.388276023222618	456	osteoclast-enriched tumour
+P08	4	MAPK	-2.124090797061609	456	osteoclast-enriched tumour
+P08	4	NFkB	-0.409090084247127	456	osteoclast-enriched tumour
+P08	4	PI3K	0.12391043688066476	456	osteoclast-enriched tumour
+P08	4	TGFb	6.329917247129387	456	osteoclast-enriched tumour
+P08	4	TNFa	0.11364587709967484	456	osteoclast-enriched tumour
+P08	4	Trail	-2.8147467741240817	456	osteoclast-enriched tumour
+P08	4	VEGF	0.7850464701202167	456	osteoclast-enriched tumour
+P08	4	WNT	-1.0767964332519422	456	osteoclast-enriched tumour
+P08	4	p53	-2.8666130740541527	456	osteoclast-enriched tumour
+P08	5	Androgen	1.2845320887802616	1337	fibroblast-enriched tumour
+P08	5	EGFR	-0.7598249374110545	1337	fibroblast-enriched tumour
+P08	5	Estrogen	-1.6295840080721926	1337	fibroblast-enriched tumour
+P08	5	Hypoxia	1.344335591925091	1337	fibroblast-enriched tumour
+P08	5	JAK-STAT	2.2569532011238715	1337	fibroblast-enriched tumour
+P08	5	MAPK	-2.1495787865865346	1337	fibroblast-enriched tumour
+P08	5	NFkB	-0.37729820616411974	1337	fibroblast-enriched tumour
+P08	5	PI3K	-0.20930879959011298	1337	fibroblast-enriched tumour
+P08	5	TGFb	6.121937333741507	1337	fibroblast-enriched tumour
+P08	5	TNFa	0.10738698762545235	1337	fibroblast-enriched tumour
+P08	5	Trail	-2.5613800500637915	1337	fibroblast-enriched tumour
+P08	5	VEGF	0.748142397626236	1337	fibroblast-enriched tumour
+P08	5	WNT	-1.0092117863115952	1337	fibroblast-enriched tumour
+P08	5	p53	-2.4781743351098666	1337	fibroblast-enriched tumour
+P08	7	Androgen	1.0502597193138414	145	myeloid-enriched stroma
+P08	7	EGFR	-0.1386069969167499	145	myeloid-enriched stroma
+P08	7	Estrogen	-1.6420921856578343	145	myeloid-enriched stroma
+P08	7	Hypoxia	1.3131281861711914	145	myeloid-enriched stroma
+P08	7	JAK-STAT	6.337783701131912	145	myeloid-enriched stroma
+P08	7	MAPK	-1.6918341785512885	145	myeloid-enriched stroma
+P08	7	NFkB	0.6101969094567078	145	myeloid-enriched stroma
+P08	7	PI3K	-0.16598379034701582	145	myeloid-enriched stroma
+P08	7	TGFb	6.279709108709951	145	myeloid-enriched stroma
+P08	7	TNFa	0.9338219094651097	145	myeloid-enriched stroma
+P08	7	Trail	-2.4836499834481827	145	myeloid-enriched stroma
+P08	7	VEGF	0.8920375042121681	145	myeloid-enriched stroma
+P08	7	WNT	-0.9079232724162027	145	myeloid-enriched stroma
+P08	7	p53	-2.2171195943139685	145	myeloid-enriched stroma
+P09	2	Androgen	0.48070530830506014	41	peritumoural stroma (boundary)
+P09	2	EGFR	0.11299108730163107	41	peritumoural stroma (boundary)
+P09	2	Estrogen	-1.2748192771895817	41	peritumoural stroma (boundary)
+P09	2	Hypoxia	0.658885153946196	41	peritumoural stroma (boundary)
+P09	2	JAK-STAT	0.3614379107299053	41	peritumoural stroma (boundary)
+P09	2	MAPK	-1.1166027810453154	41	peritumoural stroma (boundary)
+P09	2	NFkB	-0.9909587530577557	41	peritumoural stroma (boundary)
+P09	2	PI3K	0.20515160972965718	41	peritumoural stroma (boundary)
+P09	2	TGFb	6.259767975489376	41	peritumoural stroma (boundary)
+P09	2	TNFa	-0.11442730485225495	41	peritumoural stroma (boundary)
+P09	2	Trail	-2.672576827146889	41	peritumoural stroma (boundary)
+P09	2	VEGF	0.7453975516287816	41	peritumoural stroma (boundary)
+P09	2	WNT	-1.7544676361739004	41	peritumoural stroma (boundary)
+P09	2	p53	-1.3767653179537356	41	peritumoural stroma (boundary)
+P09	3	Androgen	0.5987017812950628	42	lymphoid-enriched stroma
+P09	3	EGFR	0.4242966379448351	42	lymphoid-enriched stroma
+P09	3	Estrogen	-1.2094453121997417	42	lymphoid-enriched stroma
+P09	3	Hypoxia	0.41372137617407	42	lymphoid-enriched stroma
+P09	3	JAK-STAT	0.061350779687391395	42	lymphoid-enriched stroma
+P09	3	MAPK	-0.5394044316675595	42	lymphoid-enriched stroma
+P09	3	NFkB	-0.7275618981803869	42	lymphoid-enriched stroma
+P09	3	PI3K	0.3025792584185593	42	lymphoid-enriched stroma
+P09	3	TGFb	5.7134533959454235	42	lymphoid-enriched stroma
+P09	3	TNFa	0.11602116667698067	42	lymphoid-enriched stroma
+P09	3	Trail	-2.273330648626142	42	lymphoid-enriched stroma
+P09	3	VEGF	0.6826880416798403	42	lymphoid-enriched stroma
+P09	3	WNT	-1.5397598891153752	42	lymphoid-enriched stroma
+P09	3	p53	-1.0403550376787654	42	lymphoid-enriched stroma
+P09	4	Androgen	0.7678479144326799	129	osteoclast-enriched tumour
+P09	4	EGFR	0.26348185601315344	129	osteoclast-enriched tumour
+P09	4	Estrogen	-1.2212972102995239	129	osteoclast-enriched tumour
+P09	4	Hypoxia	0.5572056894388362	129	osteoclast-enriched tumour
+P09	4	JAK-STAT	0.17389772970948422	129	osteoclast-enriched tumour
+P09	4	MAPK	-1.0362337315626529	129	osteoclast-enriched tumour
+P09	4	NFkB	-0.9861598730223846	129	osteoclast-enriched tumour
+P09	4	PI3K	0.5449645971649228	129	osteoclast-enriched tumour
+P09	4	TGFb	5.88194847633451	129	osteoclast-enriched tumour
+P09	4	TNFa	-0.13081482127223093	129	osteoclast-enriched tumour
+P09	4	Trail	-2.6626110497442568	129	osteoclast-enriched tumour
+P09	4	VEGF	0.8614874151354633	129	osteoclast-enriched tumour
+P09	4	WNT	-1.7715982647419284	129	osteoclast-enriched tumour
+P09	4	p53	-1.6063473195744788	129	osteoclast-enriched tumour
+P09	5	Androgen	0.6781204691983498	537	fibroblast-enriched tumour
+P09	5	EGFR	0.49475592106187327	537	fibroblast-enriched tumour
+P09	5	Estrogen	-1.0849676150848218	537	fibroblast-enriched tumour
+P09	5	Hypoxia	0.8540255786749877	537	fibroblast-enriched tumour
+P09	5	JAK-STAT	1.1409890444903381	537	fibroblast-enriched tumour
+P09	5	MAPK	-0.5795143519393969	537	fibroblast-enriched tumour
+P09	5	NFkB	-0.5287289962635169	537	fibroblast-enriched tumour
+P09	5	PI3K	0.22059910419973186	537	fibroblast-enriched tumour
+P09	5	TGFb	6.019170832435682	537	fibroblast-enriched tumour
+P09	5	TNFa	0.13501637869432748	537	fibroblast-enriched tumour
+P09	5	Trail	-2.3903567437282507	537	fibroblast-enriched tumour
+P09	5	VEGF	0.9000332644837602	537	fibroblast-enriched tumour
+P09	5	WNT	-1.5004007130999095	537	fibroblast-enriched tumour
+P09	5	p53	-1.5258496216589688	537	fibroblast-enriched tumour
+P09	6	Androgen	0.39302847830953563	38	myeloid-enriched tumour
+P09	6	EGFR	0.6170343083510249	38	myeloid-enriched tumour
+P09	6	Estrogen	-1.1165366934794956	38	myeloid-enriched tumour
+P09	6	Hypoxia	0.07359609276448145	38	myeloid-enriched tumour
+P09	6	JAK-STAT	0.3851939592425577	38	myeloid-enriched tumour
+P09	6	MAPK	-0.4393191278034472	38	myeloid-enriched tumour
+P09	6	NFkB	-0.7186159509122083	38	myeloid-enriched tumour
+P09	6	PI3K	0.262465422080687	38	myeloid-enriched tumour
+P09	6	TGFb	5.606626541895157	38	myeloid-enriched tumour
+P09	6	TNFa	0.20500883405712833	38	myeloid-enriched tumour
+P09	6	Trail	-2.500043668792238	38	myeloid-enriched tumour
+P09	6	VEGF	1.0016355512144823	38	myeloid-enriched tumour
+P09	6	WNT	-1.7867402074487166	38	myeloid-enriched tumour
+P09	6	p53	-1.3524220733865222	38	myeloid-enriched tumour
+P09	7	Androgen	0.7584799811839635	80	myeloid-enriched stroma
+P09	7	EGFR	0.6199543347376397	80	myeloid-enriched stroma
+P09	7	Estrogen	-1.200411696401146	80	myeloid-enriched stroma
+P09	7	Hypoxia	0.6636405704975689	80	myeloid-enriched stroma
+P09	7	JAK-STAT	2.8085912807865	80	myeloid-enriched stroma
+P09	7	MAPK	-0.36697452870114344	80	myeloid-enriched stroma
+P09	7	NFkB	-0.06606176272121722	80	myeloid-enriched stroma
+P09	7	PI3K	-0.05705031276396975	80	myeloid-enriched stroma
+P09	7	TGFb	6.120865027364507	80	myeloid-enriched stroma
+P09	7	TNFa	0.49761621925651073	80	myeloid-enriched stroma
+P09	7	Trail	-2.5183904605526473	80	myeloid-enriched stroma
+P09	7	VEGF	1.1659787534105186	80	myeloid-enriched stroma
+P09	7	WNT	-1.4932737493724402	80	myeloid-enriched stroma
+P09	7	p53	-1.6860271818005395	80	myeloid-enriched stroma
+P10	0	Androgen	1.675723339287694	73	epithelial-enriched lung parenchyma
+P10	0	EGFR	-1.2311859621273045	73	epithelial-enriched lung parenchyma
+P10	0	Estrogen	-2.0289483810893154	73	epithelial-enriched lung parenchyma
+P10	0	Hypoxia	2.84658309440718	73	epithelial-enriched lung parenchyma
+P10	0	JAK-STAT	2.3288229498585764	73	epithelial-enriched lung parenchyma
+P10	0	MAPK	-2.7665694487719543	73	epithelial-enriched lung parenchyma
+P10	0	NFkB	1.325047025822581	73	epithelial-enriched lung parenchyma
+P10	0	PI3K	-2.1248390561383395	73	epithelial-enriched lung parenchyma
+P10	0	TGFb	7.299019542533791	73	epithelial-enriched lung parenchyma
+P10	0	TNFa	1.8566761816811024	73	epithelial-enriched lung parenchyma
+P10	0	Trail	-3.386979608940909	73	epithelial-enriched lung parenchyma
+P10	0	VEGF	-0.27706579229492656	73	epithelial-enriched lung parenchyma
+P10	0	WNT	-0.9602524218951799	73	epithelial-enriched lung parenchyma
+P10	0	p53	-0.483310591054159	73	epithelial-enriched lung parenchyma
+P10	1	Androgen	2.7261406688046304	829	vascular-enriched lung parenchyma
+P10	1	EGFR	-0.3230094880665139	829	vascular-enriched lung parenchyma
+P10	1	Estrogen	-2.283896115835707	829	vascular-enriched lung parenchyma
+P10	1	Hypoxia	2.9361765900326864	829	vascular-enriched lung parenchyma
+P10	1	JAK-STAT	4.170835506362301	829	vascular-enriched lung parenchyma
+P10	1	MAPK	-1.8401475910151652	829	vascular-enriched lung parenchyma
+P10	1	NFkB	4.107207734884902	829	vascular-enriched lung parenchyma
+P10	1	PI3K	-1.880421220307519	829	vascular-enriched lung parenchyma
+P10	1	TGFb	7.814314707703224	829	vascular-enriched lung parenchyma
+P10	1	TNFa	4.259507655158974	829	vascular-enriched lung parenchyma
+P10	1	Trail	-2.94946969789308	829	vascular-enriched lung parenchyma
+P10	1	VEGF	0.10392585464095853	829	vascular-enriched lung parenchyma
+P10	1	WNT	-0.6766705231252079	829	vascular-enriched lung parenchyma
+P10	1	p53	-0.25267284531021617	829	vascular-enriched lung parenchyma
+P10	2	Androgen	0.6753643499803854	229	peritumoural stroma (boundary)
+P10	2	EGFR	-0.2850486818462511	229	peritumoural stroma (boundary)
+P10	2	Estrogen	-0.9825597518869442	229	peritumoural stroma (boundary)
+P10	2	Hypoxia	1.6185462337897008	229	peritumoural stroma (boundary)
+P10	2	JAK-STAT	0.7199319128474324	229	peritumoural stroma (boundary)
+P10	2	MAPK	-1.245605726869174	229	peritumoural stroma (boundary)
+P10	2	NFkB	0.1578813118282911	229	peritumoural stroma (boundary)
+P10	2	PI3K	-0.7653440138284147	229	peritumoural stroma (boundary)
+P10	2	TGFb	6.327459694552426	229	peritumoural stroma (boundary)
+P10	2	TNFa	0.3522966729511859	229	peritumoural stroma (boundary)
+P10	2	Trail	-2.082779059884573	229	peritumoural stroma (boundary)
+P10	2	VEGF	-0.1713185042803227	229	peritumoural stroma (boundary)
+P10	2	WNT	-0.35453877718396976	229	peritumoural stroma (boundary)
+P10	2	p53	-1.7423710731720823	229	peritumoural stroma (boundary)
+P10	3	Androgen	0.25527964699326466	1550	lymphoid-enriched stroma
+P10	3	EGFR	-0.46766476618453195	1550	lymphoid-enriched stroma
+P10	3	Estrogen	-0.9182979114029854	1550	lymphoid-enriched stroma
+P10	3	Hypoxia	0.9897816308983414	1550	lymphoid-enriched stroma
+P10	3	JAK-STAT	0.5310758430627626	1550	lymphoid-enriched stroma
+P10	3	MAPK	-1.1597570849147796	1550	lymphoid-enriched stroma
+P10	3	NFkB	-0.27696970204384697	1550	lymphoid-enriched stroma
+P10	3	PI3K	-0.593842997960168	1550	lymphoid-enriched stroma
+P10	3	TGFb	5.452378886164758	1550	lymphoid-enriched stroma
+P10	3	TNFa	-0.1539720090853565	1550	lymphoid-enriched stroma
+P10	3	Trail	-1.7220924527157917	1550	lymphoid-enriched stroma
+P10	3	VEGF	-0.21395752193448728	1550	lymphoid-enriched stroma
+P10	3	WNT	-0.2186185538335131	1550	lymphoid-enriched stroma
+P10	3	p53	-1.6509323249801011	1550	lymphoid-enriched stroma
+P10	4	Androgen	0.49717885628541514	385	osteoclast-enriched tumour
+P10	4	EGFR	-0.4757368382651671	385	osteoclast-enriched tumour
+P10	4	Estrogen	-1.1033503275659866	385	osteoclast-enriched tumour
+P10	4	Hypoxia	1.3038408567496504	385	osteoclast-enriched tumour
+P10	4	JAK-STAT	0.5432696756870565	385	osteoclast-enriched tumour
+P10	4	MAPK	-1.1881013751360339	385	osteoclast-enriched tumour
+P10	4	NFkB	-0.3277392822775705	385	osteoclast-enriched tumour
+P10	4	PI3K	-0.5076961592954958	385	osteoclast-enriched tumour
+P10	4	TGFb	6.815847693653687	385	osteoclast-enriched tumour
+P10	4	TNFa	0.03088817771288829	385	osteoclast-enriched tumour
+P10	4	Trail	-2.1710659815426006	385	osteoclast-enriched tumour
+P10	4	VEGF	-0.22452544636436647	385	osteoclast-enriched tumour
+P10	4	WNT	-0.28017933738680806	385	osteoclast-enriched tumour
+P10	4	p53	-2.0731101573763784	385	osteoclast-enriched tumour
+P10	5	Androgen	1.1657499476270419	1055	fibroblast-enriched tumour
+P10	5	EGFR	-0.09880223452671136	1055	fibroblast-enriched tumour
+P10	5	Estrogen	-1.2203531340434912	1055	fibroblast-enriched tumour
+P10	5	Hypoxia	4.216558296514462	1055	fibroblast-enriched tumour
+P10	5	JAK-STAT	2.814511512495886	1055	fibroblast-enriched tumour
+P10	5	MAPK	-0.888035460989141	1055	fibroblast-enriched tumour
+P10	5	NFkB	0.1488588026859267	1055	fibroblast-enriched tumour
+P10	5	PI3K	-0.13306576963113814	1055	fibroblast-enriched tumour
+P10	5	TGFb	9.272482750801402	1055	fibroblast-enriched tumour
+P10	5	TNFa	0.843871347309285	1055	fibroblast-enriched tumour
+P10	5	Trail	-3.26733673098873	1055	fibroblast-enriched tumour
+P10	5	VEGF	0.47936005834536694	1055	fibroblast-enriched tumour
+P10	5	WNT	-0.5752308950201692	1055	fibroblast-enriched tumour
+P10	5	p53	-2.910525737928485	1055	fibroblast-enriched tumour
+P10	6	Androgen	1.2931036172773147	108	myeloid-enriched tumour
+P10	6	EGFR	-0.10669839322074354	108	myeloid-enriched tumour
+P10	6	Estrogen	-1.594000029805745	108	myeloid-enriched tumour
+P10	6	Hypoxia	2.592670972788343	108	myeloid-enriched tumour
+P10	6	JAK-STAT	5.248894974334119	108	myeloid-enriched tumour
+P10	6	MAPK	-1.5128423856885862	108	myeloid-enriched tumour
+P10	6	NFkB	3.1232977116781147	108	myeloid-enriched tumour
+P10	6	PI3K	-1.1080719882456356	108	myeloid-enriched tumour
+P10	6	TGFb	9.064639869941622	108	myeloid-enriched tumour
+P10	6	TNFa	3.5136214703205035	108	myeloid-enriched tumour
+P10	6	Trail	-2.9627158724538676	108	myeloid-enriched tumour
+P10	6	VEGF	0.40471742054868337	108	myeloid-enriched tumour
+P10	6	WNT	-0.26254726542521983	108	myeloid-enriched tumour
+P10	6	p53	-1.3236330108599033	108	myeloid-enriched tumour
+P10	7	Androgen	1.6736858631350255	720	myeloid-enriched stroma
+P10	7	EGFR	-0.12359461540165712	720	myeloid-enriched stroma
+P10	7	Estrogen	-1.6535622035425857	720	myeloid-enriched stroma
+P10	7	Hypoxia	2.956288742477453	720	myeloid-enriched stroma
+P10	7	JAK-STAT	8.29068515331979	720	myeloid-enriched stroma
+P10	7	MAPK	-1.9902715250658152	720	myeloid-enriched stroma
+P10	7	NFkB	4.474567139098771	720	myeloid-enriched stroma
+P10	7	PI3K	-1.4303563392806367	720	myeloid-enriched stroma
+P10	7	TGFb	8.862231749790721	720	myeloid-enriched stroma
+P10	7	TNFa	4.8029427411198276	720	myeloid-enriched stroma
+P10	7	Trail	-3.2008241147349157	720	myeloid-enriched stroma
+P10	7	VEGF	0.6850183519876789	720	myeloid-enriched stroma
+P10	7	WNT	-0.27184447335052525	720	myeloid-enriched stroma
+P10	7	p53	-1.0183844050812902	720	myeloid-enriched stroma
+P11	1	Androgen	3.809568130217033	2461	vascular-enriched lung parenchyma
+P11	1	EGFR	-1.0583829922145294	2461	vascular-enriched lung parenchyma
+P11	1	Estrogen	-2.5639617812789104	2461	vascular-enriched lung parenchyma
+P11	1	Hypoxia	2.648055645528441	2461	vascular-enriched lung parenchyma
+P11	1	JAK-STAT	3.8487061590701135	2461	vascular-enriched lung parenchyma
+P11	1	MAPK	-2.7710781465573167	2461	vascular-enriched lung parenchyma
+P11	1	NFkB	2.990289007163175	2461	vascular-enriched lung parenchyma
+P11	1	PI3K	-1.8525092501191611	2461	vascular-enriched lung parenchyma
+P11	1	TGFb	6.446647502366076	2461	vascular-enriched lung parenchyma
+P11	1	TNFa	3.7736961437546586	2461	vascular-enriched lung parenchyma
+P11	1	Trail	-2.447418974361246	2461	vascular-enriched lung parenchyma
+P11	1	VEGF	0.10464834868562341	2461	vascular-enriched lung parenchyma
+P11	1	WNT	-0.5698441482535328	2461	vascular-enriched lung parenchyma
+P11	1	p53	-0.25247622581595414	2461	vascular-enriched lung parenchyma
+P11	2	Androgen	0.45928102455651926	240	peritumoural stroma (boundary)
+P11	2	EGFR	1.3384238454552824	240	peritumoural stroma (boundary)
+P11	2	Estrogen	-0.30947459110093	240	peritumoural stroma (boundary)
+P11	2	Hypoxia	0.38865398822492586	240	peritumoural stroma (boundary)
+P11	2	JAK-STAT	0.4014681108977921	240	peritumoural stroma (boundary)
+P11	2	MAPK	0.5214415717613041	240	peritumoural stroma (boundary)
+P11	2	NFkB	0.3477119421132163	240	peritumoural stroma (boundary)
+P11	2	PI3K	-0.9356883114303367	240	peritumoural stroma (boundary)
+P11	2	TGFb	4.373283252667312	240	peritumoural stroma (boundary)
+P11	2	TNFa	0.43205354890024344	240	peritumoural stroma (boundary)
+P11	2	Trail	-0.6978953616279608	240	peritumoural stroma (boundary)
+P11	2	VEGF	0.022487357389464273	240	peritumoural stroma (boundary)
+P11	2	WNT	-0.5352727894279987	240	peritumoural stroma (boundary)
+P11	2	p53	0.17599718175675522	240	peritumoural stroma (boundary)
+P11	3	Androgen	0.4223013098026228	3049	lymphoid-enriched stroma
+P11	3	EGFR	1.6755477370175553	3049	lymphoid-enriched stroma
+P11	3	Estrogen	-0.49186856242716015	3049	lymphoid-enriched stroma
+P11	3	Hypoxia	0.24273201489339918	3049	lymphoid-enriched stroma
+P11	3	JAK-STAT	0.4329286787516988	3049	lymphoid-enriched stroma
+P11	3	MAPK	0.8599935000237748	3049	lymphoid-enriched stroma
+P11	3	NFkB	0.3579941433221835	3049	lymphoid-enriched stroma
+P11	3	PI3K	-0.945917405386714	3049	lymphoid-enriched stroma
+P11	3	TGFb	4.203412385585923	3049	lymphoid-enriched stroma
+P11	3	TNFa	0.41609317001473156	3049	lymphoid-enriched stroma
+P11	3	Trail	-0.7160722475120456	3049	lymphoid-enriched stroma
+P11	3	VEGF	0.07156093075472497	3049	lymphoid-enriched stroma
+P11	3	WNT	-0.7191509575844182	3049	lymphoid-enriched stroma
+P11	3	p53	0.3227656953140265	3049	lymphoid-enriched stroma
+P11	4	Androgen	1.920734075224978	1766	osteoclast-enriched tumour
+P11	4	EGFR	0.17589294685487555	1766	osteoclast-enriched tumour
+P11	4	Estrogen	-1.1995308890256728	1766	osteoclast-enriched tumour
+P11	4	Hypoxia	1.8490635173336707	1766	osteoclast-enriched tumour
+P11	4	JAK-STAT	2.00191570845614	1766	osteoclast-enriched tumour
+P11	4	MAPK	-1.7674518153638077	1766	osteoclast-enriched tumour
+P11	4	NFkB	0.377191530348595	1766	osteoclast-enriched tumour
+P11	4	PI3K	-0.5318372798414578	1766	osteoclast-enriched tumour
+P11	4	TGFb	7.532542150018755	1766	osteoclast-enriched tumour
+P11	4	TNFa	1.1777016596885148	1766	osteoclast-enriched tumour
+P11	4	Trail	-2.015862124862865	1766	osteoclast-enriched tumour
+P11	4	VEGF	0.10695676145877811	1766	osteoclast-enriched tumour
+P11	4	WNT	-0.7474145950939188	1766	osteoclast-enriched tumour
+P11	4	p53	-0.7329868186269739	1766	osteoclast-enriched tumour
+P11	6	Androgen	3.1600997000489546	62	myeloid-enriched tumour
+P11	6	EGFR	-0.9861558537279214	62	myeloid-enriched tumour
+P11	6	Estrogen	-2.0743577136026903	62	myeloid-enriched tumour
+P11	6	Hypoxia	2.3904784893453845	62	myeloid-enriched tumour
+P11	6	JAK-STAT	4.19194752909249	62	myeloid-enriched tumour
+P11	6	MAPK	-3.581912534761098	62	myeloid-enriched tumour
+P11	6	NFkB	1.3664904341833262	62	myeloid-enriched tumour
+P11	6	PI3K	-1.3443845237041674	62	myeloid-enriched tumour
+P11	6	TGFb	7.538997416424284	62	myeloid-enriched tumour
+P11	6	TNFa	2.348752180220289	62	myeloid-enriched tumour
+P11	6	Trail	-2.7775522186414636	62	myeloid-enriched tumour
+P11	6	VEGF	0.2961960224789526	62	myeloid-enriched tumour
+P11	6	WNT	-0.7701716760942203	62	myeloid-enriched tumour
+P11	6	p53	-0.8126997695264226	62	myeloid-enriched tumour
+P12	1	Androgen	1.428165170922319	118	vascular-enriched lung parenchyma
+P12	1	EGFR	0.06388542001794663	118	vascular-enriched lung parenchyma
+P12	1	Estrogen	-2.074537222062559	118	vascular-enriched lung parenchyma
+P12	1	Hypoxia	2.8282689164009773	118	vascular-enriched lung parenchyma
+P12	1	JAK-STAT	3.0090049264065315	118	vascular-enriched lung parenchyma
+P12	1	MAPK	-2.1382251007616855	118	vascular-enriched lung parenchyma
+P12	1	NFkB	3.122310905646099	118	vascular-enriched lung parenchyma
+P12	1	PI3K	-0.4241997182632703	118	vascular-enriched lung parenchyma
+P12	1	TGFb	5.545625142266251	118	vascular-enriched lung parenchyma
+P12	1	TNFa	3.8581846058766938	118	vascular-enriched lung parenchyma
+P12	1	Trail	-2.4977574478402245	118	vascular-enriched lung parenchyma
+P12	1	VEGF	0.9149288873028728	118	vascular-enriched lung parenchyma
+P12	1	WNT	-1.2142744774131988	118	vascular-enriched lung parenchyma
+P12	1	p53	-0.7290189097460269	118	vascular-enriched lung parenchyma
+P12	4	Androgen	1.0901346677477208	224	osteoclast-enriched tumour
+P12	4	EGFR	-0.005102421204414391	224	osteoclast-enriched tumour
+P12	4	Estrogen	-1.1475693690878466	224	osteoclast-enriched tumour
+P12	4	Hypoxia	2.7647809417679334	224	osteoclast-enriched tumour
+P12	4	JAK-STAT	0.8014644741582394	224	osteoclast-enriched tumour
+P12	4	MAPK	-1.9822357208602763	224	osteoclast-enriched tumour
+P12	4	NFkB	0.21216319389766497	224	osteoclast-enriched tumour
+P12	4	PI3K	0.9393817737444555	224	osteoclast-enriched tumour
+P12	4	TGFb	4.744462244217701	224	osteoclast-enriched tumour
+P12	4	TNFa	1.2588737533003844	224	osteoclast-enriched tumour
+P12	4	Trail	-2.681486755080127	224	osteoclast-enriched tumour
+P12	4	VEGF	1.272762046314028	224	osteoclast-enriched tumour
+P12	4	WNT	-1.6715330216548026	224	osteoclast-enriched tumour
+P12	4	p53	-1.4919546646104986	224	osteoclast-enriched tumour
+P12	5	Androgen	1.0760199401016113	187	fibroblast-enriched tumour
+P12	5	EGFR	0.2782348622242594	187	fibroblast-enriched tumour
+P12	5	Estrogen	-1.233895847239921	187	fibroblast-enriched tumour
+P12	5	Hypoxia	3.2754424488460567	187	fibroblast-enriched tumour
+P12	5	JAK-STAT	0.7109503645051859	187	fibroblast-enriched tumour
+P12	5	MAPK	-1.5201873819343383	187	fibroblast-enriched tumour
+P12	5	NFkB	0.474233026936484	187	fibroblast-enriched tumour
+P12	5	PI3K	1.0736028415683614	187	fibroblast-enriched tumour
+P12	5	TGFb	5.243459628121743	187	fibroblast-enriched tumour
+P12	5	TNFa	1.528904200611524	187	fibroblast-enriched tumour
+P12	5	Trail	-2.865910854261456	187	fibroblast-enriched tumour
+P12	5	VEGF	1.2214791099457791	187	fibroblast-enriched tumour
+P12	5	WNT	-1.6684602599784715	187	fibroblast-enriched tumour
+P12	5	p53	-1.4940071701322026	187	fibroblast-enriched tumour
+P12	6	Androgen	0.935385830805617	39	myeloid-enriched tumour
+P12	6	EGFR	0.05391687284333958	39	myeloid-enriched tumour
+P12	6	Estrogen	-1.3370896910647225	39	myeloid-enriched tumour
+P12	6	Hypoxia	3.3954368185502166	39	myeloid-enriched tumour
+P12	6	JAK-STAT	2.139793393799923	39	myeloid-enriched tumour
+P12	6	MAPK	-2.1365891160071233	39	myeloid-enriched tumour
+P12	6	NFkB	0.5676912700957755	39	myeloid-enriched tumour
+P12	6	PI3K	0.8595013794523777	39	myeloid-enriched tumour
+P12	6	TGFb	5.035592950764814	39	myeloid-enriched tumour
+P12	6	TNFa	1.5821972582529655	39	myeloid-enriched tumour
+P12	6	Trail	-2.8752807926373243	39	myeloid-enriched tumour
+P12	6	VEGF	1.4767592535886411	39	myeloid-enriched tumour
+P12	6	WNT	-1.7100838487958445	39	myeloid-enriched tumour
+P12	6	p53	-1.553420010330759	39	myeloid-enriched tumour
+P12	7	Androgen	1.028697736650675	81	myeloid-enriched stroma
+P12	7	EGFR	0.4396231662164349	81	myeloid-enriched stroma
+P12	7	Estrogen	-1.2712785471383643	81	myeloid-enriched stroma
+P12	7	Hypoxia	2.784909438837592	81	myeloid-enriched stroma
+P12	7	JAK-STAT	2.100641287927086	81	myeloid-enriched stroma
+P12	7	MAPK	-1.6581168296272955	81	myeloid-enriched stroma
+P12	7	NFkB	1.3035025368359037	81	myeloid-enriched stroma
+P12	7	PI3K	0.7624944710496621	81	myeloid-enriched stroma
+P12	7	TGFb	5.557722023435068	81	myeloid-enriched stroma
+P12	7	TNFa	2.1727295222842358	81	myeloid-enriched stroma
+P12	7	Trail	-2.7668412154513664	81	myeloid-enriched stroma
+P12	7	VEGF	1.2816704315892704	81	myeloid-enriched stroma
+P12	7	WNT	-1.5583157173758193	81	myeloid-enriched stroma
+P12	7	p53	-1.328388186442305	81	myeloid-enriched stroma
+P13	2	Androgen	2.284911476342597	181	peritumoural stroma (boundary)
+P13	2	EGFR	-1.442055590067251	181	peritumoural stroma (boundary)
+P13	2	Estrogen	-1.4116690257441658	181	peritumoural stroma (boundary)
+P13	2	Hypoxia	3.4755986794235953	181	peritumoural stroma (boundary)
+P13	2	JAK-STAT	1.4270699381061913	181	peritumoural stroma (boundary)
+P13	2	MAPK	-2.314291719735689	181	peritumoural stroma (boundary)
+P13	2	NFkB	0.3450844302335351	181	peritumoural stroma (boundary)
+P13	2	PI3K	-0.5488493194525246	181	peritumoural stroma (boundary)
+P13	2	TGFb	6.998665175932787	181	peritumoural stroma (boundary)
+P13	2	TNFa	1.5153956771718582	181	peritumoural stroma (boundary)
+P13	2	Trail	-2.9945376077490207	181	peritumoural stroma (boundary)
+P13	2	VEGF	0.8794873263296434	181	peritumoural stroma (boundary)
+P13	2	WNT	-1.2753248263196908	181	peritumoural stroma (boundary)
+P13	2	p53	-1.9816566877736228	181	peritumoural stroma (boundary)
+P13	3	Androgen	1.2753896744196134	49	lymphoid-enriched stroma
+P13	3	EGFR	-0.42578161470536285	49	lymphoid-enriched stroma
+P13	3	Estrogen	-0.5860846736412713	49	lymphoid-enriched stroma
+P13	3	Hypoxia	1.4528178900384514	49	lymphoid-enriched stroma
+P13	3	JAK-STAT	0.5054554338862697	49	lymphoid-enriched stroma
+P13	3	MAPK	-1.6937949048089087	49	lymphoid-enriched stroma
+P13	3	NFkB	0.4229452398324009	49	lymphoid-enriched stroma
+P13	3	PI3K	-0.3680271796142622	49	lymphoid-enriched stroma
+P13	3	TGFb	4.131212986316733	49	lymphoid-enriched stroma
+P13	3	TNFa	1.1668125374309521	49	lymphoid-enriched stroma
+P13	3	Trail	-1.0941172766091267	49	lymphoid-enriched stroma
+P13	3	VEGF	0.09667949104822013	49	lymphoid-enriched stroma
+P13	3	WNT	-0.676701003704267	49	lymphoid-enriched stroma
+P13	3	p53	-0.5142075912718851	49	lymphoid-enriched stroma
+P13	4	Androgen	1.5563896998564124	1939	osteoclast-enriched tumour
+P13	4	EGFR	-0.5424570243935138	1939	osteoclast-enriched tumour
+P13	4	Estrogen	-0.864742605396179	1939	osteoclast-enriched tumour
+P13	4	Hypoxia	2.0438763483487454	1939	osteoclast-enriched tumour
+P13	4	JAK-STAT	0.7769815772728278	1939	osteoclast-enriched tumour
+P13	4	MAPK	-1.635887201741161	1939	osteoclast-enriched tumour
+P13	4	NFkB	0.5385715494891119	1939	osteoclast-enriched tumour
+P13	4	PI3K	-0.37497639378818054	1939	osteoclast-enriched tumour
+P13	4	TGFb	5.266408454595939	1939	osteoclast-enriched tumour
+P13	4	TNFa	1.4507794531806297	1939	osteoclast-enriched tumour
+P13	4	Trail	-1.7632366976854892	1939	osteoclast-enriched tumour
+P13	4	VEGF	0.5915742042021704	1939	osteoclast-enriched tumour
+P13	4	WNT	-0.924785277128155	1939	osteoclast-enriched tumour
+P13	4	p53	-1.0498843289606876	1939	osteoclast-enriched tumour
+P13	5	Androgen	2.2398609323072347	487	fibroblast-enriched tumour
+P13	5	EGFR	-0.892010906060645	487	fibroblast-enriched tumour
+P13	5	Estrogen	-1.2106668710883892	487	fibroblast-enriched tumour
+P13	5	Hypoxia	6.217598227795847	487	fibroblast-enriched tumour
+P13	5	JAK-STAT	3.4785794114967876	487	fibroblast-enriched tumour
+P13	5	MAPK	-1.908155421402816	487	fibroblast-enriched tumour
+P13	5	NFkB	0.472263073839709	487	fibroblast-enriched tumour
+P13	5	PI3K	-0.3028147927024585	487	fibroblast-enriched tumour
+P13	5	TGFb	7.567653878254892	487	fibroblast-enriched tumour
+P13	5	TNFa	1.4999891066196516	487	fibroblast-enriched tumour
+P13	5	Trail	-3.156994876013269	487	fibroblast-enriched tumour
+P13	5	VEGF	1.076298428676818	487	fibroblast-enriched tumour
+P13	5	WNT	-1.2711970663234413	487	fibroblast-enriched tumour
+P13	5	p53	-1.3815092534744555	487	fibroblast-enriched tumour
+P13	6	Androgen	2.5158465530008547	98	myeloid-enriched tumour
+P13	6	EGFR	-0.7823197762765821	98	myeloid-enriched tumour
+P13	6	Estrogen	-1.5576600677879215	98	myeloid-enriched tumour
+P13	6	Hypoxia	4.937096477537862	98	myeloid-enriched tumour
+P13	6	JAK-STAT	4.329945547228467	98	myeloid-enriched tumour
+P13	6	MAPK	-1.8832000356222165	98	myeloid-enriched tumour
+P13	6	NFkB	0.8960988359373463	98	myeloid-enriched tumour
+P13	6	PI3K	-0.5656114284583662	98	myeloid-enriched tumour
+P13	6	TGFb	8.221685048145243	98	myeloid-enriched tumour
+P13	6	TNFa	1.9829275377082942	98	myeloid-enriched tumour
+P13	6	Trail	-3.570736403807096	98	myeloid-enriched tumour
+P13	6	VEGF	1.3837183818827363	98	myeloid-enriched tumour
+P13	6	WNT	-1.523067348386516	98	myeloid-enriched tumour
+P13	6	p53	-1.5746600130240231	98	myeloid-enriched tumour
+P13	7	Androgen	2.6326104848761744	161	myeloid-enriched stroma
+P13	7	EGFR	-0.8079441764204602	161	myeloid-enriched stroma
+P13	7	Estrogen	-1.5701977297622045	161	myeloid-enriched stroma
+P13	7	Hypoxia	4.91317870842825	161	myeloid-enriched stroma
+P13	7	JAK-STAT	8.429575353283171	161	myeloid-enriched stroma
+P13	7	MAPK	-1.9425862945982202	161	myeloid-enriched stroma
+P13	7	NFkB	1.4357035756079606	161	myeloid-enriched stroma
+P13	7	PI3K	-0.8049423936926853	161	myeloid-enriched stroma
+P13	7	TGFb	8.33825732145846	161	myeloid-enriched stroma
+P13	7	TNFa	2.3092670482405637	161	myeloid-enriched stroma
+P13	7	Trail	-3.601666151632686	161	myeloid-enriched stroma
+P13	7	VEGF	1.423322048363468	161	myeloid-enriched stroma
+P13	7	WNT	-1.4647067403474587	161	myeloid-enriched stroma
+P13	7	p53	-1.3014793506627804	161	myeloid-enriched stroma
+P14	2	Androgen	-0.19004941564516145	187	peritumoural stroma (boundary)
+P14	2	EGFR	-0.47836431488678743	187	peritumoural stroma (boundary)
+P14	2	Estrogen	-0.760555692877928	187	peritumoural stroma (boundary)
+P14	2	Hypoxia	2.3877927290520113	187	peritumoural stroma (boundary)
+P14	2	JAK-STAT	-1.5149074086957417	187	peritumoural stroma (boundary)
+P14	2	MAPK	-0.9284626232396834	187	peritumoural stroma (boundary)
+P14	2	NFkB	-1.0557539860616367	187	peritumoural stroma (boundary)
+P14	2	PI3K	0.4912214259819157	187	peritumoural stroma (boundary)
+P14	2	TGFb	3.768509066058869	187	peritumoural stroma (boundary)
+P14	2	TNFa	-0.7032738080571437	187	peritumoural stroma (boundary)
+P14	2	Trail	-1.8453326291120284	187	peritumoural stroma (boundary)
+P14	2	VEGF	-0.002621693552878611	187	peritumoural stroma (boundary)
+P14	2	WNT	-0.598853367282403	187	peritumoural stroma (boundary)
+P14	2	p53	-0.9306586442616125	187	peritumoural stroma (boundary)
+P14	3	Androgen	-0.13254741372261955	465	lymphoid-enriched stroma
+P14	3	EGFR	-0.12483363206935513	465	lymphoid-enriched stroma
+P14	3	Estrogen	-0.29317691419485603	465	lymphoid-enriched stroma
+P14	3	Hypoxia	1.2587803177115224	465	lymphoid-enriched stroma
+P14	3	JAK-STAT	-0.5933693500765139	465	lymphoid-enriched stroma
+P14	3	MAPK	-0.4470984877956969	465	lymphoid-enriched stroma
+P14	3	NFkB	-0.33726734699098754	465	lymphoid-enriched stroma
+P14	3	PI3K	0.3131965974266586	465	lymphoid-enriched stroma
+P14	3	TGFb	2.133205463308528	465	lymphoid-enriched stroma
+P14	3	TNFa	-0.16367266157158059	465	lymphoid-enriched stroma
+P14	3	Trail	-0.7250724940353358	465	lymphoid-enriched stroma
+P14	3	VEGF	0.05590409663690405	465	lymphoid-enriched stroma
+P14	3	WNT	-0.1974358081637981	465	lymphoid-enriched stroma
+P14	3	p53	-0.39092121087419535	465	lymphoid-enriched stroma
+P14	5	Androgen	-0.1718423340843038	460	fibroblast-enriched tumour
+P14	5	EGFR	-0.572856767735214	460	fibroblast-enriched tumour
+P14	5	Estrogen	-0.8193189926913463	460	fibroblast-enriched tumour
+P14	5	Hypoxia	2.777614269833582	460	fibroblast-enriched tumour
+P14	5	JAK-STAT	-1.7846698678577781	460	fibroblast-enriched tumour
+P14	5	MAPK	-1.142421939440112	460	fibroblast-enriched tumour
+P14	5	NFkB	-1.2345660075255391	460	fibroblast-enriched tumour
+P14	5	PI3K	0.5887087010201281	460	fibroblast-enriched tumour
+P14	5	TGFb	4.4298171377256175	460	fibroblast-enriched tumour
+P14	5	TNFa	-0.8129043148495698	460	fibroblast-enriched tumour
+P14	5	Trail	-2.05951058900629	460	fibroblast-enriched tumour
+P14	5	VEGF	-0.023082109043950458	460	fibroblast-enriched tumour
+P14	5	WNT	-0.6221174276844488	460	fibroblast-enriched tumour
+P14	5	p53	-1.1262100625000984	460	fibroblast-enriched tumour
+P15	0	Androgen	0.8647192497788959	80	epithelial-enriched lung parenchyma
+P15	0	EGFR	-1.6160509578560354	80	epithelial-enriched lung parenchyma
+P15	0	Estrogen	-1.8774036455645597	80	epithelial-enriched lung parenchyma
+P15	0	Hypoxia	1.316733325897958	80	epithelial-enriched lung parenchyma
+P15	0	JAK-STAT	2.7278235626099416	80	epithelial-enriched lung parenchyma
+P15	0	MAPK	-2.8972823677057784	80	epithelial-enriched lung parenchyma
+P15	0	NFkB	0.24602199839645875	80	epithelial-enriched lung parenchyma
+P15	0	PI3K	-1.8003867880575313	80	epithelial-enriched lung parenchyma
+P15	0	TGFb	3.0671342418987937	80	epithelial-enriched lung parenchyma
+P15	0	TNFa	0.8052272805096032	80	epithelial-enriched lung parenchyma
+P15	0	Trail	-1.4631988569383705	80	epithelial-enriched lung parenchyma
+P15	0	VEGF	-0.15018642873301802	80	epithelial-enriched lung parenchyma
+P15	0	WNT	-0.6669551557919597	80	epithelial-enriched lung parenchyma
+P15	0	p53	-0.07297489145780635	80	epithelial-enriched lung parenchyma
+P15	1	Androgen	1.4265162853791677	554	vascular-enriched lung parenchyma
+P15	1	EGFR	-1.1524378238449615	554	vascular-enriched lung parenchyma
+P15	1	Estrogen	-2.0906932135275196	554	vascular-enriched lung parenchyma
+P15	1	Hypoxia	1.9360479643731825	554	vascular-enriched lung parenchyma
+P15	1	JAK-STAT	4.846990070419051	554	vascular-enriched lung parenchyma
+P15	1	MAPK	-2.9036927053107657	554	vascular-enriched lung parenchyma
+P15	1	NFkB	1.2061727921438838	554	vascular-enriched lung parenchyma
+P15	1	PI3K	-1.5639101680548217	554	vascular-enriched lung parenchyma
+P15	1	TGFb	4.710476947512265	554	vascular-enriched lung parenchyma
+P15	1	TNFa	1.875215663194442	554	vascular-enriched lung parenchyma
+P15	1	Trail	-1.979670452150188	554	vascular-enriched lung parenchyma
+P15	1	VEGF	0.4813269121821879	554	vascular-enriched lung parenchyma
+P15	1	WNT	-0.5433503675141881	554	vascular-enriched lung parenchyma
+P15	1	p53	-0.3943813333835527	554	vascular-enriched lung parenchyma
+P15	2	Androgen	1.5605241583917617	95	peritumoural stroma (boundary)
+P15	2	EGFR	-0.8978021230553204	95	peritumoural stroma (boundary)
+P15	2	Estrogen	-1.0255249044607246	95	peritumoural stroma (boundary)
+P15	2	Hypoxia	6.786163720844948	95	peritumoural stroma (boundary)
+P15	2	JAK-STAT	2.440618603051571	95	peritumoural stroma (boundary)
+P15	2	MAPK	-2.2696198546726625	95	peritumoural stroma (boundary)
+P15	2	NFkB	0.19343105472817526	95	peritumoural stroma (boundary)
+P15	2	PI3K	-1.6349091713013835	95	peritumoural stroma (boundary)
+P15	2	TGFb	6.673714134529593	95	peritumoural stroma (boundary)
+P15	2	TNFa	1.0579336056782722	95	peritumoural stroma (boundary)
+P15	2	Trail	-2.3735511612404747	95	peritumoural stroma (boundary)
+P15	2	VEGF	0.29152078872770665	95	peritumoural stroma (boundary)
+P15	2	WNT	-0.5589508728280627	95	peritumoural stroma (boundary)
+P15	2	p53	-0.6762381090661692	95	peritumoural stroma (boundary)
+P15	4	Androgen	1.209336957530569	306	osteoclast-enriched tumour
+P15	4	EGFR	-0.040080759347111444	306	osteoclast-enriched tumour
+P15	4	Estrogen	-0.9332136957735243	306	osteoclast-enriched tumour
+P15	4	Hypoxia	3.1217556513319127	306	osteoclast-enriched tumour
+P15	4	JAK-STAT	2.120677221182242	306	osteoclast-enriched tumour
+P15	4	MAPK	-1.4942501847222143	306	osteoclast-enriched tumour
+P15	4	NFkB	-0.25547262294188566	306	osteoclast-enriched tumour
+P15	4	PI3K	-0.38862700544940465	306	osteoclast-enriched tumour
+P15	4	TGFb	7.578655574277657	306	osteoclast-enriched tumour
+P15	4	TNFa	0.769969337390123	306	osteoclast-enriched tumour
+P15	4	Trail	-2.6209133333416816	306	osteoclast-enriched tumour
+P15	4	VEGF	0.6936281376060672	306	osteoclast-enriched tumour
+P15	4	WNT	-0.594908487535334	306	osteoclast-enriched tumour
+P15	4	p53	-1.400726506339149	306	osteoclast-enriched tumour
+P15	5	Androgen	1.5247670351520932	943	fibroblast-enriched tumour
+P15	5	EGFR	-0.7250348401322371	943	fibroblast-enriched tumour
+P15	5	Estrogen	-0.5078095040135477	943	fibroblast-enriched tumour
+P15	5	Hypoxia	8.535558956263984	943	fibroblast-enriched tumour
+P15	5	JAK-STAT	1.4551281870936459	943	fibroblast-enriched tumour
+P15	5	MAPK	-1.9398977859936275	943	fibroblast-enriched tumour
+P15	5	NFkB	-0.32354212349837624	943	fibroblast-enriched tumour
+P15	5	PI3K	-1.5236465715838285	943	fibroblast-enriched tumour
+P15	5	TGFb	7.277639825134128	943	fibroblast-enriched tumour
+P15	5	TNFa	0.6312064437114911	943	fibroblast-enriched tumour
+P15	5	Trail	-2.659166887950503	943	fibroblast-enriched tumour
+P15	5	VEGF	0.16840506805093364	943	fibroblast-enriched tumour
+P15	5	WNT	-0.6493181847641002	943	fibroblast-enriched tumour
+P15	5	p53	-0.9411119977237985	943	fibroblast-enriched tumour
+P15	6	Androgen	1.1085607083740543	43	myeloid-enriched tumour
+P15	6	EGFR	-0.3787027976321125	43	myeloid-enriched tumour
+P15	6	Estrogen	-1.2658905238996316	43	myeloid-enriched tumour
+P15	6	Hypoxia	2.0754252157738073	43	myeloid-enriched tumour
+P15	6	JAK-STAT	3.818113184806284	43	myeloid-enriched tumour
+P15	6	MAPK	-1.9417516863571413	43	myeloid-enriched tumour
+P15	6	NFkB	0.9291460516848203	43	myeloid-enriched tumour
+P15	6	PI3K	-0.7510601914715379	43	myeloid-enriched tumour
+P15	6	TGFb	6.233108702982601	43	myeloid-enriched tumour
+P15	6	TNFa	1.8877725967459327	43	myeloid-enriched tumour
+P15	6	Trail	-2.3515612485344435	43	myeloid-enriched tumour
+P15	6	VEGF	0.8590583892077068	43	myeloid-enriched tumour
+P15	6	WNT	-0.43678324750407516	43	myeloid-enriched tumour
+P15	6	p53	-0.8960334448918286	43	myeloid-enriched tumour
+P15	7	Androgen	1.201691018625576	158	myeloid-enriched stroma
+P15	7	EGFR	-0.3131714810585564	158	myeloid-enriched stroma
+P15	7	Estrogen	-0.8291243021686091	158	myeloid-enriched stroma
+P15	7	Hypoxia	3.1710930246306126	158	myeloid-enriched stroma
+P15	7	JAK-STAT	2.9411547240316476	158	myeloid-enriched stroma
+P15	7	MAPK	-1.854943004169465	158	myeloid-enriched stroma
+P15	7	NFkB	0.4823914698274046	158	myeloid-enriched stroma
+P15	7	PI3K	-0.6743373734203073	158	myeloid-enriched stroma
+P15	7	TGFb	7.141054098956984	158	myeloid-enriched stroma
+P15	7	TNFa	1.459008473182546	158	myeloid-enriched stroma
+P15	7	Trail	-2.4277760610367882	158	myeloid-enriched stroma
+P15	7	VEGF	0.5732029586709275	158	myeloid-enriched stroma
+P15	7	WNT	-0.5895727120535049	158	myeloid-enriched stroma
+P15	7	p53	-0.8837767789231564	158	myeloid-enriched stroma
+P16	3	Androgen	0.6099571587076824	30	lymphoid-enriched stroma
+P16	3	EGFR	0.8874699784599442	30	lymphoid-enriched stroma
+P16	3	Estrogen	-0.276232889904594	30	lymphoid-enriched stroma
+P16	3	Hypoxia	2.170357820760662	30	lymphoid-enriched stroma
+P16	3	JAK-STAT	0.04128313142144891	30	lymphoid-enriched stroma
+P16	3	MAPK	-0.6634267661983521	30	lymphoid-enriched stroma
+P16	3	NFkB	0.7279782620145361	30	lymphoid-enriched stroma
+P16	3	PI3K	0.37543040167464814	30	lymphoid-enriched stroma
+P16	3	TGFb	4.764667245500974	30	lymphoid-enriched stroma
+P16	3	TNFa	1.2651380757361617	30	lymphoid-enriched stroma
+P16	3	Trail	-0.9954582798145049	30	lymphoid-enriched stroma
+P16	3	VEGF	0.6123325016022202	30	lymphoid-enriched stroma
+P16	3	WNT	-0.3156415711307032	30	lymphoid-enriched stroma
+P16	3	p53	-0.581354489772941	30	lymphoid-enriched stroma
+P16	4	Androgen	0.823586017569461	2611	osteoclast-enriched tumour
+P16	4	EGFR	1.204465875573068	2611	osteoclast-enriched tumour
+P16	4	Estrogen	-0.26753752488797833	2611	osteoclast-enriched tumour
+P16	4	Hypoxia	2.6688832067982604	2611	osteoclast-enriched tumour
+P16	4	JAK-STAT	0.25824743591782323	2611	osteoclast-enriched tumour
+P16	4	MAPK	-0.1411950697523107	2611	osteoclast-enriched tumour
+P16	4	NFkB	0.9815603307991482	2611	osteoclast-enriched tumour
+P16	4	PI3K	0.6596995296131223	2611	osteoclast-enriched tumour
+P16	4	TGFb	6.642315765840848	2611	osteoclast-enriched tumour
+P16	4	TNFa	1.8737389520683714	2611	osteoclast-enriched tumour
+P16	4	Trail	-2.1078100983946064	2611	osteoclast-enriched tumour
+P16	4	VEGF	0.9432154070424768	2611	osteoclast-enriched tumour
+P16	4	WNT	-0.8442447012360319	2611	osteoclast-enriched tumour
+P16	4	p53	-1.4921316613633493	2611	osteoclast-enriched tumour
+P16	5	Androgen	1.1692220633310297	412	fibroblast-enriched tumour
+P16	5	EGFR	1.809453219710006	412	fibroblast-enriched tumour
+P16	5	Estrogen	-0.18848283082297956	412	fibroblast-enriched tumour
+P16	5	Hypoxia	2.6646457868033484	412	fibroblast-enriched tumour
+P16	5	JAK-STAT	0.12772629021221824	412	fibroblast-enriched tumour
+P16	5	MAPK	0.6620189666763507	412	fibroblast-enriched tumour
+P16	5	NFkB	1.1608951212661864	412	fibroblast-enriched tumour
+P16	5	PI3K	1.3278417684514379	412	fibroblast-enriched tumour
+P16	5	TGFb	7.876878299547101	412	fibroblast-enriched tumour
+P16	5	TNFa	2.4210941048104866	412	fibroblast-enriched tumour
+P16	5	Trail	-3.1543037697767202	412	fibroblast-enriched tumour
+P16	5	VEGF	1.486211279198478	412	fibroblast-enriched tumour
+P16	5	WNT	-1.1899358490279255	412	fibroblast-enriched tumour
+P16	5	p53	-2.5178602265280454	412	fibroblast-enriched tumour
+P16	6	Androgen	1.2395037348673965	57	myeloid-enriched tumour
+P16	6	EGFR	2.4460209870704457	57	myeloid-enriched tumour
+P16	6	Estrogen	-0.2729199816770002	57	myeloid-enriched tumour
+P16	6	Hypoxia	2.8931979688395377	57	myeloid-enriched tumour
+P16	6	JAK-STAT	0.42849949927179276	57	myeloid-enriched tumour
+P16	6	MAPK	1.5216394616305255	57	myeloid-enriched tumour
+P16	6	NFkB	1.633223413318305	57	myeloid-enriched tumour
+P16	6	PI3K	1.5101598558936085	57	myeloid-enriched tumour
+P16	6	TGFb	9.233754444822878	57	myeloid-enriched tumour
+P16	6	TNFa	2.9342388805968964	57	myeloid-enriched tumour
+P16	6	Trail	-3.6333001187833354	57	myeloid-enriched tumour
+P16	6	VEGF	1.97791227663622	57	myeloid-enriched tumour
+P16	6	WNT	-1.4033058893798775	57	myeloid-enriched tumour
+P16	6	p53	-2.5482325134528274	57	myeloid-enriched tumour
+P16	7	Androgen	1.30679798942571	229	myeloid-enriched stroma
+P16	7	EGFR	2.4506598844536085	229	myeloid-enriched stroma
+P16	7	Estrogen	-0.14427526656995765	229	myeloid-enriched stroma
+P16	7	Hypoxia	2.274490460552999	229	myeloid-enriched stroma
+P16	7	JAK-STAT	0.48519380114570154	229	myeloid-enriched stroma
+P16	7	MAPK	1.5763096246414723	229	myeloid-enriched stroma
+P16	7	NFkB	1.5154538270327338	229	myeloid-enriched stroma
+P16	7	PI3K	1.9047934476598345	229	myeloid-enriched stroma
+P16	7	TGFb	8.939922200187734	229	myeloid-enriched stroma
+P16	7	TNFa	2.8538353507635237	229	myeloid-enriched stroma
+P16	7	Trail	-3.753421834401124	229	myeloid-enriched stroma
+P16	7	VEGF	1.8253013963682851	229	myeloid-enriched stroma
+P16	7	WNT	-1.3527023342358488	229	myeloid-enriched stroma
+P16	7	p53	-3.0969790851116406	229	myeloid-enriched stroma
+P17	1	Androgen	0.9820372939809654	54	vascular-enriched lung parenchyma
+P17	1	EGFR	-0.483046494566403	54	vascular-enriched lung parenchyma
+P17	1	Estrogen	-0.3532509381927864	54	vascular-enriched lung parenchyma
+P17	1	Hypoxia	2.268709448302243	54	vascular-enriched lung parenchyma
+P17	1	JAK-STAT	2.4739670138284433	54	vascular-enriched lung parenchyma
+P17	1	MAPK	-2.5400952938763566	54	vascular-enriched lung parenchyma
+P17	1	NFkB	1.0958284067748187	54	vascular-enriched lung parenchyma
+P17	1	PI3K	-0.617751070187783	54	vascular-enriched lung parenchyma
+P17	1	TGFb	7.361236747032189	54	vascular-enriched lung parenchyma
+P17	1	TNFa	1.8012732068311734	54	vascular-enriched lung parenchyma
+P17	1	Trail	-2.4546331483044543	54	vascular-enriched lung parenchyma
+P17	1	VEGF	0.6543253654740645	54	vascular-enriched lung parenchyma
+P17	1	WNT	-0.36662219176560024	54	vascular-enriched lung parenchyma
+P17	1	p53	-0.15560137862867857	54	vascular-enriched lung parenchyma
+P17	2	Androgen	1.1734039150238504	84	peritumoural stroma (boundary)
+P17	2	EGFR	0.04748828162556845	84	peritumoural stroma (boundary)
+P17	2	Estrogen	-0.6393636619707401	84	peritumoural stroma (boundary)
+P17	2	Hypoxia	5.442577880062427	84	peritumoural stroma (boundary)
+P17	2	JAK-STAT	-1.5464731152635574	84	peritumoural stroma (boundary)
+P17	2	MAPK	-1.3993971722576712	84	peritumoural stroma (boundary)
+P17	2	NFkB	-0.9458868157784854	84	peritumoural stroma (boundary)
+P17	2	PI3K	0.764656689723117	84	peritumoural stroma (boundary)
+P17	2	TGFb	7.2133470967479605	84	peritumoural stroma (boundary)
+P17	2	TNFa	0.029392812737989913	84	peritumoural stroma (boundary)
+P17	2	Trail	-2.6567878900741797	84	peritumoural stroma (boundary)
+P17	2	VEGF	-0.19510364292463747	84	peritumoural stroma (boundary)
+P17	2	WNT	-0.8543717005337896	84	peritumoural stroma (boundary)
+P17	2	p53	-1.391003173956776	84	peritumoural stroma (boundary)
+P17	3	Androgen	0.9736146040820467	73	lymphoid-enriched stroma
+P17	3	EGFR	0.7773426368858727	73	lymphoid-enriched stroma
+P17	3	Estrogen	-0.13178768579157854	73	lymphoid-enriched stroma
+P17	3	Hypoxia	6.14634024539767	73	lymphoid-enriched stroma
+P17	3	JAK-STAT	-0.9291401784115911	73	lymphoid-enriched stroma
+P17	3	MAPK	-0.8648113482484071	73	lymphoid-enriched stroma
+P17	3	NFkB	-0.7239086202795185	73	lymphoid-enriched stroma
+P17	3	PI3K	1.0422400860838508	73	lymphoid-enriched stroma
+P17	3	TGFb	7.464347730484273	73	lymphoid-enriched stroma
+P17	3	TNFa	0.05729936118239625	73	lymphoid-enriched stroma
+P17	3	Trail	-2.1044491959703344	73	lymphoid-enriched stroma
+P17	3	VEGF	0.026325800046080556	73	lymphoid-enriched stroma
+P17	3	WNT	-0.6827741123222318	73	lymphoid-enriched stroma
+P17	3	p53	-1.546987223556432	73	lymphoid-enriched stroma
+P17	4	Androgen	1.1115055959459932	242	osteoclast-enriched tumour
+P17	4	EGFR	1.2128556558474097	242	osteoclast-enriched tumour
+P17	4	Estrogen	-0.7094281383708108	242	osteoclast-enriched tumour
+P17	4	Hypoxia	0.9570250807127015	242	osteoclast-enriched tumour
+P17	4	JAK-STAT	-0.22825538708074525	242	osteoclast-enriched tumour
+P17	4	MAPK	0.41133953464881	242	osteoclast-enriched tumour
+P17	4	NFkB	-1.1823471348115817	242	osteoclast-enriched tumour
+P17	4	PI3K	2.292314640973099	242	osteoclast-enriched tumour
+P17	4	TGFb	7.612820891104195	242	osteoclast-enriched tumour
+P17	4	TNFa	0.20353490414097594	242	osteoclast-enriched tumour
+P17	4	Trail	-3.457945899027571	242	osteoclast-enriched tumour
+P17	4	VEGF	0.528341782518772	242	osteoclast-enriched tumour
+P17	4	WNT	-1.0236173317180104	242	osteoclast-enriched tumour
+P17	4	p53	-2.7841914168251156	242	osteoclast-enriched tumour
+P17	5	Androgen	1.2854593388417093	575	fibroblast-enriched tumour
+P17	5	EGFR	0.5013212866234323	575	fibroblast-enriched tumour
+P17	5	Estrogen	-0.6241799151734875	575	fibroblast-enriched tumour
+P17	5	Hypoxia	5.6997203391770235	575	fibroblast-enriched tumour
+P17	5	JAK-STAT	-1.5716978788222373	575	fibroblast-enriched tumour
+P17	5	MAPK	-0.5819795181270538	575	fibroblast-enriched tumour
+P17	5	NFkB	-1.2511533971281839	575	fibroblast-enriched tumour
+P17	5	PI3K	1.4424428116784336	575	fibroblast-enriched tumour
+P17	5	TGFb	7.292748593198513	575	fibroblast-enriched tumour
+P17	5	TNFa	-0.10657583498130047	575	fibroblast-enriched tumour
+P17	5	Trail	-3.1265235480670364	575	fibroblast-enriched tumour
+P17	5	VEGF	0.030429286720362634	575	fibroblast-enriched tumour
+P17	5	WNT	-0.8699195960085558	575	fibroblast-enriched tumour
+P17	5	p53	-2.116397977373191	575	fibroblast-enriched tumour
+P17	7	Androgen	1.3437284094062594	175	myeloid-enriched stroma
+P17	7	EGFR	0.13159474431059567	175	myeloid-enriched stroma
+P17	7	Estrogen	-0.628946307460933	175	myeloid-enriched stroma
+P17	7	Hypoxia	1.7679476974294133	175	myeloid-enriched stroma
+P17	7	JAK-STAT	2.655421635265664	175	myeloid-enriched stroma
+P17	7	MAPK	-2.065950974938962	175	myeloid-enriched stroma
+P17	7	NFkB	0.9565240792535062	175	myeloid-enriched stroma
+P17	7	PI3K	-0.022309893561714506	175	myeloid-enriched stroma
+P17	7	TGFb	8.168731163704647	175	myeloid-enriched stroma
+P17	7	TNFa	1.7429491192320097	175	myeloid-enriched stroma
+P17	7	Trail	-2.764705753697265	175	myeloid-enriched stroma
+P17	7	VEGF	0.8018476568885224	175	myeloid-enriched stroma
+P17	7	WNT	-0.4977941241570766	175	myeloid-enriched stroma
+P17	7	p53	-0.40511002804826357	175	myeloid-enriched stroma
+P18	0	Androgen	0.9618777732813957	107	epithelial-enriched lung parenchyma
+P18	0	EGFR	-0.25566505462410904	107	epithelial-enriched lung parenchyma
+P18	0	Estrogen	-1.2799807814708437	107	epithelial-enriched lung parenchyma
+P18	0	Hypoxia	0.782363160969661	107	epithelial-enriched lung parenchyma
+P18	0	JAK-STAT	1.434632905285512	107	epithelial-enriched lung parenchyma
+P18	0	MAPK	-1.224752274520698	107	epithelial-enriched lung parenchyma
+P18	0	NFkB	0.6242352444619033	107	epithelial-enriched lung parenchyma
+P18	0	PI3K	-1.451552107767825	107	epithelial-enriched lung parenchyma
+P18	0	TGFb	2.5607687640294174	107	epithelial-enriched lung parenchyma
+P18	0	TNFa	0.8832015150766264	107	epithelial-enriched lung parenchyma
+P18	0	Trail	-0.7993726500003321	107	epithelial-enriched lung parenchyma
+P18	0	VEGF	-0.21401794752907902	107	epithelial-enriched lung parenchyma
+P18	0	WNT	-0.7130895152661496	107	epithelial-enriched lung parenchyma
+P18	0	p53	0.3235842280745325	107	epithelial-enriched lung parenchyma
+P18	1	Androgen	1.620424095274264	1759	vascular-enriched lung parenchyma
+P18	1	EGFR	-0.0005814947064263339	1759	vascular-enriched lung parenchyma
+P18	1	Estrogen	-1.5157085620414643	1759	vascular-enriched lung parenchyma
+P18	1	Hypoxia	1.0104660802027499	1759	vascular-enriched lung parenchyma
+P18	1	JAK-STAT	2.925623574756233	1759	vascular-enriched lung parenchyma
+P18	1	MAPK	-1.3603569230033503	1759	vascular-enriched lung parenchyma
+P18	1	NFkB	1.2821956568918638	1759	vascular-enriched lung parenchyma
+P18	1	PI3K	-1.6301931497580435	1759	vascular-enriched lung parenchyma
+P18	1	TGFb	3.6779481532319767	1759	vascular-enriched lung parenchyma
+P18	1	TNFa	1.479982716190202	1759	vascular-enriched lung parenchyma
+P18	1	Trail	-1.0392622226771386	1759	vascular-enriched lung parenchyma
+P18	1	VEGF	0.3653504912050402	1759	vascular-enriched lung parenchyma
+P18	1	WNT	-0.656105592200382	1759	vascular-enriched lung parenchyma
+P18	1	p53	0.02358941380327914	1759	vascular-enriched lung parenchyma
+P18	2	Androgen	1.3513965872508815	352	peritumoural stroma (boundary)
+P18	2	EGFR	0.24750009139762197	352	peritumoural stroma (boundary)
+P18	2	Estrogen	-0.7723499412854117	352	peritumoural stroma (boundary)
+P18	2	Hypoxia	0.7671029545421623	352	peritumoural stroma (boundary)
+P18	2	JAK-STAT	1.9873794411686008	352	peritumoural stroma (boundary)
+P18	2	MAPK	-0.9536869210379767	352	peritumoural stroma (boundary)
+P18	2	NFkB	0.7247613976907996	352	peritumoural stroma (boundary)
+P18	2	PI3K	-1.490332841557975	352	peritumoural stroma (boundary)
+P18	2	TGFb	4.188961058879449	352	peritumoural stroma (boundary)
+P18	2	TNFa	0.9596676540982628	352	peritumoural stroma (boundary)
+P18	2	Trail	-1.0490359170833758	352	peritumoural stroma (boundary)
+P18	2	VEGF	0.31697616228520076	352	peritumoural stroma (boundary)
+P18	2	WNT	-0.5172440120258948	352	peritumoural stroma (boundary)
+P18	2	p53	-0.16670500474334315	352	peritumoural stroma (boundary)
+P18	3	Androgen	0.8081714980296402	637	lymphoid-enriched stroma
+P18	3	EGFR	0.3439815668672892	637	lymphoid-enriched stroma
+P18	3	Estrogen	-0.5701072103303964	637	lymphoid-enriched stroma
+P18	3	Hypoxia	0.48225579053407536	637	lymphoid-enriched stroma
+P18	3	JAK-STAT	1.2990632382595573	637	lymphoid-enriched stroma
+P18	3	MAPK	-0.7815192694393484	637	lymphoid-enriched stroma
+P18	3	NFkB	0.43540813368231895	637	lymphoid-enriched stroma
+P18	3	PI3K	-1.0213627938919538	637	lymphoid-enriched stroma
+P18	3	TGFb	3.6987393149073293	637	lymphoid-enriched stroma
+P18	3	TNFa	0.6160190682026121	637	lymphoid-enriched stroma
+P18	3	Trail	-0.5867039379328503	637	lymphoid-enriched stroma
+P18	3	VEGF	0.15322406809367814	637	lymphoid-enriched stroma
+P18	3	WNT	-0.3474331165627332	637	lymphoid-enriched stroma
+P18	3	p53	-0.19168784517004814	637	lymphoid-enriched stroma
+P18	7	Androgen	1.6142336938190727	51	myeloid-enriched stroma
+P18	7	EGFR	0.611446932824277	51	myeloid-enriched stroma
+P18	7	Estrogen	-0.7833964517015659	51	myeloid-enriched stroma
+P18	7	Hypoxia	1.0913795380408329	51	myeloid-enriched stroma
+P18	7	JAK-STAT	2.706073665822902	51	myeloid-enriched stroma
+P18	7	MAPK	-0.5594238929976312	51	myeloid-enriched stroma
+P18	7	NFkB	1.0514450664040995	51	myeloid-enriched stroma
+P18	7	PI3K	-1.612247782184071	51	myeloid-enriched stroma
+P18	7	TGFb	5.481706273394504	51	myeloid-enriched stroma
+P18	7	TNFa	1.2561874236985413	51	myeloid-enriched stroma
+P18	7	Trail	-1.6155882071592085	51	myeloid-enriched stroma
+P18	7	VEGF	0.2560565202109945	51	myeloid-enriched stroma
+P18	7	WNT	-0.557934427504448	51	myeloid-enriched stroma
+P18	7	p53	-0.4215345504510093	51	myeloid-enriched stroma
+P19	4	Androgen	0.7579932822261183	268	osteoclast-enriched tumour
+P19	4	EGFR	-0.14962788419190406	268	osteoclast-enriched tumour
+P19	4	Estrogen	-0.8347944744397731	268	osteoclast-enriched tumour
+P19	4	Hypoxia	3.5745047306087794	268	osteoclast-enriched tumour
+P19	4	JAK-STAT	-1.3526961063310508	268	osteoclast-enriched tumour
+P19	4	MAPK	-2.653289577961075	268	osteoclast-enriched tumour
+P19	4	NFkB	-1.1197922400023137	268	osteoclast-enriched tumour
+P19	4	PI3K	1.718323017493944	268	osteoclast-enriched tumour
+P19	4	TGFb	7.107669140066265	268	osteoclast-enriched tumour
+P19	4	TNFa	-0.5096329166230077	268	osteoclast-enriched tumour
+P19	4	Trail	-2.35754923678114	268	osteoclast-enriched tumour
+P19	4	VEGF	0.8599416584954859	268	osteoclast-enriched tumour
+P19	4	WNT	-1.21183481736914	268	osteoclast-enriched tumour
+P19	4	p53	-2.179344914571892	268	osteoclast-enriched tumour
+P19	5	Androgen	0.8681653423780717	248	fibroblast-enriched tumour
+P19	5	EGFR	-0.5978078446633698	248	fibroblast-enriched tumour
+P19	5	Estrogen	-0.7779778442548994	248	fibroblast-enriched tumour
+P19	5	Hypoxia	6.204116322056558	248	fibroblast-enriched tumour
+P19	5	JAK-STAT	-1.795652632278457	248	fibroblast-enriched tumour
+P19	5	MAPK	-2.8402744374715216	248	fibroblast-enriched tumour
+P19	5	NFkB	-1.0599975221075941	248	fibroblast-enriched tumour
+P19	5	PI3K	1.2282990904310185	248	fibroblast-enriched tumour
+P19	5	TGFb	6.813498161952451	248	fibroblast-enriched tumour
+P19	5	TNFa	-0.5477943307254348	248	fibroblast-enriched tumour
+P19	5	Trail	-2.2283941129159444	248	fibroblast-enriched tumour
+P19	5	VEGF	0.6681588079062775	248	fibroblast-enriched tumour
+P19	5	WNT	-1.172470820639136	248	fibroblast-enriched tumour
+P19	5	p53	-2.2599754618412327	248	fibroblast-enriched tumour

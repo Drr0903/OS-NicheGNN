@@ -1,0 +1,25 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+breast	lopo	leiden	OS-NicheGNN (branches concatenated)	20260914	CID4465	CID4465	6	0.026536173370861667	0.04303837931864713	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260914	CID4465	CID4465	6	0.026536173370861667	0.04303837931864713	1195
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (branches concatenated)	20260915	CID4465	CID4465	6	0.32344774081853717	0.24658387118348052	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260915	CID4465	CID4465	6	0.32344774081853717	0.24658387118348052	1195
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (branches concatenated)	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260915	CID4465	CID4465	6	0.7001767907647254	0.5556506900250395	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260915	CID4465	CID4465	6	0.24825207376989322	0.20018266439718213	1195
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195

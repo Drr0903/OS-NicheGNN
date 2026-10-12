@@ -1,0 +1,25 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+os	lopo	leiden	OS-NicheGNN	20260914	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden_pc30	OS-NicheGNN	20260914	PT9	P09	5	-0.003903792014078919	0.0013761755916035811	867
+os	lopo	kmeans	OS-NicheGNN	20260914	PT9	P09	5	0.0	0.0	867
+os	lopo	kmeans_pc30	OS-NicheGNN	20260914	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden	OS-NicheGNN	20260915	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden_pc30	OS-NicheGNN	20260915	PT9	P09	5	0.0	0.0	867
+os	lopo	kmeans	OS-NicheGNN	20260915	PT9	P09	5	0.0	0.0	867
+os	lopo	kmeans_pc30	OS-NicheGNN	20260915	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden	OS-NicheGNN	20260916	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden_pc30	OS-NicheGNN	20260916	PT9	P09	5	0.0	0.0	867
+os	lopo	kmeans	OS-NicheGNN	20260916	PT9	P09	5	-0.023917864072532505	0.004068283273891971	867
+os	lopo	kmeans_pc30	OS-NicheGNN	20260916	PT9	P09	5	-0.0009508957109147404	0.0017740183468182623	867
+os	lopo	leiden	OS-NicheGNN +smooth	20260914	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden_pc30	OS-NicheGNN +smooth	20260914	PT9	P09	5	0.0	0.0	867
+os	lopo	kmeans	OS-NicheGNN +smooth	20260914	PT9	P09	5	0.0	0.0	867
+os	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260914	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden	OS-NicheGNN +smooth	20260915	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden_pc30	OS-NicheGNN +smooth	20260915	PT9	P09	5	0.0	0.0	867
+os	lopo	kmeans	OS-NicheGNN +smooth	20260915	PT9	P09	5	0.009393288357798072	0.007283284470817611	867
+os	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260915	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden	OS-NicheGNN +smooth	20260916	PT9	P09	5	0.0	0.0	867
+os	lopo	leiden_pc30	OS-NicheGNN +smooth	20260916	PT9	P09	5	0.0	0.0	867
+os	lopo	kmeans	OS-NicheGNN +smooth	20260916	PT9	P09	5	-0.003903792014078919	0.0013761755916035811	867
+os	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260916	PT9	P09	5	-0.003903792014078919	0.0013761755916035811	867

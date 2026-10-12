@@ -1,18 +1,18 @@
 type	representation	mode	reference	comparator	metric	n_patients	mean	median	min	mean_diff	ci95_lo	ci95_hi	n_better	n_worse	wilcoxon_p
-mean	BANKSY-20	inductive	same-protocol atlas		agreement	19	0.4331558894890383	0.2671614100185528	0.0120986505351326						
-mean	BANKSY-20	inductive	same-protocol atlas		unmatched	19	0.07533664146383892	0.0077554744525547	0.0						
-mean	BANKSY-20	inductive	same-protocol atlas		ari	19	0.24921969629492527	0.1996774175671525	-0.001987071386382						
-mean	BANKSY-20	inductive	same-protocol atlas		ari_region	19	0.18999468336823125	0.165347237276702	-0.0142054455603309						
-mean	BANKSY-20	inductive	same-protocol atlas		agreement_area	19	0.4202254198720322	0.2789062701683151	0.0031089056494503766						
-mean	BANKSY-20	inductive	same-protocol atlas		agreement_cov90	19	0.4289821524673619	0.27123695976154993	0.005684754521963824						
-mean	BANKSY-20	inductive	same-protocol atlas		ari_region_cov90	19	0.17897209937887182	0.16007816681673837	-0.04398304511929588						
-mean	BANKSY-20	mapped	same-protocol atlas		agreement	19	0.47119100396794616	0.4705753664406038	0.0200093066542577						
-mean	BANKSY-20	mapped	same-protocol atlas		unmatched	19	0.025014959624150703	0.0051457975986277	0.0						
-mean	BANKSY-20	mapped	same-protocol atlas		ari	19	0.22669805332822768	0.188422882149459	-0.1006093913187258						
-mean	BANKSY-20	mapped	same-protocol atlas		ari_region	19	0.12407731420184483	0.055521111176353	-0.0616400923529935						
-mean	BANKSY-20	mapped	same-protocol atlas		agreement_area	19	0.4609816332145485	0.5051364641134323	0.0023379108976571226						
-mean	BANKSY-20	mapped	same-protocol atlas		agreement_cov90	19	0.4633219059687191	0.47992269701524587	0.007235142118863049						
-mean	BANKSY-20	mapped	same-protocol atlas		ari_region_cov90	19	0.12016233373769898	0.05003576365319487	-0.059147350003067985						
+mean	BANKSY-20	inductive	same-protocol atlas		agreement	19	0.4616248598553754	0.3507656746605027	0.0120986505351326						
+mean	BANKSY-20	inductive	same-protocol atlas		unmatched	19	0.0752337982301506	0.0077554744525547	0.0						
+mean	BANKSY-20	inductive	same-protocol atlas		ari	19	0.26910224525809934	0.2314501033110179	-0.001987071386382						
+mean	BANKSY-20	inductive	same-protocol atlas		ari_region	19	0.19036136444028506	0.1641017488674087	-0.0234122868366819						
+mean	BANKSY-20	inductive	same-protocol atlas		agreement_area	19	0.4516997049243752	0.4468589057756522	0.0031089056494503766						
+mean	BANKSY-20	inductive	same-protocol atlas		agreement_cov90	19	0.4586147290050646	0.4915984489444205	0.005684754521963824						
+mean	BANKSY-20	inductive	same-protocol atlas		ari_region_cov90	19	0.17936074935469187	0.16007816681673837	-0.04398304511929588						
+mean	BANKSY-20	mapped	same-protocol atlas		agreement	19	0.4971337505165468	0.5501379944802208	0.0200093066542577						
+mean	BANKSY-20	mapped	same-protocol atlas		unmatched	19	0.024974817818800895	0.0051457975986277	0.0						
+mean	BANKSY-20	mapped	same-protocol atlas		ari	19	0.2376256182014367	0.188422882149459	-0.1006093913187258						
+mean	BANKSY-20	mapped	same-protocol atlas		ari_region	19	0.12532608176633883	0.055521111176353	-0.0616400923529935						
+mean	BANKSY-20	mapped	same-protocol atlas		agreement_area	19	0.47988610516168867	0.5349886986245533	0.0023379108976571226						
+mean	BANKSY-20	mapped	same-protocol atlas		agreement_cov90	19	0.4905194591271605	0.5658198614318707	0.007235142118863049						
+mean	BANKSY-20	mapped	same-protocol atlas		ari_region_cov90	19	0.12081561207501741	0.05003576365319487	-0.059147350003067985						
 mean	BANKSY-20	raw	same-protocol atlas		agreement	19	0.35237699119717236	0.3161676646706587	0.0232666356444858						
 mean	BANKSY-20	raw	same-protocol atlas		unmatched	19	0.008765197371898821	0.0	0.0						
 mean	BANKSY-20	raw	same-protocol atlas		ari	19	0.07353019093646657	0.0	-0.0969530476492818						
@@ -20,304 +20,584 @@ mean	BANKSY-20	raw	same-protocol atlas		ari_region	19	0.020497581294916856	0.0	-
 mean	BANKSY-20	raw	same-protocol atlas		agreement_area	19	0.3332935063234598	0.2371764924798696	0.025196346797712						
 mean	BANKSY-20	raw	same-protocol atlas		agreement_cov90	19	0.3486140917787002	0.27166751140395334	0.017054263565891473						
 mean	BANKSY-20	raw	same-protocol atlas		ari_region_cov90	19	0.01711172129012565	0.0	-0.0892875906495668						
-mean	BANKSY-20	transductive	same-protocol atlas		agreement	19	0.5728059918905424	0.6265356265356266	0.0571856287425149						
+mean	BANKSY-20	transductive	same-protocol atlas		agreement	19	0.5819120952792547	0.6265356265356266	0.0473053892215568						
 mean	BANKSY-20	transductive	same-protocol atlas		unmatched	19	0.011774361196320169	0.0048780487804878	0.0						
-mean	BANKSY-20	transductive	same-protocol atlas		ari	19	0.4412925438462237	0.3448282163020385	0.0467433632561592						
-mean	BANKSY-20	transductive	same-protocol atlas		ari_region	19	0.24304584207851984	0.2030850965942076	-0.0023078678900082						
-mean	BANKSY-20	transductive	same-protocol atlas		agreement_area	19	0.5191300270123249	0.510401950885828	0.029944152837649902						
-mean	BANKSY-20	transductive	same-protocol atlas		agreement_cov90	19	0.5608998046798861	0.6052393857271906	0.0499001996007984						
-mean	BANKSY-20	transductive	same-protocol atlas		ari_region_cov90	18	0.25344516709670767	0.18577441025185715	-0.011432057569310523						
-mean	OS-NicheGNN	inductive	consensus atlas		agreement	19	0.7046382323776114	0.7543370508054523	0.2971698113207547						
-mean	OS-NicheGNN	inductive	consensus atlas		unmatched	19	0.3854656553577478	0.4748837209302325	0.0103806228373702						
-mean	OS-NicheGNN	inductive	consensus atlas		ari	19	0.43480493317629226	0.4615914560148619	-0.0625646592351422						
-mean	OS-NicheGNN	inductive	consensus atlas		ari_region	18	0.18857905241349676	0.15342972041905376	-0.0958103442487603						
-mean	OS-NicheGNN	inductive	consensus atlas		agreement_area	19	0.7072332274498008	0.7421364852024271	0.3184527126907544						
-mean	OS-NicheGNN	inductive	consensus atlas		agreement_cov90	19	0.6727508679071116	0.6951219512195121	0.4096185737976783						
-mean	OS-NicheGNN	inductive	consensus atlas		ari_region_cov90	19	0.1822089182078581	0.20328125652013415	-0.026274919326976565						
-mean	OS-NicheGNN	inductive	same-protocol atlas		agreement	19	0.638925361339267	0.6713906111603188	0.2287735849056603						
-mean	OS-NicheGNN	inductive	same-protocol atlas		unmatched	19	0.3854656553577478	0.4748837209302325	0.0103806228373702						
-mean	OS-NicheGNN	inductive	same-protocol atlas		ari	19	0.38298127330177234	0.3966265658669981	0.0014730752920456						
-mean	OS-NicheGNN	inductive	same-protocol atlas		ari_region	18	0.18857905241349676	0.15342972041905376	-0.0958103442487603						
-mean	OS-NicheGNN	inductive	same-protocol atlas		agreement_area	19	0.6324117649414134	0.6669646695511672	0.22815099840732556						
-mean	OS-NicheGNN	inductive	same-protocol atlas		agreement_cov90	19	0.5974913374844459	0.6153846153846154	0.2805474095796676						
-mean	OS-NicheGNN	inductive	same-protocol atlas		ari_region_cov90	19	0.1822089182078581	0.20328125652013415	-0.026274919326976565						
-mean	OS-NicheGNN	mapped	consensus atlas		agreement	19	0.69384132502851	0.7295373665480427	0.4557309540150995						
-mean	OS-NicheGNN	mapped	consensus atlas		unmatched	19	0.021147535169365544	0.0073170731707317	0.0						
-mean	OS-NicheGNN	mapped	consensus atlas		ari	19	0.45284534729962667	0.4402570658904464	-0.0037586017749813						
-mean	OS-NicheGNN	mapped	consensus atlas		ari_region	19	0.1949149629148877	0.1838274460538408	-0.0203424174870299						
-mean	OS-NicheGNN	mapped	consensus atlas		agreement_area	19	0.7514155897820395	0.8146002749449487	0.38948180629580464						
-mean	OS-NicheGNN	mapped	consensus atlas		agreement_cov90	19	0.7092794555816615	0.7495009980039921	0.4507317073170732						
-mean	OS-NicheGNN	mapped	consensus atlas		ari_region_cov90	18	0.20568452488850408	0.2005401989272635	-0.019039427433592316						
-mean	OS-NicheGNN	mapped	same-protocol atlas		agreement	19	0.6153460130415899	0.6422127255460589	0.382716049382716						
-mean	OS-NicheGNN	mapped	same-protocol atlas		unmatched	19	0.021147535169365544	0.0073170731707317	0.0						
-mean	OS-NicheGNN	mapped	same-protocol atlas		ari	19	0.38657676967436916	0.357250689029121	0.0092289007063088						
-mean	OS-NicheGNN	mapped	same-protocol atlas		ari_region	19	0.1949149629148877	0.1838274460538408	-0.0203424174870299						
-mean	OS-NicheGNN	mapped	same-protocol atlas		agreement_area	19	0.6828106380728997	0.7103980557808699	0.2964427096712559						
-mean	OS-NicheGNN	mapped	same-protocol atlas		agreement_cov90	19	0.6273171296830609	0.6521961184882533	0.34146341463414637						
-mean	OS-NicheGNN	mapped	same-protocol atlas		ari_region_cov90	18	0.20568452488850408	0.2005401989272635	-0.019039427433592316						
-mean	OS-NicheGNN	raw	consensus atlas		agreement	19	0.23202279132383188	0.1639276055752028	0.0008984725965858						
-mean	OS-NicheGNN	raw	consensus atlas		unmatched	19	0.007593288242329974	0.0	0.0						
-mean	OS-NicheGNN	raw	consensus atlas		ari	19	0.12160176041084907	0.1008893527805984	-0.1329224883181347						
-mean	OS-NicheGNN	raw	consensus atlas		ari_region	19	0.09349450876851606	0.0276931851905491	-0.1017458236974819						
-mean	OS-NicheGNN	raw	consensus atlas		agreement_area	19	0.1994431796115916	0.17488468825667325	0.0006219517153041045						
-mean	OS-NicheGNN	raw	consensus atlas		agreement_cov90	19	0.22251907921669992	0.16141732283464566	0.000998003992015968						
-mean	OS-NicheGNN	raw	consensus atlas		ari_region_cov90	19	0.08036585118482407	0.018043764776942185	-0.06903589597933464						
-mean	OS-NicheGNN	raw	same-protocol atlas		agreement	19	0.20221844897513122	0.1464788732394366	0.0005988023952095						
-mean	OS-NicheGNN	raw	same-protocol atlas		unmatched	19	0.007593288242329974	0.0	0.0						
-mean	OS-NicheGNN	raw	same-protocol atlas		ari	19	0.11245232651660789	0.0787371612327624	-0.0838170149933256						
-mean	OS-NicheGNN	raw	same-protocol atlas		ari_region	19	0.09349450876851606	0.0276931851905491	-0.1017458236974819						
-mean	OS-NicheGNN	raw	same-protocol atlas		agreement_area	19	0.17028606131194382	0.14364362850228563	0.00032107523688603014						
-mean	OS-NicheGNN	raw	same-protocol atlas		agreement_cov90	19	0.19169657829289188	0.14674465920651067	0.0006653359946773121						
-mean	OS-NicheGNN	raw	same-protocol atlas		ari_region_cov90	19	0.08036585118482407	0.018043764776942185	-0.06903589597933464						
-mean	OS-NicheGNN	transductive	consensus atlas		agreement	19	0.7334932442001348	0.7723283427981414	0.3036951501154734						
-mean	OS-NicheGNN	transductive	consensus atlas		unmatched	19	0.014457905335793334	0.0043859649122807	0.0003430531732418						
-mean	OS-NicheGNN	transductive	consensus atlas		ari	19	0.5570970186966205	0.5607943950011864	0.125105556418153						
-mean	OS-NicheGNN	transductive	consensus atlas		ari_region	19	0.20596729025096186	0.1994046779650199	0.0033575769481746						
-mean	OS-NicheGNN	transductive	consensus atlas		agreement_area	19	0.7960192167593201	0.8711012606607218	0.212240527927408						
-mean	OS-NicheGNN	transductive	consensus atlas		agreement_cov90	19	0.7491791063977452	0.7931707317073171	0.26666666666666666						
-mean	OS-NicheGNN	transductive	consensus atlas		ari_region_cov90	18	0.22330073287718172	0.2262379244228665	0.013280880722411705						
-mean	OS-NicheGNN	transductive	same-protocol atlas		agreement	19	0.6948233940824067	0.7086479066575154	0.4014209591474245						
-mean	OS-NicheGNN	transductive	same-protocol atlas		unmatched	19	0.014457905335793334	0.0043859649122807	0.0003430531732418						
-mean	OS-NicheGNN	transductive	same-protocol atlas		ari	19	0.5021787655995386	0.4600181501236252	0.1116677693472082						
-mean	OS-NicheGNN	transductive	same-protocol atlas		ari_region	19	0.20596729025096186	0.1994046779650199	0.0033575769481746						
-mean	OS-NicheGNN	transductive	same-protocol atlas		agreement_area	19	0.7801540575797892	0.8193953469833499	0.39991059268810525						
-mean	OS-NicheGNN	transductive	same-protocol atlas		agreement_cov90	19	0.7167775701507753	0.7195121951219512	0.42322834645669294						
-mean	OS-NicheGNN	transductive	same-protocol atlas		ari_region_cov90	18	0.22330073287718172	0.2262379244228665	0.013280880722411705						
-mean	profile + ring means	inductive	same-protocol atlas		agreement	19	0.443661529611998	0.5181236673773987	0.0108991825613079						
-mean	profile + ring means	inductive	same-protocol atlas		unmatched	19	0.2515561043724656	0.1206434316353887	0.0003430531732418						
-mean	profile + ring means	inductive	same-protocol atlas		ari	19	0.2525242278053857	0.2719870800678766	-0.0471075534840044						
-mean	profile + ring means	inductive	same-protocol atlas		ari_region	19	0.16963190235243839	0.0716569801203492	-0.08260039202541						
-mean	profile + ring means	inductive	same-protocol atlas		agreement_area	19	0.4360527733809699	0.4704814085942055	0.045741567993706614						
-mean	profile + ring means	inductive	same-protocol atlas		agreement_cov90	19	0.43397163602840977	0.49060336300692386	0.08204984598151778						
-mean	profile + ring means	inductive	same-protocol atlas		ari_region_cov90	19	0.19644246520646527	0.13288666519610653	-0.08203736154991428						
-mean	profile + ring means	mapped	same-protocol atlas		agreement	19	0.44730127506264994	0.5057905932403687	0.1186721991701244						
-mean	profile + ring means	mapped	same-protocol atlas		unmatched	19	0.02404463475440825	0.006578947368421	0.0						
-mean	profile + ring means	mapped	same-protocol atlas		ari	19	0.24142483954788896	0.2273527802919428	-0.0355372051250199						
-mean	profile + ring means	mapped	same-protocol atlas		ari_region	19	0.126714118656723	0.04608789972122	-0.0157741960110192						
-mean	profile + ring means	mapped	same-protocol atlas		agreement_area	19	0.49975880409825363	0.5665648155557965	0.07183599422194031						
-mean	profile + ring means	mapped	same-protocol atlas		agreement_cov90	19	0.4515575323635905	0.49753566796368354	0.12102186620480623						
-mean	profile + ring means	mapped	same-protocol atlas		ari_region_cov90	16	0.13103576465487424	0.11257523988513408	-0.03362833429353292						
-mean	profile + ring means	raw	same-protocol atlas		agreement	19	0.21978507316101278	0.1903233203393717	0.0						
+mean	BANKSY-20	transductive	same-protocol atlas		ari	19	0.4142276520844799	0.3448282163020385	0.0012725769174598						
+mean	BANKSY-20	transductive	same-protocol atlas		ari_region	19	0.23331593002799186	0.2030850965942076	-0.0023078678900082						
+mean	BANKSY-20	transductive	same-protocol atlas		agreement_area	19	0.5395101669110304	0.5869391208343326	0.016773078271660056						
+mean	BANKSY-20	transductive	same-protocol atlas		agreement_cov90	19	0.5735084791971129	0.6409756097560976	0.04058549567531603						
+mean	BANKSY-20	transductive	same-protocol atlas		ari_region_cov90	18	0.2428364001690576	0.18577441025185715	-0.011432057569310523						
+mean	OS-NicheGNN	inductive	consensus atlas		agreement	19	0.6518857375497132	0.7296862429605793	0.1568181818181818						
+mean	OS-NicheGNN	inductive	consensus atlas		unmatched	19	0.3780097274773554	0.4142091152815013	0.0014970059880239						
+mean	OS-NicheGNN	inductive	consensus atlas		ari	19	0.3894868544118505	0.3703934776876514	0.0183749893494371						
+mean	OS-NicheGNN	inductive	consensus atlas		ari_region	18	0.2117511088603469	0.1723729733186506	-0.0093267074361952						
+mean	OS-NicheGNN	inductive	consensus atlas		agreement_area	19	0.6786826369296765	0.7518052136359956	0.16269369344088516						
+mean	OS-NicheGNN	inductive	consensus atlas		agreement_cov90	19	0.6484248529021045	0.7176067073170732	0.16282051282051282						
+mean	OS-NicheGNN	inductive	consensus atlas		ari_region_cov90	19	0.1934349814023368	0.1470103050856077	-0.0025884607760025243						
+mean	OS-NicheGNN	inductive	same-protocol atlas		agreement	19	0.6674658762601028	0.7366638441998307	0.1931818181818181						
+mean	OS-NicheGNN	inductive	same-protocol atlas		unmatched	19	0.3780097274773554	0.4142091152815013	0.0014970059880239						
+mean	OS-NicheGNN	inductive	same-protocol atlas		ari	19	0.3877620211403636	0.3692611126152068	0.0573676895047996						
+mean	OS-NicheGNN	inductive	same-protocol atlas		ari_region	18	0.2117511088603469	0.1723729733186506	-0.0093267074361952						
+mean	OS-NicheGNN	inductive	same-protocol atlas		agreement_area	19	0.6859244779065667	0.7345032631695723	0.19076366878982026						
+mean	OS-NicheGNN	inductive	same-protocol atlas		agreement_cov90	19	0.6450943198573493	0.692131398013751	0.17318982387475537						
+mean	OS-NicheGNN	inductive	same-protocol atlas		ari_region_cov90	19	0.1934349814023368	0.1470103050856077	-0.0025884607760025243						
+mean	OS-NicheGNN	mapped	consensus atlas		agreement	19	0.6815769508094647	0.7046864231564438	0.1926182237600922						
+mean	OS-NicheGNN	mapped	consensus atlas		unmatched	19	0.028638846354245972	0.0052677787532923	0.0						
+mean	OS-NicheGNN	mapped	consensus atlas		ari	19	0.4842247832403512	0.496652355305681	0.0886660545025207						
+mean	OS-NicheGNN	mapped	consensus atlas		ari_region	19	0.1862632589990894	0.1394507505737247	-0.012314833627846						
+mean	OS-NicheGNN	mapped	consensus atlas		agreement_area	19	0.7562021008281398	0.8424858420351784	0.1464227218050525						
+mean	OS-NicheGNN	mapped	consensus atlas		agreement_cov90	19	0.6991308800604095	0.745045731707317	0.17692307692307693						
+mean	OS-NicheGNN	mapped	consensus atlas		ari_region_cov90	18	0.19495192355724927	0.15130356246520674	-0.002776098129458168						
+mean	OS-NicheGNN	mapped	same-protocol atlas		agreement	19	0.6802851888637244	0.7125129265770423	0.2259488084730803						
+mean	OS-NicheGNN	mapped	same-protocol atlas		unmatched	19	0.028638846354245972	0.0052677787532923	0.0						
+mean	OS-NicheGNN	mapped	same-protocol atlas		ari	19	0.46382740049156435	0.4890721179635096	0.0832783099625524						
+mean	OS-NicheGNN	mapped	same-protocol atlas		ari_region	19	0.1862632589990894	0.1394507505737247	-0.012314833627846						
+mean	OS-NicheGNN	mapped	same-protocol atlas		agreement_area	19	0.7709385521885018	0.8095446601217173	0.23077197949112677						
+mean	OS-NicheGNN	mapped	same-protocol atlas		agreement_cov90	19	0.7003967392435214	0.7320884146341463	0.2175609756097561						
+mean	OS-NicheGNN	mapped	same-protocol atlas		ari_region_cov90	18	0.19495192355724927	0.15130356246520674	-0.002776098129458168						
+mean	OS-NicheGNN	raw	consensus atlas		agreement	19	0.27216859280374406	0.1988590057049714	0.0						
+mean	OS-NicheGNN	raw	consensus atlas		unmatched	19	0.011710899206419321	0.0	0.0						
+mean	OS-NicheGNN	raw	consensus atlas		ari	19	0.12991323268402946	0.0905628317518009	-0.0430365431709071						
+mean	OS-NicheGNN	raw	consensus atlas		ari_region	19	0.09437653980641064	0.0004863559307206	-0.0452213601452892						
+mean	OS-NicheGNN	raw	consensus atlas		agreement_area	19	0.2629234903029467	0.21087000920084248	0.0						
+mean	OS-NicheGNN	raw	consensus atlas		agreement_cov90	19	0.27192264682325035	0.2056159420289855	0.0						
+mean	OS-NicheGNN	raw	consensus atlas		ari_region_cov90	19	0.0872417476374913	0.0006563905629968579	-0.057765987454634314						
+mean	OS-NicheGNN	raw	same-protocol atlas		agreement	19	0.24417945354626158	0.2414096916299559	0.0						
+mean	OS-NicheGNN	raw	same-protocol atlas		unmatched	19	0.011710899206419321	0.0	0.0						
+mean	OS-NicheGNN	raw	same-protocol atlas		ari	19	0.1293288155897374	0.1023862731045912	-0.0391801996511371						
+mean	OS-NicheGNN	raw	same-protocol atlas		ari_region	19	0.09437653980641064	0.0004863559307206	-0.0452213601452892						
+mean	OS-NicheGNN	raw	same-protocol atlas		agreement_area	19	0.23207862108851146	0.20805390320100509	0.0						
+mean	OS-NicheGNN	raw	same-protocol atlas		agreement_cov90	19	0.24249105321170958	0.2646484375	0.0						
+mean	OS-NicheGNN	raw	same-protocol atlas		ari_region_cov90	19	0.0872417476374913	0.0006563905629968579	-0.057765987454634314						
+mean	OS-NicheGNN	transductive	consensus atlas		agreement	19	0.7661369730939988	0.7594713656387665	0.5940298507462687						
+mean	OS-NicheGNN	transductive	consensus atlas		unmatched	19	0.013984226646879773	0.0032520325203252	0.0						
+mean	OS-NicheGNN	transductive	consensus atlas		ari	19	0.5973389082149428	0.560247865433125	0.3047679308862849						
+mean	OS-NicheGNN	transductive	consensus atlas		ari_region	19	0.1920964831763526	0.161959953308524	0.0046380299254773						
+mean	OS-NicheGNN	transductive	consensus atlas		agreement_area	19	0.83478921208166	0.8150059891714934	0.6683399339774855						
+mean	OS-NicheGNN	transductive	consensus atlas		agreement_cov90	19	0.7830675384743582	0.7767441860465116	0.6003316749585407						
+mean	OS-NicheGNN	transductive	consensus atlas		ari_region_cov90	19	0.1939169614617605	0.1566446362553805	0.0032391079227049755						
+mean	OS-NicheGNN	transductive	same-protocol atlas		agreement	19	0.691650017966021	0.7123448114312485	0.377962577962578						
+mean	OS-NicheGNN	transductive	same-protocol atlas		unmatched	19	0.013984226646879773	0.0032520325203252	0.0						
+mean	OS-NicheGNN	transductive	same-protocol atlas		ari	19	0.5650490715188774	0.5152883493506035	0.2515204859371527						
+mean	OS-NicheGNN	transductive	same-protocol atlas		ari_region	19	0.1920964831763526	0.161959953308524	0.0046380299254773						
+mean	OS-NicheGNN	transductive	same-protocol atlas		agreement_area	19	0.764154574791431	0.802428808512287	0.3763818376896573						
+mean	OS-NicheGNN	transductive	same-protocol atlas		agreement_cov90	19	0.7100298989216992	0.7327411167512691	0.3790879778903731						
+mean	OS-NicheGNN	transductive	same-protocol atlas		ari_region_cov90	19	0.1939169614617605	0.1566446362553805	0.0032391079227049755						
+mean	branches concatenated	inductive	same-protocol atlas		agreement	19	0.6451098424270293	0.7235696517412935	0.2454484153742414						
+mean	branches concatenated	inductive	same-protocol atlas		unmatched	19	0.38591139289885373	0.4396782841823056	0.035755478662053						
+mean	branches concatenated	inductive	same-protocol atlas		ari	19	0.3927643270408569	0.3784755618974904	0.016926542339164						
+mean	branches concatenated	inductive	same-protocol atlas		ari_region	18	0.2082739769104091	0.15129274171646911	-0.0703028237440259						
+mean	branches concatenated	inductive	same-protocol atlas		agreement_area	19	0.6586931154975451	0.715535043252272	0.24594472606933854						
+mean	branches concatenated	inductive	same-protocol atlas		agreement_cov90	19	0.6265450067639676	0.6585365853658537	0.2599483204134367						
+mean	branches concatenated	inductive	same-protocol atlas		ari_region_cov90	19	0.1632772164680977	0.16383901280161842	-0.016254601434823095						
+mean	branches concatenated	mapped	same-protocol atlas		agreement	19	0.6505638552902224	0.6643895989422653	0.3325942350332594						
+mean	branches concatenated	mapped	same-protocol atlas		unmatched	19	0.021169443217619734	0.0109649122807017	0.0						
+mean	branches concatenated	mapped	same-protocol atlas		ari	19	0.41679478170893114	0.3768357846872693	0.0866226700324298						
+mean	branches concatenated	mapped	same-protocol atlas		ari_region	19	0.1948987393471337	0.1894432928196357	-0.0183639007033837						
+mean	branches concatenated	mapped	same-protocol atlas		agreement_area	19	0.7015416785549643	0.7317969093888885	0.22179196095838966						
+mean	branches concatenated	mapped	same-protocol atlas		agreement_cov90	19	0.6624792642404013	0.6964673913043479	0.3146341463414634						
+mean	branches concatenated	mapped	same-protocol atlas		ari_region_cov90	17	0.21940032490513295	0.19574997763526017	-0.02100796300339559						
+mean	branches concatenated	raw	same-protocol atlas		agreement	19	0.1949488424914898	0.1212121212121212	0.0040322580645161						
+mean	branches concatenated	raw	same-protocol atlas		unmatched	19	0.005823222539072562	0.0	0.0						
+mean	branches concatenated	raw	same-protocol atlas		ari	19	0.06587459884752053	0.0214862475131632	-0.0529554538953407						
+mean	branches concatenated	raw	same-protocol atlas		ari_region	19	0.14286615060736893	0.0329330756513216	-0.0532660968568714						
+mean	branches concatenated	raw	same-protocol atlas		agreement_area	19	0.16935062723687092	0.1669840629933163	0.0009619583276449753						
+mean	branches concatenated	raw	same-protocol atlas		agreement_cov90	19	0.18729529587038013	0.12598425196850394	0.004470938897168405						
+mean	branches concatenated	raw	same-protocol atlas		ari_region_cov90	19	0.120143192551684	0.036678399021652236	-0.05146262852230422						
+mean	branches concatenated	transductive	same-protocol atlas		agreement	19	0.7082265063531851	0.7234611953612846	0.2906574394463668						
+mean	branches concatenated	transductive	same-protocol atlas		unmatched	19	0.012994497789880493	0.00742034046268	0.0						
+mean	branches concatenated	transductive	same-protocol atlas		ari	19	0.4934710564484601	0.5401092457838818	-0.0044313962993587						
+mean	branches concatenated	transductive	same-protocol atlas		ari_region	19	0.21202387432433173	0.1819367993877799	0.0022559721986425						
+mean	branches concatenated	transductive	same-protocol atlas		agreement_area	19	0.7774696000131651	0.8151936360303853	0.3056879335319854						
+mean	branches concatenated	transductive	same-protocol atlas		agreement_cov90	19	0.7262184704982756	0.7385365853658536	0.2987179487179487						
+mean	branches concatenated	transductive	same-protocol atlas		ari_region_cov90	18	0.23368275500908064	0.18374488997241195	0.00785888111007848						
+mean	profile + ring means	inductive	same-protocol atlas		agreement	19	0.44109445171829903	0.3754208754208754	0.0809590973201692						
+mean	profile + ring means	inductive	same-protocol atlas		unmatched	19	0.2524345921289143	0.1206434316353887	0.0003430531732418						
+mean	profile + ring means	inductive	same-protocol atlas		ari	19	0.23206146850580645	0.2719870800678766	-0.124499035178863						
+mean	profile + ring means	inductive	same-protocol atlas		ari_region	18	0.19662381040335603	0.10618471965785695	-0.08260039202541						
+mean	profile + ring means	inductive	same-protocol atlas		agreement_area	19	0.4401437733833228	0.43791127776418837	0.045741567993706614						
+mean	profile + ring means	inductive	same-protocol atlas		agreement_cov90	19	0.4436576804964469	0.38317757009345793	0.08204984598151778						
+mean	profile + ring means	inductive	same-protocol atlas		ari_region_cov90	19	0.2067739721768293	0.13232272682475402	-0.08203736154991428						
+mean	profile + ring means	mapped	same-protocol atlas		agreement	19	0.4582601268044682	0.493362831858407	0.1162123385939741						
+mean	profile + ring means	mapped	same-protocol atlas		unmatched	19	0.015680795526786483	0.006997900629811	0.0						
+mean	profile + ring means	mapped	same-protocol atlas		ari	19	0.2428613359942404	0.2163027363093286	-0.0400403997036593						
+mean	profile + ring means	mapped	same-protocol atlas		ari_region	18	0.1366967324005809	0.07174670588923066	-0.0160972148235258						
+mean	profile + ring means	mapped	same-protocol atlas		agreement_area	19	0.5178237673396037	0.5665375972651051	0.07154349612910918						
+mean	profile + ring means	mapped	same-protocol atlas		agreement_cov90	19	0.4632882434969795	0.49877750611246946	0.12023396880415944						
+mean	profile + ring means	mapped	same-protocol atlas		ari_region_cov90	16	0.1352051889397813	0.11260671148108771	-0.03362833429353292						
+mean	profile + ring means	raw	same-protocol atlas		agreement	19	0.21349966756714664	0.1903233203393717	0.0						
 mean	profile + ring means	raw	same-protocol atlas		unmatched	19	0.0	0.0	0.0						
-mean	profile + ring means	raw	same-protocol atlas		ari	19	0.02423405843562711	0.0	-0.0964989266549004						
-mean	profile + ring means	raw	same-protocol atlas		ari_region	19	0.03880684409197134	0.0223985355979895	-0.0599405996533966						
-mean	profile + ring means	raw	same-protocol atlas		agreement_area	19	0.23323949400603058	0.11468562823793275	0.0						
-mean	profile + ring means	raw	same-protocol atlas		agreement_cov90	19	0.21977569571485409	0.18066847335140018	0.0						
-mean	profile + ring means	raw	same-protocol atlas		ari_region_cov90	19	0.033147451555424076	0.003035896291776002	-0.049939550388064524						
-mean	profile + ring means	transductive	same-protocol atlas		agreement	19	0.467868584594126	0.4793536804308797	0.1285046728971962						
-mean	profile + ring means	transductive	same-protocol atlas		unmatched	19	0.02260387143917666	0.0052677787532923	0.0						
-mean	profile + ring means	transductive	same-protocol atlas		ari	19	0.33420500734892294	0.3379466943552386	0.0699804625947983						
-mean	profile + ring means	transductive	same-protocol atlas		ari_region	19	0.23738134813584003	0.1746756570019877	0.0030150582253468						
-mean	profile + ring means	transductive	same-protocol atlas		agreement_area	19	0.4695309007855782	0.48471087132874385	0.028038055362299176						
-mean	profile + ring means	transductive	same-protocol atlas		agreement_cov90	19	0.4678647324992996	0.4974645030425964	0.09147286821705426						
-mean	profile + ring means	transductive	same-protocol atlas		ari_region_cov90	18	0.2418397312865094	0.16024308183811514	0.005949214467768062						
-mean	ring-mean MLP	inductive	same-protocol atlas		agreement	19	0.6910074257943716	0.7701248385708136	0.3420870767104353						
-mean	ring-mean MLP	inductive	same-protocol atlas		unmatched	19	0.4203602129339709	0.5046316718129686	0.0288083806198166						
-mean	ring-mean MLP	inductive	same-protocol atlas		ari	19	0.4336631172769409	0.5830965668442516	0.0044346050477788						
-mean	ring-mean MLP	inductive	same-protocol atlas		ari_region	18	0.19054030683420672	0.1319927877184206	-0.0056966942046658						
-mean	ring-mean MLP	inductive	same-protocol atlas		agreement_area	19	0.6984164022744842	0.7606422797367356	0.3336310796341649						
-mean	ring-mean MLP	inductive	same-protocol atlas		agreement_cov90	19	0.6652924626756928	0.7125984251968503	0.35335379219640506						
-mean	ring-mean MLP	inductive	same-protocol atlas		ari_region_cov90	19	0.15627696554403805	0.13470840524955596	-0.0038782430441406603						
-mean	ring-mean MLP	mapped	same-protocol atlas		agreement	19	0.7009094798626299	0.7149122807017544	0.484561093956771						
-mean	ring-mean MLP	mapped	same-protocol atlas		unmatched	19	0.021090373890123405	0.0157804459691252	0.0						
-mean	ring-mean MLP	mapped	same-protocol atlas		ari	19	0.4724923398239317	0.4485404861750472	0.0409643188417914						
-mean	ring-mean MLP	mapped	same-protocol atlas		ari_region	19	0.19728870304099813	0.1801649472899057	-0.0200102621401439						
-mean	ring-mean MLP	mapped	same-protocol atlas		agreement_area	19	0.7745702094647279	0.8342542590065634	0.42083320558586274						
-mean	ring-mean MLP	mapped	same-protocol atlas		agreement_cov90	19	0.7201385055833456	0.7658536585365854	0.4770797962648557						
-mean	ring-mean MLP	mapped	same-protocol atlas		ari_region_cov90	18	0.2066430110061294	0.19714124478288406	-0.021645167774682974						
-mean	ring-mean MLP	raw	same-protocol atlas		agreement	19	0.22157113890432253	0.2313051555968416	0.0						
-mean	ring-mean MLP	raw	same-protocol atlas		unmatched	19	0.009320909268220042	0.0	0.0						
-mean	ring-mean MLP	raw	same-protocol atlas		ari	19	0.14984146098816095	0.1941375652634328	-0.0371493238946186						
-mean	ring-mean MLP	raw	same-protocol atlas		ari_region	19	0.13883459009009974	0.0301119961662432	-0.1080922554793611						
-mean	ring-mean MLP	raw	same-protocol atlas		agreement_area	19	0.20210639549050655	0.1678285602255559	0.0						
-mean	ring-mean MLP	raw	same-protocol atlas		agreement_cov90	19	0.2185362757802239	0.23916990920881973	0.0						
-mean	ring-mean MLP	raw	same-protocol atlas		ari_region_cov90	19	0.12980691119232762	0.0031706104045516725	-0.07644709999414356						
-mean	ring-mean MLP	transductive	same-protocol atlas		agreement	19	0.7441995441932342	0.8154488517745303	0.2594235033259423						
-mean	ring-mean MLP	transductive	same-protocol atlas		unmatched	19	0.012275129904445105	0.0044262853251617	0.0						
-mean	ring-mean MLP	transductive	same-protocol atlas		ari	19	0.6085282053221	0.6737920924103953	0.2784485754582862						
-mean	ring-mean MLP	transductive	same-protocol atlas		ari_region	19	0.21371480090931802	0.2119495138697656	-0.0064675912350562						
-mean	ring-mean MLP	transductive	same-protocol atlas		agreement_area	19	0.8064335487462065	0.8719035231903997	0.16330412545300232						
-mean	ring-mean MLP	transductive	same-protocol atlas		agreement_cov90	19	0.7602403040896374	0.8345679012345679	0.24146341463414633						
-mean	ring-mean MLP	transductive	same-protocol atlas		ari_region_cov90	17	0.24798625141817143	0.22507777835147405	0.007856568374768487						
-mean	spot profile	inductive	same-protocol atlas		agreement	19	0.4673779038989969	0.4908600539406653	0.1948842874543239						
-mean	spot profile	inductive	same-protocol atlas		unmatched	19	0.246736441987381	0.1544858870967742	0.0181395348837209						
-mean	spot profile	inductive	same-protocol atlas		ari	19	0.27368232399307607	0.2714355784775744	0.0052588682174788						
-mean	spot profile	inductive	same-protocol atlas		ari_region	19	0.1301568262067064	0.089212358339666	-0.0440797759857952						
-mean	spot profile	inductive	same-protocol atlas		agreement_area	19	0.46960829417198086	0.4657748216743639	0.15350477445982574						
-mean	spot profile	inductive	same-protocol atlas		agreement_cov90	19	0.48459156637132755	0.5012679628064244	0.19768934531450577						
-mean	spot profile	inductive	same-protocol atlas		ari_region_cov90	19	0.15406523692707141	0.08940270718853206	-0.045301182570616515						
-mean	spot profile	mapped	same-protocol atlas		agreement	19	0.5332747643681128	0.5436746987951807	0.277136258660508						
-mean	spot profile	mapped	same-protocol atlas		unmatched	19	0.01640750557076416	0.0105355575065847	0.0						
-mean	spot profile	mapped	same-protocol atlas		ari	19	0.3269461231008415	0.2554765989793262	0.0830013650165752						
-mean	spot profile	mapped	same-protocol atlas		ari_region	19	0.13540354452294875	0.109102869366126	0.0033908777905556						
-mean	spot profile	mapped	same-protocol atlas		agreement_area	19	0.5306351596565688	0.535162524753183	0.23017655836332254						
-mean	spot profile	mapped	same-protocol atlas		agreement_cov90	19	0.5301513645588326	0.5352898374969682	0.2705128205128205						
-mean	spot profile	mapped	same-protocol atlas		ari_region_cov90	18	0.1411142615615151	0.11279668447129713	0.007023131180697093						
-mean	spot profile	raw	same-protocol atlas		agreement	19	0.2914656535485857	0.3434535104364326	0.0047918538484576						
-mean	spot profile	raw	same-protocol atlas		unmatched	19	0.006637411366249822	0.0	0.0						
-mean	spot profile	raw	same-protocol atlas		ari	19	0.021948283542118835	0.0035581462840885	-0.0118815456494763						
-mean	spot profile	raw	same-protocol atlas		ari_region	19	0.025750312786065467	0.0	-0.0377448649064447						
-mean	spot profile	raw	same-protocol atlas		agreement_area	19	0.34506348309120155	0.4315425795107264	0.004435203515621372						
-mean	spot profile	raw	same-protocol atlas		agreement_cov90	19	0.3012204845111257	0.34109263657957245	0.004658901830282862						
-mean	spot profile	raw	same-protocol atlas		ari_region_cov90	19	0.022840344120674087	0.0	-0.05413863691357766						
-mean	spot profile	transductive	same-protocol atlas		agreement	19	0.5679701617387704	0.5701754385964912	0.2627627627627628						
-mean	spot profile	transductive	same-protocol atlas		unmatched	19	0.020431396616796	0.0067024128686327	0.0						
-mean	spot profile	transductive	same-protocol atlas		ari	19	0.38581981061736653	0.3488312359265081	0.1750125263084296						
-mean	spot profile	transductive	same-protocol atlas		ari_region	19	0.18838637862634014	0.2020280593793081	0.001084659106836						
-mean	spot profile	transductive	same-protocol atlas		agreement_area	19	0.6128976804008047	0.6053134061774373	0.22913402076197736						
-mean	spot profile	transductive	same-protocol atlas		agreement_cov90	19	0.5732525700174577	0.5706262285874755	0.25681969394544246						
-mean	spot profile	transductive	same-protocol atlas		ari_region_cov90	18	0.1992148520394156	0.20490906926259567	0.00623542072347488						
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	agreement	19				0.12685323234363627	0.06178792498159572	0.19755959758332847	15.0	4.0	0.0016937255859375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	unmatched	19				-0.005973491281002669	-0.01207120169901488	-0.0010513600738540812	5.0	13.0	0.04753061590576121
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	ari	19				0.11635895498217214	0.04939991195665429	0.19286765423797364	16.0	3.0	0.0016937255859375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	ari_region	19				0.01758091162462169	-0.02809441856974049	0.06218728409244248	13.0	6.0	0.24125289916992188
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	agreement_area	19				0.16725637717898453	0.0870873141034014	0.25151585992334563	17.0	2.0	0.001171112060546875
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	agreement_cov90	19				0.14352500013331762	0.07686974274412052	0.21556443015159385	16.0	3.0	0.000789642333984375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	ari_region_cov90	18				0.024085880837766093	-0.026761247597424064	0.07676168369097817	11.0	7.0	0.30379486083984375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	agreement	19				0.22695480948828067	0.11259096484743653	0.34190386871150424	15.0	4.0	0.0016937255859375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	unmatched	19				-0.00814596610338333	-0.01939733792049188	0.0010538329141192527	4.0	11.0	0.12515345696288432
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	ari	19				0.16797375825061564	0.08424242080555615	0.2491944486479593	17.0	2.0	0.000965118408203125
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	ari_region	19				-0.03141405788487817	-0.09070354515854424	0.024201875248689424	10.0	9.0	0.4653167724609375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	agreement_area	19				0.31062315679421093	0.17249051034052817	0.4475379734259359	16.0	3.0	0.000644683837890625
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	agreement_cov90	19				0.2489128376514757	0.1294090519412927	0.367342040128192	15.0	4.0	0.00141143798828125
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	ari_region_cov90	18				-0.0185389984093277	-0.07726169213039066	0.035845255202582214	10.0	8.0	0.8985748291015625
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	agreement	19				0.12201740219186426	-0.02956704439493671	0.2720480782473395	10.0	9.0	0.168792724609375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	unmatched	19				0.002683544139473163	-0.004149807227927071	0.010186201313677671	11.0	6.0	0.5540338584644351
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	ari	19				0.060886221753315026	-0.059329774840196275	0.17953915183517608	12.0	7.0	0.22532272338867188
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	ari_region	19				-0.0370785518275579	-0.15493402480725393	0.06521350612944309	10.0	9.0	1.0
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	agreement_area	19				0.2610240305674643	0.08093960324303248	0.43456665068589634	11.0	8.0	0.0289306640625
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	agreement_cov90	19				0.15587776547088913	-0.0030973107534435678	0.31385611510169026	10.0	9.0	0.14468765258789062
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	ari_region_cov90	18				-0.030144434219525944	-0.1559642997268158	0.08292165903495077	9.0	9.0	1.0
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	agreement	19				0.17154745744027028	0.09100325310404785	0.25073349066890843	15.0	4.0	0.000965118408203125
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	unmatched	19				0.13872921337036678	0.04835199912210856	0.23597532721220738	12.0	7.0	0.0180816650390625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	ari	19				0.10929894930869626	0.013535770467173098	0.202649260013046	12.0	7.0	0.03234100341796875
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	ari_region	18				0.05131018108316359	-0.012939770277805133	0.12737120545410544	12.0	6.0	0.22875213623046875
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	agreement_area	19				0.1628034707694326	0.07974577181901034	0.24786031752094212	15.0	4.0	0.002399444580078125
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	agreement_cov90	19				0.11289977111311844	0.04018045412553599	0.1885106596904407	14.0	5.0	0.012359619140625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	ari_region_cov90	19				0.028143681280786644	-0.01949249126938677	0.07498008758255073	12.0	7.0	0.3524589538574219
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	agreement	19				0.19526383172726905	0.038237164504236885	0.3444194715797232	12.0	7.0	0.025821685791015625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	unmatched	19				0.13390955098528207	0.03602863652325994	0.23832153084100738	15.0	4.0	0.02298736572265625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	ari	19				0.13045704549638656	0.014901243361706434	0.246044209096726	13.0	6.0	0.06628799438476562
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	ari_region	18				0.009899934885763524	-0.11521407997602377	0.13002896280567977	9.0	9.0	0.83172607421875
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	agreement_area	19				0.19635899156044348	0.040656037473621856	0.34833857096723847	12.0	7.0	0.036067962646484375
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	agreement_cov90	19				0.1635197014560362	0.03141640474590239	0.2928758695558803	12.0	7.0	0.0289306640625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	ari_region_cov90	19				-0.014233546998607188	-0.113779415045322	0.08006064331425974	10.0	8.0	0.9479148130096964
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	agreement	19				0.20576947185022867	0.05980570414227486	0.35204519309118076	14.0	5.0	0.020412445068359375
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	unmatched	19				0.31012901389390884	0.20709015330273592	0.4191312774290701	19.0	0.0	3.814697265625e-06
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	ari	19				0.13376157700684707	-0.0186944493027329	0.28211407417744216	13.0	6.0	0.12318801879882812
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	ari_region	18				-0.011233108389649171	-0.13127708894860013	0.1040398143120252	11.0	7.0	0.8985748291015625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	agreement_area	19				0.21218634506938125	0.05679576413161333	0.36409836417398617	13.0	6.0	0.02298736572265625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	agreement_cov90	19				0.16850918501708412	0.025427284933869133	0.3132225722990153	12.0	7.0	0.036067962646484375
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	ari_region_cov90	19				0.0032368188289863126	-0.11026365406804751	0.1156198614616381	11.0	7.0	0.7439495148870137
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	agreement	19				0.08207124867347705	0.01853504584007397	0.14534064815355593	14.0	5.0	0.020412445068359375
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	unmatched	19				0.004740029598601385	-0.0005785739669824133	0.01082795279085981	12.0	6.0	0.24846555845586238
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	ari	19				0.05963064657352775	-0.00951284847821343	0.12509064883641183	11.0	8.0	0.104156494140625
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	ari_region	19				0.059511418391938964	0.008447682364890923	0.11898857796970597	14.0	5.0	0.05457305908203125
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	agreement_area	19				0.15217547841633103	0.07679044401399704	0.22995164408283514	16.0	3.0	0.002399444580078125
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	agreement_cov90	19				0.09716576512422838	0.02791046077127091	0.16586048455965471	13.0	6.0	0.0180816650390625
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	ari_region_cov90	18				0.06457026332698901	0.011239052283840966	0.12660223335863063	10.0	8.0	0.11870574951171875
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	agreement	19				0.16804473797893985	0.0523663977078079	0.2772196682441097	14.0	5.0	0.01082611083984375
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	unmatched	19				-0.0028970995850426994	-0.022132194740751947	0.01372460246471986	10.0	6.0	0.46911315243545415
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	ari	19				0.14515193012648017	0.0516721227294492	0.23959159541787273	14.0	5.0	0.012359619140625
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	ari_region	19				0.06820084425816467	-0.007209328977900204	0.14882013833437607	11.0	8.0	0.14468765258789062
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	agreement_area	19				0.18305183397464614	0.05048710887127719	0.3129932717812983	14.0	5.0	0.015972137451171875
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	agreement_cov90	19				0.17575959731947044	0.050404199969484316	0.29096838635456096	13.0	6.0	0.015972137451171875
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	ari_region_cov90	16				0.0991301194970361	0.0068306962077306025	0.1963516624072028	10.0	5.0	0.060892661900952515
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	agreement	19				0.14415500907364373	0.01775313837453472	0.2766826267603671	11.0	8.0	0.07283401489257812
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	unmatched	19				-0.003867424454785154	-0.021679686143893824	0.009921933844869033	12.0	6.0	0.6474707129373445
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	ari	19				0.1598787163461415	0.037299482686345316	0.2823088301755598	12.0	7.0	0.0289306640625
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	ari_region	19				0.07083764871304286	-0.03725102584146182	0.1795544811649978	12.0	7.0	0.21011734008789062
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	agreement_area	19				0.22182900485835136	0.05843322311939025	0.3883592537690859	13.0	6.0	0.03234100341796875
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	agreement_cov90	19				0.16399522371434183	0.0277837802675826	0.3065336580041875	11.0	8.0	0.060207366943359375
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	ari_region_cov90	18				0.07874389625954241	-0.024900527247713952	0.1882509316176231	11.0	7.0	0.24620819091796875
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	agreement	19				-0.0892472045734545	-0.1878637108816364	0.019413226999512076	5.0	14.0	0.044559478759765625
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	unmatched	19				0.0009558768760801528	-0.00436794766962082	0.006042938858812728	7.0	3.0	0.4445867389117455
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	ari	19				0.09050404297448904	0.03246820473628696	0.14417859320479437	15.0	4.0	0.002838134765625
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	ari_region	19				0.06774419598245059	-0.01990444526746343	0.15694610942539416	13.0	6.0	0.08742904663085938
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	agreement_area	19				-0.1747774217792578	-0.2623640483165442	-0.08393846721080167	3.0	16.0	0.0016937255859375
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	agreement_cov90	19				-0.10952390621823378	-0.20623013074339683	-0.0032415963482232022	4.0	15.0	0.02298736572265625
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	ari_region_cov90	19				0.05752550706414998	-0.01987517322682595	0.13635884659160874	13.0	5.0	0.07776744228559361
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	agreement	19				-0.017566624185881573	-0.1213252380952932	0.08197823885611046	11.0	8.0	0.9217147827148438
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	unmatched	19				0.007593288242329974	0.002182901855684331	0.014281170095927748	8.0	0.0	0.011718685599768628
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	ari	19				0.08821826808098078	0.027484360756937855	0.1441713360074349	16.0	2.0	0.007398655365388617
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	ari_region	19				0.054687664676544706	-0.018242115519733842	0.1389992731371351	9.0	9.0	0.6164914109936318
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	agreement_area	19				-0.06295343269408674	-0.17711447029954763	0.03533354811337283	10.0	9.0	0.7982521057128906
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	agreement_cov90	19				-0.028079117421962153	-0.1354887135595391	0.0750004346294562	11.0	8.0	0.8905677795410156
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	ari_region_cov90	19				0.047218399629400006	-0.014796058415025973	0.11889946808105673	10.0	8.0	0.5861803873075235
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	agreement	19				-0.15015854222204109	-0.22151590503060337	-0.07927400418832463	4.0	15.0	0.000644683837890625
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	unmatched	19				-0.0011719091295688477	-0.007473334654061317	0.0038666416932174553	5.0	5.0	0.8784817434328712
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	ari	19				0.03892213558014132	-0.0670889245130758	0.13072840971116972	11.0	5.0	0.19610818609418723
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	ari_region	19				0.07299692747359919	-0.008156354898696238	0.16070506439152238	11.0	5.0	0.10894087157711467
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	agreement_area	19				-0.16300744501151593	-0.26222587612080017	-0.06504904143975984	5.0	14.0	0.01082611083984375
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	agreement_cov90	19				-0.15691751348580824	-0.2324961454266288	-0.08292124745584342	4.0	15.0	0.000335693359375
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	ari_region_cov90	19				0.06325412989469843	-0.010576401484407536	0.14032813987707224	11.0	5.0	0.10894087157711467
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	agreement	19				-0.05589803274313962	-0.12754805453786994	0.015795715231424888	5.0	14.0	0.156402587890625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	unmatched	19				0.3710077500219544	0.25084078180721736	0.48803747346852727	19.0	0.0	3.814697265625e-06
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	ari	19				-0.1191974922977663	-0.20268086651141048	-0.027029903316594144	6.0	13.0	0.03234100341796875
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	ari_region	18				-0.028644333020953285	-0.09021365542109086	0.034417492877612844	7.0	11.0	0.39273834228515625
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	agreement_area	19				-0.14774229263837577	-0.22336479666854508	-0.07330988503915385	4.0	15.0	0.00202178955078125
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	agreement_cov90	19				-0.11928623266632923	-0.1823210595425883	-0.06105831964839402	4.0	15.0	0.001171112060546875
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	ari_region_cov90	18				-0.031931543100555744	-0.08262702919917303	0.023156449230735336	7.0	11.0	0.18146514892578125
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	agreement	19				-0.07947738104081681	-0.14561752854871185	-0.02270395644300401	6.0	13.0	0.0180816650390625
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	unmatched	19				0.0066896298335722155	0.00209741098251724	0.011897986196220825	11.0	7.0	0.04753061590576121
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	ari	19				-0.11560199592516945	-0.19569461181028946	-0.0393628630218263	6.0	13.0	0.02298736572265625
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	ari_region	19				-0.011052327336074162	-0.06463789069834229	0.04382712429528067	7.0	12.0	0.5412178039550781
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	agreement_area	19				-0.0973434195068894	-0.16940493828047407	-0.02960100426924088	6.0	13.0	0.020412445068359375
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	agreement_cov90	19				-0.0894604404677143	-0.1578178371953195	-0.030415693303310436	6.0	13.0	0.0180816650390625
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	ari_region_cov90	18				-0.01761620798867763	-0.0708706635804952	0.03812179772926177	7.0	11.0	0.522613525390625
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	agreement	19				-0.49260494510727537	-0.570187469530021	-0.4140174876952341	0.0	19.0	3.814697265625e-06
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	unmatched	19				-0.006864617093463357	-0.013268509011613172	-0.002223935162434193	1.0	17.0	0.0018466307707454858
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	ari	19				-0.38972643908293064	-0.46809444463382915	-0.3049226664029942	1.0	18.0	7.62939453125e-06
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	ari_region	19				-0.11247278148244581	-0.19660792495464502	-0.03147697082546859	6.0	13.0	0.025821685791015625
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	agreement_area	19				-0.6098679962678454	-0.6877158172798713	-0.5311549346655509	0.0	19.0	3.814697265625e-06
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	agreement_cov90	19				-0.5250809918578834	-0.6032193578638234	-0.445560040313839	0.0	19.0	3.814697265625e-06
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	ari_region_cov90	18				-0.13887093905808567	-0.21927427388362264	-0.0636328821598714	4.0	14.0	0.0028076171875
-paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	agreement	19				0.06589686046911605	0.04147629623355918	0.08941618781476733	16.0	3.0	0.000335693359375
-paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	unmatched	19				-0.23032893641661675	-0.3159758755128573	-0.14983297745420188	0.0	19.0	3.814697265625e-06
-paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	ari	19				0.05326379910776537	0.022639842624081027	0.08475553286157358	12.0	7.0	0.01082611083984375
-paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	ari_region	19				0.005246718316242329	-0.021252540680405517	0.032253757475920165	10.0	9.0	0.7982521057128906
-paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	agreement_area	19				0.06102686548458795	0.03465188624846699	0.08589637608289168	16.0	3.0	0.00026702880859375
-paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	agreement_cov90	19				0.045559798187505	0.020539371737932945	0.06994190335334131	14.0	5.0	0.00823211669921875
-paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	ari_region_cov90	18				-0.021269006777703794	-0.05813645676118588	0.014988626746639517	8.0	10.0	0.44229888916015625
-paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	agreement	19				0.00363974545065204	-0.07506976303597529	0.06743197807345698	11.0	8.0	0.5677604675292969
-paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	unmatched	19				-0.2275114696180574	-0.3483696498167518	-0.12322354820153826	0.0	19.0	3.814697265625e-06
-paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	ari	19				-0.011099388257496692	-0.075386755486655	0.05072359404997502	8.0	10.0	0.9133009306692093
-paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	ari_region	19				-0.04291778369571538	-0.10789437767232342	0.01910055491909513	7.0	11.0	0.28597919066405664
-paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	agreement_area	19				0.06370603071728373	-0.02091907830432758	0.12997049485089043	14.0	5.0	0.015972137451171875
-paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	agreement_cov90	19				0.01758589633518072	-0.06242867112561659	0.0810786947393011	13.0	6.0	0.11337661743164062
-paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	ari_region_cov90	16				-0.09965744344001402	-0.16517791282691596	-0.04145838687421688	3.0	12.0	0.010593539088689496
-paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	agreement	19				0.0380351144789078	-0.03209314450449541	0.10206118470735502	14.0	5.0	0.060207366943359375
-paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	unmatched	19				-0.050321681839688236	-0.10100911549522262	-0.0059247277082222155	4.0	10.0	0.1094211588192293
-paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	ari	19				-0.02252164296669761	-0.14457361514427391	0.0843133818212746	12.0	7.0	0.7380905151367188
-paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	ari_region	19				-0.06591736916638641	-0.15659921833180343	0.013038835228440978	4.0	15.0	0.09551239013671875
-paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	agreement_area	19				0.0407562133425162	-0.021916610607099	0.1114177724106596	10.0	9.0	0.5677604675292969
-paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	agreement_cov90	19				0.034339753501357206	-0.03492065702131542	0.1052630065587915	13.0	6.0	0.08742904663085938
-paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	ari_region_cov90	19				-0.058809765641172775	-0.14464904115101193	0.01579231663343223	7.0	11.0	0.17011443450093033
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement	19				-0.0493761501108274	-0.10883444865241443	0.020250629859026703	4.0	15.0	0.03234100341796875
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	ring-mean MLP (transductive)	unmatched	19				0.0021827754313482263	-0.002884736062622494	0.008361078920505777	9.0	8.0	0.7225627705707576
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari	19				-0.1063494397225613	-0.16684184508149225	-0.04484983150350565	4.0	15.0	0.005329132080078125
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region	19				-0.007747510658356139	-0.0352078475742153	0.018970577141694932	10.0	9.0	0.5677604675292969
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_area	19				-0.026279491166417417	-0.10768545439412681	0.06663962734350207	7.0	12.0	0.168792724609375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_cov90	19				-0.043462733938862116	-0.10735828571815405	0.03130179958202261	5.0	14.0	0.060207366943359375
-paired_difference	OS-NicheGNN	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region_cov90	17				-0.012476441911362147	-0.04306664824743612	0.017420019508246315	9.0	8.0	0.4037628173828125
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement	19				-0.05208206445510451	-0.12243174085552658	0.013607320177636582	8.0	11.0	0.2934989929199219
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	ring-mean MLP (inductive)	unmatched	19				-0.03489455757622314	-0.10487880948473852	0.032072764602724395	8.0	11.0	0.3524589538574219
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari	19				-0.05068184397516865	-0.12298935314498623	0.022107013102460122	7.0	12.0	0.2934989929199219
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region	18				-0.0019612544207099425	-0.050493449184187356	0.0519141985423461	8.0	10.0	0.7660293579101562
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_area	19				-0.06600463733307085	-0.13308930550934925	-0.0029907597873724255	7.0	12.0	0.09551239013671875
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_cov90	19				-0.06780112519124681	-0.12374186597795495	-0.012578474478654292	5.0	14.0	0.036067962646484375
-paired_difference	OS-NicheGNN	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region_cov90	19				0.02593195266382002	-0.011266356507515507	0.06311387126410178	12.0	7.0	0.18186569213867188
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement	19				-0.08556346682104	-0.11595415179721998	-0.05683535057401715	3.0	16.0	5.340576171875e-05
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	ring-mean MLP (mapped)	unmatched	19				5.716127924214213e-05	-0.005700460710458714	0.005620625573698657	8.0	8.0	0.9587607499379828
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari	19				-0.08591557014956253	-0.12787931034146408	-0.04241320988820909	4.0	15.0	0.001171112060546875
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region	19				-0.002373740126110462	-0.026625808517447242	0.02192958613697414	9.0	10.0	0.8287849426269531
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_area	19				-0.09175957139182815	-0.13722082565863622	-0.04468040814769026	1.0	18.0	0.000644683837890625
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_cov90	19				-0.09282137590028468	-0.12656407354936391	-0.06088395186795396	2.0	17.0	3.814697265625e-05
-paired_difference	OS-NicheGNN	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region_cov90	18				-0.0009584861176253006	-0.03137575960759236	0.028938577212247036	9.0	9.0	0.9661178588867188
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	ring-mean MLP (raw)	agreement	19				-0.019352689929191303	-0.08732381433280552	0.03252733404609903	11.0	8.0	0.8287849426269531
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	ring-mean MLP (raw)	unmatched	19				-0.0017276210258900682	-0.006107107868493059	0.0015654390506998368	4.0	3.0	0.8657723749926214
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	ring-mean MLP (raw)	ari	19				-0.037389134471553044	-0.09985029645790879	0.026742129281825677	7.0	12.0	0.25792694091796875
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region	19				-0.0453400813215837	-0.1467018156408169	0.045959969264501806	8.0	11.0	0.3320655822753906
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_area	19				-0.03182033417856271	-0.12396585905436829	0.04801522581758962	8.0	11.0	0.9217147827148438
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_cov90	19				-0.026839697487331983	-0.10086614269731513	0.029615409356945916	11.0	8.0	0.9843215942382812
-paired_difference	OS-NicheGNN	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region_cov90	19				-0.049441060007503534	-0.1458930952774406	0.030753072701502328	8.0	11.0	0.37359619140625
+mean	profile + ring means	raw	same-protocol atlas		ari	19	0.04295259999826942	0.0112332830147455	-0.0964989266549004						
+mean	profile + ring means	raw	same-protocol atlas		ari_region	19	0.039390639704362046	0.0260694198512044	-0.0599405996533966						
+mean	profile + ring means	raw	same-protocol atlas		agreement_area	19	0.2264906692284479	0.09216750526778109	0.0						
+mean	profile + ring means	raw	same-protocol atlas		agreement_cov90	19	0.21390665825420524	0.18066847335140018	0.0						
+mean	profile + ring means	raw	same-protocol atlas		ari_region_cov90	19	0.0333908107107367	0.020525255456243258	-0.049939550388064524						
+mean	profile + ring means	transductive	same-protocol atlas		agreement	19	0.46425950658066223	0.5	0.1285046728971962						
+mean	profile + ring means	transductive	same-protocol atlas		unmatched	19	0.017234826348663922	0.0046511627906976	0.0						
+mean	profile + ring means	transductive	same-protocol atlas		ari	19	0.33928864031377737	0.3316813513737356	0.0701476000756956						
+mean	profile + ring means	transductive	same-protocol atlas		ari_region	19	0.23757511039679816	0.1741458216320182	0.0042079679817918						
+mean	profile + ring means	transductive	same-protocol atlas		agreement_area	19	0.45316486260256394	0.4751302361758776	0.028038055362299176						
+mean	profile + ring means	transductive	same-protocol atlas		agreement_cov90	19	0.4643564388341026	0.4974645030425964	0.09147286821705426						
+mean	profile + ring means	transductive	same-protocol atlas		ari_region_cov90	18	0.242946423203442	0.17417548003134464	0.007115306715511017						
+mean	single fusion expert	inductive	same-protocol atlas		agreement	19	0.6333828531303848	0.7839335180055401	0.0253164556962025						
+mean	single fusion expert	inductive	same-protocol atlas		unmatched	19	0.3019741281933834	0.2439516129032258	0.018769096464426						
+mean	single fusion expert	inductive	same-protocol atlas		ari	19	0.40946665200636023	0.4493100399167423	0.0015699848499105						
+mean	single fusion expert	inductive	same-protocol atlas		ari_region	19	0.1734458238493178	0.1419343427317936	-0.0142459336919236						
+mean	single fusion expert	inductive	same-protocol atlas		agreement_area	19	0.6421666947994845	0.810985110924784	0.0438890961288636						
+mean	single fusion expert	inductive	same-protocol atlas		agreement_cov90	19	0.6232744361880438	0.7682926829268293	0.09388971684053651						
+mean	single fusion expert	inductive	same-protocol atlas		ari_region_cov90	19	0.16164072639987345	0.14590941906231697	-0.002233912065040567						
+mean	single fusion expert	mapped	same-protocol atlas		agreement	19	0.6668810562974036	0.7171052631578947	0.1758389261744966						
+mean	single fusion expert	mapped	same-protocol atlas		unmatched	19	0.01695607536841678	0.0048780487804878	0.0						
+mean	single fusion expert	mapped	same-protocol atlas		ari	19	0.45592886788211884	0.4226764510156043	0.0613649184305299						
+mean	single fusion expert	mapped	same-protocol atlas		ari_region	19	0.17260330337845137	0.1440090289501866	-0.0114851361518238						
+mean	single fusion expert	mapped	same-protocol atlas		agreement_area	19	0.7132044621879757	0.8120889001097755	0.057292119617924686						
+mean	single fusion expert	mapped	same-protocol atlas		agreement_cov90	19	0.6765379040398901	0.7560975609756098	0.12816691505216096						
+mean	single fusion expert	mapped	same-protocol atlas		ari_region_cov90	18	0.18240891326081005	0.1353110512554429	-0.003140478945916001						
+mean	single fusion expert	raw	same-protocol atlas		agreement	19	0.27554823989454996	0.2184908789386401	0.0						
+mean	single fusion expert	raw	same-protocol atlas		unmatched	19	0.007087492792959274	0.0	0.0						
+mean	single fusion expert	raw	same-protocol atlas		ari	19	0.18066672391957425	0.1453622043376324	-0.0627522936949777						
+mean	single fusion expert	raw	same-protocol atlas		ari_region	19	0.1703503038097022	0.0468947642699752	-0.0404126157999532						
+mean	single fusion expert	raw	same-protocol atlas		agreement_area	19	0.2632459218216213	0.22052493712898272	0.0						
+mean	single fusion expert	raw	same-protocol atlas		agreement_cov90	19	0.2711137382762252	0.23813910640257946	0.0						
+mean	single fusion expert	raw	same-protocol atlas		ari_region_cov90	19	0.1420905275585528	0.03896024309107703	-0.0475875859530772						
+mean	single fusion expert	transductive	same-protocol atlas		agreement	19	0.804169007201597	0.7960526315789473	0.6039076376554174						
+mean	single fusion expert	transductive	same-protocol atlas		unmatched	19	0.010888437766892753	0.0019642077695329	0.0						
+mean	single fusion expert	transductive	same-protocol atlas		ari	19	0.6084840905126372	0.5567701405372294	0.2026735640428827						
+mean	single fusion expert	transductive	same-protocol atlas		ari_region	19	0.20074534235891395	0.2102653388602687	0.0034747377340161						
+mean	single fusion expert	transductive	same-protocol atlas		agreement_area	19	0.8658457058696861	0.8843588592327853	0.7280728862788448						
+mean	single fusion expert	transductive	same-protocol atlas		agreement_cov90	19	0.8222382380600299	0.830671989354624	0.6240157480314961						
+mean	single fusion expert	transductive	same-protocol atlas		ari_region_cov90	18	0.2151453465013522	0.22714163826674622	0.010066022923117797						
+mean	spot profile	inductive	same-protocol atlas		agreement	19	0.4463311736565309	0.4811320754716981	0.2077764277035237						
+mean	spot profile	inductive	same-protocol atlas		unmatched	19	0.24687704056233145	0.1544858870967742	0.0181395348837209						
+mean	spot profile	inductive	same-protocol atlas		ari	19	0.2602281014183095	0.2483326873700892	0.0052588682174788						
+mean	spot profile	inductive	same-protocol atlas		ari_region	19	0.12037520203316547	0.0469164813525215	-0.0440797759857952						
+mean	spot profile	inductive	same-protocol atlas		agreement_area	19	0.4479453450539558	0.45188564227638117	0.16301313852722546						
+mean	spot profile	inductive	same-protocol atlas		agreement_cov90	19	0.46859132517825886	0.48034934497816595	0.2079589216944801						
+mean	spot profile	inductive	same-protocol atlas		ari_region_cov90	19	0.1464064302626343	0.08940270718853206	-0.045301182570616515						
+mean	spot profile	mapped	same-protocol atlas		agreement	19	0.5177081419910398	0.5232256543268097	0.2759815242494226						
+mean	spot profile	mapped	same-protocol atlas		unmatched	19	0.01650759775702503	0.0096575943810359	0.0						
+mean	spot profile	mapped	same-protocol atlas		ari	19	0.31725302957697205	0.2554765989793262	0.0830013650165752						
+mean	spot profile	mapped	same-protocol atlas		ari_region	19	0.12923313402330022	0.109102869366126	0.0022027250697551						
+mean	spot profile	mapped	same-protocol atlas		agreement_area	19	0.5141526957521121	0.4972504480165636	0.2574046061698152						
+mean	spot profile	mapped	same-protocol atlas		agreement_cov90	19	0.5141315080338272	0.5152290760174046	0.26794871794871794						
+mean	spot profile	mapped	same-protocol atlas		ari_region_cov90	18	0.13483488863540133	0.11279668447129713	0.0038448986159867866						
+mean	spot profile	raw	same-protocol atlas		agreement	19	0.2921126717186412	0.354515050167224	0.0047918538484576						
+mean	spot profile	raw	same-protocol atlas		unmatched	19	0.006954306653055642	0.0	0.0						
+mean	spot profile	raw	same-protocol atlas		ari	19	0.02403415727418766	0.0111008053766282	-0.0118815456494763						
+mean	spot profile	raw	same-protocol atlas		ari_region	19	0.0518423624578161	0.0041807046604985	-0.0377448649064447						
+mean	spot profile	raw	same-protocol atlas		agreement_area	19	0.34522831900984263	0.43915225198397384	0.004435203515621372						
+mean	spot profile	raw	same-protocol atlas		agreement_cov90	19	0.3017326639268155	0.34109263657957245	0.004658901830282862						
+mean	spot profile	raw	same-protocol atlas		ari_region_cov90	19	0.03611707860428449	0.0	-0.04998751680174274						
+mean	spot profile	transductive	same-protocol atlas		agreement	19	0.5576789039884373	0.567715102677411	0.2708708708708708						
+mean	spot profile	transductive	same-protocol atlas		unmatched	19	0.021826355300120698	0.0067024128686327	0.0						
+mean	spot profile	transductive	same-protocol atlas		ari	19	0.3872267134347685	0.356113211149388	0.2039334236493314						
+mean	spot profile	transductive	same-protocol atlas		ari_region	19	0.18937248999712367	0.1923525020538959	0.001160706055318						
+mean	spot profile	transductive	same-protocol atlas		agreement_area	19	0.6038930284503231	0.6058928379353116	0.24039141061713024						
+mean	spot profile	transductive	same-protocol atlas		agreement_cov90	19	0.5633086035973703	0.5695090439276486	0.2631403858948769						
+mean	spot profile	transductive	same-protocol atlas		ari_region_cov90	18	0.2003110652589212	0.2027147278098645	0.004572845708579741						
+mean	without the attention branch	inductive	same-protocol atlas		agreement	19	0.7092271541691865	0.741472658364916	0.4231678486997636						
+mean	without the attention branch	inductive	same-protocol atlas		unmatched	19	0.4258334796751442	0.4329758713136729	0.0281437125748503						
+mean	without the attention branch	inductive	same-protocol atlas		ari	19	0.43834565065941117	0.485836495258685	-0.0384634002355581						
+mean	without the attention branch	inductive	same-protocol atlas		ari_region	18	0.16095101226126565	0.08350417099450486	-0.0284070007541992						
+mean	without the attention branch	inductive	same-protocol atlas		agreement_area	19	0.7075768974021168	0.749044212881026	0.37786176114976594						
+mean	without the attention branch	inductive	same-protocol atlas		agreement_cov90	19	0.6630675333673478	0.7121951219512195	0.2758389261744966						
+mean	without the attention branch	inductive	same-protocol atlas		ari_region_cov90	19	0.14590095837413375	0.08339595771461653	-0.024901045916728475						
+mean	without the attention branch	mapped	same-protocol atlas		agreement	19	0.7147680396060151	0.7456140350877193	0.4253731343283582						
+mean	without the attention branch	mapped	same-protocol atlas		unmatched	19	0.019262454697350467	0.0097560975609756	0.0						
+mean	without the attention branch	mapped	same-protocol atlas		ari	19	0.4728964068336577	0.4384196827634133	0.0863550744915469						
+mean	without the attention branch	mapped	same-protocol atlas		ari_region	19	0.20959573963616948	0.2035932304084201	-0.0073457094617559						
+mean	without the attention branch	mapped	same-protocol atlas		agreement_area	19	0.7875820243783944	0.8177821807755274	0.4874187928419862						
+mean	without the attention branch	mapped	same-protocol atlas		agreement_cov90	19	0.7265595431491596	0.7658536585365854	0.40630182421227196						
+mean	without the attention branch	mapped	same-protocol atlas		ari_region_cov90	18	0.22132215348541961	0.20311065915668886	-0.01132204577309597						
+mean	without the attention branch	raw	same-protocol atlas		agreement	19	0.27481661775763094	0.2481481481481481	0.0						
+mean	without the attention branch	raw	same-protocol atlas		unmatched	19	0.00873181070256983	0.0	0.0						
+mean	without the attention branch	raw	same-protocol atlas		ari	19	0.10615514595220503	0.1012929462491843	-0.0688693370080105						
+mean	without the attention branch	raw	same-protocol atlas		ari_region	19	0.07151363898823637	0.0027299085997859	-0.0909171438308973						
+mean	without the attention branch	raw	same-protocol atlas		agreement_area	19	0.26522186540754455	0.2594681229854172	0.0						
+mean	without the attention branch	raw	same-protocol atlas		agreement_cov90	19	0.26940540544414215	0.26693227091633465	0.0						
+mean	without the attention branch	raw	same-protocol atlas		ari_region_cov90	19	0.05920762947304648	0.0022706272879674866	-0.060069717156655364						
+mean	without the attention branch	transductive	same-protocol atlas		agreement	19	0.7195075032548784	0.7724444444444445	0.3713956170703575						
+mean	without the attention branch	transductive	same-protocol atlas		unmatched	19	0.01413133844908375	0.0043859649122807	0.0						
+mean	without the attention branch	transductive	same-protocol atlas		ari	19	0.57832651097158	0.5623870097931566	0.2530603920668446						
+mean	without the attention branch	transductive	same-protocol atlas		ari_region	19	0.21999791109693	0.2044504035375852	0.0082244277092293						
+mean	without the attention branch	transductive	same-protocol atlas		agreement_area	19	0.789159906414849	0.8089715092414151	0.30709221589840835						
+mean	without the attention branch	transductive	same-protocol atlas		agreement_cov90	19	0.7319616956176364	0.7644183773216031	0.3564102564102564						
+mean	without the attention branch	transductive	same-protocol atlas		ari_region_cov90	18	0.23386860528932185	0.21777802927105389	0.010065584925525752						
+mean	without the ring-mean branch	inductive	same-protocol atlas		agreement	19	0.5878369535227642	0.6548621190130625	0.1914191419141914						
+mean	without the ring-mean branch	inductive	same-protocol atlas		unmatched	19	0.37566689872475606	0.3898535921007831	0.0223880597014925						
+mean	without the ring-mean branch	inductive	same-protocol atlas		ari	19	0.3452015680812864	0.3087044844592345	-0.0198797132045323						
+mean	without the ring-mean branch	inductive	same-protocol atlas		ari_region	19	0.1579927922289483	0.0516781811047621	-0.0036756628610201						
+mean	without the ring-mean branch	inductive	same-protocol atlas		agreement_area	19	0.5993467155403541	0.6472830172601858	0.1407540544609656						
+mean	without the ring-mean branch	inductive	same-protocol atlas		agreement_cov90	19	0.5819323138450453	0.6325959827103992	0.19615384615384615						
+mean	without the ring-mean branch	inductive	same-protocol atlas		ari_region_cov90	19	0.15660493261873584	0.11045652494426773	-0.004575252907158573						
+mean	without the ring-mean branch	mapped	same-protocol atlas		agreement	19	0.6413610606711916	0.6742957746478874	0.259515570934256						
+mean	without the ring-mean branch	mapped	same-protocol atlas		unmatched	19	0.015878798416571013	0.0046511627906976	0.0						
+mean	without the ring-mean branch	mapped	same-protocol atlas		ari	19	0.39558112232153725	0.4302964052487727	0.0490477290822027						
+mean	without the ring-mean branch	mapped	same-protocol atlas		ari_region	19	0.18286482406474086	0.1264301439505474	-0.0208482578003028						
+mean	without the ring-mean branch	mapped	same-protocol atlas		agreement_area	19	0.6897312122477018	0.7116070692714788	0.19776949536918007						
+mean	without the ring-mean branch	mapped	same-protocol atlas		agreement_cov90	19	0.6527935088080086	0.6704655674102813	0.25384615384615383						
+mean	without the ring-mean branch	mapped	same-protocol atlas		ari_region_cov90	18	0.19726246246610674	0.12984873072509262	-0.02522365424459383						
+mean	without the ring-mean branch	raw	same-protocol atlas		agreement	19	0.24631987937741548	0.223567768979972	0.0						
+mean	without the ring-mean branch	raw	same-protocol atlas		unmatched	19	0.007533164578509636	0.0	0.0						
+mean	without the ring-mean branch	raw	same-protocol atlas		ari	19	0.11104784996240649	0.0604219174809316	-0.1333220475887844						
+mean	without the ring-mean branch	raw	same-protocol atlas		ari_region	19	0.08724661143479255	0.0009973013416656	-0.1080296160305682						
+mean	without the ring-mean branch	raw	same-protocol atlas		agreement_area	19	0.19946646732769566	0.14673524511264782	0.0						
+mean	without the ring-mean branch	raw	same-protocol atlas		agreement_cov90	19	0.23638160615322232	0.20516795865633075	0.0						
+mean	without the ring-mean branch	raw	same-protocol atlas		ari_region_cov90	19	0.07597531771831335	0.0	-0.07935202135833751						
+mean	without the ring-mean branch	transductive	same-protocol atlas		agreement	19	0.671582358346578	0.7110362257792755	0.2868470149253731						
+mean	without the ring-mean branch	transductive	same-protocol atlas		unmatched	19	0.013125676000531827	0.0033167495854063	0.0						
+mean	without the ring-mean branch	transductive	same-protocol atlas		ari	19	0.5331884191310066	0.5385881843117251	0.1478801445080221						
+mean	without the ring-mean branch	transductive	same-protocol atlas		ari_region	19	0.20575308157773606	0.2034119597971542	0.0056731769990748						
+mean	without the ring-mean branch	transductive	same-protocol atlas		agreement_area	19	0.7202925600148777	0.8204392117676205	0.21615001081971097						
+mean	without the ring-mean branch	transductive	same-protocol atlas		agreement_cov90	19	0.6858155521988288	0.7319109461966605	0.25478036175710594						
+mean	without the ring-mean branch	transductive	same-protocol atlas		ari_region_cov90	17	0.23812338555770984	0.24063019381011297	0.012625970897830815						
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	agreement	19				0.1339711139775836	0.06762049305380298	0.20522787672522544	15.0	4.0	0.0016937255859375
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	unmatched	19				-0.007842128653240925	-0.015116225281404088	-0.0016755030599211477	3.0	15.0	0.010843698055191907
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	ari	19				0.17782235808410887	0.11142255337817217	0.24661451715648586	18.0	1.0	0.000335693359375
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	ari_region	19				0.002723993179228911	-0.034791194167802714	0.03822698749251469	13.0	6.0	0.4180412292480469
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	agreement_area	19				0.16026154634110806	0.07549292969216546	0.2508729519974646	16.0	3.0	0.0033416748046875
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	agreement_cov90	19				0.14672129532432884	0.07501851366332352	0.22294908360042986	15.0	4.0	0.0016937255859375
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	spot profile (transductive)	ari_region_cov90	18				0.004199110288342384	-0.036805019526382786	0.04380144328600707	11.0	7.0	0.6396942138671875
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	agreement	19				0.22739051138535865	0.11092099951084951	0.3417739891426982	14.0	5.0	0.0033416748046875
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	unmatched	19				-0.003250599701784152	-0.008936594002900575	0.0018628417450819166	8.0	10.0	0.3719737719646685
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	ari	19				0.22576043120509992	0.1462357162215432	0.3042065375948257	17.0	2.0	7.2479248046875e-05
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	ari_region	19				-0.04547862722044558	-0.10906646278230187	0.012124281099382567	8.0	11.0	0.21011734008789062
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	agreement_area	19				0.31098971218886706	0.18147023799626208	0.4400090957711966	15.0	4.0	0.000164031982421875
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	agreement_cov90	19				0.2456734600875965	0.12396568846524374	0.3651927050057094	16.0	3.0	0.000965118408203125
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	profile + ring means (transductive)	ari_region_cov90	18				-0.03843624765617842	-0.1026485965821023	0.0192204112028866	8.0	10.0	0.32472991943359375
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	agreement	19				0.10973792268676626	-0.03563474866219411	0.2584407700347647	10.0	9.0	0.2934989929199219
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	unmatched	19				0.0022098654505596053	-0.006347620279404697	0.013517088131035311	6.0	10.0	0.5014474714870738
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	ari	19				0.15082141943439747	0.027034757517849773	0.274544069988179	15.0	4.0	0.0289306640625
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	ari_region	19				-0.041219446851639176	-0.16276641619327745	0.06683959683181183	12.0	7.0	0.9529838562011719
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	agreement_area	19				0.22464440788040066	0.03973796826781175	0.4031331610618168	12.0	7.0	0.044559478759765625
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	agreement_cov90	19				0.13652141972458628	-0.018673642271110773	0.2926878136911966	11.0	8.0	0.21011734008789062
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	BANKSY-20 (transductive)	ari_region_cov90	18				-0.038326224621794025	-0.16874783041404648	0.08058375560074434	11.0	7.0	0.9661178588867188
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	agreement	19				0.22113470260357188	0.13128393651585749	0.30941701969852387	16.0	3.0	0.00041961669921875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	unmatched	19				0.1311326869150239	0.0691849849188442	0.19681103904294078	15.0	4.0	0.00141143798828125
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	ari	19				0.1275339197220542	0.034775804777194906	0.2184613889301144	13.0	6.0	0.025821685791015625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	ari_region	18				0.08475962483660472	0.01027055656900011	0.1697985104773072	10.0	8.0	0.12973785400390625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	agreement_area	19				0.23797913285261085	0.14358439674452772	0.33048218603159046	15.0	4.0	0.00041961669921875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	agreement_cov90	19				0.17650299467909047	0.09444673490377335	0.2576845225523274	15.0	4.0	0.0016937255859375
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	spot profile (inductive)	ari_region_cov90	19				0.04702855113970252	-0.01039054492160507	0.11722496490790013	10.0	9.0	0.3954620361328125
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	agreement	19				0.2263714245418038	0.08147227534275475	0.36502244603246187	14.0	5.0	0.015972137451171875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	unmatched	19				0.12557513534844114	0.0472296969510096	0.20500031301801472	14.0	5.0	0.00823211669921875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	ari	19				0.15570055263455723	0.03363545593391247	0.2739006920063248	14.0	5.0	0.02298736572265625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	ari_region	18				0.01512729845699087	-0.0899436756294007	0.11685562803376558	10.0	8.0	0.6396942138671875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	agreement_area	19				0.24578070452324394	0.10086437741310499	0.38637377394408895	14.0	5.0	0.003917694091796875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	agreement_cov90	19				0.2014366393609024	0.06591438215037214	0.32853149528830383	14.0	5.0	0.012359619140625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	profile + ring means (inductive)	ari_region_cov90	19				-0.013338990774492483	-0.09248140766364939	0.06138268584107396	9.0	10.0	0.8905677795410156
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	agreement	19				0.20584101640472732	0.041193338285369877	0.36397405401839467	12.0	7.0	0.03234100341796875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	unmatched	19				0.3027759292472048	0.2070138468402238	0.40929530120035373	19.0	0.0	3.814697265625e-06
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	ari	19				0.11865977588226431	-0.033559088066490265	0.2672770906693282	11.0	8.0	0.14468765258789062
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	ari_region	18				0.011297753259814525	-0.0949957272830434	0.11755208293748035	10.0	8.0	0.7337265014648438
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	agreement_area	19				0.2342247729821915	0.06590862069816772	0.39673876239526346	13.0	6.0	0.02298736572265625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	agreement_cov90	19				0.18647959085228472	0.029066517548747842	0.34186428011438774	12.0	7.0	0.060207366943359375
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	BANKSY-20 (inductive)	ari_region_cov90	19				0.014074232047644963	-0.0879111150717456	0.11336561786153382	11.0	8.0	0.6794281005859375
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	agreement	19				0.16257704687268462	0.0887324834646992	0.2362765953990309	16.0	3.0	0.000965118408203125
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	unmatched	19				0.01213124859722094	0.0019426412518591903	0.023847304909496058	8.0	8.0	0.19610818609418723
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	ari	19				0.1465743709145923	0.06395790920995786	0.22595259760668782	15.0	4.0	0.005329132080078125
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	ari_region	19				0.05703012497578919	0.019582769898065233	0.09421377197634033	14.0	5.0	0.00945281982421875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	agreement_area	19				0.2567858564363896	0.17548974503638748	0.3351238093235404	17.0	2.0	7.2479248046875e-05
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	agreement_cov90	19				0.18626523120969393	0.10804383470684355	0.2610685848893792	16.0	3.0	0.000789642333984375
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	spot profile (mapped)	ari_region_cov90	18				0.06011703492184793	0.018147505464259535	0.10128043906189753	13.0	5.0	0.02367401123046875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	agreement	19				0.2220250620592562	0.09332896173643902	0.3379280281976534	16.0	3.0	0.0033416748046875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	unmatched	19				0.012958050827459483	-0.002290692931424936	0.033509119372171776	11.0	5.0	0.19610818609418723
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	ari	19				0.22096606449732398	0.11826922934802243	0.3166664189452022	17.0	2.0	0.000789642333984375
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	ari_region	18				0.05969262445349493	-0.005058835191954359	0.11928631889146736	13.0	5.0	0.0736846923828125
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	agreement_area	19				0.2531147848488982	0.11193461463836686	0.383226417638507	16.0	3.0	0.0016937255859375
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	agreement_cov90	19				0.23710849574654178	0.10159342618137357	0.3566876948188234	17.0	2.0	0.002838134765625
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	profile + ring means (mapped)	ari_region_cov90	16				0.08192389615722281	0.006910652639073313	0.15058041358244761	11.0	5.0	0.0506591796875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	agreement	19				0.18315143834717756	0.054417199579474336	0.3231562278178415	12.0	7.0	0.049365997314453125
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	unmatched	19				0.0036640285354450726	-0.01154538775072539	0.019948114811793153	9.0	7.0	0.6791156892928161
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	ari	19				0.22620178229012763	0.10541899898269436	0.35198036280949274	14.0	5.0	0.0033416748046875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	ari_region	19				0.06093717723275058	-0.04103390595060723	0.15681500280830668	13.0	6.0	0.168792724609375
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	agreement_area	19				0.2910524470268131	0.13493741347270116	0.4552248331273017	15.0	4.0	0.00457763671875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	agreement_cov90	19				0.20987728011636073	0.07235924654606977	0.3552258555384425	13.0	6.0	0.03234100341796875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	BANKSY-20 (mapped)	ari_region_cov90	18				0.06729957088491696	-0.02663783521109229	0.16185725771491394	12.0	6.0	0.19638824462890625
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	agreement	19				-0.04793321817237959	-0.14659514853046335	0.06132619794656583	7.0	12.0	0.24125289916992188
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	unmatched	19				0.004756592553363679	-0.004186289057795959	0.01483298296841367	6.0	3.0	0.26039294361048326
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	ari	19				0.10529465831554978	0.048081123455364014	0.16724107633095425	11.0	6.0	0.016822040672875557
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	ari_region	19				0.042534177348594535	-0.02442971782009769	0.11236955000082816	9.0	8.0	0.40743445607773554
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	agreement_area	19				-0.11314969792133116	-0.20713020215455752	-0.01785446431046229	5.0	14.0	0.05457305908203125
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	agreement_cov90	19				-0.059241610715105975	-0.15739255982590525	0.04758545410230436	5.0	14.0	0.14468765258789062
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	spot profile (raw)	ari_region_cov90	19				0.05112466903320682	-0.0032701923962278035	0.11033865144222417	9.0	8.0	0.3559586988465746
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	agreement	19				0.03067978597911496	-0.08441236606998874	0.14223639626285312	11.0	8.0	0.3954620361328125
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	unmatched	19				0.011710899206419321	0.002514777938854583	0.023979883261534433	7.0	0.0	0.017960477526078766
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	ari	19				0.086376215591468	0.0037687286153658176	0.17311066940677358	11.0	6.0	0.06837655952437323
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	ari_region	19				0.054985900102048596	-0.01395111251904512	0.14147762986515103	8.0	9.0	0.6191537066890378
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	agreement_area	19				0.0055879518600635385	-0.1305049782664908	0.13336832266944346	10.0	9.0	0.8595733642578125
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	agreement_cov90	19				0.02858439495750434	-0.09237582688429226	0.14337600018685676	11.0	8.0	0.48996734619140625
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	profile + ring means (raw)	ari_region_cov90	19				0.05385093692675459	-0.010883949117106505	0.1359944909963786	8.0	9.0	0.5861743444807836
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	agreement	19				-0.10819753765091077	-0.17916698808988718	-0.03257720219091314	5.0	14.0	0.014068603515625
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	unmatched	19				0.0029457018345205002	-0.0018450608795912166	0.009731131311803167	4.0	5.0	0.8589549227374824
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	ari	19				0.055798624653270845	-0.02789713760059268	0.14180404316200254	11.0	6.0	0.2659466461059248
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	ari_region	19				0.07387895851149377	0.02259501979182123	0.13137130862837668	11.0	6.0	0.049468494673688884
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	agreement_area	19				-0.10121488523494829	-0.20758769545177302	0.004798162774061504	5.0	14.0	0.104156494140625
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	agreement_cov90	19				-0.10612303856699058	-0.178164333937673	-0.02931924750292043	4.0	15.0	0.012359619140625
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	BANKSY-20 (raw)	ari_region_cov90	19				0.07013002634736565	0.021982989452919877	0.12426329469856359	11.0	6.0	0.049468494673688884
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	agreement	19				-0.02418414170591823	-0.09709701281801869	0.04834736977901566	9.0	10.0	0.6225624084472656
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	unmatched	19				0.3640255008304756	0.2493749517401092	0.48032337057617197	19.0	0.0	3.814697265625e-06
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	ari	19				-0.1772870503785137	-0.25132041465935606	-0.11283221082811494	1.0	18.0	1.1444091796875e-05
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	ari_region	18				0.009240267170056795	-0.04993176576095721	0.0814253306757594	7.0	11.0	0.7018814086914062
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	agreement_area	19				-0.07823009688486442	-0.14944864880551995	-0.002668284532397201	5.0	14.0	0.036067962646484375
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	agreement_cov90	19				-0.06493557906434985	-0.12978760646240717	0.00832495002017012	3.0	16.0	0.012359619140625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	OS-NicheGNN (transductive)	ari_region_cov90	19				-0.00048198005942367493	-0.07309523590580747	0.07250387915315276	10.0	9.0	0.8595733642578125
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	agreement	19				-0.011364829102296619	-0.0662486743497839	0.056487738610290855	7.0	12.0	0.1956329345703125
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	unmatched	19				0.014654619707366192	0.005018436199049111	0.026092182386856556	15.0	2.0	0.001644006329825974
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	ari	19				-0.10122167102731301	-0.17314987762686293	-0.03669615313086551	4.0	15.0	0.01082611083984375
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	ari_region	19				-0.00583322417726321	-0.04532537662702927	0.028945926896009944	10.0	9.0	0.8595733642578125
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	agreement_area	19				0.006783977397070712	-0.0539969253283169	0.08635899774760604	9.0	10.0	0.8905677795410156
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	agreement_cov90	19				-0.009633159678177917	-0.0647970012283923	0.05974337725049059	6.0	12.0	0.21453736472050733
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	OS-NicheGNN (transductive)	ari_region_cov90	18				-0.009558251990014326	-0.05247823505390971	0.029013274947515346	11.0	7.0	0.9661178588867188
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	agreement	19				-0.4474705644197593	-0.5534487125342538	-0.33938312272171123	0.0	19.0	3.814697265625e-06
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	unmatched	19				-0.0022733274404604523	-0.009368585208732062	0.005130738096993116	2.0	12.0	0.0735939238114404
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	ari	19				-0.43572025592913993	-0.536315105740135	-0.3324712500986383	1.0	18.0	7.62939453125e-06
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	ari_region	19				-0.09771994336994197	-0.1902197475417065	-0.009475920715924688	4.0	15.0	0.040130615234375
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	agreement_area	19				-0.5320759537029197	-0.6473531923945411	-0.4130005013678802	0.0	19.0	3.814697265625e-06
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	agreement_cov90	19				-0.4675388457099896	-0.5760279566706906	-0.3561073004108683	0.0	19.0	3.814697265625e-06
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	OS-NicheGNN (transductive)	ari_region_cov90	19				-0.1066752138242692	-0.1974888607978589	-0.022325941202753552	4.0	15.0	0.0289306640625
+paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	agreement	19				0.07137696833450888	0.044935599323746335	0.09725496122017463	16.0	3.0	0.000209808349609375
+paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	unmatched	19				-0.23036944280530647	-0.31859533875909696	-0.14816442745229436	0.0	19.0	3.814697265625e-06
+paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	ari	19				0.05702492815866259	0.02418293404296423	0.09018349427292896	13.0	6.0	0.007144927978515625
+paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	ari_region	19				0.008857931990134732	-0.01921618247097282	0.03699026099370615	10.0	9.0	0.5152778625488281
+paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	agreement_area	19				0.06620735069815631	0.04037689564923603	0.09072503179533688	16.0	3.0	0.000164031982421875
+paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	agreement_cov90	19				0.04554018285556848	0.021784915056039147	0.06880364653945738	15.0	4.0	0.003917694091796875
+paired_difference	spot profile	mapped	same-protocol atlas	spot profile (inductive)	ari_region_cov90	18				-0.019480694612235554	-0.056335171209893335	0.01677714515957404	8.0	10.0	0.4171142578125
+paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	agreement	19				0.017165675086169202	-0.07494920115160127	0.0987859430476554	11.0	8.0	0.5152778625488281
+paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	unmatched	19				-0.23675379660212773	-0.35970182794600974	-0.127801297165579	0.0	19.0	3.814697265625e-06
+paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	ari	19				0.010799867488433928	-0.06035796169320691	0.08001978677766917	9.0	9.0	0.6474707129373445
+paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	ari_region	18				-0.05992707800277514	-0.12713221701695657	0.004024786219139367	5.0	12.0	0.10243436499289735
+paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	agreement_area	19				0.07767999395628084	-0.014296818086866954	0.15436955444245326	14.0	5.0	0.015972137451171875
+paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	agreement_cov90	19				0.019630563000532567	-0.06652791632993106	0.09252256112489782	13.0	6.0	0.09551239013671875
+paired_difference	profile + ring means	mapped	same-protocol atlas	profile + ring means (inductive)	ari_region_cov90	16				-0.10781148963499512	-0.17621934349361218	-0.046555962697491446	3.0	12.0	0.007598223082063245
+paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	agreement	19				0.03550889066117131	-0.03478933475055925	0.10065597084113542	14.0	5.0	0.09551239013671875
+paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	unmatched	19				-0.0502589804113497	-0.10095456413558275	-0.0059247277082222155	4.0	10.0	0.12404279309009482
+paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	ari	19				-0.03147662705666262	-0.15454612188043207	0.07276789080159426	11.0	8.0	0.8287849426269531
+paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	ari_region	19				-0.06503528267394625	-0.15563725660092173	0.014026408612352017	5.0	14.0	0.12318801879882812
+paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	agreement_area	19				0.0281864002373135	-0.04012943245589262	0.10345073707297893	9.0	10.0	0.9217147827148438
+paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	agreement_cov90	19				0.03190473012209593	-0.0371269075173874	0.10323847920740369	13.0	6.0	0.1336212158203125
+paired_difference	BANKSY-20	mapped	same-protocol atlas	BANKSY-20 (inductive)	ari_region_cov90	19				-0.058545137279674433	-0.1447687052476103	0.016097662372554607	7.0	11.0	0.19888473153236397
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the attention branch (transductive)	agreement	19				-0.02785748528885747	-0.08402871805009327	0.023258821358665936	7.0	12.0	0.4180412292480469
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the attention branch (transductive)	unmatched	19				-0.0001471118022039739	-0.0042837897547998985	0.004769386936048574	4.0	10.0	0.2719476239947354
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the attention branch (transductive)	ari	19				-0.013277439452702655	-0.0686210406005948	0.03990120442454097	8.0	11.0	0.6794281005859375
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the attention branch (transductive)	ari_region	19				-0.027901427920577388	-0.07033217287329134	0.00782583219278748	9.0	10.0	0.4653167724609375
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the attention branch (transductive)	agreement_area	19				-0.025005331623418028	-0.0913707291041738	0.048681683359117926	7.0	12.0	0.312408447265625
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the attention branch (transductive)	agreement_cov90	19				-0.02193179669593732	-0.07745354587069948	0.032161607041968916	7.0	12.0	0.3954620361328125
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the attention branch (transductive)	ari_region_cov90	18				-0.029358429742058254	-0.07717697726862106	0.008367029341545902	7.0	11.0	0.44229888916015625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the attention branch (inductive)	agreement	19				-0.04176127790908368	-0.14034643468115385	0.05065346900973169	9.0	10.0	0.3954620361328125
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the attention branch (inductive)	unmatched	19				-0.04782375219778885	-0.10160984326837771	-0.0008194834346870132	6.0	13.0	0.11337661743164062
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the attention branch (inductive)	ari	19				-0.0505836295190475	-0.1535677503104189	0.03795592236901891	11.0	8.0	0.6225624084472656
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the attention branch (inductive)	ari_region	18				0.05080009659908126	-0.037789349550780574	0.16333404488127076	7.0	11.0	1.0
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the attention branch (inductive)	agreement_area	19				-0.021652419495550013	-0.11566561926312177	0.06806557006366663	11.0	8.0	0.8595733642578125
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the attention branch (inductive)	agreement_cov90	19				-0.01797321350999851	-0.10586486077489403	0.06238364807246388	9.0	10.0	0.8595733642578125
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the attention branch (inductive)	ari_region_cov90	19				0.04753402302820305	-0.015596134457079955	0.1307584937841791	7.0	12.0	0.8905677795410156
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the attention branch (mapped)	agreement	19				-0.034482850742290794	-0.11731469486320821	0.04030604893803593	9.0	10.0	0.5677604675292969
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the attention branch (mapped)	unmatched	19				0.0093763916568955	-0.0017890816375287337	0.023874114819635302	8.0	9.0	0.7583123742610346
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the attention branch (mapped)	ari	19				-0.00906900634209331	-0.08364128230382942	0.05568200119609518	13.0	6.0	0.70855712890625
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the attention branch (mapped)	ari_region	19				-0.023332480637080096	-0.06412613469544379	0.013044071727415235	7.0	12.0	0.24125289916992188
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the attention branch (mapped)	agreement_area	19				-0.016643472189892476	-0.09379600825484087	0.05416621200017716	9.0	10.0	0.9529838562011719
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the attention branch (mapped)	agreement_cov90	19				-0.026162803905638257	-0.10840752974044747	0.04812188493780313	10.0	9.0	0.7380905151367188
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the attention branch (mapped)	ari_region_cov90	18				-0.026370229928170348	-0.07765800131694205	0.017914108923947014	6.0	12.0	0.32472991943359375
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the attention branch (raw)	agreement	19				-0.030637164211369333	-0.13599901187612543	0.06013673925592548	11.0	7.0	0.6790730414946473
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the attention branch (raw)	unmatched	19				0.00297908850384949	2.198325113407374e-05	0.008368511884382568	5.0	1.0	0.07473549830588248
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the attention branch (raw)	ari	19				0.023173669637532413	-0.07875724763203382	0.12362147155694875	11.0	7.0	0.5565794125211807
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the attention branch (raw)	ari_region	19				0.022862900818174266	-0.09030074562358313	0.13282087638502219	12.0	6.0	0.3719737719646685
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the attention branch (raw)	agreement_area	19				-0.03314324431903313	-0.156018630974244	0.08030505212156623	8.0	10.0	0.6474707129373445
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the attention branch (raw)	agreement_cov90	19				-0.02691435223243254	-0.13761392697233057	0.07176589796305123	11.0	7.0	0.7112498505312588
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the attention branch (raw)	ari_region_cov90	19				0.0280341181644448	-0.08163457194647035	0.13125247722091563	12.0	6.0	0.21453736472050733
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the ring-mean branch (transductive)	agreement	19				0.020067659619442943	-0.05568187322663	0.09906292114714817	10.0	9.0	0.8287849426269531
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the ring-mean branch (transductive)	unmatched	19				0.0008585506463479477	-0.002953376264417811	0.005800746887853843	6.0	10.0	0.6050949464540121
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the ring-mean branch (transductive)	ari	19				0.031860652387870926	-0.029174484737779973	0.09540976137799644	12.0	7.0	0.3524589538574219
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the ring-mean branch (transductive)	ari_region	19				-0.013656598401383425	-0.03540728835617132	0.005500285730840022	9.0	10.0	0.5677604675292969
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the ring-mean branch (transductive)	agreement_area	19				0.043862014776553285	-0.045979429912966295	0.14164753422503867	9.0	10.0	0.6225624084472656
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the ring-mean branch (transductive)	agreement_cov90	19				0.024214346722870348	-0.056334756035048957	0.10915242069948164	9.0	10.0	0.8595733642578125
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	without the ring-mean branch (transductive)	ari_region_cov90	17				-0.02211880350475573	-0.04989684562157821	0.0022919282624314532	9.0	8.0	0.352874755859375
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the ring-mean branch (inductive)	agreement	19				0.0796289227373385	0.006231831778219287	0.15610266063816416	13.0	6.0	0.05457305908203125
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the ring-mean branch (inductive)	unmatched	19				0.002342828752599335	-0.07363592888002451	0.07732704765477115	10.0	9.0	0.7380905151367188
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the ring-mean branch (inductive)	ari	19				0.04256045305907731	-0.012986357220682952	0.09414401305960929	14.0	5.0	0.06628799438476562
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the ring-mean branch (inductive)	ari_region	18				0.045550106860623475	0.003305592382581194	0.09458812206707658	12.0	6.0	0.19638824462890625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the ring-mean branch (inductive)	agreement_area	19				0.08657776236621255	0.0019446804859214795	0.17888449051625183	13.0	6.0	0.06628799438476562
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the ring-mean branch (inductive)	agreement_cov90	19				0.06316200601230401	-0.02251006298690076	0.1565934866647266	12.0	7.0	0.21011734008789062
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	without the ring-mean branch (inductive)	ari_region_cov90	19				0.03683004878360099	0.00842694650035642	0.0681704474419603	15.0	4.0	0.01082611083984375
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the ring-mean branch (mapped)	agreement	19				0.038924128192532784	-0.043226014219548504	0.11468874972927139	13.0	6.0	0.1956329345703125
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the ring-mean branch (mapped)	unmatched	19				0.012760047937674957	0.0008664676793293021	0.027172202146505915	9.0	8.0	0.43475617175843206
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the ring-mean branch (mapped)	ari	19				0.06824627817002717	-0.0035126589728876932	0.13159458881264896	13.0	6.0	0.015972137451171875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the ring-mean branch (mapped)	ari_region	19				0.0033984349343485314	-0.06245032188110089	0.05594177711880053	15.0	4.0	0.12318801879882812
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the ring-mean branch (mapped)	agreement_area	19				0.08120733994079993	-0.015912867839297865	0.1797447364745004	13.0	6.0	0.09551239013671875
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the ring-mean branch (mapped)	agreement_cov90	19				0.04760323043551264	-0.037682964235290876	0.12895143444893287	13.0	6.0	0.18186569213867188
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	without the ring-mean branch (mapped)	ari_region_cov90	18				-0.002310538908857498	-0.08512891930143843	0.059528592842626016	13.0	5.0	0.14151763916015625
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the ring-mean branch (raw)	agreement	19				-0.002140425831153916	-0.08853852168807627	0.06754749881202532	10.0	6.0	0.5349252131384397
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the ring-mean branch (raw)	unmatched	19				0.004177734627909685	-0.0005707227802579186	0.01116694804404825	3.0	4.0	1.0
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the ring-mean branch (raw)	ari	19				0.018280965627330954	-0.05196681372436018	0.08261403951798904	10.0	5.0	0.5321298884166212
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the ring-mean branch (raw)	ari_region	19				0.007129928371618084	-0.0693061139627239	0.07589323715836586	9.0	6.0	0.4955208830566151
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the ring-mean branch (raw)	agreement_area	19				0.0326121537608158	-0.04010756089920602	0.09648709602511671	11.0	5.0	0.25529050519961505
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the ring-mean branch (raw)	agreement_cov90	19				0.0061094470584872095	-0.0826557064197222	0.07648375797161497	11.0	5.0	0.43796657516602056
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	without the ring-mean branch (raw)	ari_region_cov90	19				0.01126642991917793	-0.05464844126294362	0.07282738972534115	9.0	6.0	0.4955208830566151
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	single fusion expert (transductive)	agreement	19				-0.11251898923557603	-0.1763444848570446	-0.05150741730787904	5.0	14.0	0.003917694091796875
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	single fusion expert (transductive)	unmatched	19				0.0030957888799870202	-0.0005590415411593411	0.009158934145331308	9.0	8.0	0.4631068149666542
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	single fusion expert (transductive)	ari	19				-0.04343501899375987	-0.10243703494018053	0.01570600460490927	3.0	16.0	0.049365997314453125
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	single fusion expert (transductive)	ari_region	19				-0.008648859182561334	-0.02415492277407122	0.008465896812009073	8.0	11.0	0.3954620361328125
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	single fusion expert (transductive)	agreement_area	19				-0.10169113107825507	-0.16630896757825553	-0.042899941895229415	4.0	15.0	0.0033416748046875
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	single fusion expert (transductive)	agreement_cov90	19				-0.11220833913833075	-0.1780061638662959	-0.05002182327221904	6.0	13.0	0.00457763671875
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	single fusion expert (transductive)	ari_region_cov90	18				-0.010635170954088639	-0.031251590527218764	0.011973629430777663	6.0	12.0	0.28372955322265625
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	single fusion expert (inductive)	agreement	19				0.03408302312971807	-0.08391135805199564	0.16397549665408417	8.0	11.0	0.7380905151367188
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	single fusion expert (inductive)	unmatched	19				0.07603559928397197	0.0007183069715995387	0.1605537865794629	10.0	9.0	0.21011734008789062
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	single fusion expert (inductive)	ari	19				-0.02170463086599661	-0.06993747093514442	0.025635427120299016	10.0	9.0	0.5948867797851562
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	single fusion expert (inductive)	ari_region	18				0.029181401551861164	-0.030990483944469273	0.10390329665230404	11.0	7.0	0.83172607421875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	single fusion expert (inductive)	agreement_area	19				0.04375778310708217	-0.07973207724918187	0.17995521839313594	6.0	13.0	0.6794281005859375
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	single fusion expert (inductive)	agreement_cov90	19				0.02181988366930555	-0.09272372088737349	0.14167400701738203	7.0	12.0	0.7380905151367188
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	single fusion expert (inductive)	ari_region_cov90	19				0.03179425500246339	-0.03185926906706673	0.10893726401039248	11.0	8.0	0.5152778625488281
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	single fusion expert (mapped)	agreement	19				0.013404132566320743	-0.08321681288404494	0.10986630442823606	9.0	10.0	0.8287849426269531
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	single fusion expert (mapped)	unmatched	19				0.01168277098582919	0.0007005769179900031	0.024416666633661106	8.0	7.0	0.25598851167013814
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	single fusion expert (mapped)	ari	19				0.007898532609445473	-0.043026148115230645	0.054627204604224336	10.0	9.0	0.5412178039550781
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	single fusion expert (mapped)	ari_region	19				0.013659955620638056	-0.020129591928724766	0.04698118879908825	10.0	9.0	0.5412178039550781
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	single fusion expert (mapped)	agreement_area	19				0.05773409000052611	-0.05166615388332171	0.17581025679227777	10.0	9.0	0.5948867797851562
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	single fusion expert (mapped)	agreement_cov90	19				0.02385883520363108	-0.07759673014072871	0.12807772619113927	9.0	10.0	0.9843215942382812
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	single fusion expert (mapped)	ari_region_cov90	18				0.012543010296439219	-0.023806271762026873	0.05028373005579743	12.0	6.0	0.4171142578125
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	single fusion expert (raw)	agreement	19				-0.031368786348288394	-0.1746026425607103	0.10563031294190288	7.0	11.0	0.6790730414946473
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	single fusion expert (raw)	unmatched	19				0.0046234064134600475	-0.00012523536081728945	0.011213977854265669	4.0	4.0	0.2626182904425206
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	single fusion expert (raw)	ari	19				-0.05133790832983681	-0.1159721736688489	0.020982055695622923	6.0	12.0	0.10243990540645082
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	single fusion expert (raw)	ari_region	19				-0.07597376400329152	-0.18734189930890846	0.016820752743061544	11.0	7.0	0.982627294725416
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	single fusion expert (raw)	agreement_area	19				-0.03116730073310989	-0.18892817003337828	0.11022551547411119	9.0	9.0	0.9133009306692093
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	single fusion expert (raw)	agreement_cov90	19				-0.028622685064515638	-0.1809950665583586	0.11255804785964063	9.0	9.0	0.9133009306692093
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	single fusion expert (raw)	ari_region_cov90	19				-0.054848779921061554	-0.15725013128450605	0.027126984378540723	12.0	6.0	0.7112498505312588
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	branches concatenated (transductive)	agreement	19				-0.016576488387164058	-0.1068383037460497	0.06587927147885042	11.0	8.0	0.8905677795410156
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	branches concatenated (transductive)	unmatched	19				0.0009897288569992787	-0.004474690127568757	0.009706484741883735	4.0	12.0	0.055719324352751155
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	branches concatenated (transductive)	ari	19				0.07157801507041726	-0.006848183693476559	0.14698498495711798	12.0	7.0	0.08742904663085938
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	branches concatenated (transductive)	ari_region	19				-0.019927391147979107	-0.05869574667800848	0.012708143255030903	9.0	10.0	0.4413337707519531
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	branches concatenated (transductive)	agreement_area	19				-0.01331502522173403	-0.116057980667097	0.0829774816397881	9.0	10.0	0.8595733642578125
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	branches concatenated (transductive)	agreement_cov90	19				-0.01618857157657639	-0.11030910844126475	0.06952230091709242	11.0	8.0	0.9843215942382812
+paired_difference	OS-NicheGNN	transductive	same-protocol atlas	branches concatenated (transductive)	ari_region_cov90	18				-0.02917257946181706	-0.0767850280150293	0.012206287321762096	8.0	10.0	0.30379486083984375
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	branches concatenated (inductive)	agreement	19				0.02235603383307335	-0.0628460579512653	0.11417722323607993	12.0	7.0	0.5677604675292969
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	branches concatenated (inductive)	unmatched	19				-0.00790166542149835	-0.07431849810333858	0.05768598673132204	7.0	12.0	0.76800537109375
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	branches concatenated (inductive)	ari	19				-0.005002305900493278	-0.08900151865529642	0.0730179328909165	10.0	9.0	0.6794281005859375
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	branches concatenated (inductive)	ari_region	18				0.0034771319499377925	-0.11082371980903656	0.12501953966725782	8.0	10.0	0.83172607421875
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	branches concatenated (inductive)	agreement_area	19				0.027231362409021603	-0.05856219369188129	0.11379204054628977	14.0	5.0	0.3524589538574219
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	branches concatenated (inductive)	agreement_cov90	19				0.01854931309338156	-0.06571924233069963	0.1075626015059007	12.0	7.0	0.5677604675292969
+paired_difference	OS-NicheGNN	inductive	same-protocol atlas	branches concatenated (inductive)	ari_region_cov90	19				0.030157764934239127	-0.0389927169766133	0.12414926798442576	11.0	8.0	0.8287849426269531
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	branches concatenated (mapped)	agreement	19				0.02972133357350203	-0.03924448873803821	0.09993605750583733	12.0	7.0	0.312408447265625
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	branches concatenated (mapped)	unmatched	19				0.007469403136626234	-0.008036334167056328	0.026932894496988536	8.0	8.0	1.0
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	branches concatenated (mapped)	ari	19				0.04703261878263329	-0.021868891183556574	0.1101165895218744	13.0	6.0	0.12318801879882812
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	branches concatenated (mapped)	ari_region	19				-0.008635480348044287	-0.04875528115053809	0.0247902902011632	9.0	10.0	0.9843215942382812
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	branches concatenated (mapped)	agreement_area	19				0.06939687363353754	-0.009469209837282362	0.15941059248297038	12.0	7.0	0.168792724609375
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	branches concatenated (mapped)	agreement_cov90	19				0.03791747500312005	-0.033153918676585764	0.11451909176927981	12.0	7.0	0.24125289916992188
+paired_difference	OS-NicheGNN	mapped	same-protocol atlas	branches concatenated (mapped)	ari_region_cov90	17				-0.014285977011332185	-0.06575492164497458	0.029344276402846876	7.0	10.0	0.6112213134765625
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	branches concatenated (raw)	agreement	19				0.04923061105477175	0.0028065574051575055	0.10217679367741299	11.0	8.0	0.18186569213867188
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	branches concatenated (raw)	unmatched	19				0.005887676667346758	-0.0007143439924311104	0.014339724970725037	4.0	4.0	0.4838398513935682
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	branches concatenated (raw)	ari	19				0.06345421674221689	-0.013265872641451836	0.14672840763625247	11.0	6.0	0.19298546891685997
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	branches concatenated (raw)	ari_region	19				-0.048489610800958316	-0.1661977047637926	0.07235785607654314	7.0	10.0	0.3559586988465746
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	branches concatenated (raw)	agreement_area	19				0.06272799385164055	-0.00013634788620328048	0.13245086939808545	10.0	9.0	0.168792724609375
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	branches concatenated (raw)	agreement_cov90	19				0.055195757341329414	0.005754109584941751	0.11164412460486037	12.0	7.0	0.11337661743164062
+paired_difference	OS-NicheGNN	raw	same-protocol atlas	branches concatenated (raw)	ari_region_cov90	19				-0.03290144491419271	-0.13664879848288214	0.07772664868755262	7.0	10.0	0.33183160809268897
+paired_difference	without the attention branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement	0							0.0	0.0	1.0
+paired_difference	without the attention branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	unmatched	0							0.0	0.0	1.0
+paired_difference	without the attention branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari	0							0.0	0.0	1.0
+paired_difference	without the attention branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region	0							0.0	0.0	1.0
+paired_difference	without the attention branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_area	0							0.0	0.0	1.0
+paired_difference	without the attention branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	without the attention branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	without the attention branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement	0							0.0	0.0	1.0
+paired_difference	without the attention branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	unmatched	0							0.0	0.0	1.0
+paired_difference	without the attention branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari	0							0.0	0.0	1.0
+paired_difference	without the attention branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region	0							0.0	0.0	1.0
+paired_difference	without the attention branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_area	0							0.0	0.0	1.0
+paired_difference	without the attention branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	without the attention branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	without the attention branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement	0							0.0	0.0	1.0
+paired_difference	without the attention branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	unmatched	0							0.0	0.0	1.0
+paired_difference	without the attention branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari	0							0.0	0.0	1.0
+paired_difference	without the attention branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region	0							0.0	0.0	1.0
+paired_difference	without the attention branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_area	0							0.0	0.0	1.0
+paired_difference	without the attention branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	without the attention branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	without the attention branch	raw	same-protocol atlas	ring-mean MLP (raw)	agreement	0							0.0	0.0	1.0
+paired_difference	without the attention branch	raw	same-protocol atlas	ring-mean MLP (raw)	unmatched	0							0.0	0.0	1.0
+paired_difference	without the attention branch	raw	same-protocol atlas	ring-mean MLP (raw)	ari	0							0.0	0.0	1.0
+paired_difference	without the attention branch	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region	0							0.0	0.0	1.0
+paired_difference	without the attention branch	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_area	0							0.0	0.0	1.0
+paired_difference	without the attention branch	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	without the attention branch	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	unmatched	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_area	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	unmatched	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_area	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	unmatched	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_area	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	raw	same-protocol atlas	ring-mean MLP (raw)	agreement	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	raw	same-protocol atlas	ring-mean MLP (raw)	unmatched	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	raw	same-protocol atlas	ring-mean MLP (raw)	ari	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_area	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	without the ring-mean branch	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	single fusion expert	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement	0							0.0	0.0	1.0
+paired_difference	single fusion expert	transductive	same-protocol atlas	ring-mean MLP (transductive)	unmatched	0							0.0	0.0	1.0
+paired_difference	single fusion expert	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari	0							0.0	0.0	1.0
+paired_difference	single fusion expert	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region	0							0.0	0.0	1.0
+paired_difference	single fusion expert	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_area	0							0.0	0.0	1.0
+paired_difference	single fusion expert	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	single fusion expert	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	single fusion expert	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement	0							0.0	0.0	1.0
+paired_difference	single fusion expert	inductive	same-protocol atlas	ring-mean MLP (inductive)	unmatched	0							0.0	0.0	1.0
+paired_difference	single fusion expert	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari	0							0.0	0.0	1.0
+paired_difference	single fusion expert	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region	0							0.0	0.0	1.0
+paired_difference	single fusion expert	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_area	0							0.0	0.0	1.0
+paired_difference	single fusion expert	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	single fusion expert	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	single fusion expert	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement	0							0.0	0.0	1.0
+paired_difference	single fusion expert	mapped	same-protocol atlas	ring-mean MLP (mapped)	unmatched	0							0.0	0.0	1.0
+paired_difference	single fusion expert	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari	0							0.0	0.0	1.0
+paired_difference	single fusion expert	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region	0							0.0	0.0	1.0
+paired_difference	single fusion expert	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_area	0							0.0	0.0	1.0
+paired_difference	single fusion expert	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	single fusion expert	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	single fusion expert	raw	same-protocol atlas	ring-mean MLP (raw)	agreement	0							0.0	0.0	1.0
+paired_difference	single fusion expert	raw	same-protocol atlas	ring-mean MLP (raw)	unmatched	0							0.0	0.0	1.0
+paired_difference	single fusion expert	raw	same-protocol atlas	ring-mean MLP (raw)	ari	0							0.0	0.0	1.0
+paired_difference	single fusion expert	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region	0							0.0	0.0	1.0
+paired_difference	single fusion expert	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_area	0							0.0	0.0	1.0
+paired_difference	single fusion expert	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	single fusion expert	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	branches concatenated	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement	0							0.0	0.0	1.0
+paired_difference	branches concatenated	transductive	same-protocol atlas	ring-mean MLP (transductive)	unmatched	0							0.0	0.0	1.0
+paired_difference	branches concatenated	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari	0							0.0	0.0	1.0
+paired_difference	branches concatenated	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region	0							0.0	0.0	1.0
+paired_difference	branches concatenated	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_area	0							0.0	0.0	1.0
+paired_difference	branches concatenated	transductive	same-protocol atlas	ring-mean MLP (transductive)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	branches concatenated	transductive	same-protocol atlas	ring-mean MLP (transductive)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	branches concatenated	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement	0							0.0	0.0	1.0
+paired_difference	branches concatenated	inductive	same-protocol atlas	ring-mean MLP (inductive)	unmatched	0							0.0	0.0	1.0
+paired_difference	branches concatenated	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari	0							0.0	0.0	1.0
+paired_difference	branches concatenated	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region	0							0.0	0.0	1.0
+paired_difference	branches concatenated	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_area	0							0.0	0.0	1.0
+paired_difference	branches concatenated	inductive	same-protocol atlas	ring-mean MLP (inductive)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	branches concatenated	inductive	same-protocol atlas	ring-mean MLP (inductive)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	branches concatenated	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement	0							0.0	0.0	1.0
+paired_difference	branches concatenated	mapped	same-protocol atlas	ring-mean MLP (mapped)	unmatched	0							0.0	0.0	1.0
+paired_difference	branches concatenated	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari	0							0.0	0.0	1.0
+paired_difference	branches concatenated	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region	0							0.0	0.0	1.0
+paired_difference	branches concatenated	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_area	0							0.0	0.0	1.0
+paired_difference	branches concatenated	mapped	same-protocol atlas	ring-mean MLP (mapped)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	branches concatenated	mapped	same-protocol atlas	ring-mean MLP (mapped)	ari_region_cov90	0							0.0	0.0	1.0
+paired_difference	branches concatenated	raw	same-protocol atlas	ring-mean MLP (raw)	agreement	0							0.0	0.0	1.0
+paired_difference	branches concatenated	raw	same-protocol atlas	ring-mean MLP (raw)	unmatched	0							0.0	0.0	1.0
+paired_difference	branches concatenated	raw	same-protocol atlas	ring-mean MLP (raw)	ari	0							0.0	0.0	1.0
+paired_difference	branches concatenated	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region	0							0.0	0.0	1.0
+paired_difference	branches concatenated	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_area	0							0.0	0.0	1.0
+paired_difference	branches concatenated	raw	same-protocol atlas	ring-mean MLP (raw)	agreement_cov90	0							0.0	0.0	1.0
+paired_difference	branches concatenated	raw	same-protocol atlas	ring-mean MLP (raw)	ari_region_cov90	0							0.0	0.0	1.0

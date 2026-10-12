@@ -1,6 +1,6 @@
 {
-  "spearman_z_vs_section_size": 0.7544410622526996,
-  "spearman_log2_ratio_vs_section_size": 0.2775045791855923,
+  "spearman_z_vs_section_size": 0.6843274150429359,
+  "spearman_log2_ratio_vs_section_size": 0.30431687910657734,
   "mean_spots_primary": 1059.4444444444443,
   "mean_spots_metastasis": 2530.9411764705883
 }

@@ -1,0 +1,25 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+breast	lopo	leiden	OS-NicheGNN (single fusion expert)	20260914	1160920F	1160920F	6	0.03990453106000409	0.060090798503004965	4801
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260914	1160920F	1160920F	6	0.04844875820930521	0.07009733647724417	4801
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260914	1160920F	1160920F	6	0.12482705246028496	0.13767129818032087	4801
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260914	1160920F	1160920F	6	0.08797116393460921	0.10960123427467743	4801
+breast	lopo	leiden	OS-NicheGNN (single fusion expert)	20260915	1160920F	1160920F	6	0.0008225050974798276	0.0012559961052006265	4801
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260915	1160920F	1160920F	6	0.0012342868685205086	0.0018812251690757313	4801
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260915	1160920F	1160920F	6	0.01066588018131351	0.01746322391691558	4801
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260915	1160920F	1160920F	6	0.012946009419738605	0.021613315187984844	4801
+breast	lopo	leiden	OS-NicheGNN (single fusion expert)	20260916	1160920F	1160920F	6	0.0	0.0	4801
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260916	1160920F	1160920F	6	0.0	0.0	4801
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260916	1160920F	1160920F	6	0.0015117659991167036	0.00292522301147256	4801
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260916	1160920F	1160920F	6	0.0015117659991167036	0.00292522301147256	4801
+breast	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260914	1160920F	1160920F	6	0.0022681853328484973	0.004383899307859577	4801
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260914	1160920F	1160920F	6	0.02793492976459258	0.043497254983778585	4801
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260914	1160920F	1160920F	6	0.0707937882624227	0.09046522530663352	4801
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260914	1160920F	1160920F	6	0.11957464894432812	0.13162389208029074	4801
+breast	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260915	1160920F	1160920F	6	0.0	0.0	4801
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260915	1160920F	1160920F	6	0.00041107614255404465	0.0006289983681044898	4801
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260915	1160920F	1160920F	6	0.0022681853328484973	0.004383899307859577	4801
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260915	1160920F	1160920F	6	0.004539588681149409	0.00874787693878909	4801
+breast	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260916	1160920F	1160920F	6	0.0	0.0	4801
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260916	1160920F	1160920F	6	0.0	0.0	4801
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260916	1160920F	1160920F	6	0.0	0.0	4801
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260916	1160920F	1160920F	6	0.0	0.0	4801

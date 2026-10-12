@@ -1,0 +1,3 @@
+near_boundary	gate_0_mean	gate_1_mean	attn_rel_0_mean	attn_rel_1_mean	gate_shift_mean	hetero_mean	n_patients
+False	0.42157093	0.57842904	0.4067147	0.382536	0.006073194	0.24814327	19
+True	0.44691673	0.55308324	0.41174462	0.41887832	0.004783196	0.29117334	19

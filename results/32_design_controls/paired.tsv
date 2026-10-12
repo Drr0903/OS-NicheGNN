@@ -1,42 +1,64 @@
 comparison	metric	n_patients	mean_diff	ci95_lo	ci95_hi	n_better	n_worse	wilcoxon_p
-trained network (image absent) − trained network (image present)	tcell_nbhd_rho	8	0.02791083727334139	0.0066914355540448065	0.05200855680242824	6	2	0.109375
-trained network (image absent) − trained network (image present)	comp_nbhd_rho	8	0.02865236520397836	0.01016474865450734	0.04646994793826334	7	1	0.0234375
-trained network (image absent) − trained network (image present)	macro_f1	8	0.04182333282661686	0.010419181016877306	0.07486357561082463	5	3	0.109375
-trained network (image absent) − trained network (image present)	tcell_rho	8	0.004343636608869644	0.00034927607768126326	0.008796317451092809	6	2	0.109375
-trained network (image absent) − trained network (image present)	comp_rho	8	0.006429790894186452	-0.0030636560561360313	0.014119549949961521	6	2	0.25
-image withheld in training, p = 0.3 (image present) − trained network (image present)	tcell_nbhd_rho	8	0.00011321795074604318	-0.0034984277370943544	0.004295984481198677	3	5	0.9453125
-image withheld in training, p = 0.3 (image present) − trained network (image present)	comp_nbhd_rho	8	-0.00223176157341793	-0.010173442413813134	0.009313857108975856	1	7	0.1953125
-image withheld in training, p = 0.3 (image present) − trained network (image present)	macro_f1	8	0.007346712172686301	-0.009188258274999098	0.02779317422774695	4	4	0.84375
-image withheld in training, p = 0.3 (image present) − trained network (image present)	tcell_rho	8	0.0018419832024062482	-0.0019605515632219184	0.006472054586941424	3	5	0.9453125
-image withheld in training, p = 0.3 (image present) − trained network (image present)	comp_rho	8	-0.0035126373285388236	-0.005112946001166067	-0.002087825095995633	0	8	0.0078125
-image withheld in training, p = 0.3 (image present) − trained network (image present)	train_ari_vs_patient	8	0.0015624605527297126	-0.002780684255755984	0.006097090316910668	5	3	0.546875
-image withheld in training, p = 0.3 (image absent) − trained network (image absent)	tcell_nbhd_rho	8	-0.08892979018398378	-0.16860988163553697	-0.022857245484114407	0	8	0.0078125
-image withheld in training, p = 0.3 (image absent) − trained network (image absent)	comp_nbhd_rho	8	-0.08627542775107622	-0.1179816576512451	-0.05362838486548313	0	8	0.0078125
-image withheld in training, p = 0.3 (image absent) − trained network (image absent)	macro_f1	8	-0.02757434499011302	-0.05823023128738956	-0.004129534547827154	1	7	0.109375
-image withheld in training, p = 0.3 (image absent) − trained network (image absent)	tcell_rho	8	-0.024931402809390026	-0.048097962013974906	-0.00718989856068943	1	7	0.015625
-image withheld in training, p = 0.3 (image absent) − trained network (image absent)	comp_rho	8	-0.04142391797357574	-0.054663845145728786	-0.030396263484286014	0	8	0.0078125
-image withheld in training, p = 0.3 (image absent) − trained network (image absent)	train_ari_vs_patient	8	0.0015624605527297126	-0.002780684255755984	0.006097090316910668	5	3	0.546875
-image withheld in training, p = 0.5 (image present) − trained network (image present)	tcell_nbhd_rho	8	-0.013868969893580517	-0.036116558900578806	0.001848998345916314	4	4	0.640625
-image withheld in training, p = 0.5 (image present) − trained network (image present)	comp_nbhd_rho	8	-0.006140805552691496	-0.010927486378321019	-0.001955929104803828	1	7	0.0234375
-image withheld in training, p = 0.5 (image present) − trained network (image present)	macro_f1	8	0.0039564383645980805	-0.01591710563303912	0.023993836081182236	3	5	1.0
-image withheld in training, p = 0.5 (image present) − trained network (image present)	tcell_rho	8	-0.00639330581255816	-0.01365162810770149	-0.00048066267930247774	2	6	0.078125
-image withheld in training, p = 0.5 (image present) − trained network (image present)	comp_rho	8	-0.004879228102515523	-0.008102246131552056	-0.0019477346723240118	1	7	0.0234375
-image withheld in training, p = 0.5 (image present) − trained network (image present)	train_ari_vs_patient	8	-0.0023677911370753955	-0.014298682506661806	0.008557435043205282	4	4	0.9453125
-image withheld in training, p = 0.5 (image absent) − trained network (image absent)	tcell_nbhd_rho	8	-0.09633218919896323	-0.19084939661616307	-0.020996910024401575	1	7	0.015625
-image withheld in training, p = 0.5 (image absent) − trained network (image absent)	comp_nbhd_rho	8	-0.08546354398719747	-0.1200393315289449	-0.05306829336384848	0	8	0.0078125
-image withheld in training, p = 0.5 (image absent) − trained network (image absent)	macro_f1	8	-0.05078591892278388	-0.11444571457949868	-0.01453915173194658	0	8	0.0078125
-image withheld in training, p = 0.5 (image absent) − trained network (image absent)	tcell_rho	8	-0.013818638354836845	-0.02277237039351067	-0.0045596650429854104	1	7	0.0390625
-image withheld in training, p = 0.5 (image absent) − trained network (image absent)	comp_rho	8	-0.039015071961547354	-0.0503311937422135	-0.02887526828644808	0	8	0.0078125
-image withheld in training, p = 0.5 (image absent) − trained network (image absent)	train_ari_vs_patient	8	-0.0023677911370753955	-0.014298682506661806	0.008557435043205282	4	4	0.9453125
-ring-mean MLP (parameter-matched) (image present) − trained network (image present)	tcell_nbhd_rho	8	-0.01307527648976565	-0.031860051759332465	-0.00117648912402717	1	7	0.0546875
-ring-mean MLP (parameter-matched) (image present) − trained network (image present)	comp_nbhd_rho	8	-0.006600665291576213	-0.015202831923723237	0.0002380998119124837	3	5	0.109375
-ring-mean MLP (parameter-matched) (image present) − trained network (image present)	macro_f1	8	0.017562140729070114	0.0008331615110792043	0.03959887952570199	6	2	0.1484375
-ring-mean MLP (parameter-matched) (image present) − trained network (image present)	tcell_rho	8	-0.00347812388555036	-0.010397010388278893	0.0024546217413085113	3	5	0.546875
-ring-mean MLP (parameter-matched) (image present) − trained network (image present)	comp_rho	8	-0.0034900289306087386	-0.006561515628816024	-0.00026128836765830276	2	6	0.109375
-ring-mean MLP (parameter-matched) (image present) − trained network (image present)	train_ari_vs_patient	8	0.013899771455896623	0.0036935908711771426	0.02255231781095264	7	1	0.109375
-ring-mean MLP (parameter-matched) (image absent) − trained network (image absent)	tcell_nbhd_rho	8	-0.008386676166994123	-0.023718831321837344	0.0033887833196121347	4	4	0.546875
-ring-mean MLP (parameter-matched) (image absent) − trained network (image absent)	comp_nbhd_rho	8	-0.0210598350300824	-0.039347589890849285	-0.003907919067603446	3	5	0.109375
-ring-mean MLP (parameter-matched) (image absent) − trained network (image absent)	macro_f1	8	0.010326408011888735	-0.002917995255895381	0.02407541780470593	5	3	0.25
-ring-mean MLP (parameter-matched) (image absent) − trained network (image absent)	tcell_rho	8	9.895932920378318e-05	-0.003802987606893189	0.005359353279858698	2	6	0.4609375
-ring-mean MLP (parameter-matched) (image absent) − trained network (image absent)	comp_rho	8	-0.007978100606203423	-0.01744051766606547	-0.0007530920610714018	1	7	0.078125
-ring-mean MLP (parameter-matched) (image absent) − trained network (image absent)	train_ari_vs_patient	8	0.013899771455896623	0.0036935908711771426	0.02255231781095264	7	1	0.109375
+full network (image absent) − full network (image present)	tcell_nbhd_rho	8	0.018317676007114737	-0.008318009990567768	0.04693977963487078	7	1	0.109375
+full network (image absent) − full network (image present)	comp_nbhd_rho	8	0.021396378501897233	0.007371501233097111	0.03513897821233383	7	1	0.0390625
+full network (image absent) − full network (image present)	macro_f1	8	0.027767413173368644	0.00494396866111014	0.05245375282117799	5	3	0.1484375
+full network (image absent) − full network (image present)	tcell_rho	8	0.00449977765677784	-0.00297325236380688	0.01347649193664685	4	4	0.84375
+full network (image absent) − full network (image present)	comp_rho	8	0.003955241745799018	-0.0033684930698809692	0.010130527241615303	6	2	0.25
+full network (image absent) − full network (image present)	boundary_f1	8	0.016493227444538096	-0.05327045206193587	0.09085919718995462	4	3	0.6120898800892568
+full network (image absent) − full network (image present)	chaos	8	0.0006285987444760166	-0.004517917175910811	0.004940608843327242	5	3	0.546875
+without the graph attention branch − full network	tcell_nbhd_rho	8	-0.0059507990809488185	-0.03998964277515879	0.01911574650043254	5	3	0.7421875
+without the graph attention branch − full network	comp_nbhd_rho	8	-0.002288682333704911	-0.009764259516320758	0.006110605233000561	3	5	0.4609375
+without the graph attention branch − full network	macro_f1	8	-0.007400610366628743	-0.015494840876554325	0.00037838879900034533	3	5	0.25
+without the graph attention branch − full network	tcell_rho	8	-0.010737747244897051	-0.02177909184506501	-0.002674811487893727	1	7	0.0390625
+without the graph attention branch − full network	comp_rho	8	-0.0024253843342041496	-0.004839720990204857	-0.00028696211667905355	2	6	0.1484375
+without the graph attention branch − full network	boundary_f1	8	-0.017791244751763368	-0.045917641987946956	0.006935461542006756	3	4	0.3104944343172349
+without the graph attention branch − full network	chaos	8	-0.001998931907737367	-0.009872997833061552	0.005270029545623277	3	5	0.7421875
+without the graph attention branch − full network	train_ari_vs_patient	8	0.007851610318598292	-0.0021324280760495365	0.016079433247849172	6	2	0.1953125
+without the ring-mean branch − full network	tcell_nbhd_rho	8	-0.014453928784648074	-0.0457651234453393	0.009345323679700169	5	3	0.9453125
+without the ring-mean branch − full network	comp_nbhd_rho	8	-0.001553885392481899	-0.007700768092429554	0.0041184150295955416	3	5	0.640625
+without the ring-mean branch − full network	macro_f1	8	-0.0020156259543459287	-0.010743296578144698	0.006401172102138544	4	4	0.640625
+without the ring-mean branch − full network	tcell_rho	8	-0.011969415921935336	-0.02221849242724802	-0.003278250852448578	3	5	0.109375
+without the ring-mean branch − full network	comp_rho	8	0.0010765959343508706	-0.0015094422336608799	0.003955532059864108	4	4	0.640625
+without the ring-mean branch − full network	boundary_f1	8	-0.029328038412201933	-0.05555474705408334	-0.0026530295307664715	1	6	0.09096894797535775
+without the ring-mean branch − full network	chaos	8	0.0011035201381432436	-0.0033289387171940854	0.006076680544620519	3	5	1.0
+without the ring-mean branch − full network	train_ari_vs_patient	8	-0.018293157400415483	-0.02428133446425598	-0.012312409758356176	0	8	0.0078125
+single fusion expert − full network	tcell_nbhd_rho	8	-0.00014396270920539675	-0.00863683995399317	0.0090929944896958	3	5	0.84375
+single fusion expert − full network	comp_nbhd_rho	8	0.0036462135513098404	-0.00023120182722097547	0.008159223056279507	5	3	0.1484375
+single fusion expert − full network	macro_f1	8	0.004252630236524349	-0.013701440646377903	0.01956549570007894	5	3	0.640625
+single fusion expert − full network	tcell_rho	8	-0.004826801569573092	-0.012668069038284316	0.0014382287599074839	4	4	0.546875
+single fusion expert − full network	comp_rho	8	-6.072607632566507e-05	-0.00311765591140626	0.0030464956504213194	4	4	0.9453125
+single fusion expert − full network	boundary_f1	8	-0.010327440702686402	-0.04016239093367162	0.022717685254888542	2	5	0.6120898800892568
+single fusion expert − full network	chaos	8	-0.0017039127288989986	-0.004554578361342071	0.0014568067430489606	3	5	0.25
+single fusion expert − full network	train_ari_vs_patient	8	-0.0010438267544864935	-0.0031526355897343447	0.0009044076064731975	4	4	0.640625
+branches concatenated − full network	tcell_nbhd_rho	8	-0.00983727725102345	-0.03126293644870993	0.010658231867250262	3	5	0.4609375
+branches concatenated − full network	comp_nbhd_rho	8	-0.01076922914707261	-0.025180728875158896	0.000468526779234707	2	6	0.1484375
+branches concatenated − full network	macro_f1	8	0.007501842339435044	-0.0036091640146375115	0.01989421768972284	5	3	0.3828125
+branches concatenated − full network	tcell_rho	8	-0.010964307199056849	-0.02532148868016217	-0.0010935425003897234	2	6	0.109375
+branches concatenated − full network	comp_rho	8	-0.00396342438070961	-0.006203792608372546	-0.0011640518346094893	1	7	0.078125
+branches concatenated − full network	boundary_f1	8	0.027250869724761886	-0.026592940746183538	0.08908477430340507	5	2	0.39802471950693785
+branches concatenated − full network	chaos	8	-0.00484816893962417	-0.00787669438727151	-0.002140775921812277	2	6	0.0390625
+branches concatenated − full network	train_ari_vs_patient	8	-0.031114842220556563	-0.042291699219677036	-0.020574674618399805	0	8	0.0078125
+without neighbourhood targets − full network	tcell_nbhd_rho	8	-0.016080429894777697	-0.03253081676240854	-0.00446894309653976	1	7	0.0234375
+without neighbourhood targets − full network	comp_nbhd_rho	8	-0.019987104332930418	-0.02868637698254467	-0.010828375962060694	0	8	0.0078125
+without neighbourhood targets − full network	macro_f1	8	0.0018782814672890502	-0.026188902848124612	0.02456536098692469	5	3	0.546875
+without neighbourhood targets − full network	tcell_rho	8	-0.008491039208414666	-0.018258713119879248	-0.0010663870603155878	2	6	0.0390625
+without neighbourhood targets − full network	comp_rho	8	0.0015055337851037215	-0.0032145183292904365	0.00614619983405474	5	3	0.546875
+without neighbourhood targets − full network	boundary_f1	8	-0.0067672358930561845	-0.051641258513463316	0.04160903911952753	3	4	0.6120898800892568
+without neighbourhood targets − full network	chaos	8	0.003742285080984953	-0.0002886408390742612	0.007973252032816958	6	2	0.25
+without neighbourhood targets − full network	train_ari_vs_patient	8	-0.015161284126861125	-0.020921056607170682	-0.009844983788439494	0	8	0.0078125
+without neighbourhood skip − full network	tcell_nbhd_rho	8	-0.13169065411211767	-0.19292103770316113	-0.07165733778931621	0	8	0.0078125
+without neighbourhood skip − full network	comp_nbhd_rho	8	-0.19642263502660395	-0.22460563922215956	-0.16826605975416375	0	8	0.0078125
+without neighbourhood skip − full network	macro_f1	8	-0.06590808703216132	-0.11627323732938354	-0.011457417901727614	2	6	0.078125
+without neighbourhood skip − full network	tcell_rho	8	-0.07324790198989892	-0.10312957476434077	-0.048832969489037155	0	8	0.0078125
+without neighbourhood skip − full network	comp_rho	8	-0.17152170652347878	-0.19267723490567565	-0.1526214085501846	0	8	0.0078125
+without neighbourhood skip − full network	boundary_f1	8	-0.07948103499190266	-0.21780185484035325	0.07834304080430779	2	5	0.39802471950693785
+without neighbourhood skip − full network	chaos	8	-0.0002443372232386609	-0.00925549805228397	0.0071556031192635755	5	3	0.7421875
+without neighbourhood skip − full network	train_ari_vs_patient	8	-0.003971576184429908	-0.01872180646219627	0.01451501010582414	3	5	0.4609375
+without morphology input − full network	tcell_nbhd_rho	8	0.00716702663679576	-0.007087840344728445	0.02720766316554639	4	4	0.640625
+without morphology input − full network	comp_nbhd_rho	8	-0.010832886438272314	-0.042057434490594514	0.014535519224272495	5	3	0.9453125
+without morphology input − full network	macro_f1	8	0.03560079043471739	-0.025305257420878698	0.09547272796261023	5	3	0.3828125
+without morphology input − full network	tcell_rho	8	-0.01556905791437807	-0.03399936171698227	-0.0026180795242667825	1	7	0.0546875
+without morphology input − full network	comp_rho	8	-0.009455893491613236	-0.024381525958190153	0.004322968767481755	3	5	0.4609375
+without morphology input − full network	boundary_f1	8	0.06547724285845938	-0.0969143263103941	0.23561152031649632	4	3	0.49896229860376107
+without morphology input − full network	chaos	8	-0.0005447579759088883	-0.004259305696849936	0.002839221671219669	3	5	0.9453125
+without morphology input − full network	train_ari_vs_patient	8	0.10464634919003821	0.08840522840703866	0.11750625298929468	8	0	0.0078125

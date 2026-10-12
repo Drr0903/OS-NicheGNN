@@ -1,6 +1,6 @@
 """v2 Supplementary Figure S4 — robustness of the niche atlas and of the paired programme change.
 a  K sensitivity: number of niches present in at least half of the patients and ARI with the K = 8 partition for K = 6, 8, 10
-b  seed stability: agreement of every training seed with the consensus partition (balanced sample) and with the delivered niche map (all spots)
+b  stability across training runs: agreement of every independently trained network with the consensus partition (balanced sample) and with the atlas niche map (all spots)
 c  paired programme change, all-spots scope vs tumour-dominant scope: number of consistent genes per niche and the overlap
 Reads results/15_niches/{k_sensitivity, seed_stability}.tsv, results/16_remodelling/paired_programme_change.tsv
 """
@@ -30,10 +30,10 @@ def main() -> None:
     ax.set_xticks(x); ax.set_xticklabels([f"K = {k}" for k in ks["k"]], fontsize=6); ax.set_ylim(0, max(ks["k"]) * 1.5); bold_axes(ax, y="niches present (count)"); ax2.set_ylabel("ARI", fontsize=7)
     h1, l1 = ax.get_legend_handles_labels(); h2, l2 = ax2.get_legend_handles_labels(); ax.legend(h1 + h2, l1 + l2, fontsize=4.6, loc="upper left", bbox_to_anchor=(0.0, 1.02), frameon=False, handlelength=1.0, handletextpad=0.4); panel_label(ax, "a"); save_source(ks, NAME, "a")
     ax = axes[1]; y = np.arange(len(st)); cons = [c for c in ["ari_with_consensus_sample"] if c in st.columns]
-    ax.barh(y - 0.2, st["ari_vs_frozen_seed"], 0.4, color=PALETTE[0], label="vs delivered niche map (all spots)")
+    ax.barh(y - 0.2, st["ari_vs_frozen_seed"], 0.4, color=PALETTE[0], label="vs atlas niche map (all spots)")
     if cons:
         ax.barh(y + 0.2, st[cons[0]], 0.4, color="#bbbbbb", label="vs consensus (balanced sample)")
-    ax.set_yticks(y); ax.set_yticklabels([f"seed {i + 2}" for i in range(len(st))], fontsize=6); ax.set_xlim(0, 1); bold_axes(ax, x="ARI"); ax.legend(fontsize=5, loc="upper right", frameon=False, handlelength=1.0, handletextpad=0.4); panel_label(ax, "b"); save_source(st, NAME, "b")
+    ax.set_yticks(y); ax.set_yticklabels([f"network {i + 2}" for i in range(len(st))], fontsize=6); ax.set_xlim(0, 1); bold_axes(ax, x="ARI"); ax.set_ylim(len(st) - 0.4, -1.6); ax.legend(fontsize=5, loc="upper center", ncol=1, frameon=False, handlelength=1.0, handletextpad=0.4); panel_label(ax, "b"); save_source(st, NAME, "b")
     ax = axes[2]
     if "scope" in prog.columns and len(prog):
         rows = []

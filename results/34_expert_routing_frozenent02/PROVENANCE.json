@@ -1,0 +1,115 @@
+{
+  "stage": "34_expert_routing_frozenent02",
+  "finished_utc": "2026-10-12T10:51:20Z",
+  "elapsed_s": 3.4,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "0c9903f7c8230d8e46acfcc21c4366860e1c32df56960bb2c9ccbdaa89ff90e9",
+  "git_commit": "b37c8896248920de967ab33a8110d2e28ba2884e",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/expert_routing/frozenent02_s20260914.parquet": {
+      "md5": "c9b2d1236c2c47ca85135c06c57b623a",
+      "bytes": 2011728
+    },
+    "data/processed/expert_routing/frozenent02_s20260915.parquet": {
+      "md5": "997d9472165c9fb455a6920c4b150a1e",
+      "bytes": 1933216
+    },
+    "data/processed/expert_routing/frozenent02_s20260916.parquet": {
+      "md5": "337e4a418775f76415891ff591db5a83",
+      "bytes": 2011480
+    },
+    "data/processed/expert_routing/frozenent02_s20260917.parquet": {
+      "md5": "02988411bdc37583305228cd464d2c1b",
+      "bytes": 1914766
+    },
+    "data/processed/expert_routing/frozenent02_s20260918.parquet": {
+      "md5": "d6b17c25abac93c2fdf057ba6cc01024",
+      "bytes": 1991996
+    }
+  },
+  "outputs": {
+    "results/34_expert_routing/frozenent02_by_niche_name.tsv": {
+      "md5": "d166b31981449325acaf3fa9a7f0881d",
+      "bytes": 860
+    },
+    "results/34_expert_routing/frozenent02_by_niche_name_patient.tsv": {
+      "md5": "c9f406dc3b31a9d5ef2201802ca56812",
+      "bytes": 11932
+    },
+    "results/34_expert_routing/frozenent02_by_histology_label.tsv": {
+      "md5": "72013fa50e364876c2e730cc7ebca34c",
+      "bytes": 358
+    },
+    "results/34_expert_routing/frozenent02_by_histology_label_patient.tsv": {
+      "md5": "871b3cf6dcac520abe7dd7530667de82",
+      "bytes": 3853
+    },
+    "results/34_expert_routing/frozenent02_by_near_boundary.tsv": {
+      "md5": "88209d6837b3b122ef689f1c2c855a5d",
+      "bytes": 257
+    },
+    "results/34_expert_routing/frozenent02_by_near_boundary_patient.tsv": {
+      "md5": "f839550d8c921dbd3be6e699bb6bdaa1",
+      "bytes": 2924
+    },
+    "results/34_expert_routing/frozenent02_covariates.tsv": {
+      "md5": "b307016bd7b36bd4845d50fa7c870b8c",
+      "bytes": 2398
+    },
+    "results/34_expert_routing/frozenent02_covariates_patient.tsv": {
+      "md5": "f74c9e5aa11f0968b8bd27b3f0a5c8f0",
+      "bytes": 29851
+    },
+    "results/34_expert_routing/frozenent02_interface_profile_patient.tsv": {
+      "md5": "5ad783b9cba82621149b21c093e3beca",
+      "bytes": 5103
+    },
+    "results/34_expert_routing/frozenent02_interface_profile.tsv": {
+      "md5": "9b8239381f8d941d7406d1c9e7028c9a",
+      "bytes": 573
+    },
+    "results/34_expert_routing/frozenent02_by_section.tsv": {
+      "md5": "7cb883acbac5e7e4e253f1c79c95e5c7",
+      "bytes": 2353
+    },
+    "results/34_expert_routing/frozenent02_by_section_niche.tsv": {
+      "md5": "bb47431905c844ce14fafde37ec01fd8",
+      "bytes": 17787
+    },
+    "results/34_expert_routing/frozenent02_site_lesion_tests.tsv": {
+      "md5": "166cf2babdb9be942aa04a105a63d7df",
+      "bytes": 980
+    },
+    "results/34_expert_routing/frozenent02_by_site.tsv": {
+      "md5": "23d883669b97c81e7745852b1331db12",
+      "bytes": 465
+    },
+    "results/34_expert_routing/frozenent02_paired_delta.tsv": {
+      "md5": "41c5a6a8aa575af7318b5f7abf9e07ef",
+      "bytes": 2994
+    },
+    "results/34_expert_routing/frozenent02_longitudinal_MR10.tsv": {
+      "md5": "0c3f45acbcc06e5e0c963dfcd7deb2c7",
+      "bytes": 259
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {}
+}

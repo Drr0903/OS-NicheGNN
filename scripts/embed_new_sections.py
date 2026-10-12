@@ -2,7 +2,7 @@
 
 Input per section: a quality-controlled AnnData (layers["lognorm"], obsm["spatial"], uns["spot_pitch_fullres_px"],
 obs["section"], obs["cohort"]) and its Phikon spot features (stage 04c, one row per spot). The frozen directory holds the
-gene list, the scaler, the expression and morphology PCA models and the encoder weights (data/processed/frozen_v4).
+gene list, the scaler, the expression and morphology PCA models and the encoder weights (data/processed/<atlas.frozen_dir>, frozen_v5 for the published networks).
 Output: one latent per spot (<out>/<section>.npy, 256 dimensions), the input of the niche assignment (Methods).
 Usage: python scripts/embed_new_sections.py --h5ad new.h5ad --img new_img.npy --out embeddings/ [--seed 20260914]
 """

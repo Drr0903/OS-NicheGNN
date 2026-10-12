@@ -38,7 +38,7 @@ def overlay(ax, section: str):
 
 def main() -> None:
     set_style(); cfg = load_config(); v2 = cfg["v2"]; lung_secs = [s for s, site in v2["site_of"].items() if site == "lung"]
-    fig = plt.figure(figsize=(7.2, 7.1)); gs = fig.add_gridspec(3, 3, height_ratios=[0.85, 1, 1], hspace=0.46, wspace=0.4)
+    fig = plt.figure(figsize=(7.2, 7.6)); gs = fig.add_gridspec(3, 3, height_ratios=[0.85, 1, 1], hspace=0.62, wspace=0.4)
     src = []
     for i, s in enumerate(["MR11B", "PT2", "LR17"]):
         ax = fig.add_subplot(gs[0, i]); src.append(overlay(ax, s))
@@ -59,7 +59,7 @@ def main() -> None:
         m = d["label"] == k
         if m.any():
             ax.scatter(np.log(d.loc[m, "cnv_signal"] + 1e-6), d.loc[m, "cnv_corr"], s=2, c=c, alpha=0.4, linewidths=0, label=REGION_NAME.get(k, k))
-    bold_axes(ax, x="log CNV signal", y="CNV correlation"); ax.set_title("all 26 sections", fontsize=7); panel_label(ax, "c"); ax.legend(fontsize=5, markerscale=4, loc="lower left")
+    bold_axes(ax, x="log CNV signal", y="CNV correlation"); ax.set_title("all 26 sections", fontsize=7, pad=14); panel_label(ax, "c"); ax.legend(fontsize=5, markerscale=4, loc="lower center", bbox_to_anchor=(0.5, 0.98), ncol=3, frameon=False, borderaxespad=0.1)
     ax = fig.add_subplot(gs[2, 2]); d = lab[lab["section"].isin(lung_secs)]
     for k, c in REGION_COL.items():
         m = d["label"] == k

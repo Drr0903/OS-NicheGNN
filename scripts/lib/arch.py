@@ -110,10 +110,14 @@ class NicheEncoder(nn.Module):
         self.context = context; self.mask_token = nn.Parameter(torch.zeros(1, in_dim))
         # ringmlp: no neighbour tokens; the residual MLP reads [own profile, ring-1 mean, ring-2–3 mean] (a learned, non-linear
         # function of the same neighbourhood averages that the linear skip receives)
-        self.own = OwnMLP(in_dim * (3 if context == "ringmlp" else 1), d, 2, dropout)
+        # ringxattn: the ring-mean MLP as backbone, and cross-attention over the neighbour tokens queried by its encoding;
+        # with ring_gate the attention branch is added as a gated residual, z = g0(h) + σ(W[h; c]) ⊙ g([h; c]) (+ skip);
+        # with moe_experts the fusion g([h; c]) is a mixture of MLP experts routed per spot; with concat_fuse it is replaced by
+        # plain concatenation of linear projections of h and c
+        self.own = OwnMLP(in_dim * (3 if context in ("ringmlp", "ringxattn") else 1), d, 2, dropout)
         if context not in ("none", "ringmlp"):
             self.tok = Tokens(in_dim, d)
-        if context in ("xattn", "xmamba"):
+        if context in ("xattn", "xmamba", "ringxattn"):
             self.xattn = CrossAttn(d, heads, n_layers, dropout)
         if context in ("mamba", "xmamba"):
             self.mamba = nn.ModuleList([Mamba(d) for _ in range(n_layers)]); self.mnorm = nn.LayerNorm(d)
@@ -156,11 +160,11 @@ class NicheEncoder(nn.Module):
         x_full = self.scale_in(x_full)
         if self.context == "ringmlp":
             return self.own(torch.cat([x_full[rows], *self.ring_means(x_full, nb, rows)], 1)), None
-        h = self.own(x_full[rows])
+        h = self.own(torch.cat([x_full[rows], *self.ring_means(x_full, nb, rows)], 1)) if self.context == "ringxattn" else self.own(x_full[rows])
         if self.context == "none":
             return h, None
         nb = Nbhd(nb.idx[rows], nb.valid[rows], nb.pos[rows]); tok = self.tok(x_full, nb)
-        if self.context == "xattn":
+        if self.context in ("xattn", "ringxattn"):
             c = self.xattn(h, tok, nb.valid)
         elif self.context == "mamba":
             c = self._mamba(h, tok, nb.valid)
@@ -170,8 +174,10 @@ class NicheEncoder(nn.Module):
         return h, c
 
     def attention_rows(self, x_full, nb: Nbhd, rows: torch.Tensor):
-        """Attention weights (layers × neighbour tokens, heads averaged) of the centre spots `rows` (xattn context only)."""
-        h = self.own(x_full[rows]); nbr = Nbhd(nb.idx[rows], nb.valid[rows], nb.pos[rows])
+        """Attention weights (layers × neighbour tokens, heads averaged) of the centre spots `rows` (xattn and ringxattn contexts)."""
+        x_full = self.scale_in(x_full)
+        h = self.own(torch.cat([x_full[rows], *self.ring_means(x_full, nb, rows)], 1)) if self.context == "ringxattn" else self.own(x_full[rows])
+        nbr = Nbhd(nb.idx[rows], nb.valid[rows], nb.pos[rows])
         return self.xattn(h, self.tok(x_full, nbr), nbr.valid, return_attn=True)[1]
 
     def z_parts(self, x_full, nb: Nbhd, rows: torch.Tensor):
@@ -183,6 +189,8 @@ class NicheEncoder(nn.Module):
         x_full = self.scale_in(x_full); moe = getattr(self, "moe", None)
         if moe is None:
             z = self.fuse(h if c is None else torch.cat([h, c], 1))
+            if getattr(self, "gate0", None) is not None:  # gated residual attention branch on the MLP backbone
+                hc = torch.cat([h, c], 1); z = self.fuse0(h) + torch.sigmoid(self.gate0(hc)) * z
         if self.pskip is not None or moe is not None:
             xv = x_full[nb.idx[rows].clamp_min(0)]; v = nb.valid[rows].float(); p = nb.pos[rows]
             def wm(w):

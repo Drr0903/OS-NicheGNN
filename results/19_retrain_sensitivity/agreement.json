@@ -4,15 +4,15 @@
   "n_niches_delivered": 8,
   "n_niches_retrained": 8,
   "delivered": {
-    "band_niche": 3,
+    "band_niche": 2,
     "band_name": "peritumoural stroma (boundary)",
-    "odds_first": 1.5508517106947517,
-    "odds_second": 1.343158312302798
+    "odds_first": 1.6027286507008962,
+    "odds_second": 1.4909688341298213
   },
   "retrained": {
-    "band_niche": 3,
+    "band_niche": 2,
     "band_name": "peritumoural stroma (boundary)",
-    "odds_first": 1.5508517106947517,
-    "odds_second": 1.343158312302798
+    "odds_first": 1.6027286507008962,
+    "odds_second": 1.4909688341298213
   }
 }

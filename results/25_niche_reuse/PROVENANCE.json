@@ -1,30 +1,30 @@
 {
   "stage": "25_niche_reuse",
-  "finished_utc": "2026-10-10T21:17:17Z",
+  "finished_utc": "2026-10-12T15:02:39Z",
   "elapsed_s": 0.0,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
-  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
     "results/15_niches/spot_niches.tsv": {
-      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
-      "bytes": 16167409
+      "md5": "b76c73e8f8bd9cb9dab5a14493d4244c",
+      "bytes": 16167892
     }
   },
   "outputs": {
     "results/25_niche_reuse/reuse_patient.tsv": {
-      "md5": "4de0e576dd32cb43a1aac2f5ed709134",
-      "bytes": 3666
+      "md5": "b557f5e26ac5695cd35e64d143021651",
+      "bytes": 3608
     },
     "results/25_niche_reuse/reuse_niche.tsv": {
-      "md5": "cfaa9aee84e7605a351bc9a70d475e78",
-      "bytes": 570
+      "md5": "566f68c48433084522e3735383dfae80",
+      "bytes": 569
     },
     "results/25_niche_reuse/reuse_summary.tsv": {
-      "md5": "012e7ecb46e8854b12c62eb8a3f890a6",
-      "bytes": 655
+      "md5": "c5503629e305d4d5dec6ef65a8c5d105",
+      "bytes": 654
     }
   },
   "environment": {

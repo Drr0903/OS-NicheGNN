@@ -1,0 +1,67 @@
+{
+  "stage": "15_niches_ent0",
+  "finished_utc": "2026-10-12T10:49:02Z",
+  "elapsed_s": 519.7,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "0c9903f7c8230d8e46acfcc21c4366860e1c32df56960bb2c9ccbdaa89ff90e9",
+  "git_commit": "b37c8896248920de967ab33a8110d2e28ba2884e",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/frozen_ent0/meta.json": {
+      "md5": "3e72e3cbbb014aa3d2ca5d8c953515b0",
+      "bytes": 1672
+    }
+  },
+  "outputs": {
+    "data/processed/atlas_ent0/15_niches/spot_niches.tsv": {
+      "md5": "55853a7141a243c5e8d50dca44212d36",
+      "bytes": 16167070
+    },
+    "data/processed/atlas_ent0/15_niches/niche_classification.tsv": {
+      "md5": "ec942960c4ef4b83bbed21c32988013d",
+      "bytes": 939
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "plan": "v2",
+    "K": 8,
+    "unmatched_threshold": 11.188131332397461,
+    "interface_niche": 1,
+    "names": {
+      "0": "epithelial-enriched tumour",
+      "1": "peritumoural stroma (boundary)",
+      "2": "osteoclast-enriched tumour",
+      "3": "myeloid-enriched stroma",
+      "4": "tumour, mixed stroma",
+      "5": "fibroblast-enriched tumour",
+      "6": "epithelial-enriched lung parenchyma",
+      "7": "alveolar-macrophage-enriched lung parenchyma"
+    },
+    "centroid_agreement_ari": 0.751534327796192,
+    "consensus_seed_agreement": [
+      0.7862525019003721,
+      0.7562504802974066,
+      0.7793390850499363,
+      0.8213943873125915,
+      0.7031717893998212
+    ],
+    "frozen_epochs": 138
+  }
+}

@@ -44,18 +44,18 @@ def lines(ax, pat, metric, ylabel, panel, ylim):
 
 
 def forest(ax, pr, nd):
-    rows = []; sets = [("banksy", PALETTE[1], pr, "vs BANKSY-20"), ("banksy", PALETTE[2], nd, "vs BANKSY-20, 11 untouched patients"), ("pca+img", PALETTE[7], pr, "vs PCA-50 + H&E")]
+    rows = []; sets = [("banksy", PALETTE[1], pr, "vs BANKSY-20"), ("banksy_k36", PALETTE[2], nd, "vs BANKSY-36"), ("pca+img", PALETTE[7], pr, "vs PCA-50 + H&E")]
     for j, (ref, col, tab, leg) in enumerate(sets):
         for i, (m, lab) in enumerate(METRIC):
             r = tab[(tab["comparison"] == f"{OURS} − {ref}") & (tab["metric"] == m)].iloc[0]; y = i + (j - 1) * 0.27
             sig = r["ci95_lo"] > 0 or r["ci95_hi"] < 0
             ax.plot([r["ci95_lo"], r["ci95_hi"]], [y, y], color=col, lw=1.1)
             ax.scatter([r["mean_diff"]], [y], color=col if sig else "white", edgecolor=col, s=16, zorder=3, lw=0.9)
-            ax.text(0.33, y, f"{int(r['n_better'])}/{int(r['n_patients'])}", fontsize=6, va="center", color=col)
+            ax.text(0.300 + j * 0.033, i, f"{int(r['n_better'])}/{int(r['n_patients'])}", fontsize=5.2, va="center", ha="left", color=col)
             rows.append({"reference": leg, "metric": m, **r[["n_patients", "mean_diff", "ci95_lo", "ci95_hi", "n_better", "n_worse"]].to_dict()})
         ax.scatter([], [], color=col, s=16, label=leg)
     ax.axvline(0, color="black", lw=0.6, ls="--"); ax.set_yticks(range(len(METRIC))); ax.set_yticklabels([l for _, l in METRIC], fontsize=6)
-    ax.invert_yaxis(); ax.set_xlim(-0.1, 0.37); ax.text(0.33, -0.75, "patients\nbetter", fontsize=6, ha="left", va="bottom")
+    ax.invert_yaxis(); ax.set_xlim(-0.1, 0.40); ax.text(0.300, -0.62, "patients better", fontsize=6, ha="left", va="bottom")
     bold_axes(ax, x="OS-NicheGNN − reference (difference in patient means, 95 % CI)")
     ax.legend(fontsize=6, loc="lower center", bbox_to_anchor=(0.45, 1.01), ncol=3, frameon=False, handletextpad=0.3, columnspacing=1.2); panel_label(ax, "c")
     save_source(pd.DataFrame(rows), NAME, "c")
@@ -68,8 +68,8 @@ def rewired(ax, pat):
             v = pat.loc[pat["method"] == meth, m].dropna(); se = v.std(ddof=1) / np.sqrt(len(v))
             ax.bar(i + (j - 0.5) * 0.36, v.mean(), 0.34, yerr=se, color=col, error_kw={"lw": 0.7, "capsize": 1.5}, label=LABEL[meth] if i == 0 else None)
             out.append({"metric": m, "graph": "true" if meth == OURS else "rewired", "mean": v.mean(), "sem": se, "n": len(v)})
-    ax.set_xticks(range(len(ms))); ax.set_xticklabels([l for _, l in ms], fontsize=6, rotation=25, ha="right"); ax.set_ylim(0, 0.95)
-    ax.legend(fontsize=6, loc="upper right", frameon=True, fancybox=False, edgecolor="#CCCCCC"); bold_axes(ax, y="held-out score"); panel_label(ax, "d")
+    ax.set_xticks(range(len(ms))); ax.set_xticklabels([l for _, l in ms], fontsize=6, rotation=25, ha="right"); ax.set_ylim(0, 1.12)
+    ax.legend(fontsize=5.5, loc="upper center", ncol=2, frameon=False, handlelength=1.2, columnspacing=0.8); bold_axes(ax, y="held-out score"); panel_label(ax, "d")
     save_source(pd.DataFrame(out), NAME, "d")
 
 
@@ -85,7 +85,12 @@ def reuse(ax, ru, site):
     save_source(w.reset_index(), NAME, "e")
 
 
-REP_COL = {"OS-NicheGNN": "#3B5BA5", "BANKSY-20": "#DD8452", "spot profile": "#8C8C8C", "profile + ring means": "#55A868"}
+REP_COL = {"OS-NicheGNN": "#3B5BA5", "BANKSY-20": "#DD8452", "spot profile": "#8C8C8C", "profile + ring means": "#55A868",
+           "without the attention branch": "#3B5BA5", "without the ring-mean branch": "#3B5BA5", "single fusion expert": "#9A4F8C",
+           "branches concatenated": "#9A4F8C"}
+REP_LAB = {"without the attention branch": "− attention branch", "without the ring-mean branch": "− ring-mean branch", "single fusion expert": "single expert",
+           "branches concatenated": "concatenated"}
+REP_LS = {"without the attention branch": "--", "without the ring-mean branch": ":", "single fusion expert": "--", "branches concatenated": ":"}
 
 
 def coverage(ax, cv):
@@ -93,9 +98,9 @@ def coverage(ax, cv):
     d = cv[(cv["mode"] == "mapped") & (cv["reference"] == "same-protocol atlas")]
     for rep, col in REP_COL.items():
         r = d[d.representation == rep].sort_values("coverage")
-        ax.plot(r["coverage"], r["agreement_mean"], color=col, lw=1.4 if rep == "OS-NicheGNN" else 1.0, label=rep)
-    ax.set_xlim(0, 1.0); ax.set_xticks([0, 0.5, 1.0]); ax.set_ylim(0.3, 1.0); ax.legend(fontsize=6, loc="upper right", frameon=False, handlelength=1.4)
-    bold_axes(ax, x="held-out spots\nassigned (fraction)", y="agreement with the atlas"); panel_label(ax, "f")
+        ax.plot(r["coverage"], r["agreement_mean"], color=col, lw=1.4 if rep == "OS-NicheGNN" else 1.0, ls=REP_LS.get(rep, "-"), label=REP_LAB.get(rep, rep))
+    ax.set_xlim(0, 1.0); ax.set_xticks([0, 0.5, 1.0]); ax.set_yticks([0.4, 0.6, 0.8, 1.0]); ax.set_ylim(0.3, 1.42); ax.legend(fontsize=5.0, loc="upper center", ncol=2, frameon=False, handlelength=1.6, columnspacing=0.8)
+    bold_axes(ax, x="held-out spots\nassigned (fraction)", y="agreement\nwith the atlas"); panel_label(ax, "f")
     save_source(d, NAME, "f")
 
 
@@ -111,7 +116,7 @@ def main() -> None:
     for s_, c_ in SITE_COL.items():
         b.plot([], [], color=c_, lw=1, label=s_.replace("_", " "))
     b.legend(fontsize=6, loc="upper left", bbox_to_anchor=(1.02, 1.0), title="held-out site", title_fontsize=6, frameon=False)
-    nd = pd.read_csv(ROOT / "results/23d_banksy_k36/banksy_k36_paired.tsv", sep="\t"); nd = nd[nd["patients"] == "nondev"]
+    nd = pd.read_csv(ROOT / "results/23d_banksy_k36/banksy_k36_paired.tsv", sep="\t"); nd = nd[nd["patients"] == "all"]
     forest(c, pr, nd); rewired(d, pat); reuse(e, ru, site)
     coverage(f, pd.read_csv(ROOT / "results/25c_reference_mapping/coverage_curve.tsv", sep="\t"))
     save_fig(fig, f"{NAME}_validation")

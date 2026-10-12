@@ -1,0 +1,107 @@
+{
+  "stage": "34_expert_routing_moe4",
+  "finished_utc": "2026-10-12T08:54:02Z",
+  "elapsed_s": 4.1,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
+  "git_commit": "f92b121768a87a4f30e7afb1605d91f8d7533c9d",
+  "git_dirty": true,
+  "inputs": {
+    "data/processed/expert_routing/moe4_s20260914.parquet": {
+      "md5": "d6988c4030fd009a15e927115427fdb9",
+      "bytes": 3260768
+    },
+    "data/processed/expert_routing/moe4_s20260915.parquet": {
+      "md5": "6bcd95046891bd022f6953d55e75bf8f",
+      "bytes": 3262248
+    },
+    "data/processed/expert_routing/moe4_s20260916.parquet": {
+      "md5": "8c6e9034dc302786a8185e441fe328e5",
+      "bytes": 3264372
+    }
+  },
+  "outputs": {
+    "results/34_expert_routing/moe4_by_niche_name.tsv": {
+      "md5": "f69bb2e60128b87207a45eed24bb5bd6",
+      "bytes": 1283
+    },
+    "results/34_expert_routing/moe4_by_niche_name_patient.tsv": {
+      "md5": "e1e5b911f02babd508cfea26dd8e4e53",
+      "bytes": 16717
+    },
+    "results/34_expert_routing/moe4_by_histology_label.tsv": {
+      "md5": "76933d5ebbe0cc98252548ba0f03c208",
+      "bytes": 544
+    },
+    "results/34_expert_routing/moe4_by_histology_label_patient.tsv": {
+      "md5": "eccf7f31770233f0aae4e3fed8e90618",
+      "bytes": 5811
+    },
+    "results/34_expert_routing/moe4_by_near_boundary.tsv": {
+      "md5": "a253e04f532e596cfc159991a9c1c1e9",
+      "bytes": 400
+    },
+    "results/34_expert_routing/moe4_by_near_boundary_patient.tsv": {
+      "md5": "b45a2662f589a2aedb95ada1c953f6b2",
+      "bytes": 4587
+    },
+    "results/34_expert_routing/moe4_covariates.tsv": {
+      "md5": "4fc1e624758bfd81ebd2285fd98bd867",
+      "bytes": 3919
+    },
+    "results/34_expert_routing/moe4_covariates_patient.tsv": {
+      "md5": "19481ad87f57f2a8b40bf2216144660b",
+      "bytes": 49128
+    },
+    "results/34_expert_routing/moe4_interface_profile_patient.tsv": {
+      "md5": "ee94495128dc20a03b3b0bc201c59498",
+      "bytes": 7211
+    },
+    "results/34_expert_routing/moe4_interface_profile.tsv": {
+      "md5": "297c2ce005271765a58773592cd83e22",
+      "bytes": 823
+    },
+    "results/34_expert_routing/moe4_by_section.tsv": {
+      "md5": "d95cf65633ceedd5f67eb921501adddd",
+      "bytes": 3506
+    },
+    "results/34_expert_routing/moe4_by_section_niche.tsv": {
+      "md5": "0237ee94f4d76f5a87d74abc96704262",
+      "bytes": 23591
+    },
+    "results/34_expert_routing/moe4_site_lesion_tests.tsv": {
+      "md5": "323cc51a9b88a1c54b79e60b43420ea5",
+      "bytes": 1599
+    },
+    "results/34_expert_routing/moe4_by_site.tsv": {
+      "md5": "6181e705d6967e0d65be7c1082c95220",
+      "bytes": 722
+    },
+    "results/34_expert_routing/moe4_paired_delta.tsv": {
+      "md5": "b649a7832f98bde39e57489c09bf8a86",
+      "bytes": 4358
+    },
+    "results/34_expert_routing/moe4_longitudinal_MR10.tsv": {
+      "md5": "21e719e2e239790e9a5e08f56044c404",
+      "bytes": 382
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {}
+}

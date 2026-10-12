@@ -1,26 +1,26 @@
 {
   "stage": "18_signalling",
-  "finished_utc": "2026-10-10T20:29:42Z",
-  "elapsed_s": 72.6,
+  "finished_utc": "2026-10-12T11:58:05Z",
+  "elapsed_s": 77.5,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
-  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
     "results/15_niches/spot_niches.tsv": {
-      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
-      "bytes": 16167409
+      "md5": "b76c73e8f8bd9cb9dab5a14493d4244c",
+      "bytes": 16167892
     }
   },
   "outputs": {
     "results/18_signalling/pathway_niche_tests.tsv": {
-      "md5": "e117dd995de75045e461544480f863c3",
-      "bytes": 2375
+      "md5": "5b1720430432783507c39e04cb224f7f",
+      "bytes": 2323
     },
     "results/18_signalling/tf_top_per_niche.tsv": {
-      "md5": "df03b0a7c8ea3a25914cd3eb4b9582a5",
-      "bytes": 2206
+      "md5": "186f85beeb69f3449396a9434a06edb9",
+      "bytes": 2157
     }
   },
   "environment": {

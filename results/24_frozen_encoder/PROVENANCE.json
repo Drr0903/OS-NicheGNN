@@ -1,42 +1,42 @@
 {
   "stage": "24_frozen_encoder",
-  "finished_utc": "2026-10-10T19:45:26Z",
-  "elapsed_s": 4.4,
+  "finished_utc": "2026-10-12T11:46:31Z",
+  "elapsed_s": 3.9,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "54081e6b43ddcb4924fb3b0288bfd9160670a03c68cd8afef2f068a990a16cae",
-  "git_commit": "e3531092052819cadfe6048bb6d13f91306a2f3e",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
     "results/24_frozen_encoder/identity_seed20260914.tsv": {
-      "md5": "c4466a9e72c1ca337c2f21118b643fe3",
-      "bytes": 214
+      "md5": "2d97f48bab0c87cdc8f3e662c8d39f05",
+      "bytes": 216
     },
     "results/24_frozen_encoder/identity_seed20260915.tsv": {
-      "md5": "62031edde1f09d7be58aa5b760119697",
+      "md5": "c0749fb778c3dbd4e215e54d4a2ea346",
       "bytes": 213
     },
     "results/24_frozen_encoder/identity_seed20260916.tsv": {
-      "md5": "6e63d87762ab3bbcb6a19e055eae3020",
+      "md5": "f4661f3b1dad5e069fdc6cf6e13077c3",
       "bytes": 214
     },
     "results/24_frozen_encoder/identity_seed20260917.tsv": {
-      "md5": "f13b4f2a1a30ff7fa3ee57ca67b5157e",
-      "bytes": 213
+      "md5": "1b8957c79f76e403ad01049cebf56d6d",
+      "bytes": 215
     },
     "results/24_frozen_encoder/identity_seed20260918.tsv": {
-      "md5": "092ea10b6382158edd6a772491b06b0e",
-      "bytes": 214
+      "md5": "b99c6dffb0442131909371e79fcf519c",
+      "bytes": 216
     }
   },
   "outputs": {
     "data/processed/frozen_v5/meta.json": {
-      "md5": "e187e8448e6a8006267322c83bf41fa9",
-      "bytes": 1833
+      "md5": "f5c3149788ccd8dacc88231b1d8dc94f",
+      "bytes": 1884
     },
     "results/24_frozen_encoder/identity.tsv": {
-      "md5": "4e830ec47d07607a5dd2f3c5a281ed06",
-      "bytes": 634
+      "md5": "ea40b2e9ac90c08dfbf746aa92be3f84",
+      "bytes": 637
     }
   },
   "environment": {
@@ -57,10 +57,10 @@
   },
   "extra": {
     "plan": "v2",
-    "amendment": "A23",
-    "variant": "mm_xattn_anchor_d256z256_ntrod_lin_ps_dgi_img0_la0_z",
+    "amendment": "A25",
+    "variant": "mm_ringxattn_anchor_d240z256_ntrod_lin_ps_nmoe2_sh0.05_bal0.1_la0_z",
     "arch_overrides": {
-      "d": 256,
+      "d": 240,
       "z_dim": 256,
       "niche_targets": {
         "ring1": 0.5,
@@ -69,14 +69,15 @@
       },
       "linear_heads": true,
       "prop_skip": true,
-      "dgi": 0.1,
-      "img_scale": 0.0
+      "moe_experts": 2,
+      "moe_sharp": 0.05,
+      "moe_balance": 0.1
     },
-    "kind": "arch_xattn",
+    "kind": "arch_ringxattn",
     "multimodal": true,
     "K": 8,
     "frozen_seed": 20260914,
-    "n_epochs": 60,
+    "n_epochs": 138,
     "n_genes": 2000,
     "patients": [
       "P01",
@@ -107,10 +108,10 @@
       20260918
     ],
     "identity_mean": {
-      "ari_vs_patient": 0.14792234772722798,
-      "ari_vs_region": 0.11202306205795834,
-      "pii": 0.5684219801407494,
-      "n_present_half_patients": 6.2
+      "ari_vs_patient": 0.10744018725185063,
+      "ari_vs_region": 0.07766066357430215,
+      "pii": 0.5800233668355729,
+      "n_present_half_patients": 6.8
     }
   }
 }

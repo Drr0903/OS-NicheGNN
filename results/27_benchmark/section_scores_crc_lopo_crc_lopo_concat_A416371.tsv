@@ -1,0 +1,49 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+crc	lopo	leiden	OS-NicheGNN (branches concatenated)	20260914	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (branches concatenated)	20260914	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260914	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260914	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260914	SN048_A416371_Rep1	A416371	5	0.00047349853813138677	0.015972390312954034	2293
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260914	SN048_A416371_Rep2	A416371	5	-0.003172733227585111	0.02009546685007209	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260914	SN048_A416371_Rep1	A416371	5	0.0003056428604329056	0.015005562768462558	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260914	SN048_A416371_Rep2	A416371	5	-0.0030855004873644155	0.02147075887902192	1784
+crc	lopo	leiden	OS-NicheGNN (branches concatenated)	20260915	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (branches concatenated)	20260915	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260915	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260915	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260915	SN048_A416371_Rep1	A416371	5	-0.00021615093481526458	0.01892145959158285	2293
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260915	SN048_A416371_Rep2	A416371	5	-0.0030763208048143866	0.022199126545084706	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260915	SN048_A416371_Rep1	A416371	5	-0.00024295816724068125	0.018395247118296088	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260915	SN048_A416371_Rep2	A416371	5	-0.0031099979008509322	0.021941957454200973	1784
+crc	lopo	leiden	OS-NicheGNN (branches concatenated)	20260916	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (branches concatenated)	20260916	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260916	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260916	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260916	SN048_A416371_Rep1	A416371	5	-4.336519183186467e-05	0.010889830344476326	2293
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260916	SN048_A416371_Rep2	A416371	5	-0.0029060340350155586	0.018090378718124807	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260916	SN048_A416371_Rep1	A416371	5	9.245691149058677e-05	0.010205615578319933	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260916	SN048_A416371_Rep2	A416371	5	-0.00292806061358136	0.018928169035853343	1784
+crc	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260914	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260914	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260914	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260914	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260914	SN048_A416371_Rep1	A416371	5	0.00025811667897726793	0.012843235631362828	2293
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260914	SN048_A416371_Rep2	A416371	5	-0.0032003142449806227	0.01927528280341022	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260914	SN048_A416371_Rep1	A416371	5	0.00039687679580297473	0.012749493021412643	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260914	SN048_A416371_Rep2	A416371	5	-0.003179127208132836	0.020731457915174032	1784
+crc	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260915	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260915	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260915	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260915	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260915	SN048_A416371_Rep1	A416371	5	-0.0006729182839258148	0.01398904836021316	2293
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260915	SN048_A416371_Rep2	A416371	5	-0.0032016450072933733	0.018071055005671	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260915	SN048_A416371_Rep1	A416371	5	-0.0004254197916074967	0.013042577616092196	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260915	SN048_A416371_Rep2	A416371	5	-0.003338946557944071	0.01687362783812637	1784
+crc	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260916	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260916	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260916	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260916	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260916	SN048_A416371_Rep1	A416371	5	9.170195172483822e-05	0.00909082607399685	2293
+crc	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260916	SN048_A416371_Rep2	A416371	5	-0.00326751909092611	0.014190738282378447	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260916	SN048_A416371_Rep1	A416371	5	9.170195172483822e-05	0.00909082607399685	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260916	SN048_A416371_Rep2	A416371	5	-0.003211141423410374	0.014038976367078479	1784

@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+mixture of two MLP experts	transductive	same-protocol atlas	P12	670	0.0	0.46865671641791046	0.41125820712407546	0.2234890796761247
+mixture of two MLP experts	inductive	same-protocol atlas	P12	670	0.36716417910447763	0.5047169811320755	0.2981185321384187	0.2366992268928582
+mixture of two MLP experts	mapped	same-protocol atlas	P12	670	0.0	0.6268656716417911	0.3397268786988123	0.2483482003918409
+mixture of two MLP experts	raw	same-protocol atlas	P12	670	0.0	0.6671641791044776	0.320600000047697	0.23994920870099454

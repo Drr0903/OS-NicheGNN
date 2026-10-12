@@ -52,6 +52,17 @@ class ExpertFuse(nn.Module):
         return sum(g[:, k:k + 1] * e(u) for k, e in enumerate(self.experts))
 
 
+class ConcatFuse(nn.Module):
+    """Plain concatenation of the two branches: each is projected linearly to half of the latent, with no fusion layer."""
+
+    def __init__(self, d: int, z: int):
+        super().__init__()
+        self.d = d; self.ring = nn.Linear(d, z // 2); self.attn = nn.Linear(d, z - z // 2)
+
+    def forward(self, u):
+        return torch.cat([self.ring(u[:, :self.d]), self.attn(u[:, self.d:])], 1)
+
+
 class MorphGate(nn.Module):
     """Per-spot weight g = σ(f([expression block, morphology block])) on the morphology block. Trained together with section-level
     morphology dropout, it lets a spot whose image features are absent or uninformative fall back on expression and context."""
@@ -138,6 +149,12 @@ def attach(model, ac: dict, in_dim: int, e_dim: int = 50):
             sc[:, in_dim - n_tgt:] = 0.0
         model.register_buffer("in_scale", sc)
     model.mgate = MorphGate(e_dim) if ac.get("morph_gate") else None
+    if ac.get("ring_gate") and model.context == "ringxattn":
+        model.fuse0 = mlp(d, d, z); model.gate0 = nn.Linear(2 * d, z); nn.init.zeros_(model.gate0.weight); nn.init.constant_(model.gate0.bias, -2.0)
+    else:
+        model.gate0 = None
+    if ac.get("concat_fuse") and model.context == "ringxattn":  # the branches concatenated, no fusion layer
+        model.fuse = ConcatFuse(d, z)
     f_in = d * (1 if model.context in ("none", "ringmlp") else 2)
     if ac.get("moe_experts", 0) > 0:  # niche-adaptive experts in place of the single perceptron g
         model.fuse = ExpertFuse(f_in, d, z, ac["moe_experts"])

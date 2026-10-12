@@ -1,13 +1,16 @@
 # OS-NicheGNN
 
-Code for *Spatial graph neural network identification of osteosarcoma metastatic niches and microenvironment remodelling*.
+Code for *OS-NicheGNN: an interpretable mixture-of-experts framework for cross-patient spatial niche mapping in osteosarcoma*.
 
-OS-NicheGNN is a multimodal spatial graph attention network for 10x Visium data. Every spot is described by its
-expression and by the morphology of its H&E patch (Phikon embedding), queries its neighbours in hexagonal rings 1–3
-through cross-attention with relative-position tokens, and is encoded into a latent that is trained to reconstruct
-masked spots and, through linear heads, the mean and spread of its neighbourhood. Niches are defined on this latent
-across patients (cohort mode) and new patients are assigned to them; a single-section mode with a local graph-infomax
-objective delineates the spatial domains of one section.
+OS-NicheGNN is a multimodal spatial graph neural network for 10x Visium data. Every spot is described by its expression
+and by the morphology of its H&E patch (Phikon embedding) and reads its surroundings in two ways: a ring-mean branch
+encodes the spot with the mean profiles of its hexagonal rings, and a graph attention branch lets that encoding query the
+individual neighbours of rings 1–3 through cross-attention with relative-position tokens. A mixture of two MLP experts,
+weighted for every spot by a softmax router, fuses the two branches, and a linear skip of the ring means is added to the
+256-dimensional latent. The network is trained to reconstruct masked spots and, through linear heads, the mean and
+spread of each neighbourhood, with balance and entropy terms on the router. Niches are defined on this latent across
+patients (cohort mode) and new patients are mapped onto them; a single-section mode with a local graph-infomax objective
+delineates the spatial domains of one section.
 
 ## Installation
 
@@ -41,18 +44,22 @@ All parameters are in `config/run.yaml`. Each stage writes tables to `results/<s
 | 14, 23, 24 | leave-one-patient-out validation, architecture comparison, the trained encoder |
 | 15, 17, 19, 20 | niche atlas, robustness, retraining, recurrence by patient |
 | 16, 18, 21, 26 | remodelling between primaries and metastases, signalling, gradients |
-| 25 | niche transfer to held-out patients |
+| 25, 25b, 25c | niche transfer to held-out patients, simple representations, mapping onto a fixed atlas and component variants |
 | 27a–f | clustering against pathologist annotation (colorectal, breast), DLPFC layers and osteosarcoma references |
 | 28 | interpretation: attention, latent parts, perturbations, gene attribution |
 | 29 | independent osteosarcoma cohort |
+| 30, 31 | osteoclast and myeloid programmes, components of the interface |
+| 32, 33 | component analysis (each part removed, single expert, concatenation) and niches without the image |
+| 34 | expert routing: router weights by tissue, across the interface and from diagnosis to relapse |
+| 35 | representative tumour–lung interfaces (Figure 5a) |
 
-Model code: `scripts/lib/arch.py` (encoder), `scripts/lib/arch_ext.py` (graph infomax, cross-modal alignment, mixture
-of experts), `scripts/lib/arch_train.py` (objectives and training).
+Model code: `scripts/lib/arch.py` (encoder: ring-mean and graph attention branches), `scripts/lib/arch_ext.py` (mixture-of-experts
+fusion, concatenation variant, graph infomax), `scripts/lib/arch_train.py` (objectives and training).
 
 ## Trained network
 
-`model/frozen_v4/` holds the atlas encoder trained on all 19 patients (five seeds), its 2,000-gene list, scaler and the
-expression and morphology PCA models. To embed new sections without retraining, copy it to `data/processed/frozen_v4/`
+`model/frozen_v5/` holds the five atlas networks trained on all 19 patients, its 2,000-gene list, scaler and the
+expression and morphology PCA models. To embed new sections without retraining, copy it to `data/processed/frozen_v5/`
 and run
 
 ```bash

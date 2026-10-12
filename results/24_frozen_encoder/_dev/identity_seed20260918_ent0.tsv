@@ -1,0 +1,2 @@
+seed	epochs_run	best_val	n_params	train_time_s	ari_vs_patient	ari_vs_region	pii	n_present_half_patients	K
+20260918	138	0.25629874146901643	2143030	825.1	0.09653106717133277	0.07589452888053583	0.5598418644427627	7	8

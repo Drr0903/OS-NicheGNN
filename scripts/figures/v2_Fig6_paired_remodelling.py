@@ -4,8 +4,11 @@ b  deconvolved composition change per matched pair (mean, pairs as points)
 c  patient-level niche fractions of the patients contributing only a primary or only a metastasis (Cliff's delta, Mann–Whitney P)
 d  remodelling in three dimensions: variables changing in the same direction in all four pairs, against the number expected
    by chance, and how many of them also point the same way in the unpaired patients
+e  router weight of the host-tissue expert per section in the matched pairs (soft-tissue relapse pair dashed)
+f  router weight of the host-tissue expert per patient, patients who contribute only one kind of lesion (Mann–Whitney P)
 Reads results/16_remodelling/{paired_composition_change, unpaired_primary_vs_metastasis_nonoverlap}.tsv,
-results/26_remodelling_dimensions/dimension_summary.tsv, results/15_niches/meta.json
+results/26_remodelling_dimensions/dimension_summary.tsv, results/15_niches/meta.json, results/34_expert_routing/frozen_{by_section,
+lesion_models}.tsv
 """
 from __future__ import annotations
 
@@ -70,15 +73,42 @@ def dimensions(ax, ds):
     save_source(d.reset_index(), NAME, "d")
 
 
+def routing(ax, bx) -> None:
+    """e, f: router weight of the host-tissue expert, matched pairs and patient level."""
+    from lib.repro import load_config
+    R = ROOT / "results/34_expert_routing"; sec = pd.read_csv(R / "frozen_by_section.tsv", sep="\t").set_index("section"); v2 = load_config()["v2"]
+    pairs = [(a, b, False) for a, b in v2["paired"].items()] + [(a, b, True) for a, b in (v2.get("paired_sensitivity") or {}).items()]; rows = []
+    for i, (a, b, sens) in enumerate(pairs):
+        ya, yb = sec.loc[a, "gate_0"], sec.loc[b, "gate_0"]
+        ax.plot([0, 1], [ya, yb], color=PALETTE[i % len(PALETTE)], lw=1.0, ls="--" if sens else "-", marker="o", ms=3, mfc="white")
+        rows.append({"pair": f"{a}→{b}", "primary": ya, "relapse": yb, "sensitivity_pair": sens})
+    lab = sorted(rows, key=lambda r: r["relapse"]); gap = 0.022; ys = []
+    for r in lab:  # pair labels spaced so that they do not overlap
+        y = r["relapse"] if not ys else max(r["relapse"], ys[-1] + gap); ys.append(y); ax.text(1.04, y, r["pair"], fontsize=5, va="center")
+    ax.set_xticks([0, 1]); ax.set_xticklabels(["primary", "relapse"], fontsize=6); ax.set_xlim(-0.2, 1.45)
+    bold_axes(ax, y="host-tissue expert\nweight (section mean)"); panel_label(ax, "e"); save_source(pd.DataFrame(rows), NAME, "e")
+    pt = sec.reset_index().groupby(["patient", "lesion"])["gate_0"].mean().reset_index(); kinds = pt.groupby("patient")["lesion"].nunique()
+    pt = pt[pt["patient"].map(kinds) == 1]  # patients who contribute only one kind of lesion (independent groups)
+    lm = pd.read_csv(R / "frozen_lesion_models.tsv", sep="\t"); pv = lm[(lm["weight"] == "gate_0") & (lm["analysis"] == "patients with one kind of lesion")]["p"].iloc[0]
+    for j, les in enumerate(["primary", "relapse"]):
+        v = pt[pt["lesion"] == les]["gate_0"].to_numpy(); x = j + (np.random.default_rng(0).random(len(v)) - 0.5) * 0.25
+        bx.scatter(x, v, s=12, color="#9a4f8c", edgecolor="black", linewidths=0.3, zorder=3); bx.plot([j - 0.25, j + 0.25], [np.median(v)] * 2, color="black", lw=1.0)
+    bx.set_xticks([0, 1]); bx.set_xticklabels([f"primary\n(n = {(pt.lesion == 'primary').sum()})", f"relapse\n(n = {(pt.lesion == 'relapse').sum()})"], fontsize=6)
+    top = pt["gate_0"].max(); bx.plot([0, 0, 1, 1], [top + 0.04, top + 0.06, top + 0.06, top + 0.04], color="black", lw=0.6)
+    bx.text(0.5, top + 0.08, f"P = {pv:.1g}" if pv >= 0.001 else "P < 0.001", ha="center", fontsize=5.5); bx.set_ylim(None, top + 0.16)
+    bold_axes(bx, y="host-tissue expert\nweight (patient mean)"); panel_label(bx, "f"); save_source(pt, NAME, "f")
+
+
 def main() -> None:
     set_style(); R = ROOT / "results/16_remodelling"; meta = json.load(open(ROOT / "results/15_niches/meta.json"))
     names = {int(k): v for k, v in meta["names"].items()}; K = meta["K"]; cols = {k: PALETTE[k % len(PALETTE)] for k in range(K)}
     pc = pd.read_csv(R / "paired_composition_change.tsv", sep="\t"); up = pd.read_csv(R / "unpaired_primary_vs_metastasis_nonoverlap.tsv", sep="\t")
     ds = pd.read_csv(ROOT / "results/26_remodelling_dimensions/dimension_summary.tsv", sep="\t")
-    fig = plt.figure(figsize=(7.2, 7.2)); gs = fig.add_gridspec(3, 2, hspace=0.62, wspace=0.5, height_ratios=[1, 1, 0.42], width_ratios=[1.3, 1], left=0.1, right=0.97, top=0.95, bottom=0.03)
+    fig = plt.figure(figsize=(7.2, 9.4)); gs = fig.add_gridspec(4, 2, hspace=0.62, wspace=0.5, height_ratios=[1, 1, 0.85, 0.42], width_ratios=[1.3, 1], left=0.1, right=0.97, top=0.96, bottom=0.03)
     paired(fig.add_subplot(gs[0, 0]), pc, K, names, cols); rctd(fig.add_subplot(gs[0, 1]), pc)
     unpaired(fig.add_subplot(gs[1, 0]), up, K, cols); dimensions(fig.add_subplot(gs[1, 1]), ds)
-    key = fig.add_subplot(gs[2, :]); key.axis("off")
+    routing(fig.add_subplot(gs[2, 0]), fig.add_subplot(gs[2, 1]))
+    key = fig.add_subplot(gs[3, :]); key.axis("off")
     for k in range(K):
         x0, y0 = (k // 4) * 0.5, 1 - (k % 4) * 0.28
         key.scatter([x0], [y0], color=cols[k], s=18); key.text(x0 + 0.015, y0, f"{k}: {names[k]}", va="center", fontsize=6)

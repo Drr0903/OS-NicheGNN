@@ -1,0 +1,25 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+breast	lopo	leiden	OS-NicheGNN	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN	20260916	CID4465	CID4465	6	0.026536173370861667	0.04303837931864713	1195
+breast	lopo	leiden_pc30	OS-NicheGNN	20260916	CID4465	CID4465	6	0.050834751929133955	0.05227935615157229	1195
+breast	lopo	kmeans	OS-NicheGNN	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN +smooth	20260914	CID4465	CID4465	6	0.2295035128300598	0.21003012052935385	1195
+breast	lopo	leiden_pc30	OS-NicheGNN +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195

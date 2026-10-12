@@ -1,0 +1,25 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+breast	lopo	leiden	OS-NicheGNN (branches concatenated)	20260914	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260914	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260914	1142243F	1142243F	6	0.17643222685903479	0.1061638007365822	4617
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260914	1142243F	1142243F	6	0.16487197499395895	0.10079751596108812	4617
+breast	lopo	leiden	OS-NicheGNN (branches concatenated)	20260915	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260915	1142243F	1142243F	6	0.0037147661748470773	0.00429605541307355	4617
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260915	1142243F	1142243F	6	0.14883203814028215	0.08431511505735939	4617
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260915	1142243F	1142243F	6	0.1464458337179861	0.0898902169272833	4617
+breast	lopo	leiden	OS-NicheGNN (branches concatenated)	20260916	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated)	20260916	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated)	20260916	1142243F	1142243F	6	0.2057273284230682	0.10927569633564833	4617
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated)	20260916	1142243F	1142243F	6	0.20134062536383454	0.10616720334375455	4617
+breast	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260914	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260914	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260914	1142243F	1142243F	6	0.1623326935483677	0.10653680380431188	4617
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260914	1142243F	1142243F	6	0.15654907372076798	0.10374808694076695	4617
+breast	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260915	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260915	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260915	1142243F	1142243F	6	0.15143635697142174	0.09337786453075962	4617
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260915	1142243F	1142243F	6	0.15047932214700008	0.10040705437401283	4617
+breast	lopo	leiden	OS-NicheGNN (branches concatenated) +smooth	20260916	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	leiden_pc30	OS-NicheGNN (branches concatenated) +smooth	20260916	1142243F	1142243F	6	0.0	0.0	4617
+breast	lopo	kmeans	OS-NicheGNN (branches concatenated) +smooth	20260916	1142243F	1142243F	6	0.19416980986066967	0.10538232468543152	4617
+breast	lopo	kmeans_pc30	OS-NicheGNN (branches concatenated) +smooth	20260916	1142243F	1142243F	6	0.1923309919472603	0.10672729556672511	4617

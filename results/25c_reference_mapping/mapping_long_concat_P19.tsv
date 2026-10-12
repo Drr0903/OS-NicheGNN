@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+branches concatenated	transductive	same-protocol atlas	P19	564	0.0	0.5797872340425532	0.26196838811599704	0.0022559721986425943
+branches concatenated	inductive	same-protocol atlas	P19	564	0.6684397163120568	0.732620320855615	0.3784755618974904	
+branches concatenated	mapped	same-protocol atlas	P19	564	0.014184397163120567	0.6061151079136691	0.20044863333216417	0.00987534171261124
+branches concatenated	raw	same-protocol atlas	P19	564	0.005319148936170213	0.12121212121212122	-0.009047298127559425	0.03293307565132167

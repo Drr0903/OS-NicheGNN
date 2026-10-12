@@ -1,250 +1,406 @@
 {
   "stage": "32_design_controls",
-  "finished_utc": "2026-10-12T05:40:30Z",
-  "elapsed_s": 2.4,
+  "finished_utc": "2026-10-12T14:21:59Z",
+  "elapsed_s": 4.2,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
-  "git_commit": "0661e340664a2d0a2fadfcb524cd51e8159065a1",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
-    "results/23_arch_search/arch_metrics_E2base_P01.tsv": {
-      "md5": "99193ab9dff3e2a29bf40e020a709b05",
-      "bytes": 3743
+    "results/23_arch_search/arch_metrics_A9noattn_P01.tsv": {
+      "md5": "8ed30439fa6f4acbe4ebb1b42f8c99be",
+      "bytes": 2693
     },
-    "results/23_arch_search/arch_metrics_E2base_P03.tsv": {
-      "md5": "3b90a3e88a2a8013f3ea4f5ae9b7e2ac",
-      "bytes": 3721
+    "results/23_arch_search/arch_metrics_A9noattn_P03.tsv": {
+      "md5": "103f3d1e8bd5c75cba69babe67ab7013",
+      "bytes": 2658
     },
-    "results/23_arch_search/arch_metrics_E2base_P05.tsv": {
-      "md5": "99e6f79869cef826ce0cde6fdd5b60d3",
-      "bytes": 3790
+    "results/23_arch_search/arch_metrics_A9noattn_P05.tsv": {
+      "md5": "97887047b2873815ab9fedea76cd5fc2",
+      "bytes": 2724
     },
-    "results/23_arch_search/arch_metrics_E2base_P10.tsv": {
-      "md5": "7c22058e6448e80c0bdef972cc23ca09",
-      "bytes": 3713
+    "results/23_arch_search/arch_metrics_A9noattn_P10.tsv": {
+      "md5": "ec3bad510569a77870be0b834eec4afe",
+      "bytes": 2660
     },
-    "results/23_arch_search/arch_metrics_E2base_P12.tsv": {
-      "md5": "b0c06d317be94059abb14e9b55b27fc7",
-      "bytes": 3655
+    "results/23_arch_search/arch_metrics_A9noattn_P12.tsv": {
+      "md5": "6e8f1c00303138e79001583fc535bb02",
+      "bytes": 2633
     },
-    "results/23_arch_search/arch_metrics_E2base_P14.tsv": {
-      "md5": "130d1dd01ff2deb319974e0d79d53069",
-      "bytes": 3737
+    "results/23_arch_search/arch_metrics_A9noattn_P14.tsv": {
+      "md5": "7ff9ad5d8d0b8bfe58fa0a354bac589e",
+      "bytes": 2642
     },
-    "results/23_arch_search/arch_metrics_E2base_P16.tsv": {
-      "md5": "616f58279c09528fa96d30c126bc5bdb",
-      "bytes": 3719
+    "results/23_arch_search/arch_metrics_A9noattn_P16.tsv": {
+      "md5": "af86cd7e6f10c65db1db4efcc50f903b",
+      "bytes": 2600
     },
-    "results/23_arch_search/arch_metrics_E2base_P18.tsv": {
-      "md5": "bf4f666c4ac863507ea7b8beb4f3b7d4",
-      "bytes": 3344
+    "results/23_arch_search/arch_metrics_A9noattn_P18.tsv": {
+      "md5": "6a429e25df5e9bc9ebb3c4fbed240dbb",
+      "bytes": 2462
     },
-    "results/23_arch_search/arch_metrics_E2md3_P01.tsv": {
-      "md5": "0009b15ae9e7ea8c7a272132ef0feb08",
-      "bytes": 3699
+    "results/23_arch_search/arch_metrics_A9nomorph_P01.tsv": {
+      "md5": "10fa90951aff3ce03d2b4539c17cb950",
+      "bytes": 3723
     },
-    "results/23_arch_search/arch_metrics_E2md3_P03.tsv": {
-      "md5": "a3461341ea19e36ec4e835dd0ee0ee2e",
-      "bytes": 3797
+    "results/23_arch_search/arch_metrics_A9nomorph_P03.tsv": {
+      "md5": "77962f4801c39f637a49168cd4eb3089",
+      "bytes": 4039
     },
-    "results/23_arch_search/arch_metrics_E2md3_P05.tsv": {
-      "md5": "86da25b7cd02be53677000bd601f73df",
-      "bytes": 3820
+    "results/23_arch_search/arch_metrics_A9nomorph_P05.tsv": {
+      "md5": "e3e54f348a64514a4bc9a9a4c93b20cc",
+      "bytes": 4029
     },
-    "results/23_arch_search/arch_metrics_E2md3_P10.tsv": {
-      "md5": "cf2e3f6116af1bd100a0d5b511f570da",
-      "bytes": 3790
+    "results/23_arch_search/arch_metrics_A9nomorph_P10.tsv": {
+      "md5": "2aead784b3f7651367baac14d62847c7",
+      "bytes": 3975
     },
-    "results/23_arch_search/arch_metrics_E2md3_P12.tsv": {
-      "md5": "11a9dd798f9e7c5abab89c379e2d5d3a",
-      "bytes": 3712
+    "results/23_arch_search/arch_metrics_A9nomorph_P12.tsv": {
+      "md5": "e955eba8f8a65e9a7871df0600c2958f",
+      "bytes": 3902
     },
-    "results/23_arch_search/arch_metrics_E2md3_P14.tsv": {
-      "md5": "bc60b4cd37c0506c1b2ddde0ea8a4292",
-      "bytes": 3764
+    "results/23_arch_search/arch_metrics_A9nomorph_P14.tsv": {
+      "md5": "6627b8a1a01650fdad9c3a8b9d393d5d",
+      "bytes": 3970
     },
-    "results/23_arch_search/arch_metrics_E2md3_P16.tsv": {
-      "md5": "edb0f19cc0aa26ff6bb4867c61650627",
-      "bytes": 3750
-    },
-    "results/23_arch_search/arch_metrics_E2md3_P18.tsv": {
-      "md5": "3653d748b1c1c70a70d4968de4d73813",
-      "bytes": 3402
-    },
-    "results/23_arch_search/arch_metrics_E2md3g_P01.tsv": {
-      "md5": "aa430479b4d952d064543e2f324fd694",
-      "bytes": 3745
-    },
-    "results/23_arch_search/arch_metrics_E2md3g_P03.tsv": {
-      "md5": "7224cf93e8a55a3dabcfd8a22ef5ad27",
-      "bytes": 3855
-    },
-    "results/23_arch_search/arch_metrics_E2md3g_P05.tsv": {
-      "md5": "df93254ad042db47631412f7cf8211cd",
-      "bytes": 3854
-    },
-    "results/23_arch_search/arch_metrics_E2md3g_P10.tsv": {
-      "md5": "6953cb8ddeb1843fe6550dfda67207f0",
-      "bytes": 3806
-    },
-    "results/23_arch_search/arch_metrics_E2md3g_P12.tsv": {
-      "md5": "debd827218cfb4783c03fb553975c8b8",
-      "bytes": 3735
-    },
-    "results/23_arch_search/arch_metrics_E2md3g_P14.tsv": {
-      "md5": "5e59001106515ef14b92c481dd4915a2",
-      "bytes": 3754
-    },
-    "results/23_arch_search/arch_metrics_E2md3g_P16.tsv": {
-      "md5": "6410ae953fb915485d1d479ad32d1ca3",
-      "bytes": 3810
-    },
-    "results/23_arch_search/arch_metrics_E2md3g_P18.tsv": {
-      "md5": "a916e7cfd9176005e22d8a376508e950",
-      "bytes": 3475
-    },
-    "results/23_arch_search/arch_metrics_E2md5_P01.tsv": {
-      "md5": "c64c7f40bdfe91d8868fe7c59b768ef6",
-      "bytes": 3777
-    },
-    "results/23_arch_search/arch_metrics_E2md5_P03.tsv": {
-      "md5": "f7c37b748421f350002c7e05b3683603",
+    "results/23_arch_search/arch_metrics_A9nomorph_P16.tsv": {
+      "md5": "333006cb3bd175d7f2fab5e04e8111bb",
       "bytes": 3803
     },
-    "results/23_arch_search/arch_metrics_E2md5_P05.tsv": {
-      "md5": "b248561e30ead7ac4144f734488dae8b",
-      "bytes": 3867
+    "results/23_arch_search/arch_metrics_A9nomorph_P18.tsv": {
+      "md5": "12170078cef6691d998b06ebb2bb6f2a",
+      "bytes": 3634
     },
-    "results/23_arch_search/arch_metrics_E2md5_P10.tsv": {
-      "md5": "6b0d768e1f58da17ab181827494b606c",
-      "bytes": 3783
+    "results/23_arch_search/arch_metrics_A9noring_P01.tsv": {
+      "md5": "b952465d69df50073c3191131a23b525",
+      "bytes": 3964
     },
-    "results/23_arch_search/arch_metrics_E2md5_P12.tsv": {
-      "md5": "ff502150fdd8b2ed7095bc5eed442a95",
-      "bytes": 3780
+    "results/23_arch_search/arch_metrics_A9noring_P03.tsv": {
+      "md5": "3b4b3ec0703cf04ce6853870df3b7aaa",
+      "bytes": 3918
     },
-    "results/23_arch_search/arch_metrics_E2md5_P14.tsv": {
-      "md5": "8457074a11fbacb75ac02ddd4f9eb450",
-      "bytes": 3727
+    "results/23_arch_search/arch_metrics_A9noring_P05.tsv": {
+      "md5": "32f828f9d299f290a8efb385c41afe6f",
+      "bytes": 4023
     },
-    "results/23_arch_search/arch_metrics_E2md5_P16.tsv": {
-      "md5": "06e18e0d87bf96e6d5e68c884348e0b6",
-      "bytes": 3739
+    "results/23_arch_search/arch_metrics_A9noring_P10.tsv": {
+      "md5": "42cb8b2f6ddc420192c293299b6e3f0a",
+      "bytes": 3901
     },
-    "results/23_arch_search/arch_metrics_E2md5_P18.tsv": {
-      "md5": "25e146412e0ff035b02bcb2c6dd3be01",
-      "bytes": 3397
+    "results/23_arch_search/arch_metrics_A9noring_P12.tsv": {
+      "md5": "95314057d26f78c7a33e595513d1c408",
+      "bytes": 3759
     },
-    "results/23_arch_search/arch_metrics_E2md5g_P01.tsv": {
-      "md5": "e1ba1ac1ce68ebf7c690e0e0b022b140",
-      "bytes": 3800
+    "results/23_arch_search/arch_metrics_A9noring_P14.tsv": {
+      "md5": "63b63eb0e2094695df330263d30888f8",
+      "bytes": 3942
     },
-    "results/23_arch_search/arch_metrics_E2md5g_P03.tsv": {
-      "md5": "f12fd025cbb9d21087d4d6d692c06090",
-      "bytes": 3811
+    "results/23_arch_search/arch_metrics_A9noring_P16.tsv": {
+      "md5": "ecac77a3545340af033e8c46714fdfb2",
+      "bytes": 3809
     },
-    "results/23_arch_search/arch_metrics_E2md5g_P05.tsv": {
-      "md5": "9669006dd44315dfd11939afcd907bee",
-      "bytes": 3862
+    "results/23_arch_search/arch_metrics_A9noring_P18.tsv": {
+      "md5": "7001f40b97349d72f0537c45fa152284",
+      "bytes": 3550
     },
-    "results/23_arch_search/arch_metrics_E2md5g_P10.tsv": {
-      "md5": "73e95e26d51b7d1566665b28d7344194",
-      "bytes": 3805
+    "results/23_arch_search/arch_metrics_A9noskip_P01.tsv": {
+      "md5": "7709ad04e14a152e4578fe14857b4114",
+      "bytes": 3830
     },
-    "results/23_arch_search/arch_metrics_E2md5g_P12.tsv": {
-      "md5": "6ee3e0725f75d47993ef844ca1f54547",
-      "bytes": 3771
+    "results/23_arch_search/arch_metrics_A9noskip_P03.tsv": {
+      "md5": "7c3d59e7ea6d76f7e44ed6f77e983f4f",
+      "bytes": 3973
     },
-    "results/23_arch_search/arch_metrics_E2md5g_P14.tsv": {
-      "md5": "020ae36cf3ab21056a6c87ef23280815",
-      "bytes": 3733
+    "results/23_arch_search/arch_metrics_A9noskip_P05.tsv": {
+      "md5": "d0c1bb6ebe686588d3d9b7df48ee0cb0",
+      "bytes": 4013
     },
-    "results/23_arch_search/arch_metrics_E2md5g_P16.tsv": {
-      "md5": "d3df7f0beb81680980129c1b4e3e9cb3",
-      "bytes": 3783
+    "results/23_arch_search/arch_metrics_A9noskip_P10.tsv": {
+      "md5": "284cde7a70b1dc9995437fb27532d08b",
+      "bytes": 3917
     },
-    "results/23_arch_search/arch_metrics_E2md5g_P18.tsv": {
-      "md5": "3c22a2c839b568979631beeb35b610b4",
-      "bytes": 3413
+    "results/23_arch_search/arch_metrics_A9noskip_P12.tsv": {
+      "md5": "e479f0967afc44f0648e2b0e76cbca51",
+      "bytes": 3851
     },
-    "results/23_arch_search/arch_metrics_E4ntm_P01.tsv": {
-      "md5": "903703643e5aa1238a53889319a45eee",
-      "bytes": 3749
+    "results/23_arch_search/arch_metrics_A9noskip_P14.tsv": {
+      "md5": "c53f89f9399b9dd3ee41be4d9fa7895c",
+      "bytes": 3766
     },
-    "results/23_arch_search/arch_metrics_E4ntm_P03.tsv": {
-      "md5": "b9d81c694452a42b3b5b35edc8cbc0f6",
-      "bytes": 3767
+    "results/23_arch_search/arch_metrics_A9noskip_P16.tsv": {
+      "md5": "9ae2e0879e59ec523a83b8f91bd41e59",
+      "bytes": 3854
     },
-    "results/23_arch_search/arch_metrics_E4ntm_P05.tsv": {
-      "md5": "211fd3b7646d03c62d959efcb30ee4aa",
-      "bytes": 3832
+    "results/23_arch_search/arch_metrics_A9noskip_P18.tsv": {
+      "md5": "eed4356d372e79d85195b76ebdc657e2",
+      "bytes": 3516
     },
-    "results/23_arch_search/arch_metrics_E4ntm_P10.tsv": {
-      "md5": "1519ee8b48b57279d65ccbd422fc1747",
+    "results/23_arch_search/arch_metrics_A9notgt_P01.tsv": {
+      "md5": "3180a1aa6d8dd8b05e4b116523e77705",
+      "bytes": 3922
+    },
+    "results/23_arch_search/arch_metrics_A9notgt_P03.tsv": {
+      "md5": "7d64f05c05bb65ab85b24bd9ce132cb1",
+      "bytes": 3912
+    },
+    "results/23_arch_search/arch_metrics_A9notgt_P05.tsv": {
+      "md5": "8bcdd3bcbb1990253e061b5ccf77c5e2",
+      "bytes": 3990
+    },
+    "results/23_arch_search/arch_metrics_A9notgt_P10.tsv": {
+      "md5": "0efca91d2dd66b233f357cff0bcd71e6",
+      "bytes": 3883
+    },
+    "results/23_arch_search/arch_metrics_A9notgt_P12.tsv": {
+      "md5": "c41f654c0479f13665cfe994c4b825dc",
+      "bytes": 3796
+    },
+    "results/23_arch_search/arch_metrics_A9notgt_P14.tsv": {
+      "md5": "ec877f0de18185f30b7e43d9da56aa5c",
+      "bytes": 3895
+    },
+    "results/23_arch_search/arch_metrics_A9notgt_P16.tsv": {
+      "md5": "93d56907ada27bfc4e6cc122762e69a9",
+      "bytes": 3858
+    },
+    "results/23_arch_search/arch_metrics_A9notgt_P18.tsv": {
+      "md5": "db282bfdc0722461e22af642fa450d39",
+      "bytes": 3496
+    },
+    "results/23_arch_search/arch_metrics_E10e05_P01.tsv": {
+      "md5": "727454d0bb15e654ef91014f0ace8e54",
+      "bytes": 3951
+    },
+    "results/23_arch_search/arch_metrics_E10e05_P03.tsv": {
+      "md5": "a1352b24fbf5787a7be5353cc4d10807",
+      "bytes": 3943
+    },
+    "results/23_arch_search/arch_metrics_E10e05_P05.tsv": {
+      "md5": "bc61a5c683a8ea7827f5e330b4192579",
+      "bytes": 3985
+    },
+    "results/23_arch_search/arch_metrics_E10e05_P10.tsv": {
+      "md5": "dc4c731a9f5a14773bc3e22e6f45c9fa",
+      "bytes": 3938
+    },
+    "results/23_arch_search/arch_metrics_E10e05_P12.tsv": {
+      "md5": "ac39c9dd8791b448d1fe915b986214dd",
+      "bytes": 3893
+    },
+    "results/23_arch_search/arch_metrics_E10e05_P14.tsv": {
+      "md5": "935451e32251b5e0dc9b7438f4f2cd86",
+      "bytes": 3975
+    },
+    "results/23_arch_search/arch_metrics_E10e05_P16.tsv": {
+      "md5": "0a3163e4558bf47096eb2306661de066",
+      "bytes": 3898
+    },
+    "results/23_arch_search/arch_metrics_E10e05_P18.tsv": {
+      "md5": "742ac6c5f556033bc88b41dc2ff70db0",
+      "bytes": 3559
+    },
+    "results/23_arch_search/arch_metrics_E5fus_P01.tsv": {
+      "md5": "dea6f9fd33bb5ec853f5f20824a96fc8",
+      "bytes": 3795
+    },
+    "results/23_arch_search/arch_metrics_E5fus_P03.tsv": {
+      "md5": "a7f1131d0ddb4da37825987696dbe344",
       "bytes": 3764
     },
-    "results/23_arch_search/arch_metrics_E4ntm_P12.tsv": {
-      "md5": "7cdcce79382bbd4b029af35941896767",
-      "bytes": 3674
+    "results/23_arch_search/arch_metrics_E5fus_P05.tsv": {
+      "md5": "9134522ab1755708e8a4f28d544741be",
+      "bytes": 3813
     },
-    "results/23_arch_search/arch_metrics_E4ntm_P14.tsv": {
-      "md5": "40636d54debcc001ae0f25d31b30725e",
-      "bytes": 3802
+    "results/23_arch_search/arch_metrics_E5fus_P10.tsv": {
+      "md5": "52ae07a3ae4e0d259839a4c1b20f3de6",
+      "bytes": 3761
     },
-    "results/23_arch_search/arch_metrics_E4ntm_P16.tsv": {
-      "md5": "b1fed97b7c5005aedbf04102fa72a459",
+    "results/23_arch_search/arch_metrics_E5fus_P12.tsv": {
+      "md5": "8cb28654576bc98279b8c241ea533ced",
+      "bytes": 3667
+    },
+    "results/23_arch_search/arch_metrics_E5fus_P14.tsv": {
+      "md5": "3c8a85bf1b69d43e14b2548e5812cf08",
+      "bytes": 3809
+    },
+    "results/23_arch_search/arch_metrics_E5fus_P16.tsv": {
+      "md5": "3fd1eac642040b8711aa78ba0b3c6cd6",
       "bytes": 3722
     },
-    "results/23_arch_search/arch_metrics_E4ntm_P18.tsv": {
-      "md5": "db29e2f792bf4aec86a11d731dbc540d",
-      "bytes": 3367
+    "results/23_arch_search/arch_metrics_E5fus_P18.tsv": {
+      "md5": "1d46b480db16a5c8d2e5ddb69a3bd5da",
+      "bytes": 3378
     },
-    "results/23_arch_search/arch_metrics_E4rmlp_P01.tsv": {
-      "md5": "36b1727f94a92f596216d471c4b1274a",
-      "bytes": 2516
+    "results/23_arch_search/arch_metrics_E7cat_P01.tsv": {
+      "md5": "5fb05ee9673b01a85e6f0cdd5fa5d39a",
+      "bytes": 3759
     },
-    "results/23_arch_search/arch_metrics_E4rmlp_P03.tsv": {
-      "md5": "5271c756f610200442fa2b8c8b784ef8",
-      "bytes": 2524
+    "results/23_arch_search/arch_metrics_E7cat_P03.tsv": {
+      "md5": "33ebc63a107edd150b52395316ffe4fe",
+      "bytes": 3790
     },
-    "results/23_arch_search/arch_metrics_E4rmlp_P05.tsv": {
-      "md5": "2e85eca48fb29515484deed6abeea0a5",
-      "bytes": 2573
+    "results/23_arch_search/arch_metrics_E7cat_P05.tsv": {
+      "md5": "b9d51c1ead3f4eaab483708415d791ed",
+      "bytes": 3882
     },
-    "results/23_arch_search/arch_metrics_E4rmlp_P10.tsv": {
-      "md5": "90cfb709701bc587360d659834a29c2f",
-      "bytes": 2537
+    "results/23_arch_search/arch_metrics_E7cat_P10.tsv": {
+      "md5": "98dd75406c15778c32bc87946116c69e",
+      "bytes": 3802
     },
-    "results/23_arch_search/arch_metrics_E4rmlp_P12.tsv": {
-      "md5": "d0b2c543eb92d208360d5e1b1745e908",
-      "bytes": 2426
+    "results/23_arch_search/arch_metrics_E7cat_P12.tsv": {
+      "md5": "3b1b483baf51a8f611b8e7c329945f6f",
+      "bytes": 3744
     },
-    "results/23_arch_search/arch_metrics_E4rmlp_P14.tsv": {
-      "md5": "e348794a459f7ed305dd767f4e0333f5",
-      "bytes": 2534
+    "results/23_arch_search/arch_metrics_E7cat_P14.tsv": {
+      "md5": "fe762f01ffb436653ac6dcc1ee39e026",
+      "bytes": 3837
     },
-    "results/23_arch_search/arch_metrics_E4rmlp_P16.tsv": {
-      "md5": "690a0a9b6e008b43e6b236fecc696948",
-      "bytes": 2508
+    "results/23_arch_search/arch_metrics_E7cat_P16.tsv": {
+      "md5": "ebccaf961a2475f946f4d697f0e01768",
+      "bytes": 3747
     },
-    "results/23_arch_search/arch_metrics_E4rmlp_P18.tsv": {
-      "md5": "b40eb471b19f90b2167620e2524d8cca",
-      "bytes": 2287
+    "results/23_arch_search/arch_metrics_E7cat_P18.tsv": {
+      "md5": "8f81e5aaa230b037922f06ce79427317",
+      "bytes": 3416
+    },
+    "results/23_arch_search/arch_metrics_E9_P01.tsv": {
+      "md5": "25e889b9c5358139f0699582fdd28f72",
+      "bytes": 3993
+    },
+    "results/23_arch_search/arch_metrics_E9_P02.tsv": {
+      "md5": "63b1a511d7c45c44c57b1fa2715e7c58",
+      "bytes": 3863
+    },
+    "results/23_arch_search/arch_metrics_E9_P03.tsv": {
+      "md5": "c547ed5e28267150c2d1cc770e023dbc",
+      "bytes": 3975
+    },
+    "results/23_arch_search/arch_metrics_E9_P04.tsv": {
+      "md5": "ee6cef057e0d485af990fa758aecf9d6",
+      "bytes": 3981
+    },
+    "results/23_arch_search/arch_metrics_E9_P05.tsv": {
+      "md5": "01559d234c30063b3ae3505a33dbf33a",
+      "bytes": 4030
+    },
+    "results/23_arch_search/arch_metrics_E9_P06.tsv": {
+      "md5": "4199c6414dd17bdf7ec2f9c163804932",
+      "bytes": 3097
+    },
+    "results/23_arch_search/arch_metrics_E9_P07.tsv": {
+      "md5": "9dfd722431c8b2cbab62274a12092d90",
+      "bytes": 3902
+    },
+    "results/23_arch_search/arch_metrics_E9_P08.tsv": {
+      "md5": "0555857098f4b3f23c853d120aaac37c",
+      "bytes": 3157
+    },
+    "results/23_arch_search/arch_metrics_E9_P09.tsv": {
+      "md5": "5a7ef462310602e7ea9a4721fe4aa4a4",
+      "bytes": 3089
+    },
+    "results/23_arch_search/arch_metrics_E9_P10.tsv": {
+      "md5": "ff9345a0f1e8f433e19cbda6f63409c0",
+      "bytes": 3937
+    },
+    "results/23_arch_search/arch_metrics_E9_P11.tsv": {
+      "md5": "727b200d21e85d799f9aaf04869fcccd",
+      "bytes": 3938
+    },
+    "results/23_arch_search/arch_metrics_E9_P12.tsv": {
+      "md5": "c790bf70c3d11f478c23e7fc83adef5c",
+      "bytes": 3898
+    },
+    "results/23_arch_search/arch_metrics_E9_P13.tsv": {
+      "md5": "13651a6b7c50ffa707f3f6063943245c",
+      "bytes": 3874
+    },
+    "results/23_arch_search/arch_metrics_E9_P14.tsv": {
+      "md5": "6cde96401022fa7b5a512dbcd39f958b",
+      "bytes": 3992
+    },
+    "results/23_arch_search/arch_metrics_E9_P15.tsv": {
+      "md5": "e502499eccd9103145e97ea236a34e9e",
+      "bytes": 3900
+    },
+    "results/23_arch_search/arch_metrics_E9_P16.tsv": {
+      "md5": "e7f0e041510f1a4094278d0d28215701",
+      "bytes": 3891
+    },
+    "results/23_arch_search/arch_metrics_E9_P17.tsv": {
+      "md5": "b103262b0585e2c8dcd248e7471d5d0c",
+      "bytes": 3985
+    },
+    "results/23_arch_search/arch_metrics_E9_P18.tsv": {
+      "md5": "50060b7029b7bfbd39b75e73154cfade",
+      "bytes": 3644
+    },
+    "results/23_arch_search/arch_metrics_E9_P19.tsv": {
+      "md5": "f0c21da2c077317d5e52c434d340a2a7",
+      "bytes": 3102
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P02.tsv": {
+      "md5": "91cb2fcb317619f7cf0824f56c8d3cc5",
+      "bytes": 3877
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P04.tsv": {
+      "md5": "3483cdfdf8f181a55ac07ab88d1fdcb2",
+      "bytes": 4013
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P06.tsv": {
+      "md5": "7b86034705e0e46fcdf60ab8aea85485",
+      "bytes": 3141
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P07.tsv": {
+      "md5": "ec74c8b2150754a17ce00f15fbf0a8f1",
+      "bytes": 3878
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P08.tsv": {
+      "md5": "e06fc156c72094cd8dda58fe128fd174",
+      "bytes": 3129
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P09.tsv": {
+      "md5": "3cf71bc1fad67a2f9f5323ae7cbace30",
+      "bytes": 3076
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P11.tsv": {
+      "md5": "a1bbaf79daf593ec2abd0f305a171e1b",
+      "bytes": 3963
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P13.tsv": {
+      "md5": "059cbe338d1777b111ffd6b88e08740a",
+      "bytes": 3894
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P15.tsv": {
+      "md5": "0ac5fdeb8ba70980aec45610ddc85f0b",
+      "bytes": 3904
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P17.tsv": {
+      "md5": "15e8d01b12f2b949cd9a206229ff618c",
+      "bytes": 3942
+    },
+    "results/23_arch_search/arch_metrics_E9nm_P19.tsv": {
+      "md5": "a3112482b6c14fa3d6cba1bbf1e67e59",
+      "bytes": 3088
     }
   },
   "outputs": {
     "results/32_design_controls/patient_level.tsv": {
-      "md5": "37f4bc1aeb76aa73f092f4102f55030f",
-      "bytes": 10165
+      "md5": "0289ada1d487a798ad9fc44ee58c06eb",
+      "bytes": 13461
     },
     "results/32_design_controls/summary.tsv": {
-      "md5": "1ec0cf07d5681f81cc3194ab5dc5410f",
-      "bytes": 1320
+      "md5": "b906c44a0eb322fa522e87405e01d850",
+      "bytes": 1760
     },
     "results/32_design_controls/paired.tsv": {
-      "md5": "2bfa97e7aa8a243898f014bb1e6dac18",
-      "bytes": 7316
+      "md5": "9ea562f01bccccd35c445bee4518d030",
+      "bytes": 8821
+    },
+    "results/32_design_controls/image_absent_all_patients.tsv": {
+      "md5": "877f8da8c469c9ec17019737b173106d",
+      "bytes": 1114
     }
   },
   "environment": {

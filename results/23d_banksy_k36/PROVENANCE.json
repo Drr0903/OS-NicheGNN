@@ -1,11 +1,11 @@
 {
   "stage": "23d_banksy_k36",
-  "finished_utc": "2026-10-11T09:23:48Z",
+  "finished_utc": "2026-10-12T14:21:29Z",
   "elapsed_s": 4.7,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "4a13e04bb9a70074397edc2fbf6a827844dcce2ca010280675b644a85cb6b341",
-  "git_commit": "a6e98fd0d49bb2cca8b28e028ae950a228a56425",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
     "results/23d_banksy_k36/banksy_k36_metrics_P01.tsv": {
@@ -87,12 +87,12 @@
   },
   "outputs": {
     "results/23d_banksy_k36/banksy_k36_patient_level.tsv": {
-      "md5": "e6b4159469d6b60de9e982e50b1f8e75",
-      "bytes": 13909
+      "md5": "a5f2d99e77ae96678a87b0e156d7b8f3",
+      "bytes": 14371
     },
     "results/23d_banksy_k36/banksy_k36_paired.tsv": {
-      "md5": "1d617d7a16ea5bde56fdcfb06ae5f622",
-      "bytes": 12774
+      "md5": "8c59ed88a657980e277fb1288a5bd4ea",
+      "bytes": 14728
     },
     "results/23d_banksy_k36/banksy_k36_metrics.tsv": {
       "md5": "4892c3fb06dfc78767975a8d792f2dbb",

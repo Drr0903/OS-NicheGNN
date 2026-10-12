@@ -1,0 +1,13 @@
+patient	section_id	n_spots_geo_h5	boundary_eligible	timepoint	time_from_diagnosis
+P01	MR1	3799.0	False	relapse 1	M24
+P02	MR2	3297.0	True	relapse 1	M14
+P03	MR3	3140.0	True	relapse 1	M55
+P04	MR4	3635.0	True	relapse 1	M24
+P10	MR10A	2901.0	True	relapse 1	M18
+P10	MR10B	2406.0	True	relapse 2	M44
+P11	MR11A	4352.0	True	relapse 1	M19
+P11	MR11B	4128.0	True	relapse 1	M19
+P12	MR12	677.0	True	relapse 2	M14
+P13	MR13	2945.0	True	relapse 2	M30
+P15	MR15	2290.0	True	relapse 1	M18
+P18	MR18	3012.0	True	relapse 1	M54

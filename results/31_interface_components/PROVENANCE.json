@@ -1,26 +1,26 @@
 {
   "stage": "31_interface_components",
-  "finished_utc": "2026-10-11T18:04:08Z",
-  "elapsed_s": 201.1,
+  "finished_utc": "2026-10-12T12:01:37Z",
+  "elapsed_s": 207.4,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
-  "git_commit": "f29cf3e38927b80bc84b899fb397a510ad6dbbfe",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
     "results/15_niches/interface_segments.tsv": {
-      "md5": "48cadce3ca71ba7af3f4e77cab4ff6b2",
-      "bytes": 121007
+      "md5": "d1c15fdab31b05a1eea8d54a3271480d",
+      "bytes": 120870
     }
   },
   "outputs": {
     "results/31_interface_components/side_models.tsv": {
-      "md5": "a837446a19d0b76920d2b4097a8bd825",
-      "bytes": 2948
+      "md5": "9e7fd32f50092c4b419894eccba6df9d",
+      "bytes": 2914
     },
     "results/31_interface_components/per_patient.tsv": {
-      "md5": "2322a09ce3cae89cad8c23cfadc27a45",
-      "bytes": 287
+      "md5": "463b523dc2ec97f828c292110bb464c0",
+      "bytes": 332
     }
   },
   "environment": {

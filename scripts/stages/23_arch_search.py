@@ -153,6 +153,10 @@ def main():
     ap.add_argument("--morph-drop", type=float, default=0.0, help="probability that a training section is seen without its image (suffix _md<p>)")
     ap.add_argument("--morph-gate", action="store_true", help="per-spot gate on the morphology block (suffix _mg)")
     ap.add_argument("--nt-masked", action="store_true", help="neighbourhood targets over masked neighbours only (suffix _ntm)")
+    ap.add_argument("--ring-gate", action="store_true", help="ringxattn: attention branch as a gated residual on the MLP backbone (suffix _rg)")
+    ap.add_argument("--moe-sharp", type=float, default=0.0, help="weight of the per-spot router entropy (suffix _sh<w>)")
+    ap.add_argument("--moe-balance", type=float, default=0.01, help="weight of the expert load-balancing term (suffix _bal<w> if not 0.01)")
+    ap.add_argument("--concat-fuse", action="store_true", help="ringxattn: the two branches concatenated without a fusion layer (suffix _cat)")
     ap.add_argument("--eval-nomorph", action="store_true", help="also score the held-out patient with the morphology block absent")
     ap.add_argument("--dims", default="", help="hidden width,latent width (e.g. 256,128); methods are suffixed _d<h>z<l>")
     a = ap.parse_args(); t0 = time.time(); cfg = load_config(); set_global_seed(cfg["seed"]); sd = stage_dir(STAGE)
@@ -162,10 +166,10 @@ def main():
     sfx_extra = ("_lin" if a.linear_heads else "") + ("_ps" if a.prop_skip else "") + ("_gr" if a.grad_skip else "") + ("_moe" if a.moe else "") + ("_clip" if a.clip else "") + ("_dgi" if a.dgi else "") + (f"_img{a.img_scale:g}" if a.img_scale != 1.0 else "") \
         + (f"_cnv{'t' if a.cnv_target else ''}{a.cnv_dim}" if a.cnv_dim else "") + (f"_osl{a.programme:g}" if a.programme else "") + (f"_sadv{a.site_adv:g}" if a.site_adv else "") \
         + (f"_nmoe{a.moe_experts}" if a.moe_experts else "") + (f"_fh{a.fuse_hidden}" if a.fuse_hidden else "") \
-        + (f"_md{a.morph_drop:g}" if a.morph_drop else "") + ("_mg" if a.morph_gate else "") + ("_ntm" if a.nt_masked else "")
+        + (f"_md{a.morph_drop:g}" if a.morph_drop else "") + ("_mg" if a.morph_gate else "") + ("_ntm" if a.nt_masked else "") + ("_rg" if a.ring_gate else "") + ("_cat" if a.concat_fuse else "") + (f"_sh{a.moe_sharp:g}" if a.moe_sharp else "") + (f"_bal{a.moe_balance:g}" if a.moe_balance != 0.01 else "")
     cfg["arch"].update(moe_experts=a.moe_experts, fuse_hidden=a.fuse_hidden, cnv_dim=a.cnv_dim, cnv_target=a.cnv_target, programme_weight=a.programme, site_adv=a.site_adv,
                        site_code={s: sorted(set(cfg["v2"]["site_of"].values())).index(v) for s, v in cfg["v2"]["site_of"].items()})
-    cfg["arch"].update(morph_drop=a.morph_drop, morph_gate=a.morph_gate, nt_masked=a.nt_masked, eval_nomorph=a.eval_nomorph)
+    cfg["arch"].update(moe_balance=a.moe_balance, moe_sharp=a.moe_sharp, concat_fuse=a.concat_fuse, ring_gate=a.ring_gate, morph_drop=a.morph_drop, morph_gate=a.morph_gate, nt_masked=a.nt_masked, eval_nomorph=a.eval_nomorph)
     cfg["arch"].update(img_scale=a.img_scale, linear_heads=a.linear_heads, prop_skip=a.prop_skip, grad_skip=a.grad_skip, moe=a.moe, clip=a.clip, dgi=a.dgi)
     if a.lambda_anchor is not None:
         cfg["v2"]["model"]["lambda_anchor"] = a.lambda_anchor; sfx_extra += f"_la{a.lambda_anchor:g}"

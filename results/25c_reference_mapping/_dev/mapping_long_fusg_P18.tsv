@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+MLP + gated attention	transductive	same-protocol atlas	P18	2937	0.008171603677221655	0.9223367697594502	0.8172177267962333	0.1312318364654607
+MLP + gated attention	inductive	same-protocol atlas	P18	2937	0.2846441947565543	0.8224654926225606	0.6534980424645636	0.058934919272324096
+MLP + gated attention	mapped	same-protocol atlas	P18	2937	0.005107252298263534	0.8770547945205479	0.7599031890089574	0.15277076070403817
+MLP + gated attention	raw	same-protocol atlas	P18	2937	0.001361933946203609	0.6319562990781836	0.0	0.0

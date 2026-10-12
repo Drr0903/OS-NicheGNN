@@ -1,0 +1,25 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+breast	lopo	leiden	OS-NicheGNN (single fusion expert)	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (single fusion expert)	20260915	CID4465	CID4465	6	0.026536173370861667	0.04303837931864713	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260915	CID4465	CID4465	6	0.024933784386556815	0.020127677670137206	1195
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (single fusion expert)	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260914	CID4465	CID4465	6	0.0471134120883897	0.06791609753593446	1195
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260914	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260915	CID4465	CID4465	6	0.6385394665507839	0.4980191548767781	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260915	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195
+breast	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260916	CID4465	CID4465	6	0.0	0.0	1195

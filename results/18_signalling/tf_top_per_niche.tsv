@@ -1,41 +1,41 @@
 niche	source	activity	name
-0	SP1	7.1316007234195125	lymphoid-enriched lung parenchyma
-0	TP53	6.4753880763476985	lymphoid-enriched lung parenchyma
-0	SMAD3	6.462622703908522	lymphoid-enriched lung parenchyma
-0	SRF	6.310202755441326	lymphoid-enriched lung parenchyma
-0	JUN	6.1691824037134495	lymphoid-enriched lung parenchyma
-1	SMAD3	7.019380702532155	epithelial-enriched tumour
-1	SP1	5.962836028694662	epithelial-enriched tumour
-1	RUNX2	5.218570958904975	epithelial-enriched tumour
-1	JUN	5.215447958981212	epithelial-enriched tumour
-1	SRF	5.166023938725176	epithelial-enriched tumour
-2	SP1	8.688067221197443	myeloid-enriched lung parenchyma
-2	SMAD3	8.264294671688537	myeloid-enriched lung parenchyma
-2	JUN	8.196350162744192	myeloid-enriched lung parenchyma
-2	MYC	7.334568937404226	myeloid-enriched lung parenchyma
-2	NFKB	7.301099156079763	myeloid-enriched lung parenchyma
-3	SMAD3	7.250136150870192	peritumoural stroma (boundary)
-3	SP1	6.819382885552779	peritumoural stroma (boundary)
-3	RUNX2	6.287626593296532	peritumoural stroma (boundary)
-3	MYC	6.063872653541452	peritumoural stroma (boundary)
-3	JUN	5.717712536784006	peritumoural stroma (boundary)
-4	SP1	9.237711510560478	vascular-enriched lung parenchyma
-4	JUN	7.841889968126545	vascular-enriched lung parenchyma
-4	NFKB	7.797273105615466	vascular-enriched lung parenchyma
-4	SMAD3	7.665079756086677	vascular-enriched lung parenchyma
-4	TP53	7.615382685588421	vascular-enriched lung parenchyma
-5	SP1	9.040725901188004	myeloid-enriched tumour
-5	MYC	8.422081434628687	myeloid-enriched tumour
-5	SMAD3	8.371621465992698	myeloid-enriched tumour
-5	JUN	8.129935988386006	myeloid-enriched tumour
-5	NFKB	7.7884565854020416	myeloid-enriched tumour
-6	MYC	8.196441640131257	osteoclast-enriched tumour
-6	SMAD3	8.099790602072785	osteoclast-enriched tumour
-6	SP1	7.6127813083373095	osteoclast-enriched tumour
-6	JUN	6.815906745491446	osteoclast-enriched tumour
-6	TP53	6.745128789258018	osteoclast-enriched tumour
-7	SMAD3	8.27290121594129	fibroblast-enriched tumour
-7	MYC	8.259650267595894	fibroblast-enriched tumour
-7	SP1	7.947424328440134	fibroblast-enriched tumour
-7	RUNX2	7.1338469369641615	fibroblast-enriched tumour
-7	TP53	6.830998006151579	fibroblast-enriched tumour
+0	SP1	7.104848809836966	epithelial-enriched lung parenchyma
+0	TP53	6.426367378673636	epithelial-enriched lung parenchyma
+0	SMAD3	6.386283873048153	epithelial-enriched lung parenchyma
+0	SRF	6.274809806768272	epithelial-enriched lung parenchyma
+0	JUN	6.1713732175877345	epithelial-enriched lung parenchyma
+1	SP1	9.331904096384847	vascular-enriched lung parenchyma
+1	JUN	7.915624693530464	vascular-enriched lung parenchyma
+1	NFKB	7.892931098844226	vascular-enriched lung parenchyma
+1	TP53	7.688576443223926	vascular-enriched lung parenchyma
+1	SMAD3	7.688043184034301	vascular-enriched lung parenchyma
+2	SMAD3	7.598472402154208	peritumoural stroma (boundary)
+2	SP1	7.083421680132924	peritumoural stroma (boundary)
+2	MYC	6.340412617510493	peritumoural stroma (boundary)
+2	RUNX2	6.311733335028663	peritumoural stroma (boundary)
+2	JUN	6.023386127124537	peritumoural stroma (boundary)
+3	SMAD3	6.432162397883962	lymphoid-enriched stroma
+3	SP1	5.7456015050245455	lymphoid-enriched stroma
+3	RUNX2	5.076302905938821	lymphoid-enriched stroma
+3	JUN	5.053465318263967	lymphoid-enriched stroma
+3	MYC	4.995309994615083	lymphoid-enriched stroma
+4	SMAD3	8.23775786118057	osteoclast-enriched tumour
+4	MYC	8.003359137589959	osteoclast-enriched tumour
+4	SP1	7.630252350594631	osteoclast-enriched tumour
+4	JUN	6.865971681123582	osteoclast-enriched tumour
+4	TP53	6.7268369844756295	osteoclast-enriched tumour
+5	MYC	8.507608422419311	fibroblast-enriched tumour
+5	SMAD3	8.35386805321241	fibroblast-enriched tumour
+5	SP1	8.057161801726371	fibroblast-enriched tumour
+5	RUNX2	7.307611627243742	fibroblast-enriched tumour
+5	TP53	6.937934696043659	fibroblast-enriched tumour
+6	SP1	9.240678043545904	myeloid-enriched tumour
+6	SMAD3	8.849270273955769	myeloid-enriched tumour
+6	MYC	8.794811273351625	myeloid-enriched tumour
+6	JUN	8.54384525875305	myeloid-enriched tumour
+6	NFKB	7.945398762047154	myeloid-enriched tumour
+7	SP1	8.953650407572736	myeloid-enriched stroma
+7	MYC	8.529520942203323	myeloid-enriched stroma
+7	SMAD3	8.511935576030007	myeloid-enriched stroma
+7	JUN	8.082061383483355	myeloid-enriched stroma
+7	TP53	7.8129026883444075	myeloid-enriched stroma

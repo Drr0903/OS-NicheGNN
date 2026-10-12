@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+branches concatenated	transductive	same-protocol atlas	P07	746	0.0	0.7997311827956989	0.447599283383456	0.43253026146629836
+branches concatenated	inductive	same-protocol atlas	P07	746	0.43967828418230565	0.8444976076555024	0.02410917830283497	0.17428542909672828
+branches concatenated	mapped	same-protocol atlas	P07	746	0.0	0.6586021505376344	0.3430971853431314	0.4745180988893417
+branches concatenated	raw	same-protocol atlas	P07	746	0.0	0.004032258064516129	0.0	0.0

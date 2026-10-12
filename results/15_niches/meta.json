@@ -1,25 +1,25 @@
 {
   "plan": "v2",
   "K": 8,
-  "unmatched_threshold": 10.728022575378418,
-  "interface_niche": 3,
+  "unmatched_threshold": 10.991974830627441,
+  "interface_niche": 2,
   "names": {
-    "0": "lymphoid-enriched lung parenchyma",
-    "1": "epithelial-enriched tumour",
-    "2": "myeloid-enriched lung parenchyma",
-    "3": "peritumoural stroma (boundary)",
-    "4": "vascular-enriched lung parenchyma",
-    "5": "myeloid-enriched tumour",
-    "6": "osteoclast-enriched tumour",
-    "7": "fibroblast-enriched tumour"
+    "0": "epithelial-enriched lung parenchyma",
+    "1": "vascular-enriched lung parenchyma",
+    "2": "peritumoural stroma (boundary)",
+    "3": "lymphoid-enriched stroma",
+    "4": "osteoclast-enriched tumour",
+    "5": "fibroblast-enriched tumour",
+    "6": "myeloid-enriched tumour",
+    "7": "myeloid-enriched stroma"
   },
-  "centroid_agreement_ari": 0.7047751809143339,
+  "centroid_agreement_ari": 0.717234789989955,
   "consensus_seed_agreement": [
-    0.6770479062202456,
-    0.7561435957876919,
-    0.6528619789670159,
-    0.7007101494726403,
-    0.7000798336176892
+    0.7323907885388408,
+    0.6492033610860647,
+    0.7320263946857759,
+    0.6403522575893534,
+    0.6981861530921806
   ],
-  "frozen_epochs": 147
+  "frozen_epochs": 138
 }

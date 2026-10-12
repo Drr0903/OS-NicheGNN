@@ -1,0 +1,6 @@
+k	resolution	stability_ari_mean	stability_ari_sd	n_niches_present_in_half_patients	all_niches_present	selected
+4	0.6575262998930654			4	True	False
+5	0.8473156696245359			4	False	False
+6	0.9220531187988318	0.6202596671061873	0.0935495658692009	4	False	True
+7	1.0033827820785923			4	False	False
+8	1.0918861254797505			5	False	False

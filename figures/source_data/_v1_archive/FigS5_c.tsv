@@ -1,0 +1,37 @@
+dataset	representation	clustering	n_present
+breast	standardised expression	k-means	2.0
+breast	standardised expression	Leiden (plain kNN)	2.0
+breast	standardised expression	Leiden (patient-balanced kNN)	3.0
+breast	PCA-50	k-means	1.0
+breast	PCA-50	Leiden (plain kNN)	1.0
+breast	PCA-50	Leiden (patient-balanced kNN)	3.0
+breast	BANKSY-20	k-means	0.0
+breast	BANKSY-20	Leiden (plain kNN)	0.0
+breast	BANKSY-20	Leiden (patient-balanced kNN)	1.0
+breast	OS-NicheGNN	k-means	1.4
+breast	OS-NicheGNN	Leiden (plain kNN)	1.0
+breast	OS-NicheGNN	Leiden (patient-balanced kNN)	2.0
+breast	OS-NicheGNN + contrastive	k-means	6.0
+breast	OS-NicheGNN + contrastive	Leiden (plain kNN)	6.0
+breast	OS-NicheGNN + contrastive	Leiden (patient-balanced kNN)	6.0
+breast	OS-NicheGNN + invariant	k-means	6.0
+breast	OS-NicheGNN + invariant	Leiden (plain kNN)	5.8
+breast	OS-NicheGNN + invariant	Leiden (patient-balanced kNN)	6.0
+crc	standardised expression	k-means	3.0
+crc	standardised expression	Leiden (plain kNN)	4.0
+crc	standardised expression	Leiden (patient-balanced kNN)	4.0
+crc	PCA-50	k-means	2.0
+crc	PCA-50	Leiden (plain kNN)	2.0
+crc	PCA-50	Leiden (patient-balanced kNN)	4.0
+crc	BANKSY-20	k-means	2.0
+crc	BANKSY-20	Leiden (plain kNN)	2.0
+crc	BANKSY-20	Leiden (patient-balanced kNN)	4.0
+crc	OS-NicheGNN	k-means	2.4
+crc	OS-NicheGNN	Leiden (plain kNN)	2.0
+crc	OS-NicheGNN	Leiden (patient-balanced kNN)	4.4
+crc	OS-NicheGNN + contrastive	k-means	6.0
+crc	OS-NicheGNN + contrastive	Leiden (plain kNN)	5.8
+crc	OS-NicheGNN + contrastive	Leiden (patient-balanced kNN)	6.0
+crc	OS-NicheGNN + invariant	k-means	6.0
+crc	OS-NicheGNN + invariant	Leiden (plain kNN)	5.8
+crc	OS-NicheGNN + invariant	Leiden (patient-balanced kNN)	6.0

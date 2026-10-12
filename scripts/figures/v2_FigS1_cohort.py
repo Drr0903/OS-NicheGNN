@@ -31,7 +31,7 @@ def main() -> None:
         for j, s in enumerate(secs):
             y = 0.72 - j * 0.26; n = int(float(man.loc[s, "n_spots_geo_h5"]))
             ax.add_patch(plt.Rectangle((x[i] - 0.022, y - 0.08), 0.044, 0.16, transform=ax.transAxes, fc=SITE_COL[site_of[s]], ec="black", lw=0.4))
-            ax.text(x[i], y, s, ha="center", va="center", fontsize=5.0, color="white" if site_of[s] != "bone" else "black", transform=ax.transAxes)
+            ax.text(x[i], y, s, ha="center", va="center", fontsize=5.0, color="white" if site_of[s] != "bone" else "black", transform=ax.transAxes)._overlap_exempt = True  # label inside its box
             rows.append({"patient": p, "section": s, "site": site_of[s], "n_spots": n})
             if j > 0:
                 ax.plot([x[i], x[i]], [y + 0.08, y + 0.18], color="black", lw=0.5, transform=ax.transAxes)

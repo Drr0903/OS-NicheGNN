@@ -1,17 +1,17 @@
 {
   "stage": "27_benchmark_os_seurat_section_model_os_seurat_section_H_nbz64R_OS6",
-  "finished_utc": "2026-10-11T13:36:44Z",
-  "elapsed_s": 1658.0,
+  "finished_utc": "2026-10-12T16:35:39Z",
+  "elapsed_s": 2535.8,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "4a13e04bb9a70074397edc2fbf6a827844dcce2ca010280675b644a85cb6b341",
-  "git_commit": "9f99f3b001817a7fa3228bb73979a4c6887bc126",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "35a27a804194bf572b312488490c7a30bfa65278",
   "git_dirty": true,
   "inputs": {},
   "outputs": {
     "results/27_benchmark/section_scores_os_seurat_section_model_os_seurat_section_H_nbz64R_OS6.tsv": {
-      "md5": "77d58db261faef0838cced2427124950",
-      "bytes": 7681
+      "md5": "5f6653912385c57a52941c099a88d714",
+      "bytes": 7686
     }
   },
   "environment": {
@@ -39,7 +39,7 @@
         "mamba",
         "xmamba"
       ],
-      "d": 256,
+      "d": 240,
       "z_dim": 64,
       "heads": 4,
       "n_layers": 2,
@@ -73,6 +73,9 @@
       "niche_targets": {},
       "linear_heads": true,
       "prop_skip": true,
+      "moe_experts": 2,
+      "moe_sharp": 0.05,
+      "moe_balance": 0.1,
       "section_input": "hvg3000",
       "img_scale": 1.0,
       "dgi": 1.0,

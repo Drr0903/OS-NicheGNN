@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+single fusion expert	transductive	same-protocol atlas	P06	456	0.0	0.7960526315789473	0.5473663119497896	0.08202973582040138
+single fusion expert	inductive	same-protocol atlas	P06	456	0.20833333333333334	0.7839335180055401	0.29841061446744754	0.21231472127660012
+single fusion expert	mapped	same-protocol atlas	P06	456	0.0	0.7171052631578947	0.41533780888397487	0.13818646980686866
+single fusion expert	raw	same-protocol atlas	P06	456	0.0	0.6951754385964912	0.0	0.0

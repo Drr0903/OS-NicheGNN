@@ -1,9 +1,9 @@
 niche	n_metastatic_sections_present	n_metastatic_sites_present	n_primary_sections_present	present_frac_bone	present_frac_heart	present_frac_lung	present_frac_lymph_node	present_frac_soft_tissue	class	name
-0	6	1	0	0.0	0.0	0.5	0.0	0.0	site-specific (lung)	lymphoid-enriched lung parenchyma
-1	11	3	9	1.0	0.0	0.5833333333333334	1.0	1.0	shared metastatic	epithelial-enriched tumour
-2	4	1	1	0.1111111111111111	0.0	0.3333333333333333	0.0	0.0	sporadic	myeloid-enriched lung parenchyma
-3	11	3	7	0.7777777777777778	0.0	0.5833333333333334	1.0	1.0	shared metastatic	peritumoural stroma (boundary)
-4	10	2	0	0.0	0.0	0.75	0.0	0.3333333333333333	shared metastatic	vascular-enriched lung parenchyma
-5	14	3	5	0.5555555555555556	1.0	0.8333333333333334	0.0	1.0	shared metastatic	myeloid-enriched tumour
-6	15	3	4	0.4444444444444444	1.0	0.9166666666666666	0.0	1.0	shared metastatic	osteoclast-enriched tumour
-7	12	4	9	1.0	1.0	0.5833333333333334	1.0	1.0	shared metastatic	fibroblast-enriched tumour
+0	6	1	0	0.0	0.0	0.5	0.0	0.0	site-specific (lung)	epithelial-enriched lung parenchyma
+1	11	2	0	0.0	0.0	0.75	0.0	0.6666666666666666	shared metastatic	vascular-enriched lung parenchyma
+2	14	3	8	0.8888888888888888	0.0	0.8333333333333334	1.0	1.0	shared metastatic	peritumoural stroma (boundary)
+3	9	3	9	1.0	0.0	0.5	1.0	0.6666666666666666	shared metastatic	lymphoid-enriched stroma
+4	15	3	3	0.3333333333333333	1.0	0.9166666666666666	0.0	1.0	shared metastatic	osteoclast-enriched tumour
+5	11	4	9	1.0	1.0	0.5833333333333334	1.0	0.6666666666666666	shared metastatic	fibroblast-enriched tumour
+6	6	2	4	0.4444444444444444	0.0	0.4166666666666667	0.0	0.3333333333333333	sporadic	myeloid-enriched tumour
+7	11	3	5	0.5555555555555556	1.0	0.5833333333333334	0.0	1.0	shared metastatic	myeloid-enriched stroma

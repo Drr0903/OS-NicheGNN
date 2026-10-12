@@ -32,18 +32,39 @@ def set_style() -> None:
 
 
 def panel_label(ax, letter: str) -> None:
-    ax.set_title(letter, fontweight="bold", fontsize=11, loc="left", pad=8)
+    """Register a panel letter; save_fig places all letters of a figure together (lib.figlayout.align_panel_labels)."""
+    fig = ax.figure
+    if not hasattr(fig, "_panel_labels"):
+        fig._panel_labels = []
+    fig._panel_labels.append((ax, letter))
+
+
+def _data_marks(ax) -> np.ndarray:
+    """Pixel positions of the plotted points and of points sampled along the lines of an axes."""
+    pts = []
+    for c in ax.collections:
+        if c.get_visible() and hasattr(c, "get_offsets") and np.asarray(c.get_offsets()).size:
+            pts.append(c.get_offset_transform().transform(np.asarray(c.get_offsets())))
+    for ln in ax.lines:
+        xy = ln.get_transform().transform(ln.get_xydata())
+        for k in range(len(xy) - 1):
+            if np.isfinite(xy[k]).all() and np.isfinite(xy[k + 1]).all():
+                pts.append(np.linspace(xy[k], xy[k + 1], max(2, int(np.hypot(*(xy[k + 1] - xy[k])) / 3))))
+    return np.vstack(pts) if pts else np.zeros((0, 2))
 
 
 def label_points(ax, xs, ys, texts, fontsize=5.5, colour="black"):
-    """Annotate scattered points, taking the first candidate offset that does not touch a label already placed."""
-    cands = [(4, 4), (4, -9), (-11, 4), (-11, -9), (0, 8), (0, -13)]
-    ax.figure.canvas.draw(); r = ax.figure.canvas.get_renderer(); placed = []
+    """Annotate scattered points, taking the first candidate offset whose box touches neither a label already placed nor
+    any plotted point or line (the labelled point itself excepted); falls back to the first candidate."""
+    cands = [(4, 4), (4, -9), (-11, 4), (-11, -9), (0, 8), (0, -13), (8, 0), (-14, 0), (6, 10), (-14, 10), (6, -15), (-14, -15)]
+    ax.figure.canvas.draw(); r = ax.figure.canvas.get_renderer(); placed = []; P = _data_marks(ax)
     for x, y, s in zip(xs, ys, texts):
+        own = ax.transData.transform((x, y)); others = P[np.hypot(*(P - own).T) > 4] if len(P) else P
         for dx, dy in cands:
             a = ax.annotate(str(s), (x, y), xytext=(dx, dy), textcoords="offset points", fontsize=fontsize, color=colour)
             bb = a.get_window_extent(renderer=r).expanded(1.15, 1.25)
-            if not any(bb.overlaps(p) for p in placed):
+            hit = len(others) and ((others[:, 0] > bb.x0) & (others[:, 0] < bb.x1) & (others[:, 1] > bb.y0) & (others[:, 1] < bb.y1)).any()
+            if not any(bb.overlaps(p) for p in placed) and not hit:
                 placed.append(bb); break
             a.remove()
         else:
@@ -51,7 +72,10 @@ def label_points(ax, xs, ys, texts, fontsize=5.5, colour="black"):
 
 
 def save_fig(fig, name: str, dpi: int = 400) -> None:  # 400 dpi keeps every panel above 300 dpi at the 170 mm print width
-    FIGURES.mkdir(exist_ok=True)
+    from .figlayout import align_panel_labels, overlap_report
+    FIGURES.mkdir(exist_ok=True); align_panel_labels(fig); issues = overlap_report(fig)
+    rep = FIGURES / "layout_checks"; rep.mkdir(exist_ok=True); (rep / f"{name}.txt").write_text("\n".join(issues) + ("\n" if issues else ""))
+    print(f"{name}: {len(issues)} layout issue(s)" + "".join(f"\n  {i}" for i in issues), flush=True)
     fig.savefig(FIGURES / f"{name}.pdf")
     fig.savefig(FIGURES / f"{name}.png", dpi=dpi)
     plt.close(fig)

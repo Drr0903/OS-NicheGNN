@@ -1,0 +1,85 @@
+{
+  "stage": "27_benchmark_dlpfc_section_model_dlpfc_section_H_nbz_donor1",
+  "finished_utc": "2026-10-12T16:19:59Z",
+  "elapsed_s": 6624.3,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "35a27a804194bf572b312488490c7a30bfa65278",
+  "git_dirty": true,
+  "inputs": {},
+  "outputs": {
+    "results/27_benchmark/section_scores_dlpfc_section_model_dlpfc_section_H_nbz_donor1.tsv": {
+      "md5": "7fcb284c793857b5360eb0dbeb4146c0",
+      "bytes": 9553
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "amendment": "A21",
+    "arch": {
+      "contexts": [
+        "none",
+        "xattn",
+        "mamba",
+        "xmamba"
+      ],
+      "d": 240,
+      "z_dim": 256,
+      "heads": 4,
+      "n_layers": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "spot_mask_rate": 0.4,
+      "w_visible": 0.5,
+      "centre_batch": 2048,
+      "max_epochs": 150,
+      "patience": 15,
+      "mnnproj_rank": 5,
+      "dev_patients": [
+        "P01",
+        "P03",
+        "P05",
+        "P10",
+        "P12",
+        "P14",
+        "P16",
+        "P18"
+      ],
+      "confirm_patients": [
+        "P02",
+        "P04",
+        "P07",
+        "P11",
+        "P13",
+        "P15",
+        "P17"
+      ],
+      "niche_targets": {},
+      "linear_heads": true,
+      "prop_skip": true,
+      "moe_experts": 2,
+      "moe_sharp": 0.05,
+      "moe_balance": 0.1,
+      "section_input": "hvg3000",
+      "img_scale": 1.0,
+      "dgi": 1.0,
+      "dgi_local": "nbz"
+    }
+  }
+}

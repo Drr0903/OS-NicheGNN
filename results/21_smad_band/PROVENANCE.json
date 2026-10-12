@@ -1,22 +1,22 @@
 {
   "stage": "21_smad_band",
-  "finished_utc": "2026-10-10T20:29:48Z",
+  "finished_utc": "2026-10-12T11:58:11Z",
   "elapsed_s": 1.5,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
-  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
     "results/18_signalling/tf_by_patient_niche.tsv": {
-      "md5": "f866768d9dd81391fc8fef4e5158be8e",
-      "bytes": 2610361
+      "md5": "2dd40d9638b9f55b9d1332113b418b1e",
+      "bytes": 2730449
     }
   },
   "outputs": {
     "results/21_smad_band/smad_band_vs_rest.tsv": {
-      "md5": "482cd581566977d5feb4b319a494610b",
-      "bytes": 820
+      "md5": "9362f9c313eff40a2f6e6a8371b190fb",
+      "bytes": 826
     }
   },
   "environment": {
@@ -36,7 +36,7 @@
     "gpu": "NVIDIA L40S"
   },
   "extra": {
-    "band_niche": 3,
+    "band_niche": 2,
     "regulons": [
       "SMAD1",
       "SMAD2",

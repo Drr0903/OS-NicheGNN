@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+mixture of two MLP experts, routing entropy 0.02	transductive	same-protocol atlas	P18	2937	0.0030643513789581204	0.8941580756013746	0.7797648339918432	0.1671795912830871
+mixture of two MLP experts, routing entropy 0.02	inductive	same-protocol atlas	P18	2937	0.3575076608784474	0.877854487519915	0.7745872654929798	0.10462319456747253
+mixture of two MLP experts, routing entropy 0.02	mapped	same-protocol atlas	P18	2937	0.015662240381341504	0.8994432846207376	0.7995956397271873	0.16267367557945733
+mixture of two MLP experts, routing entropy 0.02	raw	same-protocol atlas	P18	2937	0.001361933946203609	0.0727522306108442	0.09582767040148601	0.6490019751056697

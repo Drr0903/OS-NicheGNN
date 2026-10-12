@@ -1,41 +1,41 @@
 pair	patient	variable	primary	metastasis	delta	sensitivity_pair	niche
-PT1→MR1	P01	niche 0 (lymphoid-enriched lung parenchyma)	0.0	0.0	0.0	False	0
-PT1→MR1	P01	niche 1 (epithelial-enriched tumour)	0.5261875761266748	0.0	-0.5261875761266748	False	1
-PT1→MR1	P01	niche 2 (myeloid-enriched lung parenchyma)	0.0	0.0	0.0	False	2
-PT1→MR1	P01	niche 3 (peritumoural stroma (boundary))	0.2643118148599269	0.0289816538154746	-0.2353301610444523	False	3
-PT1→MR1	P01	niche 4 (vascular-enriched lung parenchyma)	0.0	0.0	0.0	False	4
-PT1→MR1	P01	niche 5 (myeloid-enriched tumour)	0.0	0.0031906407870247	0.0031906407870247	False	5
-PT1→MR1	P01	niche 6 (osteoclast-enriched tumour)	0.0	0.3004520074448285	0.3004520074448285	False	6
-PT1→MR1	P01	niche 7 (fibroblast-enriched tumour)	0.2095006090133983	0.6673756979526722	0.4578750889392738	False	7
-PT2→MR2	P02	niche 0 (lymphoid-enriched lung parenchyma)	0.0	0.0621292538245394	0.0621292538245394	False	0
-PT2→MR2	P02	niche 1 (epithelial-enriched tumour)	0.1055634807417974	0.0227911333125195	-0.0827723474292779	False	1
-PT2→MR2	P02	niche 2 (myeloid-enriched lung parenchyma)	0.0	0.0702466437714642	0.0702466437714642	False	2
-PT2→MR2	P02	niche 3 (peritumoural stroma (boundary))	0.028530670470756	0.0277864502029347	-0.0007442202678213	False	3
-PT2→MR2	P02	niche 4 (vascular-enriched lung parenchyma)	0.0	0.5410552606931002	0.5410552606931002	False	4
-PT2→MR2	P02	niche 5 (myeloid-enriched tumour)	0.0028530670470756	0.078364033718389	0.0755109666713134	False	5
-PT2→MR2	P02	niche 6 (osteoclast-enriched tumour)	0.0	0.1976272244770527	0.1976272244770527	False	6
-PT2→MR2	P02	niche 7 (fibroblast-enriched tumour)	0.8630527817403709	0.0	-0.8630527817403709	False	7
-PT3→MR3	P03	niche 0 (lymphoid-enriched lung parenchyma)	0.0	0.0	0.0	False	0
-PT3→MR3	P03	niche 1 (epithelial-enriched tumour)	0.3604749787955895	0.058311855670103	-0.3021631231254864	False	1
-PT3→MR3	P03	niche 2 (myeloid-enriched lung parenchyma)	0.0322307039864291	0.0241623711340206	-0.0080683328524085	False	2
-PT3→MR3	P03	niche 3 (peritumoural stroma (boundary))	0.0678541136556403	0.0025773195876288	-0.0652767940680115	False	3
-PT3→MR3	P03	niche 4 (vascular-enriched lung parenchyma)	0.0	0.2748067010309278	0.2748067010309278	False	4
-PT3→MR3	P03	niche 5 (myeloid-enriched tumour)	0.1594571670907549	0.0489690721649484	-0.1104880949258064	False	5
-PT3→MR3	P03	niche 6 (osteoclast-enriched tumour)	0.0008481764206955	0.5444587628865979	0.5436105864659024	False	6
-PT3→MR3	P03	niche 7 (fibroblast-enriched tumour)	0.3791348600508906	0.0467139175257731	-0.3324209425251174	False	7
-PT4→MR4	P04	niche 0 (lymphoid-enriched lung parenchyma)	0.0	0.0201647259301334	0.0201647259301334	False	0
-PT4→MR4	P04	niche 1 (epithelial-enriched tumour)	0.0556900726392251	0.088327179778472	0.0326371071392468	False	1
-PT4→MR4	P04	niche 2 (myeloid-enriched lung parenchyma)	0.0	0.073558648111332	0.073558648111332	False	2
-PT4→MR4	P04	niche 3 (peritumoural stroma (boundary))	0.1089588377723971	0.015052541891508	-0.093906295880889	False	3
-PT4→MR4	P04	niche 4 (vascular-enriched lung parenchyma)	0.0	0.1547855722806021	0.1547855722806021	False	4
-PT4→MR4	P04	niche 5 (myeloid-enriched tumour)	0.0024213075060532	0.0971314967338824	0.0947101892278291	False	5
-PT4→MR4	P04	niche 6 (osteoclast-enriched tumour)	0.0	0.5484237432547572	0.5484237432547572	False	6
-PT4→MR4	P04	niche 7 (fibroblast-enriched tumour)	0.8329297820823245	0.0025560920193126	-0.8303736900630118	False	7
-PT5→LR5	P05	niche 0 (lymphoid-enriched lung parenchyma)	0.0	0.0	0.0	True	0
-PT5→LR5	P05	niche 1 (epithelial-enriched tumour)	0.0274509803921568	0.4222585924713584	0.3948076120792015	True	1
-PT5→LR5	P05	niche 2 (myeloid-enriched lung parenchyma)	0.0117647058823529	0.0098199672667757	-0.0019447386155771	True	2
-PT5→LR5	P05	niche 3 (peritumoural stroma (boundary))	0.0672268907563025	0.1489361702127659	0.0817092794564634	True	3
-PT5→LR5	P05	niche 4 (vascular-enriched lung parenchyma)	0.0	0.0	0.0	True	4
-PT5→LR5	P05	niche 5 (myeloid-enriched tumour)	0.0	0.281505728314239	0.281505728314239	True	5
-PT5→LR5	P05	niche 6 (osteoclast-enriched tumour)	0.0106442577030812	0.1112929623567921	0.1006487046537109	True	6
-PT5→LR5	P05	niche 7 (fibroblast-enriched tumour)	0.8829131652661064	0.0261865793780687	-0.8567265858880376	True	7
+PT1→MR1	P01	niche 0 (epithelial-enriched lung parenchyma)	0.0	0.0	0.0	False	0
+PT1→MR1	P01	niche 1 (vascular-enriched lung parenchyma)	0.0	0.0	0.0	False	1
+PT1→MR1	P01	niche 2 (peritumoural stroma (boundary))	0.2777101096224117	0.0268545599574581	-0.2508555496649536	False	2
+PT1→MR1	P01	niche 3 (lymphoid-enriched stroma)	0.679658952496955	0.0	-0.679658952496955	False	3
+PT1→MR1	P01	niche 4 (osteoclast-enriched tumour)	0.0	0.2730656740228662	0.2730656740228662	False	4
+PT1→MR1	P01	niche 5 (fibroblast-enriched tumour)	0.0401948842874543	0.6825312416910396	0.6423363574035853	False	5
+PT1→MR1	P01	niche 6 (myeloid-enriched tumour)	0.002436053593179	0.0023929805902685	-4.307300291050411e-05	False	6
+PT1→MR1	P01	niche 7 (myeloid-enriched stroma)	0.0	0.0151555437383674	0.0151555437383674	False	7
+PT2→MR2	P02	niche 0 (epithelial-enriched lung parenchyma)	0.0	0.04998428167243	0.04998428167243	False	0
+PT2→MR2	P02	niche 1 (vascular-enriched lung parenchyma)	0.0	0.5419679346117573	0.5419679346117573	False	1
+PT2→MR2	P02	niche 2 (peritumoural stroma (boundary))	0.0826210826210826	0.0723043068217541	-0.0103167757993284	False	2
+PT2→MR2	P02	niche 3 (lymphoid-enriched stroma)	0.084045584045584	0.0402389185790631	-0.0438066654665208	False	3
+PT2→MR2	P02	niche 4 (osteoclast-enriched tumour)	0.0	0.218799119773656	0.218799119773656	False	4
+PT2→MR2	P02	niche 5 (fibroblast-enriched tumour)	0.8290598290598291	0.0	-0.8290598290598291	False	5
+PT2→MR2	P02	niche 6 (myeloid-enriched tumour)	0.0028490028490028	0.0569003458032065	0.0540513429542036	False	6
+PT2→MR2	P02	niche 7 (myeloid-enriched stroma)	0.0014245014245014	0.0198050927381326	0.0183805913136312	False	7
+PT3→MR3	P03	niche 0 (epithelial-enriched lung parenchyma)	0.0	0.0	0.0	False	0
+PT3→MR3	P03	niche 1 (vascular-enriched lung parenchyma)	0.0	0.2608695652173913	0.2608695652173913	False	1
+PT3→MR3	P03	niche 2 (peritumoural stroma (boundary))	0.1138487680543755	0.0190016103059581	-0.0948471577484174	False	2
+PT3→MR3	P03	niche 3 (lymphoid-enriched stroma)	0.3695836873406967	0.0727858293075684	-0.2967978580331282	False	3
+PT3→MR3	P03	niche 4 (osteoclast-enriched tumour)	0.0101954120645709	0.5710144927536231	0.5608190806890522	False	4
+PT3→MR3	P03	niche 5 (fibroblast-enriched tumour)	0.3211554800339847	0.044122383252818	-0.2770330967811666	False	5
+PT3→MR3	P03	niche 6 (myeloid-enriched tumour)	0.0688190314358538	0.0115942028985507	-0.0572248285373031	False	6
+PT3→MR3	P03	niche 7 (myeloid-enriched stroma)	0.1163976210705182	0.0206119162640901	-0.095785704806428	False	7
+PT4→MR4	P04	niche 0 (epithelial-enriched lung parenchyma)	0.0	0.029512893982808	0.029512893982808	False	0
+PT4→MR4	P04	niche 1 (vascular-enriched lung parenchyma)	0.0	0.1587392550143266	0.1587392550143266	False	1
+PT4→MR4	P04	niche 2 (peritumoural stroma (boundary))	0.1201456310679611	0.0467048710601719	-0.0734407600077892	False	2
+PT4→MR4	P04	niche 3 (lymphoid-enriched stroma)	0.0400485436893203	0.1020057306590257	0.0619571869697053	False	3
+PT4→MR4	P04	niche 4 (osteoclast-enriched tumour)	0.0	0.6068767908309456	0.6068767908309456	False	4
+PT4→MR4	P04	niche 5 (fibroblast-enriched tumour)	0.8179611650485437	0.0045845272206303	-0.8133766378279133	False	5
+PT4→MR4	P04	niche 6 (myeloid-enriched tumour)	0.0060679611650485	0.0277936962750716	0.021725735110023	False	6
+PT4→MR4	P04	niche 7 (myeloid-enriched stroma)	0.0157766990291262	0.02378223495702	0.0080055359278938	False	7
+PT5→LR5	P05	niche 0 (epithelial-enriched lung parenchyma)	0.0	0.0	0.0	True	0
+PT5→LR5	P05	niche 1 (vascular-enriched lung parenchyma)	0.0	0.0	0.0	True	1
+PT5→LR5	P05	niche 2 (peritumoural stroma (boundary))	0.0968645016797312	0.1878009630818619	0.0909364614021307	True	2
+PT5→LR5	P05	niche 3 (lymphoid-enriched stroma)	0.0223964165733482	0.4012841091492777	0.3788876925759294	True	3
+PT5→LR5	P05	niche 4 (osteoclast-enriched tumour)	0.0067189249720044	0.1187800963081862	0.1120611713361817	True	4
+PT5→LR5	P05	niche 5 (fibroblast-enriched tumour)	0.8594624860022396	0.0064205457463884	-0.8530419402558512	True	5
+PT5→LR5	P05	niche 6 (myeloid-enriched tumour)	0.0005599104143337	0.1556982343499197	0.155138323935586	True	6
+PT5→LR5	P05	niche 7 (myeloid-enriched stroma)	0.0139977603583426	0.1300160513643659	0.1160182910060233	True	7

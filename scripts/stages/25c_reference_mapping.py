@@ -55,10 +55,26 @@ GNN = s25b.GNN; MLP = "ring-mean MLP"; REPS = [GNN, MLP] + s25b.BASELINES; MODES
 COV = np.round(np.arange(0.05, 1.0001, 0.05), 2); GNN_ATLAS = "gnn_atlas_spots.tsv"; MLP_ATLAS = "mlp_atlas_spots.tsv"
 
 
+VARIANT = {"noattn": ("without the attention branch", "ringmlp", 384, {}), "noring": ("without the ring-mean branch", "xattn", 240, {}),
+           "single": ("single fusion expert", "ringxattn", 256, {"moe_experts": 0, "moe_sharp": 0.0}),
+           "concat": ("branches concatenated", "ringxattn", 264, {"moe_experts": 0, "moe_sharp": 0.0, "concat_fuse": True}),
+           "mlp": ("ring-mean MLP", "ringmlp", 416, {}), "fus": ("MLP + attention", "ringxattn", 256, {}),
+           "fusg": ("MLP + gated attention", "ringxattn", 240, {"ring_gate": True}),
+           "cat": ("branches concatenated", "ringxattn", 264, {"concat_fuse": True}),
+           "moe2": ("mixture of two MLP experts", "ringxattn", 240, {"moe_experts": 2}),
+           "moe4": ("mixture of four MLP experts", "ringxattn", 224, {"moe_experts": 4}),
+           "moe2s": ("mixture of two MLP experts, committed routing", "ringxattn", 240, {"moe_experts": 2, "moe_sharp": 0.1, "moe_balance": 0.1}),
+           "moe2e05": ("mixture of two MLP experts, routing entropy 0.05", "ringxattn", 240, {"moe_experts": 2, "moe_sharp": 0.05, "moe_balance": 0.1}),
+           "moe2e02": ("mixture of two MLP experts, routing entropy 0.02", "ringxattn", 240, {"moe_experts": 2, "moe_sharp": 0.02, "moe_balance": 0.1}),
+           "moe4s": ("mixture of four MLP experts, committed routing", "ringxattn", 224, {"moe_experts": 4, "moe_sharp": 0.1, "moe_balance": 0.1})}
+VAR = "mlp"  # set by --variant
+
+
 def mlp_cfg(cfg: dict) -> dict:
-    """The parameter-matched control of stage 32: attention replaced by a residual MLP on [profile, ring-1 mean, ring-2–3 mean]."""
+    """A parameter-matched alternative encoder (VARIANT[VAR]): the ring-mean MLP of stage 32, or that MLP as backbone with
+    cross-attention added, plainly or as a gated residual."""
     import json
-    c = json.loads(json.dumps(cfg)); c["atlas"]["context"] = "ringmlp"; c["arch"]["d"] = 416; return c
+    _, ctx, d, extra = VARIANT[VAR]; c = json.loads(json.dumps(cfg)); c["atlas"]["context"] = ctx; c["arch"]["d"] = d; c["arch"].update(extra); return c
 
 
 def build_mlp_atlas(cfg, adatas, labels, patient_of) -> None:
@@ -67,12 +83,12 @@ def build_mlp_atlas(cfg, adatas, labels, patient_of) -> None:
     import json
     secs = list(adatas); G, Gp = s25b.profile_graphs(cfg, adatas, labels, patient_of, secs, secs); c = mlp_cfg(cfg)
     c["arch"]["max_epochs"] = cfg["atlas"]["frozen_epochs"]; c["arch"]["patience"] = 10**9
-    model, info = train_arch("ringmlp", [Gp[s] for s in secs], [], c, cfg["seed"], cfg["device"], None, 0.0)
+    model, info = train_arch(c["atlas"]["context"], [Gp[s] for s in secs], [], c, cfg["seed"], cfg["device"], None, 0.0)
     emb = {s: v["z"] for s, v in embed_arch(model, [Gp[s] for s in secs], cfg["device"]).items()}
     Z = s25b.space(emb, patient_of, cfg["seed"], cfg, secs); lab, unm = s25b.transfer(Z, secs, patient_of, cfg)
-    rows = [pd.DataFrame({"representation": MLP, "section": s, "barcode": np.asarray(G[s].barcodes), "niche": lab[s], "unmatched": unm[s]}) for s in secs]
-    write_table(pd.concat(rows, ignore_index=True), stage_dir(STAGE) / MLP_ATLAS)
-    log(f"atlas {MLP}: {info['n_params']} parameters, {info['epochs_run']} epochs; niche sizes {np.bincount(np.concatenate([lab[s] for s in secs])).tolist()}")
+    rows = [pd.DataFrame({"representation": VARIANT[VAR][0], "section": s, "barcode": np.asarray(G[s].barcodes), "niche": lab[s], "unmatched": unm[s]}) for s in secs]
+    write_table(pd.concat(rows, ignore_index=True), stage_dir(STAGE) / f"{VAR}_atlas_spots.tsv")
+    log(f"atlas {VARIANT[VAR][0]}: {info['n_params']} parameters, {info['epochs_run']} epochs; niche sizes {np.bincount(np.concatenate([lab[s] for s in secs])).tolist()}")
 
 
 def spot_dir(cfg) -> Path:
@@ -152,7 +168,7 @@ def run_fold(cfg, adatas, labels, patient_of, refs, P, mlp: bool = False) -> tup
     rng = np.random.default_rng(seed + pats.index(P)); tr_p = sorted({patient_of[s] for s in train}); val_pat = tr_p[int(rng.integers(len(tr_p)))]
     val = [s for s in train if patient_of[s] == val_pat]; fit = [s for s in train if s not in val]
     G, Gp = s25b.profile_graphs(cfg, adatas, labels, patient_of, train, train + test)
-    fz = spot_dir(cfg) / f"{'mlp' if mlp else 'gnn'}_{P}.npz"; c = mlp_cfg(cfg) if mlp else cfg
+    fz = spot_dir(cfg) / f"{VAR if mlp else 'gnn'}_{P}.npz"; c = mlp_cfg(cfg) if mlp else cfg
     if fz.exists():
         E = dict(np.load(fz)); log(f"fold {P}: encoder latent loaded from {fz.name}")
     else:
@@ -160,7 +176,7 @@ def run_fold(cfg, adatas, labels, patient_of, refs, P, mlp: bool = False) -> tup
         model, info = train_arch(c["atlas"]["context"], [Gp[s] for s in fit], [Gp[s] for s in val], c, seed, cfg["device"], anchors, cfg["atlas"].get("lambda_anchor", cfg["v2"]["model"]["lambda_anchor"]))
         E = {s: v["z"] for s, v in embed_arch(model, [Gp[s] for s in train + test], cfg["device"]).items()}; np.savez(fz, **E)
         log(f"fold {P}: encoder trained in {time.time() - t0:.0f}s ({info['epochs_run']} epochs)")
-    reps = {MLP: E} if mlp else {GNN: E, **s25b.baseline_reps(G, Gp, train, cfg)}; rows, spots = [], []
+    reps = {VARIANT[VAR][0]: E} if mlp else {GNN: E, **s25b.baseline_reps(G, Gp, train, cfg)}; rows, spots = [], []
     cat = lambda ss, f: np.concatenate([f(s) for s in ss])  # noqa: E731
     reg = cat(test, lambda s: np.asarray(G[s].labels).astype(str))
     for name, emb in reps.items():
@@ -197,7 +213,7 @@ def coverage_curves(sp: pd.DataFrame) -> pd.DataFrame:
 
 def merge(cfg, tags: list[str], t0: float) -> None:
     sd = stage_dir(STAGE)
-    tags = tags + [f"_mlp{t}" for t in tags if (sd / f"mapping_long_mlp{t}.tsv").exists()]; long = pd.concat([pd.read_csv(sd / f"mapping_long{t}.tsv", sep="\t") for t in tags], ignore_index=True)
+    tags = tags + [f"_{v}{t}" for v in VARIANT for t in tags if (sd / f"mapping_long_{v}{t}.tsv").exists()]; long = pd.concat([pd.read_csv(sd / f"mapping_long{t}.tsv", sep="\t") for t in tags], ignore_index=True)
     sp = pd.concat([pd.read_parquet(spot_dir(cfg) / f"spots{t}.parquet") for t in tags], ignore_index=True); cv = coverage_curves(sp)
     key = ["representation", "mode", "reference", "heldout_patient"]
     aurc = cv.groupby(key)["agreement"].mean().rename("agreement_area"); a90 = cv[cv.coverage == 0.9].set_index(key)[["agreement", "ari_region"]].add_suffix("_cov90")
@@ -209,7 +225,9 @@ def merge(cfg, tags: list[str], t0: float) -> None:
                           "mean": float(d[mt].mean()), "median": float(d[mt].median()), "min": float(d[mt].min())})
     own = pt[pt.reference == "same-protocol atlas"]; idx = lambda r, m: own[(own.representation == r) & (own["mode"] == m)].set_index("heldout_patient")  # noqa: E731
     comps = [(GNN, m, b, m) for m in MODES for b in s25b.BASELINES] + [(GNN, m, GNN, "transductive") for m in ["inductive", "mapped", "raw"]] \
-        + [(b, "mapped", b, "inductive") for b in s25b.BASELINES] + [(GNN, m, MLP, m) for m in MODES if MLP in set(own.representation)]
+        + [(b, "mapped", b, "inductive") for b in s25b.BASELINES] + [(GNN, m, v[0], m) for v in VARIANT.values() for m in MODES if v[0] in set(own.representation)] \
+        + [(v[0], m, MLP, m) for v in VARIANT.values() if v[0] != MLP for m in MODES if v[0] in set(own.representation)]
+    comps = list(dict.fromkeys(comps))
     for rep, mode, cr, cm in comps:
         a, b = idx(rep, mode), idx(cr, cm)
         for mt in metrics:
@@ -225,8 +243,9 @@ def merge(cfg, tags: list[str], t0: float) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser(); ap.add_argument("--patients", default=""); ap.add_argument("--tag", default=""); ap.add_argument("--merge", default="")
     ap.add_argument("--atlas", action="store_true"); ap.add_argument("--device", default="")
-    ap.add_argument("--mlp", action="store_true", help="the parameter-matched ring-mean MLP instead (tags get _mlp)")
-    a = ap.parse_args(); t0 = time.time(); cfg = s25.atlas_cfg(load_config()); set_global_seed(cfg["seed"]); sd = stage_dir(STAGE)
+    ap.add_argument("--mlp", action="store_true", help="a parameter-matched alternative encoder instead (tags get _<variant>)")
+    ap.add_argument("--variant", default="mlp", choices=list(VARIANT))
+    a = ap.parse_args(); global VAR; VAR = a.variant; t0 = time.time(); cfg = s25.atlas_cfg(load_config()); set_global_seed(cfg["seed"]); sd = stage_dir(STAGE)
     if a.device:
         cfg["device"] = a.device
     if a.merge:
@@ -235,11 +254,12 @@ def main() -> None:
     if a.atlas:
         (build_mlp_atlas if a.mlp else build_gnn_atlas)(cfg, adatas, labels, patient_of); return
     by = lambda d: {s: dd.reset_index(drop=True) for s, dd in d.groupby("section")}  # noqa: E731
-    gcons = pd.read_csv(ROOT / "results/15_niches/spot_niches.tsv", sep="\t", usecols=["section", "barcode", "niche", "unmatched"])
-    bref = pd.read_csv(ROOT / "results/25b_transfer_controls" / s25b.ATLAS_TSV, sep="\t"); gref = pd.read_csv(sd / GNN_ATLAS, sep="\t")
-    refs = {GNN: {"same-protocol atlas": by(gref), "consensus atlas": by(gcons)}, **{n: {"same-protocol atlas": by(d)} for n, d in bref.groupby("representation")}}
-    if a.mlp:
-        refs = {MLP: {"same-protocol atlas": by(pd.read_csv(sd / MLP_ATLAS, sep="\t"))}}; a.tag = "_mlp" + a.tag
+    if a.mlp:  # an alternative encoder against its own reference only
+        refs = {VARIANT[VAR][0]: {"same-protocol atlas": by(pd.read_csv(sd / f"{VAR}_atlas_spots.tsv", sep="\t"))}}; a.tag = f"_{VAR}" + a.tag
+    else:
+        gcons = pd.read_csv(ROOT / "results/15_niches/spot_niches.tsv", sep="\t", usecols=["section", "barcode", "niche", "unmatched"])
+        bref = pd.read_csv(ROOT / "results/25b_transfer_controls" / s25b.ATLAS_TSV, sep="\t"); gref = pd.read_csv(sd / GNN_ATLAS, sep="\t")
+        refs = {GNN: {"same-protocol atlas": by(gref), "consensus atlas": by(gcons)}, **{n: {"same-protocol atlas": by(d)} for n, d in bref.groupby("representation")}}
     rows, spots = [], []
     for P in [p for p in sorted(set(patient_of.values())) if not a.patients or p in a.patients.split(",")]:
         r, s = run_fold(cfg, adatas, labels, patient_of, refs, P, a.mlp); rows += r; spots.append(s)

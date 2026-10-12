@@ -1,29 +1,29 @@
 {
   "stage": "29_external_none",
-  "finished_utc": "2026-10-10T21:11:00Z",
-  "elapsed_s": 61.0,
+  "finished_utc": "2026-10-12T13:26:13Z",
+  "elapsed_s": 1453.1,
   "seed": 20260914,
   "config_path": "config/run.yaml",
-  "config_sha256": "359ffe263daa746d02fac063caddf25d63ee524ec595987c066ba2f2ae8d572a",
-  "git_commit": "b25a25417abf070df5603872282bb591db3b6508",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "a47515b7fd317bd9f20d8a47a7746f6d600a5503",
   "git_dirty": true,
   "inputs": {
-    "data/processed/frozen_v4/model_seed20260914.pt": {
-      "md5": "c2c36e6da19de323abe6783b914d03b9",
-      "bytes": 8604458
+    "data/processed/frozen_v5/model_seed20260914.pt": {
+      "md5": "052f9aa00078b45635ad36ab537941b9",
+      "bytes": 8598682
     }
   },
   "outputs": {
     "results/29_external/none/niche_comparison.tsv": {
-      "md5": "375064be15f3e11e887b556d8b13022f",
-      "bytes": 946
-    },
-    "results/29_external/none/region_metrics.tsv": {
-      "md5": "e57d330d8d348f375927cf9df95458c9",
+      "md5": "96771e2b3340db8fa572df39e557d119",
       "bytes": 995
     },
+    "results/29_external/none/region_metrics.tsv": {
+      "md5": "7afa952e54ee038b6d270ad050f59a74",
+      "bytes": 999
+    },
     "results/29_external/none/summary.json": {
-      "md5": "3b48945720d7eafc54d4f940950fff93",
+      "md5": "85c0e4fcf2cfff6b5dec2dd503a24cab",
       "bytes": 323
     }
   },
@@ -44,12 +44,12 @@
     "gpu": "NVIDIA L40S"
   },
   "extra": {
-    "macro_f1_lung_mean": 0.6520093307417233,
-    "unmatched_fraction": 0.03352088319695242,
-    "n_niches_present": 6,
-    "composition_r_mean": 0.7520148567216572,
-    "t_order_spearman": 0.7714285714285715,
-    "n_niches_t": 6,
+    "macro_f1_lung_mean": 0.6278902122293529,
+    "unmatched_fraction": 0.05050062029297878,
+    "n_niches_present": 7,
+    "composition_r_mean": 0.8736194983602468,
+    "t_order_spearman": 0.7857142857142859,
+    "n_niches_t": 7,
     "band_odds_ratio": 0.0,
     "interface_coef": NaN,
     "interface_p": NaN,

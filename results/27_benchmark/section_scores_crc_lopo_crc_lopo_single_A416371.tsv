@@ -1,0 +1,49 @@
+cohort	part	clustering	method	seed	section	patient	K	ari	nmi	n_scored
+crc	lopo	leiden	OS-NicheGNN (single fusion expert)	20260914	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (single fusion expert)	20260914	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260914	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260914	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260914	SN048_A416371_Rep1	A416371	5	-0.0001595440272205928	0.012692783828812228	2293
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260914	SN048_A416371_Rep2	A416371	5	-0.0032343375600670933	0.017166220646547905	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260914	SN048_A416371_Rep1	A416371	5	-0.0003099147689754471	0.011763512121380644	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260914	SN048_A416371_Rep2	A416371	5	-0.0032417765144489913	0.01638390073025925	1784
+crc	lopo	leiden	OS-NicheGNN (single fusion expert)	20260915	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (single fusion expert)	20260915	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260915	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260915	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260915	SN048_A416371_Rep1	A416371	5	-0.0002825554797593241	0.013404902232925543	2293
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260915	SN048_A416371_Rep2	A416371	5	-0.003290956685203944	0.017302963608284115	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260915	SN048_A416371_Rep1	A416371	5	-0.00014954658575040895	0.013239090549290027	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260915	SN048_A416371_Rep2	A416371	5	-0.0033229202625662886	0.01698791086407097	1784
+crc	lopo	leiden	OS-NicheGNN (single fusion expert)	20260916	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (single fusion expert)	20260916	SN048_A416371_Rep2	A416371	5	0.0002885153312163289	0.0016587890686131103	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260916	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert)	20260916	SN048_A416371_Rep2	A416371	5	0.0002885153312163289	0.0016587890686131103	1784
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260916	SN048_A416371_Rep1	A416371	5	-4.866489204486789e-05	0.00921699608108896	2293
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert)	20260916	SN048_A416371_Rep2	A416371	5	-0.0028860021835976687	0.018357683393103275	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260916	SN048_A416371_Rep1	A416371	5	-4.74227453865036e-05	0.008654669285944269	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert)	20260916	SN048_A416371_Rep2	A416371	5	-0.002872909727693814	0.019900441703924725	1784
+crc	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260914	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260914	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260914	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260914	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260914	SN048_A416371_Rep1	A416371	5	-0.0001848904584486975	0.008242332245344812	2293
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260914	SN048_A416371_Rep2	A416371	5	-0.003300070632782196	0.01463737964960371	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260914	SN048_A416371_Rep1	A416371	5	-4.468253891471208e-05	0.008089887070225704	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260914	SN048_A416371_Rep2	A416371	5	-0.0032323965266201674	0.013745690818002351	1784
+crc	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260915	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260915	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260915	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260915	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260915	SN048_A416371_Rep1	A416371	5	-0.00018760651091105675	0.009369213922956083	2293
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260915	SN048_A416371_Rep2	A416371	5	-0.0033106306596986357	0.01885186105041902	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260915	SN048_A416371_Rep1	A416371	5	-0.00018760651091105675	0.009369213922956083	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260915	SN048_A416371_Rep2	A416371	5	-0.0032529705577023656	0.018707993805749324	1784
+crc	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260916	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden	OS-NicheGNN (single fusion expert) +smooth	20260916	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260916	SN048_A416371_Rep1	A416371	5	0.0	0.0	2293
+crc	lopo	leiden_pc30	OS-NicheGNN (single fusion expert) +smooth	20260916	SN048_A416371_Rep2	A416371	5	0.0	0.0	1784
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260916	SN048_A416371_Rep1	A416371	5	0.0006776383907511191	0.007876411109953404	2293
+crc	lopo	kmeans	OS-NicheGNN (single fusion expert) +smooth	20260916	SN048_A416371_Rep2	A416371	5	-0.0029569433358189756	0.01608042688747495	1784
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260916	SN048_A416371_Rep1	A416371	5	0.000684995334886526	0.007369765614876169	2293
+crc	lopo	kmeans_pc30	OS-NicheGNN (single fusion expert) +smooth	20260916	SN048_A416371_Rep2	A416371	5	-0.002914727620144626	0.015609815453922996	1784

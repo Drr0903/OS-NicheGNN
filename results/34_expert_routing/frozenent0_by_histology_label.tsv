@@ -1,0 +1,4 @@
+histology_label	gate_0_mean	gate_1_mean	attn_rel_0_mean	attn_rel_1_mean	gate_shift_mean	hetero_mean	n_patients
+lung_parenchyma	0.4907891	0.5092109	0.34513128	0.30640662	0.020386018	0.3427288	9
+paucicellular	0.49852696	0.501473	0.3499221	0.29890168	0.016956504	0.23491338	17
+tumor_cellular	0.5039077	0.4960923	0.25561485	0.21128203	0.012382887	0.23870362	19

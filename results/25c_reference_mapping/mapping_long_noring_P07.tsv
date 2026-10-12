@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+without the ring-mean branch	transductive	same-protocol atlas	P07	746	0.0013404825737265416	0.7302013422818792	0.5178741734783013	0.30446220764217946
+without the ring-mean branch	inductive	same-protocol atlas	P07	746	0.824396782841823	0.6870229007633588	0.16894081980765732	0.09637153203902288
+without the ring-mean branch	mapped	same-protocol atlas	P07	746	0.0	0.8136729222520107	0.4823505181869786	0.49184900699558
+without the ring-mean branch	raw	same-protocol atlas	P07	746	0.0	0.0	0.0	0.0

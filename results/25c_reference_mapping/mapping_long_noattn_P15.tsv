@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+without the attention branch	transductive	same-protocol atlas	P15	2267	0.012351124834583149	0.7748858447488585	0.6530657256239925	0.42214558345663056
+without the attention branch	inductive	same-protocol atlas	P15	2267	0.537273930304367	0.8260869565217391	0.6244075937625855	0.38941576604956
+without the attention branch	mapped	same-protocol atlas	P15	2267	0.04278782531980591	0.8106343283582089	0.6599013397419867	0.4893892383880327
+without the attention branch	raw	same-protocol atlas	P15	2267	0.030436700485222762	0.24814814814814815	-0.015744173606855955	-0.04600929213682904

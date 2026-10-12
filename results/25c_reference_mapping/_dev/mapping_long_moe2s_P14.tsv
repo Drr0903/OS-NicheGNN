@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+mixture of two MLP experts, committed routing	transductive	same-protocol atlas	P14	1139	0.003511852502194908	0.799469964664311	0.47193644906085064	0.24844183752437898
+mixture of two MLP experts, committed routing	inductive	same-protocol atlas	P14	1139	0.9499561018437226	0.8771929824561403	0.7989963631163445	0.5308563173984614
+mixture of two MLP experts, committed routing	mapped	same-protocol atlas	P14	1139	0.0026338893766461808	0.7701149425287356	0.33643140974081465	0.19134660483013083
+mixture of two MLP experts, committed routing	raw	same-protocol atlas	P14	1139	0.0	0.0	0.2232824890092256	0.46487501832555017

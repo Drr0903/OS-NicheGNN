@@ -80,7 +80,7 @@ def main() -> None:
         for _, r in top.iterrows():
             ax.bar(x, r["log2fc_mean"], color=cols[k], width=0.8); ax.text(x, r["log2fc_mean"] + 0.04, f"{int(r['n_patients_up'])}/{int(r['n_patients'])}", ha="center", va="bottom", rotation=90, fontsize=4.2); xt.append((x, r["gene"])); rows.append({"niche": k, **r.to_dict()}); x += 1
         x += 1
-    ax.set_xticks([p for p, _ in xt]); ax.set_xticklabels([g for _, g in xt], rotation=90, fontsize=5); bold_axes(ax, y="log2FC niche vs rest\n(patient-level pseudobulk)"); ax.set_ylim(min(0, ax.get_ylim()[0]), ax.get_ylim()[1] * 1.25); panel_label(ax, "e"); save_source(pd.DataFrame(rows), NAME, "e")
+    ax.set_xticks([p for p, _ in xt]); ax.set_xticklabels([g for _, g in xt], rotation=90, fontsize=5); bold_axes(ax, y="log2FC niche vs rest\n(per patient)"); ax.set_ylim(min(0, ax.get_ylim()[0]), ax.get_ylim()[1] * 1.25); panel_label(ax, "e"); save_source(pd.DataFrame(rows), NAME, "e")
     save_fig(fig, f"{NAME}_niche_atlas")
 
 
