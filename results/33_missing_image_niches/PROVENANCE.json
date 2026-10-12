@@ -1,0 +1,53 @@
+{
+  "stage": "33_missing_image_niches",
+  "finished_utc": "2026-10-12T06:26:21Z",
+  "elapsed_s": 18.3,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
+  "git_commit": "369f025d373462db04529fb02e2978953be72e78",
+  "git_dirty": true,
+  "inputs": {
+    "results/15_niches/spot_niches.tsv": {
+      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
+      "bytes": 16167409
+    },
+    "data/processed/frozen_v4/model_seed20260914.pt": {
+      "md5": "c2c36e6da19de323abe6783b914d03b9",
+      "bytes": 8604458
+    }
+  },
+  "outputs": {
+    "results/33_missing_image_niches/niche_recall.tsv": {
+      "md5": "3c1c998bb054f0bfc57bc8c42c062b5d",
+      "bytes": 2064
+    },
+    "results/33_missing_image_niches/confusion.tsv": {
+      "md5": "f7b804d58f44ed23b5dd733520d826f5",
+      "bytes": 2559
+    },
+    "results/33_missing_image_niches/patient_recall.tsv": {
+      "md5": "6577ac77823be4eee6238a154cc22eb3",
+      "bytes": 6513
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "unmatched_threshold": 20.453337955474854
+  }
+}

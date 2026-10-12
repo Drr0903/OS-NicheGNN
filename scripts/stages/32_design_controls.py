@@ -4,7 +4,7 @@
                   and networks trained with the image of a training section withheld (block at its mean) with probability
                   0.3 or 0.5, scored with and without the held-out image
   ring-mean MLP   attention replaced by a residual MLP on [own profile, ring-1 mean, ring-2–3 mean] of matched parameter count
-                  (hidden width 416: 2.2 M against 2.1 M parameters), same targets and linear skip
+                  (hidden width 416: 2.10 M against 2.15 M parameters), same targets and linear skip
 Reads results/23_arch_search/arch_metrics_E{2base,2md3,2md5,4rmlp}_P*.tsv (stage 23 with --eval-nomorph, --morph-drop, --anchor
 ringmlp); writes results/32_design_controls/{patient_level, summary, paired}.tsv
 """

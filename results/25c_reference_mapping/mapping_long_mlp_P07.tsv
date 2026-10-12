@@ -1,0 +1,5 @@
+representation	mode	reference	heldout_patient	n_spots	unmatched	agreement	ari	ari_region
+ring-mean MLP	transductive	same-protocol atlas	P07	746	0.0	0.7546916890080428	0.3795258806343503	0.34744566632005186
+ring-mean MLP	inductive	same-protocol atlas	P07	746	0.5254691689008043	0.4830508474576271	0.01165493492203021	0.01425118743802401
+ring-mean MLP	mapped	same-protocol atlas	P07	746	0.0	0.7761394101876675	0.4485404861750472	0.533249156712253
+ring-mean MLP	raw	same-protocol atlas	P07	746	0.0	0.0	0.0	0.0

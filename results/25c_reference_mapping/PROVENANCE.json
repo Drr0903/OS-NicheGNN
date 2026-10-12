@@ -1,11 +1,11 @@
 {
   "stage": "25c_reference_mapping",
-  "finished_utc": "2026-10-12T04:55:27Z",
-  "elapsed_s": 18.4,
+  "finished_utc": "2026-10-12T06:54:49Z",
+  "elapsed_s": 19.8,
   "seed": 20260914,
   "config_path": "config/run.yaml",
   "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
-  "git_commit": "0661e340664a2d0a2fadfcb524cd51e8159065a1",
+  "git_commit": "369f025d373462db04529fb02e2978953be72e78",
   "git_dirty": true,
   "inputs": {
     "results/15_niches/spot_niches.tsv": {
@@ -23,20 +23,20 @@
   },
   "outputs": {
     "results/25c_reference_mapping/mapping_patient.tsv": {
-      "md5": "c6289bb112067ea2b8815f8f8f11ab80",
-      "bytes": 67296
+      "md5": "164fd393d2211ae55910b01951945b6b",
+      "bytes": 80853
     },
     "results/25c_reference_mapping/mapping_summary.tsv": {
-      "md5": "de9c38c3289526c178c8ed85c91d0aef",
-      "bytes": 41583
+      "md5": "ca604c8acd16887c828197670cdf9bf1",
+      "bytes": 50442
     },
     "results/25c_reference_mapping/coverage_curve.tsv": {
-      "md5": "a1ffb9e964400df9efb6cb504ab49985",
-      "bytes": 48799
+      "md5": "095501e1e75b2453177232b3b002dc7e",
+      "bytes": 58735
     },
     "results/25c_reference_mapping/coverage_patient.tsv": {
-      "md5": "dfc29a8ba470230ee55a49abf96ba0de",
-      "bytes": 649469
+      "md5": "c09cab0fb0c3cf7e5481b8e317698788",
+      "bytes": 781180
     }
   },
   "environment": {
@@ -75,7 +75,26 @@
       "_P16",
       "_P17",
       "_P18",
-      "_P19"
+      "_P19",
+      "_mlp_P01",
+      "_mlp_P02",
+      "_mlp_P03",
+      "_mlp_P04",
+      "_mlp_P05",
+      "_mlp_P06",
+      "_mlp_P07",
+      "_mlp_P08",
+      "_mlp_P09",
+      "_mlp_P10",
+      "_mlp_P11",
+      "_mlp_P12",
+      "_mlp_P13",
+      "_mlp_P14",
+      "_mlp_P15",
+      "_mlp_P16",
+      "_mlp_P17",
+      "_mlp_P18",
+      "_mlp_P19"
     ],
     "mapped": "Symphony-style mapping onto the training-patient Harmony reference (sigma 0.1, ridge 1)",
     "coverage_grid": [

@@ -60,7 +60,7 @@ def space(emb: dict, patient_of: dict, seed: int, cfg: dict, fit: list[str]) -> 
     Xf = np.vstack([emb[s] for s in fit]); scl = StandardScaler().fit(Xf); pca = PCA(min(30, d), random_state=seed).fit(scl.transform(Xf))
     out = {s: pca.transform(scl.transform(emb[s])).astype(np.float32) for s in secs}
     Zf = np.vstack([out[s] for s in fit])
-    ho = hm.run_harmony(Zf, pd.DataFrame({"p": np.concatenate([[patient_of[s]] * len(out[s]) for s in fit])}), "p", random_state=seed, verbose=False)
+    ho = hm.run_harmony(Zf, pd.DataFrame({"p": np.concatenate([[patient_of[s]] * len(out[s]) for s in fit])}), "p", random_state=seed, verbose=False, ncores=int(__import__("os").environ.get("OMP_NUM_THREADS", 8)))
     Zc = np.asarray(ho.Z_corr); Zc = Zc.T if Zc.shape[0] != Zf.shape[0] else Zc; o = 0
     for s in fit:
         out[s] = Zc[o:o + len(out[s])].astype(np.float32); o += len(out[s])

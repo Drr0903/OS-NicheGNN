@@ -51,12 +51,12 @@ def heat(ax, pat):
         best = np.nanmax(M[i])
         for j in range(M.shape[1]):
             if np.isfinite(M[i, j]):
-                ax.text(j, i, f"{M[i, j]:.2f}", ha="center", va="center", fontsize=5.5, fontweight="bold" if M[i, j] == best else "normal",
+                ax.text(j, i, f"{M[i, j]:.2f}", ha="center", va="center", fontsize=6, fontweight="bold" if M[i, j] == best else "normal",
                         color="white" if M[i, j] > 0.33 else "black")
             else:
-                ax.text(j, i, "–", ha="center", va="center", fontsize=5.5, color="#888888")
-    ax.set_xticks(range(len(METHODS))); ax.set_xticklabels([SHOW.get(m, m) for m in METHODS], fontsize=5.6, rotation=35, ha="right")
-    ax.set_yticks(range(len(lab))); ax.set_yticklabels(lab, fontsize=5.6)
+                ax.text(j, i, "–", ha="center", va="center", fontsize=6, color="#888888")
+    ax.set_xticks(range(len(METHODS))); ax.set_xticklabels([SHOW.get(m, m) for m in METHODS], fontsize=6, rotation=35, ha="right")
+    ax.set_yticks(range(len(lab))); ax.set_yticklabels(lab, fontsize=6)
     for k in range(1, len(lab)):
         if lab[k].split(":")[0] != lab[k - 1].split(":")[0]:
             ax.axhline(k - 0.5, color="black", lw=0.8)
@@ -68,12 +68,12 @@ def attention(ax, att):
     d = att[(att["what"] == "ring") & (att["scope"].isin(["all", "tumour boundary"]))]; out = []
     for j, (sc, col) in enumerate([("all", PALETTE[0]), ("tumour boundary", PALETTE[3])]):
         g = d[d["scope"] == sc].set_index("ring")
-        ax.bar(np.arange(3) + (j - 0.5) * 0.36, g.loc[[1, 2, 3], "attention"], 0.34, color=col, label=f"attention, {sc} spots")
+        ax.bar(np.arange(3) + (j - 0.5) * 0.36, g.loc[[1, 2, 3], "attention"], 0.34, color=col, label="all spots" if sc == "all" else "boundary spots")
         out.append(g.reset_index().assign(scope=sc))
     share = d[d["scope"] == "all"].set_index("ring").loc[[1, 2, 3], "share_of_neighbours"]
-    ax.plot(np.arange(3), share, color="black", marker="_", ms=14, mew=1.4, ls="none", label="share of neighbours")
-    ax.set_xticks(range(3)); ax.set_xticklabels(["ring 1", "ring 2", "ring 3"], fontsize=6); ax.set_ylim(0, 1.0)
-    ax.legend(fontsize=5, loc="upper right", frameon=True, fancybox=False, edgecolor="#CCCCCC"); bold_axes(ax, y="fraction of attention"); panel_label(ax, "b")
+    ax.plot(np.arange(3), share, color="black", marker="_", ms=14, mew=1.4, ls="none", label="share of\nneighbours")
+    ax.set_xticks(range(3)); ax.set_xticklabels(["ring 1", "ring 2", "ring 3"], fontsize=6); ax.set_ylim(0, 1.0); ax.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
+    ax.legend(fontsize=6, loc="upper right", bbox_to_anchor=(1.0, 1.0), frameon=False, handlelength=1.0, borderaxespad=0.2); bold_axes(ax, y="fraction of attention"); panel_label(ax, "b")
     save_source(pd.concat(out), NAME, "b")
 
 
@@ -83,8 +83,8 @@ def ablation(ax, ab):
     im = ax.imshow(w.to_numpy(), cmap="Reds", vmin=0, vmax=1, aspect="auto")
     for i in range(w.shape[0]):
         for j in range(w.shape[1]):
-            ax.text(j, i, f"{w.iloc[i, j]:.2f}", ha="center", va="center", fontsize=5.5, color="white" if w.iloc[i, j] > 0.6 else "black")
-    ax.set_xticks(range(5)); ax.set_xticklabels(["no attention\ncontext", "no neighbourhood\nskip", "neighbours\nrewired", "no H&E\nmorphology", "no\nexpression"], fontsize=5.6, rotation=35, ha="right")
+            ax.text(j, i, f"{w.iloc[i, j]:.2f}", ha="center", va="center", fontsize=6, color="white" if w.iloc[i, j] > 0.6 else "black")
+    ax.set_xticks(range(5)); ax.set_xticklabels(["no\nattention", "no\nskip", "neighbours\nrewired", "no\nH&E", "no\nexpression"], fontsize=6, rotation=0, ha="center")
     ax.set_yticks(range(len(w))); ax.set_yticklabels(w.index, fontsize=6)
     cb = plt.colorbar(im, ax=ax, fraction=0.05, pad=0.03); cb.set_label("fraction of spots changing niche", fontsize=6); cb.ax.tick_params(labelsize=5.5)
     panel_label(ax, "c"); save_source(w.reset_index(), NAME, "c")

@@ -91,7 +91,7 @@ def integrate(emb: dict, patient_of: dict, seed: int, cfg: dict) -> dict:
     from sklearn.decomposition import PCA
     from sklearn.preprocessing import StandardScaler
     secs = list(emb); Z = np.vstack([emb[s] for s in secs]); Zp = PCA(30, random_state=seed).fit_transform(StandardScaler().fit_transform(Z))
-    ho = hm.run_harmony(Zp, pd.DataFrame({"p": np.concatenate([[patient_of[s]] * len(emb[s]) for s in secs])}), "p", random_state=seed, verbose=False)
+    ho = hm.run_harmony(Zp, pd.DataFrame({"p": np.concatenate([[patient_of[s]] * len(emb[s]) for s in secs])}), "p", random_state=seed, verbose=False, ncores=int(__import__("os").environ.get("OMP_NUM_THREADS", 8)))
     Zc = np.asarray(ho.Z_corr); Zc = Zc.T if Zc.shape[0] != Zp.shape[0] else Zc; out, o = {}, 0
     for s in secs:
         out[s] = Zc[o:o + len(emb[s])].astype(np.float32); o += len(emb[s])

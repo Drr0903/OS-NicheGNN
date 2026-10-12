@@ -1,8 +1,9 @@
 """v2 Figure 1 — study framework, cohort and region reference labels.
-a  framework: cohort → dual-scale neighbourhood → encoder → patient-invariant objective → consensus niches → the two aims
+a  the network: inputs, masking, neighbour tokens, spot encoder, cross-attention, latent with linear skip, decoder and
+   linear neighbourhood heads with the two loss terms, and the use of the latent (atlas, new patients, applications)
 b  example section (MR11B): H&E and the algorithmic region reference labels with the tumour–lung interface
 The patient → section hierarchy of the cohort is Supplementary Figure S1.
-Reads results/04b_panel_exports/ and figures/source_data/Fig1_a_spec.json.
+Reads results/04b_panel_exports/.
 """
 from __future__ import annotations
 
@@ -22,7 +23,7 @@ from lib.plotting import REGION_COL, REGION_NAME, panel_label, save_fig, save_so
 from lib.repro import ROOT  # noqa: E402
 
 NAME = "Fig1"
-schematic = import_module("v2_Fig1_schematic")  # the framework panel is drawn by its own module
+arch = import_module("v2_Fig1_architecture")  # the network panel is drawn by its own module
 
 
 def panel_b(ax_img, ax_lab, section: str = "MR11B"):
@@ -42,16 +43,13 @@ def panel_b(ax_img, ax_lab, section: str = "MR11B"):
 
 
 def main() -> None:
-    set_style()
-    spec = json.loads((ROOT / "figures/source_data/Fig1_a_spec.json").read_text())
-    sp = pd.read_csv(ROOT / "results/15_niches/spot_niches.tsv", sep="\t", usecols=["section", "x", "y", "niche", "unmatched"])
-    maps = {s_: d.loc[~d["unmatched"].astype(bool)].sample(n=min(1500, int((~d["unmatched"].astype(bool)).sum())), random_state=0)
-            for s_, d in sp.groupby("section") if s_ in {"PT3", "MR3", "MR14", "MR16", "LR17"}}
-    fig = plt.figure(figsize=(7.2, 5.6))
-    ax_a = fig.add_axes([0.018, 0.690, 0.964, 0.298]); schematic.draw(ax_a, spec, maps); panel_label(ax_a, "a")
-    save_source(pd.concat(maps.values()).assign(panel="a_maps"), NAME, "a_maps")
-    ax_b1 = fig.add_axes([0.018, 0.075, 0.462, 0.584]); ax_b2 = fig.add_axes([0.520, 0.075, 0.462, 0.584])  # full width, wide gutter
-    panel_b(ax_b1, ax_b2, "MR11B"); panel_label(ax_b1, "b")
+    set_style(); FW, FH = 7.2, 6.75
+    fig = plt.figure(figsize=(FW, FH))
+    ax_a = fig.add_axes([0, 1 - (arch.H + 0.05) / FH, arch.W / FW, arch.H / FH]); arch.draw(ax_a)
+    fig.text(0.006, 1 - 0.02 / FH, "a", fontsize=9, fontweight="bold", va="top")
+    hb = 2.85; yb = 0.36 / FH
+    ax_b1 = fig.add_axes([0.03, yb, 0.455, hb / FH]); ax_b2 = fig.add_axes([0.525, yb, 0.455, hb / FH])
+    panel_b(ax_b1, ax_b2, "MR11B"); fig.text(0.006, yb + (hb + 0.30) / FH, "b", fontsize=9, fontweight="bold", va="top")
     fig.legend(*ax_b2.get_legend_handles_labels(), loc="lower center", bbox_to_anchor=(0.5, 0.004), ncol=4,
                fontsize=6, markerscale=2.0, frameon=False, handletextpad=0.4, columnspacing=2.0)
     save_fig(fig, f"{NAME}_cohort_framework")
