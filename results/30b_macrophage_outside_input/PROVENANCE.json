@@ -1,0 +1,60 @@
+{
+  "stage": "30b_macrophage_outside_input",
+  "finished_utc": "2026-10-12T19:13:01Z",
+  "elapsed_s": 214.8,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "1170503a56114a1e1808e636150c62e2fb6c63b15b58ed39b9c9728fc1d9c29a",
+  "git_commit": "09e41cb56f9b9df7258de94ccc6bade943dd281c",
+  "git_dirty": true,
+  "inputs": {
+    "results/15_niches/spot_niches.tsv": {
+      "md5": "b76c73e8f8bd9cb9dab5a14493d4244c",
+      "bytes": 16167892
+    },
+    "results/15_niches/meta.json": {
+      "md5": "e63ab306ab1bce66101c3e078de59b78",
+      "bytes": 665
+    }
+  },
+  "outputs": {
+    "results/30b_macrophage_outside_input/panel.tsv": {
+      "md5": "2f26090ef1eba2818cfe3d508e76cad4",
+      "bytes": 506
+    },
+    "results/30b_macrophage_outside_input/interface_pooled_models.tsv": {
+      "md5": "88b329cb3366b4c3de4bc92f0bc189f0",
+      "bytes": 3277
+    },
+    "results/30b_macrophage_outside_input/interface_sections.tsv": {
+      "md5": "6e92fe88c93a37b009d7fc7eff097e50",
+      "bytes": 3002
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "genes": [
+      "MRC1",
+      "FOLR2",
+      "SIGLEC1",
+      "MERTK",
+      "CD86",
+      "ITGAM"
+    ]
+  }
+}

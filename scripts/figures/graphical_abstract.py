@@ -69,9 +69,9 @@ def main() -> None:
     txt(ax, 105.5, 4.6, "tumour vs host tissue routed", fr[2], fs=5.0, col=GREY)
     # 4 findings
     c1 = box(ax, 128.5, 34.5, 164.5, 58.5, "white", "#c8b88f", lw=0.7, r=1.2, z=3)
-    icon(ax, "macrophage", 136, 49, h=9); icon(ax, "t_cell", 136, 39.5, h=7)
-    txt(ax, 152.5, 48.5, "Peritumoural band:", c1, fs=5.3, fw="bold"); txt(ax, 152.5, 43.2, "more macrophage\nsignal beyond it", c1, fs=5.4)
-    txt(ax, 152.5, 37.5, "T cells rise lungward", c1, fs=5.0, col=GREY)
+    icon(ax, "t_cell", 136, 46.5, h=10)
+    txt(ax, 152.5, 50.5, "At the interface:", c1, fs=5.6, fw="bold"); txt(ax, 152.5, 44.8, "T cells rise across\nthe stromal band", c1, fs=5.4)
+    txt(ax, 152.5, 38.5, "router switches experts", c1, fs=5.0, col=GREY)
     c2 = box(ax, 128.5, 5, 164.5, 31.5, "white", "#c8b88f", lw=0.7, r=1.2, z=3)
     icon(ax, "tumour_cell", 136, 23.5, h=9); arrow(ax, (140.6, 23.5), (143.2, 23.5), lw=0.7); icon(ax, "osteoclast", 148.5, 23.5, h=7.5, w=9.5)
     txt(ax, 146.5, 13.8, "Relapse: matrix-forming →\nboundary tumour niche", c2, fs=5.4, fw="bold"); txt(ax, 146.5, 8.0, "router shifts to host expert", c2, fs=5.0, col=GREY)

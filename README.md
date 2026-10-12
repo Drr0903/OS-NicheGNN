@@ -48,7 +48,7 @@ All parameters are in `config/run.yaml`. Each stage writes tables to `results/<s
 | 27a–f | clustering against pathologist annotation (colorectal, breast), DLPFC layers and osteosarcoma references |
 | 28 | interpretation: attention, latent parts, perturbations, gene attribution |
 | 29 | independent osteosarcoma cohort |
-| 30, 31 | osteoclast and myeloid programmes, components of the interface |
+| 30, 30b, 31 | osteoclast and myeloid programmes, the interface model with macrophage genes outside the network input, components of the interface |
 | 32, 33 | component analysis (each part removed, single expert, concatenation) and niches without the image |
 | 34 | expert routing: router weights by tissue, across the interface and from diagnosis to relapse |
 | 35 | representative tumour–lung interfaces (Figure 5a) |

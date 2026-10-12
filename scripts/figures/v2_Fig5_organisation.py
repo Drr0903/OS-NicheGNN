@@ -8,7 +8,7 @@ e  lung sections: pooled within-section coefficients of band coverage of the tum
    macrophage and T-cell ratios (beyond the band, with the band, distal control), unadjusted and adjusted for eleven cell types
 f  across the interface (signed ring distance, negative inside the tumour): T-cell score and the router weight of the host-tissue
    expert, patient-level means ± s.e.m.
-Reads results/15_niches, results/30_osteoclast_myeloid, results/18_signalling, results/34_expert_routing, results/35_representative_interface
+Reads results/15_niches, results/30_osteoclast_myeloid, results/30b_macrophage_outside_input, results/18_signalling, results/34_expert_routing, results/35_representative_interface
 """
 from __future__ import annotations
 
@@ -83,11 +83,12 @@ def main() -> None:
     ax = fig.add_subplot(gs[0, 2]); ax.bar(enr["niche"], enr["odds_ratio_near_boundary"], color=[cols[int(k)] for k in enr["niche"]], edgecolor=["red" if b else "black" for b in enr["is_interface_niche"]], linewidth=[1.2 if b else 0.3 for b in enr["is_interface_niche"]])
     ax.axhline(1, color="#888888", lw=0.6, ls="--"); ax.set_xticks(enr["niche"]); ax.set_xticklabels([str(int(k)) for k in enr["niche"]], fontsize=6); bold_axes(ax, x="niche", y="odds ratio, within 1 ring\nof tumour boundary"); ax.set_ylim(0, ax.get_ylim()[1] * 1.18); panel_label(ax, "d"); save_source(enr, NAME, "d")
     mac = pd.read_csv(ROOT / "results/30_osteoclast_myeloid/interface_myeloid_pooled_models.tsv", sep="\t").set_index(["outcome", "covariate_set"]); pmi = pm.set_index(["outcome", "covariate_set"])
-    LAB = {("mac", "E_seg"): "macrophages, outer/inner", ("T", "E_seg_noniche"): "T cells, outer/inner,\nbeyond the band", ("T", "E_seg"): "T cells, outer/inner,\nincluding the band",
+    mac_out = pd.read_csv(ROOT / "results/30b_macrophage_outside_input/interface_pooled_models.tsv", sep="\t").set_index(["outcome", "covariate_set"])
+    LAB = {("mac", "E_seg"): "macrophages, outer/inner", ("macout", "E_seg"): "macrophage genes outside\nthe network input", ("T", "E_seg_noniche"): "T cells, outer/inner,\nbeyond the band", ("T", "E_seg"): "T cells, outer/inner,\nincluding the band",
            ("T", "E_seg_distal"): "T cells, distal\nrings 3–5 (control)"}
     rows = []
     for (what, o), lab in LAB.items():
-        src = mac if what == "mac" else pmi
+        src = mac if what == "mac" else mac_out if what == "macout" else pmi
         for c in ["none", "full"]:
             if (o, c) in src.index and src.loc[(o, c), "coef"] == src.loc[(o, c), "coef"]:
                 r = src.loc[(o, c)]; rows.append({**{k: r[k] for k in ["coef", "ci95_lo", "ci95_hi", "p_t_gminus1", "p_perm_restricted", "n_segments", "n_sections"]},
