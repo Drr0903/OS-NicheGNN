@@ -81,7 +81,11 @@ def run_fold(cfg, adatas, labels, patient_of, site_of, P, anchor_ctx: str | None
         for seed in seeds:
             model, info = train_arch(anchor_ctx, [Gp[s] for s in fit], [Gp[s] for s in val], cfg, seed, dev, anchors, cfg["v2"]["model"]["lambda_anchor"])
             E = embed_arch(model, sl, dev); rec(f"{pre}{anchor_ctx}_anchor{sfx}_z", seed, {s: E[s]["z"] for s in E}, info)
-            if sfx:  # does the latent itself depend on the true arrangement of the neighbours?
+            if ac.get("eval_nomorph"):  # the held-out patient without its image (morphology block at the training mean, 0)
+                import dataclasses
+                Gz = [dataclasses.replace(g, x=np.hstack([g.x[:, :50], np.zeros_like(g.x[:, 50:100]), g.x[:, 100:]]).astype(g.x.dtype)) if g.section in test else g for g in sl]
+                Ez = embed_arch(model, Gz, dev); rec(f"{pre}{anchor_ctx}_anchor{sfx}_z_testnomorph", seed, {s: Ez[s]["z"] for s in Ez}, identity=False)
+            if sfx and not ac.get("eval_nomorph"):  # does the latent itself depend on the true arrangement of the neighbours?
                 Er = embed_arch(model, sl, dev, rewire_seed=seed + cfg["remedies"]["rewire_seed_offset"])
                 rec(f"{pre}{anchor_ctx}_anchor{sfx}_z_rewired", seed, {s: Er[s]["z"] for s in Er}, identity=False)
             if E[sl[0].section]["c"] is not None:
@@ -146,6 +150,10 @@ def main():
     ap.add_argument("--site-adv", type=float, default=0.0, help="A24: weight of the site adversary (suffix _sadv<w>)")
     ap.add_argument("--lambda-anchor", type=float, default=None, help="override v2.model.lambda_anchor (suffix _la<value>)")
     ap.add_argument("--no-proj", action="store_true", help="skip the +mnnproj rows")
+    ap.add_argument("--morph-drop", type=float, default=0.0, help="probability that a training section is seen without its image (suffix _md<p>)")
+    ap.add_argument("--morph-gate", action="store_true", help="per-spot gate on the morphology block (suffix _mg)")
+    ap.add_argument("--nt-masked", action="store_true", help="neighbourhood targets over masked neighbours only (suffix _ntm)")
+    ap.add_argument("--eval-nomorph", action="store_true", help="also score the held-out patient with the morphology block absent")
     ap.add_argument("--dims", default="", help="hidden width,latent width (e.g. 256,128); methods are suffixed _d<h>z<l>")
     a = ap.parse_args(); t0 = time.time(); cfg = load_config(); set_global_seed(cfg["seed"]); sd = stage_dir(STAGE)
     cfg["arch"]["no_proj"] = a.no_proj
@@ -153,9 +161,11 @@ def main():
         d, z = map(int, a.dims.split(",")); cfg["arch"].update(d=d, z_dim=z, name_suffix=f"_d{d}z{z}")
     sfx_extra = ("_lin" if a.linear_heads else "") + ("_ps" if a.prop_skip else "") + ("_gr" if a.grad_skip else "") + ("_moe" if a.moe else "") + ("_clip" if a.clip else "") + ("_dgi" if a.dgi else "") + (f"_img{a.img_scale:g}" if a.img_scale != 1.0 else "") \
         + (f"_cnv{'t' if a.cnv_target else ''}{a.cnv_dim}" if a.cnv_dim else "") + (f"_osl{a.programme:g}" if a.programme else "") + (f"_sadv{a.site_adv:g}" if a.site_adv else "") \
-        + (f"_nmoe{a.moe_experts}" if a.moe_experts else "") + (f"_fh{a.fuse_hidden}" if a.fuse_hidden else "")
+        + (f"_nmoe{a.moe_experts}" if a.moe_experts else "") + (f"_fh{a.fuse_hidden}" if a.fuse_hidden else "") \
+        + (f"_md{a.morph_drop:g}" if a.morph_drop else "") + ("_mg" if a.morph_gate else "") + ("_ntm" if a.nt_masked else "")
     cfg["arch"].update(moe_experts=a.moe_experts, fuse_hidden=a.fuse_hidden, cnv_dim=a.cnv_dim, cnv_target=a.cnv_target, programme_weight=a.programme, site_adv=a.site_adv,
                        site_code={s: sorted(set(cfg["v2"]["site_of"].values())).index(v) for s, v in cfg["v2"]["site_of"].items()})
+    cfg["arch"].update(morph_drop=a.morph_drop, morph_gate=a.morph_gate, nt_masked=a.nt_masked, eval_nomorph=a.eval_nomorph)
     cfg["arch"].update(img_scale=a.img_scale, linear_heads=a.linear_heads, prop_skip=a.prop_skip, grad_skip=a.grad_skip, moe=a.moe, clip=a.clip, dgi=a.dgi)
     if a.lambda_anchor is not None:
         cfg["v2"]["model"]["lambda_anchor"] = a.lambda_anchor; sfx_extra += f"_la{a.lambda_anchor:g}"

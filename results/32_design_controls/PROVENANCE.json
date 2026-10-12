@@ -1,0 +1,267 @@
+{
+  "stage": "32_design_controls",
+  "finished_utc": "2026-10-12T05:40:30Z",
+  "elapsed_s": 2.4,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
+  "git_commit": "0661e340664a2d0a2fadfcb524cd51e8159065a1",
+  "git_dirty": true,
+  "inputs": {
+    "results/23_arch_search/arch_metrics_E2base_P01.tsv": {
+      "md5": "99193ab9dff3e2a29bf40e020a709b05",
+      "bytes": 3743
+    },
+    "results/23_arch_search/arch_metrics_E2base_P03.tsv": {
+      "md5": "3b90a3e88a2a8013f3ea4f5ae9b7e2ac",
+      "bytes": 3721
+    },
+    "results/23_arch_search/arch_metrics_E2base_P05.tsv": {
+      "md5": "99e6f79869cef826ce0cde6fdd5b60d3",
+      "bytes": 3790
+    },
+    "results/23_arch_search/arch_metrics_E2base_P10.tsv": {
+      "md5": "7c22058e6448e80c0bdef972cc23ca09",
+      "bytes": 3713
+    },
+    "results/23_arch_search/arch_metrics_E2base_P12.tsv": {
+      "md5": "b0c06d317be94059abb14e9b55b27fc7",
+      "bytes": 3655
+    },
+    "results/23_arch_search/arch_metrics_E2base_P14.tsv": {
+      "md5": "130d1dd01ff2deb319974e0d79d53069",
+      "bytes": 3737
+    },
+    "results/23_arch_search/arch_metrics_E2base_P16.tsv": {
+      "md5": "616f58279c09528fa96d30c126bc5bdb",
+      "bytes": 3719
+    },
+    "results/23_arch_search/arch_metrics_E2base_P18.tsv": {
+      "md5": "bf4f666c4ac863507ea7b8beb4f3b7d4",
+      "bytes": 3344
+    },
+    "results/23_arch_search/arch_metrics_E2md3_P01.tsv": {
+      "md5": "0009b15ae9e7ea8c7a272132ef0feb08",
+      "bytes": 3699
+    },
+    "results/23_arch_search/arch_metrics_E2md3_P03.tsv": {
+      "md5": "a3461341ea19e36ec4e835dd0ee0ee2e",
+      "bytes": 3797
+    },
+    "results/23_arch_search/arch_metrics_E2md3_P05.tsv": {
+      "md5": "86da25b7cd02be53677000bd601f73df",
+      "bytes": 3820
+    },
+    "results/23_arch_search/arch_metrics_E2md3_P10.tsv": {
+      "md5": "cf2e3f6116af1bd100a0d5b511f570da",
+      "bytes": 3790
+    },
+    "results/23_arch_search/arch_metrics_E2md3_P12.tsv": {
+      "md5": "11a9dd798f9e7c5abab89c379e2d5d3a",
+      "bytes": 3712
+    },
+    "results/23_arch_search/arch_metrics_E2md3_P14.tsv": {
+      "md5": "bc60b4cd37c0506c1b2ddde0ea8a4292",
+      "bytes": 3764
+    },
+    "results/23_arch_search/arch_metrics_E2md3_P16.tsv": {
+      "md5": "edb0f19cc0aa26ff6bb4867c61650627",
+      "bytes": 3750
+    },
+    "results/23_arch_search/arch_metrics_E2md3_P18.tsv": {
+      "md5": "3653d748b1c1c70a70d4968de4d73813",
+      "bytes": 3402
+    },
+    "results/23_arch_search/arch_metrics_E2md3g_P01.tsv": {
+      "md5": "aa430479b4d952d064543e2f324fd694",
+      "bytes": 3745
+    },
+    "results/23_arch_search/arch_metrics_E2md3g_P03.tsv": {
+      "md5": "7224cf93e8a55a3dabcfd8a22ef5ad27",
+      "bytes": 3855
+    },
+    "results/23_arch_search/arch_metrics_E2md3g_P05.tsv": {
+      "md5": "df93254ad042db47631412f7cf8211cd",
+      "bytes": 3854
+    },
+    "results/23_arch_search/arch_metrics_E2md3g_P10.tsv": {
+      "md5": "6953cb8ddeb1843fe6550dfda67207f0",
+      "bytes": 3806
+    },
+    "results/23_arch_search/arch_metrics_E2md3g_P12.tsv": {
+      "md5": "debd827218cfb4783c03fb553975c8b8",
+      "bytes": 3735
+    },
+    "results/23_arch_search/arch_metrics_E2md3g_P14.tsv": {
+      "md5": "5e59001106515ef14b92c481dd4915a2",
+      "bytes": 3754
+    },
+    "results/23_arch_search/arch_metrics_E2md3g_P16.tsv": {
+      "md5": "6410ae953fb915485d1d479ad32d1ca3",
+      "bytes": 3810
+    },
+    "results/23_arch_search/arch_metrics_E2md3g_P18.tsv": {
+      "md5": "a916e7cfd9176005e22d8a376508e950",
+      "bytes": 3475
+    },
+    "results/23_arch_search/arch_metrics_E2md5_P01.tsv": {
+      "md5": "c64c7f40bdfe91d8868fe7c59b768ef6",
+      "bytes": 3777
+    },
+    "results/23_arch_search/arch_metrics_E2md5_P03.tsv": {
+      "md5": "f7c37b748421f350002c7e05b3683603",
+      "bytes": 3803
+    },
+    "results/23_arch_search/arch_metrics_E2md5_P05.tsv": {
+      "md5": "b248561e30ead7ac4144f734488dae8b",
+      "bytes": 3867
+    },
+    "results/23_arch_search/arch_metrics_E2md5_P10.tsv": {
+      "md5": "6b0d768e1f58da17ab181827494b606c",
+      "bytes": 3783
+    },
+    "results/23_arch_search/arch_metrics_E2md5_P12.tsv": {
+      "md5": "ff502150fdd8b2ed7095bc5eed442a95",
+      "bytes": 3780
+    },
+    "results/23_arch_search/arch_metrics_E2md5_P14.tsv": {
+      "md5": "8457074a11fbacb75ac02ddd4f9eb450",
+      "bytes": 3727
+    },
+    "results/23_arch_search/arch_metrics_E2md5_P16.tsv": {
+      "md5": "06e18e0d87bf96e6d5e68c884348e0b6",
+      "bytes": 3739
+    },
+    "results/23_arch_search/arch_metrics_E2md5_P18.tsv": {
+      "md5": "25e146412e0ff035b02bcb2c6dd3be01",
+      "bytes": 3397
+    },
+    "results/23_arch_search/arch_metrics_E2md5g_P01.tsv": {
+      "md5": "e1ba1ac1ce68ebf7c690e0e0b022b140",
+      "bytes": 3800
+    },
+    "results/23_arch_search/arch_metrics_E2md5g_P03.tsv": {
+      "md5": "f12fd025cbb9d21087d4d6d692c06090",
+      "bytes": 3811
+    },
+    "results/23_arch_search/arch_metrics_E2md5g_P05.tsv": {
+      "md5": "9669006dd44315dfd11939afcd907bee",
+      "bytes": 3862
+    },
+    "results/23_arch_search/arch_metrics_E2md5g_P10.tsv": {
+      "md5": "73e95e26d51b7d1566665b28d7344194",
+      "bytes": 3805
+    },
+    "results/23_arch_search/arch_metrics_E2md5g_P12.tsv": {
+      "md5": "6ee3e0725f75d47993ef844ca1f54547",
+      "bytes": 3771
+    },
+    "results/23_arch_search/arch_metrics_E2md5g_P14.tsv": {
+      "md5": "020ae36cf3ab21056a6c87ef23280815",
+      "bytes": 3733
+    },
+    "results/23_arch_search/arch_metrics_E2md5g_P16.tsv": {
+      "md5": "d3df7f0beb81680980129c1b4e3e9cb3",
+      "bytes": 3783
+    },
+    "results/23_arch_search/arch_metrics_E2md5g_P18.tsv": {
+      "md5": "3c22a2c839b568979631beeb35b610b4",
+      "bytes": 3413
+    },
+    "results/23_arch_search/arch_metrics_E4ntm_P01.tsv": {
+      "md5": "903703643e5aa1238a53889319a45eee",
+      "bytes": 3749
+    },
+    "results/23_arch_search/arch_metrics_E4ntm_P03.tsv": {
+      "md5": "b9d81c694452a42b3b5b35edc8cbc0f6",
+      "bytes": 3767
+    },
+    "results/23_arch_search/arch_metrics_E4ntm_P05.tsv": {
+      "md5": "211fd3b7646d03c62d959efcb30ee4aa",
+      "bytes": 3832
+    },
+    "results/23_arch_search/arch_metrics_E4ntm_P10.tsv": {
+      "md5": "1519ee8b48b57279d65ccbd422fc1747",
+      "bytes": 3764
+    },
+    "results/23_arch_search/arch_metrics_E4ntm_P12.tsv": {
+      "md5": "7cdcce79382bbd4b029af35941896767",
+      "bytes": 3674
+    },
+    "results/23_arch_search/arch_metrics_E4ntm_P14.tsv": {
+      "md5": "40636d54debcc001ae0f25d31b30725e",
+      "bytes": 3802
+    },
+    "results/23_arch_search/arch_metrics_E4ntm_P16.tsv": {
+      "md5": "b1fed97b7c5005aedbf04102fa72a459",
+      "bytes": 3722
+    },
+    "results/23_arch_search/arch_metrics_E4ntm_P18.tsv": {
+      "md5": "db29e2f792bf4aec86a11d731dbc540d",
+      "bytes": 3367
+    },
+    "results/23_arch_search/arch_metrics_E4rmlp_P01.tsv": {
+      "md5": "36b1727f94a92f596216d471c4b1274a",
+      "bytes": 2516
+    },
+    "results/23_arch_search/arch_metrics_E4rmlp_P03.tsv": {
+      "md5": "5271c756f610200442fa2b8c8b784ef8",
+      "bytes": 2524
+    },
+    "results/23_arch_search/arch_metrics_E4rmlp_P05.tsv": {
+      "md5": "2e85eca48fb29515484deed6abeea0a5",
+      "bytes": 2573
+    },
+    "results/23_arch_search/arch_metrics_E4rmlp_P10.tsv": {
+      "md5": "90cfb709701bc587360d659834a29c2f",
+      "bytes": 2537
+    },
+    "results/23_arch_search/arch_metrics_E4rmlp_P12.tsv": {
+      "md5": "d0b2c543eb92d208360d5e1b1745e908",
+      "bytes": 2426
+    },
+    "results/23_arch_search/arch_metrics_E4rmlp_P14.tsv": {
+      "md5": "e348794a459f7ed305dd767f4e0333f5",
+      "bytes": 2534
+    },
+    "results/23_arch_search/arch_metrics_E4rmlp_P16.tsv": {
+      "md5": "690a0a9b6e008b43e6b236fecc696948",
+      "bytes": 2508
+    },
+    "results/23_arch_search/arch_metrics_E4rmlp_P18.tsv": {
+      "md5": "b40eb471b19f90b2167620e2524d8cca",
+      "bytes": 2287
+    }
+  },
+  "outputs": {
+    "results/32_design_controls/patient_level.tsv": {
+      "md5": "37f4bc1aeb76aa73f092f4102f55030f",
+      "bytes": 10165
+    },
+    "results/32_design_controls/summary.tsv": {
+      "md5": "1ec0cf07d5681f81cc3194ab5dc5410f",
+      "bytes": 1320
+    },
+    "results/32_design_controls/paired.tsv": {
+      "md5": "2bfa97e7aa8a243898f014bb1e6dac18",
+      "bytes": 7316
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {}
+}

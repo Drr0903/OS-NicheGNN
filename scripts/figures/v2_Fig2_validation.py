@@ -80,9 +80,23 @@ def reuse(ax, ru, site):
     mu = w[["training", "held_out"]].mean(); ax.plot([0, 1], mu.to_numpy(), color="black", lw=1.6, marker="o", ms=4)
     for i, v in enumerate(mu):
         ax.text(i, 1.0, f"{v:.3f}", ha="center", va="top", fontsize=5.5)
-    ax.set_xticks([0, 1]); ax.set_xticklabels(["training patients\n(re-clustering)", "held-out patient\n(niches transferred)"], fontsize=6)
+    ax.set_xticks([0, 1]); ax.set_xticklabels(["training\npatients", "held-out\npatient"], fontsize=6)
     ax.set_xlim(-0.35, 1.35); ax.set_ylim(0.4, 1.02); bold_axes(ax, y="agreement with the\nfull-cohort atlas"); panel_label(ax, "e")
     save_source(w.reset_index(), NAME, "e")
+
+
+REP_COL = {"OS-NicheGNN": "#3B5BA5", "BANKSY-20": "#DD8452", "spot profile": "#8C8C8C", "profile + ring means": "#55A868"}
+
+
+def coverage(ax, cv):
+    """Agreement among the held-out spots closest to a niche, against the fraction of spots assigned (fixed reference)."""
+    d = cv[(cv["mode"] == "mapped") & (cv["reference"] == "same-protocol atlas")]
+    for rep, col in REP_COL.items():
+        r = d[d.representation == rep].sort_values("coverage")
+        ax.plot(r["coverage"], r["agreement_mean"], color=col, lw=1.4 if rep == "OS-NicheGNN" else 1.0, label=rep)
+    ax.set_xlim(0, 1.0); ax.set_xticks([0, 0.5, 1.0]); ax.set_ylim(0.3, 1.0); ax.legend(fontsize=5.2, loc="upper right", frameon=False, handlelength=1.4)
+    bold_axes(ax, x="held-out spots\nassigned (fraction)", y="agreement with the atlas"); panel_label(ax, "f")
+    save_source(d, NAME, "f")
 
 
 def main() -> None:
@@ -91,13 +105,15 @@ def main() -> None:
     site = m.groupby("heldout_patient")["heldout_site"].first(); pat["heldout_site"] = pat["heldout_patient"].map(site)
     ru = pd.read_csv(ROOT / "results/25_niche_reuse/reuse_patient.tsv", sep="\t")
     fig = plt.figure(figsize=(7.2, 8.4)); gs = GridSpec(3, 2, figure=fig, height_ratios=[1, 0.95, 0.9], hspace=0.62, wspace=0.55)
-    a = fig.add_subplot(gs[0, 0]); b = fig.add_subplot(gs[0, 1]); c = fig.add_subplot(gs[1, :]); d = fig.add_subplot(gs[2, 0]); e = fig.add_subplot(gs[2, 1])
+    a = fig.add_subplot(gs[0, 0]); b = fig.add_subplot(gs[0, 1]); c = fig.add_subplot(gs[1, :])
+    bot = gs[2, :].subgridspec(1, 3, wspace=0.62); d = fig.add_subplot(bot[0]); e = fig.add_subplot(bot[1]); f = fig.add_subplot(bot[2])
     lines(a, pat, "macro_f1", "held-out region macro-F1", "a", (0, 1.1)); lines(b, pat, "tcell_nbhd_rho", "held-out T-cell programme,\nneighbourhood (ρ)", "b", (-0.15, 1.05))
     for s_, c_ in SITE_COL.items():
         b.plot([], [], color=c_, lw=1, label=s_.replace("_", " "))
     b.legend(fontsize=5.5, loc="upper left", bbox_to_anchor=(1.02, 1.0), title="held-out site", title_fontsize=5.5, frameon=False)
     nd = pd.read_csv(ROOT / "results/23d_banksy_k36/banksy_k36_paired.tsv", sep="\t"); nd = nd[nd["patients"] == "nondev"]
     forest(c, pr, nd); rewired(d, pat); reuse(e, ru, site)
+    coverage(f, pd.read_csv(ROOT / "results/25c_reference_mapping/coverage_curve.tsv", sep="\t"))
     save_fig(fig, f"{NAME}_validation")
 
 

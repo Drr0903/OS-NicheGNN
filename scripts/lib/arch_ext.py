@@ -52,6 +52,20 @@ class ExpertFuse(nn.Module):
         return sum(g[:, k:k + 1] * e(u) for k, e in enumerate(self.experts))
 
 
+class MorphGate(nn.Module):
+    """Per-spot weight g = σ(f([expression block, morphology block])) on the morphology block. Trained together with section-level
+    morphology dropout, it lets a spot whose image features are absent or uninformative fall back on expression and context."""
+
+    def __init__(self, e_dim: int, hidden: int = 64):
+        super().__init__()
+        self.e = e_dim; self.f = mlp(2 * e_dim, hidden, 1)
+        nn.init.zeros_(self.f[2].weight); nn.init.constant_(self.f[2].bias, 3.0)  # starts open (g ≈ 0.95)
+
+    def forward(self, x):
+        e = self.e; g = torch.sigmoid(self.f(x[:, :2 * e]))
+        return torch.cat([x[:, :e], x[:, e:2 * e] * g, x[:, 2 * e:]], 1)
+
+
 class CLIPAlign(nn.Module):
     """The latent of a spot (u, through a projection head) and the morphology of the same spot (w) are pulled together
     and away from the other spots of the batch, so morphology guides the latent without being copied into it."""
@@ -123,7 +137,8 @@ def attach(model, ac: dict, in_dim: int, e_dim: int = 50):
         if n_tgt:
             sc[:, in_dim - n_tgt:] = 0.0
         model.register_buffer("in_scale", sc)
-    f_in = d * (1 if model.context == "none" else 2)
+    model.mgate = MorphGate(e_dim) if ac.get("morph_gate") else None
+    f_in = d * (1 if model.context in ("none", "ringmlp") else 2)
     if ac.get("moe_experts", 0) > 0:  # niche-adaptive experts in place of the single perceptron g
         model.fuse = ExpertFuse(f_in, d, z, ac["moe_experts"])
     elif ac.get("fuse_hidden", 0) > 0:  # parameter-matched single expert: g with a wider hidden layer

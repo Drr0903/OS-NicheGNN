@@ -43,11 +43,21 @@ def _loss(model: NicheEncoder, s: Sec, ac: dict, gen: torch.Generator, rows: tor
     if rows is None:
         rows = torch.randperm(n, generator=gen, device=dev)[: ac["centre_batch"]]
     xm = torch.where(mask[:, None], model.mask_token.expand_as(s.x), s.x)
+    pd_ = ac.get("morph_drop", 0.0)
+    if pd_ > 0 and model.training and float(torch.rand(1, generator=gen, device=dev)) < pd_:  # the section is seen without its image
+        xm = xm.clone(); xm[:, 50:100] = 0.0  # morphology PCA block (columns 50–99); 0 = training mean; targets keep the true values
     h, c = model.parts_rows(xm, s.nb, rows); z = model.z_from(xm, s.nb, rows, h, c); xhat = model.dec(z)
     err = ((xhat - s.x[rows]) ** 2).mean(1); m = mask[rows].float()
     l = (err * m).sum() / m.sum().clamp_min(1) + ac["w_visible"] * (err * (1 - m)).sum() / (1 - m).sum().clamp_min(1)
-    for t, w in (ac.get("niche_targets") or {}).items():  # the latent must also describe the spot's surroundings
-        l = l + w * ((model.ndec[t](z) - s.tgt[t][rows]) ** 2).mean()
+    if ac.get("nt_masked"):  # surroundings of the masked neighbours only: values that are absent from the visible input
+        from .nbhd import Nbhd as _N
+        nbm = _N(s.nb.idx, s.nb.valid & mask[s.nb.idx.clamp_min(0)], s.nb.pos); tg = niche_target_values(s.x, nbm)
+        ok = {"ring1": (nbm.valid & (nbm.pos[..., 2] > 0)).any(1), "outer": (nbm.valid & ((nbm.pos[..., 3] + nbm.pos[..., 4]) > 0)).any(1), "disp": nbm.valid.sum(1) > 1}
+        for t, w in (ac.get("niche_targets") or {}).items():
+            o = ok[t][rows].float(); l = l + w * (((model.ndec[t](z) - tg[t][rows]) ** 2).mean(1) * o).sum() / o.sum().clamp_min(1)
+    else:
+        for t, w in (ac.get("niche_targets") or {}).items():  # the latent must also describe the spot's surroundings
+            l = l + w * ((model.ndec[t](z) - s.tgt[t][rows]) ** 2).mean()
     if getattr(model, "moe", None) is not None:  # keep every expert in use
         l = l + ac.get("moe_balance", 0.01) * MoEFusion.balance(model.last_gates)
     if getattr(model.fuse, "last_gates", None) is not None:  # niche-adaptive experts: keep every expert in use

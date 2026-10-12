@@ -108,14 +108,16 @@ class NicheEncoder(nn.Module):
                  niche_targets: tuple[str, ...] = (), linear_heads: bool = False, prop_skip: bool = False, grad_skip: bool = False):
         super().__init__()
         self.context = context; self.mask_token = nn.Parameter(torch.zeros(1, in_dim))
-        self.own = OwnMLP(in_dim, d, 2, dropout)
-        if context != "none":
+        # ringmlp: no neighbour tokens; the residual MLP reads [own profile, ring-1 mean, ring-2–3 mean] (a learned, non-linear
+        # function of the same neighbourhood averages that the linear skip receives)
+        self.own = OwnMLP(in_dim * (3 if context == "ringmlp" else 1), d, 2, dropout)
+        if context not in ("none", "ringmlp"):
             self.tok = Tokens(in_dim, d)
         if context in ("xattn", "xmamba"):
             self.xattn = CrossAttn(d, heads, n_layers, dropout)
         if context in ("mamba", "xmamba"):
             self.mamba = nn.ModuleList([Mamba(d) for _ in range(n_layers)]); self.mnorm = nn.LayerNorm(d)
-        self.fuse = nn.Sequential(nn.Linear(d * (1 if context == "none" else 2), d), nn.GELU(), nn.Linear(d, z_dim))
+        self.fuse = nn.Sequential(nn.Linear(d * (1 if context in ("none", "ringmlp") else 2), d), nn.GELU(), nn.Linear(d, z_dim))
         self.dec = nn.Sequential(nn.Linear(z_dim, d), nn.GELU(), nn.Linear(d, in_dim))
         # niche targets (A20): z also decodes the spot's surroundings — ring-1 mean, ring-2–3 mean, dispersion of rings 1–3
         # linear_heads: the surroundings must be linearly readable from z, not only through a non-linear decoder
@@ -135,13 +137,25 @@ class NicheEncoder(nn.Module):
         return self.mnorm(seq[:, -1])
 
     def scale_in(self, x_full):
-        """A23: the morphology block of the input can be down-weighted (img_scale); 1 keeps the profile as it is."""
-        sc = getattr(self, "in_scale", None)
-        return x_full if sc is None else x_full * sc
+        """A23: the morphology block of the input can be down-weighted (img_scale); 1 keeps the profile as it is.
+        With a morphology gate the block is multiplied by a per-spot weight in [0, 1] read from the spot's own expression and
+        morphology, before the spot is used as centre, as neighbour token or in the ring means, so every path sees the same."""
+        sc = getattr(self, "in_scale", None); x_full = x_full if sc is None else x_full * sc
+        mg = getattr(self, "mgate", None)
+        return x_full if mg is None else mg(x_full)
+
+    @staticmethod
+    def ring_means(x_full, nb: Nbhd, rows: torch.Tensor):
+        xv = x_full[nb.idx[rows].clamp_min(0)]; v = nb.valid[rows].float(); p = nb.pos[rows]
+        def wm(w):
+            return (w[..., None] * xv).sum(1) / w.sum(1, keepdim=True).clamp_min(1)
+        return wm(p[..., 2] * v), wm((p[..., 3] + p[..., 4]) * v)
 
     def parts_rows(self, x_full, nb: Nbhd, rows: torch.Tensor):
         """Own and context encodings of the centre spots `rows`; neighbour tokens are looked up in the whole section x_full."""
         x_full = self.scale_in(x_full)
+        if self.context == "ringmlp":
+            return self.own(torch.cat([x_full[rows], *self.ring_means(x_full, nb, rows)], 1)), None
         h = self.own(x_full[rows])
         if self.context == "none":
             return h, None

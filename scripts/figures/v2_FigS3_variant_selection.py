@@ -1,11 +1,11 @@
 """v2 Supplementary Figure S3 — what each component of OS-NicheGNN contributes.
 Rows: the spot profile [expression PCA-50, H&E PCA-50]; OS-NicheGNN; and OS-NicheGNN with one component removed at a time
 (attention context, neighbourhood targets with their linear heads, linear neighbourhood skip, morphology input), everything
-else unchanged.
+else unchanged; and the attention context replaced by a residual MLP on the ring means with a matched parameter count.
 a–f  held-out region macro-F1, boundary F1, T-cell programme of the neighbourhood, cell composition of the neighbourhood,
      spatial coherence of held-out niches (CHAOS, lower is better), and the training-embedding ARI against patient
      (means ± s.e.m. over the eight development patients; ARI: mean ± s.d.)
-Reads results/23_arch_search/{arch_patient_level, arch_metrics}.tsv
+Reads results/23_arch_search/{arch_patient_level, arch_metrics, arch_metrics_E4rmlp_P*}.tsv
 """
 from __future__ import annotations
 
@@ -24,19 +24,22 @@ NAME = "FigS3"
 F = "mm_xattn_anchor_d256z256_ntrod_lin_ps"
 ROWS = [("pca+img", "spot profile\n(PCA-50 + H&E)"), (F + "_la0_z", "OS-NicheGNN"), ("mm_none_anchor_d256z256_ntrod_lin_ps_la0_z", "− attention context"),
         ("mm_xattn_anchor_d256z256_ps_la0_z", "− neighbourhood targets"), ("mm_xattn_anchor_d256z256_ntrod_lin_la0_z", "− neighbourhood skip"),
-        ("mm_xattn_anchor_d256z256_ntrod_lin_ps_img0_la0_z", "− morphology input")]
+        ("mm_xattn_anchor_d256z256_ntrod_lin_ps_img0_la0_z", "− morphology input"), ("mm_ringmlp_anchor_d416z256_ntrod_lin_ps_la0_z", "attention → ring-mean\nMLP (same size)")]
 PANELS = [("macro_f1", "region macro-F1"), ("boundary_f1", "boundary F1"), ("tcell_nbhd_rho", "T-cell programme,\nneighbourhood (ρ)"),
           ("comp_nbhd_rho", "cell composition,\nneighbourhood (ρ)"), ("chaos", "CHAOS (lower = more\ncoherent niches)"), ("train_ari_vs_patient", "ARI vs patient,\ntraining embeddings")]
-COL = [PALETTE[7], PALETTE[0], PALETTE[3], PALETTE[2], PALETTE[4], PALETTE[5]]
+COL = [PALETTE[7], PALETTE[0], PALETTE[3], PALETTE[2], PALETTE[4], PALETTE[5], PALETTE[6]]
 
 
 def main() -> None:
     set_style(); A = ROOT / "results/23_arch_search"
     pat = pd.read_csv(A / "arch_patient_level.tsv", sep="\t"); m = pd.read_csv(A / "arch_metrics.tsv", sep="\t")
+    rm = pd.concat([pd.read_csv(f, sep="\t") for f in sorted(A.glob("arch_metrics_E4rmlp_P*.tsv"))], ignore_index=True)  # stage 32 control
+    rm = rm[rm["method"] == ROWS[-1][0]]; m = pd.concat([m, rm], ignore_index=True)
+    pat = pd.concat([pat, rm.groupby(["method", "heldout_patient"])[[c for c, _ in PANELS if c != "train_ari_vs_patient"]].mean().reset_index()], ignore_index=True)
     dev = load_config()["arch"]["dev_patients"]  # every row on the same eight development patients (some variants were only run there)
     pat = pat[pat["heldout_patient"].isin(dev)]; m = m[m["heldout_patient"].isin(dev)]
     fold = m.groupby(["method", "heldout_patient"])["train_ari_vs_patient"].mean().reset_index()
-    fig, axes = plt.subplots(2, 3, figsize=(7.2, 8.2)); out = []
+    fig, axes = plt.subplots(2, 3, figsize=(7.2, 8.8)); out = []
     for k, (ax, (metric, lab)) in enumerate(zip(axes.ravel(), PANELS)):
         src = fold if metric == "train_ari_vs_patient" else pat
         lo = 1.0 if metric == "chaos" else 0

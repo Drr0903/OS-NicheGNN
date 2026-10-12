@@ -1,0 +1,104 @@
+{
+  "stage": "25c_reference_mapping",
+  "finished_utc": "2026-10-12T04:55:27Z",
+  "elapsed_s": 18.4,
+  "seed": 20260914,
+  "config_path": "config/run.yaml",
+  "config_sha256": "0a162a0e215d46bd2db284acf82bc97cfe738dc3c4982b6027b652e28b825da3",
+  "git_commit": "0661e340664a2d0a2fadfcb524cd51e8159065a1",
+  "git_dirty": true,
+  "inputs": {
+    "results/15_niches/spot_niches.tsv": {
+      "md5": "e8f1a63f0aea5de7c47ed6b76f52938a",
+      "bytes": 16167409
+    },
+    "results/25b_transfer_controls/baseline_atlas_spots.tsv": {
+      "md5": "c4c851636c107fa9122fb4eccc8d9ac8",
+      "bytes": 7324030
+    },
+    "results/25c_reference_mapping/gnn_atlas_spots.tsv": {
+      "md5": "833b3968325af3f6b13f0a8cb2ab5df7",
+      "bytes": 2301212
+    }
+  },
+  "outputs": {
+    "results/25c_reference_mapping/mapping_patient.tsv": {
+      "md5": "c6289bb112067ea2b8815f8f8f11ab80",
+      "bytes": 67296
+    },
+    "results/25c_reference_mapping/mapping_summary.tsv": {
+      "md5": "de9c38c3289526c178c8ed85c91d0aef",
+      "bytes": 41583
+    },
+    "results/25c_reference_mapping/coverage_curve.tsv": {
+      "md5": "a1ffb9e964400df9efb6cb504ab49985",
+      "bytes": 48799
+    },
+    "results/25c_reference_mapping/coverage_patient.tsv": {
+      "md5": "dfc29a8ba470230ee55a49abf96ba0de",
+      "bytes": 649469
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+    "executable": "<conda>/envs/project018/bin/python",
+    "conda_env": "project018",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scanpy": "1.10.4",
+    "anndata": "0.10.9",
+    "sklearn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "torch_geometric": "2.6.1",
+    "cuda": "12.1",
+    "gpu": "NVIDIA L40S"
+  },
+  "extra": {
+    "folds": [
+      "_P01",
+      "_P02",
+      "_P03",
+      "_P04",
+      "_P05",
+      "_P06",
+      "_P07",
+      "_P08",
+      "_P09",
+      "_P10",
+      "_P11",
+      "_P12",
+      "_P13",
+      "_P14",
+      "_P15",
+      "_P16",
+      "_P17",
+      "_P18",
+      "_P19"
+    ],
+    "mapped": "Symphony-style mapping onto the training-patient Harmony reference (sigma 0.1, ridge 1)",
+    "coverage_grid": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ]
+  }
+}

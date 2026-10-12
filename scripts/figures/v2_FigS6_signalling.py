@@ -1,6 +1,6 @@
 """v2 Supplementary Figure S6 — signalling identity of the niches and the gradient across the tumour–lung interface .
 a  PROGENy pathway activity per niche (patient means, z-scored across niches); all 14 pathways differ between niches
-b  contrasts that survive adjustment for the eleven deconvolved cell-type fractions (patient fixed effects, cluster-robust CI)
+b  every niche contrast before and after adjustment for the eleven deconvolved cell-type fractions, and the number at FDR < 0.05
 c  signed ring distance to the tumour–lung interface: T-cell score and the pathways with a monotone gradient (patient means)
 Reads results/18_signalling/*
 """
@@ -37,16 +37,23 @@ def main() -> None:
     ax.set_xticks(range(z.shape[1])); ax.set_xticklabels([LAB.get(c, c) for c in z.columns], rotation=55, ha="right", fontsize=6)
     cb = plt.colorbar(im, ax=ax, fraction=0.02, pad=0.015); cb.ax.tick_params(labelsize=5.5); cb.set_label("activity, z across niches", fontsize=6)
     panel_label(ax, "a"); save_source(m.reset_index(), NAME, "a")
-    # b: composition-adjusted contrasts that survive
-    ax = fig.add_subplot(gs[1, :]); s = adj[(adj["adjustment"] == "composition") & (adj["fdr"] < 0.1)].sort_values("coef_vs_reference")
-    s = s.assign(label=lambda d: d["source"].map(lambda x: LAB.get(x, x)) + "  ·  " + d["niche"].astype(str) + " " + d["name"].str.replace(" (boundary)", "", regex=False))
-    y = np.arange(len(s)); col = [PALETTE[3] if c < 0 else PALETTE[0] for c in s["coef_vs_reference"]]
-    ax.errorbar(s["coef_vs_reference"], y, xerr=[s["coef_vs_reference"] - s["ci95_lo"], s["ci95_hi"] - s["coef_vs_reference"]], fmt="none", ecolor="#888888", lw=0.8)
-    ax.scatter(s["coef_vs_reference"], y, s=16, c=col, edgecolor="black", linewidths=0.3, zorder=3)
-    ax.axvline(0, color="#888888", lw=0.6, ls="--"); ax.set_yticks(y); ax.set_yticklabels(s["label"], fontsize=5.4); ax.set_ylim(-0.8, len(s) - 0.2)
-    ref = int(s["reference_niche"].iloc[0]) if len(s) else 0
-    bold_axes(ax, x=f"activity difference from niche {ref} after adjustment for eleven cell-type fractions (95 % CI)")
-    panel_label(ax, "b"); save_source(s.drop(columns="label"), NAME, "b")
+    # b: every niche contrast before and after adjustment for the eleven cell-type fractions
+    ax = fig.add_subplot(gs[1, 0]); w = adj.pivot_table(index=["source", "niche"], columns="adjustment", values=["coef_vs_reference", "fdr"]).dropna()
+    xu, ya = w[("coef_vs_reference", "unadjusted")], w[("coef_vs_reference", "composition")]; sig = w[("fdr", "unadjusted")] < 0.05
+    ax.scatter(xu[~sig], ya[~sig], s=9, c="#BBBBBB", edgecolor="none", label="FDR ≥ 0.05 unadjusted")
+    ax.scatter(xu[sig], ya[sig], s=11, c=PALETTE[0], edgecolor="black", linewidths=0.2, label="FDR < 0.05 unadjusted")
+    lim = float(np.nanmax(np.abs(np.r_[xu, ya]))) * 1.08; ax.plot([-lim, lim], [-lim, lim], color="#888888", lw=0.6, ls="--")
+    ax.axhline(0, color="#888888", lw=0.5); ax.axvline(0, color="#888888", lw=0.5); ax.set_xlim(-lim, lim); ax.set_ylim(-lim, lim); ax.set_aspect("equal")
+    ref = int(adj["reference_niche"].iloc[0])
+    bold_axes(ax, x=f"difference from niche {ref}, unadjusted", y="difference, adjusted for composition")
+    ax.legend(fontsize=5, loc="upper left", frameon=False); panel_label(ax, "b")
+    ax = fig.add_subplot(gs[1, 1]); n_u = int((adj[adj.adjustment == "unadjusted"]["fdr"] < 0.05).sum()); n_a = int((adj[adj.adjustment == "composition"]["fdr"] < 0.05).sum())
+    ax.bar([0, 1], [n_u, n_a], color=[PALETTE[0], PALETTE[3]], width=0.6, edgecolor="black", linewidth=0.4)
+    for k, v in enumerate([n_u, n_a]):
+        ax.text(k, v + max(n_u, 1) * 0.02, str(v), ha="center", va="bottom", fontsize=6)
+    ax.set_xticks([0, 1]); ax.set_xticklabels(["unadjusted", "adjusted for\ncomposition"], fontsize=6); ax.set_ylim(0, max(n_u, 1) * 1.15)
+    bold_axes(ax, y=f"contrasts at FDR < 0.05 (of {len(w)})")
+    save_source(adj, NAME, "b")
     # c: gradient across the interface
     ax = fig.add_subplot(gs[2, :]); g = prof.groupby("signed_ring")[GRAD].agg(["mean", "sem"])
     x = g.index.to_numpy(); ax2 = ax.twinx()
